@@ -5,8 +5,8 @@
   "locations": [
     {
       "id": "withered-wasteland",
-      "x": 24,
-      "y": 24,
+      "x": 22,
+      "y": 30,
       "icon": "landscape",
       "type": "region",
       "levelEn": "TUTORIAL ZONE",
@@ -29,17 +29,66 @@
         "完成「打個哈欠喚來暴雨」的降雨流程，解救大岩蛇。",
         "重建寶可夢中心並穩定前期合成與據點機能。"
       ],
-      "requiredSkillsEn": ["Water Gun", "Basic Building", "Early Habitat Setup"],
-      "requiredSkillsZh": ["水槍", "基礎建造", "前期棲地佈置"],
-      "resourceFocusEn": ["Soft Clay", "Starter Timber", "Early Food Plots"],
-      "resourceFocusZh": ["軟泥", "初期木材", "早期農地"],
-      "notablePokemonEn": ["Squirtle", "Onix", "Professor Tangrowth", "Ditto"],
-      "notablePokemonZh": ["傑尼龜", "大岩蛇", "巨蔓藤博士", "百變怪"],
-      "unlocksEn": ["Pokémon Center base", "Early workbench access", "Mew mural route awareness"],
-      "unlocksZh": ["寶可夢中心基地", "早期工作台功能", "夢幻壁畫路線線索"],
-      "tagsEn": ["Tutorial", "Drought", "First Base", "Secret Route"],
-      "tagsZh": ["教學關卡", "極旱環境", "第一據點", "隱藏路線"],
-      "tagIcons": ["school", "wb_sunny", "home_work", "auto_stories"],
+      "requiredSkillsEn": [
+        "Water Gun",
+        "Basic Building",
+        "Early Habitat Setup"
+      ],
+      "requiredSkillsZh": [
+        "水槍",
+        "基礎建造",
+        "前期棲地佈置"
+      ],
+      "resourceFocusEn": [
+        "Soft Clay",
+        "Starter Timber",
+        "Early Food Plots"
+      ],
+      "resourceFocusZh": [
+        "軟泥",
+        "初期木材",
+        "早期農地"
+      ],
+      "notablePokemonEn": [
+        "Squirtle",
+        "Onix",
+        "Professor Tangrowth",
+        "Ditto"
+      ],
+      "notablePokemonZh": [
+        "傑尼龜",
+        "大岩蛇",
+        "巨蔓藤博士",
+        "百變怪"
+      ],
+      "unlocksEn": [
+        "Pokémon Center base",
+        "Early workbench access",
+        "Mew mural route awareness"
+      ],
+      "unlocksZh": [
+        "寶可夢中心基地",
+        "早期工作台功能",
+        "夢幻壁畫路線線索"
+      ],
+      "tagsEn": [
+        "Tutorial",
+        "Drought",
+        "First Base",
+        "Secret Route"
+      ],
+      "tagsZh": [
+        "教學關卡",
+        "極旱環境",
+        "第一據點",
+        "隱藏路線"
+      ],
+      "tagIcons": [
+        "school",
+        "wb_sunny",
+        "home_work",
+        "auto_stories"
+      ],
       "sourceLinks": [
         {
           "label": "Eurogamer Walkthrough",
@@ -53,8 +102,8 @@
     },
     {
       "id": "mural-passage",
-      "x": 33,
-      "y": 18,
+      "x": 24,
+      "y": 17,
       "icon": "auto_stories",
       "type": "special",
       "levelEn": "SECRET SITE",
@@ -77,17 +126,64 @@
         "以強化版居合斬切開內部金屬網。",
         "把 27 塊神秘石板全部嵌入壁畫。"
       ],
-      "requiredSkillsEn": ["Rock Smash", "Upgraded Slash", "Search or Dowsing support"],
-      "requiredSkillsZh": ["碎岩", "強化版居合斬", "搜尋專長或尋寶支援"],
-      "resourceFocusEn": ["Mysterious Slates", "Golden Dig Sites", "Puzzle Route"],
-      "resourceFocusZh": ["神秘石板", "黃金挖掘點", "謎題路線"],
-      "notablePokemonEn": ["Mew", "Unown symbols", "Search-specialty partners"],
-      "notablePokemonZh": ["夢幻", "未知圖騰符號", "搜尋專長夥伴"],
-      "unlocksEn": ["Mew encounter", "Mythical partner route", "Deepest hidden collectible loop"],
-      "unlocksZh": ["夢幻遭遇", "幻之寶可夢夥伴路線", "最深層的隱藏收集循環"],
-      "tagsEn": ["Mythical", "Puzzle", "Underground", "27 Slates"],
-      "tagsZh": ["幻之寶可夢", "謎題", "地下", "27 石板"],
-      "tagIcons": ["mystery", "extension", "tunnel", "grid_4x4"],
+      "requiredSkillsEn": [
+        "Rock Smash",
+        "Upgraded Slash",
+        "Search or Dowsing support"
+      ],
+      "requiredSkillsZh": [
+        "碎岩",
+        "強化版居合斬",
+        "搜尋專長或尋寶支援"
+      ],
+      "resourceFocusEn": [
+        "Mysterious Slates",
+        "Golden Dig Sites",
+        "Puzzle Route"
+      ],
+      "resourceFocusZh": [
+        "神秘石板",
+        "黃金挖掘點",
+        "謎題路線"
+      ],
+      "notablePokemonEn": [
+        "Mew",
+        "Unown symbols",
+        "Search-specialty partners"
+      ],
+      "notablePokemonZh": [
+        "夢幻",
+        "未知圖騰符號",
+        "搜尋專長夥伴"
+      ],
+      "unlocksEn": [
+        "Mew encounter",
+        "Mythical partner route",
+        "Deepest hidden collectible loop"
+      ],
+      "unlocksZh": [
+        "夢幻遭遇",
+        "幻之寶可夢夥伴路線",
+        "最深層的隱藏收集循環"
+      ],
+      "tagsEn": [
+        "Mythical",
+        "Puzzle",
+        "Underground",
+        "27 Slates"
+      ],
+      "tagsZh": [
+        "幻之寶可夢",
+        "謎題",
+        "地下",
+        "27 石板"
+      ],
+      "tagIcons": [
+        "mystery",
+        "extension",
+        "tunnel",
+        "grid_4x4"
+      ],
       "sourceLinks": [
         {
           "label": "Wikipedia",
@@ -101,8 +197,8 @@
     },
     {
       "id": "bleak-beach",
-      "x": 18,
-      "y": 68,
+      "x": 13,
+      "y": 60,
       "icon": "water",
       "type": "region",
       "levelEn": "REGION 2",
@@ -127,17 +223,72 @@
         "吸引波加曼清泥，並招募破破袋啟動回收流程。",
         "修復整個海灘電網，最終與雷公會面。"
       ],
-      "requiredSkillsEn": ["Water Gun", "Recycle", "Generate", "Burn", "Basic Wiring"],
-      "requiredSkillsZh": ["水槍", "回收", "發電", "燃燒", "基礎配線"],
-      "resourceFocusEn": ["Iron Ore from trash", "Sea debris", "Power infrastructure"],
-      "resourceFocusZh": ["垃圾轉化鐵礦", "海灘廢料", "發電基礎設施"],
-      "notablePokemonEn": ["Piplup", "Trubbish", "Mosslax", "Peakychu", "Raikou"],
-      "notablePokemonZh": ["波加曼", "破破袋", "Mosslax", "Peakychu", "雷公"],
-      "unlocksEn": ["Raikou sighting", "Beach power grid", "Recycling industry loop"],
-      "unlocksZh": ["雷公首次現蹤", "海灘電網恢復", "回收工業循環"],
-      "tagsEn": ["Flooding", "Power Grid", "Raikou", "Peakychu"],
-      "tagsZh": ["水患", "電網", "雷公", "Peakychu"],
-      "tagIcons": ["flood", "bolt", "star", "person"],
+      "requiredSkillsEn": [
+        "Water Gun",
+        "Recycle",
+        "Generate",
+        "Burn",
+        "Basic Wiring"
+      ],
+      "requiredSkillsZh": [
+        "水槍",
+        "回收",
+        "發電",
+        "燃燒",
+        "基礎配線"
+      ],
+      "resourceFocusEn": [
+        "Iron Ore from trash",
+        "Sea debris",
+        "Power infrastructure"
+      ],
+      "resourceFocusZh": [
+        "垃圾轉化鐵礦",
+        "海灘廢料",
+        "發電基礎設施"
+      ],
+      "notablePokemonEn": [
+        "Piplup",
+        "Trubbish",
+        "Mosslax",
+        "Peakychu",
+        "Raikou"
+      ],
+      "notablePokemonZh": [
+        "波加曼",
+        "破破袋",
+        "Mosslax",
+        "Peakychu",
+        "雷公"
+      ],
+      "unlocksEn": [
+        "Raikou sighting",
+        "Beach power grid",
+        "Recycling industry loop"
+      ],
+      "unlocksZh": [
+        "雷公首次現蹤",
+        "海灘電網恢復",
+        "回收工業循環"
+      ],
+      "tagsEn": [
+        "Flooding",
+        "Power Grid",
+        "Raikou",
+        "Peakychu"
+      ],
+      "tagsZh": [
+        "水患",
+        "電網",
+        "雷公",
+        "Peakychu"
+      ],
+      "tagIcons": [
+        "flood",
+        "bolt",
+        "star",
+        "person"
+      ],
       "sourceLinks": [
         {
           "label": "Eurogamer Walkthrough",
@@ -151,8 +302,8 @@
     },
     {
       "id": "rocky-ridges",
-      "x": 60,
-      "y": 30,
+      "x": 48,
+      "y": 44,
       "icon": "terrain",
       "type": "region",
       "levelEn": "REGION 3",
@@ -177,17 +328,68 @@
         "製作漢堡排，強化百變怪的碎岩能力。",
         "開採金礦、水晶碎片與熔岩岩石，供後續大型工程使用。"
       ],
-      "requiredSkillsEn": ["Burn", "Cooking", "Rock Smash", "Advanced Mining"],
-      "requiredSkillsZh": ["燃燒", "烹飪", "碎岩", "高階採礦"],
-      "resourceFocusEn": ["Copper Ingots", "Gold Ore", "Crystal Shards", "Lava Rocks"],
-      "resourceFocusZh": ["銅錠", "金礦", "水晶碎片", "熔岩岩石"],
-      "notablePokemonEn": ["Chef Dente", "Magmar", "Conkeldurr staging crew"],
-      "notablePokemonZh": ["主廚 Dente", "鴨嘴火獸", "修建老匠施工班底"],
-      "unlocksEn": ["Burger Patty upgrade", "High-grade mining", "Huge Building support materials"],
-      "unlocksZh": ["漢堡排強化", "高階採礦", "巨大建築支援材料"],
-      "tagsEn": ["Volcanic Ash", "Chef Dente", "Smelting", "Rock Smash Upgrade"],
-      "tagsZh": ["火山灰", "主廚 Dente", "冶煉", "碎岩強化"],
-      "tagIcons": ["local_fire_department", "person", "construction", "hardware"],
+      "requiredSkillsEn": [
+        "Burn",
+        "Cooking",
+        "Rock Smash",
+        "Advanced Mining"
+      ],
+      "requiredSkillsZh": [
+        "燃燒",
+        "烹飪",
+        "碎岩",
+        "高階採礦"
+      ],
+      "resourceFocusEn": [
+        "Copper Ingots",
+        "Gold Ore",
+        "Crystal Shards",
+        "Lava Rocks"
+      ],
+      "resourceFocusZh": [
+        "銅錠",
+        "金礦",
+        "水晶碎片",
+        "熔岩岩石"
+      ],
+      "notablePokemonEn": [
+        "Chef Dente",
+        "Magmar",
+        "Conkeldurr staging crew"
+      ],
+      "notablePokemonZh": [
+        "主廚 Dente",
+        "鴨嘴火獸",
+        "修建老匠施工班底"
+      ],
+      "unlocksEn": [
+        "Burger Patty upgrade",
+        "High-grade mining",
+        "Huge Building support materials"
+      ],
+      "unlocksZh": [
+        "漢堡排強化",
+        "高階採礦",
+        "巨大建築支援材料"
+      ],
+      "tagsEn": [
+        "Volcanic Ash",
+        "Chef Dente",
+        "Smelting",
+        "Rock Smash Upgrade"
+      ],
+      "tagsZh": [
+        "火山灰",
+        "主廚 Dente",
+        "冶煉",
+        "碎岩強化"
+      ],
+      "tagIcons": [
+        "local_fire_department",
+        "person",
+        "construction",
+        "hardware"
+      ],
       "sourceLinks": [
         {
           "label": "Eurogamer Walkthrough",
@@ -202,7 +404,7 @@
     {
       "id": "sparkling-skylands",
       "x": 50,
-      "y": 14,
+      "y": 11,
       "icon": "cloud",
       "type": "region",
       "levelEn": "REGION 4",
@@ -225,17 +427,76 @@
         "找到巨鍛匠，啟動特殊齒輪交換循環。",
         "建立支撐巨大建築工程的長距離資源線。"
       ],
-      "requiredSkillsEn": ["Glide", "Build", "Smithing", "Recycle", "Concrete Production"],
-      "requiredSkillsZh": ["滑翔", "建造", "鍛造", "回收", "混凝土製造"],
-      "resourceFocusEn": ["Concrete", "Paper", "Glass", "Special Gears", "Pokémetal"],
-      "resourceFocusZh": ["混凝土", "紙張", "玻璃", "特殊齒輪", "寶可金屬"],
-      "notablePokemonEn": ["Dragonite", "Tinkmaster", "Conkeldurr", "Chef Dente", "Peakychu"],
-      "notablePokemonZh": ["快龍", "巨鍛匠", "修建老匠", "主廚 Dente", "Peakychu"],
-      "unlocksEn": ["Lift Platforms", "Huge Building route", "Mewtwo rooftop access"],
-      "unlocksZh": ["升降平台", "巨大建築路線", "超夢屋頂遭遇"],
-      "tagsEn": ["Sky Zone", "Glide", "Special Gears", "Huge Building"],
-      "tagsZh": ["空中區域", "滑翔", "特殊齒輪", "巨大建築"],
-      "tagIcons": ["flight", "air", "settings", "domain"],
+      "requiredSkillsEn": [
+        "Glide",
+        "Build",
+        "Smithing",
+        "Recycle",
+        "Concrete Production"
+      ],
+      "requiredSkillsZh": [
+        "滑翔",
+        "建造",
+        "鍛造",
+        "回收",
+        "混凝土製造"
+      ],
+      "resourceFocusEn": [
+        "Concrete",
+        "Paper",
+        "Glass",
+        "Special Gears",
+        "Pokémetal"
+      ],
+      "resourceFocusZh": [
+        "混凝土",
+        "紙張",
+        "玻璃",
+        "特殊齒輪",
+        "寶可金屬"
+      ],
+      "notablePokemonEn": [
+        "Dragonite",
+        "Tinkmaster",
+        "Conkeldurr",
+        "Chef Dente",
+        "Peakychu"
+      ],
+      "notablePokemonZh": [
+        "快龍",
+        "巨鍛匠",
+        "修建老匠",
+        "主廚 Dente",
+        "Peakychu"
+      ],
+      "unlocksEn": [
+        "Lift Platforms",
+        "Huge Building route",
+        "Mewtwo rooftop access"
+      ],
+      "unlocksZh": [
+        "升降平台",
+        "巨大建築路線",
+        "超夢屋頂遭遇"
+      ],
+      "tagsEn": [
+        "Sky Zone",
+        "Glide",
+        "Special Gears",
+        "Huge Building"
+      ],
+      "tagsZh": [
+        "空中區域",
+        "滑翔",
+        "特殊齒輪",
+        "巨大建築"
+      ],
+      "tagIcons": [
+        "flight",
+        "air",
+        "settings",
+        "domain"
+      ],
       "sourceLinks": [
         {
           "label": "Nintendo Life",
@@ -249,8 +510,8 @@
     },
     {
       "id": "huge-building",
-      "x": 56,
-      "y": 8,
+      "x": 60,
+      "y": 7,
       "icon": "domain",
       "type": "special",
       "levelEn": "MEGAPROJECT",
@@ -275,17 +536,76 @@
         "護送 Peakychu 參與 4F 施工。",
         "等待每層的現實時間施工結束，再一路登上屋頂。"
       ],
-      "requiredSkillsEn": ["Build", "Smithing", "Cooking route", "Resource automation", "Glide logistics"],
-      "requiredSkillsZh": ["建造", "鍛造", "料理路線", "資源自動化", "滑翔物流"],
-      "resourceFocusEn": ["Concrete", "Glass", "Pokémetal", "Glow Stones", "Paper", "Lumber"],
-      "resourceFocusZh": ["混凝土", "玻璃", "寶可金屬", "發光石", "紙張", "木材"],
-      "notablePokemonEn": ["Tinkmaster", "Chef Dente", "Peakychu", "Mewtwo"],
-      "notablePokemonZh": ["巨鍛匠", "主廚 Dente", "Peakychu", "超夢"],
-      "unlocksEn": ["Mewtwo rooftop encounter", "Late-game construction completion", "Skylands narrative climax"],
-      "unlocksZh": ["超夢屋頂遭遇", "後期大型工程完成", "空島劇情高潮"],
-      "tagsEn": ["Real-time Build", "Escort Requirement", "Mewtwo", "Late Game"],
-      "tagsZh": ["現實時間施工", "護送條件", "超夢", "後期工程"],
-      "tagIcons": ["schedule", "groups", "auto_awesome", "construction"],
+      "requiredSkillsEn": [
+        "Build",
+        "Smithing",
+        "Cooking route",
+        "Resource automation",
+        "Glide logistics"
+      ],
+      "requiredSkillsZh": [
+        "建造",
+        "鍛造",
+        "料理路線",
+        "資源自動化",
+        "滑翔物流"
+      ],
+      "resourceFocusEn": [
+        "Concrete",
+        "Glass",
+        "Pokémetal",
+        "Glow Stones",
+        "Paper",
+        "Lumber"
+      ],
+      "resourceFocusZh": [
+        "混凝土",
+        "玻璃",
+        "寶可金屬",
+        "發光石",
+        "紙張",
+        "木材"
+      ],
+      "notablePokemonEn": [
+        "Tinkmaster",
+        "Chef Dente",
+        "Peakychu",
+        "Mewtwo"
+      ],
+      "notablePokemonZh": [
+        "巨鍛匠",
+        "主廚 Dente",
+        "Peakychu",
+        "超夢"
+      ],
+      "unlocksEn": [
+        "Mewtwo rooftop encounter",
+        "Late-game construction completion",
+        "Skylands narrative climax"
+      ],
+      "unlocksZh": [
+        "超夢屋頂遭遇",
+        "後期大型工程完成",
+        "空島劇情高潮"
+      ],
+      "tagsEn": [
+        "Real-time Build",
+        "Escort Requirement",
+        "Mewtwo",
+        "Late Game"
+      ],
+      "tagsZh": [
+        "現實時間施工",
+        "護送條件",
+        "超夢",
+        "後期工程"
+      ],
+      "tagIcons": [
+        "schedule",
+        "groups",
+        "auto_awesome",
+        "construction"
+      ],
       "sourceLinks": [
         {
           "label": "Nintendo Life",
@@ -299,8 +619,8 @@
     },
     {
       "id": "palette-town",
-      "x": 78,
-      "y": 72,
+      "x": 70,
+      "y": 70,
       "icon": "home",
       "type": "region",
       "levelEn": "ENDGAME SANDBOX",
@@ -323,17 +643,72 @@
         "逐一解鎖八種進化型所需的特殊食物條件。",
         "登上三座高峰，回收傳說三神鳥的建築藍圖。"
       ],
-      "requiredSkillsEn": ["Trade", "Late-game habitat planning", "Road paving", "High-elevation traversal"],
-      "requiredSkillsZh": ["交易", "後期棲地規劃", "道路鋪設", "高海拔移動"],
-      "resourceFocusEn": ["Special Foods", "Road Blocks", "Water Habitats", "Peak Blueprints"],
-      "resourceFocusZh": ["特殊食物", "道路方塊", "水系棲地", "高峰藍圖"],
-      "notablePokemonEn": ["Eevee", "All Eeveelutions", "Legendary Birds", "Ho-Oh", "Lugia"],
-      "notablePokemonZh": ["伊布", "全進化型", "傳說三神鳥", "鳳王", "洛奇亞"],
-      "unlocksEn": ["Eeveelution habitats", "Legendary bird megaprojects", "Ho-Oh and Lugia bell routes"],
-      "unlocksZh": ["伊布進化型棲地", "三神鳥大型工程", "鳳王與洛奇亞的鈴鐺路線"],
-      "tagsEn": ["Eevee Family", "Sandbox", "Legendary Birds", "Bell Routes"],
-      "tagsZh": ["伊布家族", "沙盒", "傳說三神鳥", "鈴鐺路線"],
-      "tagIcons": ["pets", "emoji_events", "auto_awesome", "notifications_active"],
+      "requiredSkillsEn": [
+        "Trade",
+        "Late-game habitat planning",
+        "Road paving",
+        "High-elevation traversal"
+      ],
+      "requiredSkillsZh": [
+        "交易",
+        "後期棲地規劃",
+        "道路鋪設",
+        "高海拔移動"
+      ],
+      "resourceFocusEn": [
+        "Special Foods",
+        "Road Blocks",
+        "Water Habitats",
+        "Peak Blueprints"
+      ],
+      "resourceFocusZh": [
+        "特殊食物",
+        "道路方塊",
+        "水系棲地",
+        "高峰藍圖"
+      ],
+      "notablePokemonEn": [
+        "Eevee",
+        "All Eeveelutions",
+        "Legendary Birds",
+        "Ho-Oh",
+        "Lugia"
+      ],
+      "notablePokemonZh": [
+        "伊布",
+        "全進化型",
+        "傳說三神鳥",
+        "鳳王",
+        "洛奇亞"
+      ],
+      "unlocksEn": [
+        "Eeveelution habitats",
+        "Legendary bird megaprojects",
+        "Ho-Oh and Lugia bell routes"
+      ],
+      "unlocksZh": [
+        "伊布進化型棲地",
+        "三神鳥大型工程",
+        "鳳王與洛奇亞的鈴鐺路線"
+      ],
+      "tagsEn": [
+        "Eevee Family",
+        "Sandbox",
+        "Legendary Birds",
+        "Bell Routes"
+      ],
+      "tagsZh": [
+        "伊布家族",
+        "沙盒",
+        "傳說三神鳥",
+        "鈴鐺路線"
+      ],
+      "tagIcons": [
+        "pets",
+        "emoji_events",
+        "auto_awesome",
+        "notifications_active"
+      ],
       "sourceLinks": [
         {
           "label": "Games.gg",
@@ -347,8 +722,8 @@
     },
     {
       "id": "altar-of-flame",
-      "x": 68,
-      "y": 56,
+      "x": 60,
+      "y": 60,
       "icon": "local_fire_department",
       "type": "special",
       "levelEn": "LEGENDARY PROJECT",
@@ -371,17 +746,64 @@
         "先整理能安全施工的熔岩地形。",
         "備齊高階金屬與熔岩岩石，完成火焰鳥祭壇。"
       ],
-      "requiredSkillsEn": ["Crush", "Burn", "High-grade mining", "Terrain planning"],
-      "requiredSkillsZh": ["粉碎", "燃燒", "高階採礦", "地形規劃"],
-      "resourceFocusEn": ["Copper Ingots", "Gold Ingots", "Lava Rocks", "Pokémetal"],
-      "resourceFocusZh": ["銅錠", "金錠", "熔岩岩石", "寶可金屬"],
-      "notablePokemonEn": ["Moltres", "Rocky Ridges mining crew"],
-      "notablePokemonZh": ["火焰鳥", "岩石山脊採礦班底"],
-      "unlocksEn": ["Moltres encounter", "One-third of the Kanto bird route"],
-      "unlocksZh": ["火焰鳥遭遇", "關都三神鳥路線的第一大工地之一"],
-      "tagsEn": ["Moltres", "Lava", "Megastructure", "Peak Blueprint"],
-      "tagsZh": ["火焰鳥", "熔岩", "大型工地", "高峰藍圖"],
-      "tagIcons": ["whatshot", "volcano", "foundation", "map"],
+      "requiredSkillsEn": [
+        "Crush",
+        "Burn",
+        "High-grade mining",
+        "Terrain planning"
+      ],
+      "requiredSkillsZh": [
+        "粉碎",
+        "燃燒",
+        "高階採礦",
+        "地形規劃"
+      ],
+      "resourceFocusEn": [
+        "Copper Ingots",
+        "Gold Ingots",
+        "Lava Rocks",
+        "Pokémetal"
+      ],
+      "resourceFocusZh": [
+        "銅錠",
+        "金錠",
+        "熔岩岩石",
+        "寶可金屬"
+      ],
+      "notablePokemonEn": [
+        "Moltres",
+        "Rocky Ridges mining crew"
+      ],
+      "notablePokemonZh": [
+        "火焰鳥",
+        "岩石山脊採礦班底"
+      ],
+      "unlocksEn": [
+        "Moltres encounter",
+        "One-third of the Kanto bird route"
+      ],
+      "unlocksZh": [
+        "火焰鳥遭遇",
+        "關都三神鳥路線的第一大工地之一"
+      ],
+      "tagsEn": [
+        "Moltres",
+        "Lava",
+        "Megastructure",
+        "Peak Blueprint"
+      ],
+      "tagsZh": [
+        "火焰鳥",
+        "熔岩",
+        "大型工地",
+        "高峰藍圖"
+      ],
+      "tagIcons": [
+        "whatshot",
+        "volcano",
+        "foundation",
+        "map"
+      ],
       "sourceLinks": [
         {
           "label": "NintendoWire",
@@ -395,8 +817,8 @@
     },
     {
       "id": "abandoned-power-plant",
-      "x": 84,
-      "y": 60,
+      "x": 80,
+      "y": 58,
       "icon": "bolt",
       "type": "special",
       "levelEn": "LEGENDARY PROJECT",
@@ -419,17 +841,74 @@
         "組出 15 隻同時開工、且具備建造、發電、粉碎、飛行的施工隊。",
         "完成發電廠後觸發閃電鳥，並視遭遇順序解鎖海神鈴鐺。"
       ],
-      "requiredSkillsEn": ["Build", "Generate", "Crush", "Fly", "Large-scale logistics"],
-      "requiredSkillsZh": ["建造", "發電", "粉碎", "飛行", "大型物流"],
-      "resourceFocusEn": ["Copper Ingots", "Iron Ingots", "Sea Glass Shards", "Bricks", "Pokémetal"],
-      "resourceFocusZh": ["銅錠", "鐵錠", "海玻璃碎片", "磚塊", "寶可金屬"],
-      "notablePokemonEn": ["Zapdos", "Tinkmaster", "Pikachu line", "Conkeldurr"],
-      "notablePokemonZh": ["閃電鳥", "巨鍛匠", "皮卡丘系", "修建老匠"],
-      "unlocksEn": ["Zapdos encounter", "Tidal Bell recipe when bird order lines up", "Lugia route progression"],
-      "unlocksZh": ["閃電鳥遭遇", "特定順序下解鎖海神鈴鐺配方", "推進洛奇亞路線"],
-      "tagsEn": ["Zapdos", "15 Crew", "Electric Grid", "Lugia Path"],
-      "tagsZh": ["閃電鳥", "15 人工班", "電力工程", "洛奇亞路線"],
-      "tagIcons": ["bolt", "groups", "electrical_services", "waves"],
+      "requiredSkillsEn": [
+        "Build",
+        "Generate",
+        "Crush",
+        "Fly",
+        "Large-scale logistics"
+      ],
+      "requiredSkillsZh": [
+        "建造",
+        "發電",
+        "粉碎",
+        "飛行",
+        "大型物流"
+      ],
+      "resourceFocusEn": [
+        "Copper Ingots",
+        "Iron Ingots",
+        "Sea Glass Shards",
+        "Bricks",
+        "Pokémetal"
+      ],
+      "resourceFocusZh": [
+        "銅錠",
+        "鐵錠",
+        "海玻璃碎片",
+        "磚塊",
+        "寶可金屬"
+      ],
+      "notablePokemonEn": [
+        "Zapdos",
+        "Tinkmaster",
+        "Pikachu line",
+        "Conkeldurr"
+      ],
+      "notablePokemonZh": [
+        "閃電鳥",
+        "巨鍛匠",
+        "皮卡丘系",
+        "修建老匠"
+      ],
+      "unlocksEn": [
+        "Zapdos encounter",
+        "Tidal Bell recipe when bird order lines up",
+        "Lugia route progression"
+      ],
+      "unlocksZh": [
+        "閃電鳥遭遇",
+        "特定順序下解鎖海神鈴鐺配方",
+        "推進洛奇亞路線"
+      ],
+      "tagsEn": [
+        "Zapdos",
+        "15 Crew",
+        "Electric Grid",
+        "Lugia Path"
+      ],
+      "tagsZh": [
+        "閃電鳥",
+        "15 人工班",
+        "電力工程",
+        "洛奇亞路線"
+      ],
+      "tagIcons": [
+        "bolt",
+        "groups",
+        "electrical_services",
+        "waves"
+      ],
       "sourceLinks": [
         {
           "label": "Eurogamer",
@@ -443,8 +922,8 @@
     },
     {
       "id": "freezing-chambers",
-      "x": 88,
-      "y": 80,
+      "x": 74,
+      "y": 82,
       "icon": "ac_unit",
       "type": "special",
       "levelEn": "LEGENDARY PROJECT",
@@ -467,17 +946,62 @@
         "蒐集足夠石頭、冰塊與水晶碎片，穩定完成工程。",
         "蓋好冰結之室，完成三神鳥路線中的另一塊拼圖。"
       ],
-      "requiredSkillsEn": ["Freeze", "Mining", "Resource stockpiling"],
-      "requiredSkillsZh": ["冰凍", "採礦", "高階囤料"],
-      "resourceFocusEn": ["Stone", "Ice Blocks", "Crystal Shards", "Pokémetal"],
-      "resourceFocusZh": ["石頭", "冰塊", "水晶碎片", "寶可金屬"],
-      "notablePokemonEn": ["Articuno", "Freeze-specialty partners"],
-      "notablePokemonZh": ["急凍鳥", "冰凍專長夥伴"],
-      "unlocksEn": ["Articuno encounter", "Completion of the Kanto bird construction triangle"],
-      "unlocksZh": ["急凍鳥遭遇", "補完關都三神鳥工程三角"],
-      "tagsEn": ["Articuno", "Ice Blocks", "Crystal", "Peak Blueprint"],
-      "tagsZh": ["急凍鳥", "冰塊", "水晶", "高峰藍圖"],
-      "tagIcons": ["ac_unit", "view_in_ar", "diamond", "map"],
+      "requiredSkillsEn": [
+        "Freeze",
+        "Mining",
+        "Resource stockpiling"
+      ],
+      "requiredSkillsZh": [
+        "冰凍",
+        "採礦",
+        "高階囤料"
+      ],
+      "resourceFocusEn": [
+        "Stone",
+        "Ice Blocks",
+        "Crystal Shards",
+        "Pokémetal"
+      ],
+      "resourceFocusZh": [
+        "石頭",
+        "冰塊",
+        "水晶碎片",
+        "寶可金屬"
+      ],
+      "notablePokemonEn": [
+        "Articuno",
+        "Freeze-specialty partners"
+      ],
+      "notablePokemonZh": [
+        "急凍鳥",
+        "冰凍專長夥伴"
+      ],
+      "unlocksEn": [
+        "Articuno encounter",
+        "Completion of the Kanto bird construction triangle"
+      ],
+      "unlocksZh": [
+        "急凍鳥遭遇",
+        "補完關都三神鳥工程三角"
+      ],
+      "tagsEn": [
+        "Articuno",
+        "Ice Blocks",
+        "Crystal",
+        "Peak Blueprint"
+      ],
+      "tagsZh": [
+        "急凍鳥",
+        "冰塊",
+        "水晶",
+        "高峰藍圖"
+      ],
+      "tagIcons": [
+        "ac_unit",
+        "view_in_ar",
+        "diamond",
+        "map"
+      ],
       "sourceLinks": [
         {
           "label": "NintendoWire",
@@ -491,8 +1015,8 @@
     },
     {
       "id": "dream-islands",
-      "x": 86,
-      "y": 44,
+      "x": 90,
+      "y": 42,
       "icon": "nights_stay",
       "type": "special",
       "levelEn": "RANDOM EVENT",
@@ -515,17 +1039,68 @@
         "用強化後的碎岩破壞夢境島的金屬障礙。",
         "招募第三隻城都聖獸，解鎖透明鈴鐺配方。"
       ],
-      "requiredSkillsEn": ["Transport", "Rock Smash Upgrade", "Legendary route tracking"],
-      "requiredSkillsZh": ["運輸", "碎岩強化", "傳說路線追蹤"],
-      "resourceFocusEn": ["Doll variants", "Legendary habitats", "Bell recipes"],
-      "resourceFocusZh": ["娃娃型態", "傳說棲地", "鈴鐺配方"],
-      "notablePokemonEn": ["Drifloon", "Raikou", "Entei", "Suicune", "Ho-Oh"],
-      "notablePokemonZh": ["飄飄球", "雷公", "炎帝", "水君", "鳳王"],
-      "unlocksEn": ["Johto beast recruitment", "Clear Bell recipe", "Ho-Oh route progression"],
-      "unlocksZh": ["城都三聖獸招募", "透明鈴鐺配方", "鳳王路線推進"],
-      "tagsEn": ["Random", "Drifloon", "Johto Beasts", "Ho-Oh"],
-      "tagsZh": ["隨機生成", "飄飄球", "城都三聖獸", "鳳王"],
-      "tagIcons": ["shuffle", "bubble_chart", "explore", "star"],
+      "requiredSkillsEn": [
+        "Transport",
+        "Rock Smash Upgrade",
+        "Legendary route tracking"
+      ],
+      "requiredSkillsZh": [
+        "運輸",
+        "碎岩強化",
+        "傳說路線追蹤"
+      ],
+      "resourceFocusEn": [
+        "Doll variants",
+        "Legendary habitats",
+        "Bell recipes"
+      ],
+      "resourceFocusZh": [
+        "娃娃型態",
+        "傳說棲地",
+        "鈴鐺配方"
+      ],
+      "notablePokemonEn": [
+        "Drifloon",
+        "Raikou",
+        "Entei",
+        "Suicune",
+        "Ho-Oh"
+      ],
+      "notablePokemonZh": [
+        "飄飄球",
+        "雷公",
+        "炎帝",
+        "水君",
+        "鳳王"
+      ],
+      "unlocksEn": [
+        "Johto beast recruitment",
+        "Clear Bell recipe",
+        "Ho-Oh route progression"
+      ],
+      "unlocksZh": [
+        "城都三聖獸招募",
+        "透明鈴鐺配方",
+        "鳳王路線推進"
+      ],
+      "tagsEn": [
+        "Random",
+        "Drifloon",
+        "Johto Beasts",
+        "Ho-Oh"
+      ],
+      "tagsZh": [
+        "隨機生成",
+        "飄飄球",
+        "城都三聖獸",
+        "鳳王"
+      ],
+      "tagIcons": [
+        "shuffle",
+        "bubble_chart",
+        "explore",
+        "star"
+      ],
       "sourceLinks": [
         {
           "label": "PoGoskill",

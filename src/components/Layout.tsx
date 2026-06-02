@@ -270,6 +270,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </div>
+
+        <div className="border-t border-line-soft bg-surface-container-low">
+          <p className="px-margin-mobile md:px-margin-desktop py-md max-w-[1360px] mx-auto font-mono-metadata text-mono-metadata text-ink-faint leading-relaxed">
+            {t("footer.disclaimer")}
+          </p>
+        </div>
       </footer>
     </>
   );
