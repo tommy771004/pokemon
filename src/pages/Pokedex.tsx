@@ -220,7 +220,7 @@ export default function Pokedex() {
               <p className="font-body-base text-body-base text-ink-mute">{t("pokedex.noResults")}</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-sm sm:gap-md relative">
               {visible.map((pkmn: any) => (
                 <motion.article
                   key={pkmn.id}
@@ -228,22 +228,22 @@ export default function Pokedex() {
                   whileHover={pkmn.known ? { scale: 1.02, y: -2 } : {}}
                   className={`bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
                 >
-                  <div className="flex justify-between items-start mb-md">
+                  <div className="flex justify-between items-start mb-sm">
                     <span className={`font-body-italic text-body-italic ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
                       {pkmn.roman}
                     </span>
-                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-2 py-1 rounded-sm border border-line-soft">
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-1.5 py-0.5 rounded-sm border border-line-soft text-xs">
                       #{pkmn.id}
                     </span>
                   </div>
 
-                  <div className="w-full aspect-square mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
+                  <div className="w-full h-28 sm:h-32 mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
                     {pkmn.known ? (
                       <img
                         src={pkmn.image}
                         alt={pkmn.nameEn}
                         loading="lazy"
-                        className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500 p-2 md:p-4"
+                        className="object-contain max-w-[80px] max-h-[80px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
                       />
                     ) : (
                       <span className="material-symbols-outlined text-ink-faint text-4xl">visibility_off</span>
@@ -329,8 +329,8 @@ export default function Pokedex() {
             </button>
 
             <div className="grid grid-cols-1 sm:grid-cols-2">
-              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-lg aspect-square relative">
-                <img src={active.image} alt={active.nameEn} className="object-contain w-full h-full mb-4" />
+              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-md h-56 sm:h-auto sm:aspect-square relative flex-shrink-0">
+                <img src={active.image} alt={active.nameEn} className="object-contain max-w-[150px] max-h-[150px] sm:max-w-[200px] sm:max-h-[200px] mb-4" />
                 <div className="absolute bottom-2 right-2 text-[10px] text-ink-faint flex gap-1 bg-surface/50 backdrop-blur-sm px-2 py-1 rounded">
                   <span>{en ? "Img Source:" : "圖片出處:"}</span>
                   <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2">PokeAPI</a>

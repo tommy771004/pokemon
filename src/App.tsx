@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import * as React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import Layout from "./components/Layout";
@@ -16,28 +17,23 @@ function AnimatedRoutes() {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-        <Route path="/map" element={<PageWrapper><MapPage /></PageWrapper>} />
-        <Route path="/pokedex" element={<PageWrapper><Pokedex /></PageWrapper>} />
-        <Route path="/characters" element={<PageWrapper><Characters /></PageWrapper>} />
-        <Route path="/guide" element={<PageWrapper><Guide /></PageWrapper>} />
-      </Routes>
+      <motion.div
+        key={location.pathname}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="w-full"
+      >
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="/pokedex" element={<Pokedex />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/guide" element={<Guide />} />
+        </Routes>
+      </motion.div>
     </AnimatePresence>
-  );
-}
-
-function PageWrapper({ children }: { children: React.ReactNode }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="w-full"
-    >
-      {children}
-    </motion.div>
   );
 }
 

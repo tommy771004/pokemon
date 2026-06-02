@@ -125,16 +125,65 @@ export default function Guide() {
                 </ul>
               )}
 
+              {sec.steps && (
+                <div className="my-8 relative pl-6 border-l-2 border-primary/20 space-y-8">
+                  {sec.steps.map((step: any, sIdx: number) => (
+                    <div key={step.id || sIdx} className="relative group">
+                      {/* Timeline circular node marker */}
+                      <div className="absolute -left-[35px] top-1.5 w-6 h-6 rounded-full bg-paper border-2 border-primary flex items-center justify-center shadow-sm group-hover:bg-primary group-hover:text-paper transition-all">
+                        <span className="material-symbols-outlined text-[13px] font-bold text-primary group-hover:text-paper">
+                          {step.icon || "done"}
+                        </span>
+                      </div>
+                      
+                      {/* Detailed node card */}
+                      <div className="bg-bone border border-line-soft p-5 rounded-sm ambient-shadow hover:translate-x-1 hover:border-primary/50 transition-all">
+                        <div className="flex flex-wrap justify-between items-center gap-2 mb-3 border-b border-line-soft pb-2">
+                          <h4 className="font-headline-sm text-[15px] font-medium text-ink-soft flex items-center gap-2 m-0 p-0">
+                            <span className="font-mono-metadata text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-sm font-bold tracking-wider">
+                              STEP {sIdx + 1}
+                            </span>
+                            {en ? step.nodeTitleEn : step.nodeTitleZh}
+                          </h4>
+                          {step.badgeZh && (
+                            <span className="font-mono-metadata text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm bg-primary/15 text-primary border border-primary/30">
+                              {en ? (step.badgeEn || step.badgeZh) : step.badgeZh}
+                            </span>
+                          )}
+                        </div>
+                        <p className="font-body-base text-sm text-ink-main whitespace-pre-line leading-relaxed m-0">
+                          {en ? step.descEn : step.descZh}
+                        </p>
+                        
+                        {step.image && (
+                          <div className="mt-4 border border-line-soft p-1.5 rounded-sm bg-paper max-w-md">
+                            <img 
+                              src={step.image.src} 
+                              alt={step.nodeTitleEn} 
+                              className="w-full h-auto rounded-sm object-cover max-h-[300px]" 
+                              referrerPolicy="no-referrer"
+                            />
+                            <div className="p-2 font-mono-metadata text-[11px] text-ink-mute whitespace-normal leading-normal">
+                              {en ? step.image.captionEn : step.image.captionZh}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {sec.image && (
-                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center">
+                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center max-w-sm mx-auto">
                   <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">FIG. {index + 1}</div>
                   <img
                     src={sec.image.src}
                     alt={`Figure ${index + 1}`}
-                    className="w-full h-auto mb-4 rounded-sm object-cover max-h-[500px]"
+                    className="max-w-[180px] md:max-w-[220px] h-auto mb-4 rounded-sm object-contain"
                   />
-                  <div className="w-full text-left">
-                    <p className="font-mono-metadata text-mono-metadata text-ink-main whitespace-normal leading-relaxed">
+                  <div className="w-full text-center border-t border-line-soft pt-2">
+                    <p className="font-mono-metadata text-mono-metadata text-ink-main whitespace-normal leading-relaxed text-xs">
                       {en ? sec.image.captionEn : sec.image.captionZh}
                     </p>
                   </div>
