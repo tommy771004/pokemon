@@ -16,6 +16,7 @@
       },
       "relatedIds": [
         "beginner-tips",
+        "resource-refining",
         "legendary-encounters"
       ],
       "sections": [
@@ -158,10 +159,10 @@
               "badgeZh": "重力工程"
             },
             {
-              "nodeTitleEn": "Build the Skylands Giant (4F Limit)",
-              "nodeTitleZh": "摩天大樓重建與 4F 極限勞力",
-              "descEn": "Complete skyscraper floor by floor. Floor 4 strictly requires 40 Concrete, 15 Glass, 10 Paper, 10 Bricks, 20 Lumber, plus escorting Peakychu.",
-              "descZh": "逐層施工這座終極摩天大樓，每一層皆需現實 1 小時精心灌注。\n其中 4 樓難度最高，強制需要：40混凝土、15玻璃、10紙張、10磚塊、20木材，此外必須大老遠從荒涼海灘護送「Peakychu」施工團隊前來，搭配 5 隻具有建造專長的夥計高空施建！",
+              "nodeTitleEn": "Rebuild the Huge Building (Floors 2–4)",
+              "nodeTitleZh": "摩天大樓重建（2F → 4F 全樓層）",
+              "descEn": "Reconstruct the skyscraper floor by floor — each floor takes a full hour of real time to cure before the next can begin.\n• 2F: 25 Concrete · 10 Glass · 5 Pokémetal · 10 Iron Ingots.\n• 3F: 25 Concrete · 10 Glass · 10 Glow Stones · 15 Copper Ingots. Return to Rocky Ridges to shove a Strength block and mine the Glow Stones, then escort Chef Dente up to assist.\n• 4F: 40 Concrete · 15 Glass · 10 Paper · 10 Bricks · 20 Lumber. Escort Peakychu from Bleak Beach to round out the construction team. Stepping onto the rooftop after 4F triggers the Mewtwo encounter.",
+              "descZh": "逐層重建這座終極摩天大樓，每一層皆需現實時間整整 1 小時凝固成形，才能接續下一層。\n• 2F：25 混凝土 · 10 玻璃 · 5 寶可金屬 · 10 鐵錠。\n• 3F：25 混凝土 · 10 玻璃 · 10 發光石 · 15 銅錠。需回到岩石山脊推開力量方塊開採發光石，並護送主廚 Dente 前來協助。\n• 4F：40 混凝土 · 15 玻璃 · 10 紙張 · 10 磚塊 · 20 木材。須從荒涼海灘護送 Peakychu 加入施工團隊。完成 4F 步上屋頂，即可觸發與超夢（Mewtwo）的相遇。",
               "icon": "domain",
               "badgeZh": "極限耗資"
             }
@@ -262,16 +263,60 @@
           "roman": "III.",
           "titleEn": "Storage Link & Paving Shortcuts",
           "titleZh": "工作台連動與鋪路快捷鍵",
-          "contentEn": "Hidden QoL mechanic: If you place a Storage Box within exactly 2 blocks of any Workbench, the workbench will automatically pull materials directly from the box — no need to keep inventory in your pockets. Additionally, for massive landscaping projects like Umbreon's 300-road block requirement, holding the 'ZR' trigger while walking will auto-pave the floor continuously in a straight line.",
-          "contentZh": "隱藏的 QoL 機制：只要將「收納箱」放置在距離「工作台」2 格的範圍以內，工作台就會自動讀取箱內的物資進行合成，不需手動挪到背包裡！這在巴哈姆特等社群廣受好評。此外，在進行大型整地或處理月亮伊布的 300 塊道路需求時，按住「ZR」鍵移動，即可在走過的路線上自動連續鋪設方塊。此外，你也能利用十字鍵快捷切換工作專長，來指派特定寶可夢幫忙燒礦。"
+          "contentEn": "These hidden QoL mechanics—widely shared on community boards like Bahamut—save enormous amounts of manual effort once your town starts to scale up.",
+          "contentZh": "以下是巴哈姆特等社群廣為流傳的隱藏 QoL 機制。當你的城鎮開始巨型化時，善用它們能省下大量手動操作的時間。",
+          "steps": [
+            {
+              "nodeTitleEn": "Storage ↔ Workbench Auto-Link",
+              "nodeTitleZh": "收納箱與工作台自動連動",
+              "descEn": "Place a Storage Box within 2 blocks of any Workbench and the bench will pull materials straight from the box during crafting — no need to shuffle items into your pockets first.",
+              "descZh": "只要將「收納箱」放置在距離「工作台」2 格的範圍以內，工作台合成時就會自動讀取箱內物資，完全不需先手動把材料挪進背包。",
+              "icon": "inventory_2",
+              "badgeZh": "倉儲連動"
+            },
+            {
+              "nodeTitleEn": "Hold ZR to Auto-Pave",
+              "nodeTitleZh": "按住 ZR 連續鋪設方塊",
+              "descEn": "For large landscaping jobs—such as Umbreon's 300 road blocks or Jolteon's 100 electrical blocks—hold the 'ZR' trigger while walking to auto-lay flooring continuously in a straight line.",
+              "descZh": "面對大型整地工程（例如月亮伊布的 300 塊道路或雷伊布的 100 塊電力方塊），只要按住「ZR」鍵邊走，就能沿路線自動連續鋪設方塊。",
+              "icon": "grid_on",
+              "badgeZh": "整地神技"
+            },
+            {
+              "nodeTitleEn": "D-pad Ability Swap",
+              "nodeTitleZh": "十字鍵快速切換專長",
+              "descEn": "Scroll the D-pad to instantly switch between copied abilities, and quickly assign a specific Pokémon to a task—such as commissioning a Fire-type to keep an ore furnace burning.",
+              "descZh": "利用十字鍵快速捲動切換已複製的能力，並迅速指派特定寶可夢執行工作，例如委託火系夥伴持續顧著熔礦爐燒礦。",
+              "icon": "swap_horiz",
+              "badgeZh": "快捷切換"
+            }
+          ]
         },
         {
           "id": "automation-tools",
           "roman": "IV.",
           "titleEn": "Security Cameras & Magnet Rise",
           "titleZh": "營運優化：監視器與電磁飄浮",
-          "contentEn": "Security Cameras allow you to monitor habitats remotely, sending notifications when target Pokémon spawn—a massive timesaver for patrolling. Magnet Rise: Find Magnemite in the spaceship crater post-game and build a 'Factory Warehouse' habitat (Metal Drum, Messy Cables, Control Unit, Street Lamp) to learn it. Pressing 'Y' instantly recycles blocks, while holding 'Y' lets you telekinetically grab and move entire trees or boulders, revolutionizing large-scale terraforming.",
-          "contentZh": "監視器 (Security Cameras) 允許遠端監控棲息地，當目標寶可夢生成時接收通知，解決了反覆巡邏的困擾。電磁飄浮 (Magnet Rise)：通關後在太空船坑洞中發現小磁怪。建立「工廠倉庫」棲息地（需金屬桶、凌亂電線、控制單元與路燈）後即可習得。此技能允許玩家按 Y 鍵瞬間破壞回收方塊，長按 Y 鍵則能隔空抓取移動整棵樹木 or 巨石，徹底顛覆大規模地底革命。"
+          "contentEn": "As your town grows huge, two endgame tools eliminate the most tedious chores: remote monitoring and telekinetic terraforming.",
+          "contentZh": "隨著城鎮巨型化，兩項後期工具能徹底消除最繁瑣的雜事：遠端監控與隔空整地。",
+          "steps": [
+            {
+              "nodeTitleEn": "Security Cameras",
+              "nodeTitleZh": "監視器 (Security Cameras)",
+              "descEn": "Install cameras to monitor habitats remotely and receive a notification the moment a target Pokémon spawns—removing the need to patrol back and forth across regions.",
+              "descZh": "架設監視器即可遠端監控各棲息地，當目標寶可夢生成時立即收到通知，徹底解決反覆跨區巡邏的困擾。",
+              "icon": "videocam",
+              "badgeZh": "遠端監控"
+            },
+            {
+              "nodeTitleEn": "Magnet Rise (Magnemite)",
+              "nodeTitleZh": "電磁飄浮 (Magnet Rise)",
+              "descEn": "Post-game, find Magnemite in the spaceship crater and build a 'Factory Warehouse' habitat (Metal Drum, Messy Cables, Control Unit, Street Lamp) to learn it. Press Y to instantly recycle blocks; hold Y to telekinetically grab and relocate entire trees or boulders—completely revolutionizing large-scale terraforming.",
+              "descZh": "通關後在太空船坑洞中發現小磁怪，建立「工廠倉庫」棲息地（需金屬桶、凌亂電線、控制單元與路燈）後即可習得。按 Y 鍵可瞬間破壞回收方塊；長按 Y 鍵則能隔空抓取並移動整棵樹木或巨石，徹底顛覆大規模地形改造的體驗。",
+              "icon": "control_camera",
+              "badgeZh": "終局神技"
+            }
+          ]
         }
       ]
     },
@@ -291,7 +336,7 @@
       },
       "relatedIds": [
         "regional-walkthrough",
-        "pokedex-ecology"
+        "palette-eevee"
       ],
       "sections": [
         {
@@ -299,8 +344,34 @@
           "roman": "I.",
           "titleEn": "Raikou — The Thundery Dream Island",
           "titleZh": "雷公 ── 雷鳴夢境群島",
-          "contentEn": "First spotted atop Bleak Beach cliffs after connecting the power grid. To fully recruit Raikou, transfer Pokémon Doll to Drifloon to embark on 'Pikachu Doll Dream Island (Oceanic)'. Venture into the deep subterranean cavern, consume high-grade chef steak to empower Ditto's Rock Smash, and obliterate the blocking heavy metal cubes at the cave heart.",
-          "contentZh": "在荒涼海灘點亮燈塔城網、拉通電網後，攀上懸崖頂端便能初次與雷公碰面。但要真正收歸麾下，你必須挑選並將「皮卡丘娃娃」交予飄飄球（Drifloon），飛抵隨機開啟的「皮卡丘娃娃夢境島（海洋型）」。踏入洞穴最深處，享用由岩石山脊帶來的「漢堡排」獲取爆發怪力，以擊破多個封鎖核心通道的沉重金屬方塊。"
+          "contentEn": "Raikou is the first legendary you can reach. The first sighting is free, but full recruitment routes through the randomly generated Dream Islands.",
+          "contentZh": "雷公是你能接觸到的第一隻傳說寶可夢。初次目睹是免費的，但要真正收歸麾下，必須經由隨機生成的夢境群島才能達成。",
+          "steps": [
+            {
+              "nodeTitleEn": "Clifftop First Sighting",
+              "nodeTitleZh": "懸崖頂端初次目擊",
+              "descEn": "After lighting up Bleak Beach by connecting every renewable power source, climb to the clifftop to meet Raikou for the very first time.",
+              "descZh": "在荒涼海灘完成所有再生能源串聯、點亮城鎮後，攀上懸崖頂端，即可與雷公初次碰面。",
+              "icon": "landscape",
+              "badgeZh": "初次目擊"
+            },
+            {
+              "nodeTitleEn": "Drifloon Dream Island",
+              "nodeTitleZh": "飄飄球與夢境群島入口",
+              "descEn": "Hand a Pikachu Doll to Drifloon to be carried to the 'Pikachu Doll Dream Island (Oceanic)'. The doll type determines the island biome.",
+              "descZh": "將「皮卡丘娃娃」交予飄飄球（Drifloon），由牠帶你飛抵「皮卡丘娃娃夢境島（海洋型）」。娃娃的種類會決定島嶼的生物群系。",
+              "icon": "flight",
+              "badgeZh": "夢境入口"
+            },
+            {
+              "nodeTitleEn": "Deep-Cave Recruit",
+              "nodeTitleZh": "深洞擊礦圓滿招募",
+              "descEn": "Venture into the cave's deepest chamber, eat a Burger Patty to power up Rock Smash, and shatter the heavy metal blocks sealing the core. Recruiting Raikou dramatically boosts the region's environment level.",
+              "descZh": "深入洞穴最底層，食用「漢堡排」強化怪力碎岩，擊破封鎖核心通道的沉重金屬方塊。成功招募雷公後，可大幅提升該區域的環境等級。",
+              "icon": "bolt",
+              "badgeZh": "圓滿招募"
+            }
+          ]
         },
         {
           "id": "mew",
@@ -383,8 +454,8 @@
             {
               "nodeTitleEn": "Altar of Flame (Moltres)",
               "nodeTitleZh": "火焰鳥的烈焰祭壇 (Altar of Flame)",
-              "descEn": "Requires 50 Copper Ingots, 50 Gold Ingots, 50 Ash Obsidian Blocks, and 10 Pokemetals. Extremely massive grid volume (33x35). Pave carefully over volcanic caldera.",
-              "descZh": "建材配方：50 個銅錠、50 個金錠、50 個熔岩玄武岩塊、10 個高級寶可金屬。\n注意事項：此項目在 Reddit 社群被公認佔地極廣（33x35），極易卡死，需要先在火山核心地段清理大片開鑿深地流，疏導岩漿溢流後才可著手鋪設底座。",
+              "descEn": "Requires 50 Copper Ingots, 50 Gold Ingots, 50 Lava Rocks, and 10 Pokémetals. Extremely massive grid footprint (~33×35). Pave carefully over the volcanic caldera.",
+              "descZh": "建材配方：50 個銅錠、50 個金錠、50 個熔岩岩石、10 個高級寶可金屬。\n注意事項：此項目在 Reddit 社群被公認佔地極廣（約 33×35 格），極易卡死，需要先在火山核心地段開鑿深溝、疏導岩漿溢流後，才可著手鋪設底座。",
               "icon": "local_fire_department",
               "badgeZh": "火焰大工"
             },
@@ -424,6 +495,7 @@
       },
       "relatedIds": [
         "regional-walkthrough",
+        "resource-refining",
         "beginner-tips"
       ],
       "sections": [
@@ -579,6 +651,173 @@
               "descZh": "強項功能：全集體智慧百科。由全球核心玩家聯動維護。收錄了最冷門的單件家具圖鑑、百變怪地形交互的隱藏格子坐標，以及論壇上玩家測試出的多套一鍵自動回收最佳管線配置。",
               "icon": "groups",
               "badgeZh": "社群聚合"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-refining",
+      "vol": "II",
+      "categoryEn": "Crafting & Refining",
+      "categoryZh": "資源精煉工業鏈",
+      "titleEn": "Resource Refining: Core Material Production Chains",
+      "titleZh": "資源精煉工業鏈：五大核心建材生產線全解析",
+      "subtitleEn": "Pokopia is built on a deep refining system. To clear badge quests and the giant end-game structures, you must integrate Pokémon of different specialties into proper production lines. Here is every core material chain, broken down node by node.",
+      "subtitleZh": "Pokopia 建立了一套極具深度的資源精煉系統。要應付徽章任務與終局大型工程，你必須把不同專長的寶可夢整合進生產線，形成工業鏈。以下逐節點拆解五大核心建材的生產流程。",
+      "stats": {
+        "optimalTimeEn": "Mid-game Backbone",
+        "optimalTimeZh": "中期生產骨幹",
+        "successRate": "5 Core Chains"
+      },
+      "relatedIds": [
+        "regional-walkthrough",
+        "team-initiation-challenge",
+        "beginner-tips"
+      ],
+      "sections": [
+        {
+          "id": "core-chains",
+          "roman": "I.",
+          "titleEn": "The Five Core Material Chains",
+          "titleZh": "五大核心建材生產線",
+          "contentEn": "Each chain pairs a raw resource with a specialty Pokémon and a processing station. Set these up early and the mid-to-late game stops being a grind.",
+          "contentZh": "每一條生產線都由「原料 ＋ 專長寶可夢 ＋ 加工設備」三者組成。儘早把它們搭建起來，中後期就不再是無止盡的苦工。",
+          "steps": [
+            {
+              "nodeTitleEn": "Lumber Chain (Scyther · Cut)",
+              "nodeTitleZh": "木材生產線（飛天螳螂・居合斬）",
+              "descEn": "Build a habitat with one large tree and four tall-grass plots to attract Scyther. Learn Cut to split logs into Small Wood Blocks, then commission Scyther to batch-process them into Lumber.",
+              "descZh": "建造包含一棵大樹與四格高草叢的棲息地以吸引飛天螳螂。學會「居合斬」即可劈開圓木取得小木塊，再委託飛天螳螂批量切割成木材。",
+              "icon": "forest",
+              "badgeZh": "木材"
+            },
+            {
+              "nodeTitleEn": "Brick Chain (Torchic / Charmander · Burn)",
+              "nodeTitleZh": "磚塊生產線（火稚雞 / 小火龍・燃燒）",
+              "descEn": "Trigger rainfall in the wasteland to gather Soft Clay, then build a 啾啾餐 habitat to attract Torchic or Charmander. Commission these Burn-specialty partners to kiln-bake the clay into Bricks.",
+              "descZh": "在荒野引發降雨以獲取「軟泥」，並建造「啾啾餐」棲息地吸引火稚雞或小火龍。委託這些具備「燃燒」專長的夥伴，將軟泥窯烤成磚塊。",
+              "icon": "foundation",
+              "badgeZh": "磚塊"
+            },
+            {
+              "nodeTitleEn": "Ingot Chain (Trubbish · Recycle + Furnace)",
+              "nodeTitleZh": "金屬錠生產線（破破袋・回收 ＋ 熔煉爐）",
+              "descEn": "Mine ore directly, or have Trubbish recycle non-combustible trash into Iron Ore. Build a Smelting Furnace and use a Fire-type's Burn ability to smelt the ore into Iron or Copper Ingots.",
+              "descZh": "除了直接開採礦脈，也可邀請具備「回收」專長的破破袋將「不可燃垃圾」轉化為鐵礦。取得鐵礦或銅礦後，建造「熔煉爐」，再借助火系寶可夢的燃燒能力冶煉成鐵錠或銅錠。",
+              "icon": "hardware",
+              "badgeZh": "金屬錠"
+            },
+            {
+              "nodeTitleEn": "Concrete Chain (Golem + Conkeldurr)",
+              "nodeTitleZh": "混凝土生產線（隆隆岩 ＋ 修建老匠）",
+              "descEn": "In the Sparkling Skylands, build a Construction Generator habitat to attract Conkeldurr. Golem's Crush ability breaks rock into Limestone; place the Concrete Mixer in water and let Conkeldurr process the Limestone into Concrete.",
+              "descZh": "在閃耀空島建造「工地發電機」棲息地吸引修建老匠。隆隆岩的「粉碎」可將岩石破壞成石灰岩；把「混凝土攪拌機」置入水中，再交由修建老匠將石灰岩加工成混凝土。",
+              "icon": "domain",
+              "badgeZh": "混凝土"
+            },
+            {
+              "nodeTitleEn": "Paper Chain (Waste Paper · Recycle)",
+              "nodeTitleZh": "紙張生產線（廢紙・回收）",
+              "descEn": "Collect Waste Paper scattered across the Sparkling Skylands and hand it to a Recycle-specialty Pokémon (such as Trubbish) to produce usable Paper for badges and 4F construction.",
+              "descZh": "在閃耀空島收集散落的「廢紙」，交由具「回收」專長的寶可夢（如破破袋）製作成可用的紙張，供徽章任務與摩天大樓 4F 建設使用。",
+              "icon": "description",
+              "badgeZh": "紙張"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "palette-eevee",
+      "vol": "IX",
+      "categoryEn": "Endgame Sandbox",
+      "categoryZh": "終局沙盒・真新鎮",
+      "titleEn": "Palette Town & the Eevee Restoration",
+      "titleZh": "真新鎮終局沙盒：伊布家族八型態復育全攻略",
+      "subtitleEn": "Clearing the main story unlocks the pure sandbox region of Palette Town, home to the toughest ecological challenge in the game—restoring Eevee and all eight of its evolutions. Every eeveelution habitat shares the same base recipe: 1 chair, 1 table, and 1 special food locked behind a specific milestone.",
+      "subtitleZh": "完成主線後即解鎖純沙盒區域「真新鎮」，這裡藏著全作最嚴苛的生態挑戰——伊布及其八種進化型態的復育。所有伊布棲息地的基礎配方都相同：1 張椅子、1 張桌子，外加 1 種被鎖在特定里程碑之後的特殊食物。",
+      "stats": {
+        "optimalTimeEn": "Post-game Sandbox",
+        "optimalTimeZh": "通關後沙盒挑戰",
+        "successRate": "8 Eeveelutions"
+      },
+      "relatedIds": [
+        "legendary-encounters",
+        "beginner-tips"
+      ],
+      "sections": [
+        {
+          "id": "eevee-base",
+          "roman": "I.",
+          "titleEn": "Eevee & the Base Recipe",
+          "titleZh": "伊布與棲息地基礎配方",
+          "contentEn": "Eevee itself is encountered the moment you enter the Palette Town Pokémon Center—no special condition required—and carries the Trade specialty. Every evolution then needs the same base habitat (1 chair + 1 table) plus its own unique unlocked food.",
+          "contentZh": "進入真新鎮寶可夢中心即可遭遇伊布本體，無任何特殊條件，且牠具備「交易」專長。之後每一種進化型態都需要相同的基礎棲息地（1 張椅子 ＋ 1 張桌子），再加上各自專屬、需解鎖的特殊食物。",
+          "steps": [
+            {
+              "nodeTitleEn": "Vaporeon — Ice Cream Soda",
+              "nodeTitleZh": "水伊布 — 冰淇淋汽水",
+              "descEn": "Unlock the Ice Cream Soda recipe by building 10 Water-type habitats throughout Palette Town.",
+              "descZh": "在真新鎮建造 10 個水系棲息地，即可解鎖「冰淇淋汽水」食譜。",
+              "icon": "icecream",
+              "badgeZh": "水系"
+            },
+            {
+              "nodeTitleEn": "Jolteon — French Fries",
+              "nodeTitleZh": "雷伊布 — 炸薯條",
+              "descEn": "Lay a total of 100 electrical facility blocks across the town to unlock the French Fries recipe.",
+              "descZh": "在真新鎮鋪設合計 100 塊電力設施方塊，解鎖「炸薯條」食譜。",
+              "icon": "electric_bolt",
+              "badgeZh": "電系"
+            },
+            {
+              "nodeTitleEn": "Flareon — Pizza",
+              "nodeTitleZh": "火伊布 — 披薩",
+              "descEn": "Commission Pokémon to assist with construction tasks 15 times to unlock the Pizza recipe.",
+              "descZh": "委託寶可夢協助建築施工合計 15 次，解鎖「披薩」食譜。",
+              "icon": "local_pizza",
+              "badgeZh": "火系"
+            },
+            {
+              "nodeTitleEn": "Espeon — Afternoon Tea Set (Day)",
+              "nodeTitleZh": "太陽伊布 — 下午茶組（白天）",
+              "descEn": "Have a Pokémon roommate living in your residence. Espeon only spawns during daytime hours; the food unlocked is the Afternoon Tea Set.",
+              "descZh": "需在居所中擁有一隻寶可夢室友同住。太陽伊布僅在白天時段生成；解鎖食物為「下午茶組」。",
+              "icon": "wb_sunny",
+              "badgeZh": "限白天"
+            },
+            {
+              "nodeTitleEn": "Umbreon — Chocolate Cookies (Night)",
+              "nodeTitleZh": "月亮伊布 — 巧克力餅乾（夜間）",
+              "descEn": "The most demanding eeveelution: lay 300 physical road blocks to unlock the Chocolate Cookies recipe. Umbreon only spawns at night.",
+              "descZh": "最硬核的型態：需鋪設高達 300 塊實體道路方塊，解鎖「巧克力餅乾」食譜。月亮伊布僅在夜間生成。",
+              "icon": "dark_mode",
+              "badgeZh": "限夜間"
+            },
+            {
+              "nodeTitleEn": "Leafeon — Sandwich",
+              "nodeTitleZh": "葉伊布 — 三明治",
+              "descEn": "Harvest 100 crops in total across Palette Town's farm plots to unlock the Sandwich recipe.",
+              "descZh": "在真新鎮農田合計收成 100 株農作物，解鎖「三明治」食譜。",
+              "icon": "eco",
+              "badgeZh": "草系"
+            },
+            {
+              "nodeTitleEn": "Glaceon — Shaved Ice",
+              "nodeTitleZh": "冰伊布 — 刨冰",
+              "descEn": "Reach the highest elevation point of Palette Town's terrain (the summit of the tallest island peak) to unlock the Shaved Ice recipe.",
+              "descZh": "抵達真新鎮地形的最高海拔點（最高島嶼山頂），解鎖「刨冰」食譜。",
+              "icon": "ac_unit",
+              "badgeZh": "冰系"
+            },
+            {
+              "nodeTitleEn": "Sylveon — Ribbon Cake",
+              "nodeTitleZh": "仙子伊布 — 緞帶蛋糕",
+              "descEn": "Encounter 10 different Pokémon species within Palette Town to unlock the Ribbon Cake recipe.",
+              "descZh": "在真新鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。",
+              "icon": "cake",
+              "badgeZh": "妖精系"
             }
           ]
         }
