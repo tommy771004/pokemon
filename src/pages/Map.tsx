@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
+import MapBackdrop from "../components/MapBackdrop";
 
 type SourceLink = {
   label: string;
@@ -119,7 +120,7 @@ export default function MapPage() {
 
         <section className="col-span-1 md:col-span-7 flex flex-col space-y-md relative h-full">
           <div
-            className="bg-bone hairline-border relative overflow-hidden group min-h-[340px] md:min-h-[560px] h-full flex flex-col"
+            className="bg-bone hairline-border relative overflow-hidden group min-h-[340px] md:min-h-[560px] flex flex-col"
             style={{
               backgroundImage:
                 "radial-gradient(circle at 18% 24%, rgba(165, 58, 44, 0.12), transparent 24%), radial-gradient(circle at 78% 70%, rgba(188, 142, 68, 0.15), transparent 22%), radial-gradient(circle at 54% 12%, rgba(76, 120, 90, 0.12), transparent 20%), linear-gradient(to right, var(--color-line-soft) 1px, transparent 1px), linear-gradient(to bottom, var(--color-line-soft) 1px, transparent 1px)",
@@ -131,11 +132,7 @@ export default function MapPage() {
             </div>
 
             <div className="relative flex-grow overflow-hidden">
-              <div className="absolute inset-0 opacity-60">
-                <div className="absolute left-[10%] top-[14%] w-32 h-32 rounded-full bg-primary/10 blur-3xl"></div>
-                <div className="absolute right-[14%] bottom-[12%] w-40 h-40 rounded-full bg-tertiary/10 blur-3xl"></div>
-                <div className="absolute left-[44%] top-[10%] w-28 h-28 rounded-full bg-secondary/10 blur-3xl"></div>
-              </div>
+              <MapBackdrop />
 
               {locations.map((loc) => (
                 <button
