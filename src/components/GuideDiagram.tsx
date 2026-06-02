@@ -139,7 +139,7 @@ function PlateFigure({ title, en, index }: { title: string; en: boolean; index: 
         <div className="w-16 h-16 rounded-full border-2 border-primary/50 text-primary flex items-center justify-center bg-paper-warm">
           <span className="material-symbols-outlined text-[32px]">draft</span>
         </div>
-        <span className="font-headline-sm text-[15px] text-ink-soft max-w-xs">{title}</span>
+        <span className="font-headline-sm text-[15px] text-ink-soft max-w-[16rem]">{title}</span>
         <span className="font-mono-metadata text-mono-metadata text-ink-faint uppercase tracking-widest">
           Pokopia Chronicles · Original Figure
         </span>

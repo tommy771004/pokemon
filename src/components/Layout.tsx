@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
+import { addSearchHistory, clearSearchHistory, getSearchHistory } from "../lib/searchHistory";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { t, i18n } = useTranslation();
@@ -10,6 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
+  const [searchHistory, setSearchHistory] = useState<string[]>([]);
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "zh" : "en");
@@ -17,15 +19,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const openSearch = () => {
     setIsMobileMenuOpen(false);
+    setSearchHistory(getSearchHistory());
     setIsSearchOpen(true);
+  };
+
+  const runSearch = (raw: string) => {
+    const q = raw.trim();
+    if (q) setSearchHistory(addSearchHistory(q));
+    navigate(q ? `/pokedex?q=${encodeURIComponent(q)}` : "/pokedex");
+    setIsSearchOpen(false);
+    setSearchValue("");
   };
 
   const submitSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const q = searchValue.trim();
-    navigate(q ? `/pokedex?q=${encodeURIComponent(q)}` : "/pokedex");
-    setIsSearchOpen(false);
-    setSearchValue("");
+    runSearch(searchValue);
   };
 
   const isCurrent = (path: string) => {
@@ -120,7 +128,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: -20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-bone border border-line rounded-DEFAULT ambient-shadow w-full max-w-xl p-lg relative paper-texture"
+              className="bg-bone border border-line rounded-2xl ambient-shadow w-full max-w-[36rem] p-6 md:p-8 relative paper-texture"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-md">
@@ -151,6 +159,36 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="font-mono-metadata text-mono-metadata text-ink-faint mt-sm">
                 {t("pokedex.searchHint")}
               </p>
+
+              {searchHistory.length > 0 && (
+                <div className="mt-md border-t border-line-soft pt-sm">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-label-caps text-label-caps text-ink-mute uppercase tracking-widest">
+                      {t("pokedex.recentSearches")}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setSearchHistory(clearSearchHistory())}
+                      className="font-mono-metadata text-mono-metadata text-ink-faint hover:text-primary transition-colors"
+                    >
+                      {t("pokedex.clear")}
+                    </button>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {searchHistory.map((q) => (
+                      <button
+                        key={q}
+                        type="button"
+                        onClick={() => runSearch(q)}
+                        className="font-mono-metadata text-mono-metadata text-ink-soft bg-paper-warm border border-line-soft rounded-full px-3 py-1 hover:text-primary hover:border-primary transition-colors flex items-center gap-1 max-w-full"
+                      >
+                        <span className="material-symbols-outlined text-[14px] shrink-0">history</span>
+                        <span className="truncate">{q}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}

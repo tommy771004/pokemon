@@ -35,6 +35,8 @@
     "allTypes": "All Types",
     "speciesLogged": "{{count}} Species Logged",
     "noResults": "No entries match your filters.",
+    "recentSearches": "Recent Searches",
+    "clear": "Clear",
     "specialty": "Specialty",
     "skills": "Skills",
     "role": "Role",
