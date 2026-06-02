@@ -1,78 +1,308 @@
 {
-  "vol": "IV",
-  "categoryEn": "Advanced Capture Tactics",
-  "categoryZh": "進階捕捉戰術",
-  "titleEn": "The Geometry of the Catch: Navigating the Ruined Spire",
-  "titleZh": "捕捉的幾何學：探索隕落之塔",
-  "subtitleEn": "A meticulous analysis of positioning, bait timing, and atmospheric disruption required to secure the elusive phantom of the Northern Crags.",
-  "subtitleZh": "對北部峭壁中難以捉摸的幽靈進行定位、誘餌時機和環境干擾的極其詳細的分析。",
-  "sections": [
+  "guides": [
     {
-      "id": "prerequisites",
-      "roman": "I.",
-      "titleEn": "Essential Loadout",
-      "titleZh": "必備裝備",
-      "contentEn": "Before stepping into the perimeter, ensure your inventory is curated for endurance rather than brute force. The high atmospheric pressure of the Crags reduces the efficacy of standard volatile capsules by nearly 30%. You must rely on precision-engineered traps.",
-      "contentZh": "在踏入周邊區域之前，請確保您的背包專為持久戰而準備，而非依賴蠻力。北部峭壁的高氣壓會將標準膠囊的效能降低將近 30%。您必須依賴精密設計的陷阱。"
-    },
-    {
-      "id": "approach",
-      "roman": "II.",
-      "titleEn": "The Asymmetric Approach",
-      "titleZh": "非對稱接近法",
-      "contentEn": "Do not approach the central dais directly. The target utilizes echolocation bounded by the hexagonal pillars. Move strictly along the perimeter, using the 1px architectural lines as your guide to remain in the acoustic shadows.",
-      "contentZh": "請勿直接接近中央平台。目標利用六角形柱子之間的邊界進行迴聲定位。嚴格沿著周邊移動，以 1px 粗細的建築線條為指引，保持在聲學陰影中。"
-    },
-    {
-      "id": "engagement",
-      "roman": "III.",
-      "titleEn": "Phases of Engagement",
-      "titleZh": "交戰階段",
-      "contentEn": "The encounter is divided into three distinct behavioral phases. Recognizing the transition between these phases is critical; a mis-timed throw during a transitional animation will result in immediate failure and potential loss of equipment.",
-      "contentZh": "這次遭遇戰分為三個截然不同的行為階段。識別這些階段之間的轉換至關重要；如果在過渡動畫中錯誤地投擲，將導致直接失敗並可能失去裝備。",
-      "listEn": [
-        "Phase 1: Observation. The target will circle the perimeter. Do not engage. Maintain concealment and monitor the behavioral loop.",
-        "Phase 2: Agitation. Upon sensing bait, the target will exhibit erratic movement. This is a false opening. Wait for the secondary pause.",
-        "Phase 3: Vulnerability. The target will briefly ground itself to consume the bait. The capture window is exactly 2.4 seconds."
+      "id": "team-initiation",
+      "vol": "I",
+      "categoryEn": "Complete Walkthrough",
+      "categoryZh": "主線流程全攻略",
+      "titleEn": "Team Initiation Challenge: All 8 Badges Complete Strategy Guide",
+      "titleZh": "團隊入會挑戰：全八枚徽章完整攻略",
+      "subtitleEn": "The mysterious tower on Bleak Beach tests your cross-region resource logistics. Each of the 8 phases demands specific materials sourced from across all five regions — here is how to efficiently prepare every item and complete Pokopia's final story milestone.",
+      "subtitleZh": "屹立於荒涼海灘的神秘高塔，考驗你跨越五大區域的資源調度能力。全八個階段各有不同物資需求，以下是高效取得每項物資、完成 Pokopia 主線終局里程碑的完整策略指南。",
+      "sections": [
+        {
+          "id": "badge1",
+          "roman": "I.",
+          "titleEn": "Rock Badge — Applin ×5",
+          "titleZh": "岩石徽章 ── 蘋野果 ×5",
+          "contentEn": "The simplest badge to obtain. Applin trees are scattered across Withered Wasteland — perform a headbutt on any Applin tree to dislodge the fruit. All 5 can be collected in the tutorial region before even leaving for Bleak Beach.",
+          "contentZh": "最容易取得的徽章。蘋野果樹遍布枯萎荒野各地，對著樹幹發動「頭錘」即可掉落果實。無需離開教學區，在抵達荒涼海灘前即可就地集齊 5 個。"
+        },
+        {
+          "id": "badge2",
+          "roman": "II.",
+          "titleEn": "Cascade Badge — Beans ×10 / Tomatoes ×10 / Wheat ×10",
+          "titleZh": "瀑布徽章 ── 豆子 ×10、番茄 ×10、小麥 ×10",
+          "contentEn": "Beans and Tomatoes are gathered along the shores of Bleak Beach. Wheat, however, is only available after advancing into Rocky Ridges. Build a Farming habitat and assign a Bulbasaur or Ivysaur with the 'Farming' specialty to accelerate crop yields. Wheat is also the key ingredient for Chef Dente's bread recipe in Rocky Ridges.",
+          "contentZh": "豆子與番茄可在荒涼海灘沿岸直接採集。小麥只有推進至岩石山脊後才能取得。建造農耕棲息地並指派擁有「栽種」專長的妙蛙種子或妙蛙草加速作物收穫。小麥同時也是岩石山脊主廚 Dente 麵包食譜的關鍵食材。"
+        },
+        {
+          "id": "badge3",
+          "roman": "III.",
+          "titleEn": "Thunder Badge — Lumber ×20 / Wool ×5 / Paper ×10",
+          "titleZh": "雷電徽章 ── 木材 ×20、絨毛 ×5、紙張 ×10",
+          "contentEn": "Lumber: Build a habitat containing one large tree and four tall-grass plots to attract Scyther. Learn the Cut move from Scyther, chop logs into small wood blocks, then commission Scyther for batch lumber production. Wool: Build a Mareep habitat and periodically harvest the fleece — Mareep's wool supply replenishes over time. Paper: Collect waste paper scattered across Sparkling Skylands and hand it to a Pokémon with the Recycle specialty (Trubbish is ideal) to process it into usable Paper.",
+          "contentZh": "木材：建造含一棵大樹與四格高草叢的棲息地吸引飛天螳螂（Scyther），向牠學習「居合斬」技能後劈開圓木，再委託其批量切割木材。絨毛：建造咩利羊（Mareep）棲息地定期收割羊毛，羊毛會隨時間自然補充。紙張：在閃耀空島收集散落的廢紙，交由擁有「回收」專長的寶可夢（推薦破破袋）加工製成可用紙張。"
+        },
+        {
+          "id": "badge4",
+          "roman": "IV.",
+          "titleEn": "Rainbow Badge — Bricks ×40 / Gold Ingots ×20 / Concrete ×50",
+          "titleZh": "彩虹徽章 ── 磚塊 ×40、金錠 ×20、混凝土 ×50",
+          "contentEn": "Bricks: Trigger rainfall in Withered Wasteland to obtain Soft Clay. Commission a Fire-type Pokémon with the Burn ability — Torchic or Charmander — to kiln-bake the clay into bricks. Gold Ingots: Mine gold ore in Rocky Ridges using the upgraded Rock Smash, then smelt it in a furnace with Magmar's Burn ability. Concrete: In Sparkling Skylands, build a Construction Generator habitat to attract Conkeldurr. Obtain the Concrete Mixer, submerge it in water, add Limestone (obtained by having Golem shatter rock formations), and have Conkeldurr process the mixture.",
+          "contentZh": "磚塊：在枯萎荒野引發降雨取得軟泥，委託具備「燃燒」能力的火系寶可夢（火稚雞或小火龍）將軟泥窯烤成磚塊。金錠：在岩石山脊以強化碎岩開採金礦，再以熔煉爐借助鴨嘴火獸的燃燒能力冶煉成金錠。混凝土：前往閃耀空島建造「工地發電機」棲息地吸引修建老匠（Conkeldurr）；取得混凝土攪拌機後置入水中，投入由隆隆岩破壞取得的石灰岩，交由修建老匠加工成混凝土。"
+        },
+        {
+          "id": "badge5",
+          "roman": "V.",
+          "titleEn": "Soul Badge — Electricity ×50 / Crystal Shards ×10 / Special Gears ×5",
+          "titleZh": "靈魂徽章 ── 電力 ×50、水晶碎片 ×10、特殊齒輪 ×5",
+          "contentEn": "Electricity: In Bleak Beach, use power poles to connect the windmill generator and lighthouse water wheel to the tower's electrical network. Each connected renewable energy source contributes electricity units toward the required 50. Crystal Shards: In Rocky Ridges, use the upgraded Rock Smash to mine glowing crystal seams. Special Gears: Commission Tinkmaster in Sparkling Skylands — bring concrete and iron ingots as payment to have the gears crafted for you.",
+          "contentZh": "電力：在荒涼海灘以電線桿將風車發電機與燈塔水車接入高塔電網，每個接入的再生能源設施貢獻電力值，累積至所需的 50 電力。水晶碎片：在岩石山脊使用強化版碎岩技能開採發光水晶礦脈。特殊齒輪：前往閃耀空島的巨鍛匠（Tinkmaster），以混凝土與鐵錠為報酬委託製作齒輪。"
+        },
+        {
+          "id": "badge6",
+          "roman": "VI.",
+          "titleEn": "Marsh Badge — Industrial Bed ×4 / Resort Lamp ×4 / Office Desk ×4",
+          "titleZh": "沼澤徽章 ── 工業床 ×4、渡假村燈 ×4、辦公桌 ×4",
+          "contentEn": "These three furniture types require blueprints found inside Poké Ball containers scattered across the world. Explore every region thoroughly and open every glowing Poké Ball you encounter — blueprints are distributed randomly. Once you have the recipes, gather the required raw materials and craft the furniture at any workbench.",
+          "contentZh": "這三類家具的製作藍圖散落在世界各地的精靈球容器中，需要徹底探索每個區域並開啟所有發光精靈球——藍圖為隨機分配。取得配方後，收集所需原料並在任意工作台製作完成即可。"
+        },
+        {
+          "id": "badge7",
+          "roman": "VII.",
+          "titleEn": "Volcano Badge — Washing Machine ×1 / Refrigerator ×1 / Game Boy ×1",
+          "titleZh": "火山徽章 ── 洗衣機 ×1、冰箱 ×1、Game Boy ×1",
+          "contentEn": "The Washing Machine and Refrigerator blueprints are locked until you raise the Environment Level of the first three regions (Withered Wasteland, Bleak Beach, Rocky Ridges) to Level 5 each. This requires building diverse habitats and maintaining high Pokémon comfort across all three zones simultaneously — resolve any habitat conflicts (e.g., never place water-loving Squirtle next to dry-rock-preferring Onix). The Game Boy is awarded automatically as a gift when Sparkling Skylands reaches its maximum environment level.",
+          "contentZh": "洗衣機與冰箱的藍圖只在前三個區域（枯萎荒野、荒涼海灘、岩石山脊）的環境等級同時達到 5 級後才會解鎖。這需要在各區域廣建多樣棲息地並維持高度寶可夢舒適度——務必避免棲息地需求衝突（例如不可將喜好水分的傑尼龜與偏好乾燥岩石的大岩蛇安置相鄰）。Game Boy 則在閃耀空島達到最高環境等級時自動贈送。"
+        },
+        {
+          "id": "badge8",
+          "roman": "VIII.",
+          "titleEn": "Earth Badge — Precious Photo ×1 / Party Popper ×2",
+          "titleZh": "大地徽章 ── 珍愛照片 ×1、派對拉炮 ×2",
+          "contentEn": "Party Poppers are obtained from the completion reward of the Withered Wasteland max-level mission. The Precious Photo is unique — activate photo mode during gameplay and capture a meaningful moment from your adventure, then designate it as your treasure. Submitting the photo triggers the ending cinematic: Professor Tangrowth and Ditto celebrate with party poppers, the precious photo is launched into space, and it is eventually discovered by Ditto's original Trainer aboard the human colony spaceship — a perfect resolution to the story.",
+          "contentZh": "派對拉炮可從枯萎荒野滿級任務的完成獎勵中取得。珍愛照片是獨特的一次性道具——在遊戲中啟動拍照模式，捕捉冒險旅程中最珍貴的一幕，並將其設定為珍愛寶物。繳交後觸發通關動畫：巨蔓藤博士與百變怪共同慶祝、燃放派對拉炮，珍愛照片隨火箭射向太空，最終被移居外太空的人類訓練家在太空船上發現，為整段旅程畫下完美句點。",
+          "listEn": [
+            "Party Poppers (×2): Complete Withered Wasteland max-level mission reward.",
+            "Precious Photo (×1): Use photo mode to capture a meaningful moment, then designate it as your treasure in the menu.",
+            "Tip: Take the photo at a landmark moment — the game recognizes photos taken with Pokémon friends nearby for added emotional resonance."
+          ],
+          "listZh": [
+            "派對拉炮（×2）：完成枯萎荒野滿級任務獎勵取得。",
+            "珍愛照片（×1）：使用拍照模式捕捉冒險中的珍貴畫面，並在選單中將其設定為「珍愛寶物」。",
+            "小提示：選在具有紀念意義的地點拍攝，且附近有寶可夢夥伴時，通關動畫的情感共鳴更為深刻。"
+          ]
+        }
       ],
-      "listZh": [
-        "第一階段：觀察。目標將在周邊盤旋。不要交戰。保持隱蔽並監控其行為循環。",
-        "第二階段：躁動。感知到誘餌後，目標將表現出不規則移動。這是一個假破綻。請等待第二次停頓。",
-        "第三階段：脆弱。目標將短暫落地進食誘餌。捕捉的黃金時間正好是 2.4 秒。"
-      ]
-    }
-  ],
-  "image": {
-    "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3kYhPKC24UPlh4L-tV0N7ASj6hp2iTHn60L_xj4s6TOIZRzPt3L2qapFdzQYRPRmTSzIBOzNabh3_jYg7Dr-dzDJD4mdUIGumpkYLPmCeky5QYmnlGmSIVC0VjDidxS1EyBHXg93aRfHRAhhq8cqFQRK8heaCIS9IkGKt93lXF7jpAspH0vS3kW5pk15N23lGHEqroDEoduCCphfBZL2R74iWw-DCQw9kZ4AZu5U9NhLIvtjbtV62tm21s18OFCz3O1Uyg1GmbklY",
-    "captionEn": "The Class IV Resonance Capsule, modified for high-altitude deployment. Note the reinforced locking ring.",
-    "captionZh": "四級共振膠囊，為高空部署而改裝。請注意其加固的鎖定環。"
-  },
-  "stats": {
-    "optimalTimeEn": "23:00",
-    "optimalTimeZh": "23:00",
-    "successRate": "14.2%"
-  },
-  "related": [
-    {
-      "vol": "Vol. III",
-      "categoryEn": "Botany",
-      "categoryZh": "植物學",
-      "titleEn": "Harvesting Subterranean Flora for Bait Synthesis",
-      "titleZh": "收穫地下植物群用於誘餌合成"
+      "image": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3kYhPKC24UPlh4L-tV0N7ASj6hp2iTHk60L_xj4s6TOIZRzPt3L2qapFdzQYRPRmTSzIBOzNabh3_jYg7Dr-dzDJD4mdUIGumpkYLPmCeky5QYmnlGmSIVC0VjDidxS1EyBHXg93aRfHRAhhq8cqFQRK8heaCIS9IkGKt93lXF7jpAspH0vS3kW5pk15N23lGHEqroDEoduCCphfBZL2R74iWw-DCQw9kZ4AZu5U9NhLIvtjbtV62tm21s18OFCz3O1Uyg1GmbklY",
+        "captionEn": "The Team Initiation Challenge Tower on Bleak Beach — all 8 badges stand between you and the ending credits.",
+        "captionZh": "位於荒涼海灘的「團隊入會挑戰」神秘高塔——完成全八枚徽章，才能迎來通關動畫。"
+      },
+      "stats": {
+        "optimalTimeEn": "Est. 15–20 hrs total",
+        "optimalTimeZh": "預計全程 15–20 小時",
+        "successRate": "Requires all 5 Regions"
+      },
+      "relatedIds": ["resource-chain", "legendary-encounters", "eevee-family"]
     },
     {
-      "vol": "Vol. II",
-      "categoryEn": "Cartography",
-      "categoryZh": "地圖製圖",
-      "titleEn": "Mapping the Acoustic Shadows of the Northern Crags",
-      "titleZh": "繪製北部峭壁的聲學陰影"
+      "id": "resource-chain",
+      "vol": "II",
+      "categoryEn": "Resource Guide",
+      "categoryZh": "資源攻略",
+      "titleEn": "The Industrial Chain: Lumber, Bricks, Ingots & Concrete",
+      "titleZh": "工業鏈全解析：木材、磚塊、金屬錠與混凝土",
+      "subtitleEn": "Pokopia replaces combat with industry. Mastering the resource refinement chain — and assigning the right Pokémon specialty to each stage — is the single biggest force multiplier for every construction project in the game.",
+      "subtitleZh": "Pokopia 以工業生產取代戰鬥。掌握資源精煉鏈、並為每道工序指派正確專長的寶可夢，是遊戲中所有建設工程最關鍵的效率倍增器。",
+      "sections": [
+        {
+          "id": "lumber",
+          "roman": "I.",
+          "titleEn": "Lumber — The Cut Chain",
+          "titleZh": "木材 ── 居合斬生產線",
+          "contentEn": "Build a habitat containing one large tree and four tall-grass plots to attract Scyther. Learn the Cut move from it so Ditto can split logs into small wood blocks, then commission Scyther to batch-process those blocks into finished Lumber. Lumber is the most frequently demanded raw material in the late game, so set up a dedicated Scyther line early.",
+          "contentZh": "建造包含一棵大樹與四格高草叢的棲息地吸引飛天螳螂（Scyther）。向牠學習「居合斬」，百變怪便能將圓木劈成小木塊，再委託飛天螳螂批量加工成成品木材。木材是後期需求量最大的原料，建議盡早建立專屬的飛天螳螂生產線。"
+        },
+        {
+          "id": "bricks",
+          "roman": "II.",
+          "titleEn": "Bricks — The Burn Chain",
+          "titleZh": "磚塊 ── 燃燒窯烤線",
+          "contentEn": "Trigger rainfall in Withered Wasteland to gather Soft Clay. Build a 啾啾餐 habitat to attract a Fire-type with the Burn specialty — Torchic or Charmander — then commission it to kiln-bake the clay into Bricks. The same Burn partners double as your smelting workforce, so position them centrally.",
+          "contentZh": "在枯萎荒野引發降雨以收集軟泥。建造「啾啾餐」棲息地吸引具備「燃燒」專長的火系寶可夢（火稚雞或小火龍），再委託其將軟泥窯烤成磚塊。同一批燃燒專長夥伴也兼任冶煉勞力，因此建議將牠們安置於中央位置。"
+        },
+        {
+          "id": "ingots",
+          "roman": "III.",
+          "titleEn": "Metal Ingots — Mining & Recycling",
+          "titleZh": "金屬錠 ── 開採與回收",
+          "contentEn": "There are two paths to ore. Mine veins directly with Rock Smash, or invite a Trubbish with the Recycle specialty to convert non-combustible trash into iron ore. Once you have copper or iron ore, build a Furnace and again call on a Fire-type's Burn ability to smelt it into Copper or Iron Ingots. Upgrading Rock Smash (via Chef Dente's Burger Patty) unlocks high-purity veins.",
+          "contentZh": "取得礦石有兩條途徑：以碎岩直接開採礦脈，或邀請具「回收」專長的破破袋將不可燃垃圾轉化為鐵礦。取得銅礦或鐵礦後，建造熔煉爐，再次借助火系寶可夢的「燃燒」能力將其冶煉成銅錠或鐵錠。透過主廚 Dente 的漢堡排強化碎岩後，即可開採高純度礦脈。"
+        },
+        {
+          "id": "concrete",
+          "roman": "IV.",
+          "titleEn": "Concrete & Paper — The Skylands Chain",
+          "titleZh": "混凝土與紙張 ── 空島加工線",
+          "contentEn": "Concrete is the keystone of every large build. In Sparkling Skylands, build a Construction Generator habitat to attract Conkeldurr, place the Concrete Mixer in water, and feed it Limestone — produced only when Golem's Crush ability shatters hard rock. Conkeldurr then processes the mix into Concrete. Paper is made by collecting waste paper in the Skylands and handing it to a Recycle-specialty partner.",
+          "contentZh": "混凝土是所有大型建築的基石。在閃耀空島建造「工地發電機」棲息地吸引修建老匠（Conkeldurr），將混凝土攪拌機置入水中，投入石灰岩——石灰岩只有在隆隆岩以「粉碎」擊碎堅硬岩層時才會產出。修建老匠隨後將混合料加工成混凝土。紙張則是在空島收集廢紙後，交由具回收專長的夥伴製成。",
+          "listEn": [
+            "Lumber: Scyther (Cut) — logs to wood blocks to lumber.",
+            "Bricks: Torchic / Charmander (Burn) — soft clay kiln-baked.",
+            "Ingots: Trubbish (Recycle) + Magmar (Burn) at the furnace.",
+            "Concrete: Golem (Crush) → Limestone → Conkeldurr (Build) at the mixer."
+          ],
+          "listZh": [
+            "木材：飛天螳螂（居合斬）── 圓木→小木塊→木材。",
+            "磚塊：火稚雞／小火龍（燃燒）── 軟泥窯烤而成。",
+            "金屬錠：破破袋（回收）＋鴨嘴火獸（燃燒）於熔煉爐冶煉。",
+            "混凝土：隆隆岩（粉碎）→石灰岩→修建老匠（建造）於攪拌機加工。"
+          ]
+        }
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000&q=80",
+        "captionEn": "A fully staffed refinement line: Cut, Burn, Recycle and Crush specialists feeding a single workbench.",
+        "captionZh": "一條人力齊備的精煉生產線：居合斬、燃燒、回收與粉碎專長的寶可夢共同供應同一座工作台。"
+      },
+      "stats": {
+        "optimalTimeEn": "Set up by Region 3",
+        "optimalTimeZh": "第三區域前建好",
+        "successRate": "5-Step Chain"
+      },
+      "relatedIds": ["team-initiation", "legendary-encounters", "eevee-family"]
     },
     {
-      "vol": "Vol. V",
-      "categoryEn": "Equipment",
-      "categoryZh": "裝備",
-      "titleEn": "Calibrating Resonance Capsules for High Altitude",
-      "titleZh": "針對高空校準共振膠囊"
+      "id": "legendary-encounters",
+      "vol": "III",
+      "categoryEn": "Legendary Guide",
+      "categoryZh": "傳說寶可夢攻略",
+      "titleEn": "All Legendary Encounters: Beasts, Birds, Mewtwo & Mew",
+      "titleZh": "全傳說寶可夢遭遇攻略：聖獸、神鳥、超夢與夢幻",
+      "subtitleEn": "From the first clifftop sighting of Raikou to the 27-slate Mew puzzle, Pokopia hides its legendaries behind major engineering projects and world-spanning scavenger hunts. Here is every encounter, in the order you can reasonably reach them.",
+      "subtitleZh": "從懸崖頂端初見雷公，到 27 塊石板的夢幻謎題，Pokopia 將傳說寶可夢藏在大型工程與橫跨世界的尋寶之後。以下依玩家能合理抵達的順序，整理每一場遭遇。",
+      "sections": [
+        {
+          "id": "raikou",
+          "roman": "I.",
+          "titleEn": "Raikou — The First Legend",
+          "titleZh": "雷公 ── 第一隻傳說",
+          "contentEn": "After restoring Bleak Beach's power grid and illuminating the town, climb to the clifftop for your first sighting. To actually recruit Raikou, give a Pikachu doll to Drifloon to reach the Ocean-variant Pikachu Doll Dream Island, descend into the cave, and clear the metal blocks with Burger Patty–enhanced Rock Smash. Recruiting it sharply raises the region's environment level.",
+          "contentZh": "在荒涼海灘修復電網、點亮城鎮後，攀上懸崖頂端即可初次目睹。要真正招募雷公，將皮卡丘娃娃交給飄飄球，前往「皮卡丘娃娃夢境島（海洋型）」，深入洞穴，以漢堡排強化後的碎岩擊破金屬方塊。成功招募可大幅提升該區域的環境等級。"
+        },
+        {
+          "id": "mewtwo",
+          "roman": "II.",
+          "titleEn": "Mewtwo — The Skylands Summit",
+          "titleZh": "超夢 ── 空島之巔",
+          "contentEn": "Mewtwo waits on the rooftop of the Huge Building in Sparkling Skylands. You must finish all four floors of the reconstruction — the 4th floor alone needs 40 concrete, 15 glass, 10 paper, 10 bricks and 20 lumber, plus a crew including Peakychu escorted from Bleak Beach — before the rooftop opens.",
+          "contentZh": "超夢在閃耀空島摩天大樓的屋頂等候。你必須完成全部四層樓的重建——光是 4 樓就需要 40 混凝土、15 玻璃、10 紙張、10 磚塊與 20 木材，外加一支包含從荒涼海灘護送而來的 Peakychu 的施工團隊——屋頂才會開放。"
+        },
+        {
+          "id": "birds",
+          "roman": "III.",
+          "titleEn": "The Three Birds — Altar Megaprojects",
+          "titleZh": "三神鳥 ── 祭壇巨型工程",
+          "contentEn": "In Palette Town, three yellow Poké Balls on the island peaks hold the altar blueprints for the Kanto legendary birds. Each is a massive build. Note that Zapdos's Abandoned Power Plant additionally requires 15 Pokémon on-site covering the Build, Generate, Crush and Fly specialties simultaneously — migrate partners in advance if your region lacks them.",
+          "contentZh": "在真新鎮，島嶼高峰上的三個黃色精靈球藏著關都傳說三神鳥的祭壇藍圖，每一座都是浩大工程。請注意，閃電鳥的「廢棄發電廠」額外要求 15 隻寶可夢同時在場，並涵蓋建造、發電、粉碎與飛行四種專長——若所在區域缺乏，請事先遷移夥伴前來。",
+          "listEn": [
+            "Moltres — Altar of Flame: 50 copper ingots, 50 gold ingots, 50 lava rocks, 10 Pokémetal (≈33×35 grid).",
+            "Zapdos — Abandoned Power Plant: 50 copper ingots, 50 iron ingots, 50 sea glass, 50 bricks, 10 Pokémetal + 15 specialist Pokémon.",
+            "Articuno — Freezing Chambers: 50 stone, 50 ice blocks, 10 crystal shards, 10 Pokémetal."
+          ],
+          "listZh": [
+            "火焰鳥 — 烈焰祭壇：50 銅錠、50 金錠、50 熔岩岩石、10 寶可金屬（約 33×35 格）。",
+            "閃電鳥 — 廢棄發電廠：50 銅錠、50 鐵錠、50 海玻璃、50 磚塊、10 寶可金屬，外加 15 隻專長寶可夢。",
+            "急凍鳥 — 冰結之室：50 石頭、50 冰塊、10 水晶碎片、10 寶可金屬。"
+          ]
+        },
+        {
+          "id": "mew",
+          "roman": "IV.",
+          "titleEn": "Mew — The 27-Slate Mural",
+          "titleZh": "夢幻 ── 27 塊石板壁畫",
+          "contentEn": "Back in Withered Wasteland, smash the cracked wall north of the Pokémon Center and cut the metal net with upgraded Slash to reach an underground mural with 27 Unown-shaped slots. Collect 27 unique Mysterious Slates from glowing golden dig sites worldwide — bring a Search-specialty partner or a Dowsing Machine to speed the hunt. Slot all 27 to summon Mew.",
+          "contentZh": "回到枯萎荒野，擊穿寶可夢中心北方的裂岩，並以強化版居合斬切開金屬網，抵達有 27 個未知圖騰形插槽的地下壁畫。在世界各地的發光黃金挖掘點收集 27 塊不重複的神秘石板——攜帶搜尋專長夥伴或尋寶機器可加速尋找。將 27 塊全數放入即可召喚夢幻。"
+        },
+        {
+          "id": "bells",
+          "roman": "V.",
+          "titleEn": "Ho-Oh & Lugia — The Twin Bells",
+          "titleZh": "鳳王與洛奇亞 ── 雙鈴鐺",
+          "contentEn": "Two crafted bells call the tower duo. Recruiting the third Johto Legendary Beast from the Dream Islands unlocks the Clear Bell, which summons Ho-Oh. Encountering Zapdos last among the three Kanto birds unlocks the Tidal Bell, which calls Lugia from the sea.",
+          "contentZh": "兩個可製作的鈴鐺能召喚這對塔之傳說。在夢境群島招募第三隻城都傳說聖獸後，解鎖召喚鳳王的「透明鈴鐺」；若閃電鳥是最後遭遇的關都三神鳥，則解鎖自海中喚出洛奇亞的「海神鈴鐺」。"
+        }
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=1000&q=80",
+        "captionEn": "The Altar of Flame under construction over the volcanic crater — note the excavated lava-diversion moats.",
+        "captionZh": "烈焰祭壇於火山口上方施工中——請注意周邊開鑿的熔岩疏導深溝。"
+      },
+      "stats": {
+        "optimalTimeEn": "Post-game focus",
+        "optimalTimeZh": "通關後主攻",
+        "successRate": "9 Legendaries"
+      },
+      "relatedIds": ["team-initiation", "resource-chain", "eevee-family"]
+    },
+    {
+      "id": "eevee-family",
+      "vol": "IV",
+      "categoryEn": "Eevee Guide",
+      "categoryZh": "伊布家族攻略",
+      "titleEn": "Eevee & All 8 Eeveelutions: Palette Town Unlock Conditions",
+      "titleZh": "伊布與全八種進化：真新鎮解鎖條件全攻略",
+      "subtitleEn": "The endgame sandbox of Palette Town hides its toughest ecological puzzle: restoring Eevee and every one of its evolutions. Each eeveelution shares one base habitat recipe but demands a unique food unlocked by a very specific milestone.",
+      "subtitleZh": "真新鎮的終局沙盒藏著最艱難的生態謎題：復育伊布及其每一種進化型態。每種伊布共用同一套基礎棲息地配方，卻各自需要由特定里程碑解鎖的獨特食物。",
+      "sections": [
+        {
+          "id": "base",
+          "roman": "I.",
+          "titleEn": "The Base Recipe & Eevee",
+          "titleZh": "基礎配方與伊布",
+          "contentEn": "Eevee itself is waiting inside Palette Town's Pokémon Center — no condition required, and it carries the Trade specialty. Every eeveelution habitat starts from the same base: 1 chair, 1 table, and 1 unique food item. The food is the real lock; everything below is about unlocking each recipe.",
+          "contentZh": "伊布本身就在真新鎮寶可夢中心等候——無需條件，並具備「交易」專長。每種伊布進化型態的棲息地都從相同基礎起步：1 張椅子、1 張桌子與 1 種獨特食物。真正的關卡在於食物；以下全是各食譜的解鎖方式。"
+        },
+        {
+          "id": "conditions",
+          "roman": "II.",
+          "titleEn": "All 8 Eeveelution Unlock Conditions",
+          "titleZh": "全八種伊布解鎖條件",
+          "contentEn": "Each eeveelution is gated behind a measurable building or exploration milestone in Palette Town. Several can be progressed in parallel, so plan road, water and power placement to satisfy multiple conditions at once.",
+          "contentZh": "每種伊布都受真新鎮中一項可量化的建設或探索里程碑所限制。其中數種可並行推進，因此請規劃道路、水源與電力的鋪設，一次滿足多個條件。",
+          "listEn": [
+            "Vaporeon — Ice Cream Soda: build 10 water-type habitats.",
+            "Jolteon — French Fries: lay 100 electrical facility blocks.",
+            "Flareon — Pizza: commission Pokémon to assist construction 15 times.",
+            "Espeon — Afternoon Tea Set: have a Pokémon roommate; daytime only.",
+            "Umbreon — Chocolate Cookies: lay 300 road blocks; night only.",
+            "Leafeon — Sandwich: harvest 100 crops.",
+            "Glaceon — Shaved Ice: reach the highest elevation point in Palette Town.",
+            "Sylveon — Ribbon Cake: encounter 10 different Pokémon species in town."
+          ],
+          "listZh": [
+            "水伊布 — 冰淇淋汽水：建造 10 個水系棲息地。",
+            "雷伊布 — 炸薯條：鋪設 100 塊電力設施方塊。",
+            "火伊布 — 披薩：委託寶可夢協助建築 15 次。",
+            "太陽伊布 — 下午茶組：擁有寶可夢室友；僅白天生成。",
+            "月亮伊布 — 巧克力餅乾：鋪設 300 塊道路方塊；僅夜間生成。",
+            "葉伊布 — 三明治：收成 100 株農作物。",
+            "冰伊布 — 刨冰：抵達真新鎮地形最高海拔點。",
+            "仙子伊布 — 緞帶蛋糕：在鎮上遭遇 10 種不同寶可夢。"
+          ]
+        },
+        {
+          "id": "daynight",
+          "roman": "III.",
+          "titleEn": "Day / Night & Efficiency Tips",
+          "titleZh": "晝夜與效率訣竅",
+          "contentEn": "Espeon (day) and Umbreon (night) are tied to the hidden 24-hour real-time clock, so schedule those habitats for the right time of day. Umbreon's 300 road blocks is the single largest grind — lay decorative roads you'd want anyway so the effort doubles as town-building. Sylveon's '10 species' condition naturally completes as you restore the other habitats.",
+          "contentZh": "太陽伊布（白天）與月亮伊布（夜晚）綁定隱藏的 24 小時即時時鐘，請在對的時段準備這些棲息地。月亮伊布的 300 塊道路是最大的肝度工程——鋪設你本來就想要的裝飾道路，讓努力同時兼顧城鎮建設。仙子伊布「10 種寶可夢」的條件，會在你復育其他棲息地的過程中自然達成。"
+        }
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1000&q=80",
+        "captionEn": "A Palette Town district laid out to satisfy several eeveelution conditions — water, roads and farmland in one block.",
+        "captionZh": "一處精心規劃的真新鎮街區，同時滿足多項伊布條件——水源、道路與農田集於一區。"
+      },
+      "stats": {
+        "optimalTimeEn": "Endgame sandbox",
+        "optimalTimeZh": "終局沙盒",
+        "successRate": "9 Forms Total"
+      },
+      "relatedIds": ["team-initiation", "resource-chain", "legendary-encounters"]
     }
   ]
 }
