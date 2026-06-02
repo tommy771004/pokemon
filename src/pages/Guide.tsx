@@ -156,14 +156,14 @@ export default function Guide() {
                         </p>
                         
                         {step.image && (
-                          <div className="mt-4 border border-line-soft p-1.5 rounded-sm bg-paper max-w-md">
+                          <div className="mt-4 border border-line-soft p-1.5 rounded-sm bg-paper w-full max-w-md">
                             <img 
                               src={step.image.src} 
                               alt={step.nodeTitleEn} 
                               className="w-full h-auto rounded-sm object-cover max-h-[300px]" 
                               referrerPolicy="no-referrer"
                             />
-                            <div className="p-2 font-mono-metadata text-[11px] text-ink-mute whitespace-normal leading-normal">
+                            <div className="p-2 font-mono-metadata text-[11px] text-ink-mute whitespace-normal leading-normal break-words">
                               {en ? step.image.captionEn : step.image.captionZh}
                             </div>
                           </div>
@@ -175,15 +175,18 @@ export default function Guide() {
               )}
 
               {sec.image && (
-                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center max-w-sm mx-auto">
+                <div className="bg-bone border border-line-soft p-5 my-8 relative ambient-shadow rounded-sm flex flex-col items-center w-full max-w-[280px] md:max-w-[340px] mx-auto">
                   <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">FIG. {index + 1}</div>
-                  <img
-                    src={sec.image.src}
-                    alt={`Figure ${index + 1}`}
-                    className="max-w-[180px] md:max-w-[220px] h-auto mb-4 rounded-sm object-contain"
-                  />
+                  <div className="w-full h-[180px] md:h-[220px] flex items-center justify-center p-2 bg-paper/30 rounded-sm mb-4 mt-6">
+                    <img
+                      src={sec.image.src}
+                      alt={`Figure ${index + 1}`}
+                      className="max-w-full max-h-full object-contain rounded-sm"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
                   <div className="w-full text-center border-t border-line-soft pt-2">
-                    <p className="font-mono-metadata text-mono-metadata text-ink-main whitespace-normal leading-relaxed text-xs">
+                    <p className="font-mono-metadata text-mono-metadata text-ink-main whitespace-normal leading-relaxed text-xs break-words">
                       {en ? sec.image.captionEn : sec.image.captionZh}
                     </p>
                   </div>
