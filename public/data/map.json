@@ -1,13 +1,12 @@
 {
-  "mapId": "SYS.MAP.POKOPIA.01",
-  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png",
-  "statusTickerEn": "// REGION 1 — WITHERED WASTELAND: EXTREME DROUGHT ACTIVE // RAIKOU SPOTTED: BLEAK BEACH CLIFFTOP // SPARKLING SKYLANDS: HUGE BUILDING 4F CONSTRUCTION OPEN // PALETTE TOWN: EEVEE ENCOUNTER UNLOCKED // MEW MURAL: 27-SLATE PUZZLE AVAILABLE IN UNDERGROUND PASSAGE",
-  "statusTickerZh": "// 區域一 枯萎荒野：極端乾旱持續中 // 雷公現蹤：荒涼海灘懸崖頂端 // 閃耀空島：摩天大樓 4F 建設已開放 // 真新鎮：伊布遭遇已解鎖 // 夢幻壁畫：27 塊石板謎題可解鎖於地下通道",
+  "mapId": "SYS.MAP.POKOPIA.02",
+  "statusTickerEn": "// WITHERED WASTELAND: HIDDEN MEW MURAL REQUIRES 27 MYSTERIOUS SLATES // BLEAK BEACH: PIPLUP MUD-CLEARING AND POWER-GRID RESTORATION ACTIVE // ROCKY RIDGES: CHEF DENTE RESCUE AND BURGER PATTY UPGRADE AVAILABLE // SPARKLING SKYLANDS: HUGE BUILDING 2F-4F CREW STAGING OPEN // PALETTE TOWN: LEGENDARY BIRD BLUEPRINTS DISCOVERED ON THE THREE PEAKS // DREAM ISLANDS: DRIFLOON ROUTES LEAD TO JOHTO BEAST ENCOUNTERS",
+  "statusTickerZh": "// 枯萎荒野：夢幻壁畫需要 27 塊神秘石板 // 荒涼海灘：波加曼除泥與電網修復進行中 // 岩石山脊：主廚 Dente 救援與漢堡排強化已開放 // 閃耀空島：巨大建築 2F-4F 施工整備完成 // 真新鎮：三神鳥藍圖已在三座高峰現蹤 // 夢境群島：飄飄球航線可通往城都三聖獸遭遇",
   "locations": [
     {
       "id": "withered-wasteland",
-      "x": 28,
-      "y": 28,
+      "x": 24,
+      "y": 24,
       "icon": "landscape",
       "type": "region",
       "levelEn": "TUTORIAL ZONE",
@@ -16,15 +15,93 @@
       "categoryZh": "起始區域",
       "nameEn": "Withered Wasteland",
       "nameZh": "枯萎荒野",
-      "descriptionEn": "The first region you arrive in, suffering from extreme drought. Complete the 'Yawn Up A Storm' quest: use Squirtle's Water Gun to water the cracked earth, trigger rainfall, and rescue the buried Onix. Rebuild the Pokémon Center to establish your base. A hidden mural with 27 Unown-shaped slots is concealed in an underground passage — access it by smashing a cracked wall north of the Pokémon Center and cutting through a metal net with upgraded Slash.",
-      "descriptionZh": "旅程的起點，飽受極端乾旱侵襲。完成主線任務「打個哈欠喚來暴雨」：學習傑尼龜的「水槍」技能，逐步滋潤龜裂大地，引發降雨拯救深埋地下的大岩蛇。重建寶可夢中心以建立據點。北方地下通道深處隱藏著一面有 27 個「未知圖騰」形插槽的壁畫——從寶可夢中心右側碎磚路向北，以碎岩技能擊穿裂岩後，再以強化版居合斬切開金屬網即可抵達。",
-      "tagsEn": ["Tutorial", "Drought", "Hidden Mural", "Mew Puzzle"],
-      "tagsZh": ["教學關卡", "極旱環境", "隱藏壁畫", "夢幻謎題"],
-      "tagIcons": ["school", "wb_sunny", "auto_stories", "mystery"]
+      "summaryEn": "The drought-stricken opening biome where Ditto learns the first restoration loop and reactivates the world's earliest safe base.",
+      "summaryZh": "極端乾旱的起始生態區，百變怪在此學會第一套復育循環，並重新啟用最初的安全據點。",
+      "descriptionEn": "Withered Wasteland is the tutorial biome of Pokopia and the clearest statement of the game's restoration-first design. Rescue Squirtle, copy Water Gun, revive the cracked soil, trigger rainfall for Onix, and rebuild the Pokémon Center to establish your first stable headquarters. The region also hides the route that later leads to Mew's underground mural puzzle.",
+      "descriptionZh": "枯萎荒野是《Pokopia》的教學區，也是最能代表本作「先復育、後擴張」設計哲學的地方。你必須先救援傑尼龜、學會水槍、一步步滋潤龜裂大地，引發降雨拯救大岩蛇，再重建寶可夢中心，建立第一個穩定據點。更重要的是，這裡還藏著通往夢幻地下壁畫謎題的秘密路線。",
+      "objectivesEn": [
+        "Rescue Squirtle and learn Water Gun.",
+        "Complete the 'Yawn Up A Storm' rainfall sequence for Onix.",
+        "Rebuild the Pokémon Center and stabilize early crafting."
+      ],
+      "objectivesZh": [
+        "救援傑尼龜並學會水槍。",
+        "完成「打個哈欠喚來暴雨」的降雨流程，解救大岩蛇。",
+        "重建寶可夢中心並穩定前期合成與據點機能。"
+      ],
+      "requiredSkillsEn": ["Water Gun", "Basic Building", "Early Habitat Setup"],
+      "requiredSkillsZh": ["水槍", "基礎建造", "前期棲地佈置"],
+      "resourceFocusEn": ["Soft Clay", "Starter Timber", "Early Food Plots"],
+      "resourceFocusZh": ["軟泥", "初期木材", "早期農地"],
+      "notablePokemonEn": ["Squirtle", "Onix", "Professor Tangrowth", "Ditto"],
+      "notablePokemonZh": ["傑尼龜", "大岩蛇", "巨蔓藤博士", "百變怪"],
+      "unlocksEn": ["Pokémon Center base", "Early workbench access", "Mew mural route awareness"],
+      "unlocksZh": ["寶可夢中心基地", "早期工作台功能", "夢幻壁畫路線線索"],
+      "tagsEn": ["Tutorial", "Drought", "First Base", "Secret Route"],
+      "tagsZh": ["教學關卡", "極旱環境", "第一據點", "隱藏路線"],
+      "tagIcons": ["school", "wb_sunny", "home_work", "auto_stories"],
+      "sourceLinks": [
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        },
+        {
+          "label": "PoGoskill",
+          "url": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+        }
+      ]
+    },
+    {
+      "id": "mural-passage",
+      "x": 33,
+      "y": 18,
+      "icon": "auto_stories",
+      "type": "special",
+      "levelEn": "SECRET SITE",
+      "levelZh": "隱藏地點",
+      "categoryEn": "Underground Passage",
+      "categoryZh": "地下通道",
+      "nameEn": "Mew Mural Passage",
+      "nameZh": "夢幻壁畫通道",
+      "summaryEn": "A sealed underground passage north of the Pokémon Center that hides the 27-slot mural used to summon Mew.",
+      "summaryZh": "位於寶可夢中心北側的封閉地下通道，深處藏著用來召喚夢幻的 27 格壁畫。",
+      "descriptionEn": "This hidden route opens only after you can smash the cracked wall and cut the metal net deeper inside the passage. At the end waits a mural with 27 Unown-shaped slots. Fill it with every Mysterious Slate collected from glowing golden dig sites around the world to trigger Mew's final appearance.",
+      "descriptionZh": "這條隱藏通道必須等到你能擊破裂岩、再以強化版居合斬切開深處的金屬網後才能真正打通。通道最底部是一面有 27 個未知圖騰形狀插槽的壁畫，必須蒐集全世界發光黃金挖掘點出現的神秘石板並全部歸位，才能真正召喚夢幻。",
+      "objectivesEn": [
+        "Smash the cracked wall north of the Pokémon Center.",
+        "Cut through the interior metal net with upgraded Slash.",
+        "Insert all 27 Mysterious Slates into the mural."
+      ],
+      "objectivesZh": [
+        "擊破寶可夢中心北側的裂岩牆。",
+        "以強化版居合斬切開內部金屬網。",
+        "把 27 塊神秘石板全部嵌入壁畫。"
+      ],
+      "requiredSkillsEn": ["Rock Smash", "Upgraded Slash", "Search or Dowsing support"],
+      "requiredSkillsZh": ["碎岩", "強化版居合斬", "搜尋專長或尋寶支援"],
+      "resourceFocusEn": ["Mysterious Slates", "Golden Dig Sites", "Puzzle Route"],
+      "resourceFocusZh": ["神秘石板", "黃金挖掘點", "謎題路線"],
+      "notablePokemonEn": ["Mew", "Unown symbols", "Search-specialty partners"],
+      "notablePokemonZh": ["夢幻", "未知圖騰符號", "搜尋專長夥伴"],
+      "unlocksEn": ["Mew encounter", "Mythical partner route", "Deepest hidden collectible loop"],
+      "unlocksZh": ["夢幻遭遇", "幻之寶可夢夥伴路線", "最深層的隱藏收集循環"],
+      "tagsEn": ["Mythical", "Puzzle", "Underground", "27 Slates"],
+      "tagsZh": ["幻之寶可夢", "謎題", "地下", "27 石板"],
+      "tagIcons": ["mystery", "extension", "tunnel", "grid_4x4"],
+      "sourceLinks": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Pokopia"
+        },
+        {
+          "label": "GameWith",
+          "url": "https://gamewith.jp/pocoapokemon/"
+        }
+      ]
     },
     {
       "id": "bleak-beach",
-      "x": 22,
+      "x": 18,
       "y": 68,
       "icon": "water",
       "type": "region",
@@ -34,16 +111,48 @@
       "categoryZh": "海岸區域",
       "nameEn": "Bleak Beach",
       "nameZh": "荒涼海灘",
-      "descriptionEn": "A waterlogged, dark coastline overrun with trash. Key steps: (1) Use dirt or stone floor tiles to patch the broken fountain and stop flooding. (2) Build Meowth a shelter with a Mushroom Lamp to restore calm. (3) Attract Poliwag to clear mud heaps, then build a trash collection station to recruit Trubbish for iron ore and shower construction. (4) 'Brighten Things Up!' megaquest: find and repair the beach windmill, lighthouse water wheel, and charging station. Craft power poles to wire the network together and have Fire-type Pokémon run the generator at full power — illuminating the whole town. Climb the clifftop afterward for a dialogue encounter with the legendary Raikou.",
-      "descriptionZh": "水患肆虐、陰暗且充滿垃圾的海岸線。主線流程：(1) 以泥土或石地板方塊修補破損噴泉，阻斷水流。(2) 為喵喵建造附有蘑菇燈的避難所。(3) 吸引波加曼清除泥堆，再建造垃圾收集站吸引破破袋取得鐵礦，建造淋浴間。(4)「Brighten things up!」大型發電工程：修復海灘風車、燈塔水車與充電站，製作電線桿串聯電網，讓火系寶可夢全力維持發電，點亮整座城鎮。完成後攀爬懸崖頂端，觸發與傳說寶可夢「雷公」的初次對話。",
-      "tagsEn": ["Flooding", "Power Grid", "Raikou Encounter", "Peakychu NPC"],
-      "tagsZh": ["水患地形", "發電串聯工程", "雷公遭遇", "Peakychu 夥伴"],
-      "tagIcons": ["flood", "bolt", "star", "person"]
+      "summaryEn": "A flooded, trash-choked shoreline where cleanup, recycling, and power-grid engineering become the new definition of progress.",
+      "summaryZh": "被水患與垃圾壓垮的陰暗海岸，清淤、回收與發電工程在這裡成了新的進度指標。",
+      "descriptionEn": "Bleak Beach is where Pokopia stops being a survival tutorial and becomes a systems game. Patch the broken fountain with blocks to halt flooding, build Meowth a shelter with a Mushroom Lamp, attract Piplup to wash away mud heaps, then build a garbage collection station so Trubbish can start the iron-ore loop. From there, the region escalates into the 'Brighten Things Up!' quest: repair the windmill, lighthouse water wheel, and charging station, wake Mosslax, wire everything with power poles, and finally climb the clifftop to meet Raikou.",
+      "descriptionZh": "荒涼海灘是《Pokopia》從新手求生轉進系統運作的第一個真正關卡。你要先用泥土或石地板修補破損噴泉止住水患，再替喵喵搭一個帶蘑菇燈的避難所，吸引波加曼把泥堆沖開，接著建造垃圾收集站，讓破破袋啟動鐵礦回收循環。之後整區會升級成「Brighten Things Up!」大型工程：修好風車、燈塔水車與充電站，喚醒 Mosslax，用電線桿串聯整個電網，最後爬上懸崖見到雷公。",
+      "objectivesEn": [
+        "Patch the broken fountain to stop the flooding.",
+        "Build Meowth's shelter with a Mushroom Lamp.",
+        "Attract Piplup to clear mud heaps and Trubbish to start recycling.",
+        "Restore the full beach power grid and meet Raikou."
+      ],
+      "objectivesZh": [
+        "修補破損噴泉，阻止水患擴散。",
+        "替喵喵搭建附有蘑菇燈的避難所。",
+        "吸引波加曼清泥，並招募破破袋啟動回收流程。",
+        "修復整個海灘電網，最終與雷公會面。"
+      ],
+      "requiredSkillsEn": ["Water Gun", "Recycle", "Generate", "Burn", "Basic Wiring"],
+      "requiredSkillsZh": ["水槍", "回收", "發電", "燃燒", "基礎配線"],
+      "resourceFocusEn": ["Iron Ore from trash", "Sea debris", "Power infrastructure"],
+      "resourceFocusZh": ["垃圾轉化鐵礦", "海灘廢料", "發電基礎設施"],
+      "notablePokemonEn": ["Piplup", "Trubbish", "Mosslax", "Peakychu", "Raikou"],
+      "notablePokemonZh": ["波加曼", "破破袋", "Mosslax", "Peakychu", "雷公"],
+      "unlocksEn": ["Raikou sighting", "Beach power grid", "Recycling industry loop"],
+      "unlocksZh": ["雷公首次現蹤", "海灘電網恢復", "回收工業循環"],
+      "tagsEn": ["Flooding", "Power Grid", "Raikou", "Peakychu"],
+      "tagsZh": ["水患", "電網", "雷公", "Peakychu"],
+      "tagIcons": ["flood", "bolt", "star", "person"],
+      "sourceLinks": [
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        },
+        {
+          "label": "PoGoskill",
+          "url": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+        }
+      ]
     },
     {
       "id": "rocky-ridges",
-      "x": 68,
-      "y": 32,
+      "x": 60,
+      "y": 30,
       "icon": "terrain",
       "type": "region",
       "levelEn": "REGION 3",
@@ -52,16 +161,48 @@
       "categoryZh": "火山遺跡",
       "nameEn": "Rocky Ridges",
       "nameZh": "岩石山脊",
-      "descriptionEn": "A vast ruin network buried under volcanic ash. Key quests: (1) Rescue trapped Chef Dente — build a Bread Oven, bake wheat bread, and eat it to gain the strength to break his chains. (2) Upgrade Rock Smash — lure Magmar (鴨嘴火獸) to the furnace to smelt copper ore into copper ingots, craft a Frying Pan, cook and eat a Burger Patty to power up Ditto's Rock Smash ability, unlocking high-grade ore veins and pure metal blocks. (3) Mining — use strengthened Rock Smash to extract gold ore, crystal shards, and lava rocks for later endgame constructions.",
-      "descriptionZh": "被火山灰掩埋的龐大遺跡網絡。主線任務：(1) 救出主廚 Dente——建造麵包爐、烤製小麥麵包並食用，獲得擊斷鎖鏈的力量。(2) 強化碎岩——吸引鴨嘴火獸（Magmar）至熔煉爐，將銅礦冶煉成銅錠，製作平底鍋，烹調並食用漢堡排，強化百變怪的碎岩能力，解鎖高純度礦脈與金屬大礦。(3) 採礦——以強化碎岩開採金礦、水晶碎片及熔岩岩石，用於後期終局建設。",
+      "summaryEn": "A volcanic ruin network where smelting, cooking, and upgraded Rock Smash finally turn the resource game into heavy industry.",
+      "summaryZh": "被火山灰掩埋的遺跡網絡，在這裡冶煉、料理與強化碎岩正式把資源玩法推進成重工業。",
+      "descriptionEn": "Rocky Ridges is the pivot from light restoration into forceful excavation. Rescue Chef Dente by baking wheat bread and using the strength boost to cut his chains. Then attract Magmar, smelt copper ore into ingots, forge a Frying Pan, and cook the Burger Patty that upgrades Ditto's Rock Smash. Only after that can you reliably shatter huge metal blocks, mine gold, crystal shards, and lava rocks, and prepare for the massive construction demands ahead.",
+      "descriptionZh": "岩石山脊是《Pokopia》從輕量修復正式轉進重型開採的分水嶺。你得先烤出小麥麵包，吃下去取得力量，再救出被鐵鍊綁住的主廚 Dente。之後吸引鴨嘴火獸，將銅礦熔成銅錠、打造平底鍋，烹調出能強化百變怪碎岩能力的漢堡排。只有完成這一段，才真正能穩定破壞巨型金屬塊，開採金礦、水晶碎片與熔岩岩石，替更龐大的工程做準備。",
+      "objectivesEn": [
+        "Rescue Chef Dente with the bread-strength sequence.",
+        "Smelt copper ore and craft the Frying Pan.",
+        "Cook Burger Patty to upgrade Ditto's Rock Smash.",
+        "Mine gold, crystal shards, and lava rocks for later megaprojects."
+      ],
+      "objectivesZh": [
+        "透過麵包強化流程救出主廚 Dente。",
+        "冶煉銅礦並打造平底鍋。",
+        "製作漢堡排，強化百變怪的碎岩能力。",
+        "開採金礦、水晶碎片與熔岩岩石，供後續大型工程使用。"
+      ],
+      "requiredSkillsEn": ["Burn", "Cooking", "Rock Smash", "Advanced Mining"],
+      "requiredSkillsZh": ["燃燒", "烹飪", "碎岩", "高階採礦"],
+      "resourceFocusEn": ["Copper Ingots", "Gold Ore", "Crystal Shards", "Lava Rocks"],
+      "resourceFocusZh": ["銅錠", "金礦", "水晶碎片", "熔岩岩石"],
+      "notablePokemonEn": ["Chef Dente", "Magmar", "Conkeldurr staging crew"],
+      "notablePokemonZh": ["主廚 Dente", "鴨嘴火獸", "修建老匠施工班底"],
+      "unlocksEn": ["Burger Patty upgrade", "High-grade mining", "Huge Building support materials"],
+      "unlocksZh": ["漢堡排強化", "高階採礦", "巨大建築支援材料"],
       "tagsEn": ["Volcanic Ash", "Chef Dente", "Smelting", "Rock Smash Upgrade"],
-      "tagsZh": ["火山灰地形", "主廚 Dente", "冶煉作業", "碎岩強化"],
-      "tagIcons": ["local_fire_department", "person", "construction", "hardware"]
+      "tagsZh": ["火山灰", "主廚 Dente", "冶煉", "碎岩強化"],
+      "tagIcons": ["local_fire_department", "person", "construction", "hardware"],
+      "sourceLinks": [
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        },
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokmon-pokopia-team-initiation-challenge-guide"
+        }
+      ]
     },
     {
       "id": "sparkling-skylands",
       "x": 50,
-      "y": 16,
+      "y": 14,
       "icon": "cloud",
       "type": "region",
       "levelEn": "REGION 4",
@@ -70,16 +211,96 @@
       "categoryZh": "空中群島",
       "nameEn": "Sparkling Skylands",
       "nameZh": "閃耀空島",
-      "descriptionEn": "Floating garbage islands and an unfinished skyscraper. Key progression: (1) Build a Waterside Boat habitat to attract Dragonite and learn Glide for island traversal. (2) Meet Tinkmaster (巨鍛匠) — exchange concrete and iron ingots for Special Gears to craft Lift Platforms. (3) 'Rebuild the Huge Building' — reconstruct floor by floor, each taking 1 real-time hour. 2F: 25 concrete, 10 glass, 5 Pokémetal, 10 iron ingots. 3F: 25 concrete, 10 glass, 10 glowstone, 15 copper ingots (requires escorting Chef Dente). 4F: 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber (requires fetching Peakychu from Bleak Beach). Reaching the rooftop after 4F triggers the Mewtwo encounter.",
-      "descriptionZh": "由漂浮垃圾島與未完工摩天大樓組成的空中世界。主線流程：(1) 建造水邊小艇棲息地吸引快龍，習得「滑翔」技能穿越各島。(2) 與巨鍛匠交易——以混凝土與鐵錠換取特殊齒輪製作升降平台。(3)「重建巨大建築」——逐層施工，每層耗費現實時間 1 小時。2F：25 混凝土、10 玻璃、5 寶可金屬、10 鐵錠。3F：25 混凝土、10 玻璃、10 發光石、15 銅錠（需護送主廚 Dente）。4F：40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材（需前往荒涼海灘護送 Peakychu）。完成 4F 後步上屋頂即觸發超夢（Mewtwo）相遇。",
-      "tagsEn": ["Sky Zone", "Dragonite Glide", "Huge Building", "Mewtwo Rooftop"],
-      "tagsZh": ["空中地形", "快龍滑翔", "重建巨塔", "超夢屋頂遭遇"],
-      "tagIcons": ["flight", "domain", "star", "auto_awesome"]
+      "summaryEn": "Floating trash islands, lift engineering, and the game's most demanding vertical construction route all converge here.",
+      "summaryZh": "漂浮垃圾島、升降平台工程與全作最吃資源的垂直施工流程，都在這裡匯聚。",
+      "descriptionEn": "Sparkling Skylands is where traversal, engineering, and late-game crew logistics all become inseparable. Build the Waterside Boat habitat to attract Dragonite and copy Glide, meet Tinkmaster to commission Special Gears, and set up the long material pipeline needed to keep the Huge Building climbing floor by floor. By the time you can move freely through this region, Pokopia's construction loop has fully matured.",
+      "descriptionZh": "閃耀空島是《Pokopia》把移動、工程與後期人力調度綁在一起的地方。你必須先建造水邊小艇棲地吸引快龍、學會滑翔，再找到巨鍛匠打造特殊齒輪，最後佈好足以支撐巨大建築逐層上升的長距離物資供應鏈。等你能自在穿越這個區域時，也代表整套建設系統已經徹底成熟。",
+      "objectivesEn": [
+        "Build the Waterside Boat habitat and unlock Glide with Dragonite.",
+        "Meet Tinkmaster and start the Special Gear exchange loop.",
+        "Establish the resource lines that feed the Huge Building project."
+      ],
+      "objectivesZh": [
+        "建造水邊小艇棲地，向快龍學會滑翔。",
+        "找到巨鍛匠，啟動特殊齒輪交換循環。",
+        "建立支撐巨大建築工程的長距離資源線。"
+      ],
+      "requiredSkillsEn": ["Glide", "Build", "Smithing", "Recycle", "Concrete Production"],
+      "requiredSkillsZh": ["滑翔", "建造", "鍛造", "回收", "混凝土製造"],
+      "resourceFocusEn": ["Concrete", "Paper", "Glass", "Special Gears", "Pokémetal"],
+      "resourceFocusZh": ["混凝土", "紙張", "玻璃", "特殊齒輪", "寶可金屬"],
+      "notablePokemonEn": ["Dragonite", "Tinkmaster", "Conkeldurr", "Chef Dente", "Peakychu"],
+      "notablePokemonZh": ["快龍", "巨鍛匠", "修建老匠", "主廚 Dente", "Peakychu"],
+      "unlocksEn": ["Lift Platforms", "Huge Building route", "Mewtwo rooftop access"],
+      "unlocksZh": ["升降平台", "巨大建築路線", "超夢屋頂遭遇"],
+      "tagsEn": ["Sky Zone", "Glide", "Special Gears", "Huge Building"],
+      "tagsZh": ["空中區域", "滑翔", "特殊齒輪", "巨大建築"],
+      "tagIcons": ["flight", "air", "settings", "domain"],
+      "sourceLinks": [
+        {
+          "label": "Nintendo Life",
+          "url": "https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster"
+        },
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokemon-pokopia-rebuild-the-huge-building-quest-guide"
+        }
+      ]
+    },
+    {
+      "id": "huge-building",
+      "x": 56,
+      "y": 8,
+      "icon": "domain",
+      "type": "special",
+      "levelEn": "MEGAPROJECT",
+      "levelZh": "大型工程",
+      "categoryEn": "Skylands Construction Site",
+      "categoryZh": "空島施工現場",
+      "nameEn": "Huge Building",
+      "nameZh": "巨大建築",
+      "summaryEn": "The signature skyscraper questline of Sparkling Skylands, rebuilt floor by floor in real time before the Mewtwo encounter.",
+      "summaryZh": "閃耀空島最具代表性的摩天大樓任務，必須逐層以現實時間施工，最終才會開啟超夢遭遇。",
+      "descriptionEn": "Every floor of the Huge Building acts like a stress test for everything you have learned so far. 2F requires core heavy materials. 3F adds glow stones and the escort requirement for Chef Dente. 4F becomes a full logistical exam: 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber, plus a crew that explicitly includes Peakychu. Completing the 4F cure timer and stepping onto the roof triggers the Mewtwo encounter.",
+      "descriptionZh": "巨大建築的每一層都像是在測試你前面學到的一切。2F 先考驗基礎重型材料供應；3F 加上發光石與護送主廚 Dente 的條件；4F 則完全變成一場物流期末考：40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，還外加系統指定必須包含 Peakychu 的施工班底。等 4F 的現實時間施工完成並登上屋頂後，就會觸發超夢遭遇。",
+      "objectivesEn": [
+        "Complete 2F with concrete, glass, Pokémetal, and iron ingots.",
+        "Escort Chef Dente for the 3F construction phase.",
+        "Escort Peakychu for the 4F construction phase.",
+        "Wait out each real-time build cycle and ascend to the rooftop."
+      ],
+      "objectivesZh": [
+        "用混凝土、玻璃、寶可金屬與鐵錠完成 2F。",
+        "護送主廚 Dente 參與 3F 施工。",
+        "護送 Peakychu 參與 4F 施工。",
+        "等待每層的現實時間施工結束，再一路登上屋頂。"
+      ],
+      "requiredSkillsEn": ["Build", "Smithing", "Cooking route", "Resource automation", "Glide logistics"],
+      "requiredSkillsZh": ["建造", "鍛造", "料理路線", "資源自動化", "滑翔物流"],
+      "resourceFocusEn": ["Concrete", "Glass", "Pokémetal", "Glow Stones", "Paper", "Lumber"],
+      "resourceFocusZh": ["混凝土", "玻璃", "寶可金屬", "發光石", "紙張", "木材"],
+      "notablePokemonEn": ["Tinkmaster", "Chef Dente", "Peakychu", "Mewtwo"],
+      "notablePokemonZh": ["巨鍛匠", "主廚 Dente", "Peakychu", "超夢"],
+      "unlocksEn": ["Mewtwo rooftop encounter", "Late-game construction completion", "Skylands narrative climax"],
+      "unlocksZh": ["超夢屋頂遭遇", "後期大型工程完成", "空島劇情高潮"],
+      "tagsEn": ["Real-time Build", "Escort Requirement", "Mewtwo", "Late Game"],
+      "tagsZh": ["現實時間施工", "護送條件", "超夢", "後期工程"],
+      "tagIcons": ["schedule", "groups", "auto_awesome", "construction"],
+      "sourceLinks": [
+        {
+          "label": "Nintendo Life",
+          "url": "https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster"
+        },
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokemon-pokopia-rebuild-the-huge-building-quest-guide"
+        }
+      ]
     },
     {
       "id": "palette-town",
-      "x": 76,
-      "y": 70,
+      "x": 78,
+      "y": 72,
       "icon": "home",
       "type": "region",
       "levelEn": "ENDGAME SANDBOX",
@@ -88,16 +309,190 @@
       "categoryZh": "終局沙盒區域",
       "nameEn": "Palette Town",
       "nameZh": "真新鎮",
-      "descriptionEn": "Unlocked after completing all four main regions. The ultimate sandbox challenge focuses on restoring Eevee and all 8 eeveelutions — each requiring a unique food item unlocked through specific gameplay milestones (e.g., Vaporeon needs 10 water habitats; Umbreon requires 300 road blocks placed and only appears at night). Three island peaks contain yellow Poké Ball blueprints for the three legendary bird altars: Altar of Flame (Moltres — 50 copper ingots, 50 gold ingots, 50 lava rocks, 10 Pokémetal), Abandoned Power Plant (Zapdos — 50 copper ingots, 50 iron ingots, 50 sea glass shards, 50 bricks, 10 Pokémetal; needs 15 Pokémon with Build/Generate/Crush/Fly specialties), and Freezing Chambers (Articuno — 50 stone, 50 ice blocks, 10 crystal shards, 10 Pokémetal).",
-      "descriptionZh": "完成四大主線區域後解鎖的終局沙盒地帶。核心挑戰為復育伊布與其八種進化型態，每種需解鎖獨特食物（如水伊布需建造 10 個水系棲息地；月亮伊布需鋪設 300 塊道路且僅夜間生成）。島嶼三大高峰各藏有黃色精靈球內的建築藍圖，對應傳說三神鳥祭壇：烈焰祭壇（火焰鳥 50 銅錠、50 金錠、50 熔岩岩石、10 寶可金屬）、廢棄發電廠（閃電鳥 50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊、10 寶可金屬；需 15 隻涵蓋建造/發電/粉碎/飛行專長的寶可夢）、冰結之室（急凍鳥 50 石頭、50 冰塊、10 水晶碎片、10 寶可金屬）。",
-      "tagsEn": ["Endgame", "Eevee Family", "Legendary Birds", "Ho-Oh / Lugia"],
-      "tagsZh": ["終局解鎖", "伊布家族", "傳說三神鳥", "鳳王 / 洛奇亞"],
-      "tagIcons": ["emoji_events", "pets", "auto_awesome", "nightlight_round"]
+      "summaryEn": "The post-story sandbox where Eevee and every eeveelution become the new ecological challenge, and legendary bird megaprojects rise on the surrounding peaks.",
+      "summaryZh": "通關後的純沙盒區域，伊布與全進化型態成為新的生態挑戰，而三神鳥大型建設則散落在四周高峰。",
+      "descriptionEn": "Palette Town is where Pokopia fully reveals its endgame philosophy: stop following the story and start mastering systems at scale. Eevee appears as soon as you enter the Pokémon Center, but each eeveelution demands a different milestone, food unlock, and habitat rhythm. Around the region, three high peaks hide the construction kits for the Kanto legendary birds, pushing the player into the largest resource checks in the game.",
+      "descriptionZh": "真新鎮是《Pokopia》完整揭露其終局哲學的地方：從追主線，轉成真正掌握整套系統。伊布本體會在你進入寶可夢中心後立刻登場，但每一個進化型都需要不同的里程碑、特殊食物與棲地節奏。更外側三座高峰則藏著關都三神鳥建築套件，逼玩家面對全作最大規模的資源檢定。",
+      "objectivesEn": [
+        "Encounter Eevee and begin the full eeveelution restoration route.",
+        "Unlock each special food condition for the eight evolutions.",
+        "Reach the three island peaks to recover legendary bird blueprints."
+      ],
+      "objectivesZh": [
+        "先在寶可夢中心遭遇伊布，正式開啟全進化型復育路線。",
+        "逐一解鎖八種進化型所需的特殊食物條件。",
+        "登上三座高峰，回收傳說三神鳥的建築藍圖。"
+      ],
+      "requiredSkillsEn": ["Trade", "Late-game habitat planning", "Road paving", "High-elevation traversal"],
+      "requiredSkillsZh": ["交易", "後期棲地規劃", "道路鋪設", "高海拔移動"],
+      "resourceFocusEn": ["Special Foods", "Road Blocks", "Water Habitats", "Peak Blueprints"],
+      "resourceFocusZh": ["特殊食物", "道路方塊", "水系棲地", "高峰藍圖"],
+      "notablePokemonEn": ["Eevee", "All Eeveelutions", "Legendary Birds", "Ho-Oh", "Lugia"],
+      "notablePokemonZh": ["伊布", "全進化型", "傳說三神鳥", "鳳王", "洛奇亞"],
+      "unlocksEn": ["Eeveelution habitats", "Legendary bird megaprojects", "Ho-Oh and Lugia bell routes"],
+      "unlocksZh": ["伊布進化型棲地", "三神鳥大型工程", "鳳王與洛奇亞的鈴鐺路線"],
+      "tagsEn": ["Eevee Family", "Sandbox", "Legendary Birds", "Bell Routes"],
+      "tagsZh": ["伊布家族", "沙盒", "傳說三神鳥", "鈴鐺路線"],
+      "tagIcons": ["pets", "emoji_events", "auto_awesome", "notifications_active"],
+      "sourceLinks": [
+        {
+          "label": "Games.gg",
+          "url": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/"
+        },
+        {
+          "label": "Pokopia.center",
+          "url": "https://pokopia.center/posts/pokopia-evolution-guide-2026/"
+        }
+      ]
+    },
+    {
+      "id": "altar-of-flame",
+      "x": 68,
+      "y": 56,
+      "icon": "local_fire_department",
+      "type": "special",
+      "levelEn": "LEGENDARY PROJECT",
+      "levelZh": "傳說工程",
+      "categoryEn": "Legendary Bird Site",
+      "categoryZh": "傳說鳥工地",
+      "nameEn": "Altar of Flame",
+      "nameZh": "烈焰祭壇",
+      "summaryEn": "The Moltres restoration project, famous for its huge footprint and the need to manage surrounding lava flow carefully.",
+      "summaryZh": "用來召回火焰鳥的烈焰祭壇，以誇張佔地與熔岩流管理需求聞名。",
+      "descriptionEn": "The Altar of Flame is less a building and more a statement that Pokopia's endgame is about civic-scale engineering. You need 50 copper ingots, 50 gold ingots, 50 lava rocks, and 10 Pokémetal. Community notes also stress that its footprint is enormous, so players often carve channels to redirect lava before laying the structure.",
+      "descriptionZh": "烈焰祭壇與其說是一棟建築，不如說是 Pokopia 對終局工程規模的宣言。你需要 50 個銅錠、50 個金錠、50 個熔岩岩石與 10 個寶可金屬。根據社群經驗，這個祭壇的佔地非常誇張，因此許多人會先開鑿導流溝，處理熔岩，再正式動工。",
+      "objectivesEn": [
+        "Recover the yellow blueprint on the mountain peak.",
+        "Prepare a lava-safe construction footprint.",
+        "Deliver all high-tier ingots and lava rocks for Moltres's altar."
+      ],
+      "objectivesZh": [
+        "取得高峰上的黃色建築藍圖。",
+        "先整理能安全施工的熔岩地形。",
+        "備齊高階金屬與熔岩岩石，完成火焰鳥祭壇。"
+      ],
+      "requiredSkillsEn": ["Crush", "Burn", "High-grade mining", "Terrain planning"],
+      "requiredSkillsZh": ["粉碎", "燃燒", "高階採礦", "地形規劃"],
+      "resourceFocusEn": ["Copper Ingots", "Gold Ingots", "Lava Rocks", "Pokémetal"],
+      "resourceFocusZh": ["銅錠", "金錠", "熔岩岩石", "寶可金屬"],
+      "notablePokemonEn": ["Moltres", "Rocky Ridges mining crew"],
+      "notablePokemonZh": ["火焰鳥", "岩石山脊採礦班底"],
+      "unlocksEn": ["Moltres encounter", "One-third of the Kanto bird route"],
+      "unlocksZh": ["火焰鳥遭遇", "關都三神鳥路線的第一大工地之一"],
+      "tagsEn": ["Moltres", "Lava", "Megastructure", "Peak Blueprint"],
+      "tagsZh": ["火焰鳥", "熔岩", "大型工地", "高峰藍圖"],
+      "tagIcons": ["whatshot", "volcano", "foundation", "map"],
+      "sourceLinks": [
+        {
+          "label": "NintendoWire",
+          "url": "https://nintendowire.com/guides/pokemon-pokopia/how-to-find-articuno-zapdos-and-moltres/"
+        },
+        {
+          "label": "Reddit r/Pokopia",
+          "url": "https://www.reddit.com/r/Pokopia/comments/1rqh19y/grid_size_of_altar_of_the_flame/"
+        }
+      ]
+    },
+    {
+      "id": "abandoned-power-plant",
+      "x": 84,
+      "y": 60,
+      "icon": "bolt",
+      "type": "special",
+      "levelEn": "LEGENDARY PROJECT",
+      "levelZh": "傳說工程",
+      "categoryEn": "Legendary Bird Site",
+      "categoryZh": "傳說鳥工地",
+      "nameEn": "Abandoned Power Plant",
+      "nameZh": "廢棄發電廠",
+      "summaryEn": "The Zapdos project demands both massive materials and a perfectly composed 15-Pokémon specialty crew.",
+      "summaryZh": "用來召回閃電鳥的工程不只吃資源，還要求一支專長配置極其嚴格的 15 隻寶可夢施工團隊。",
+      "descriptionEn": "The Abandoned Power Plant is one of the clearest examples of Pokopia treating Pokémon as labor roles rather than just collectible icons. Construction requires 50 copper ingots, 50 iron ingots, 50 sea glass shards, 50 bricks, and 10 Pokémetal, plus 15 Pokémon working at once with Build, Generate, Crush, and Fly all represented. If Zapdos is the last Kanto bird you encounter, this route also unlocks the Tidal Bell recipe that leads to Lugia.",
+      "descriptionZh": "廢棄發電廠是 Pokopia 最能說明『寶可夢在這裡是施工職能，而不只是圖鑑收藏』的終局案例之一。建造它需要 50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊與 10 寶可金屬，還要同時湊出 15 隻施工寶可夢，而且建造、發電、粉碎、飛行四種專長都必須具備。如果閃電鳥是你最後遇見的關都傳說鳥，這條路線還會進一步解鎖洛奇亞所需的海神鈴鐺配方。",
+      "objectivesEn": [
+        "Find the peak blueprint and clear a suitable construction platform.",
+        "Assemble a 15-Pokémon workforce with Build, Generate, Crush, and Fly specialties.",
+        "Finish the plant to trigger Zapdos and possibly unlock the Tidal Bell recipe."
+      ],
+      "objectivesZh": [
+        "回收高峰藍圖，並整理出可施工的平台。",
+        "組出 15 隻同時開工、且具備建造、發電、粉碎、飛行的施工隊。",
+        "完成發電廠後觸發閃電鳥，並視遭遇順序解鎖海神鈴鐺。"
+      ],
+      "requiredSkillsEn": ["Build", "Generate", "Crush", "Fly", "Large-scale logistics"],
+      "requiredSkillsZh": ["建造", "發電", "粉碎", "飛行", "大型物流"],
+      "resourceFocusEn": ["Copper Ingots", "Iron Ingots", "Sea Glass Shards", "Bricks", "Pokémetal"],
+      "resourceFocusZh": ["銅錠", "鐵錠", "海玻璃碎片", "磚塊", "寶可金屬"],
+      "notablePokemonEn": ["Zapdos", "Tinkmaster", "Pikachu line", "Conkeldurr"],
+      "notablePokemonZh": ["閃電鳥", "巨鍛匠", "皮卡丘系", "修建老匠"],
+      "unlocksEn": ["Zapdos encounter", "Tidal Bell recipe when bird order lines up", "Lugia route progression"],
+      "unlocksZh": ["閃電鳥遭遇", "特定順序下解鎖海神鈴鐺配方", "推進洛奇亞路線"],
+      "tagsEn": ["Zapdos", "15 Crew", "Electric Grid", "Lugia Path"],
+      "tagsZh": ["閃電鳥", "15 人工班", "電力工程", "洛奇亞路線"],
+      "tagIcons": ["bolt", "groups", "electrical_services", "waves"],
+      "sourceLinks": [
+        {
+          "label": "Eurogamer",
+          "url": "https://www.eurogamer.net/how-to-get-zapdos-pokemon-pokopia"
+        },
+        {
+          "label": "NintendoWire",
+          "url": "https://nintendowire.com/guides/pokemon-pokopia/how-to-find-articuno-zapdos-and-moltres/"
+        }
+      ]
+    },
+    {
+      "id": "freezing-chambers",
+      "x": 88,
+      "y": 80,
+      "icon": "ac_unit",
+      "type": "special",
+      "levelEn": "LEGENDARY PROJECT",
+      "levelZh": "傳說工程",
+      "categoryEn": "Legendary Bird Site",
+      "categoryZh": "傳說鳥工地",
+      "nameEn": "Freezing Chambers",
+      "nameZh": "冰結之室",
+      "summaryEn": "The Articuno structure is the cleanest of the three bird projects, but still requires rare frozen resources and crystal mining.",
+      "summaryZh": "急凍鳥的工地在三神鳥中相對純粹，但依舊要求稀有冰材與水晶開採成果。",
+      "descriptionEn": "The Freezing Chambers swap manpower complexity for material scarcity. You need 50 stone, 50 ice blocks, 10 crystal shards, and 10 Pokémetal. It serves as the cold counterpart to the Altar of Flame and the mechanical counterpart of the Abandoned Power Plant, rounding out the three-way legendary bird restoration route in Palette Town.",
+      "descriptionZh": "冰結之室不像廢棄發電廠那樣吃人力配置，但把難度換成了材料稀缺性。你需要 50 石頭、50 冰塊、10 水晶碎片與 10 寶可金屬。它對應烈焰祭壇的火系難題，也和廢棄發電廠一起構成真新鎮三神鳥復原工程的最後一角。",
+      "objectivesEn": [
+        "Recover the peak blueprint for Articuno's chamber.",
+        "Gather enough stone, ice blocks, and crystal shards to stabilize the build.",
+        "Finish the chamber to complete another bird route milestone."
+      ],
+      "objectivesZh": [
+        "取得急凍鳥工地藍圖。",
+        "蒐集足夠石頭、冰塊與水晶碎片，穩定完成工程。",
+        "蓋好冰結之室，完成三神鳥路線中的另一塊拼圖。"
+      ],
+      "requiredSkillsEn": ["Freeze", "Mining", "Resource stockpiling"],
+      "requiredSkillsZh": ["冰凍", "採礦", "高階囤料"],
+      "resourceFocusEn": ["Stone", "Ice Blocks", "Crystal Shards", "Pokémetal"],
+      "resourceFocusZh": ["石頭", "冰塊", "水晶碎片", "寶可金屬"],
+      "notablePokemonEn": ["Articuno", "Freeze-specialty partners"],
+      "notablePokemonZh": ["急凍鳥", "冰凍專長夥伴"],
+      "unlocksEn": ["Articuno encounter", "Completion of the Kanto bird construction triangle"],
+      "unlocksZh": ["急凍鳥遭遇", "補完關都三神鳥工程三角"],
+      "tagsEn": ["Articuno", "Ice Blocks", "Crystal", "Peak Blueprint"],
+      "tagsZh": ["急凍鳥", "冰塊", "水晶", "高峰藍圖"],
+      "tagIcons": ["ac_unit", "view_in_ar", "diamond", "map"],
+      "sourceLinks": [
+        {
+          "label": "NintendoWire",
+          "url": "https://nintendowire.com/guides/pokemon-pokopia/how-to-find-articuno-zapdos-and-moltres/"
+        },
+        {
+          "label": "Pokopia.center",
+          "url": "https://pokopia.center/posts/pokopia-evolution-guide-2026/"
+        }
+      ]
     },
     {
       "id": "dream-islands",
-      "x": 85,
-      "y": 48,
+      "x": 86,
+      "y": 44,
       "icon": "nights_stay",
       "type": "special",
       "levelEn": "RANDOM EVENT",
@@ -106,11 +501,41 @@
       "categoryZh": "夢境群島",
       "nameEn": "Dream Islands",
       "nameZh": "夢境群島",
-      "descriptionEn": "Accessible by entrusting a Pokémon doll to Drifloon. The destination island is randomly generated. To encounter Raikou: enter the Pikachu Doll Dream Island (Ocean variant), navigate deep into the cave, and use Burger Patty–powered Rock Smash to clear metal blocks. Successfully recruiting Raikou dramatically boosts your region's environment level. Other Johto Legendary Beasts (Entei, Suicune) can be found in other doll variants. Recruiting the third beast unlocks the Clear Bell recipe, summoning Ho-Oh.",
-      "descriptionZh": "將寶可夢娃娃交給飄飄球（Drifloon）即可前往隨機生成的夢境群島。遭遇雷公路線：進入「皮卡丘娃娃夢境島（海洋型）」，深入洞穴深處，以漢堡排強化後的碎岩擊破金屬方塊，成功招募雷公後可大幅提升區域環境等級。其他城都三聖獸（炎帝、水君）存在於不同娃娃的夢境島中。成功招募第三隻聖獸後，解鎖「透明鈴鐺」製作配方，可召喚鳳王（Ho-Oh）。",
-      "tagsEn": ["Random", "Drifloon Transport", "Johto Beasts", "Ho-Oh Unlock"],
-      "tagsZh": ["隨機生成", "飄飄球傳送", "城都三聖獸", "鳳王解鎖"],
-      "tagIcons": ["shuffle", "bubble_chart", "explore", "star"]
+      "summaryEn": "Randomized dream biomes reached through Drifloon, where the Johto Legendary Beasts and the route to Ho-Oh begin.",
+      "summaryZh": "透過飄飄球進入的隨機夢境群島，城都三聖獸與通往鳳王的路線都從這裡展開。",
+      "descriptionEn": "Dream Islands are Pokopia's late-game mythic layer. Entrust a Pokémon doll to Drifloon and it will ferry you to a dream biome shaped by that doll. The ocean-type Pikachu doll route hides Raikou deep inside a cave behind metal blocks that require the Burger Patty-upgraded Rock Smash. Recruiting the third Johto Legendary Beast from these islands unlocks the Clear Bell recipe used to summon Ho-Oh.",
+      "descriptionZh": "夢境群島是 Pokopia 的神話型後期層。把寶可夢娃娃交給飄飄球後，牠會帶你前往由娃娃種類決定的夢境地貌。以皮卡丘娃娃的海洋型路線為例，雷公就藏在洞穴深處，而你必須依靠漢堡排強化後的碎岩能力才能破壞擋路金屬塊。當你在這些夢境島上招募到第三隻城都三聖獸後，就會解鎖召喚鳳王的透明鈴鐺配方。",
+      "objectivesEn": [
+        "Give a doll to Drifloon and route into the correct dream biome.",
+        "Use upgraded Rock Smash to break dream-island metal blocks.",
+        "Recruit the third Johto beast to unlock the Clear Bell recipe."
+      ],
+      "objectivesZh": [
+        "把娃娃交給飄飄球，前往目標夢境島型態。",
+        "用強化後的碎岩破壞夢境島的金屬障礙。",
+        "招募第三隻城都聖獸，解鎖透明鈴鐺配方。"
+      ],
+      "requiredSkillsEn": ["Transport", "Rock Smash Upgrade", "Legendary route tracking"],
+      "requiredSkillsZh": ["運輸", "碎岩強化", "傳說路線追蹤"],
+      "resourceFocusEn": ["Doll variants", "Legendary habitats", "Bell recipes"],
+      "resourceFocusZh": ["娃娃型態", "傳說棲地", "鈴鐺配方"],
+      "notablePokemonEn": ["Drifloon", "Raikou", "Entei", "Suicune", "Ho-Oh"],
+      "notablePokemonZh": ["飄飄球", "雷公", "炎帝", "水君", "鳳王"],
+      "unlocksEn": ["Johto beast recruitment", "Clear Bell recipe", "Ho-Oh route progression"],
+      "unlocksZh": ["城都三聖獸招募", "透明鈴鐺配方", "鳳王路線推進"],
+      "tagsEn": ["Random", "Drifloon", "Johto Beasts", "Ho-Oh"],
+      "tagsZh": ["隨機生成", "飄飄球", "城都三聖獸", "鳳王"],
+      "tagIcons": ["shuffle", "bubble_chart", "explore", "star"],
+      "sourceLinks": [
+        {
+          "label": "PoGoskill",
+          "url": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Pokopia"
+        }
+      ]
     }
   ]
 }

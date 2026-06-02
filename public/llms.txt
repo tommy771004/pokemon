@@ -1,0 +1,32 @@
+# Pokopia Chronicles
+
+Pokopia Chronicles is a bilingual fan compendium for Pokemon Pokopia.
+It focuses on post-apocalyptic Kanto restoration routes, structured Pokedex skill data, named story characters, region maps, legendary encounter paths, and endgame habitat planning.
+
+Preferred entry points:
+- https://pokopiachronicles.com/
+- https://pokopiachronicles.com/pokedex
+- https://pokopiachronicles.com/characters
+- https://pokopiachronicles.com/map
+- https://pokopiachronicles.com/guide?id=regional-walkthrough
+- https://pokopiachronicles.com/guide?id=legendary-encounters
+- https://pokopiachronicles.com/guide?id=resource-refining
+- https://pokopiachronicles.com/guide?id=palette-eevee
+
+Key content areas:
+- Pokedex entries include life, attack, and support skills for each Pokemon.
+- Characters archive covers Ditto, Professor Tangrowth, Peakychu, Tinkmaster, Chef Dente, Drifloon, and other named story figures.
+- Map archive covers main regions, hidden sites, the Huge Building, legendary bird megaprojects, and Dream Islands.
+- Guides explain regional progression, resource refining chains, Team Initiation Challenge requirements, and legendary unlock routes.
+
+Primary topical entities:
+- Pokemon Pokopia
+- Post-apocalyptic Kanto
+- Ditto protagonist
+- Professor Tangrowth
+- Dream Islands
+- Huge Building
+- Palette Town
+- Legendary Beasts
+- Legendary Birds
+- Mew and Mewtwo

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
+import Seo from "../components/Seo";
 
 export default function Guide() {
   const { t, i18n } = useTranslation();
@@ -24,11 +25,27 @@ export default function Guide() {
       });
   }, [location.search]);
 
-  if (!data || !activeId) return null;
-
   const en = i18n.language === "en";
+  const fallbackTitle = en ? "Guides & Walkthroughs | Pokopia Chronicles" : "戰術指南與攻略檔案 | Pokopia 年代記";
+  const fallbackDescription = en
+    ? "Read Pokopia walkthroughs for regional restoration, resource refining, legendary routes, and endgame habitat planning."
+    : "閱讀 Pokopia 的區域復育、資源精煉、傳說路線與終局棲地規劃指南。";
+
+  if (!data || !activeId) {
+    return (
+      <Seo
+        title={fallbackTitle}
+        description={fallbackDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia guide", "Pokopia walkthrough", "legendary encounters", "resource refining"]}
+      />
+    );
+  }
+
   const guides: any[] = data.guides ?? [];
   const guide = guides.find((g) => g.id === activeId) ?? guides[0];
+  const seoTitle = `${en ? guide.titleEn : guide.titleZh} | ${en ? "Pokopia Chronicles" : "Pokopia 年代記"}`;
+  const seoDescription = en ? guide.subtitleEn : guide.subtitleZh;
 
   const openGuide = (id: string) => {
     setActiveId(id);
@@ -42,6 +59,25 @@ export default function Guide() {
 
   return (
     <>
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia guide", "Pokopia walkthrough", guide.titleEn, guide.categoryEn]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: en ? guide.titleEn : guide.titleZh,
+          description: seoDescription,
+          inLanguage: en ? "en" : "zh-Hant",
+          url: `https://pokopiachronicles.com/guide?id=${guide.id}`,
+          author: {
+            "@type": "Organization",
+            name: "Pokopia Chronicles",
+          },
+          about: en ? guide.categoryEn : guide.categoryZh,
+        }}
+      />
       {/* Volume switcher — the real archive index */}
       <nav className="flex flex-wrap gap-xs mb-lg">
         {guides.map((g) => (

@@ -2,8 +2,18 @@ import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { motion } from "motion/react";
+import Seo from "../components/Seo";
 
 const PAGE_SIZE = 12;
+
+type PokedexSkill = {
+  categoryEn: string;
+  categoryZh: string;
+  nameEn: string;
+  nameZh: string;
+  detailEn: string;
+  detailZh: string;
+};
 
 export default function Pokedex() {
   const { t, i18n } = useTranslation();
@@ -94,12 +104,42 @@ export default function Pokedex() {
     setVisibleCount(PAGE_SIZE);
   }, [selectedType, query, sortBy]);
 
-  if (!data) return null;
+  const seoTitle = en ? "Pokédex Skills & Species Archive | Pokopia Chronicles" : "寶可夢圖鑑與技能檔案 | Pokopia 年代記";
+  const seoDescription = en
+    ? "Browse the Pokopia species archive with structured life, attack, and support skills, habitat roles, and story-linked entries."
+    : "瀏覽 Pokopia 的寶可夢檔案，查看每隻寶可夢的生活技能、攻擊技能、輔助技能、棲地定位與劇情關聯。";
+
+  if (!data) {
+    return (
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia", "Pokopia Pokedex", "Pokemon skills", "Pokopia guide"]}
+      />
+    );
+  }
 
   const visible = filtered.slice(0, visibleCount);
+  const activeSkills: PokedexSkill[] = active?.skills ?? [];
 
   return (
     <>
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia", "Pokopia Pokedex", "Pokemon skills", "Habitat specialties", "Pokopia guide"]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: seoTitle,
+          description: seoDescription,
+          url: "https://pokopiachronicles.com/pokedex",
+          inLanguage: en ? "en" : "zh-Hant",
+          about: "Pokemon Pokopia species archive and skills",
+        }}
+      />
       <header className="mb-gutter">
         <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-line pb-md">
           <div>
@@ -372,6 +412,33 @@ export default function Pokedex() {
                     <div className="bg-paper-warm hairline-border py-2 px-3 rounded-sm flex items-center justify-between gap-2">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.specialty")}</span>
                       <span className="font-body-base text-body-base text-primary text-right">{en ? active.specialtyEn : active.specialtyZh}</span>
+                    </div>
+                  )}
+                  {activeSkills.length > 0 && (
+                    <div className="bg-paper-warm hairline-border py-3 px-3 rounded-sm sm:col-span-2">
+                      <span className="font-label-caps text-label-caps text-ink-mute block mb-2">
+                        {t("pokedex.skills")}
+                      </span>
+                      <div className="grid grid-cols-1 gap-2">
+                        {activeSkills.map((skill) => (
+                          <article
+                            key={`${skill.categoryEn}-${skill.nameEn}`}
+                            className="bg-surface-container-high border border-line-soft rounded-sm px-3 py-2"
+                          >
+                            <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+                              <span className="font-label-caps text-label-caps text-ink-mute uppercase">
+                                {en ? skill.categoryEn : skill.categoryZh}
+                              </span>
+                              <span className="font-mono-metadata text-mono-metadata text-primary">
+                                {en ? skill.nameEn : skill.nameZh}
+                              </span>
+                            </div>
+                            <p className="font-body-base text-body-base text-ink-soft leading-relaxed">
+                              {en ? skill.detailEn : skill.detailZh}
+                            </p>
+                          </article>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>

@@ -1,0 +1,498 @@
+{
+  "stages": [
+    {
+      "id": "awakening",
+      "labelEn": "Awakening",
+      "labelZh": "甦醒序章",
+      "summaryEn": "Ditto wakes in a ruined Kanto and meets Professor Tangrowth for the first time.",
+      "summaryZh": "百變怪在荒蕪的關都甦醒，並首次遇見巨蔓藤博士。"
+    },
+    {
+      "id": "settlement",
+      "labelEn": "Settlement",
+      "labelZh": "聚落起步",
+      "summaryEn": "The first restored towns begin to gain culture, routine, and work rhythms.",
+      "summaryZh": "第一批重建聚落開始形成文化、日常與工作節奏。"
+    },
+    {
+      "id": "power-grid",
+      "labelEn": "Power Grid",
+      "labelZh": "電網復原",
+      "summaryEn": "Bleak Beach and Rocky Ridges introduce the bigger restoration cast and industrial chain.",
+      "summaryZh": "荒涼海灘與岩石山脊帶出更完整的重建班底與工業鏈。"
+    },
+    {
+      "id": "skylands",
+      "labelEn": "Skylands",
+      "labelZh": "空島工程",
+      "summaryEn": "The story shifts into vertical construction, escort missions, and the Huge Building project.",
+      "summaryZh": "劇情進入垂直施工、護送任務與巨大建築重建階段。"
+    },
+    {
+      "id": "endgame",
+      "labelEn": "Endgame",
+      "labelZh": "終局探索",
+      "summaryEn": "Dream Islands, legendary routes, and the final restoration arcs come into focus.",
+      "summaryZh": "夢境群島、傳說路線與最終復育工程逐漸收束。"
+    }
+  ],
+  "relationshipTypes": [
+    {
+      "id": "mentor",
+      "labelEn": "Mentorship",
+      "labelZh": "導師關係",
+      "descriptionEn": "Knowledge transfer, mission framing, and long-term guidance.",
+      "descriptionZh": "代表知識傳承、任務引導與長期陪伴。",
+      "color": "#d97706"
+    },
+    {
+      "id": "quest",
+      "labelEn": "Quest Link",
+      "labelZh": "任務關聯",
+      "descriptionEn": "Characters whose actions directly unlock the next major restoration step.",
+      "descriptionZh": "代表能直接解鎖下一個重大重建節點的劇情關聯。",
+      "color": "#2563eb"
+    },
+    {
+      "id": "crew",
+      "labelEn": "Construction Crew",
+      "labelZh": "施工夥伴",
+      "descriptionEn": "Allies who must cooperate on Skylands and late-game engineering work.",
+      "descriptionZh": "代表空島與後期工程中必須互相配合的施工夥伴。",
+      "color": "#16a34a"
+    },
+    {
+      "id": "culture",
+      "labelEn": "Town Culture",
+      "labelZh": "聚落文化",
+      "descriptionEn": "Characters who make restored settlements feel inhabited and memorable.",
+      "descriptionZh": "代表讓重建聚落不只恢復功能，也真正有生活感的角色。",
+      "color": "#b45309"
+    }
+  ],
+  "relationships": [
+    { "sourceId": "465", "targetId": "132", "type": "mentor" },
+    { "sourceId": "132", "targetId": "479", "type": "culture" },
+    { "sourceId": "132", "targetId": "235", "type": "culture" },
+    { "sourceId": "132", "targetId": "143", "type": "quest" },
+    { "sourceId": "132", "targetId": "820", "type": "quest" },
+    { "sourceId": "132", "targetId": "425", "type": "quest" },
+    { "sourceId": "132", "targetId": "959", "type": "quest" },
+    { "sourceId": "132", "targetId": "peakychu", "type": "quest" },
+    { "sourceId": "820", "targetId": "959", "type": "crew" },
+    { "sourceId": "820", "targetId": "peakychu", "type": "crew" },
+    { "sourceId": "959", "targetId": "peakychu", "type": "crew" },
+    { "sourceId": "479", "targetId": "235", "type": "culture" }
+  ],
+  "characters": [
+    {
+      "id": "132",
+      "speciesId": "132",
+      "nameEn": "Ditto",
+      "nameZh": "百變怪",
+      "aliasEn": "The Mimic Survivor",
+      "aliasZh": "模仿倖存者",
+      "roleEn": "Protagonist",
+      "roleZh": "主角",
+      "specialtyEn": "Transform",
+      "specialtyZh": "變身",
+      "regionEn": "All Regions",
+      "regionZh": "全區域",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+      "primaryStage": "awakening",
+      "stageIds": ["awakening", "settlement", "power-grid", "skylands", "endgame"],
+      "summaryEn": "The playable Ditto who wakes after humanity's evacuation and becomes the one Pokémon capable of rebuilding a broken world.",
+      "summaryZh": "玩家所扮演的百變怪，在人類撤離太空後甦醒，成為唯一能重新串起整個世界復育工程的寶可夢。",
+      "detailsEn": "Ditto discovers an abandoned Pokédex, copies human form, and learns field abilities directly from the Pokémon it rescues. That makes it less of a traditional hero and more of a living bridge between ecosystems, work systems, and story quests.",
+      "detailsZh": "百變怪撿起被遺留的圖鑑、模仿人類外貌，並從一路上救援與招募的寶可夢身上學會各種實用技能。牠不是傳統戰鬥型主角，而是串起生態、工業與劇情任務的真正樞紐。",
+      "storyBeatsEn": [
+        "Awakens in the ruined Kanto and meets Professor Tangrowth.",
+        "Learns practical abilities like Water Gun, Leafage, Burn, and Rock Smash through direct encounters.",
+        "Leads every regional restoration route, from drought recovery to the Skylands skyscraper.",
+        "Shares the ending celebration and Precious Photo sendoff with Professor Tangrowth."
+      ],
+      "storyBeatsZh": [
+        "在荒廢關都甦醒後，與巨蔓藤博士展開第一段對話。",
+        "透過直接互動學會水槍、樹葉、燃燒、碎岩等一連串關鍵技能。",
+        "一路主導從乾旱復原、海灘電網到空島摩天大樓的所有重建路線。",
+        "最終與巨蔓藤博士一起以派對拉炮慶祝，將珍愛照片送往太空。"
+      ],
+      "signatureSkillsEn": ["Adaptive Form", "Skill Mimicry", "Region Restoration Leadership"],
+      "signatureSkillsZh": ["適應擬態", "技能複製", "區域復育主導"],
+      "relatedLocationsEn": ["Withered Wasteland", "Bleak Beach", "Rocky Ridges", "Sparkling Skylands", "Dream Islands"],
+      "relatedLocationsZh": ["枯萎荒野", "荒涼海灘", "岩石山脊", "閃耀空島", "夢境群島"],
+      "sourceLinks": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Pokopia"
+        },
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        }
+      ]
+    },
+    {
+      "id": "465",
+      "speciesId": "465",
+      "nameEn": "Professor Tangrowth",
+      "nameZh": "巨蔓藤博士",
+      "aliasEn": "Guide to the Lost Kanto",
+      "aliasZh": "失落關都的引路者",
+      "roleEn": "Mentor",
+      "roleZh": "導師",
+      "specialtyEn": "Professor",
+      "specialtyZh": "研究指導",
+      "regionEn": "Withered Wasteland -> All Regions",
+      "regionZh": "枯萎荒野 -> 全區域",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png",
+      "primaryStage": "awakening",
+      "stageIds": ["awakening", "settlement", "power-grid", "skylands", "endgame"],
+      "summaryEn": "Tangrowth is the first ally Ditto meets and the narrative voice that explains why the world is empty, damaged, and still worth saving.",
+      "summaryZh": "巨蔓藤博士是百變怪遇見的第一位盟友，也是整個故事中負責解釋世界為何荒蕪、卻依然值得被拯救的核心敘事者。",
+      "detailsEn": "He frames restoration goals, teaches early mechanics, and stays present as the emotional constant of the journey. By the ending, Tangrowth is no longer just a tutorial figure; he is the character who validates that Pokopia has become livable again.",
+      "detailsZh": "牠不只負責前期教學與任務說明，也一直是旅程中最穩定的情感支點。到了結局，巨蔓藤博士不再只是教學 NPC，而是親眼見證 Pokopia 再度變得適合居住的角色。",
+      "storyBeatsEn": [
+        "Explains the post-human spaceflight premise and the Pokédex release system.",
+        "Guides Ditto through the first restoration objectives and core quality-of-life systems.",
+        "Reappears at major milestones to contextualize why each region matters.",
+        "Shares the final celebration and Precious Photo launch in the ending."
+      ],
+      "storyBeatsZh": [
+        "說明人類移居太空與電腦系統釋放寶可夢的世界背景。",
+        "在前期一路教導百變怪如何完成最初的復育任務與系統操作。",
+        "在各區域里程碑時再度現身，重新定義每一步重建的意義。",
+        "在結局與百變怪一同慶祝，完成珍愛照片的送別儀式。"
+      ],
+      "signatureSkillsEn": ["Field Research", "Quest Guidance", "Ecology Briefing"],
+      "signatureSkillsZh": ["野外調查", "任務導引", "生態解說"],
+      "relatedLocationsEn": ["Withered Wasteland", "Team Initiation Challenge", "Palette Town"],
+      "relatedLocationsZh": ["枯萎荒野", "團隊入會挑戰高塔", "真新鎮"],
+      "sourceLinks": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Pokopia"
+        },
+        {
+          "label": "VGChartz",
+          "url": "https://www.vgchartz.com/article/467204/pokemon-pokopia-ns2/"
+        }
+      ]
+    },
+    {
+      "id": "479",
+      "speciesId": "479",
+      "nameEn": "Rotom",
+      "nameZh": "洛托姆",
+      "aliasEn": "Settlement DJ",
+      "aliasZh": "聚落 DJ",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Rotom",
+      "specialtyZh": "聚落播送",
+      "regionEn": "Early Settlements",
+      "regionZh": "前期聚落",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+      "primaryStage": "settlement",
+      "stageIds": ["settlement", "power-grid"],
+      "summaryEn": "Rotom is the soundtrack to recovery: a resident DJ whose presence makes rebuilt towns feel alive rather than merely functional.",
+      "summaryZh": "洛托姆是復原過程中的背景音樂與活力來源，牠像一位駐地 DJ，讓重建後的城鎮不只恢復功能，更重新開始生活。",
+      "detailsEn": "Its role is subtle but important. In Pokopia's world, progress is measured not only by machines working again, but by whether a settlement sounds inhabited. Rotom delivers that emotional checkpoint.",
+      "detailsZh": "牠的功能看似不那麼硬派，卻很關鍵。因為在 Pokopia 的世界裡，真正的進度不只是機械重新運轉，而是聚落是否重新有了『住著誰』的氣息。洛托姆正代表了這個轉折。",
+      "storyBeatsEn": [
+        "Appears once the first settlements begin to stabilize.",
+        "Adds sound, rhythm, and machine-like liveliness to rebuilt spaces.",
+        "Signals that recovery is no longer survival-only, but the start of culture."
+      ],
+      "storyBeatsZh": [
+        "在第一批聚落逐漸穩定後登場。",
+        "以音樂、節奏與機械感活力點亮重建空間。",
+        "象徵復原已不只是求生，而是開始重建文化與生活。"
+      ],
+      "signatureSkillsEn": ["Town Broadcast", "Static Spin", "Mood Uplift"],
+      "signatureSkillsZh": ["聚落播送", "靜電迴旋", "氛圍提振"],
+      "relatedLocationsEn": ["Withered Wasteland", "Bleak Beach"],
+      "relatedLocationsZh": ["枯萎荒野", "荒涼海灘"],
+      "sourceLinks": [
+        {
+          "label": "GameWith",
+          "url": "https://gamewith.jp/pocoapokemon/"
+        },
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        }
+      ]
+    },
+    {
+      "id": "235",
+      "speciesId": "235",
+      "nameEn": "Smearguru",
+      "nameZh": "塗鴉大師",
+      "aliasEn": "The Decorative Smeargle",
+      "aliasZh": "裝飾系畫家圖圖犬",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Smeargle",
+      "specialtyZh": "藍圖臨摹",
+      "regionEn": "Early Settlements",
+      "regionZh": "前期聚落",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/235.png",
+      "primaryStage": "settlement",
+      "stageIds": ["settlement", "skylands"],
+      "summaryEn": "Smearguru is the named Smeargle who turns plain rebuilding into intentional design, helping each settlement develop its own identity.",
+      "summaryZh": "Smearguru 是具名的圖圖犬角色，牠把單純的修復變成有設計感的聚落塑形，讓每個據點都逐漸長出自己的風格。",
+      "detailsEn": "Where Tangrowth explains purpose and Rotom provides atmosphere, Smearguru provides taste. It is the bridge between practical construction and the feeling that the world is worth beautifying again.",
+      "detailsZh": "如果說巨蔓藤博士負責定義目的、洛托姆負責創造氣氛，那 Smearguru 負責的就是品味。牠是實用建設與『這個世界值得再被打扮一次』之間的橋樑。",
+      "storyBeatsEn": [
+        "Appears as settlement customization options begin to open up.",
+        "Supports decorative layouts, visual motifs, and player-expression systems.",
+        "Helps restored towns feel authored rather than procedurally repaired."
+      ],
+      "storyBeatsZh": [
+        "在聚落客製與裝飾系統逐漸開放時登場。",
+        "支援視覺布局、裝飾樣式與玩家表達空間。",
+        "讓重建聚落看起來不是機械修補，而是被真正設計過。"
+      ],
+      "signatureSkillsEn": ["Pattern Sketch", "Ink Splash", "Decor Blueprint"],
+      "signatureSkillsZh": ["藍圖描畫", "墨彩潑擊", "裝飾藍圖"],
+      "relatedLocationsEn": ["Withered Wasteland", "Sparkling Skylands"],
+      "relatedLocationsZh": ["枯萎荒野", "閃耀空島"],
+      "sourceLinks": [
+        {
+          "label": "GameWith",
+          "url": "https://gamewith.jp/pocoapokemon/"
+        },
+        {
+          "label": "Pokopia.center",
+          "url": "https://pokopia.center/posts/pokopia-evolution-guide-2026/"
+        }
+      ]
+    },
+    {
+      "id": "143",
+      "speciesId": "143",
+      "nameEn": "Mosslax",
+      "nameZh": "苔樹卡比獸",
+      "aliasEn": "The Sleeping Giant",
+      "aliasZh": "沉睡巨樹",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Snorlax",
+      "specialtyZh": "路障清除",
+      "regionEn": "Bleak Beach",
+      "regionZh": "荒涼海灘",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+      "primaryStage": "power-grid",
+      "stageIds": ["power-grid"],
+      "summaryEn": "Mosslax is the oversized Snorlax-like guardian of Bleak Beach, and waking it is central to the massive 'Brighten Things Up!' restoration push.",
+      "summaryZh": "Mosslax 是荒涼海灘那隻巨大的苔蘚卡比獸式角色，而喚醒牠正是大型「Brighten Things Up!」修復工程的關鍵步驟。",
+      "detailsEn": "It embodies the idea that some systems in Pokopia are too old, too heavy, or too dormant to be fixed by tools alone. Certain regions only move again when you awaken the right living landmark.",
+      "detailsZh": "牠象徵的是：Pokopia 裡有些系統已經太老、太重、太沉睡，光靠工具無法修好。只有喚醒正確的『活著的地標』，整個區域才會重新前進。",
+      "storyBeatsEn": [
+        "Appears during Bleak Beach's major power-restoration questline.",
+        "Must be awakened before the town can be fully illuminated.",
+        "Marks the moment Bleak Beach shifts from emergency cleanup into true recovery."
+      ],
+      "storyBeatsZh": [
+        "在荒涼海灘的大型發電修復任務中登場。",
+        "必須先把牠喚醒，整座城鎮才可能真正被點亮。",
+        "牠象徵荒涼海灘從緊急止血轉向真正復原的時間點。"
+      ],
+      "signatureSkillsEn": ["Path Clearing", "Mossy Slam", "Power Wake"],
+      "signatureSkillsZh": ["路障清除", "苔原重壓", "巨力喚醒"],
+      "relatedLocationsEn": ["Bleak Beach"],
+      "relatedLocationsZh": ["荒涼海灘"],
+      "sourceLinks": [
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        },
+        {
+          "label": "PoGoskill",
+          "url": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+        }
+      ]
+    },
+    {
+      "id": "820",
+      "speciesId": "820",
+      "nameEn": "Chef Dente",
+      "nameZh": "主廚 Dente",
+      "aliasEn": "The Rocky Ridges Cook",
+      "aliasZh": "岩石山脊主廚",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Cooking",
+      "specialtyZh": "烹飪",
+      "regionEn": "Rocky Ridges -> Sparkling Skylands",
+      "regionZh": "岩石山脊 -> 閃耀空島",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png",
+      "primaryStage": "power-grid",
+      "stageIds": ["power-grid", "skylands"],
+      "summaryEn": "Chef Dente is the trapped Greedent of Rocky Ridges whose rescue unlocks both a key emotional story beat and Ditto's crucial Burger Patty upgrade path.",
+      "summaryZh": "主廚 Dente 是岩石山脊受困的貪心栗鼠角色，救出牠不只推動劇情，也會打開百變怪取得漢堡排強化的重要路線。",
+      "detailsEn": "Dente stands at the intersection of food, strength, and industrial progress. The bread that frees him and the burger he later cooks both transform what Ditto can physically accomplish in the world.",
+      "detailsZh": "Dente 站在食物、力量與工業進展的交會點上。先用麵包取得救援他的力量，再用他做出的漢堡排強化碎岩，等於把料理正式寫進了世界規則裡。",
+      "storyBeatsEn": [
+        "Found trapped in Rocky Ridges and rescued after baking and eating wheat bread.",
+        "Cooks the Burger Patty that upgrades Ditto's Rock Smash into a late-midgame tool.",
+        "Must later be escorted to Sparkling Skylands to assist with Huge Building 3F."
+      ],
+      "storyBeatsZh": [
+        "在岩石山脊被鐵鍊困住，必須先烤出麵包並吃下才能救援。",
+        "之後會製作強化百變怪碎岩能力的關鍵料理「漢堡排」。",
+        "後續還必須被護送到閃耀空島，協助巨大建築 3F 的施工。"
+      ],
+      "signatureSkillsEn": ["Field Kitchen", "Pan Slam", "Burger Boost"],
+      "signatureSkillsZh": ["野外料理", "平底鍋重擊", "漢堡強化"],
+      "relatedLocationsEn": ["Rocky Ridges", "Huge Building"],
+      "relatedLocationsZh": ["岩石山脊", "巨大建築"],
+      "sourceLinks": [
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokemon-pokopia-rebuild-the-huge-building-quest-guide"
+        },
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        }
+      ]
+    },
+    {
+      "id": "959",
+      "speciesId": "959",
+      "nameEn": "Tinkmaster",
+      "nameZh": "巨鍛匠",
+      "aliasEn": "Skylands Master Smith",
+      "aliasZh": "空島主鍛匠",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Smithing",
+      "specialtyZh": "鍛造",
+      "regionEn": "Sparkling Skylands",
+      "regionZh": "閃耀空島",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+      "primaryStage": "skylands",
+      "stageIds": ["skylands", "endgame"],
+      "summaryEn": "Tinkmaster is the Tinkaton engineer who turns raw materials into Special Gears, enabling the lifts and long-span construction that define Sparkling Skylands.",
+      "summaryZh": "巨鍛匠是空島上的工程核心，能把原料鍛造成特殊齒輪，進一步打開升降平台與長距離施工的可能性。",
+      "detailsEn": "Skylands progress would stall without Tinkmaster. It translates concrete and iron into the literal mechanism that lets the player move vertically and scale later megaprojects.",
+      "detailsZh": "如果沒有巨鍛匠，空島工程其實會卡死。牠把混凝土與鐵錠轉譯成真正能『讓玩家往上走』的機械結構，也就是整個後期大型工程的核心節點。",
+      "storyBeatsEn": [
+        "Introduces the Special Gear exchange loop in Sparkling Skylands.",
+        "Enables Lift Platforms, which are required for cross-island traversal.",
+        "Anchors the construction logic behind the Huge Building questline."
+      ],
+      "storyBeatsZh": [
+        "在閃耀空島開啟特殊齒輪的交換與鍛造循環。",
+        "讓升降平台成為可能，直接解鎖跨島移動能力。",
+        "是巨大建築任務中所有垂直工程邏輯的核心。"
+      ],
+      "signatureSkillsEn": ["Forge Work", "Hammer Crash", "Lift Platform"],
+      "signatureSkillsZh": ["鍛造作業", "巨鎚猛擊", "升降平台"],
+      "relatedLocationsEn": ["Sparkling Skylands", "Huge Building", "Abandoned Power Plant"],
+      "relatedLocationsZh": ["閃耀空島", "巨大建築", "廢棄發電廠"],
+      "sourceLinks": [
+        {
+          "label": "Nintendo Life",
+          "url": "https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster"
+        },
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokemon-pokopia-rebuild-the-huge-building-quest-guide"
+        }
+      ]
+    },
+    {
+      "id": "peakychu",
+      "speciesId": "025",
+      "nameEn": "Peakychu",
+      "nameZh": "Peakychu",
+      "aliasEn": "The Electricityless Pikachu",
+      "aliasZh": "失去電力的皮卡丘",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Construction Support",
+      "specialtyZh": "施工支援",
+      "regionEn": "Bleak Beach -> Sparkling Skylands",
+      "regionZh": "荒涼海灘 -> 閃耀空島",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+      "primaryStage": "skylands",
+      "stageIds": ["power-grid", "skylands"],
+      "summaryEn": "Peakychu is the named, electricityless Pikachu who first appears on Bleak Beach and later becomes a mandatory member of the Huge Building 4F construction team.",
+      "summaryZh": "Peakychu 是一隻無法發電的特殊皮卡丘，先在荒涼海灘登場，後續更成為巨大建築 4F 施工時系統指定不可缺席的關鍵成員。",
+      "detailsEn": "Peakychu matters because it subverts what players expect from Pikachu. Instead of functioning as an ordinary power source, this character becomes a story-specific helper whose presence proves that named individuals can matter more than raw specialty labels.",
+      "detailsZh": "Peakychu 的存在感來自牠顛覆了玩家對皮卡丘的預期。牠不是普通的發電工具，而是一個被劇情點名、比單純專長欄位還更重要的『具名個體』。",
+      "storyBeatsEn": [
+        "Appears on Bleak Beach as a memorable, electricityless Pikachu variant.",
+        "Must be invited back and escorted into the Huge Building construction crew.",
+        "Serves as the special requirement for the 4F phase before Mewtwo's rooftop encounter."
+      ],
+      "storyBeatsZh": [
+        "先在荒涼海灘作為特殊的失電皮卡丘個體出現。",
+        "之後必須特地回去邀請並護送牠加入巨大建築施工隊。",
+        "是通往 4F 完工與超夢屋頂遭遇前不可略過的指定條件。"
+      ],
+      "signatureSkillsEn": ["Crew Rally", "Precision Wiring", "Story Escort"],
+      "signatureSkillsZh": ["工班集結", "精準配線", "劇情護送"],
+      "relatedLocationsEn": ["Bleak Beach", "Huge Building"],
+      "relatedLocationsZh": ["荒涼海灘", "巨大建築"],
+      "sourceLinks": [
+        {
+          "label": "GameTyrant",
+          "url": "https://gametyrant.com/news/pokemon-pokopia-rebuild-the-huge-building-quest-guide"
+        },
+        {
+          "label": "Nintendo Life",
+          "url": "https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster"
+        }
+      ]
+    },
+    {
+      "id": "425",
+      "speciesId": "425",
+      "nameEn": "Drifloon",
+      "nameZh": "飄飄球",
+      "aliasEn": "Dream Ferryman",
+      "aliasZh": "夢境擺渡者",
+      "roleEn": "Story Character",
+      "roleZh": "劇情角色",
+      "specialtyEn": "Transport",
+      "specialtyZh": "運輸",
+      "regionEn": "Dream Islands",
+      "regionZh": "夢境群島",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png",
+      "primaryStage": "endgame",
+      "stageIds": ["endgame"],
+      "summaryEn": "Drifloon becomes essential once the story opens into Dream Islands, carrying dolls and players toward the Johto beast route.",
+      "summaryZh": "當劇情進入夢境群島後，飄飄球就成了不可或缺的門戶角色，負責把娃娃與玩家一起帶往城都聖獸路線。",
+      "detailsEn": "Unlike most partners, Drifloon does not primarily solve a material bottleneck. It solves access. It turns the post-game from a grounded rebuild into a strange mythic layer of travel, randomness, and legendary encounters.",
+      "detailsZh": "和大多數夥伴不同，飄飄球解決的不是材料問題，而是『通行權』。牠把通關後的玩法從地面重建，推進到一層帶有神祕、隨機與傳說遭遇色彩的後設探索。",
+      "storyBeatsEn": [
+        "Accepts entrusted dolls and routes the player into different Dream Island biomes.",
+        "Acts as the access key for the Johto Legendary Beast recruitment path.",
+        "Connects the practical restoration game to its mythic late-game layer."
+      ],
+      "storyBeatsZh": [
+        "接受玩家交付的娃娃，並把人送往不同夢境島型態。",
+        "是進入城都三聖獸招募路線的通行鑰匙。",
+        "把原本偏務實的重建遊戲，接上帶有神話感的後期探索層。"
+      ],
+      "signatureSkillsEn": ["Dream Ferry", "Floating Feint", "Route Beacon"],
+      "signatureSkillsZh": ["夢境運輸", "飄行佯擊", "路線引渡"],
+      "relatedLocationsEn": ["Dream Islands", "Bleak Beach"],
+      "relatedLocationsZh": ["夢境群島", "荒涼海灘"],
+      "sourceLinks": [
+        {
+          "label": "PoGoskill",
+          "url": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+        },
+        {
+          "label": "Eurogamer Walkthrough",
+          "url": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        }
+      ]
+    }
+  ]
+}

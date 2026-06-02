@@ -246,23 +246,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 font-mono-metadata text-mono-metadata">
             <div>
               <span className="font-label-caps text-label-caps text-ink-soft block">Nintendo Life</span>
-              <a href="#" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Complete Pokédex & Habitat Dex</a>
+              <a href="https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Huge Building & Tinkmaster Guide</a>
             </div>
             <div>
               <span className="font-label-caps text-label-caps text-ink-soft block">Eurogamer</span>
-              <a href="#" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Pokémon Pokopia Pokédex</a>
-            </div>
-            <div>
-              <span className="font-label-caps text-label-caps text-ink-soft block">OP.GG</span>
-              <a href="#" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Pokopia Pokedex</a>
+              <a href="https://www.eurogamer.net/pokemon-pokopia-walkthrough" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Pokémon Pokopia Walkthrough</a>
             </div>
             <div>
               <span className="font-label-caps text-label-caps text-ink-soft block">Pokopia.center</span>
-              <a href="#" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Habitat & Milestone Database</a>
+              <a href="https://pokopia.center/posts/pokopia-evolution-guide-2026/" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Habitat & Milestone Database</a>
             </div>
             <div>
-              <span className="font-label-caps text-label-caps text-ink-soft block">Pokémon Pokopia Fandom Wiki</span>
-              <a href="#" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Community Encyclopedia & Mechanics</a>
+              <span className="font-label-caps text-label-caps text-ink-soft block">GameTyrant</span>
+              <a href="https://gametyrant.com/news/pokmon-pokopia-team-initiation-challenge-guide" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Team Initiation Challenge Guide</a>
+            </div>
+            <div>
+              <span className="font-label-caps text-label-caps text-ink-soft block">Games.gg</span>
+              <a href="https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">Eevee & All Eeveelutions Guide</a>
+            </div>
+            <div>
+              <span className="font-label-caps text-label-caps text-ink-soft block">GameWith</span>
+              <a href="https://gamewith.jp/pocoapokemon/" target="_blank" rel="noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2 transition-colors">General Pokopia Strategy Hub</a>
             </div>
           </div>
         </div>

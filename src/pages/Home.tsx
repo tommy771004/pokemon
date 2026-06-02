@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import Seo from "../components/Seo";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -19,6 +20,7 @@ const itemVariants = {
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [data, setData] = useState<any>(null);
+  const en = i18n.language === "en";
 
   useEffect(() => {
     fetch("/data/home.json")
@@ -26,10 +28,41 @@ export default function Home() {
       .then(setData);
   }, []);
 
-  if (!data) return null;
+  const seoTitle = en ? "Pokopia Chronicles | Post-Apocalyptic Kanto Guide" : "Pokopia 年代記 | 後末日關都攻略站";
+  const seoDescription = en
+    ? "A Pokopia field journal covering biome restoration, Pokémon skills, legendary encounters, and the full post-apocalyptic Kanto rebuilding route."
+    : "Pokopia 後末日關都的踏查與攻略站，整理生態區復育、寶可夢技能、傳說遭遇與完整重建路線。";
+
+  if (!data) {
+    return (
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia", "Pokopia guide", "Pokopia Chronicles", "Pokemon restoration game"]}
+      />
+    );
+  }
 
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="show">
+    <>
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        lang={en ? "en" : "zh-Hant"}
+        keywords={["Pokemon Pokopia", "Pokopia guide", "Pokopia Chronicles", "Legendary encounters", "Pokemon skills"]}
+        image={data.featured.image}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Pokopia Chronicles",
+          url: "https://pokopiachronicles.com/",
+          inLanguage: en ? "en" : "zh-Hant",
+          description: seoDescription,
+        }}
+      />
+
+      <motion.div variants={containerVariants} initial="hidden" animate="show">
       <motion.header variants={itemVariants} className="mb-xl text-center md:text-left flex flex-col items-center md:items-start">
         <span className="font-mono-metadata text-mono-metadata text-primary uppercase tracking-widest mb-4">
           {t("home.vol")}
@@ -115,6 +148,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-    </motion.div>
+      </motion.div>
+    </>
   );
 }

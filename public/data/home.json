@@ -9,7 +9,7 @@
     "excerptZh": "在末世後的關都地區扮演百變怪。人類移居太空後，你在巨蔓藤博士的帶領下，手持圖鑑從荒蕪中甦醒，踏上復育五大生態區域、重新召喚散落世間寶可夢的旅程。",
     "author": "Prof. Tangrowth",
     "readTime": 8,
-    "link": "/guide?id=team-initiation"
+    "link": "/guide?id=team-initiation-challenge"
   },
   "news": [
     {
@@ -22,7 +22,7 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
       "updatedAgoEn": "3/5",
       "updatedAgoZh": "3 月 5 日",
-      "link": "/guide?id=eevee-family"
+      "link": "/guide?id=palette-eevee"
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
       "updatedAgoEn": "3/7",
       "updatedAgoZh": "3 月 7 日",
-      "link": "/guide?id=resource-chain"
+      "link": "/guide?id=resource-refining"
     },
     {
       "id": 4,
