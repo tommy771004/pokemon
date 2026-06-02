@@ -92,7 +92,7 @@ export default function CharacterNetwork({
 
     const typeMap = new Map(relationshipTypes.map((item) => [item.id, item]));
     const nodes = characters.map((character) => ({ ...character }));
-    const links = visibleLinks.map((link) => ({ ...link }));
+    const links = visibleLinks.map((link) => ({ ...link, source: link.sourceId, target: link.targetId }));
 
     const roles = Array.from(new Set(characters.map((char) => char.roleEn)));
     const roleCenters = new Map<string, { x: number; y: number }>();

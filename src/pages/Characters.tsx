@@ -104,6 +104,12 @@ export default function Characters() {
     ? "Track Pokopia's story cast, construction allies, Dream Islands guides, and the relationship web behind each major restoration arc."
     : "追蹤 Pokopia 的劇情角色、施工夥伴、夢境引路者與各大復育章節背後的角色關係網。";
 
+  const filteredCharacters = useMemo(() => {
+    if (!data) return [];
+    if (activeFilter === "All") return data.characters;
+    return data.characters.filter((char) => char.roleEn === activeFilter);
+  }, [activeFilter, data]);
+
   if (!data) {
     return (
       <Seo
@@ -117,11 +123,6 @@ export default function Characters() {
 
   const filters = ["All", ...new Set(data.characters.map((char) => char.roleEn))];
   const stageMap = new Map<string, Stage>(data.stages.map((stage) => [stage.id, stage]));
-
-  const filteredCharacters = useMemo(() => {
-    if (activeFilter === "All") return data.characters;
-    return data.characters.filter((char) => char.roleEn === activeFilter);
-  }, [activeFilter, data.characters]);
 
   return (
     <>

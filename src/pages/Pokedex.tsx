@@ -369,14 +369,14 @@ export default function Pokedex() {
             </button>
 
             <div className="grid grid-cols-1 sm:grid-cols-2">
-              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-md h-56 sm:h-auto sm:aspect-square relative flex-shrink-0">
+              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-4 sm:p-md h-56 sm:h-auto sm:aspect-square relative flex-shrink-0">
                 <img src={active.image} alt={active.nameEn} className="object-contain max-w-[150px] max-h-[150px] sm:max-w-[200px] sm:max-h-[200px] mb-4" />
                 <div className="absolute bottom-2 right-2 text-[10px] text-ink-faint flex gap-1 bg-surface/50 backdrop-blur-sm px-2 py-1 rounded">
                   <span>{en ? "Img Source:" : "圖片出處:"}</span>
                   <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2">PokeAPI</a>
                 </div>
               </div>
-              <div className="p-lg flex flex-col">
+              <div className="p-4 sm:p-6 md:p-lg flex flex-col">
                 <div className="flex justify-between items-start mb-sm">
                   <span className="font-body-italic text-body-italic text-primary">{active.roman}</span>
                   <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-2 py-1 rounded-sm border border-line-soft">
@@ -401,22 +401,22 @@ export default function Pokedex() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-sm mt-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-sm mt-4">
                   {active.roleEn && (
-                    <div className="bg-paper-warm hairline-border py-2 px-3 rounded-sm flex items-center justify-between gap-2">
+                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-3 px-4 sm:py-2 sm:px-3 sm:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.role")}</span>
                       <span className="font-body-base text-body-base text-ink-soft text-right">{en ? active.roleEn : active.roleZh}</span>
                     </div>
                   )}
                   {active.specialtyEn && active.specialtyEn !== "—" && (
-                    <div className="bg-paper-warm hairline-border py-2 px-3 rounded-sm flex items-center justify-between gap-2">
+                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-3 px-4 sm:py-2 sm:px-3 sm:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.specialty")}</span>
                       <span className="font-body-base text-body-base text-primary text-right">{en ? active.specialtyEn : active.specialtyZh}</span>
                     </div>
                   )}
                   {activeSkills.length > 0 && (
-                    <div className="bg-paper-warm hairline-border py-3 px-3 rounded-sm sm:col-span-2">
-                      <span className="font-label-caps text-label-caps text-ink-mute block mb-2">
+                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-4 px-4 sm:py-3 sm:px-3 sm:rounded-sm sm:col-span-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
+                      <span className="font-label-caps text-label-caps text-ink-mute block mb-3 sm:mb-2">
                         {t("pokedex.skills")}
                       </span>
                       <div className="grid grid-cols-1 gap-2">
@@ -446,7 +446,7 @@ export default function Pokedex() {
             </div>
 
             {active.descriptionEn && (
-              <div className="p-lg pt-0 sm:pt-lg border-t border-line-soft mt-0 sm:mt-0 flex flex-col justify-between">
+              <div className="p-4 sm:p-6 md:p-lg pt-0 sm:pt-6 md:pt-lg border-t border-line-soft mt-0 flex flex-col justify-between">
                 <p className={`font-body-base text-body-base text-ink-soft leading-relaxed transition-all ${expandReadMore ? "" : "line-clamp-3 mb-2"}`}>
                   {en ? active.descriptionEn : active.descriptionZh}
                 </p>
