@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:pokopia.gamertw.com)",
+      "WebFetch(domain:gamewith.jp)",
+      "WebFetch(domain:tw.pogoskill.com)",
+      "WebFetch(domain:games.gg)",
+      "WebFetch(domain:www.eurogamer.net)",
+      "WebFetch(domain:www.nintendolife.com)",
+      "WebFetch(domain:nintendowire.com)",
+      "Bash(which node *)",
+      "Read(//c/Program Files/nodejs/**)",
+      "WebSearch",
+      "WebFetch(domain:pokemon-pokopia.fandom.com)"
+    ]
+  }
+}
