@@ -91,7 +91,7 @@ export default function MapPage() {
           "@type": "CollectionPage",
           name: seoTitle,
           description: seoDescription,
-          url: "https://pokopiachronicles.com/map",
+          url: "https://pokemoninfoperfer.vercel.app/map",
           inLanguage: en ? "en" : "zh-Hant",
           about: "Pokopia exploration map and location archive",
         }}

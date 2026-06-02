@@ -14,7 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const DEFAULT_SITE_URL = "https://pokopiachronicles.com";
+const DEFAULT_SITE_URL = "https://pokemoninfoperfer.vercel.app";
 
 /** Static, always-present routes (mirrors the <Route> table in src/App.tsx). */
 const STATIC_ROUTES = ["/", "/pokedex", "/characters", "/map", "/guide"];

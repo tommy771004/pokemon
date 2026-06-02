@@ -27,7 +27,7 @@ View your app in AI Studio: https://ai.studio/apps/1fed5a9e-7582-4d06-96a6-9f00e
   deploy, so adding a guide updates the sitemap with no manual edit. Run it
   standalone with `npm run generate:sitemap`.
 - **Site origin** — set `VITE_SITE_URL` to control the `<loc>` host
-  (defaults to `https://pokopiachronicles.com`).
+  (defaults to `https://pokemoninfoperfer.vercel.app`).
 - **Google Search Console** — pick "HTML tag" verification in GSC and set the
   token as `VITE_GSC_VERIFICATION` (the `content="..."` value only) in your host
   env (e.g. Vercel) or `.env.local`. The build injects

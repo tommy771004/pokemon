@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://pokopiachronicles.com";
+const SITE_URL = "https://pokemoninfoperfer.vercel.app";
 const DEFAULT_IMAGE =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png";
 

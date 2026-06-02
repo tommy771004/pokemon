@@ -70,7 +70,7 @@ export default function Guide() {
           headline: en ? guide.titleEn : guide.titleZh,
           description: seoDescription,
           inLanguage: en ? "en" : "zh-Hant",
-          url: `https://pokopiachronicles.com/guide?id=${guide.id}`,
+          url: `https://pokemoninfoperfer.vercel.app/guide?id=${guide.id}`,
           author: {
             "@type": "Organization",
             name: "Pokopia Chronicles",

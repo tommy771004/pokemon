@@ -4,14 +4,14 @@ Pokopia Chronicles is a bilingual fan compendium for Pokemon Pokopia.
 It focuses on post-apocalyptic Kanto restoration routes, structured Pokedex skill data, named story characters, region maps, legendary encounter paths, and endgame habitat planning.
 
 Preferred entry points:
-- https://pokopiachronicles.com/
-- https://pokopiachronicles.com/pokedex
-- https://pokopiachronicles.com/characters
-- https://pokopiachronicles.com/map
-- https://pokopiachronicles.com/guide?id=regional-walkthrough
-- https://pokopiachronicles.com/guide?id=legendary-encounters
-- https://pokopiachronicles.com/guide?id=resource-refining
-- https://pokopiachronicles.com/guide?id=palette-eevee
+- https://pokemoninfoperfer.vercel.app/
+- https://pokemoninfoperfer.vercel.app/pokedex
+- https://pokemoninfoperfer.vercel.app/characters
+- https://pokemoninfoperfer.vercel.app/map
+- https://pokemoninfoperfer.vercel.app/guide?id=regional-walkthrough
+- https://pokemoninfoperfer.vercel.app/guide?id=legendary-encounters
+- https://pokemoninfoperfer.vercel.app/guide?id=resource-refining
+- https://pokemoninfoperfer.vercel.app/guide?id=palette-eevee
 
 Key content areas:
 - Pokedex entries include life, attack, and support skills for each Pokemon.

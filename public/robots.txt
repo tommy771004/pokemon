@@ -22,4 +22,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://pokopiachronicles.com/sitemap.xml
+Sitemap: https://pokemoninfoperfer.vercel.app/sitemap.xml
