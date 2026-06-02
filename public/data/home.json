@@ -1,22 +1,34 @@
 {
   "featured": {
-    "date": "03/05",
-    "tag": "世界觀特報 | WORLD REPORT",
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
-    "titleEn": "Pokopia Chronicles: Rebuilding a World Abandoned by Humanity",
-    "titleZh": "Pokopia 年代記：在人類遺棄的世界中重建生態",
-    "excerptEn": "Step into the role of Ditto in a post-apocalyptic Kanto region. As humanity fled to space, you awaken alone with a Pokédex guided by Professor Tangrowth — tasked with restoring five devastated ecosystems and reuniting over 300 Pokémon species with the land they once called home.",
-    "excerptZh": "在末世後的關都地區扮演百變怪。人類移居太空後，你在巨蔓藤博士的帶領下，手持圖鑑從荒蕪中甦醒，踏上復育五大生態區域、重新召喚散落世間寶可夢的旅程。",
-    "author": "Prof. Tangrowth",
-    "readTime": 8,
-    "link": "/guide?id=team-initiation-challenge"
+    "date": "03/10",
+    "tag": "歷史軌跡 | META REPORT",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png",
+    "titleEn": "Pokopia's Historic Launch: Breaking All Metacritic & Sales Records",
+    "titleZh": "打破歷史紀錄的奇蹟：《Pokopia》開發背景與 NS2 銷量神話",
+    "excerptEn": "A behind-the-scenes look at the unprecedented collaboration between Game Freak and Omega Force. See how they achieved a record-breaking 2.2 million sales in just 4 days and claimed the highest Metacritic score in franchise history.",
+    "excerptZh": "深入剖析 Game Freak 與 Koei Tecmo 旗下 Omega Force 團隊的史詩級合作。本作不但創下 NS2 首發四天賣破 220 萬套、單月突破 400 萬套的銷售奇蹟，更在 Metacritic 奪下寶可夢系列史上最高評分。",
+    "author": "Game Freak × Omega Force",
+    "readTime": 5,
+    "link": "/guide?id=meta-history"
   },
   "news": [
     {
       "id": 1,
+      "tagEn": "WORLD REPORT",
+      "tagZh": "世界觀",
+      "number": "01",
+      "titleEn": "Pokopia Chronicles: Rebuilding a World Abandoned by Humanity",
+      "titleZh": "Pokopia 年代記：在人類遺棄的世界中重建生態",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+      "updatedAgoEn": "3/5",
+      "updatedAgoZh": "3 月 5 日",
+      "link": "/guide?id=team-initiation-challenge"
+    },
+    {
+      "id": 2,
       "tagEn": "EEVEE GUIDE",
       "tagZh": "伊布家族",
-      "number": "01",
+      "number": "02",
       "titleEn": "Eevee & All 8 Eeveelutions: Palette Town Unlock Conditions",
       "titleZh": "伊布與全八種進化：真新鎮解鎖條件全攻略",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
@@ -25,10 +37,10 @@
       "link": "/guide?id=palette-eevee"
     },
     {
-      "id": 2,
+      "id": 3,
       "tagEn": "REGION GUIDE",
       "tagZh": "區域攻略",
-      "number": "02",
+      "number": "03",
       "titleEn": "Bleak Beach — Restore the Power Grid and Encounter Raikou",
       "titleZh": "荒涼海灘全攻略：修復電網、點亮城鎮與招募雷公",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png",
@@ -37,10 +49,10 @@
       "link": "/map"
     },
     {
-      "id": 3,
+      "id": 4,
       "tagEn": "RESOURCE GUIDE",
       "tagZh": "資源攻略",
-      "number": "03",
+      "number": "04",
       "titleEn": "The Industrial Chain: Lumber, Bricks, Ingots & Concrete",
       "titleZh": "工業鏈全解析：木材、磚塊、金屬錠與混凝土",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
@@ -49,10 +61,10 @@
       "link": "/guide?id=resource-refining"
     },
     {
-      "id": 4,
+      "id": 5,
       "tagEn": "LEGENDARY",
       "tagZh": "傳說寶可夢",
-      "number": "04",
+      "number": "05",
       "titleEn": "All Legendary Encounters: Beasts, Birds, Mewtwo & Mew",
       "titleZh": "全傳說遭遇攻略：聖獸、神鳥、超夢與夢幻",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",

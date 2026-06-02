@@ -132,21 +132,7 @@ function FactorsFigure({
   );
 }
 
-function PlateFigure({ title, en, index }: { title: string; en: boolean; index: number }) {
-  return (
-    <FigureFrame index={index} kicker={en ? "Schematic" : "概念圖解"}>
-      <div className="flex flex-col items-center text-center py-4 gap-3">
-        <div className="w-16 h-16 rounded-full border-2 border-primary/50 text-primary flex items-center justify-center bg-paper-warm">
-          <span className="material-symbols-outlined text-[32px]">draft</span>
-        </div>
-        <span className="font-headline-sm text-[15px] text-ink-soft max-w-[16rem]">{title}</span>
-        <span className="font-mono-metadata text-mono-metadata text-ink-faint uppercase tracking-widest">
-          Pokopia Chronicles · Original Figure
-        </span>
-      </div>
-    </FigureFrame>
-  );
-}
+
 
 export default function GuideDiagram({ section, index, en }: Props) {
   const title = en ? section.titleEn : section.titleZh;
@@ -160,5 +146,5 @@ export default function GuideDiagram({ section, index, en }: Props) {
     return <FactorsFigure items={list} title={title} en={en} index={index} />;
   }
 
-  return <PlateFigure title={title} en={en} index={index} />;
+  return null;
 }

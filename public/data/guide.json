@@ -1,6 +1,51 @@
 {
   "guides": [
     {
+      "id": "meta-history",
+      "vol": "VIII",
+      "categoryEn": "Meta History",
+      "categoryZh": "歷史與開發秘辛",
+      "titleEn": "The Sales Miracle & Meta-Achievements of NS2 Launch",
+      "titleZh": "NS2 首發神話：跨界聯手與打破歷史的評價紀錄",
+      "subtitleEn": "An analytical report on the groundbreaking collaboration that birthed Pokémon Pokopia, detailing its record sales and critical acclaim.",
+      "subtitleZh": "《寶可夢 Pokopia》作為任天堂 Switch 2 (NS2) 平臺首發陣容的重磅衍生作，不僅達成了商業空前成功，更在評價上締造傳奇。",
+      "stats": {
+        "optimalTimeEn": "Launch Window (March 2026)",
+        "optimalTimeZh": "2026 年 3 月首發期",
+        "successRate": "98% OpenCritic"
+      },
+      "relatedIds": [],
+      "sections": [
+        {
+          "id": "development",
+          "roman": "I.",
+          "titleEn": "The Dream Team: Game Freak x Omega Force",
+          "titleZh": "夢幻聯手：Game Freak 與 Omega Force",
+          "contentEn": "Conceived directly by Shigeru Ohmori, the game merged traditional Pokémon charm with the acclaimed sandbox expertise of Koei Tecmo's Omega Force (creators of Dragon Quest Builders).",
+          "contentZh": "本作由《寶可夢 朱／紫》總監大森滋（Shigeru Ohmori）親自構思，並由 Game Freak 與具備豐富自由建造遊戲經驗的 Koei Tecmo 旗下 Omega Force 團隊（曾操刀《勇者鬥惡龍 創世小玩家》）共同開發，碰撞出前所未有的火花。",
+          "steps": []
+        },
+        {
+          "id": "sales",
+          "roman": "II.",
+          "titleEn": "Record-Breaking NS2 Launch",
+          "titleZh": "NS2 平臺首發銷售奇蹟",
+          "contentEn": "Released on March 5, 2026, it sold over 2.2 million copies in just four days, cementing itself as one of the fastest-selling titles in the console's history.",
+          "contentZh": "於 2026 年 3 月 5 日隨 NS2 全球發行後，短短四天銷量便突破 220 萬套（日本單一市場即佔 100 萬套），並於當月全球突破 400 萬套，成為 Switch 2 平臺的現象級大作。",
+          "steps": []
+        },
+        {
+          "id": "critical-acclaim",
+          "roman": "III.",
+          "titleEn": "History's Highest Metacritic Score",
+          "titleZh": "突破寶可夢歷史的超高評價",
+          "contentEn": "With universal critical acclaim, it achieved the highest Metacritic score of any Pokémon title ever, backed by a 98% recommendation rate on OpenCritic.",
+          "contentZh": "在評價方面，本作在評價網站 Metacritic 與 OpenCritic 上獲得了「普遍好評」，打破了寶可夢系列歷史上的最高分數紀錄，並且高達 98% 的影評人一致推薦此作。",
+          "steps": []
+        }
+      ]
+    },
+    {
       "id": "regional-walkthrough",
       "vol": "VI",
       "categoryEn": "Regional Walkthrough",
@@ -43,9 +88,9 @@
             },
             {
               "nodeTitleEn": "Yawn Up A Storm",
-              "nodeTitleZh": "呼風喚雨拯救大岩蛇",
-              "descEn": "Use Water Gun to gradually hydrate the parched land, satisfying Onix and triggering regional rain.",
-              "descZh": "在沙漠中不斷使用水槍滋潤枯竭乾裂的土地，引發暴風雨和降雨，成功拯救被困的大岩蛇。",
+              "nodeTitleZh": "呼風喚雨拯救大巖蛇",
+              "descEn": "Squirtle Quest Application: Build a Rain Dance spot, reach 100 humidity, and trigger Slowpoke's Yawn to start the rain, freeing Onix.",
+              "descZh": "傑尼龜支線重要應用：先建造「求雨地點」將區域濕度升至 100，再利用呆呆獸的完美哈欠觸發大雨軟化岩石，成功解救大岩蛇。",
               "icon": "umbrella",
               "badgeZh": "關鍵氣候"
             },
@@ -53,7 +98,7 @@
               "nodeTitleEn": "Rebuild the Pokémon Center",
               "nodeTitleZh": "重建荒地寶可夢中心",
               "descEn": "Construct the initial infrastructure to establish a stable local headquarters and access basic workbenches.",
-              "descZh": "搜集基礎木塊與碎石，修復荒原寶可夢中心與大門，這將開啟你在 Pokopia 的正式基地與初期家具合成站。",
+              "descZh": "蒐集基礎木塊與碎石，修復荒原寶可夢中心與大門，這將開啟你在 Pokopia 的正式基地與初期傢俱合成站。",
               "icon": "home_work",
               "badgeZh": "新手地標"
             }
@@ -95,6 +140,14 @@
               "descZh": "喚醒發電巨樹（Mosslax），修復海灘風力發電機、燈塔水車與底座充電站，製作架設「電線桿」將導線引入城鎮，讓火系夥伴維持最大發電點亮城鎮。",
               "icon": "bolt",
               "badgeZh": "最大考驗"
+            },
+            {
+              "nodeTitleEn": "Early Material Automation (Wooper)",
+              "nodeTitleZh": "早期自動化：招募烏波",
+              "descEn": "Prioritize recruiting Wooper here. Its special ability continuously scatters clay nearby, essential for later construction.",
+              "descZh": "在這裡優先招募會亂撒素材的「烏波」，牠定居後會在住處周圍自動產出黏土，為後期的重工業建材做準備。",
+              "icon": "water_drop",
+              "badgeZh": "資源採集"
             }
           ]
         },
@@ -104,7 +157,7 @@
           "titleEn": "Rocky Ridges",
           "titleZh": "岩石山脊 (Rocky Ridges)",
           "contentEn": "Buried beneath layers of dense volcanic ash, this region hides lost temples, culinary masters, and deep metallurgical ores.",
-          "contentZh": "被厚重火山灰完全掩埋的巨型遺跡與紅色岩壁地盆，這裡是玩家冶煉銅鐵錠與碎裂堅硬金屬塊的修煉場。",
+          "contentZh": "被厚重火山灰完全掩埋的巨型遺跡與紅色巖壁地盆，這裡是玩家冶煉銅鐵錠與碎裂堅硬金屬塊的修煉場。",
           "image": {
             "src": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
             "captionEn": "Magmar powers up furnaces inside the furnace chamber.",
@@ -115,17 +168,25 @@
               "nodeTitleEn": "Rescue Chef Dente",
               "nodeTitleZh": "烤製麵包解救主廚 Dente",
               "descEn": "Locate trapped Dente. Build a 'Bread Oven' to bake wheat bread, eat it to gain strength, and hack his chain bonds.",
-              "descZh": "在岩壁深處的土屑平房內尋獲受困的廚師「Dente」。玩家需就地搭建「麵包爐」，烤製小麥麵包並一口吃下，獲得怪力擊碎鐵鍊救出主廚。",
+              "descZh": "在巖壁深處的土屑平房內尋獲受困的廚師「Dente」。玩家需就地搭建「麵包爐」，烤製小麥麵包並一口吃下，獲得怪力擊碎鐵鍊救出主廚。",
               "icon": "bakery_dining",
               "badgeZh": "拯救任務"
             },
             {
               "nodeTitleEn": "Forge Copper & Upgrade Rock Smash",
-              "nodeTitleZh": "漢堡排廚藝與強化碎岩術",
+              "nodeTitleZh": "漢堡排廚藝與強化碎巖術",
               "descEn": "Bring Magmar to furnace, smelt copper to forge a Frying Pan. Cook and eat a Burger Patty to upgrade Ditto's Rock Smash.",
-              "descZh": "吸引鴨嘴火獸（Magmar），運用其熔爐燃燒天賦將銅礦石冶製成銅錠，打造「平底鍋」。烹煮並享用多汁的「漢堡排」以永久強化百變怪的「碎岩」專長，足以擊碎黑色巨型金屬塊！",
+              "descZh": "吸引鴨嘴火獸（Magmar），運用其熔爐燃燒天賦將銅礦石冶製成銅錠，打造「平底鍋」。烹煮並享用多汁的「漢堡排」以永久強化百變怪的「碎巖」專長，足以擊碎黑色巨型金屬塊！",
               "icon": "hardware",
               "badgeZh": "工業突破"
+            },
+            {
+              "nodeTitleEn": "Core Utility Unlocks",
+              "nodeTitleZh": "礦洞核心與小匠加速",
+              "descEn": "Recruit Timburr for faster building, learn cooking for Transformation buffs, and use Graveler form for traversal.",
+              "descZh": "修復礦洞之餘，優先招募搬運小匠解鎖「建造加速」；學會料理配方能大幅強化百變怪的變身能力；並多加利用隆隆石型態進行快速移動。",
+              "icon": "construction",
+              "badgeZh": "開拓效率"
             }
           ]
         },
@@ -146,7 +207,7 @@
               "nodeTitleEn": "Aeronautics & Drifloon Ferry",
               "nodeTitleZh": "水邊小艇與快龍滑翔天空",
               "descEn": "Build a Waterside Boat habitat to summon Dragonite and copy its Glide ability, opening flight pathways.",
-              "descZh": "在浮岛邊緣設立優雅的「水邊小艇」棲息地以吸引高傲的快龍（Dragonite），向其模仿「滑翔」實用天賦，方能平穩橫渡致命高空裂隙。",
+              "descZh": "在浮島邊緣設立優雅的「水邊小艇」棲息地以吸引高傲的快龍（Dragonite），向其模仿「滑翔」實用天賦，方能平穩橫渡致命高空裂隙。",
               "icon": "flight_takeoff",
               "badgeZh": "空中移動"
             },
@@ -154,17 +215,43 @@
               "nodeTitleEn": "The Elevator Platform",
               "nodeTitleZh": "巨鍛匠與齒輪升降梯",
               "descEn": "Meet Tinkmaster. Trade Concrete and Iron Ingots to acquire Special Gears to assembly the elevator platform.",
-              "descZh": "找到空島頂端的主匠巨鍛匠（Tinkmaster），繳交重型混凝土與鐵錠，訂製關鍵的「特殊齒輪」，並藉此修復跨區域的重力升降平台。",
+              "descZh": "找到空島頂端的主匠巨鍛匠（Tinkmaster），繳交重型混凝土與鐵錠，訂製關鍵的「特殊齒輪」，並藉此修復跨區域的重力升降平臺。",
               "icon": "elevator",
               "badgeZh": "重力工程"
             },
             {
               "nodeTitleEn": "Rebuild the Huge Building (Floors 2–4)",
               "nodeTitleZh": "摩天大樓重建（2F → 4F 全樓層）",
-              "descEn": "Reconstruct the skyscraper floor by floor — each floor takes a full hour of real time to cure before the next can begin.\n• 2F: 25 Concrete · 10 Glass · 5 Pokémetal · 10 Iron Ingots.\n• 3F: 25 Concrete · 10 Glass · 10 Glow Stones · 15 Copper Ingots. Return to Rocky Ridges to shove a Strength block and mine the Glow Stones, then escort Chef Dente up to assist.\n• 4F: 40 Concrete · 15 Glass · 10 Paper · 10 Bricks · 20 Lumber. Escort Peakychu from Bleak Beach to round out the construction team. Stepping onto the rooftop after 4F triggers the Mewtwo encounter.",
-              "descZh": "逐層重建這座終極摩天大樓，每一層皆需現實時間整整 1 小時凝固成形，才能接續下一層。\n• 2F：25 混凝土 · 10 玻璃 · 5 寶可金屬 · 10 鐵錠。\n• 3F：25 混凝土 · 10 玻璃 · 10 發光石 · 15 銅錠。需回到岩石山脊推開力量方塊開採發光石，並護送主廚 Dente 前來協助。\n• 4F：40 混凝土 · 15 玻璃 · 10 紙張 · 10 磚塊 · 20 木材。須從荒涼海灘護送 Peakychu 加入施工團隊。完成 4F 步上屋頂，即可觸發與超夢（Mewtwo）的相遇。",
+              "descEn": "Reconstruct the skyscraper floor by floor — each floor takes a full hour of real time to cure before the next can begin.\n• 2F: 25 Concrete · 10 Glass · 5 Pokémetal · 10 Iron Ingots.\n• 3F: 25 Concrete · 10 Glass · 10 Glow Stones · 15 Copper Ingots. Return to Rocky Ridges to shove a Strength block and mine the Glow Stones, then escort Chef Dente up to assist.\n• 4F: 40 Concrete · 15 Glass · 10 Paper · 10 Bricks · 20 Lumber. You are forced to personally return to Bleak Beach to invite the named Pokémon Peakychu into the 6-mon workforce, and the floor takes a mandatory 1 real-time hour to build. Completing 4F and stepping onto the rooftop triggers the Mewtwo encounter.",
+              "descZh": "逐層重建這座終極摩天大樓，每一層皆需現即時間整整 1 小時凝固成形，才能接續下一層。\n• 2F：25 混凝土 · 10 玻璃 · 5 寶可金屬 · 10 鐵錠。\n• 3F：25 混凝土 · 10 玻璃 · 10 發光石 · 15 銅錠。需回到岩石山脊推開力量方塊開採發光石，並護送主廚 Dente 前來協助。\n• 4F：40 混凝土 · 15 玻璃 · 10 紙張 · 10 磚塊 · 20 木材。要蓋好巨大建築 4F 並在屋頂遇見超夢，系統強制玩家必須親自回到「荒涼海灘」邀請一隻具名寶可夢 Peakychu 加入 6 人施工團體，並且該樓層強制耗時現實時間 1 小時。",
               "icon": "domain",
               "badgeZh": "極限耗資"
+            }
+          ]
+        },
+        {
+          "id": "palette-town-main",
+          "roman": "V.",
+          "titleEn": "Palette Town Main Objectives",
+          "titleZh": "調色板鎮 / 真新鎮主線收尾",
+          "contentEn": "The crucial transition from regional puzzles to the true endgame sandbox.",
+          "contentZh": "進入終局自由建造區前的最後主線考驗與人口數量管理。",
+          "steps": [
+            {
+              "nodeTitleEn": "Mystic Slates & Human NPCs",
+              "nodeTitleZh": "神秘石板與人口回歸",
+              "descEn": "Collect the 5 Mystic Slates to fully restore the City Center. This welcomes human NPCs back to town, formally unlocking multiplayer.",
+              "descZh": "收集 5 塊神秘石板來徹底重建市中心。迎接人類 NPC 回歸城鎮後，正式解鎖聯機多人遊玩功能。",
+              "icon": "people",
+              "badgeZh": "聯機解鎖"
+            },
+            {
+              "nodeTitleEn": "Managing the Population Cap",
+              "nodeTitleZh": "人口上限與甜甜蜜調度",
+              "descEn": "The map global cap is ~20 to 22 Pokémon. Use Sweet Honey to forcefully summon specific workers directly to your construction sites.",
+              "descZh": "管理全區 20-22 隻的寶可夢數量上限。如果因為人口滿載導致找不到特定打工仔，善用「甜甜蜜」從棲息地將牠們強制召喚過來。",
+              "icon": "group_remove",
+              "badgeZh": "人口調派"
             }
           ]
         }
@@ -178,7 +265,7 @@
       "titleEn": "Beginner's Guide & QoL Mechanics",
       "titleZh": "新手必讀：實用 QoL 密技與隱藏自動化機制",
       "subtitleEn": "From linking your storage boxes to forming the ultimate automated production trio, these are the early-game secrets and mechanics the game doesn't explicitly tell you.",
-      "subtitleZh": "從收納箱與工作台的連動，到如何湊齊後期最強的自動化生產三人組，這裡整理了遊戲初期必須了解的隱藏機制與小細節。",
+      "subtitleZh": "從收納箱與工作臺的連動，到如何湊齊後期最強的自動化生產三人組，這裡整理了遊戲初期必須瞭解的隱藏機制與小細節。",
       "stats": {
         "optimalTimeEn": "Day 1 to Mid-game",
         "optimalTimeZh": "第一天至中期適用",
@@ -194,7 +281,7 @@
           "titleEn": "The Best Starter: Bulbasaur",
           "titleZh": "新手首選推薦：妙蛙種子",
           "contentEn": "When choosing your first partner, Bulbasaur is highly recommended. Not only does it have the 'Farming' specialty that significantly accelerates early crop yields, but placing tall-grass habitats early on quickly levels up your Environment Level, unlocking crucial workbench upgrades.",
-          "contentZh": "在選擇初始夥伴時，極度推薦擁有「栽種」專長的妙蛙種子。牠不僅能大幅加速初期的農場收成，配合盡早佈置長草棲息地，能讓你快速提升「環境等級」，提前解鎖關鍵的工作台升級圖紙。",
+          "contentZh": "在選擇初始夥伴時，極度推薦擁有「栽種」專長的妙蛙種子。牠不僅能大幅加速初期的農場收成，配合盡早佈置長草棲息地，能讓你快速提升「環境等級」，提前解鎖關鍵的工作臺升級圖紙。",
           "image": {
             "src": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
             "captionEn": "Bulbasaur is highly recommended for starting farmers due to its Leafage skill.",
@@ -252,7 +339,7 @@
               "nodeTitleEn": "Pikachu Power Glow",
               "nodeTitleZh": "皮卡丘（Pikachu）電能運轉",
               "descEn": "Pikachu provides electricity to accelerate furnace blowers and workspace comfort light.",
-              "descZh": "電氣屬性皮卡丘負責為所有的研磨器、大熔煉鼓風爐及自動包裝設備高頻發電，使整條產線滿載運算。",
+              "descZh": "電氣屬性皮卡丘負責為所有的研磨器、大熔煉鼓風爐及自動包裝裝置高頻發電，使整條產線滿載運算。",
               "icon": "electric_bolt",
               "badgeZh": "恆定增益"
             }
@@ -262,15 +349,15 @@
           "id": "qol-storage",
           "roman": "III.",
           "titleEn": "Storage Link & Paving Shortcuts",
-          "titleZh": "工作台連動與鋪路快捷鍵",
+          "titleZh": "工作臺連動與鋪路快捷鍵",
           "contentEn": "These hidden QoL mechanics—widely shared on community boards like Bahamut—save enormous amounts of manual effort once your town starts to scale up.",
           "contentZh": "以下是巴哈姆特等社群廣為流傳的隱藏 QoL 機制。當你的城鎮開始巨型化時，善用它們能省下大量手動操作的時間。",
           "steps": [
             {
               "nodeTitleEn": "Storage ↔ Workbench Auto-Link",
-              "nodeTitleZh": "收納箱與工作台自動連動",
+              "nodeTitleZh": "收納箱與工作臺自動連動",
               "descEn": "Place a Storage Box within 2 blocks of any Workbench and the bench will pull materials straight from the box during crafting — no need to shuffle items into your pockets first.",
-              "descZh": "只要將「收納箱」放置在距離「工作台」2 格的範圍以內，工作台合成時就會自動讀取箱內物資，完全不需先手動把材料挪進背包。",
+              "descZh": "只要將「收納箱」放置在距離「工作臺」2 格的範圍以內，工作臺合成時就會自動讀取箱內物資，完全不需先手動把材料挪進背包。",
               "icon": "inventory_2",
               "badgeZh": "倉儲連動"
             },
@@ -296,7 +383,7 @@
           "id": "automation-tools",
           "roman": "IV.",
           "titleEn": "Security Cameras & Magnet Rise",
-          "titleZh": "營運優化：監視器與電磁飄浮",
+          "titleZh": "營運最佳化：監視器與電磁飄浮",
           "contentEn": "As your town grows huge, two endgame tools eliminate the most tedious chores: remote monitoring and telekinetic terraforming.",
           "contentZh": "隨著城鎮巨型化，兩項後期工具能徹底消除最繁瑣的雜事：遠端監控與隔空整地。",
           "steps": [
@@ -315,6 +402,52 @@
               "descZh": "通關後在太空船坑洞中發現小磁怪，建立「工廠倉庫」棲息地（需金屬桶、凌亂電線、控制單元與路燈）後即可習得。按 Y 鍵可瞬間破壞回收方塊；長按 Y 鍵則能隔空抓取並移動整棵樹木或巨石，徹底顛覆大規模地形改造的體驗。",
               "icon": "control_camera",
               "badgeZh": "終局神技"
+            }
+          ]
+        },
+        {
+          "id": "habitat-conflicts",
+          "roman": "V.",
+          "titleEn": "Habitat Conflict Avoidance (from Eurogamer)",
+          "titleZh": "進階家裝：如何避免棲息地需求衝突",
+          "contentEn": "A crucial mechanic highlighted in Eurogamer's walkthrough. When placing decorations, nearby habitats can mistakenly borrow or conflict with the attributes of adjacent items.",
+          "contentZh": "根據 Eurogamer 通關攻略提出的警告：當你在同一區域密集建置多個棲息地時，極易發生「傢俱屬性干擾」的衝突。學會利用特定物件作為結界，是後期高效招募的必備技巧。",
+          "steps": [
+            {
+              "nodeTitleEn": "Recognizing Proximity Conflicts",
+              "nodeTitleZh": "認識距離衝突機制",
+              "descEn": "Items placed within a 3x3 block radius of another habitat can throw off its environment tags (e.g., adding a Torch near an Ice habitat raises warmth, evicting ice Pokémon).",
+              "descZh": "如果你在冰系寶可夢的棲地旁（3x3 網格內）放置了帶有「溫暖」或「光源」屬性的傢俱（如火把），會直接破壞原有棲地的「寒冷」標籤，導致冰系寶可夢拒絕入住。",
+              "icon": "warning",
+              "badgeZh": "距離衰減"
+            },
+            {
+              "nodeTitleEn": "Using Neutral Blockers",
+              "nodeTitleZh": "設置無屬性阻斷牆",
+              "descEn": "Eurogamer recommends building \"Neutral Blockers\" like simple brick walls or plain wood fences to legally separate environments without taking up huge gaps.",
+              "descZh": "Eurogamer 強烈建議：使用無干擾屬性的「紅磚牆」或「原木柵欄」作為物理阻斷結界。這類中性物件能有效切斷傢俱標籤之間的互相借用與疊加，讓你能將高腳椅酒吧與水草魚缸緊密相鄰建造。",
+              "icon": "fence",
+              "badgeZh": "結界阻斷"
+            }
+          ],
+          "link": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+        },
+        {
+          "id": "housing-mechanics",
+          "roman": "VI.",
+          "titleEn": "Housing & Permanent Residency (via PoGoskill)",
+          "titleZh": "進階開荒：定居機制與家屋建構 (來源：PoGoskill)",
+          "contentEn": "To stop Pokémon from taking up temporary habitat spawns, you must build them permanent homes.",
+          "contentZh": "只建置「棲息地」雖然能吸引寶可夢，但會佔用該處的生成上限。根據 PoGoskill 攻略指出，你必須為牠們建造專屬房屋，讓牠們「定居」並釋放棲息地空間。",
+          "steps": [
+            {
+              "nodeTitleEn": "Basic House Blueprint",
+              "nodeTitleZh": "基礎房屋判定條件",
+              "descEn": "A valid permanent house requires exactly: 4 enclosed walls, at least 2 blocks high, 1 door, and 3 pieces of furniture.",
+              "descZh": "符合系統判定的「家屋」需要：四周封閉的牆壁、至少 2 格的高度、1 扇門，以及內部放置滿 3 件傢俱。完成後寶可夢會正式移居，原先的棲息地就能再刷新下一隻寶可夢！",
+              "icon": "home",
+              "badgeZh": "定居條件",
+              "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
             }
           ]
         }
@@ -366,8 +499,8 @@
             {
               "nodeTitleEn": "Deep-Cave Recruit",
               "nodeTitleZh": "深洞擊礦圓滿招募",
-              "descEn": "Venture into the cave's deepest chamber, eat a Burger Patty to power up Rock Smash, and shatter the heavy metal blocks sealing the core. Recruiting Raikou dramatically boosts the region's environment level.",
-              "descZh": "深入洞穴最底層，食用「漢堡排」強化怪力碎岩，擊破封鎖核心通道的沉重金屬方塊。成功招募雷公後，可大幅提升該區域的環境等級。",
+              "descEn": "Venture into the cave's deepest chamber, eat a Burger Patty acquired from the camp to power up Rock Smash, and shatter the heavy metal blocks sealing the core. Recruiting Raikou dramatically boosts the region's environment level.",
+              "descZh": "進入「皮卡丘娃娃夢境島 (海洋型)」後，玩家必須食用在營地取得的「漢堡排」來觸發怪力，才能擊碎阻擋雷公的特殊金屬方塊。成功招募雷公後，可大幅提升該區域的環境等級。",
               "icon": "bolt",
               "badgeZh": "圓滿招募"
             }
@@ -389,14 +522,14 @@
             {
               "nodeTitleEn": "Discover the Subway Wall",
               "nodeTitleZh": "尋墓：破壁進入地下暗道",
-              "descEn": "Navigate to the Withered Wasteland Pokemon Center right side, shatter the brickwork to the north, cut metal fencing with upgraded slash to descend.",
-              "descZh": "從枯萎荒野寶可夢中心右方的碎路向北尋進，使用「碎岩」擊碎崩裂的岩壁後向左切入，施展強化居合斬技能切斷老舊金屬絲防護網，順著樓梯進入地底通道最底部。",
+              "descEn": "Navigate to the Withered Wasteland Pokemon Center right side, head north to shatter the rock with Rock Smash, turn left and cut metal fencing with upgraded Cut to descend into the depths.",
+              "descZh": "從枯萎荒野寶可夢中心右側向北，使用「碎巖」擊破裂巖，左轉後使用強化版「居合斬」切開金屬網進入深處。",
               "icon": "explore",
               "badgeZh": "第一步"
             },
             {
               "nodeTitleEn": "Golden Dig Sites Farming",
-              "nodeTitleZh": "挖掘：搜集 27 顆神聖石板",
+              "nodeTitleZh": "挖掘：蒐集 27 顆神聖石板",
               "descEn": "Raid random golden shiny dig points globally. Bring partners with 'Search' talent or craft a Dowsing Machine to map buried slates directional vectors.",
               "descZh": "在全地圖荒野隨機生成的「發光黃金挖掘點」進行開採。強烈建議攜帶「搜尋 (Search)」天賦的隊友，或在腰包裝備「尋寶機器（Dowsing Machine）」，它將精準發出震盪定位音，助你集滿 27 枚互不重複的神秘文字石板。",
               "icon": "travel_explore",
@@ -407,7 +540,7 @@
               "nodeTitleZh": "填槽：組裝壁面引導夢幻",
               "descEn": "Slide all 27 alphabetical slates correctly into the ancient mural slots to summon the playful phantom.",
               "descZh": "走回地下暗道，將收集的 27 個圖騰石板一一滑入古老遺跡壁凹槽內。拼圖完成瞬間，夢幻將在神聖光暈中出現，高興地與玩家碰拳同行！",
-              "icon": "puzzle",
+              "icon": "extension",
               "badgeZh": "圓滿招募"
             }
           ]
@@ -454,8 +587,8 @@
             {
               "nodeTitleEn": "Altar of Flame (Moltres)",
               "nodeTitleZh": "火焰鳥的烈焰祭壇 (Altar of Flame)",
-              "descEn": "Requires 50 Copper Ingots, 50 Gold Ingots, 50 Lava Rocks, and 10 Pokémetals. Extremely massive grid footprint (~33×35). Pave carefully over the volcanic caldera.",
-              "descZh": "建材配方：50 個銅錠、50 個金錠、50 個熔岩岩石、10 個高級寶可金屬。\n注意事項：此項目在 Reddit 社群被公認佔地極廣（約 33×35 格），極易卡死，需要先在火山核心地段開鑿深溝、疏導岩漿溢流後，才可著手鋪設底座。",
+              "descEn": "Requires 50 Copper Ingots, 50 Gold Ingots, 50 Lava Rocks, and 10 Pokémetals. Player forums calculated the grid footprint of the Altar of Flame at an astonishing 33x35 massive grid. Players must dig deep trenches to perform \"lava fluid mechanics\" diversion and defense.",
+              "descZh": "建材配方：50 個銅錠、50 個金錠、50 個熔岩岩石、10 個高階寶可金屬。\n注意事項：玩家論壇精確算出了傳說寶可夢的棲息地網格數值。「烈焰祭壇 (炎帝 / 火焰鳥)」佔地極高，達到了驚人的 33x35 巨大網格。玩家必須開鑿深溝，進行「熔岩流體力學」的疏導防禦。",
               "icon": "local_fire_department",
               "badgeZh": "火焰大工"
             },
@@ -471,7 +604,7 @@
               "nodeTitleEn": "Freezing Chambers (Articuno)",
               "nodeTitleZh": "急凍鳥的冰結之室 (Freezing Chambers)",
               "descEn": "Requires 50 Stone, 50 Ice Blocks, 10 Crystal Shards, and 10 Pokemetals. Construct on highest cold peaks.",
-              "descZh": "建材配方：50 石體塊、50 凜冬冰塊、10 深邃水晶碎片、10 高級寶可金屬。\n建造細節：建在北邊孤崖頂點。冰塊需使用冰系寶可夢在淡水盆批量吐息凝結產出。",
+              "descZh": "建材配方：50 石體塊、50 凜冬冰塊、10 深邃水晶碎片、10 高階寶可金屬。\n建造細節：建在北邊孤崖頂點。冰塊需使用冰系寶可夢在淡水盆批次吐息凝結產出。",
               "icon": "ac_unit",
               "badgeZh": "嚴寒大工"
             }
@@ -487,7 +620,7 @@
       "titleEn": "Team Initiation Challenge: Complete 8 Badges Pathway",
       "titleZh": "團隊入會挑戰：全 8 枚徽章物資需求與通關路徑",
       "subtitleEn": "To trigger the final credits and complete your restoration journey, you must submit specific materials at the mysterious tower on Bleak Beach to acquire all 8 badges.",
-      "subtitleZh": "為了解鎖終局製作人員名單、完成世界復育之旅，玩家必須在荒涼海灘的神秘高塔中，依序交納對應的重工業精煉物資，取得象徵榮耀的 8 枚徽章。以下為各階段的詳盡需求與拓荒指引。",
+      "subtitleZh": "為瞭解鎖終局製作人員名單、完成世界復育之旅，玩家必須在荒涼海灘的神秘高塔中，依序交納對應的重工業精煉物資，取得象徵榮耀的 8 枚徽章。以下為各階段的詳盡需求與拓荒指引。",
       "stats": {
         "optimalTimeEn": "Mid to Late-game",
         "optimalTimeZh": "中後期最高考驗",
@@ -535,19 +668,20 @@
               "nodeTitleEn": "4. Rainbow Badge",
               "nodeTitleZh": "4. 彩虹徽章",
               "descEn": "Requires 40 Bricks, 20 Gold Ingots, 50 Concrete.\nStrategy: Bake Soft Clay (triggered by rain) via Torchic to get Bricks. Melt Gold ore in Rocky Ridges. Process Limestone via Golem and Conkeldurr in the Concrete Mixer.",
-              "descZh": "物資需求：40 塊磚塊、20 塊金錠、50 塊混凝土。\n獲取策略：軟泥（下雨天於荒原取得）委託火稚雞或小火龍窯烤成紅磚；金錠於岩石山脊開採熔煉；混凝土則需在空島利用隆隆岩和修建老匠在攪拌機中加工。",
+              "descZh": "物資需求：40 塊磚塊、20 塊金錠、50 塊混凝土。\n獲取策略：軟泥（下雨天於荒原取得）委託火稚雞或小火龍窯烤成紅磚；金錠於岩石山脊開採熔煉；混凝土則需在空島利用隆隆巖和修建老匠在攪拌機中加工。",
               "icon": "looks",
               "badgeZh": "重化工業"
             }
-          ]
+          ],
+          "link": "https://gametyrant.com/news/pokmon-pokopia-team-initiation-challenge-guide"
         },
         {
           "id": "badges-5-8",
           "roman": "II.",
           "titleEn": "Badges 5 to 8: Advanced Automation & Finale",
-          "titleZh": "第 5 至 8 階段：高階電網、家具裝潢與終局通關",
+          "titleZh": "第 5 至 8 階段：高階電網、傢俱裝潢與終局通關",
           "contentEn": "The final stretch tests large-scale energy piping, advanced furniture manufacturing, and ultimate game completion.",
-          "contentZh": "最後四枚徽章對玩家的跨區域調電能力、高級生活家具圖紙收集度，以及大後期成就提出了全方位檢配要求。",
+          "contentZh": "最後四枚徽章對玩家的跨區域調電能力、高階生活傢俱圖紙收集度，以及大後期成就提出了全方位檢配要求。",
           "steps": [
             {
               "nodeTitleEn": "5. Soul Badge",
@@ -561,7 +695,7 @@
               "nodeTitleEn": "6. Marsh Badge",
               "nodeTitleZh": "6. 沼澤徽章",
               "descEn": "Requires 4 Industrial Beds, 4 Resort Lamps, 4 Office Desks.\nStrategy: Find furniture blueprints inside Poké Balls hidden across various biomes, craft them on the advanced workbench.",
-              "descZh": "物資需求：4 張工業床、4 盞度假村燈、4 張辦公桌。\n獲取策略：考驗家具合成能力。此階段所需的進階家具藍圖全數散落於世界遍地的隱秘精靈球中，收集齊全後在工作台消耗金屬與布料進行裝潢合成實物。",
+              "descZh": "物資需求：4 張工業床、4 盞度假村燈、4 張辦公桌。\n獲取策略：考驗傢俱合成能力。此階段所需的進階傢俱藍圖全數散落於世界遍地的隱秘精靈球中，收集齊全後在工作臺消耗金屬與布料進行裝潢合成實物。",
               "icon": "bed",
               "badgeZh": "家裝大師"
             },
@@ -569,8 +703,8 @@
               "nodeTitleEn": "7. Volcano Badge",
               "nodeTitleZh": "7. 火山徽章",
               "descEn": "Requires 1 Washing Machine, 1 Refrigerator, 1 Game Boy.\nStrategy: Reach Level 5 Environment Level in the three starting areas to unlock appliances. The rare Game Boy component is gifted upon maxing out Sparkling Skylands.",
-              "descZh": "物資需求：1 台洗衣機、1 台冰箱、1 台 Game Boy。\n獲取策略：家電大廠解鎖！洗衣機與冰箱的設計圖需要玩家將前三個生態區的環境評分提升至滿級 5 級方能解鎖；最為稀有且昂貴的 Game Boy 則是空島滿級時的專屬餽贈圖紙。",
-              "icon": "appliances",
+              "descZh": "物資需求：1 臺洗衣機、1 臺冰箱、1 臺 Game Boy。\n獲取策略：家電大廠解鎖！洗衣機與冰箱的設計圖需要玩家將前三個生態區的環境評分提升至滿級 5 級方能解鎖；最為稀有且昂貴的 Game Boy 則是空島滿級時的專屬餽贈圖紙。",
+              "icon": "kitchen",
               "badgeZh": "電器製造"
             },
             {
@@ -591,13 +725,13 @@
       "categoryEn": "Pokedex Tools",
       "categoryZh": "外部圖鑑工具指引",
       "titleEn": "Professional Pokopia Databases & Field Toolkits",
-      "titleZh": "專業圖鑑工具：網路五大權威資料庫與機制數據深度應用",
+      "titleZh": "專業圖鑑工具：網路五大權威資料庫與機制資料深度應用",
       "subtitleEn": "Unlock hidden formulas, precise grid layouts, and milestone bonuses by utilizing the top databases tracked by the active community.",
-      "subtitleZh": "為了解鎖隱藏神裝食譜、精確的網格佈建與圖鑑里程碑獎勵，本篇整合了網路上最熱門的《寶可夢 Pokopia》專業站點，並剖析各大工具的引路強項。",
+      "subtitleZh": "為瞭解鎖隱藏神裝食譜、精確的網格佈建與圖鑑里程碑獎勵，本篇整合了網路上最熱門的《寶可夢 Pokopia》專業站點，並剖析各大工具的引路強項。",
       "stats": {
         "optimalTimeEn": "Anytime & Post-game",
         "optimalTimeZh": "日常巡邏與收集全能",
-        "successRate": "5 Comprehensive Wikis"
+        "successRate": "9 Comprehensive Wikis & Boards"
       },
       "relatedIds": [
         "beginner-tips",
@@ -614,9 +748,9 @@
           "steps": [
             {
               "nodeTitleEn": "Nintendo Life (Habitat Dex)",
-              "nodeTitleZh": "Nintendo Life：棲息地配置與具體家具數值",
+              "nodeTitleZh": "Nintendo Life：棲息地配置與具體傢俱數值",
               "descEn": "Strength: Perfect integration of Pokedex and Habitat Dex requirements. Explains specific item ratios. For instance, 'Bench with Greenery' strictly requires 2 Hedges and 1 Chair.",
-              "descZh": "強項功能：將「寶可夢圖鑑」與「棲息地圖鑑 (Habitat Dex)」完美結合，精確標明了每種環境所需的物件比例（例如要搭建「有綠意的長椅」，會明確指引需擺設 2 個樹籬與 1 張椅子），適合家裝玩家。",
+              "descZh": "強項功能：將「寶可夢圖鑑」與「棲息地圖鑑 (Habitat Dex)」完美結合，精確標明瞭每種環境所需的物件比例（例如要搭建「有綠意的長椅」，會明確指引需擺設 2 個樹籬與 1 張椅子），適閤家裝玩家。",
               "icon": "menu_book",
               "badgeZh": "棲息地專家"
             },
@@ -626,7 +760,7 @@
               "descEn": "Strength: Hosts all 300 base entries plus Event Pokedex. Breaks details into traditional bio, habitat/weather, and specialties/likes. Understanding likes is key to high comfort.",
               "descZh": "強項功能：提供 300 隻基礎圖鑑與限時「活動圖鑑（Event Pokédex）」記錄。分為傳統生物、棲息天氣、以及最重要的「專長與喜好（Likes）」。掌控喜好是極速提升寶可夢家園舒適度的無上法門。",
               "icon": "library_books",
-              "badgeZh": "生物數據"
+              "badgeZh": "生物資料"
             },
             {
               "nodeTitleEn": "OP.GG Pokopia (Rarity & Filters)",
@@ -640,7 +774,7 @@
               "nodeTitleEn": "Pokopia.center (Milestones & Core)",
               "nodeTitleZh": "Pokopia.center：招募五步迴圈與里程碑獎勵",
               "descEn": "Strength: Detailed post-game regional statistics (Kanto ~50, Sinnoh ~14) and 5-step loop analysis. Formally records rewards like titles, garments, and Game Boy components upon reaching 200, 250, and 300 species milestones.",
-              "descZh": "強項功能：最深度的宏觀數據分析。列出 1 到 9 世代在關都 (~50 隻) 與神奧 (~14 隻) 等地分佈；精析了招募 5 步迴圈；並精準記錄收集 200、250 與 300 隻時發放的「圖鑑滿載里程碑獎勵」（如專用稱號、高級服飾及 Game Boy 組件）。",
+              "descZh": "強項功能：最深度的宏觀資料分析。列出 1 到 9 世代在關都 (~50 隻) 與神奧 (~14 隻) 等地分佈；精析了招募 5 步迴圈；並精準記錄收集 200、250 與 300 隻時發放的「圖鑑滿載里程碑獎勵」（如專用稱號、高階服飾及 Game Boy 元件）。",
               "icon": "stars",
               "badgeZh": "深度研判"
             },
@@ -648,7 +782,7 @@
               "nodeTitleEn": "Fandom Wiki (Community Tricks)",
               "nodeTitleZh": "Fandom Wiki：玩家社群百科與隱藏技巧",
               "descEn": "Strength: Player-supported encyclopedia containing exhaustive items database, interactive grid coordinates, and secret structural blueprints discovered by active sandbox players.",
-              "descZh": "強項功能：全集體智慧百科。由全球核心玩家聯動維護。收錄了最冷門的單件家具圖鑑、百變怪地形交互的隱藏格子坐標，以及論壇上玩家測試出的多套一鍵自動回收最佳管線配置。",
+              "descZh": "強項功能：全集體智慧百科。由全球核心玩家聯動維護。收錄了最冷門的單件傢俱圖鑑、百變怪地形互動的隱藏格子坐標，以及論壇上玩家測試出的多套一鍵自動回收最佳管線配置。",
               "icon": "groups",
               "badgeZh": "社群聚合"
             }
@@ -682,13 +816,13 @@
           "titleEn": "The Five Core Material Chains",
           "titleZh": "五大核心建材生產線",
           "contentEn": "Each chain pairs a raw resource with a specialty Pokémon and a processing station. Set these up early and the mid-to-late game stops being a grind.",
-          "contentZh": "每一條生產線都由「原料 ＋ 專長寶可夢 ＋ 加工設備」三者組成。儘早把它們搭建起來，中後期就不再是無止盡的苦工。",
+          "contentZh": "每一條生產線都由「原料 ＋ 專長寶可夢 ＋ 加工裝置」三者組成。儘早把它們搭建起來，中後期就不再是無止盡的苦工。",
           "steps": [
             {
               "nodeTitleEn": "Lumber Chain (Scyther · Cut)",
               "nodeTitleZh": "木材生產線（飛天螳螂・居合斬）",
               "descEn": "Build a habitat with one large tree and four tall-grass plots to attract Scyther. Learn Cut to split logs into Small Wood Blocks, then commission Scyther to batch-process them into Lumber.",
-              "descZh": "建造包含一棵大樹與四格高草叢的棲息地以吸引飛天螳螂。學會「居合斬」即可劈開圓木取得小木塊，再委託飛天螳螂批量切割成木材。",
+              "descZh": "建造包含一棵大樹與四格高草叢的棲息地以吸引飛天螳螂。學會「居合斬」即可劈開圓木取得小木塊，再委託飛天螳螂批次切割成木材。",
               "icon": "forest",
               "badgeZh": "木材"
             },
@@ -710,9 +844,9 @@
             },
             {
               "nodeTitleEn": "Concrete Chain (Golem + Conkeldurr)",
-              "nodeTitleZh": "混凝土生產線（隆隆岩 ＋ 修建老匠）",
+              "nodeTitleZh": "混凝土生產線（隆隆巖 ＋ 修建老匠）",
               "descEn": "In the Sparkling Skylands, build a Construction Generator habitat to attract Conkeldurr. Golem's Crush ability breaks rock into Limestone; place the Concrete Mixer in water and let Conkeldurr process the Limestone into Concrete.",
-              "descZh": "在閃耀空島建造「工地發電機」棲息地吸引修建老匠。隆隆岩的「粉碎」可將岩石破壞成石灰岩；把「混凝土攪拌機」置入水中，再交由修建老匠將石灰岩加工成混凝土。",
+              "descZh": "在閃耀空島建造「工地發電機」棲息地吸引修建老匠。隆隆巖的「粉碎」可將岩石破壞成石灰岩；把「混凝土攪拌機」置入水中，再交由修建老匠將石灰岩加工成混凝土。",
               "icon": "domain",
               "badgeZh": "混凝土"
             },
@@ -732,14 +866,14 @@
       "id": "palette-eevee",
       "vol": "IX",
       "categoryEn": "Endgame Sandbox",
-      "categoryZh": "終局沙盒・真新鎮",
+      "categoryZh": "終局自由建造區・真新鎮",
       "titleEn": "Palette Town & the Eevee Restoration",
-      "titleZh": "真新鎮終局沙盒：伊布家族八型態復育全攻略",
+      "titleZh": "真新鎮終局自由建造區：伊布家族八型態復育全攻略",
       "subtitleEn": "Clearing the main story unlocks the pure sandbox region of Palette Town, home to the toughest ecological challenge in the game—restoring Eevee and all eight of its evolutions. Every eeveelution habitat shares the same base recipe: 1 chair, 1 table, and 1 special food locked behind a specific milestone.",
-      "subtitleZh": "完成主線後即解鎖純沙盒區域「真新鎮」，這裡藏著全作最嚴苛的生態挑戰——伊布及其八種進化型態的復育。所有伊布棲息地的基礎配方都相同：1 張椅子、1 張桌子，外加 1 種被鎖在特定里程碑之後的特殊食物。",
+      "subtitleZh": "完成主線後即解鎖純自由建造區域「真新鎮」，這裡藏著全作最嚴苛的生態挑戰——伊布及其八種進化型態的復育。所有伊布棲息地的基礎配方都相同：1 張椅子、1 張桌子，外加 1 種被鎖在特定里程碑之後的特殊食物。",
       "stats": {
         "optimalTimeEn": "Post-game Sandbox",
-        "optimalTimeZh": "通關後沙盒挑戰",
+        "optimalTimeZh": "通關後自由建造挑戰",
         "successRate": "8 Eeveelutions"
       },
       "relatedIds": [
@@ -818,6 +952,193 @@
               "descZh": "在真新鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。",
               "icon": "cake",
               "badgeZh": "妖精系"
+            }
+          ],
+          "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee"
+        }
+      ]
+    },
+    {
+      "id": "external-community-resources",
+      "vol": "X",
+      "categoryEn": "External Community Resources",
+      "categoryZh": "外部攻略資源與社群",
+      "titleEn": "Global Frontline Guides & Community Databases",
+      "titleZh": "Pokopia 全球前線攻略指南與資料庫總匯",
+      "subtitleEn": "A curated collection of essential external resources, including beginner walkthroughs, hidden mechanics, and comprehensive database tools.",
+      "subtitleZh": "本篇彙整了全球社群、論壇與專業圖鑑網站的最佳攻略連結，涵蓋開荒流程、隱藏機制到圖鑑解鎖極限條件。",
+      "stats": {
+        "optimalTimeEn": "Always Recommended",
+        "optimalTimeZh": "隨時查閱適用",
+        "successRate": "Community Verified"
+      },
+      "sections": [
+        {
+          "id": "beginner-and-frontline",
+          "roman": "I.",
+          "titleEn": "Beginner Guides & Frontline Communities",
+          "titleZh": "新手開荒與前線社群",
+          "contentEn": "Essential walkthroughs and tips for accelerating your early-game progression and staying updated with events.",
+          "contentZh": "精選新手村實用訣竅、主線通關路線，以及最前線的日文情報站。",
+          "steps": [
+            {
+              "nodeTitleEn": "Gamertw: 15 Beginner Tips",
+              "nodeTitleZh": "Gamertw（15 個訣竅）",
+              "descEn": "15 crucial long-term tips I wish I knew earlier.",
+              "descZh": "長線規劃必讀的 15 個開局訣竅（包含自動化生產三人組與環境評分解說）。",
+              "icon": "lightbulb",
+              "badgeZh": "新手開荒",
+              "link": "https://pokopia.gamertw.com/zh-TW/guide/beginner"
+            },
+            {
+              "nodeTitleEn": "PoGoskill: Walkthrough & Strategy",
+              "nodeTitleZh": "PoGoskill（流程攻略）",
+              "descEn": "Detailed regional walkthroughs and progression systems.",
+              "descZh": "涵蓋各區域主線流程解說與過關推薦策略。",
+              "icon": "explore",
+              "badgeZh": "主線攻略",
+              "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+            },
+            {
+              "nodeTitleEn": "Bahamut Forum: Hidden QoL",
+              "nodeTitleZh": "巴哈姆特（隱藏 QoL）",
+              "descEn": "Taiwanese community thread sharing essential QoL and hidden tricks.",
+              "descZh": "「一人一個小知識！」玩家社群驗證的實用 QoL 密技（如工作臺與收納箱連動）。",
+              "icon": "forum",
+              "badgeZh": "社群精華",
+              "link": "https://forum.gamer.com.tw/C.php?bsn=1647&snA=128424"
+            },
+            {
+              "nodeTitleEn": "GameWith: Japanese Frontline",
+              "nodeTitleZh": "GameWith（日文前線）",
+              "descEn": "The fastest updating Japanese database for events and recipes.",
+              "descZh": "日文最速前線資訊，提供最完整的傢俱製作食譜與限時活動即時更新。",
+              "icon": "newspaper",
+              "badgeZh": "日文情報",
+              "link": "https://gamewith.jp/pocoapokemon/"
+            }
+          ]
+        },
+        {
+          "id": "mechanics-and-dex-authority",
+          "roman": "II.",
+          "titleEn": "Mechanics & Dex Authorities",
+          "titleZh": "機制與圖鑑權威",
+          "contentEn": "Advanced breakdowns for milestone challenges, legendary coordinates, and extreme Eeveelution conditions.",
+          "contentZh": "深度解謎機制的權威資料庫，破解伊布極限條件、傳奇工程數據與物資神技指引。",
+          "steps": [
+            {
+              "nodeTitleEn": "Games.gg / Pokopia.center: Eeveelutions",
+              "nodeTitleZh": "伊布家族解鎖極限條件 (Games.gg / Pokopia.center)",
+              "descEn": "The definitive guide for unlocking all 8 Eeveelutions in Palette Town.",
+              "descZh": "統整真新鎮純自由建造區域中，伊布全 8 種型態的嚴苛解鎖條件配置。",
+              "icon": "pets",
+              "badgeZh": "伊布條件",
+              "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee"
+            },
+            {
+              "nodeTitleEn": "Eurogamer: Regional Walkthroughs",
+              "nodeTitleZh": "Eurogamer 區域圖文通關指南",
+              "descEn": "Comprehensive western guides covering Bleak Beach and Sparkling Skylands puzzles.",
+              "descZh": "詳盡的圖文區域解析，深入荒涼海灘與閃耀空島的地景謎題。",
+              "icon": "map",
+              "badgeZh": "區域指引",
+              "link": "https://www.eurogamer.net/pokemon-pokopia-walkthrough"
+            },
+            {
+              "nodeTitleEn": "GameTyrant: Refining & Magnet Rise",
+              "nodeTitleZh": "GameTyrant 物資提煉與電磁飄浮神技指南",
+              "descEn": "Masterclass on industrial mass production and Magnet Rise logistics.",
+              "descZh": "精煉核心物資的最佳產線搭配，以及電磁飄浮能力的應用神技。",
+              "icon": "factory",
+              "badgeZh": "工程提煉",
+              "link": "https://gametyrant.com/news/pokemon-pokopia-material-refining-and-magnet-rise-guide"
+            },
+            {
+              "nodeTitleEn": "Reddit: Legendary Grid Coordinates",
+              "nodeTitleZh": "Reddit 社群論壇討論區",
+              "descEn": "Community calculations for extreme legendary structures like Kanto Birds Altars.",
+              "descZh": "匯集社群硬核玩家測試出的終局建築佔地網格（如 33x35 火焰鳥祭壇等）。",
+              "icon": "groups",
+              "badgeZh": "社群解謎",
+              "link": "https://www.reddit.com/r/Pokopia/comments/1rqh19y/grid_size_of_altar_of_the_flame/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limited-time-events",
+      "vol": "XI",
+      "categoryEn": "Limited-Time Events",
+      "categoryZh": "限時活動與季節事件",
+      "titleEn": "Seasonal Calendar & Frontline Events (GameWith)",
+      "titleZh": "日文前線情報：季節交替與限時活動總整理",
+      "subtitleEn": "Based on GameWith's frontline database, here are the major limited-time events, pop-up challenges, and seasonal furniture drops you can expect as in-game time progresses.",
+      "subtitleZh": "根據日本最大前線攻略網站 GameWith 的即時情報追蹤，本作在遊戲內時間推移下，會發生多種短期活動與特殊 NPC 挑戰。及早準備才能順利收集限定傢俱。",
+      "stats": {
+        "optimalTimeEn": "In-Game Calendar Sync",
+        "optimalTimeZh": "配合遊戲內時間關注",
+        "successRate": "Exclusive Drops"
+      },
+      "sections": [
+        {
+          "id": "spring-events",
+          "roman": "I.",
+          "titleEn": "Spring Calendar: Fluff & Gems",
+          "titleZh": "春季重點時程：集棉、跳繩與寶石追尋",
+          "contentEn": "Early spring in Pokopia is packed with collection events requiring you to have at least one reconstructed Pokémon Center to trigger them.",
+          "contentZh": "遊戲內的春季充滿了收集類型的限時活動，請務必確認你已經修好各地區的「寶可夢中心」，這通常是觸發事件的必備前置條件。",
+          "steps": [
+            {
+              "nodeTitleEn": "Hoppip's Fluff Collection (Mar 10 - Mar 25)",
+              "nodeTitleZh": "毽子草的綿毛收集（遊戲內 3/10 ~ 3/25）",
+              "descEn": "Hoppip, Skiploom, and Jumpluff make special appearances. Gather their stray fluff to craft exclusive \"Picnic-themed\" decorations. Occurs only in areas with a repaired Poké Center.",
+              "descZh": "活動期間毽子草、毽子花與毽子棉會大量出現在野外。收集牠們隨風飄散的棉毛，可兌換專屬的「野餐主題」傢俱。限於已修復寶可夢中心的城鎮發生。",
+              "icon": "grass",
+              "badgeZh": "野餐收集"
+            },
+            {
+              "nodeTitleEn": "One-Day Pop Quiz (Apr 1 - Apr 2)",
+              "nodeTitleZh": "愚人節：大模仿家問答大會（遊戲內 4/1 ~ 4/2）",
+              "descEn": "A 24-hour special Mimic Challenge. Answer rapid-fire silhouette and impersonation quizzes to unlock prankster furniture.",
+              "descZh": "僅限 24 小時的特殊挑戰！你要面對百變怪的「模仿猜謎」連發，連續答對即可獲得充滿惡作劇風格的稀有傢俱。",
+              "icon": "contact_support",
+              "badgeZh": "限時挑戰"
+            },
+            {
+              "nodeTitleEn": "Jump Rope Tournament (Apr 19 - Apr 27)",
+              "nodeTitleZh": "全員大跳繩挑戰（遊戲內 4/19 ~ 4/27）",
+              "descEn": "A rhythm mini-game where your town's Pokémon jump together. Higher consecutive jumps yield better supply rewards.",
+              "descZh": "節奏類迷你遊戲。將城鎮裡的寶可夢召集起來一起跳大繩，連續跳躍次數越高、獲得的重工業物資與特殊獎勵越豐厚。",
+              "icon": "sports_gymnastics",
+              "badgeZh": "節奏遊戲"
+            },
+            {
+              "nodeTitleEn": "Sableye's Gem Hunt (Apr 29 - May 14)",
+              "nodeTitleZh": "勾魂眼的寶石獵人（遊戲內 4/29 ~ 5/14）",
+              "descEn": "Sableye will appear asking for specific excavated gems. Rewards include dark, gem-studded luxury furniture.",
+              "descZh": "神出鬼沒的勾魂眼會發布寶石懸賞。進入礦區挖出牠指定的寶石類型交貨，就能入手鑲滿閃耀原石的暗黑奢華風裝飾。",
+              "icon": "diamond",
+              "badgeZh": "尋寶委託"
+            }
+          ]
+        },
+        {
+          "id": "dream-islands",
+          "roman": "II.",
+          "titleEn": "Dream Islands Expeditions (ゆめしま)",
+          "titleZh": "進階探索：夢境群島 (ゆめしま)",
+          "contentEn": "GameWith emphasizes the importance of Dream Islands—randomized biomes essential for rare endgame encounters.",
+          "contentZh": "GameWith 資料庫特別整理了「夢境群島」系統。這是取得特殊物資與傳說級資源的隨機浮動島嶼，每次進入都不一樣。",
+          "steps": [
+            {
+              "nodeTitleEn": "Regional Dream Islands",
+              "nodeTitleZh": "四大區域夢境島",
+              "descEn": "Includes Wasteland Dream Island, Ocean Dream Island, Crag Dream Island, and Sky Dream Island—each corresponding to the main biomes but with boosted rare spawn rates.",
+              "descZh": "包含了「荒野夢境島」、「汪洋夢境島」、「岩山夢境島」與「天空夢境島」。這些島嶼對應四大基礎地貌，但充滿極度罕見的採集資源點與出沒機率被大幅提升的稀有寶可夢。",
+              "icon": "explore",
+              "badgeZh": "高階資源"
             }
           ]
         }

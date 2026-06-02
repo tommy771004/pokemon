@@ -28,7 +28,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -76,7 +76,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -124,7 +124,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -186,7 +186,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -232,7 +232,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -300,7 +300,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "The first Pokémon Ditto encounters in Withered Wasteland. Rescuing a dehydrated Squirtle teaches Ditto the Water Gun move — essential for watering dry land, growing grass habitats, and eventually triggering the first rainfall to save Onix. A tutorial-critical partner.",
-      "descriptionZh": "百變怪在枯萎荒野遭遇的第一隻寶可夢。救援一隻脫水的傑尼龜，讓百變怪學會「水槍」技能——這是澆灌乾旱土地、生長草地棲息地，乃至最終引發降雨拯救大岩蛇的必要技能。教學流程的核心夥伴。",
+      "descriptionZh": "百變怪在枯萎荒野遭遇的第一隻寶可夢。救援一隻脫水的傑尼龜，讓百變怪學會「水槍」技能——這是澆灌乾旱土地、生長草地棲息地，乃至最終引發降雨拯救大巖蛇的必要技能。教學流程的核心夥伴。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
       "known": true,
       "skills": [
@@ -1100,7 +1100,7 @@
       "specialtyEn": "Recycle",
       "specialtyZh": "回收",
       "descriptionEn": "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
-      "descriptionZh": "根據目前已知的研究結果， 長在牠肚子上的可怕花紋 一共有６種不同的類型。",
+      "descriptionZh": "根據目前已知的研究結果， 長在牠肚子上的可怕花紋 一共有６種不同的型別。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
       "known": true,
       "skills": [
@@ -1164,7 +1164,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Releases a fast electric burst that powers devices and shocks obstacles apart.",
-          "detailZh": "能瞬間釋放電流，既可啟動設備，也能擊散障礙。"
+          "detailZh": "能瞬間釋放電流，既可啟動裝置，也能擊散障礙。"
         },
         {
           "categoryEn": "Support Skill",
@@ -1202,7 +1202,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -1210,7 +1210,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -1248,13 +1248,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -1294,13 +1294,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -1410,7 +1410,7 @@
       "id": "031",
       "roman": "XXXI.",
       "nameEn": "Nidoqueen",
-      "nameZh": "尼多后",
+      "nameZh": "尼多後",
       "typesEn": [
         "POISON",
         "GROUND"
@@ -1728,7 +1728,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -1774,7 +1774,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -1844,7 +1844,7 @@
       "specialtyEn": "Trade",
       "specialtyZh": "交易",
       "descriptionEn": "It’s proud of its fur, which is fine and delicate. In particular, the curl on its forehead has a texture that’s perfectly heavenly.",
-      "descriptionZh": "以自己細緻的體毛為傲。 尤其額頭上的捲毛，更是有著 彷彿會一摸升天的極致觸感。",
+      "descriptionZh": "以自己細緻的體毛為傲。 尤其額頭上的捲毛，更是有著 彷彿會一摸昇天的極致觸感。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
       "known": true,
       "skills": [
@@ -1998,7 +1998,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2046,7 +2046,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2094,7 +2094,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2142,7 +2142,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2190,7 +2190,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2332,13 +2332,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -2378,13 +2378,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -2716,7 +2716,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -2762,7 +2762,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -3210,7 +3210,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3258,7 +3258,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3306,7 +3306,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3450,13 +3450,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3498,13 +3498,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3522,7 +3522,7 @@
       "id": "076",
       "roman": "LXXVI.",
       "nameEn": "Golem",
-      "nameZh": "隆隆岩",
+      "nameZh": "隆隆巖",
       "typesEn": [
         "ROCK",
         "GROUND"
@@ -3536,7 +3536,7 @@
       "specialtyEn": "Crush",
       "specialtyZh": "粉碎",
       "descriptionEn": "A critical partner for concrete production in Sparkling Skylands. Only Golem's powerful Crush ability can shatter hard rock formations to yield Limestone — the raw material needed for the Concrete Mixer. Recruit one from Rocky Ridges and station it near the mixer in the Skylands.",
-      "descriptionZh": "閃耀空島混凝土生產的關鍵夥伴。只有隆隆岩強大的「粉碎」專長才能擊碎堅硬岩層，產出混凝土攪拌機所需的石灰岩原料。從岩石山脊招募後安置於空島攪拌機附近。",
+      "descriptionZh": "閃耀空島混凝土生產的關鍵夥伴。只有隆隆巖強大的「粉碎」專長才能擊碎堅硬巖層，產出混凝土攪拌機所需的石灰岩原料。從岩石山脊招募後安置於空島攪拌機附近。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
       "known": true,
       "skills": [
@@ -3546,13 +3546,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3582,7 +3582,7 @@
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
       "descriptionEn": "These Pokémon live in herds out in the grassland. Newborn foals lack their fiery manes, which will develop about an hour after birth.",
-      "descriptionZh": "得到了小火馬認可的人， 在觸摸牠燃燒著的鬃毛時 不會覺得燙手，真是不可思議。",
+      "descriptionZh": "得到了小火馬認可的人， 在觸控牠燃燒著的鬃毛時 不會覺得燙手，真是不可思議。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
       "known": true,
       "skills": [
@@ -3608,7 +3608,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -3654,7 +3654,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -3830,7 +3830,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3838,7 +3838,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -3964,7 +3964,7 @@
       "specialtyEn": "Glide",
       "specialtyZh": "滑翔",
       "descriptionEn": "One of Doduo’s two heads splits to form a unique species. It runs close to 40 mph in prairies.",
-      "descriptionZh": "嘟嘟的其中一個頭分裂 形成的變種。能以60公里的 時速在草原上奔馳。",
+      "descriptionZh": "嘟嘟的其中一個頭分裂 形成的變種。能以60公里的 時速在草原上賓士。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
       "known": true,
       "skills": [
@@ -4058,7 +4058,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters.",
-      "descriptionZh": "全身上下一片雪白。 不畏寒冷，在滿是浮冰的海上 也能元氣十足地游來游去。",
+      "descriptionZh": "全身上下一片雪白。 不畏寒冷，在滿是浮冰的海上 也能元氣十足地遊來游去。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
       "known": true,
       "skills": [
@@ -4104,7 +4104,7 @@
       "specialtyEn": "Recycle",
       "specialtyZh": "回收",
       "descriptionEn": "Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.",
-      "descriptionZh": "由許多污泥凝聚而成。 散發著惡臭，讓人無法觸碰。 經過的地方寸草不生。",
+      "descriptionZh": "由許多汙泥凝聚而成。 散發著惡臭，讓人無法觸碰。 經過的地方寸草不生。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
       "known": true,
       "skills": [
@@ -4244,7 +4244,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "Once it slams its shell shut, it is impossible to open, even by those with superior strength.",
-      "descriptionZh": "一旦牠把殼閉上， 無論是擁有什麼樣怪力的人 都無法將其打開。",
+      "descriptionZh": "一旦牠把殼閉上， 無論是擁有什麼樣怪力的人 都無法將其開啟。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
       "known": true,
       "skills": [
@@ -4422,7 +4422,7 @@
       "id": "095",
       "roman": "XCV.",
       "nameEn": "Onix",
-      "nameZh": "大岩蛇",
+      "nameZh": "大巖蛇",
       "typesEn": [
         "ROCK",
         "GROUND"
@@ -4436,7 +4436,7 @@
       "specialtyEn": "Crush",
       "specialtyZh": "粉碎",
       "descriptionEn": "The emotional centerpiece of the Withered Wasteland tutorial. Trapped underground by extreme drought, rescuing Onix by completing the Water Gun watering sequence and triggering rainfall is the first major milestone of the game. Prefers dry rocky environments — do not place adjacent to water-loving Squirtle as this causes comfort conflicts.",
-      "descriptionZh": "枯萎荒野教學段落的情感核心。因極端乾旱被困地下的大岩蛇是遊戲第一個重大里程碑的主角：完成水槍澆灌流程、引發降雨後即可將牠救出。大岩蛇偏好乾燥岩石環境，切勿將其與喜好水分的傑尼龜安置相鄰，否則會造成舒適度衝突。",
+      "descriptionZh": "枯萎荒野教學段落的情感核心。因極端乾旱被困地下的大巖蛇是遊戲第一個重大里程碑的主角：完成水槍澆灌流程、引發降雨後即可將牠救出。大巖蛇偏好乾燥岩石環境，切勿將其與喜好水分的傑尼龜安置相鄰，否則會造成舒適度衝突。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
       "known": true,
       "skills": [
@@ -4446,13 +4446,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -4676,7 +4676,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4684,7 +4684,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -4722,7 +4722,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4730,7 +4730,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -4770,7 +4770,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4818,7 +4818,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4864,13 +4864,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -4900,7 +4900,7 @@
       "specialtyEn": "Crush",
       "specialtyZh": "粉碎",
       "descriptionEn": "When this Pokémon evolved, the skull of its mother fused to it. Marowak’s temperament also turned vicious at the same time.",
-      "descriptionZh": "進化時，原本戴在頭上的母親 頭骨化為了牠身體的一部份。 不但如此，性格也變得很凶暴。",
+      "descriptionZh": "進化時，原本戴在頭上的母親 頭骨化為了牠身體的一部份。 不但如此，性格也變得很兇暴。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
       "known": true,
       "skills": [
@@ -4910,13 +4910,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -5084,7 +5084,7 @@
       "specialtyEn": "Recycle",
       "specialtyZh": "回收",
       "descriptionEn": "It adores polluted air. Some claim that Koffing used to be more plentiful in the Galar region than they are now.",
-      "descriptionZh": "污濁的空氣是牠的美味大餐。 據說在昔日的伽勒爾地區 曾經存在著更多的瓦斯彈。",
+      "descriptionZh": "汙濁的空氣是牠的美味大餐。 據說在昔日的伽勒爾地區 曾經存在著更多的瓦斯彈。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
       "known": true,
       "skills": [
@@ -5188,13 +5188,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -5236,13 +5236,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -5328,7 +5328,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -5410,7 +5410,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "They swim with dance-like motions and cause whirlpools to form. Horsea compete to see which of them can generate the biggest whirlpool.",
-      "descriptionZh": "會在水中跳舞似地游動來 製造漩渦。玩耍時會和夥伴 比賽誰做出的漩渦比較大。",
+      "descriptionZh": "會在水中跳舞似地遊動來 製造漩渦。玩耍時會和夥伴 比賽誰做出的漩渦比較大。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
       "known": true,
       "skills": [
@@ -5738,7 +5738,7 @@
       "specialtyEn": "Cut",
       "specialtyZh": "居合斬",
       "descriptionEn": "The backbone of the lumber production chain. Build a habitat with one large tree and four tall-grass plots to attract Scyther. Learning Cut from it allows Ditto to split logs into small wood blocks. Scyther can then be commissioned for batch lumber processing — essential for the Thunder Badge (×20) and Sparkling Skylands 4F construction (×20).",
-      "descriptionZh": "木材生產鏈的核心。建造包含一棵大樹與四格高草叢的棲息地可吸引飛天螳螂。向牠學習「居合斬」後，百變怪可將圓木劈成小木塊，再委託飛天螳螂批量切割成木材。對雷電徽章（×20）和閃耀空島 4F 建設（×20）都不可或缺。",
+      "descriptionZh": "木材生產鏈的核心。建造包含一棵大樹與四格高草叢的棲息地可吸引飛天螳螂。向牠學習「居合斬」後，百變怪可將圓木劈成小木塊，再委託飛天螳螂批次切割成木材。對雷電徽章（×20）和閃耀空島 4F 建設（×20）都不可或缺。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
       "known": true,
       "skills": [
@@ -5842,7 +5842,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -5850,7 +5850,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -5878,7 +5878,7 @@
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
       "descriptionEn": "Found in Rocky Ridges. Essential for the copper smelting chain: lure Magmar to a furnace and have it smelt copper ore into copper ingots. These ingots are required to craft the Frying Pan, which is used to cook the Burger Patty that upgrades Ditto's Rock Smash ability — a pivotal progression gate.",
-      "descriptionZh": "出現於岩石山脊。銅錠冶煉鏈的關鍵：將鴨嘴火獸引至熔煉爐，委託其將銅礦冶煉成銅錠。銅錠用於製作平底鍋，再以平底鍋烹調漢堡排並食用，強化百變怪的碎岩能力——這是遊戲中至關重要的進度關卡。",
+      "descriptionZh": "出現於岩石山脊。銅錠冶煉鏈的關鍵：將鴨嘴火獸引至熔煉爐，委託其將銅礦冶煉成銅錠。銅錠用於製作平底鍋，再以平底鍋烹調漢堡排並食用，強化百變怪的碎巖能力——這是遊戲中至關重要的進度關卡。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
       "known": true,
       "skills": [
@@ -5904,7 +5904,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -6204,7 +6204,7 @@
       "specialtyEn": "Trade",
       "specialtyZh": "交易",
       "descriptionEn": "Encountered upon entering Palette Town's Pokémon Center — no special condition required. Eevee's Trade specialty makes it a key NPC bartering partner in the endgame sandbox. All 8 eeveelution habitats share the same base recipe: 1 chair, 1 table, and 1 unique food item unlocked by a specific gameplay milestone.",
-      "descriptionZh": "進入真新鎮寶可夢中心即可遭遇，無特殊解鎖條件。伊布的「交易」專長使其成為終局沙盒中的重要以物易物夥伴。全部 8 種伊布進化型態的棲息地皆以相同基礎配方為起點：1 張椅子、1 張桌子，以及 1 種需透過特定遊玩里程碑解鎖的獨特食物。",
+      "descriptionZh": "進入真新鎮寶可夢中心即可遭遇，無特殊解鎖條件。伊布的「交易」專長使其成為終局自由建造區中的重要以物易物夥伴。全部 8 種伊布進化型態的棲息地皆以相同基礎配方為起點：1 張椅子、1 張桌子，以及 1 種需透過特定遊玩里程碑解鎖的獨特食物。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
       "known": true,
       "skills": [
@@ -6306,7 +6306,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -6314,7 +6314,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -6368,7 +6368,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -6388,7 +6388,7 @@
       "specialtyEn": "Transport",
       "specialtyZh": "運送",
       "descriptionEn": "It has no discernible heartbeat and does not seem to draw breath, and yet it appears to function without issue. I cannot even begin to explain this utterly bizarre anomaly.",
-      "descriptionZh": "近年在電腦空間大展身手。 會四處巡邏查看 有沒有可疑的資料。",
+      "descriptionZh": "近年在電腦空間大展身手。 會四處巡邏檢視 有沒有可疑的資料。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
       "known": true,
       "skills": [
@@ -6436,7 +6436,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "This Pokémon is a member of an ancient, extinct species. Omanyte paddles through water with its 10 tentacles, looking like it’s just drifting along.",
-      "descriptionZh": "一度滅絕的古代寶可夢。 會使用１０隻腳划水， 在水中一漂一浮地游動。",
+      "descriptionZh": "一度滅絕的古代寶可夢。 會使用１０隻腳划水， 在水中一漂一浮地遊動。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
       "known": true,
       "skills": [
@@ -6580,7 +6580,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "The cause behind the extinction of this species is unknown. Kabutops were aggressive Pokémon that inhabited warm seas.",
-      "descriptionZh": "沒有人知道牠為何會滅絕。 過去曾棲息在溫暖的海域， 是性情凶暴的古代寶可夢。",
+      "descriptionZh": "沒有人知道牠為何會滅絕。 過去曾棲息在溫暖的海域， 是性情兇暴的古代寶可夢。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
       "known": true,
       "skills": [
@@ -6638,13 +6638,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -6748,7 +6748,7 @@
           "nameEn": "Cooling Aura",
           "nameZh": "冷卻場域",
           "detailEn": "Stabilizes temperature-sensitive rooms and preserves crafted ingredients.",
-          "detailZh": "能穩定低溫空間，保存加工中的食材與材料。"
+          "detailZh": "能穩定低溫空間，儲存加工中的食材與材料。"
         }
       ]
     },
@@ -6780,7 +6780,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -6788,7 +6788,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -6844,7 +6844,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -6958,7 +6958,7 @@
       "specialtyEn": "Glide",
       "specialtyZh": "滑翔",
       "descriptionEn": "An essential partner for Sparkling Skylands traversal. Build a Waterside Boat habitat to attract Dragonite. Learning its Glide ability allows Ditto to soar between the floating islands — without it, many platforms in the Skylands are unreachable and the Huge Building quest cannot progress.",
-      "descriptionZh": "閃耀空島探索不可或缺的夥伴。建造水邊小艇棲息地可吸引快龍。學習其「滑翔」技能後，百變怪即可在各漂浮島嶼之間翱翔——若未習得此技能，許多空島平台無法抵達，且重建巨大建築任務也無法推進。",
+      "descriptionZh": "閃耀空島探索不可或缺的夥伴。建造水邊小艇棲息地可吸引快龍。學習其「滑翔」技能後，百變怪即可在各漂浮島嶼之間翱翔——若未習得此技能，許多空島平臺無法抵達，且重建巨大建築任務也無法推進。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
       "known": true,
       "skills": [
@@ -7050,7 +7050,7 @@
       "specialtyEn": "—",
       "specialtyZh": "—",
       "descriptionEn": "The ultimate secret of Pokopia. Hidden in Withered Wasteland behind a cracked wall (north of the Pokémon Center, past a metal net cut by upgraded Slash). At the end of the underground passage, a mural with 27 Unown-shaped slots awaits. Collect 27 unique Mysterious Slates from glowing golden dig sites scattered across the world — carry a Pokémon with the Search specialty or use a Dowsing Machine to find sites faster. Place all 27 slates correctly to summon Mew, who will appear and ask to become your partner.",
-      "descriptionZh": "Pokopia 的終極秘密。藏身於枯萎荒野地下——從寶可夢中心右側碎磚路北行，以碎岩擊穿裂岩後，再以強化版居合斬切開金屬網，在地下通道底部找到有 27 個未知圖騰形插槽的神秘壁畫。在世界各地的「發光黃金挖掘點」收集 27 塊不重複的「神秘石板」（攜帶搜尋專長的寶可夢或使用尋寶機器可加速收集）。將全部 27 塊石板正確放入壁畫，夢幻便會現身並詢問是否願意成為您的夥伴。",
+      "descriptionZh": "Pokopia 的終極秘密。藏身於枯萎荒野地下——從寶可夢中心右側碎磚路北行，以碎巖擊穿裂巖後，再以強化版居合斬切開金屬網，在地下通道底部找到有 27 個未知圖騰形插槽的神秘壁畫。在世界各地的「發光黃金挖掘點」收集 27 塊不重複的「神秘石板」（攜帶搜尋專長的寶可夢或使用尋寶機器可加速收集）。將全部 27 塊石板正確放入壁畫，夢幻便會現身並詢問是否願意成為您的夥伴。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
       "known": true,
       "skills": [
@@ -7076,7 +7076,7 @@
           "nameEn": "Ancient Wish",
           "nameZh": "古代心願",
           "detailEn": "Represents the deepest secret route in Pokopia's restoration history.",
-          "detailZh": "象徵 Pokopia 復育歷史中最深層的祕密路線與終極獎勵。"
+          "detailZh": "象徵 Pokopia 復育歷史中最深層的秘密路線與終極獎勵。"
         }
       ]
     },
@@ -7106,7 +7106,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7152,7 +7152,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7188,7 +7188,7 @@
       "specialtyEn": "Farming",
       "specialtyZh": "栽種",
       "descriptionEn": "The fragrance of Meganium’s flower soothes and calms emotions. In battle, this Pokémon gives off more of its becalming scent to blunt the foe’s fighting spirit.",
-      "descriptionZh": "大竺葵花朵散發的香氣有安撫情緒的力量。進入對戰時，牠會釋放更濃郁的氣味，削弱對手的鬥志。",
+      "descriptionZh": "大竺葵花朵散發的香氣有安撫情緒的力量。進入對戰時，牠會釋放更濃鬱的氣味，削弱對手的鬥志。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png",
       "known": true,
       "skills": [
@@ -7198,7 +7198,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7260,7 +7260,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -7268,7 +7268,7 @@
       "id": "156",
       "roman": "CLVI.",
       "nameEn": "Quilava",
-      "nameZh": "火岩鼠",
+      "nameZh": "火巖鼠",
       "typesEn": [
         "FIRE"
       ],
@@ -7280,7 +7280,7 @@
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
       "descriptionEn": "This creature's fur is most mysterious—it is wholly impervious to the burning touch of flame. Should Quilava turn its back to you, take heed! Such a posture indicates a forthcoming attack.",
-      "descriptionZh": "火岩鼠的毛皮十分不可思議，幾乎完全不會被火焰灼傷。要是牠突然把背部轉向你，就代表牠很可能下一秒就要發動攻擊。",
+      "descriptionZh": "火巖鼠的毛皮十分不可思議，幾乎完全不會被火焰灼傷。要是牠突然把背部轉向你，就代表牠很可能下一秒就要發動攻擊。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/156.png",
       "known": true,
       "skills": [
@@ -7306,7 +7306,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -7352,7 +7352,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -8044,7 +8044,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8052,7 +8052,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8420,7 +8420,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8428,7 +8428,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8466,7 +8466,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8474,7 +8474,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8512,7 +8512,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8654,13 +8654,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -8738,7 +8738,7 @@
       "specialtyEn": "—",
       "specialtyZh": "—",
       "descriptionEn": "A seasonal Event Pokémon recorded in the Event Pokédex. The Hoppip family's appearance and form changes are tied to real-world seasonal activities — most notably the March 'More Spores' (毽子草的更多孢子) event. Like every species in Pokopia, Hoppip never level-evolves; its later forms are unlocked through Pokopia's season- and habitat-driven model rather than battle experience.",
-      "descriptionZh": "收錄於「活動圖鑑（Event Pokédex）」的季節限定活動寶可夢。毽子草家族的登場與型態變化與現實中的季節活動綁定——最具代表性的便是 3 月的「毽子草的更多孢子」活動。如同 Pokopia 中所有寶可夢，毽子草不會透過經驗值升級進化，其後續型態同樣是透過本作「季節與棲息地驅動」的機制解鎖，而非戰鬥經驗。",
+      "descriptionZh": "收錄於「活動圖鑑（Event Pokédex）」的季節限定活動寶可夢。毽子草家族的登場與型態變化與現實中的季節活動繫結——最具代表性的便是 3 月的「毽子草的更多孢子」活動。如同 Pokopia 中所有寶可夢，毽子草不會透過經驗值升級進化，其後續型態同樣是透過本作「季節與棲息地驅動」的機制解鎖，而非戰鬥經驗。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png",
       "known": true,
       "skills": [
@@ -8796,7 +8796,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8844,7 +8844,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8936,7 +8936,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8982,7 +8982,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -9570,7 +9570,7 @@
       "id": "205",
       "roman": "CCV.",
       "nameEn": "Forretress",
-      "nameZh": "佛烈托斯",
+      "nameZh": "佛烈託斯",
       "typesEn": [
         "BUG",
         "STEEL"
@@ -9610,7 +9610,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -9688,13 +9688,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -9752,7 +9752,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -9940,7 +9940,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -9972,13 +9972,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10058,7 +10058,7 @@
       "specialtyEn": "Search",
       "specialtyZh": "搜尋",
       "descriptionEn": "Its sturdy, curved claws are ideal for traversing precipitous cliffs. From the tips of these claws drips a venom that infiltrates the nerves of any prey caught in Sneasel's grasp.",
-      "descriptionZh": "性格狡猾且凶猛。 會趁著雙親不在時 侵入巢穴把蛋盜走。",
+      "descriptionZh": "性格狡猾且兇猛。 會趁著雙親不在時 侵入巢穴把蛋盜走。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/215.png",
       "known": true,
       "skills": [
@@ -10196,7 +10196,7 @@
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
       "descriptionEn": "Slugma does not have any blood in its body. Instead, intensely hot magma circulates throughout this Pokémon’s body, carrying essential nutrients and oxygen to its organs.",
-      "descriptionZh": "熔岩蟲體內沒有血液，取而代之的是灼熱岩漿在全身循環，把必要的養分與氧氣送到各個器官。",
+      "descriptionZh": "熔岩蟲體內沒有血液，取而代之的是灼熱巖漿在全身迴圈，把必要的養分與氧氣送到各個器官。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png",
       "known": true,
       "skills": [
@@ -10222,7 +10222,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -10270,7 +10270,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -10302,13 +10302,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10350,13 +10350,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10576,7 +10576,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "This calm and gentle Pokémon swims gracefully through the sea. After building speed, it can leap out of the water. It is often misidentified as a bird Pokémon due to this behavior.",
-      "descriptionZh": "悠然地暢游在大海中。 就算有覬覦食物殘渣的鐵炮魚 吸附在自己身上也毫不在意。",
+      "descriptionZh": "悠然地暢遊在大海中。 就算有覬覦食物殘渣的鐵炮魚 吸附在自己身上也毫不在意。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/226.png",
       "known": true,
       "skills": [
@@ -10650,7 +10650,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -10698,7 +10698,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -10746,7 +10746,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -10824,13 +10824,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10870,13 +10870,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10906,7 +10906,7 @@
       "specialtyEn": "Transport",
       "specialtyZh": "運送",
       "descriptionEn": "A bizarre item caused this Pokémon to evolve. While it now exhibits many new gestures and expressions, its biology remains inscrutable.",
-      "descriptionZh": "搭載了ＡＩ功能後，開始 說起了只有多邊獸Ⅱ彼此 之間才能了解的神秘語言。",
+      "descriptionZh": "搭載了ＡＩ功能後，開始 說起了只有多邊獸Ⅱ彼此 之間才能瞭解的神秘語言。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png",
       "known": true,
       "skills": [
@@ -11016,7 +11016,7 @@
           "nameEn": "Ink Splash",
           "nameZh": "墨彩潑擊",
           "detailEn": "Uses broad paint strokes to distract targets and mark interactive surfaces.",
-          "detailZh": "能以大範圍塗抹干擾目標，也能標示互動表面。"
+          "detailZh": "能以大範圍塗抹乾擾目標，也能標示互動表面。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11194,7 +11194,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11202,7 +11202,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11256,7 +11256,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -11368,7 +11368,7 @@
       "specialtyEn": "Generate",
       "specialtyZh": "發電",
       "descriptionEn": "The first legendary Pokémon encounter in the story. After illuminating Bleak Beach by connecting all renewable energy sources, climb to the clifftop to witness Raikou for the first time. For recruitment, enter the Pikachu Doll Dream Island (Ocean variant) via Drifloon, navigate deep into its cave, and use the Burger Patty–enhanced Rock Smash to clear metal blocks. Successfully recruiting Raikou dramatically boosts the environment level of your region.",
-      "descriptionZh": "主線流程中第一隻登場的傳說寶可夢。在荒涼海灘完成所有再生能源串聯、點亮城鎮後，攀爬懸崖頂端即可首次目睹雷公。招募路線：透過飄飄球進入「皮卡丘娃娃夢境島（海洋型）」，深入洞穴深處，以漢堡排強化後的碎岩擊破金屬方塊。成功招募後可大幅提升區域環境等級。",
+      "descriptionZh": "主線流程中第一隻登場的傳說寶可夢。在荒涼海灘完成所有再生能源串聯、點亮城鎮後，攀爬懸崖頂端即可首次目睹雷公。招募路線：透過飄飄球進入「皮卡丘娃娃夢境島（海洋型）」，深入洞穴深處，以漢堡排強化後的碎巖擊破金屬方塊。成功招募後可大幅提升區域環境等級。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png",
       "known": true,
       "skills": [
@@ -11386,7 +11386,7 @@
           "nameEn": "Thunder Crest",
           "nameZh": "雷牙天擊",
           "detailEn": "Calls down a high-voltage strike fit for clifftops, generators, and legendary trials.",
-          "detailZh": "可喚下高壓雷擊，特別適合懸崖、高能設備與傳說試煉。"
+          "detailZh": "可喚下高壓雷擊，特別適合懸崖、高能裝置與傳說試煉。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11414,7 +11414,7 @@
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
       "descriptionEn": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch.",
-      "descriptionZh": "炎帝象徵著岩漿的熱情，據說是在火山爆發時誕生的寶可夢。牠會噴出巨大的火焰爆發，將所碰觸的一切徹底燃盡。",
+      "descriptionZh": "炎帝象徵著巖漿的熱情，據說是在火山爆發時誕生的寶可夢。牠會噴出巨大的火焰爆發，將所碰觸的一切徹底燃盡。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/244.png",
       "known": true,
       "skills": [
@@ -11430,7 +11430,7 @@
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Magma Burst",
-          "nameZh": "岩漿爆燃",
+          "nameZh": "巖漿爆燃",
           "detailEn": "Unleashes a sweeping burst of fire suited for the harshest late-game threats.",
           "detailZh": "能放出覆蓋範圍極大的灼炎爆發，應對高壓後期威脅。"
         },
@@ -11460,7 +11460,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water.",
-      "descriptionZh": "水君象徵著清泉的慈悲，總是優雅地奔馳於大地之上。牠擁有淨化污水的力量。",
+      "descriptionZh": "水君象徵著清泉的慈悲，總是優雅地賓士於大地之上。牠擁有淨化汙水的力量。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/245.png",
       "known": true,
       "skills": [
@@ -11470,7 +11470,7 @@
           "nameEn": "Pure Spring",
           "nameZh": "清泉淨域",
           "detailEn": "Purifies tainted water and helps troubled habitats recover their balance.",
-          "detailZh": "可淨化受污染水域，協助失衡棲地回復穩定。"
+          "detailZh": "可淨化受汙染水域，協助失衡棲地回復穩定。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11478,7 +11478,7 @@
           "nameEn": "Aqua Dash",
           "nameZh": "淨流衝刺",
           "detailEn": "Strikes with graceful momentum while sweeping contamination from its path.",
-          "detailZh": "以優雅卻強勁的水流衝擊，順勢洗去沿路污染。"
+          "detailZh": "以優雅卻強勁的水流衝擊，順勢洗去沿路汙染。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11518,13 +11518,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11566,13 +11566,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11614,13 +11614,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11758,7 +11758,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11804,7 +11804,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11850,7 +11850,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11896,7 +11896,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11958,7 +11958,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -12006,7 +12006,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -12054,7 +12054,7 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
         }
       ]
     },
@@ -12494,7 +12494,7 @@
       "specialtyEn": "Glide",
       "specialtyZh": "滑翔",
       "descriptionEn": "A colorful and incredibly beautiful but also greedy Pokémon. In an effort to keep its favorite food all to itself, it will chase away Combee as they try to gather nectar.",
-      "descriptionZh": "狩獵鳳蝶色彩華麗又非常美麗，但也相當貪心。為了獨占自己最喜歡的花蜜，牠甚至會把前來採蜜的三蜜蜂趕走。",
+      "descriptionZh": "狩獵鳳蝶色彩華麗又非常美麗，但也相當貪心。為了獨佔自己最喜歡的花蜜，牠甚至會把前來採蜜的三蜜蜂趕走。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
       "known": true,
       "skills": [
@@ -12646,7 +12646,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12694,7 +12694,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12742,7 +12742,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12788,7 +12788,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12836,7 +12836,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12874,7 +12874,7 @@
       "specialtyEn": "Farming",
       "specialtyZh": "栽種",
       "descriptionEn": "It lives quietly in the deep forest. It is said to create chilly winter winds with the fans it holds.",
-      "descriptionZh": "在森林深處靜靜地生活。 據說當牠搧動大大的團扇， 就會刮起冬日寒風。",
+      "descriptionZh": "在森林深處靜靜地生活。 據說當牠搧動大大的團扇， 就會颳起冬日寒風。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png",
       "known": true,
       "skills": [
@@ -12884,7 +12884,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -13018,7 +13018,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "It soars on updrafts without flapping its wings. It makes a nest on sheer cliffs at the sea’s edge.",
-      "descriptionZh": "利用氣流， 不拍打翅膀就能飛上天空。 會在海邊的岩壁上築巢。",
+      "descriptionZh": "利用氣流， 不拍打翅膀就能飛上天空。 會在海邊的巖壁上築巢。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png",
       "known": true,
       "skills": [
@@ -13362,7 +13362,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -13410,7 +13410,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -13596,13 +13596,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -14016,13 +14016,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "岩崩撞擊",
+          "nameZh": "巖崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -14220,7 +14220,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -14268,7 +14268,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -14316,7 +14316,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -14364,7 +14364,7 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
         }
       ]
     },
@@ -14490,7 +14490,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14498,7 +14498,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14536,7 +14536,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14544,7 +14544,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14620,7 +14620,7 @@
       "specialtyEn": "Transport",
       "specialtyZh": "運送",
       "descriptionEn": "The gateway to the Dream Islands. Entrust a Pokémon doll to Drifloon and it will carry you to a randomly generated Dream Island where Johto Legendary Beasts await. The type of doll determines the island biome — for example, a Pikachu doll leads to an ocean-type island where Raikou can be found in the deep cave.",
-      "descriptionZh": "通往夢境群島的門戶。將寶可夢娃娃交給飄飄球，牠會帶你前往隨機生成的夢境群島，城都傳說三聖獸便棲居於此。娃娃的種類決定島嶼的生物群系類型——例如皮卡丘娃娃會通往海洋型島嶼，雷公藏身於深洞之中。",
+      "descriptionZh": "通往夢境群島的門戶。將寶可夢娃娃交給飄飄球，牠會帶你前往隨機生成的夢境群島，城都傳說三聖獸便棲居於此。娃娃的種類決定島嶼的生物群系型別——例如皮卡丘娃娃會通往海洋型島嶼，雷公藏身於深洞之中。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png",
       "known": true,
       "skills": [
@@ -14722,7 +14722,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14784,7 +14784,7 @@
           "nameEn": "Cooling Aura",
           "nameZh": "冷卻場域",
           "detailEn": "Stabilizes temperature-sensitive rooms and preserves crafted ingredients.",
-          "detailZh": "能穩定低溫空間，保存加工中的食材與材料。"
+          "detailZh": "能穩定低溫空間，儲存加工中的食材與材料。"
         }
       ]
     },
@@ -14792,7 +14792,7 @@
       "id": "479",
       "roman": "CDLXXIX.",
       "nameEn": "Rotom",
-      "nameZh": "洛托姆",
+      "nameZh": "洛託姆",
       "typesEn": [
         "ELECTRIC",
         "GHOST"
@@ -14804,9 +14804,9 @@
       "roleEn": "Story Character",
       "roleZh": "劇情角色",
       "specialtyEn": "Rotom",
-      "specialtyZh": "洛托姆",
+      "specialtyZh": "洛託姆",
       "descriptionEn": "A named story character — a Rotom that serves as the town's resident DJ. It supplies the music and ambient energy that bring your restored settlements to life, spinning tracks as the community grows.",
-      "descriptionZh": "具名劇情角色——擔任城鎮駐場 DJ 的洛托姆（Rotom）。牠提供音樂與氛圍能量，隨著聚落成長放送樂曲，為你復興的據點注入生氣。",
+      "descriptionZh": "具名劇情角色——擔任城鎮駐場 DJ 的洛託姆（Rotom）。牠提供音樂與氛圍能量，隨著聚落成長放送樂曲，為你復興的據點注入生氣。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
       "known": true,
       "skills": [
@@ -14816,7 +14816,7 @@
           "nameEn": "Town Broadcast",
           "nameZh": "聚落播送",
           "detailEn": "Keeps the settlement lively with sound, current, and responsive machines.",
-          "detailZh": "以聲音、電流與活化設備讓聚落保持生氣。"
+          "detailZh": "以聲音、電流與活化裝置讓聚落保持生氣。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14852,7 +14852,7 @@
       "specialtyEn": "Build",
       "specialtyZh": "建造",
       "descriptionEn": "Build a Construction Generator habitat in Sparkling Skylands to attract this master builder. Essential for the concrete production chain — it operates the Concrete Mixer and processes Limestone (yielded by Golem's Crush ability) into usable Concrete. Also a required construction crew member for the Huge Building reconstruction.",
-      "descriptionZh": "於閃耀空島建造「工地發電機」棲息地可吸引這位建造大師。混凝土生產鏈的核心——負責操作混凝土攪拌機，將由隆隆岩粉碎取得的石灰岩加工成可用混凝土。同時也是重建巨大建築所需施工團隊的必要成員。",
+      "descriptionZh": "於閃耀空島建造「工地發電機」棲息地可吸引這位建造大師。混凝土生產鏈的核心——負責操作混凝土攪拌機，將由隆隆巖粉碎取得的石灰岩加工成可用混凝土。同時也是重建巨大建築所需施工團隊的必要成員。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png",
       "known": true,
       "skills": [
@@ -14870,7 +14870,7 @@
           "nameEn": "Pillar Crush",
           "nameZh": "巨柱重擊",
           "detailEn": "Uses builder's strength to break obstacles and force open sealed paths.",
-          "detailZh": "能以工匠級力量粉碎障礙，強行打開封閉路線。"
+          "detailZh": "能以工匠級力量粉碎障礙，強行開啟封閉路線。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14944,7 +14944,7 @@
       "specialtyEn": "Recycle",
       "specialtyZh": "回收",
       "descriptionEn": "The evolved form of Trubbish. Together with Pikachu and Aipom, Garbodor forms the base of the late-game automation loop. In addition to multiplying recycling efficiency, Garbodor converts unwanted debris into high-quality raw iron ore, completely bypassing mined resource limits.",
-      "descriptionZh": "破破袋的進化型。與皮卡丘、長尾怪手並稱，是後期自動化工業三人組的最終台柱。除倍增回收效率外，灰塵山能將大量海灘垃圾重組為精純鐵礦石，徹底解決野外銅鐵礦枯竭的困境。",
+      "descriptionZh": "破破袋的進化型。與皮卡丘、長尾怪手並稱，是後期自動化工業三人組的最終臺柱。除倍增回收效率外，灰塵山能將大量海灘垃圾重組為精純鐵礦石，徹底解決野外銅鐵礦枯竭的困境。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png",
       "known": true,
       "skills": [
@@ -14990,7 +14990,7 @@
       "specialtyEn": "Trade",
       "specialtyZh": "交易",
       "descriptionEn": "Eevee's fairy-type evolution. Unlock condition: encounter 10 different Pokémon species within Palette Town to unlock the Ribbon Cake recipe. Sylveon's presence brightens the overall atmosphere of the endgame sandbox.",
-      "descriptionZh": "伊布的妖精系進化型。解鎖條件：在真新鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。仙子伊布的出現會為終局沙盒的整體氛圍增添明亮色彩。",
+      "descriptionZh": "伊布的妖精系進化型。解鎖條件：在真新鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。仙子伊布的出現會為終局自由建造區的整體氛圍增添明亮色彩。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
       "known": true,
       "skills": [
@@ -15000,7 +15000,7 @@
           "nameEn": "Ribbon Harmony",
           "nameZh": "緞帶和鳴",
           "detailEn": "Adds warmth and beauty to carefully curated Palette Town habitats.",
-          "detailZh": "能為精心布置的真新鎮棲地增添柔和又明亮的氛圍。"
+          "detailZh": "能為精心佈置的真新鎮棲地增添柔和又明亮的氛圍。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -15016,7 +15016,7 @@
           "nameEn": "Celebration Aura",
           "nameZh": "慶典光環",
           "detailEn": "Rewards broad exploration by brightening the endgame sandbox's social atmosphere.",
-          "detailZh": "作為廣泛探索的回報，牠能讓終局沙盒更有節慶般的生命力。"
+          "detailZh": "作為廣泛探索的回報，牠能讓終局自由建造區更有節慶般的生命力。"
         }
       ]
     },
@@ -15036,7 +15036,7 @@
       "specialtyEn": "Cooking",
       "specialtyZh": "烹飪",
       "descriptionEn": "Chef Dente is a Greedent found trapped inside a building in Rocky Ridges. Bake and eat wheat bread to gain the strength to cut his chains and free him. Once rescued, Chef Dente cooks key dishes — including the Burger Patty that upgrades Ditto's Rock Smash. He must later be escorted to Sparkling Skylands to help build the 3rd floor of the Huge Building.",
-      "descriptionZh": "主廚 Dente 是一隻被困在岩石山脊建築物內的貪心栗鼠（Greedent）。烤製並食用小麥麵包以獲得切斷鎖鏈、救出牠的力量。獲救後，主廚 Dente 會烹調關鍵料理——包括能強化百變怪碎岩能力的漢堡排。之後還須護送牠前往閃耀空島，協助建造摩天大樓的 3 樓。",
+      "descriptionZh": "主廚 Dente 是一隻被困在岩石山脊建築物內的貪心栗鼠（Greedent）。烤製並食用小麥麵包以獲得切斷鎖鏈、救出牠的力量。獲救後，主廚 Dente 會烹調關鍵料理——包括能強化百變怪碎巖能力的漢堡排。之後還須護送牠前往閃耀空島，協助建造摩天大樓的 3 樓。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png",
       "known": true,
       "skills": [
@@ -15062,7 +15062,7 @@
           "nameEn": "Burger Boost",
           "nameZh": "漢堡強化",
           "detailEn": "Chef Dente's dishes are the key to upgrading Ditto's Rock Smash power.",
-          "detailZh": "作為主廚 Dente，牠做出的料理正是強化百變怪碎岩能力的關鍵。"
+          "detailZh": "作為主廚 Dente，牠做出的料理正是強化百變怪碎巖能力的關鍵。"
         }
       ]
     },
@@ -15084,7 +15084,7 @@
       "specialtyEn": "Smithing",
       "specialtyZh": "鍛造",
       "descriptionEn": "Tinkmaster is a Tinkaton master smith in Sparkling Skylands. Bring concrete and iron ingots to commission Special Gears, which are used to craft the Lift Platforms needed to traverse the floating islands. An indispensable engineering ally for opening up the Skylands.",
-      "descriptionZh": "巨鍛匠是棲身於閃耀空島的鍛造大師（Tinkaton）。帶上混凝土與鐵錠即可委託製作特殊齒輪，用於打造跨越漂浮島嶼所需的升降平台。是開拓空島不可或缺的工程盟友。",
+      "descriptionZh": "巨鍛匠是棲身於閃耀空島的鍛造大師（Tinkaton）。帶上混凝土與鐵錠即可委託製作特殊齒輪，用於打造跨越漂浮島嶼所需的升降平臺。是開拓空島不可或缺的工程盟友。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
       "known": true,
       "skills": [
@@ -15094,7 +15094,7 @@
           "nameEn": "Forge Work",
           "nameZh": "鍛造作業",
           "detailEn": "Forges the special gears needed to raise lifts and complete sky projects.",
-          "detailZh": "可鍛造升降平台與空島工程所需的特殊齒輪。"
+          "detailZh": "可鍛造升降平臺與空島工程所需的特殊齒輪。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -15108,7 +15108,7 @@
           "categoryEn": "Support Skill",
           "categoryZh": "輔助技能",
           "nameEn": "Lift Platform",
-          "nameZh": "升降平台",
+          "nameZh": "升降平臺",
           "detailEn": "Tinkmaster enables the vertical expansion that defines Sparkling Skylands.",
           "detailZh": "作為 Tinkmaster，牠讓閃耀空島的垂直拓展真正成為可能。"
         }

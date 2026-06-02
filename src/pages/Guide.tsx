@@ -1,8 +1,97 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "motion/react";
 import Seo from "../components/Seo";
 import GuideDiagram from "../components/GuideDiagram";
+
+function DocumentArchiveCard({ section, en, index }: { section: any; en: boolean; index: number }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const title = en ? section.titleEn : section.titleZh;
+  const content = en ? section.contentEn : section.contentZh;
+
+  return (
+    <div className="mb-8">
+      <div 
+        onClick={() => setIsOpen(true)} 
+        className="cursor-pointer group relative bg-bone border border-line-soft p-5 rounded-sm ambient-shadow w-full max-w-[500px] mx-auto overflow-hidden transition-all hover:translate-y-[-2px] hover:border-primary/50 hover:shadow-md"
+      >
+        <div className="absolute top-2 right-2 font-mono-metadata text-[10px] text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">
+          DOC. {index + 1}
+        </div>
+        
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-full border-2 border-primary/30 text-primary flex items-center justify-center bg-paper-warm group-hover:bg-primary/5 transition-colors shrink-0">
+            <span className="material-symbols-outlined text-[24px]">description</span>
+          </div>
+          <div>
+            <div className="font-mono-metadata text-[10px] text-primary mb-1 tracking-wider uppercase flex items-center gap-1">
+               <span className="material-symbols-outlined text-[12px] opacity-70">lock</span>
+               CLASSIFIED ARCHIVE
+            </div>
+            <h4 className="font-headline-sm text-[15px] text-ink-soft leading-snug m-0 group-hover:text-primary transition-colors">
+              {title}
+            </h4>
+          </div>
+        </div>
+
+        <div className="mt-4 pt-3 border-t border-line-soft flex items-center justify-between text-ink-mute font-mono-metadata uppercase tracking-widest text-[10px]">
+           <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">touch_app</span> {en ? "Extract Dossier" : "點擊查閱附屬文檔"}</span>
+           <span>Game Freak × Omega Force</span>
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="absolute inset-0 bg-ink/60 backdrop-blur-sm"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              className="bg-paper border border-line-soft rounded-sm p-6 sm:p-8 max-w-[600px] w-full relative z-10 ambient-shadow"
+            >
+              <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-paper-warm text-ink-mute hover:text-ink hover:bg-line-soft transition-colors"
+                aria-label="Close"
+              >
+                <span className="material-symbols-outlined text-[20px]">close</span>
+              </button>
+              
+              <div className="flex items-start gap-4 mb-6 border-b border-line-soft pb-6">
+                <div className="w-12 h-12 shrink-0 rounded-full border-2 border-primary flex items-center justify-center bg-primary/5 text-primary">
+                  <span className="material-symbols-outlined text-[24px]">verified</span>
+                </div>
+                <div className="pr-6">
+                  <div className="font-mono-metadata text-[10px] text-primary mb-1 tracking-wider uppercase">
+                    CLASSIFIED ARCHIVE · {en ? "ACCESS GRANTED" : "權限解鎖"}
+                  </div>
+                  <h3 className="font-headline-sm text-[18px] text-ink leading-snug">{title}</h3>
+                </div>
+              </div>
+              
+              <div className="font-body-base text-[15px] text-ink-soft leading-relaxed whitespace-pre-wrap max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                {content}
+              </div>
+              
+              <div className="mt-8 pt-4 border-t border-line-soft flex justify-between items-center text-ink-mute">
+                <span className="font-mono-metadata text-[10px] uppercase">META REPORT // {section.id.toUpperCase()}</span>
+                <span className="font-mono-metadata text-[10px] uppercase">{new Date().toISOString().split('T')[0]}</span>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export default function Guide() {
   const { t, i18n } = useTranslation();
@@ -147,7 +236,19 @@ export default function Guide() {
               <h2 id={sec.id} className="font-headline-sm text-headline-sm text-ink-soft mt-12 mb-6 flex items-center gap-4 scroll-mt-28">
                 <span className="text-primary font-mono-metadata text-sm">{sec.roman}</span> {en ? sec.titleEn : sec.titleZh}
               </h2>
-              <p className="mb-6">{en ? sec.contentEn : sec.contentZh}</p>
+              {sec.link && (
+                <div className="mb-6 -mt-2">
+                  <a href={sec.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-[11px] text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
+                    <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                    {en ? "External Resource" : "前往外部網站"}
+                  </a>
+                </div>
+              )}
+              {guide.id === "meta-history" ? (
+                <DocumentArchiveCard section={sec} en={en} index={index} />
+              ) : (
+                <p className="mb-6">{en ? sec.contentEn : sec.contentZh}</p>
+              )}
 
               {sec.listEn && (
                 <ul className="list-disc pl-6 space-y-4 mb-8">
@@ -191,6 +292,14 @@ export default function Guide() {
                         <p className="font-body-base text-sm text-ink-main whitespace-pre-line leading-relaxed m-0">
                           {en ? step.descEn : step.descZh}
                         </p>
+                        {step.link && (
+                          <div className="mt-4 pt-3 border-t border-line-soft">
+                            <a href={step.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-[11px] text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
+                              <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                              {en ? "External Resource" : "前往外部網站"}
+                            </a>
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

@@ -15,6 +15,11 @@ import Guide from "./pages/Guide";
 
 function AnimatedRoutes() {
   const location = useLocation();
+  
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname, location.search]);
+
   return (
     <AnimatePresence mode="wait">
       <motion.div

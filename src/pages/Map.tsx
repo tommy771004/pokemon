@@ -64,7 +64,7 @@ export default function MapPage() {
   const seoTitle = en ? "Exploration Map & Region Routes | Pokopia Chronicles" : "探索地圖與區域路線 | Pokopia 年代記";
   const seoDescription = en
     ? "Explore Pokopia's core regions, hidden murals, legendary bird megaprojects, and Dream Islands with objectives, skills, resources, and unlock routes."
-    : "探索 Pokopia 的主線區域、夢幻壁畫、三神鳥大型工地與夢境群島，查看任務目標、需求技能、資源與解鎖路線。";
+    : "探索 Pokopia 的主線區域、夢幻壁畫、三神鳥大型工地與夢境群島，檢視任務目標、需求技能、資源與解鎖路線。";
 
   if (!data) {
     return (
@@ -182,7 +182,7 @@ export default function MapPage() {
                 onClick={() => setShowIndex(true)}
                 className="font-label-caps text-label-caps text-primary hover:opacity-80 transition-opacity uppercase"
               >
-                {en ? "View Index" : "查看索引"}
+                {en ? "View Index" : "檢視索引"}
               </button>
             </div>
           </div>

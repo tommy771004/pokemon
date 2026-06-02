@@ -107,7 +107,7 @@ export default function Pokedex() {
   const seoTitle = en ? "Pokédex Skills & Species Archive | Pokopia Chronicles" : "寶可夢圖鑑與技能檔案 | Pokopia 年代記";
   const seoDescription = en
     ? "Browse the Pokopia species archive with structured life, attack, and support skills, habitat roles, and story-linked entries."
-    : "瀏覽 Pokopia 的寶可夢檔案，查看每隻寶可夢的生活技能、攻擊技能、輔助技能、棲地定位與劇情關聯。";
+    : "瀏覽 Pokopia 的寶可夢檔案，檢視每隻寶可夢的生活技能、攻擊技能、輔助技能、棲地定位與劇情關聯。";
 
   if (!data) {
     return (
@@ -251,7 +251,7 @@ export default function Pokedex() {
             >
               <option value="id">{en ? "ID (Default)" : "編號 (預設)"}</option>
               <option value="alphabetical">{en ? "Alphabetical" : "按名稱"}</option>
-              <option value="role">{en ? "Role Type" : "按角色類型"}</option>
+              <option value="role">{en ? "Role Type" : "按角色型別"}</option>
             </select>
           </div>
           {visible.length === 0 ? (

@@ -113,7 +113,7 @@
       ],
       "storyBeatsZh": [
         "在荒廢關都甦醒後，與巨蔓藤博士展開第一段對話。",
-        "透過直接互動學會水槍、樹葉、燃燒、碎岩等一連串關鍵技能。",
+        "透過直接互動學會水槍、樹葉、燃燒、碎巖等一連串關鍵技能。",
         "一路主導從乾旱復原、海灘電網到空島摩天大樓的所有重建路線。",
         "最終與巨蔓藤博士一起以派對拉炮慶祝，將珍愛照片送往太空。"
       ],
@@ -183,7 +183,7 @@
       "id": "479",
       "speciesId": "479",
       "nameEn": "Rotom",
-      "nameZh": "洛托姆",
+      "nameZh": "洛託姆",
       "aliasEn": "Settlement DJ",
       "aliasZh": "聚落 DJ",
       "roleEn": "Story Character",
@@ -196,9 +196,9 @@
       "primaryStage": "settlement",
       "stageIds": ["settlement", "power-grid"],
       "summaryEn": "Rotom is the soundtrack to recovery: a resident DJ whose presence makes rebuilt towns feel alive rather than merely functional.",
-      "summaryZh": "洛托姆是復原過程中的背景音樂與活力來源，牠像一位駐地 DJ，讓重建後的城鎮不只恢復功能，更重新開始生活。",
+      "summaryZh": "洛託姆是復原過程中的背景音樂與活力來源，牠像一位駐地 DJ，讓重建後的城鎮不只恢復功能，更重新開始生活。",
       "detailsEn": "Its role is subtle but important. In Pokopia's world, progress is measured not only by machines working again, but by whether a settlement sounds inhabited. Rotom delivers that emotional checkpoint.",
-      "detailsZh": "牠的功能看似不那麼硬派，卻很關鍵。因為在 Pokopia 的世界裡，真正的進度不只是機械重新運轉，而是聚落是否重新有了『住著誰』的氣息。洛托姆正代表了這個轉折。",
+      "detailsZh": "牠的功能看似不那麼硬派，卻很關鍵。因為在 Pokopia 的世界裡，真正的進度不只是機械重新運轉，而是聚落是否重新有了『住著誰』的氣息。洛託姆正代表了這個轉折。",
       "storyBeatsEn": [
         "Appears once the first settlements begin to stabilize.",
         "Adds sound, rhythm, and machine-like liveliness to rebuilt spaces.",
@@ -243,7 +243,7 @@
       "summaryEn": "Smearguru is the named Smeargle who turns plain rebuilding into intentional design, helping each settlement develop its own identity.",
       "summaryZh": "Smearguru 是具名的圖圖犬角色，牠把單純的修復變成有設計感的聚落塑形，讓每個據點都逐漸長出自己的風格。",
       "detailsEn": "Where Tangrowth explains purpose and Rotom provides atmosphere, Smearguru provides taste. It is the bridge between practical construction and the feeling that the world is worth beautifying again.",
-      "detailsZh": "如果說巨蔓藤博士負責定義目的、洛托姆負責創造氣氛，那 Smearguru 負責的就是品味。牠是實用建設與『這個世界值得再被打扮一次』之間的橋樑。",
+      "detailsZh": "如果說巨蔓藤博士負責定義目的、洛託姆負責創造氣氛，那 Smearguru 負責的就是品味。牠是實用建設與『這個世界值得再被打扮一次』之間的橋樑。",
       "storyBeatsEn": [
         "Appears as settlement customization options begin to open up.",
         "Supports decorative layouts, visual motifs, and player-expression systems.",
@@ -251,7 +251,7 @@
       ],
       "storyBeatsZh": [
         "在聚落客製與裝飾系統逐漸開放時登場。",
-        "支援視覺布局、裝飾樣式與玩家表達空間。",
+        "支援視覺佈局、裝飾樣式與玩家表達空間。",
         "讓重建聚落看起來不是機械修補，而是被真正設計過。"
       ],
       "signatureSkillsEn": ["Pattern Sketch", "Ink Splash", "Decor Blueprint"],
@@ -331,9 +331,9 @@
       "primaryStage": "power-grid",
       "stageIds": ["power-grid", "skylands"],
       "summaryEn": "Chef Dente is the trapped Greedent of Rocky Ridges whose rescue unlocks both a key emotional story beat and Ditto's crucial Burger Patty upgrade path.",
-      "summaryZh": "主廚 Dente 是岩石山脊受困的貪心栗鼠角色，救出牠不只推動劇情，也會打開百變怪取得漢堡排強化的重要路線。",
+      "summaryZh": "主廚 Dente 是岩石山脊受困的貪心栗鼠角色，救出牠不只推動劇情，也會開啟百變怪取得漢堡排強化的重要路線。",
       "detailsEn": "Dente stands at the intersection of food, strength, and industrial progress. The bread that frees him and the burger he later cooks both transform what Ditto can physically accomplish in the world.",
-      "detailsZh": "Dente 站在食物、力量與工業進展的交會點上。先用麵包取得救援他的力量，再用他做出的漢堡排強化碎岩，等於把料理正式寫進了世界規則裡。",
+      "detailsZh": "Dente 站在食物、力量與工業進展的交會點上。先用麵包取得救援他的力量，再用他做出的漢堡排強化碎巖，等於把料理正式寫進了世界規則裡。",
       "storyBeatsEn": [
         "Found trapped in Rocky Ridges and rescued after baking and eating wheat bread.",
         "Cooks the Burger Patty that upgrades Ditto's Rock Smash into a late-midgame tool.",
@@ -341,7 +341,7 @@
       ],
       "storyBeatsZh": [
         "在岩石山脊被鐵鍊困住，必須先烤出麵包並吃下才能救援。",
-        "之後會製作強化百變怪碎岩能力的關鍵料理「漢堡排」。",
+        "之後會製作強化百變怪碎巖能力的關鍵料理「漢堡排」。",
         "後續還必須被護送到閃耀空島，協助巨大建築 3F 的施工。"
       ],
       "signatureSkillsEn": ["Field Kitchen", "Pan Slam", "Burger Boost"],
@@ -376,7 +376,7 @@
       "primaryStage": "skylands",
       "stageIds": ["skylands", "endgame"],
       "summaryEn": "Tinkmaster is the Tinkaton engineer who turns raw materials into Special Gears, enabling the lifts and long-span construction that define Sparkling Skylands.",
-      "summaryZh": "巨鍛匠是空島上的工程核心，能把原料鍛造成特殊齒輪，進一步打開升降平台與長距離施工的可能性。",
+      "summaryZh": "巨鍛匠是空島上的工程核心，能把原料鍛造成特殊齒輪，進一步開啟升降平臺與長距離施工的可能性。",
       "detailsEn": "Skylands progress would stall without Tinkmaster. It translates concrete and iron into the literal mechanism that lets the player move vertically and scale later megaprojects.",
       "detailsZh": "如果沒有巨鍛匠，空島工程其實會卡死。牠把混凝土與鐵錠轉譯成真正能『讓玩家往上走』的機械結構，也就是整個後期大型工程的核心節點。",
       "storyBeatsEn": [
@@ -385,12 +385,12 @@
         "Anchors the construction logic behind the Huge Building questline."
       ],
       "storyBeatsZh": [
-        "在閃耀空島開啟特殊齒輪的交換與鍛造循環。",
-        "讓升降平台成為可能，直接解鎖跨島移動能力。",
+        "在閃耀空島開啟特殊齒輪的交換與鍛造迴圈。",
+        "讓升降平臺成為可能，直接解鎖跨島移動能力。",
         "是巨大建築任務中所有垂直工程邏輯的核心。"
       ],
       "signatureSkillsEn": ["Forge Work", "Hammer Crash", "Lift Platform"],
-      "signatureSkillsZh": ["鍛造作業", "巨鎚猛擊", "升降平台"],
+      "signatureSkillsZh": ["鍛造作業", "巨鎚猛擊", "升降平臺"],
       "relatedLocationsEn": ["Sparkling Skylands", "Huge Building", "Abandoned Power Plant"],
       "relatedLocationsZh": ["閃耀空島", "巨大建築", "廢棄發電廠"],
       "sourceLinks": [
@@ -468,7 +468,7 @@
       "summaryEn": "Drifloon becomes essential once the story opens into Dream Islands, carrying dolls and players toward the Johto beast route.",
       "summaryZh": "當劇情進入夢境群島後，飄飄球就成了不可或缺的門戶角色，負責把娃娃與玩家一起帶往城都聖獸路線。",
       "detailsEn": "Unlike most partners, Drifloon does not primarily solve a material bottleneck. It solves access. It turns the post-game from a grounded rebuild into a strange mythic layer of travel, randomness, and legendary encounters.",
-      "detailsZh": "和大多數夥伴不同，飄飄球解決的不是材料問題，而是『通行權』。牠把通關後的玩法從地面重建，推進到一層帶有神祕、隨機與傳說遭遇色彩的後設探索。",
+      "detailsZh": "和大多數夥伴不同，飄飄球解決的不是材料問題，而是『通行權』。牠把通關後的玩法從地面重建，推進到一層帶有神秘、隨機與傳說遭遇色彩的後設探索。",
       "storyBeatsEn": [
         "Accepts entrusted dolls and routes the player into different Dream Island biomes.",
         "Acts as the access key for the Johto Legendary Beast recruitment path.",

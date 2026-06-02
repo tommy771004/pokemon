@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 import Seo from "../components/Seo";
+
+const MotionLink = motion.create(Link);
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -82,8 +84,7 @@ export default function Home() {
 
       <section className="grid grid-cols-1 md:grid-cols-12 gap-md mb-xl">
         {/* Featured Article */}
-        <motion.article variants={itemVariants} className="md:col-span-7 bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px]">
-          <Link to={data.featured.link} className="absolute inset-0 z-20"></Link>
+        <MotionLink to={data.featured.link} variants={itemVariants} className="md:col-span-7 bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px] block">
           <div className="absolute top-sm right-sm z-10 bg-paper/80 backdrop-blur-md px-2 py-1 rounded-sm border border-line-soft">
             <span className="font-mono-metadata text-mono-metadata text-ink-soft">{data.featured.tag}</span>
           </div>
@@ -114,13 +115,12 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </motion.article>
+        </MotionLink>
 
         {/* Secondary News Stack */}
         <div className="md:col-span-5 flex flex-col gap-md">
           {data.news.map((item: any) => (
-            <motion.article variants={itemVariants} key={item.id} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer">
-              <Link to={item.link} className="absolute inset-0 z-20"></Link>
+            <MotionLink to={item.link} variants={itemVariants} key={item.id} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer block">
               <div className="w-1/3 bg-surface-dim relative overflow-hidden">
                 <img 
                   src={item.image} 
@@ -144,7 +144,7 @@ export default function Home() {
                   {t("home.updatedAgo", { time: i18n.language === "en" ? item.updatedAgoEn : item.updatedAgoZh })}
                 </span>
               </div>
-            </motion.article>
+            </MotionLink>
           ))}
         </div>
       </section>

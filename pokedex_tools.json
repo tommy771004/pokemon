@@ -1,0 +1,71 @@
+{
+  "id": "pokedex-reference-tools",
+  "vol": "VII",
+  "categoryEn": "Pokedex Tools",
+  "categoryZh": "外部圖鑑工具指引",
+  "titleEn": "Professional Pokopia Databases & Field Toolkits",
+  "titleZh": "專業圖鑑工具：網路五大權威資料庫與機制資料深度應用",
+  "subtitleEn": "Unlock hidden formulas, precise grid layouts, and milestone bonuses by utilizing the top databases tracked by the active community.",
+  "subtitleZh": "為瞭解鎖隱藏神裝食譜、精確的網格佈建與圖鑑里程碑獎勵，本篇整合了網路上最熱門的《寶可夢 Pokopia》專業站點，並剖析各大工具的引路強項。",
+  "stats": {
+    "optimalTimeEn": "Anytime & Post-game",
+    "optimalTimeZh": "日常巡邏與收集全能",
+    "successRate": "5 Comprehensive Wikis"
+  },
+  "relatedIds": [
+    "beginner-tips",
+    "legendary-encounters"
+  ],
+  "sections": [
+    {
+      "id": "reference-breakdown",
+      "roman": "I.",
+      "titleEn": "Top Pokopia Databases Explained",
+      "titleZh": "各大站點實行指標與核心價值剖析",
+      "contentEn": "These five professional wikis handle specific sub-mechanics from precise decorations to statistical charts.",
+      "contentZh": "這五個權威社群站點提供了不同維度的攻略，幫助你克服資訊不對稱，極速達成 300 隻全圖鑑收集與工業鏈極限稼動。",
+      "steps": [
+        {
+          "nodeTitleEn": "Nintendo Life (Habitat Dex)",
+          "nodeTitleZh": "Nintendo Life：棲息地配置與具體傢俱數值",
+          "descEn": "Strength: Perfect integration of Pokedex and Habitat Dex requirements. Explains specific item ratios. For instance, 'Bench with Greenery' strictly requires 2 Hedges and 1 Chair.",
+          "descZh": "強項功能：將「寶可夢圖鑑」與「棲息地圖鑑 (Habitat Dex)」完美結合，精確標明瞭每種環境所需的物件比例（例如要搭建「有綠意的長椅」，會明確指引需擺設 2 個樹籬與 1 張椅子），適閤家裝玩家。",
+          "icon": "menu_book",
+          "badgeZh": "棲息地專家"
+        },
+        {
+          "nodeTitleEn": "Eurogamer (Likes & Event Dex)",
+          "nodeTitleZh": "Eurogamer：300 基礎圖鑑、愛好與活動專刊",
+          "descEn": "Strength: Hosts all 300 base entries plus Event Pokedex. Breaks details into traditional bio, habitat/weather, and specialties/likes. Understanding likes is key to high comfort.",
+          "descZh": "強項功能：提供 300 隻基礎圖鑑與限時「活動圖鑑（Event Pokédex）」記錄。分為傳統生物、棲息天氣、以及最重要的「專長與喜好（Likes）」。掌控喜好是極速提升寶可夢家園舒適度的無上法門。",
+          "icon": "library_books",
+          "badgeZh": "生物資料"
+        },
+        {
+          "nodeTitleEn": "OP.GG Pokopia (Rarity & Filters)",
+          "nodeTitleZh": "OP.GG Pokopia：極致篩選與環境偏好",
+          "descEn": "Strength: Outstanding UI for filtering by attribute, specialty, or environment preference (bright, humid, dark, dry, warm). Marks spawn rarity: C (Common), R (Rare), V (Very Rare).",
+          "descZh": "強項功能：無與倫比的高速篩選。可根據寶可夢的屬性、專長、或環境偏好（明亮、潮濕、黑暗、乾燥、溫暖等五大指標）瞬時過濾。且印有極為精準的出沒稀有度指示標籤（Common C / Rare R / Very Rare V）。",
+          "icon": "filter_alt",
+          "badgeZh": "高效搜尋"
+        },
+        {
+          "nodeTitleEn": "Pokopia.center (Milestones & Core)",
+          "nodeTitleZh": "Pokopia.center：招募五步迴圈與里程碑獎勵",
+          "descEn": "Strength: Detailed post-game regional statistics (Kanto ~50, Sinnoh ~14) and 5-step loop analysis. Formally records rewards like titles, garments, and Game Boy components upon reaching 200, 250, and 300 species milestones.",
+          "descZh": "強項功能：最深度的宏觀資料分析。列出 1 到 9 世代在關都 (~50 隻) 與神奧 (~14 隻) 等地分佈；精析了招募 5 步迴圈；並精準記錄收集 200、250 與 300 隻時發放的「圖鑑滿載里程碑獎勵」（如專用稱號、高階服飾及 Game Boy 元件）。",
+          "icon": "stars",
+          "badgeZh": "深度研判"
+        },
+        {
+          "nodeTitleEn": "Fandom Wiki (Community Tricks)",
+          "nodeTitleZh": "Fandom Wiki：玩家社群百科與隱藏技巧",
+          "descEn": "Strength: Player-supported encyclopedia containing exhaustive items database, interactive grid coordinates, and secret structural blueprints discovered by active sandbox players.",
+          "descZh": "強項功能：全集體智慧百科。由全球核心玩家聯動維護。收錄了最冷門的單件傢俱圖鑑、百變怪地形互動的隱藏格子坐標，以及論壇上玩家測試出的多套一鍵自動回收最佳管線配置。",
+          "icon": "groups",
+          "badgeZh": "社群聚合"
+        }
+      ]
+    }
+  ]
+}

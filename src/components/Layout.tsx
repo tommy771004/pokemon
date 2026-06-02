@@ -83,32 +83,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               );
             })}
           </div>
-          <div className="flex items-center gap-sm">
+          <div className="flex items-center gap-3">
             <button
               onClick={toggleLanguage}
-              className="text-label-caps font-label-caps border border-line-soft px-4 py-2 rounded-full text-ink-mute hover:text-primary hover:border-primary hover:bg-surface-variant transition-all uppercase min-w-[72px]"
+              className="text-label-caps font-label-caps border border-line-soft px-3 py-1.5 rounded-full text-ink-mute hover:text-primary hover:border-primary hover:bg-surface-variant transition-all uppercase min-w-[64px]"
             >
               {i18n.language === "en" ? "中/EN" : "EN/中"}
             </button>
             <button
-              className="md:hidden text-primary hover:opacity-80 transition-all active:scale-95 duration-200 p-2"
+              onClick={openSearch}
+              aria-label={t("pokedex.searchRegistry")}
+              className="w-9 h-9 flex items-center justify-center text-ink-mute hover:text-primary border border-transparent hover:border-line-soft hover:bg-surface-variant transition-all active:scale-95 duration-200 rounded-full"
+            >
+              <span className="material-symbols-outlined text-[20px]">
+                search
+              </span>
+            </button>
+            <button
+              className="md:hidden w-9 h-9 flex items-center justify-center text-ink-mute hover:text-primary border border-line-soft hover:border-primary/50 transition-all active:scale-95 duration-200 rounded-full"
               onClick={() => setIsMobileMenuOpen(true)}
             >
-              <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+              <span className="material-symbols-outlined text-[18px]">
                 menu
               </span>
             </button>
-            <div className="hidden md:flex gap-sm">
-              <button
-                onClick={openSearch}
-                aria-label={t("pokedex.searchRegistry")}
-                className="text-primary hover:opacity-80 transition-all active:scale-95 duration-200 p-2 rounded-full hover:bg-surface-variant"
-              >
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  search
-                </span>
-              </button>
-            </div>
           </div>
         </div>
       </nav>
@@ -202,45 +200,59 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[60] bg-surface md:hidden flex flex-col"
+            className="fixed inset-0 z-[60] bg-bone/95 backdrop-blur-md md:hidden flex flex-col"
           >
-            <div className="flex justify-between items-center px-4 h-16 border-b border-line-soft">
+            <div className="flex justify-between items-center px-4 h-[80px] border-b border-line-soft/50">
                <Link to="/" className="font-headline-md text-headline-md italic text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                 Pokopia
               </Link>
               <button
-                className="text-primary hover:opacity-80 transition-all active:scale-95 duration-200 p-2"
+                className="w-10 h-10 flex items-center justify-center text-ink-mute hover:text-primary bg-surface border border-line-soft rounded-full hover:border-primary/50 transition-all active:scale-95 duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                   close
                 </span>
               </button>
             </div>
-            <div className="flex flex-col px-margin-mobile py-lg gap-md flex-grow overflow-y-auto">
-              {navLinks.map((link) => (
-                <Link
+            <div className="flex flex-col px-8 py-16 gap-10 flex-grow overflow-y-auto w-full items-center justify-center">
+              {navLinks.map((link, idx) => (
+                <motion.div
                   key={link.path}
-                  to={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`font-display-lg text-display-lg uppercase tracking-wider block transition-all duration-200 ${
-                    isCurrent(link.path)
-                      ? "text-primary"
-                      : "text-ink-soft"
-                  }`}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ delay: idx * 0.05 + 0.1, duration: 0.4, ease: "easeOut" }}
                 >
-                  {link.name}
-                </Link>
+                  <Link
+                    to={link.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`font-label-caps text-[13px] uppercase tracking-[0.2em] relative group block transition-all duration-300 ${
+                      isCurrent(link.path)
+                        ? "text-primary font-bold"
+                        : "text-ink-mute hover:text-ink hover:-translate-y-0.5"
+                    }`}
+                  >
+                    {link.name}
+                    {isCurrent(link.path) && (
+                      <motion.span 
+                        layoutId="mobile-nav-indicator"
+                        className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary" 
+                      />
+                    )}
+                  </Link>
+                </motion.div>
               ))}
             </div>
-            <div className="p-margin-mobile border-t border-line-soft space-y-4">
-               <button
-                  onClick={openSearch}
-                  className="w-full bg-bone border border-line-soft py-4 rounded-sm font-headline-sm text-headline-sm text-ink-soft flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined">search</span>
-                  {t("pokedex.searchRegistry")}
-               </button>
-            </div>
+            
+            <motion.div 
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               transition={{ delay: 0.4 }}
+               className="p-8 pb-12 w-full flex justify-center text-ink-faint font-mono-metadata text-[10px] uppercase tracking-widest text-center"
+            >
+               Pokopia Chronicles<br/>Database Archive V.1.0
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
