@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "news": "最新情報",
+    "pokedex": "寶可夢圖鑑",
+    "map": "探索地圖",
+    "guides": "戰術指南"
+  },
+  "home": {
+    "vol": "第一卷 • 第一期",
+    "title": "Pokopia 紀事報",
+    "subtitle": "為 Nintendo Switch 2 平台上尋求卓越戰略的探索者所準備的頂級戰術彙編與探索日誌。",
+    "latestIntelligence": "最新情報",
+    "readTime": "閱讀時間 {{time}} 分鐘",
+    "updatedAgo": "更新於 {{time}} 前",
+    "by": "作者：{{author}}"
+  },
+  "footer": {
+    "sitemap": "網站地圖",
+    "privacy": "隱私權政策",
+    "terms": "服務條款",
+    "archive": "文章存檔",
+    "copyright": "© 2024 Pokopia. 專為 Nintendo Switch 2 打造。"
+  },
+  "pokedex": {
+    "title": "檔案紀錄",
+    "subtitle": "收錄大區域生態系統內所記錄物種的精選目錄。",
+    "typeClassification": "屬性分類",
+    "searchRegistry": "登錄檢索",
+    "searchPlaceholder": "輸入 ID 或名稱...",
+    "loadMore": "載入更多資料",
+    "allTypes": "所有屬性",
+    "undiscovered": "未發現",
+    "unknown": "未知"
+  },
+  "map": {
+    "title": "探索",
+    "archive": "製圖庫",
+    "index": "索引",
+    "keyLocations": "關鍵地點",
+    "entries": "{{count}} 筆資料",
+    "viewIndex": "檢視完整索引",
+    "status": "狀態",
+    "legend": {
+      "majorHub": "主要樞紐",
+      "route": "道路/野外"
+    }
+  },
+  "guide": {
+    "contents": "目錄",
+    "furtherReading": "延伸閱讀",
+    "viewArchive": "查看存檔"
+  }
+}

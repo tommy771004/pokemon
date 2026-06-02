@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "news": "News",
+    "pokedex": "Pokedex",
+    "map": "Map",
+    "guides": "Guides"
+  },
+  "home": {
+    "vol": "Vol. 1 • Edition 01",
+    "title": "Pokopia Chronicles",
+    "subtitle": "The premier tactical compendium and exploratory journal for the sophisticated strategist navigating the realms of the Nintendo Switch 2.",
+    "latestIntelligence": "LATEST INTEL",
+    "readTime": "{{time}} Min Read",
+    "updatedAgo": "Updated {{time}} ago",
+    "by": "By {{author}}"
+  },
+  "footer": {
+    "sitemap": "Sitemap",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "archive": "Archive",
+    "copyright": "© 2024 Pokopia. Crafted for Nintendo Switch 2."
+  },
+  "pokedex": {
+    "title": "Archival Records",
+    "subtitle": "A curated catalog of species documented within the greater regional ecosystem.",
+    "typeClassification": "Type Classification",
+    "searchRegistry": "Search Registry",
+    "searchPlaceholder": "Designation ID or Name...",
+    "loadMore": "LOAD MORE ENTRIES",
+    "allTypes": "All Types",
+    "undiscovered": "Undiscovered",
+    "unknown": "UNKNOWN"
+  },
+  "map": {
+    "title": "Exploration",
+    "archive": "Cartography Archive",
+    "index": "Index",
+    "keyLocations": "KEY LOCATIONS",
+    "entries": "{{count}} ENTRIES",
+    "viewIndex": "VIEW FULL INDEX",
+    "status": "STATUS",
+    "legend": {
+      "majorHub": "Major Hub",
+      "route": "Route/Wild"
+    }
+  },
+  "guide": {
+    "contents": "Contents",
+    "furtherReading": "Further Reading",
+    "viewArchive": "View Archive"
+  }
+}

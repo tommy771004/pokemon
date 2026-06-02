@@ -1,0 +1,62 @@
+{
+  "mapId": "SYS.MAP.01",
+  "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAeWWRlgdc1P9r-tUr7v_F7XYS1Cb0hk1QmpcHkX3a5IptvWJ9i4N2k36382UbN5LYGOqPoBxHfVlI34616vp7JiMfEWZp3tZ_R8o_P1oI_NoPH65a1Ut4oRiRi25FtdYhZ4S551MbT0wE-ih1kaGw8wnAg_rtdS3J87pqDBVHpZKYpz3Pnnq_vCfJ7nkFl6BxCfMroOue-7PneaLOsvQK-u3cQmj8FlpQRkQ3SYH9GX2APPsj0y2KMmh7T0nj9y80iNDj8DK9Mj56A",
+  "statusTickerEn": "// WEATHER DETECTED: HEAVY RAIN ON ROUTE 14 // MASS OUTBREAK: TAUROS NEAR SAFARI ZONE // GYM LEADER CHALLENGE OPEN IN CERULEAN // NEW ITEMS STOCKED IN POKEMART CENTRAL",
+  "statusTickerZh": "// 偵測到天氣：14號道路降下大雨 // 大量出現：沙狐樂園附近的肯泰羅 // 道館挑戰：華藍市已開放 // 商店補貨：中央寶可夢中心有新道具",
+  "locations": [
+    {
+      "id": "lumiose",
+      "x": 40,
+      "y": 30,
+      "icon": "location_city",
+      "type": "hub",
+      "levelEn": "LVL 45-50",
+      "levelZh": "等級 45-50",
+      "categoryEn": "Hub City",
+      "categoryZh": "中心城市",
+      "nameEn": "Lumiose City",
+      "nameZh": "密阿雷市",
+      "descriptionEn": "A breathtaking metropolis known for its towering central monument and radial streets. It serves as the primary cultural and economic center of the region.",
+      "descriptionZh": "一座令人嘆為觀止的大都會，以其高聳的中央紀念碑和放射狀街道聞名。它是該地區主要的文化和經濟中心。",
+      "tagsEn": ["Services", "Transport Hub"],
+      "tagsZh": ["綜合服務", "交通樞紐"],
+      "tagIcons": ["storefront", "train"]
+    },
+    {
+      "id": "route4",
+      "x": 70,
+      "y": 60,
+      "icon": "forest",
+      "type": "route",
+      "levelEn": "LVL 12-18",
+      "levelZh": "等級 12-18",
+      "categoryEn": "Wild Route",
+      "categoryZh": "野外道路",
+      "nameEn": "Route 4",
+      "nameZh": "4號道路",
+      "descriptionEn": "A winding dirt path connecting the early towns. Features tall grass teeming with low-level bug and flying types, perfect for novice trainers.",
+      "descriptionZh": "一條連接早期城鎮的蜿蜒土路。這裡的高草叢中充滿了低等級的蟲系和飛行系寶可夢，非常適合新手訓練家。",
+      "tagsEn": ["Tall Grass"],
+      "tagsZh": ["高草叢"],
+      "tagIcons": ["grass"]
+    },
+    {
+      "id": "mtcoronet",
+      "x": 80,
+      "y": 20,
+      "icon": "terrain",
+      "type": "route",
+      "levelEn": "LVL 55+",
+      "levelZh": "等級 55+",
+      "categoryEn": "Dungeon",
+      "categoryZh": "迷宮",
+      "nameEn": "Mt. Coronet",
+      "nameZh": "天冠山",
+      "descriptionEn": "The highest peak in the region, bisecting the landmass. A complex cave network requiring advanced traversal skills and resilient parties.",
+      "descriptionZh": "該地區的最高峰，將陸地一分為二。擁有複雜的洞穴網絡，需要高級的穿越技巧和適應力強的隊伍。",
+      "tagsEn": ["Hazardous", "Cold Env."],
+      "tagsZh": ["極度危險", "寒冷環境"],
+      "tagIcons": ["warning", "ac_unit"]
+    }
+  ]
+}

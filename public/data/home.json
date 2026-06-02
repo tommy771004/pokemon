@@ -1,0 +1,64 @@
+{
+  "featured": {
+    "date": "01/03",
+    "tag": "META ANALYSIS",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCfrl5EmXw9133j25QuglcHYWf27Qz8C6qjZPvHvxTIObFOpUBym0fK0_AQqwQmcQtuwsk5RXqE5vIjtEWB1x33EADpmxgwMFEMW43ev4vm51BzzbcQnq32VprC0cHFyaI2m8w5Twyyq6-6MfkwYnN-3DHijzy8A5E_TUrz6RnegXsTzM5JzLQzhjqX5GDzlrnwmHFBM2WeM2JGRo8CaGTCzGua6mgC0nD3B3ADmhoUZSLJRLZtQ2uQzn72mUDoaaOYOG3p1KsdWO3T",
+    "titleEn": "The Evolving Meta: Adapting Roster Synergy for Next-Gen Arenas",
+    "titleZh": "版本演進：適應次世代競技場的陣容協同效應",
+    "excerptEn": "An in-depth structural analysis of competitive team compositions utilizing the expanded mechanics introduced in the latest firmware update.",
+    "excerptZh": "深入分析最新韌體更新中引入的擴展機制，所帶來之競技團隊陣容的結構變化。",
+    "author": "Dr. S. Oak",
+    "readTime": 12,
+    "link": "/guide"
+  },
+  "news": [
+    {
+      "id": 1,
+      "tagEn": "CARTOGRAPHY",
+      "tagZh": "地圖製圖",
+      "number": "02",
+      "titleEn": "Unearthing the Hidden Colosseum Layouts",
+      "titleZh": "發掘隱藏的競技場佈局",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAxpoQsyEBzm10j1G-dF9MU1KRI6gMKKnCLbbi2cUYeoKP_P0HfI8GxZKo8aSZTY7bo59n8wZO3zJrHgO5rjKQxaapVWmfo982m4L06WbnO31j-KB1ZRgbxksW7TM65-pKxOIBiozJSGWHC8dqE9l8Fai3lrAz2JcpP7XnaKqTWbiJyyxvx0JiV2-7Dz3EkUIfOGiFSUjV6COFbb1qdJNXMv8uiFQPmj8ZzTcX312VJwWSgpLIfcePPkeV3AQQsLDK71CuA0qlm2YgH",
+      "updatedAgoEn": "2h",
+      "updatedAgoZh": "2 小時",
+      "link": "/map"
+    },
+    {
+      "id": 2,
+      "tagEn": "HARDWARE",
+      "tagZh": "硬體設備",
+      "number": "03",
+      "titleEn": "Switch 2 Dock Calibration Protocols",
+      "titleZh": "Switch 2 底座校準協議",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxAx6scfbxRWzjIA2RLlEIm6Zqe7592qhwoWtVF2WsN43PTBIAIbO30TKA1Z3fPZCL7tX2XdnniAiWLLZcNdO2a2NVXj-35jjfcxE_bqWXbMhsLv1tfYUNPY79nbF8BT7inmPeRF62D4kVw6WQANEy_Hoh4M1nEwt8peQqnjfpZxj-I5JbhNPhDpLHzv-4sMUDmbH7rV4cj8lAux1SDHCKNuot-cpsGQChxV3cqZrLtOjgnO_xorEZIky6sThfzeL3r_2e-HI9NsDi",
+      "updatedAgoEn": "5h",
+      "updatedAgoZh": "5 小時",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "tagEn": "STRATEGY",
+      "tagZh": "戰術指導",
+      "number": "04",
+      "titleEn": "Maximizing Frame Advantage in Aerial Battles",
+      "titleZh": "如何在空中對戰中最大化影格優勢",
+      "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+      "updatedAgoEn": "12h",
+      "updatedAgoZh": "12 小時",
+      "link": "/guide"
+    },
+    {
+      "id": 4,
+      "tagEn": "DATAMINE",
+      "tagZh": "資料探勘",
+      "number": "05",
+      "titleEn": "New 'Synchro' Resource Types Discovered",
+      "titleZh": "發現全新的「同步」資源類型",
+      "image": "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=800&q=80",
+      "updatedAgoEn": "1d",
+      "updatedAgoZh": "1 天",
+      "link": "/"
+    }
+  ]
+}

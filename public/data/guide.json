@@ -1,0 +1,78 @@
+{
+  "vol": "IV",
+  "categoryEn": "Advanced Capture Tactics",
+  "categoryZh": "進階捕捉戰術",
+  "titleEn": "The Geometry of the Catch: Navigating the Ruined Spire",
+  "titleZh": "捕捉的幾何學：探索隕落之塔",
+  "subtitleEn": "A meticulous analysis of positioning, bait timing, and atmospheric disruption required to secure the elusive phantom of the Northern Crags.",
+  "subtitleZh": "對北部峭壁中難以捉摸的幽靈進行定位、誘餌時機和環境干擾的極其詳細的分析。",
+  "sections": [
+    {
+      "id": "prerequisites",
+      "roman": "I.",
+      "titleEn": "Essential Loadout",
+      "titleZh": "必備裝備",
+      "contentEn": "Before stepping into the perimeter, ensure your inventory is curated for endurance rather than brute force. The high atmospheric pressure of the Crags reduces the efficacy of standard volatile capsules by nearly 30%. You must rely on precision-engineered traps.",
+      "contentZh": "在踏入周邊區域之前，請確保您的背包專為持久戰而準備，而非依賴蠻力。北部峭壁的高氣壓會將標準膠囊的效能降低將近 30%。您必須依賴精密設計的陷阱。"
+    },
+    {
+      "id": "approach",
+      "roman": "II.",
+      "titleEn": "The Asymmetric Approach",
+      "titleZh": "非對稱接近法",
+      "contentEn": "Do not approach the central dais directly. The target utilizes echolocation bounded by the hexagonal pillars. Move strictly along the perimeter, using the 1px architectural lines as your guide to remain in the acoustic shadows.",
+      "contentZh": "請勿直接接近中央平台。目標利用六角形柱子之間的邊界進行迴聲定位。嚴格沿著周邊移動，以 1px 粗細的建築線條為指引，保持在聲學陰影中。"
+    },
+    {
+      "id": "engagement",
+      "roman": "III.",
+      "titleEn": "Phases of Engagement",
+      "titleZh": "交戰階段",
+      "contentEn": "The encounter is divided into three distinct behavioral phases. Recognizing the transition between these phases is critical; a mis-timed throw during a transitional animation will result in immediate failure and potential loss of equipment.",
+      "contentZh": "這次遭遇戰分為三個截然不同的行為階段。識別這些階段之間的轉換至關重要；如果在過渡動畫中錯誤地投擲，將導致直接失敗並可能失去裝備。",
+      "listEn": [
+        "Phase 1: Observation. The target will circle the perimeter. Do not engage. Maintain concealment and monitor the behavioral loop.",
+        "Phase 2: Agitation. Upon sensing bait, the target will exhibit erratic movement. This is a false opening. Wait for the secondary pause.",
+        "Phase 3: Vulnerability. The target will briefly ground itself to consume the bait. The capture window is exactly 2.4 seconds."
+      ],
+      "listZh": [
+        "第一階段：觀察。目標將在周邊盤旋。不要交戰。保持隱蔽並監控其行為循環。",
+        "第二階段：躁動。感知到誘餌後，目標將表現出不規則移動。這是一個假破綻。請等待第二次停頓。",
+        "第三階段：脆弱。目標將短暫落地進食誘餌。捕捉的黃金時間正好是 2.4 秒。"
+      ]
+    }
+  ],
+  "image": {
+    "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3kYhPKC24UPlh4L-tV0N7ASj6hp2iTHn60L_xj4s6TOIZRzPt3L2qapFdzQYRPRmTSzIBOzNabh3_jYg7Dr-dzDJD4mdUIGumpkYLPmCeky5QYmnlGmSIVC0VjDidxS1EyBHXg93aRfHRAhhq8cqFQRK8heaCIS9IkGKt93lXF7jpAspH0vS3kW5pk15N23lGHEqroDEoduCCphfBZL2R74iWw-DCQw9kZ4AZu5U9NhLIvtjbtV62tm21s18OFCz3O1Uyg1GmbklY",
+    "captionEn": "The Class IV Resonance Capsule, modified for high-altitude deployment. Note the reinforced locking ring.",
+    "captionZh": "四級共振膠囊，為高空部署而改裝。請注意其加固的鎖定環。"
+  },
+  "stats": {
+    "optimalTimeEn": "23:00",
+    "optimalTimeZh": "23:00",
+    "successRate": "14.2%"
+  },
+  "related": [
+    {
+      "vol": "Vol. III",
+      "categoryEn": "Botany",
+      "categoryZh": "植物學",
+      "titleEn": "Harvesting Subterranean Flora for Bait Synthesis",
+      "titleZh": "收穫地下植物群用於誘餌合成"
+    },
+    {
+      "vol": "Vol. II",
+      "categoryEn": "Cartography",
+      "categoryZh": "地圖製圖",
+      "titleEn": "Mapping the Acoustic Shadows of the Northern Crags",
+      "titleZh": "繪製北部峭壁的聲學陰影"
+    },
+    {
+      "vol": "Vol. V",
+      "categoryEn": "Equipment",
+      "categoryZh": "裝備",
+      "titleEn": "Calibrating Resonance Capsules for High Altitude",
+      "titleZh": "針對高空校準共振膠囊"
+    }
+  ]
+}

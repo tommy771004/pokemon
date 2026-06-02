@@ -1,0 +1,124 @@
+{
+  "pokemon": [
+    {
+      "id": "001",
+      "roman": "I.",
+      "nameEn": "Bulbasaur",
+      "nameZh": "妙蛙種子",
+      "typesEn": ["GRASS", "POISON"],
+      "typesZh": ["草", "毒"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBFl8s8DKs_-QDIVSZe5fngkILAklQDo_gVFP3tyvqTyL0OkNL6oCI4-dL839Fc8zE4j-nv2wPIOHykFQJD_euBD6MrJZVQSJcxjI4YKOdJkjd5pguRlYyPIXOyXFy_hqBjTvW8sqqrUSkU6yfRs9ny8nEPnhk_TEJELslAPRUWJV80LuD84r91Fwhm8xNLUWwM9A0kx6COwoszgeFxAJG1c3B2ZnUkLrApqTrS1xOILuipS4mBVcfsS030eHFn2vLI-BAqplaDD5XI",
+      "known": true
+    },
+    {
+      "id": "002",
+      "roman": "II.",
+      "nameEn": "Ivysaur",
+      "nameZh": "妙蛙草",
+      "typesEn": ["GRASS", "POISON"],
+      "typesZh": ["草", "毒"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWkZHSQuF54qmLS7lw_IK_n_WDeGG2aSONb4Ym9eSUmMY3HrFDw8jXbLIU5R7Q8SJikI3CmhIKoVZ89rIDBY-rTI_t7IKdlDcQj9vOhW9-w5j8d1qwhdbs3M0c7hpsg7krbYWlBvU_rnCKfxrRsE1TYEs9rXPQ-ob69IBWYHoOgiPa6WkF4bMi1dpCFgtt8RLfmx9ArxPx-APLi7fuSjMHIFUOAl0Xp6j2D2uPR0a-iolP9SZaIxDh9uzvBzT2n8-8Al8tbataX6BA",
+      "known": true
+    },
+    {
+      "id": "003",
+      "roman": "III.",
+      "nameEn": "Venusaur",
+      "nameZh": "妙蛙花",
+      "typesEn": ["GRASS", "POISON"],
+      "typesZh": ["草", "毒"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGh4huUTRKQSc0TH79cLo_uuMIkP8stZzbod4a7IZTFl1wm9lpjEbBvSnf156QEcy-HpkPxQZyGc8xB9xe2zbFjiCIPCCO5dfV3VJWQZuK7VBRJz_P4INAiOcJnnyPm3yG3t_oZTs4IAuCjZ451M3G-zOi4hTg5Do27_azoMo64WJa_ngo_H0XV7MxnPJPxNExQ3iSomegLRTuxiYEnLxV3k6VhJD2NmIxaDwb8mFaMKld9adS33tMmsQsHc2K2Zsexu8ekmjeps7t",
+      "known": true
+    },
+    {
+      "id": "004",
+      "roman": "IV.",
+      "nameEn": "Charmander",
+      "nameZh": "小火龍",
+      "typesEn": ["FIRE"],
+      "typesZh": ["火"],
+      "image": "https://images.unsplash.com/photo-1627914801124-71261a8ef141?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "005",
+      "roman": "V.",
+      "nameEn": "Charmeleon",
+      "nameZh": "火恐龍",
+      "typesEn": ["FIRE"],
+      "typesZh": ["火"],
+      "image": "https://images.unsplash.com/photo-1627914801124-71261a8ef141?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "006",
+      "roman": "VI.",
+      "nameEn": "Charizard",
+      "nameZh": "噴火龍",
+      "typesEn": ["FIRE", "FLYING"],
+      "typesZh": ["火", "飛行"],
+      "image": "https://images.unsplash.com/photo-1627914801124-71261a8ef141?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "007",
+      "roman": "VII.",
+      "nameEn": "Squirtle",
+      "nameZh": "傑尼龜",
+      "typesEn": ["WATER"],
+      "typesZh": ["水"],
+      "image": "https://images.unsplash.com/photo-1616149562385-1d84e402e626?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "008",
+      "roman": "VIII.",
+      "nameEn": "Wartortle",
+      "nameZh": "卡咪龜",
+      "typesEn": ["WATER"],
+      "typesZh": ["水"],
+      "image": "https://images.unsplash.com/photo-1616149562385-1d84e402e626?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "009",
+      "roman": "IX.",
+      "nameEn": "Blastoise",
+      "nameZh": "水箭龜",
+      "typesEn": ["WATER"],
+      "typesZh": ["水"],
+      "image": "https://images.unsplash.com/photo-1616149562385-1d84e402e626?w=400&q=80",
+      "known": true
+    },
+    {
+      "id": "010",
+      "roman": "X.",
+      "nameEn": "Undiscovered",
+      "nameZh": "未發現",
+      "typesEn": ["UNKNOWN"],
+      "typesZh": ["未知"],
+      "image": "",
+      "known": false
+    },
+    {
+      "id": "011",
+      "roman": "XI.",
+      "nameEn": "Undiscovered",
+      "nameZh": "未發現",
+      "typesEn": ["UNKNOWN"],
+      "typesZh": ["未知"],
+      "image": "",
+      "known": false
+    },
+    {
+      "id": "012",
+      "roman": "XII.",
+      "nameEn": "Undiscovered",
+      "nameZh": "未發現",
+      "typesEn": ["UNKNOWN"],
+      "typesZh": ["未知"],
+      "image": "",
+      "known": false
+    }
+  ]
+}
