@@ -94,26 +94,6 @@ export default function Guide() {
         <article className="md:col-span-9 font-body-base text-body-base text-ink-soft leading-relaxed max-w-prose">
           {guide.sections.map((sec: any, index: number) => (
             <div key={sec.id}>
-              {index === 1 && guide.image && (
-                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center">
-                  <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">FIG. 1</div>
-                  <img
-                    src={guide.image.src}
-                    alt="Figure 1"
-                    className="w-full h-auto mb-4 rounded-sm object-cover max-h-[500px]"
-                  />
-                  <div className="w-full text-left">
-                    <p className="font-mono-metadata text-mono-metadata text-ink-mute border-b border-line-soft pb-2 mb-2">
-                       {en ? guide.image.captionEn : guide.image.captionZh}
-                    </p>
-                    <p className="font-mono-metadata text-mono-metadata text-ink-faint italic flex items-center justify-start gap-1">
-                      <span className="material-symbols-outlined text-[14px]">info</span>
-                      {en ? "Image Source / Copyright: Visual placeholder provided by Unsplash & Official Art references from PokeAPI" : "圖片來源與聲明：示意圖檔由 Unsplash 提供，官方美術圖源自 PokeAPI。本站僅作攻略整理，無任何營利行為，版權歸原作者及 Nintendo / Game Freak 所有。"}
-                    </p>
-                  </div>
-                </div>
-              )}
-
               {index === 2 && guide.stats && (
                  <div className="grid grid-cols-2 gap-4 my-8">
                   <div className="bg-paper-warm hairline-border p-4 rounded-sm">
@@ -143,6 +123,22 @@ export default function Guide() {
                      );
                   })}
                 </ul>
+              )}
+
+              {sec.image && (
+                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center">
+                  <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">FIG. {index + 1}</div>
+                  <img
+                    src={sec.image.src}
+                    alt={`Figure ${index + 1}`}
+                    className="w-full h-auto mb-4 rounded-sm object-cover max-h-[500px]"
+                  />
+                  <div className="w-full text-left">
+                    <p className="font-mono-metadata text-mono-metadata text-ink-main whitespace-normal leading-relaxed">
+                      {en ? sec.image.captionEn : sec.image.captionZh}
+                    </p>
+                  </div>
+                </div>
               )}
 
               <div className="mt-8 border-t border-dashed border-line-soft pt-sm mb-12">
@@ -197,7 +193,7 @@ export default function Guide() {
           </div>
         </div>
       )}
-      {/* Guide sources citation from info4.md */}
+      {/* Guide sources citation from info4.md, info1.md, info3.md */}
       <div className="mt-xl pt-lg border-t border-line">
         <h3 className="font-headline-sm text-headline-sm text-ink-soft mb-sm">
           {en ? "References & Source Citations" : "資料來源與引用"}
@@ -208,26 +204,55 @@ export default function Guide() {
             : "本攻略所彙編之戰術指南、建構藍圖與棲息地細節等資料，皆參考自以下強大的資料庫與社群站點："}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
-          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
-            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Nintendo Life</h4>
-            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Complete Pokédex & Habitat Dex</p>
-          </div>
-          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
-            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Eurogamer</h4>
-            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokémon Pokopia Pokédex</p>
-          </div>
-          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
-            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">OP.GG</h4>
-            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokopia Pokedex</p>
-          </div>
-          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
-            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Pokopia.center</h4>
+          <a href="https://pokopia.gamertw.com/zh-TW/guide/beginner" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">GamerTW</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokemon Pokopia 新手指南</p>
+          </a>
+          
+          <a href="https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">PoGoskill</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokemon Pokopia 攻略（新手玩法與主線流程）</p>
+          </a>
+          
+          <a href="https://forum.gamer.com.tw/C.php?bsn=1647&snA=128424" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">巴哈姆特哈啦板</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">【討論】一人一個 Pokopia 小知識！</p>
+          </a>
+          
+          <a href="https://gamewith.jp/pocoapokemon/" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">GameWith</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">ぽこあポケモン攻略｜ぽこポケ</p>
+          </a>
+          
+          <a href="https://pokopia.center/posts/pokopia-evolution-guide-2026/" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">Pokopia.center</h4>
             <p className="font-mono-metadata text-mono-metadata text-ink-mute">Habitat & Milestone Database</p>
-          </div>
-          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture md:col-span-2">
-            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Pokémon Pokopia Fandom Wiki</h4>
-            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Community Encyclopedia & Mechanics</p>
-          </div>
+          </a>
+          
+          <a href="https://www.nintendolife.com/guides/pokemon-pokopia-sparkling-skylands-rebuild-the-huge-building-guide-how-to-help-tinkmaster" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">Nintendo Life</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Complete Pokédex & Habitat Dex</p>
+          </a>
+          
+          <a href="https://www.eurogamer.net/pokemon-pokopia-walkthrough" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">Eurogamer</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokémon Pokopia Pokédex & Walkthrough</p>
+          </a>
+          
+          <a href="https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">Games.gg</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">How to Get Eevee and All Eeveelutions</p>
+          </a>
+
+          <a href="https://gametyrant.com/news/pokmon-pokopia-team-initiation-challenge-guide" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">GameTyrant</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Team Initiation Challenge Guide</p>
+          </a>
+
+          <a href="https://www.reddit.com/r/Pokopia/comments/1rqh19y/grid_size_of_altar_of_the_flame/" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+            <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">Reddit r/Pokopia</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Grid Size of Altar of the Flame & Community Encyclopedia</p>
+          </a>
         </div>
       </div>
     </>
