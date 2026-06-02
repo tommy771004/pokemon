@@ -8,27 +8,34 @@
   "home": {
     "vol": "Vol. 1 • Edition 01",
     "title": "Pokopia Chronicles",
-    "subtitle": "The premier tactical compendium and exploratory journal for the sophisticated strategist navigating the realms of the Nintendo Switch 2.",
+    "subtitle": "A field journal and strategy compendium for the post-apocalyptic Kanto of Pokémon Pokopia — restore five ecosystems, master the resource chain, and bring 300 Pokémon home on Nintendo Switch 2.",
     "latestIntelligence": "LATEST INTEL",
     "readTime": "{{time}} Min Read",
     "updatedAgo": "Updated {{time}} ago",
     "by": "By {{author}}"
   },
   "footer": {
+    "explore": "Explore",
     "sitemap": "Sitemap",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "archive": "Archive",
-    "copyright": "© 2024 Pokopia. Crafted for Nintendo Switch 2."
+    "copyright": "© 2026 Pokopia Chronicles. A fan compendium for Nintendo Switch 2."
   },
   "pokedex": {
     "title": "Archival Records",
-    "subtitle": "A curated catalog of species documented within the greater regional ecosystem.",
+    "subtitle": "A curated catalog of species and story characters documented within the greater regional ecosystem.",
     "typeClassification": "Type Classification",
     "searchRegistry": "Search Registry",
     "searchPlaceholder": "Designation ID or Name...",
+    "searchHint": "Search by name or Pokédex number, then press Enter.",
     "loadMore": "LOAD MORE ENTRIES",
     "allTypes": "All Types",
+    "speciesLogged": "{{count}} Species Logged",
+    "noResults": "No entries match your filters.",
+    "specialty": "Specialty",
+    "role": "Role",
+    "close": "Close",
     "undiscovered": "Undiscovered",
     "unknown": "UNKNOWN"
   },
@@ -39,15 +46,19 @@
     "keyLocations": "KEY LOCATIONS",
     "entries": "{{count}} ENTRIES",
     "viewIndex": "VIEW FULL INDEX",
+    "fullIndex": "Full Location Index",
+    "close": "Close",
     "status": "STATUS",
     "legend": {
-      "majorHub": "Major Hub",
-      "route": "Route/Wild"
+      "region": "Region",
+      "special": "Special Site"
     }
   },
   "guide": {
     "contents": "Contents",
+    "optimalTime": "Timing",
+    "successRate": "Scope",
     "furtherReading": "Further Reading",
-    "viewArchive": "View Archive"
+    "viewArchive": "Back to Top"
   }
 }
