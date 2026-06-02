@@ -46,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 transition-colors glass-header hairline-bottom">
-        <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-[1360px] mx-auto h-20">
+        <div className="flex justify-between items-center px-4 md:px-margin-desktop max-w-[1360px] mx-auto h-16 md:h-20">
           <Link to="/" className="font-headline-md text-headline-md italic text-primary hover:opacity-80 transition-opacity">
             Pokopia
           </Link>
@@ -166,7 +166,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed inset-0 z-[60] bg-surface md:hidden flex flex-col"
           >
-            <div className="flex justify-between items-center px-margin-mobile h-20 border-b border-line-soft">
+            <div className="flex justify-between items-center px-4 h-16 border-b border-line-soft">
                <Link to="/" className="font-headline-md text-headline-md italic text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                 Pokopia
               </Link>
@@ -207,7 +207,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       </AnimatePresence>
 
-      <main className="flex-grow pt-[120px] px-margin-mobile md:px-margin-desktop max-w-[1360px] mx-auto w-full pb-xl min-h-screen">
+      <main className="flex-grow pt-[80px] md:pt-[120px] px-margin-mobile md:px-margin-desktop max-w-[1360px] mx-auto w-full pb-lg md:pb-xl min-h-screen">
         {children}
       </main>
 

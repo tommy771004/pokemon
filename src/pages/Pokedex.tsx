@@ -260,67 +260,67 @@ export default function Pokedex() {
               <p className="font-body-base text-body-base text-ink-mute">{t("pokedex.noResults")}</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-sm sm:gap-md relative">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-md relative">
               {visible.map((pkmn: any) => (
                 <motion.article
                   key={pkmn.id}
                   onClick={() => pkmn.known && setActive(pkmn)}
                   whileHover={pkmn.known ? { scale: 1.02, y: -2 } : {}}
-                  className={`bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
+                  className={`bg-bone border border-line-soft rounded-sm p-2.5 sm:p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
                 >
-                  <div className="flex justify-between items-start mb-sm">
-                    <span className={`font-body-italic text-body-italic ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
+                  <div className="flex justify-between items-start mb-2 sm:mb-sm">
+                    <span className={`font-body-italic text-body-italic text-sm sm:text-base ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
                       {pkmn.roman}
                     </span>
-                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-1.5 py-0.5 rounded-sm border border-line-soft text-xs">
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-1.5 py-0.5 rounded-sm border border-line-soft text-[10px]">
                       #{pkmn.id}
                     </span>
                   </div>
 
-                  <div className="w-full h-28 sm:h-32 mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
+                  <div className="w-full h-24 sm:h-32 mb-2 sm:mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
                     {pkmn.known ? (
                       <img
                         src={pkmn.image}
                         alt={pkmn.nameEn}
                         loading="lazy"
-                        className="object-contain max-w-[80px] max-h-[80px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
                       />
                     ) : (
-                      <span className="material-symbols-outlined text-ink-faint text-4xl">visibility_off</span>
+                      <span className="material-symbols-outlined text-ink-faint text-3xl sm:text-4xl">visibility_off</span>
                     )}
                   </div>
                   
                   {pkmn.known && (
-                    <div className="text-[10px] text-ink-faint mb-sm flex gap-1 flex-wrap">
-                      <span>{en ? "Img Source:" : "圖片出處:"}</span>
-                      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2" onClick={(e) => e.stopPropagation()}>PokeAPI</a>
+                    <div className="text-[9px] sm:text-[10px] text-ink-faint mb-2 sm:mb-sm flex gap-1 flex-wrap">
+                      <span>{en ? "Image:" : "圖片:"}</span>
+                      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-1" onClick={(e) => e.stopPropagation()}>PokeAPI</a>
                     </div>
                   )}
 
                   <div className="flex flex-col mt-auto">
-                    <h2 className={`font-headline-md text-headline-md mb-xs transition-colors truncate ${pkmn.known ? "text-ink-soft group-hover:text-primary" : "text-ink-mute"}`}>
+                    <h2 className={`font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-1 md:mb-xs transition-colors truncate ${pkmn.known ? "text-ink-soft group-hover:text-primary" : "text-ink-mute"}`}>
                       {en ? pkmn.nameEn : pkmn.nameZh}
                     </h2>
-                    <div className="flex flex-wrap items-center gap-2 mt-1">
-                      <div className="flex flex-wrap gap-xs">
+                    <div className="flex flex-wrap items-center gap-1 sm:gap-2 mt-1">
+                      <div className="flex flex-wrap gap-1 sm:gap-xs">
                         {(en ? pkmn.typesEn : pkmn.typesZh).map((type: string, idx: number) => (
                           <span
                             key={idx}
-                            className={`font-label-caps text-label-caps px-2 py-0.5 rounded-sm border ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
+                            className={`font-label-caps text-label-caps px-1 py-0.5 sm:px-2 rounded-sm border text-[9px] sm:text-[11px] ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
                           >
                             {type}
                           </span>
                         ))}
                       </div>
                       {pkmn.known && (en ? pkmn.roleEn : pkmn.roleZh) && (
-                        <span className="font-mono-metadata text-mono-metadata text-ink-soft flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded w-fit">
-                          <span className="material-symbols-outlined text-[14px]">badge</span>
+                        <span className="font-mono-metadata text-mono-metadata text-ink-soft flex items-center gap-0.5 sm:gap-1 bg-surface-container-high px-1 sm:px-2 py-0.5 rounded w-fit text-[9px] sm:text-[10px]">
+                          <span className="material-symbols-outlined text-[10px] sm:text-[14px]">badge</span>
                           {en ? pkmn.roleEn : pkmn.roleZh}
                         </span>
                       )}
                       {pkmn.known && pkmn.specialtyEn && pkmn.specialtyEn !== "—" && (
-                        <span className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center gap-1">
-                          <span className="material-symbols-outlined text-[14px]">bolt</span>
+                        <span className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center gap-0.5 sm:gap-1 text-[9px] sm:text-[10px]">
+                          <span className="material-symbols-outlined text-[10px] sm:text-[14px]">bolt</span>
                           {en ? pkmn.specialtyEn : pkmn.specialtyZh}
                         </span>
                       )}
@@ -347,16 +347,23 @@ export default function Pokedex() {
       {/* Detail Modal */}
       {active && (
         <div
-          className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-ink-soft/40 backdrop-blur-sm"
+          className="fixed inset-0 z-[70] flex items-end md:items-center justify-center md:p-4 bg-ink-soft/40 backdrop-blur-sm"
           onClick={() => {
             setActive(null);
             setExpandReadMore(false);
           }}
         >
-          <div
-            className="bg-bone border border-line rounded-lg sm:rounded-xl md:rounded-2xl ambient-shadow w-[95vw] sm:w-[90vw] md:max-w-2xl lg:max-w-3xl max-h-[90vh] overflow-y-auto relative paper-texture mx-auto"
+          <motion.div
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: "100%", opacity: 0 }}
+            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            className="bg-bone border-t md:border border-line rounded-t-3xl md:rounded-2xl ambient-shadow w-full md:max-w-2xl lg:max-w-3xl h-[92vh] md:h-auto md:max-h-[90vh] overflow-y-auto relative paper-texture mx-auto flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
+            <div className="sticky top-0 w-full flex justify-center pt-3 pb-1 md:hidden bg-bone/80 backdrop-blur-md z-20">
+              <div className="w-12 h-1.5 bg-line-soft rounded-full"></div>
+            </div>
             <button
               onClick={() => {
                 setActive(null);
@@ -368,8 +375,8 @@ export default function Pokedex() {
               <span className="material-symbols-outlined">close</span>
             </button>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2">
-              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-4 sm:p-md h-56 sm:h-auto sm:aspect-square relative flex-shrink-0">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="bg-surface-container-high border-b md:border-b-0 md:border-r border-line-soft flex flex-col items-center justify-center p-4 sm:p-md h-48 md:h-auto md:aspect-square relative flex-shrink-0">
                 <img src={active.image} alt={active.nameEn} className="object-contain max-w-[150px] max-h-[150px] sm:max-w-[200px] sm:max-h-[200px] mb-4" />
                 <div className="absolute bottom-2 right-2 text-[10px] text-ink-faint flex gap-1 bg-surface/50 backdrop-blur-sm px-2 py-1 rounded">
                   <span>{en ? "Img Source:" : "圖片出處:"}</span>
@@ -401,21 +408,21 @@ export default function Pokedex() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-sm mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-sm mt-4">
                   {active.roleEn && (
-                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-3 px-4 sm:py-2 sm:px-3 sm:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-2 md:px-3 md:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.role")}</span>
                       <span className="font-body-base text-body-base text-ink-soft text-right">{en ? active.roleEn : active.roleZh}</span>
                     </div>
                   )}
                   {active.specialtyEn && active.specialtyEn !== "—" && (
-                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-3 px-4 sm:py-2 sm:px-3 sm:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-2 md:px-3 md:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.specialty")}</span>
                       <span className="font-body-base text-body-base text-primary text-right">{en ? active.specialtyEn : active.specialtyZh}</span>
                     </div>
                   )}
                   {activeSkills.length > 0 && (
-                    <div className="bg-paper-warm sm:hairline-border border-y sm:border-y-0 border-line-soft py-4 px-4 sm:py-3 sm:px-3 sm:rounded-sm sm:col-span-2 -mx-4 sm:mx-0 mt-[-1px] sm:mt-0">
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-5 px-4 md:py-3 md:px-3 md:rounded-sm md:col-span-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute block mb-3 sm:mb-2">
                         {t("pokedex.skills")}
                       </span>
@@ -446,7 +453,7 @@ export default function Pokedex() {
             </div>
 
             {active.descriptionEn && (
-              <div className="p-4 sm:p-6 md:p-lg pt-0 sm:pt-6 md:pt-lg border-t border-line-soft mt-0 flex flex-col justify-between">
+              <div className="p-4 sm:p-6 md:p-lg pt-0 sm:pt-6 md:pt-lg border-t border-line-soft mt-0 flex flex-col justify-between flex-grow">
                 <p className={`font-body-base text-body-base text-ink-soft leading-relaxed transition-all ${expandReadMore ? "" : "line-clamp-3 mb-2"}`}>
                   {en ? active.descriptionEn : active.descriptionZh}
                 </p>
@@ -474,7 +481,7 @@ export default function Pokedex() {
                 </div>
               </div>
             )}
-          </div>
+          </motion.div>
         </div>
       )}
     </>
