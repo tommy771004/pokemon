@@ -135,7 +135,7 @@ export default function Pokedex() {
           "@type": "CollectionPage",
           name: seoTitle,
           description: seoDescription,
-          url: "https://pokopiachronicles.com/pokedex",
+          url: "https://pokemoninfoperfer.vercel.app/pokedex",
           inLanguage: en ? "en" : "zh-Hant",
           about: "Pokemon Pokopia species archive and skills",
         }}

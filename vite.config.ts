@@ -28,7 +28,8 @@ function gscVerificationPlugin(token?: string): Plugin {
   return {
     name: 'pokopia-gsc-verification',
     transformIndexHtml(html) {
-      if (!token) return html;
+      // Skip if no token, or if a verification tag is already hardcoded in index.html.
+      if (!token || html.includes('google-site-verification')) return html;
       const tag = `<meta name="google-site-verification" content="${token}" />`;
       return html.replace('</head>', `    ${tag}\n  </head>`);
     },

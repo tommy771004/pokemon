@@ -56,7 +56,7 @@ export default function Home() {
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Pokopia Chronicles",
-          url: "https://pokopiachronicles.com/",
+          url: "https://pokemoninfoperfer.vercel.app/",
           inLanguage: en ? "en" : "zh-Hant",
           description: seoDescription,
         }}

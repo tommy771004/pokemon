@@ -136,7 +136,7 @@ export default function Characters() {
           "@type": "CollectionPage",
           name: seoTitle,
           description: seoDescription,
-          url: "https://pokopiachronicles.com/characters",
+          url: "https://pokemoninfoperfer.vercel.app/characters",
           inLanguage: en ? "en" : "zh-Hant",
           about: "Pokopia story characters and plot roles",
         }}
