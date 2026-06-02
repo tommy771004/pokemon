@@ -355,8 +355,8 @@
     {
       "id": "143",
       "roman": "CXLIII.",
-      "nameEn": "Mosslax",
-      "nameZh": "苔蘚卡比",
+      "nameEn": "Snorlax",
+      "nameZh": "卡比獸",
       "typesEn": ["NORMAL"],
       "typesZh": ["一般"],
       "roleEn": "Story Character",
@@ -531,8 +531,8 @@
     {
       "id": "235",
       "roman": "CCXXXV.",
-      "nameEn": "Smearguru",
-      "nameZh": "藝術圖圖犬",
+      "nameEn": "Smeargle",
+      "nameZh": "圖圖犬",
       "typesEn": ["NORMAL"],
       "typesZh": ["一般"],
       "roleEn": "Story Character",
@@ -675,8 +675,8 @@
     {
       "id": "479",
       "roman": "CDLXXIX.",
-      "nameEn": "DJ Rotom",
-      "nameZh": "DJ 洛托姆",
+      "nameEn": "Rotom",
+      "nameZh": "洛托姆",
       "typesEn": ["ELECTRIC", "GHOST"],
       "typesZh": ["電", "幽靈"],
       "roleEn": "Story Character",
@@ -739,8 +739,8 @@
     {
       "id": "820",
       "roman": "DCCCXX.",
-      "nameEn": "Chef Dente",
-      "nameZh": "主廚 Dente",
+      "nameEn": "Greedent",
+      "nameZh": "藏飽栗鼠",
       "typesEn": ["NORMAL"],
       "typesZh": ["一般"],
       "roleEn": "Story Character",
@@ -755,7 +755,7 @@
     {
       "id": "959",
       "roman": "CMLIX.",
-      "nameEn": "Tinkmaster",
+      "nameEn": "Tinkaton",
       "nameZh": "巨鍛匠",
       "typesEn": ["FAIRY", "STEEL"],
       "typesZh": ["妖精", "鋼"],

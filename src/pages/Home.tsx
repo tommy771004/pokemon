@@ -1,6 +1,20 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 15 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+};
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -15,27 +29,27 @@ export default function Home() {
   if (!data) return null;
 
   return (
-    <>
-      <header className="mb-xl text-center md:text-left flex flex-col items-center md:items-start">
+    <motion.div variants={containerVariants} initial="hidden" animate="show">
+      <motion.header variants={itemVariants} className="mb-xl text-center md:text-left flex flex-col items-center md:items-start">
         <span className="font-mono-metadata text-mono-metadata text-primary uppercase tracking-widest mb-4">
           {t("home.vol")}
         </span>
         <h1 className="font-display-lg text-display-lg text-ink-soft mb-sm">{t("home.title")}</h1>
         <p className="font-body-italic text-body-italic text-ink-mute max-w-2xl">{t("home.subtitle")}</p>
-      </header>
+      </motion.header>
 
-      <div className="w-full border-t border-line mb-md flex items-center pt-xs">
+      <motion.div variants={itemVariants} className="w-full border-t border-line mb-md flex items-center pt-xs">
         <span className="font-mono-metadata text-mono-metadata text-primary mr-sm">I.</span>
         <span className="font-label-caps text-label-caps text-ink-mute uppercase tracking-widest">
           {t("home.latestIntelligence")}
         </span>
         <div className="flex-grow"></div>
         <span className="font-mono-metadata text-mono-metadata text-ink-faint">{data.featured.date}</span>
-      </div>
+      </motion.div>
 
       <section className="grid grid-cols-1 md:grid-cols-12 gap-md mb-xl">
         {/* Featured Article */}
-        <article className="md:col-span-7 bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px]">
+        <motion.article variants={itemVariants} className="md:col-span-7 bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px]">
           <Link to={data.featured.link} className="absolute inset-0 z-20"></Link>
           <div className="absolute top-sm right-sm z-10 bg-paper/80 backdrop-blur-md px-2 py-1 rounded-sm border border-line-soft">
             <span className="font-mono-metadata text-mono-metadata text-ink-soft">{data.featured.tag}</span>
@@ -52,7 +66,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-bone via-bone/20 to-transparent"></div>
           </div>
           <div className="p-lg flex-grow flex flex-col justify-end bg-bone relative -mt-16 z-10">
-            <h2 className="font-headline-md text-headline-md text-ink-soft mb-xs leading-tight">
+            <h2 className="font-headline-md text-headline-md text-ink-soft mb-xs leading-tight group-hover:text-primary transition-colors">
               {i18n.language === "en" ? data.featured.titleEn : data.featured.titleZh}
             </h2>
             <p className="font-body-base text-body-base text-ink-mute line-clamp-2 mb-sm">
@@ -67,12 +81,12 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </article>
+        </motion.article>
 
         {/* Secondary News Stack */}
         <div className="md:col-span-5 flex flex-col gap-md">
           {data.news.map((item: any) => (
-            <article key={item.id} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer">
+            <motion.article variants={itemVariants} key={item.id} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer">
               <Link to={item.link} className="absolute inset-0 z-20"></Link>
               <div className="w-1/3 bg-surface-dim relative overflow-hidden">
                 <img 
@@ -97,10 +111,10 @@ export default function Home() {
                   {t("home.updatedAgo", { time: i18n.language === "en" ? item.updatedAgoEn : item.updatedAgoZh })}
                 </span>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </section>
-    </>
+    </motion.div>
   );
 }

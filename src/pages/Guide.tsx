@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Guide() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [data, setData] = useState<any>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
 
@@ -11,9 +14,15 @@ export default function Guide() {
       .then((res) => res.json())
       .then((d) => {
         setData(d);
-        setActiveId(d.guides?.[0]?.id ?? null);
+        const params = new URLSearchParams(location.search);
+        const idParam = params.get("id");
+        if (idParam && d.guides?.find((g: any) => g.id === idParam)) {
+          setActiveId(idParam);
+        } else {
+          setActiveId(d.guides?.[0]?.id ?? null);
+        }
       });
-  }, []);
+  }, [location.search]);
 
   if (!data || !activeId) return null;
 
@@ -23,6 +32,7 @@ export default function Guide() {
 
   const openGuide = (id: string) => {
     setActiveId(id);
+    navigate(`/guide?id=${id}`, { replace: true });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -85,16 +95,22 @@ export default function Guide() {
           {guide.sections.map((sec: any, index: number) => (
             <div key={sec.id}>
               {index === 1 && guide.image && (
-                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm">
-                  <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute">FIG. 1</div>
+                <div className="bg-bone hairline-border p-sm my-8 relative ambient-shadow rounded-sm flex flex-col items-center">
+                  <div className="absolute top-2 right-2 font-mono-metadata text-mono-metadata text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">FIG. 1</div>
                   <img
                     src={guide.image.src}
                     alt="Figure 1"
-                    className="w-full h-auto mb-4 rounded-sm"
+                    className="w-full h-auto mb-4 rounded-sm object-cover max-h-[500px]"
                   />
-                  <p className="font-mono-metadata text-mono-metadata text-ink-mute mt-4 border-t border-line-soft pt-2">
-                    {en ? guide.image.captionEn : guide.image.captionZh}
-                  </p>
+                  <div className="w-full text-left">
+                    <p className="font-mono-metadata text-mono-metadata text-ink-mute border-b border-line-soft pb-2 mb-2">
+                       {en ? guide.image.captionEn : guide.image.captionZh}
+                    </p>
+                    <p className="font-mono-metadata text-mono-metadata text-ink-faint italic flex items-center justify-start gap-1">
+                      <span className="material-symbols-outlined text-[14px]">info</span>
+                      {en ? "Image Source / Copyright: Visual placeholder provided by Unsplash & Official Art references from PokeAPI" : "圖片來源與聲明：示意圖檔由 Unsplash 提供，官方美術圖源自 PokeAPI。本站僅作攻略整理，無任何營利行為，版權歸原作者及 Nintendo / Game Freak 所有。"}
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -128,6 +144,23 @@ export default function Guide() {
                   })}
                 </ul>
               )}
+
+              <div className="mt-8 border-t border-dashed border-line-soft pt-sm mb-12">
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center justify-start gap-2 flex-wrap mb-1">
+                    <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">link</span>{en ? "Source:" : "資料出處:"}</span>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       Bulbapedia
+                    </a>
+                    <span>·</span>
+                    <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       PokeAPI
+                    </a>
+                 </p>
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint text-[11px] leading-tight flex items-start gap-1 mt-1">
+                    <span className="material-symbols-outlined text-[12px] mt-[1px]">copyright</span>
+                    <span>{en ? "Nintendo, Game Freak, and The Pokémon Company." : "版權歸屬任天堂、Game Freak 及 The Pokémon Company。本站僅作攻略資訊整合。"}</span>
+                 </p>
+              </div>
             </div>
           ))}
         </article>
@@ -164,6 +197,39 @@ export default function Guide() {
           </div>
         </div>
       )}
+      {/* Guide sources citation from info4.md */}
+      <div className="mt-xl pt-lg border-t border-line">
+        <h3 className="font-headline-sm text-headline-sm text-ink-soft mb-sm">
+          {en ? "References & Source Citations" : "資料來源與引用"}
+        </h3>
+        <p className="font-body-base text-body-base text-ink-mute mb-md">
+          {en 
+            ? "The strategies, structural blueprints, and habitat data compiled in these guides are sourced from the following comprehensive databases and community wikis:"
+            : "本攻略所彙編之戰術指南、建構藍圖與棲息地細節等資料，皆參考自以下強大的資料庫與社群站點："}
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
+          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
+            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Nintendo Life</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Complete Pokédex & Habitat Dex</p>
+          </div>
+          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
+            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Eurogamer</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokémon Pokopia Pokédex</p>
+          </div>
+          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
+            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">OP.GG</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokopia Pokedex</p>
+          </div>
+          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture">
+            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Pokopia.center</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Habitat & Milestone Database</p>
+          </div>
+          <div className="bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture md:col-span-2">
+            <h4 className="font-label-caps text-label-caps text-ink-soft mb-1">Pokémon Pokopia Fandom Wiki</h4>
+            <p className="font-mono-metadata text-mono-metadata text-ink-mute">Community Encyclopedia & Mechanics</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

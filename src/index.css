@@ -71,51 +71,62 @@
   --spacing-margin-desktop: 64px;
   --spacing-margin-mobile: 24px;
 
-  --font-mono-metadata: "JetBrains Mono";
-  --font-body-italic: "Playfair Display";
-  --font-headline-sm: "Inter Tight";
-  --font-display-lg: "Inter Tight";
-  --font-body-base: "Inter";
-  --font-label-caps: "Inter Tight";
-  --font-headline-md: "Inter Tight";
+  --font-mono-metadata: "JetBrains Mono", monospace;
+  --font-body-italic: "Playfair Display", serif;
+  --font-headline-sm: "Inter Tight", sans-serif;
+  --font-display-lg: "Inter Tight", sans-serif;
+  --font-body-base: "Inter", sans-serif;
+  --font-label-caps: "Inter Tight", sans-serif;
+  --font-headline-md: "Inter Tight", sans-serif;
 }
 
 @layer base {
   body {
     background-color: var(--color-paper);
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    background-image: 
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E"),
+      linear-gradient(to right, rgba(21, 20, 15, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(21, 20, 15, 0.03) 1px, transparent 1px);
+    background-size: auto, 32px 32px, 32px 32px;
     color: var(--color-ink-soft);
+    font-family: "Inter", sans-serif;
   }
 }
 
 @layer utilities {
   .text-display-lg {
-    font-size: 78px;
-    line-height: 80px;
+    font-size: clamp(40px, 5vw + 20px, 78px);
+    line-height: clamp(44px, 5.5vw + 24px, 80px);
     letter-spacing: -0.04em;
     font-weight: 800;
   }
+  .text-display-md {
+    font-size: clamp(32px, 4vw + 16px, 56px);
+    line-height: clamp(38px, 4.5vw + 20px, 64px);
+    letter-spacing: -0.03em;
+    font-weight: 800;
+  }
   .text-headline-md {
-    font-size: 38px;
-    line-height: 44px;
+    font-size: clamp(26px, 3vw + 14px, 38px);
+    line-height: clamp(32px, 3.5vw + 16px, 44px);
     letter-spacing: -0.025em;
     font-weight: 700;
   }
   .text-headline-sm {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: clamp(16px, 2vw + 12px, 24px);
+    line-height: clamp(24px, 2vw + 16px, 32px);
     letter-spacing: -0.01em;
     font-weight: 700;
   }
   .text-body-base {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: clamp(14px, 0.5vw + 12px, 16px);
+    line-height: clamp(22px, 0.5vw + 20px, 25px);
     letter-spacing: 0;
     font-weight: 400;
   }
   .text-body-italic {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: clamp(15px, 0.5vw + 13px, 18px);
+    line-height: clamp(23px, 0.5vw + 21px, 26px);
     font-weight: 500;
   }
   .text-label-caps {
@@ -126,17 +137,17 @@
   }
   .text-mono-metadata {
     font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.04em;
-    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
   }
 
   .ambient-shadow {
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .ambient-shadow:hover {
-    box-shadow: 0 30px 60px -30px rgba(21, 20, 15, 0.18);
-    transform: translateY(-2px);
+    box-shadow: 0 40px 80px -30px rgba(21, 20, 15, 0.15), 0 10px 30px -10px rgba(21, 20, 15, 0.08);
+    transform: translateY(-4px);
   }
 
   .hairline-border { border: 1px solid var(--color-line-soft); }
@@ -144,7 +155,8 @@
   .hairline-top { border-top: 1px solid var(--color-line-soft); }
 
   .glass-header {
-    backdrop-filter: blur(12px);
+    background: rgba(254, 249, 240, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -155,3 +167,4 @@
     scrollbar-width: none;
   }
 }
+

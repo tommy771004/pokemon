@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+import { motion } from "motion/react";
 
 const PAGE_SIZE = 12;
 
@@ -11,8 +12,10 @@ export default function Pokedex() {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [selectedType, setSelectedType] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [sortBy, setSortBy] = useState<"id" | "alphabetical" | "role">("id");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [active, setActive] = useState<any>(null);
+  const [expandReadMore, setExpandReadMore] = useState(false);
 
   useEffect(() => {
     fetch("/data/pokedex.json")
@@ -28,7 +31,11 @@ export default function Pokedex() {
   }, [location.search]);
 
   const en = i18n.language === "en";
-  const list: any[] = data?.pokemon ?? [];
+  const list: any[] = useMemo(() => {
+    return (data?.pokemon ?? []).filter((p: any) => 
+      !["Protagonist", "Story Character", "Mentor"].includes(p.roleEn)
+    );
+  }, [data]);
 
   // Build the type list + counts dynamically from known entries.
   const types = useMemo(() => {
@@ -49,7 +56,7 @@ export default function Pokedex() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return list.filter((p) => {
+    const result = list.filter((p) => {
       const matchesType = !selectedType || (p.typesEn ?? []).includes(selectedType);
       const matchesQuery =
         !q ||
@@ -58,12 +65,34 @@ export default function Pokedex() {
         p.id?.includes(q);
       return matchesType && matchesQuery;
     });
-  }, [list, selectedType, query]);
 
-  // Reset pagination whenever the filter set changes.
+    if (sortBy === "alphabetical") {
+      result.sort((a, b) => {
+        const nameA = en ? a.nameEn : a.nameZh;
+        const nameB = en ? b.nameEn : b.nameZh;
+        return (nameA || "").localeCompare(nameB || "");
+      });
+    } else if (sortBy === "role") {
+      result.sort((a, b) => {
+        const roleA = en ? a.roleEn : a.roleZh;
+        const roleB = en ? b.roleEn : b.roleZh;
+        if (roleA !== roleB) {
+          return (roleA || "").localeCompare(roleB || "");
+        }
+        // Fallback to ID if roles are identical
+        return parseInt(a.id, 10) - parseInt(b.id, 10);
+      });
+    } else {
+      result.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
+    }
+
+    return result;
+  }, [list, selectedType, query, sortBy, en]);
+
+  // Reset pagination whenever the filter set or sort changes.
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [selectedType, query]);
+  }, [selectedType, query, sortBy]);
 
   if (!data) return null;
 
@@ -168,7 +197,23 @@ export default function Pokedex() {
         </aside>
 
         {/* Grid */}
-        <div className="flex-grow">
+        <div className="flex-grow flex flex-col min-w-0">
+          <div className="flex justify-end mb-md gap-3 items-center">
+            <label htmlFor="sort-select" className="font-label-caps text-label-caps text-ink-mute">
+              {en ? "Sort by:" : "排序方式："}
+            </label>
+            <select
+              id="sort-select"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="font-body-base text-body-base px-3 py-1.5 rounded-sm bg-surface-container border border-line-soft text-ink-soft cursor-pointer focus:outline-none focus:border-primary transition-all hover:border-ink-soft appearance-none min-w-[120px]"
+              style={{ backgroundImage: 'url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3e%3cpolyline points=\'6 9 12 15 18 9\'%3e%3c/polyline%3e%3c/svg%3e")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.5rem center', backgroundSize: '1em' }}
+            >
+              <option value="id">{en ? "ID (Default)" : "編號 (預設)"}</option>
+              <option value="alphabetical">{en ? "Alphabetical" : "按名稱"}</option>
+              <option value="role">{en ? "Role Type" : "按角色類型"}</option>
+            </select>
+          </div>
           {visible.length === 0 ? (
             <div className="border border-dashed border-line-soft rounded-sm py-xl flex flex-col items-center justify-center text-center">
               <span className="material-symbols-outlined text-ink-faint text-4xl mb-sm">search_off</span>
@@ -177,10 +222,11 @@ export default function Pokedex() {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md relative">
               {visible.map((pkmn: any) => (
-                <article
+                <motion.article
                   key={pkmn.id}
                   onClick={() => pkmn.known && setActive(pkmn)}
-                  className={`bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow transition-all duration-300 group paper-texture ${pkmn.known ? "cursor-pointer hover:-translate-y-[2px]" : "opacity-50 hover:opacity-100"}`}
+                  whileHover={pkmn.known ? { scale: 1.02, y: -2 } : {}}
+                  className={`bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
                 >
                   <div className="flex justify-between items-start mb-md">
                     <span className={`font-body-italic text-body-italic ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
@@ -191,7 +237,7 @@ export default function Pokedex() {
                     </span>
                   </div>
 
-                  <div className="w-full aspect-square mb-md bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center">
+                  <div className="w-full aspect-square mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
                     {pkmn.known ? (
                       <img
                         src={pkmn.image}
@@ -203,29 +249,44 @@ export default function Pokedex() {
                       <span className="material-symbols-outlined text-ink-faint text-4xl">visibility_off</span>
                     )}
                   </div>
+                  
+                  {pkmn.known && (
+                    <div className="text-[10px] text-ink-faint mb-sm flex gap-1 flex-wrap">
+                      <span>{en ? "Img Source:" : "圖片出處:"}</span>
+                      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2" onClick={(e) => e.stopPropagation()}>PokeAPI</a>
+                    </div>
+                  )}
 
                   <div className="flex flex-col mt-auto">
                     <h2 className={`font-headline-md text-headline-md mb-xs transition-colors truncate ${pkmn.known ? "text-ink-soft group-hover:text-primary" : "text-ink-mute"}`}>
                       {en ? pkmn.nameEn : pkmn.nameZh}
                     </h2>
-                    <div className="flex flex-wrap gap-xs">
-                      {(en ? pkmn.typesEn : pkmn.typesZh).map((type: string, idx: number) => (
-                        <span
-                          key={idx}
-                          className={`font-label-caps text-label-caps px-2 py-0.5 rounded-sm border ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
-                        >
-                          {type}
+                    <div className="flex flex-wrap items-center gap-2 mt-1">
+                      <div className="flex flex-wrap gap-xs">
+                        {(en ? pkmn.typesEn : pkmn.typesZh).map((type: string, idx: number) => (
+                          <span
+                            key={idx}
+                            className={`font-label-caps text-label-caps px-2 py-0.5 rounded-sm border ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
+                          >
+                            {type}
+                          </span>
+                        ))}
+                      </div>
+                      {pkmn.known && (en ? pkmn.roleEn : pkmn.roleZh) && (
+                        <span className="font-mono-metadata text-mono-metadata text-ink-soft flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded w-fit">
+                          <span className="material-symbols-outlined text-[14px]">badge</span>
+                          {en ? pkmn.roleEn : pkmn.roleZh}
                         </span>
-                      ))}
+                      )}
+                      {pkmn.known && pkmn.specialtyEn && pkmn.specialtyEn !== "—" && (
+                        <span className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center gap-1">
+                          <span className="material-symbols-outlined text-[14px]">bolt</span>
+                          {en ? pkmn.specialtyEn : pkmn.specialtyZh}
+                        </span>
+                      )}
                     </div>
-                    {pkmn.known && pkmn.specialtyEn && pkmn.specialtyEn !== "—" && (
-                      <span className="font-mono-metadata text-mono-metadata text-ink-faint mt-xs flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[14px]">bolt</span>
-                        {en ? pkmn.specialtyEn : pkmn.specialtyZh}
-                      </span>
-                    )}
                   </div>
-                </article>
+                </motion.article>
               ))}
             </div>
           )}
@@ -247,14 +308,20 @@ export default function Pokedex() {
       {active && (
         <div
           className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-ink-soft/40 backdrop-blur-sm"
-          onClick={() => setActive(null)}
+          onClick={() => {
+            setActive(null);
+            setExpandReadMore(false);
+          }}
         >
           <div
-            className="bg-bone border border-line rounded-DEFAULT ambient-shadow max-w-2xl w-full max-h-[88vh] overflow-y-auto relative paper-texture"
+            className="bg-bone border border-line rounded-lg sm:rounded-xl md:rounded-2xl ambient-shadow w-[95vw] sm:w-[90vw] md:max-w-2xl lg:max-w-3xl max-h-[90vh] overflow-y-auto relative paper-texture mx-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              onClick={() => setActive(null)}
+              onClick={() => {
+                setActive(null);
+                setExpandReadMore(false);
+              }}
               className="absolute top-sm right-sm z-10 text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
               aria-label={t("pokedex.close")}
             >
@@ -262,8 +329,12 @@ export default function Pokedex() {
             </button>
 
             <div className="grid grid-cols-1 sm:grid-cols-2">
-              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex items-center justify-center p-lg aspect-square">
-                <img src={active.image} alt={active.nameEn} className="object-contain w-full h-full" />
+              <div className="bg-surface-container-high border-b sm:border-b-0 sm:border-r border-line-soft flex flex-col items-center justify-center p-lg aspect-square relative">
+                <img src={active.image} alt={active.nameEn} className="object-contain w-full h-full mb-4" />
+                <div className="absolute bottom-2 right-2 text-[10px] text-ink-faint flex gap-1 bg-surface/50 backdrop-blur-sm px-2 py-1 rounded">
+                  <span>{en ? "Img Source:" : "圖片出處:"}</span>
+                  <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-2">PokeAPI</a>
+                </div>
               </div>
               <div className="p-lg flex flex-col">
                 <div className="flex justify-between items-start mb-sm">
@@ -290,17 +361,17 @@ export default function Pokedex() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 gap-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-sm mt-4">
                   {active.roleEn && (
-                    <div className="bg-paper-warm hairline-border p-sm rounded-sm">
-                      <div className="font-label-caps text-label-caps text-ink-mute mb-1">{t("pokedex.role")}</div>
-                      <div className="font-body-base text-body-base text-ink-soft">{en ? active.roleEn : active.roleZh}</div>
+                    <div className="bg-paper-warm hairline-border py-2 px-3 rounded-sm flex items-center justify-between gap-2">
+                      <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.role")}</span>
+                      <span className="font-body-base text-body-base text-ink-soft text-right">{en ? active.roleEn : active.roleZh}</span>
                     </div>
                   )}
                   {active.specialtyEn && active.specialtyEn !== "—" && (
-                    <div className="bg-paper-warm hairline-border p-sm rounded-sm">
-                      <div className="font-label-caps text-label-caps text-ink-mute mb-1">{t("pokedex.specialty")}</div>
-                      <div className="font-body-base text-body-base text-primary">{en ? active.specialtyEn : active.specialtyZh}</div>
+                    <div className="bg-paper-warm hairline-border py-2 px-3 rounded-sm flex items-center justify-between gap-2">
+                      <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.specialty")}</span>
+                      <span className="font-body-base text-body-base text-primary text-right">{en ? active.specialtyEn : active.specialtyZh}</span>
                     </div>
                   )}
                 </div>
@@ -308,10 +379,32 @@ export default function Pokedex() {
             </div>
 
             {active.descriptionEn && (
-              <div className="p-lg pt-0 sm:pt-lg border-t border-line-soft mt-0 sm:mt-0">
-                <p className="font-body-base text-body-base text-ink-soft leading-relaxed">
+              <div className="p-lg pt-0 sm:pt-lg border-t border-line-soft mt-0 sm:mt-0 flex flex-col justify-between">
+                <p className={`font-body-base text-body-base text-ink-soft leading-relaxed transition-all ${expandReadMore ? "" : "line-clamp-3 mb-2"}`}>
                   {en ? active.descriptionEn : active.descriptionZh}
                 </p>
+                <button
+                  onClick={() => setExpandReadMore(!expandReadMore)}
+                  className="text-left font-label-caps text-label-caps text-primary hover:text-tertiary transition-colors mb-md self-start"
+                >
+                  {expandReadMore ? (i18n.language.startsWith('en') ? 'Show Less' : '顯示較少') : (i18n.language.startsWith('en') ? 'Read More' : '閱讀更多')}
+                </button>
+                <div className="mt-auto border-t border-dashed border-line-soft pt-sm">
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center justify-start gap-2 flex-wrap mb-1">
+                    <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">link</span>{i18n.language === "en" ? "Source:" : "資料出處:"}</span>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       Bulbapedia
+                    </a>
+                    <span>·</span>
+                    <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       PokeAPI
+                    </a>
+                 </p>
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint text-[11px] leading-tight flex items-start gap-1 mt-1">
+                    <span className="material-symbols-outlined text-[12px] mt-[1px]">copyright</span>
+                    <span>{en ? "Nintendo, Game Freak, and The Pokémon Company." : "版權歸屬任天堂、Game Freak 及 The Pokémon Company。本站僅作攻略資訊整合。"}</span>
+                 </p>
+                </div>
               </div>
             )}
           </div>

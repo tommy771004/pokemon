@@ -120,15 +120,15 @@ export default function Map() {
                    {en ? loc.levelEn : loc.levelZh}
                  </span>
                </div>
-               <div className="mb-3">
-                 <span className="font-body-italic text-body-italic text-ink-mute block mb-1">
+               <div className="mb-3 pr-16 min-w-0">
+                 <span className="font-body-italic text-body-italic text-ink-mute block mb-1 truncate">
                    {en ? loc.categoryEn : loc.categoryZh}
                  </span>
-                 <h3 className="font-headline-md text-headline-md text-on-surface">
+                 <h3 className="font-headline-md text-headline-md text-on-surface break-words">
                    {en ? loc.nameEn : loc.nameZh}
                  </h3>
                </div>
-               <p className="font-body-base text-body-base text-ink-soft mb-4 line-clamp-2">
+               <p className="font-body-base text-body-base text-ink-soft mb-4 line-clamp-2 break-words text-wrap">
                  {en ? loc.descriptionEn : loc.descriptionZh}
                </p>
                <div className="flex flex-wrap gap-3 font-mono-metadata text-mono-metadata text-ink-mute border-t border-line-soft pt-3">
@@ -151,36 +151,64 @@ export default function Map() {
       {/* Location Detail Modal */}
       {active && (
         <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-ink-soft/40 backdrop-blur-sm" onClick={() => setActive(null)}>
-          <div className="bg-bone border border-line rounded-DEFAULT ambient-shadow max-w-xl w-full max-h-[88vh] overflow-y-auto relative paper-texture" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-bone border border-line rounded-DEFAULT ambient-shadow w-[95vw] md:max-w-5xl max-h-[88vh] overflow-y-auto relative paper-texture flex flex-col md:flex-row" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setActive(null)}
-              className="absolute top-sm right-sm z-10 text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
+              className="absolute top-sm right-sm z-10 text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft md:hidden"
               aria-label={t("map.close")}
             >
               <span className="material-symbols-outlined">close</span>
             </button>
-            <div className="p-lg">
-              <div className="flex items-center gap-md mb-md">
-                <div className="w-14 h-14 rounded-full border-2 border-primary text-primary flex items-center justify-center shrink-0 bg-surface-container-high">
-                  <span className="material-symbols-outlined text-[28px]">{active.icon}</span>
-                </div>
-                <div>
-                  <span className="font-body-italic text-body-italic text-ink-mute block">{en ? active.categoryEn : active.categoryZh}</span>
-                  <h2 className="font-headline-md text-headline-md text-ink-soft leading-tight">{en ? active.nameEn : active.nameZh}</h2>
-                </div>
-                <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full ml-auto shrink-0">
+            <div className="md:w-1/3 bg-surface-container-high p-lg border-b md:border-b-0 md:border-r border-line flex flex-col items-center md:items-start justify-center relative min-h-[250px]">
+              <button
+                onClick={() => setActive(null)}
+                className="hidden md:block absolute top-sm left-sm text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
+                aria-label={t("map.close")}
+              >
+                <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+              </button>
+              <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-primary text-primary flex items-center justify-center shrink-0 bg-bone mb-md shadow-[0_0_40px_-10px_rgba(165,58,44,0.3)]">
+                <span className="material-symbols-outlined text-[48px] sm:text-[64px]">{active.icon}</span>
+              </div>
+              <div className="w-full text-center md:text-left">
+                <span className="font-body-italic text-body-italic text-ink-mute block mb-xs">{en ? active.categoryEn : active.categoryZh}</span>
+                <h2 className="font-display-md text-display-md text-ink-soft leading-tight mb-md break-words">{en ? active.nameEn : active.nameZh}</h2>
+                <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-3 py-1 rounded-full shadow-sm">
                   {en ? active.levelEn : active.levelZh}
                 </span>
               </div>
-              <p className="font-body-base text-body-base text-ink-soft leading-relaxed mb-md">
+            </div>
+            
+            <div className="md:w-2/3 p-lg md:p-xl flex flex-col">
+              <h3 className="font-label-caps text-label-caps text-ink-mute mb-md uppercase tracking-wider">{t("map.description", "Area Description")}</h3>
+              <p className="font-body-base text-body-base text-ink-soft leading-relaxed mb-xl whitespace-pre-wrap flex-grow min-h-[150px]">
                 {en ? active.descriptionEn : active.descriptionZh}
               </p>
-              <div className="flex flex-wrap gap-3 font-mono-metadata text-mono-metadata text-ink-mute border-t border-line-soft pt-md">
-                {(en ? active.tagsEn : active.tagsZh).map((tag: string, idx: number) => (
-                  <span key={idx} className="flex items-center bg-paper-warm hairline-border px-2 py-1 rounded-sm">
-                    <span className="material-symbols-outlined text-[14px] mr-1">{active.tagIcons[idx]}</span> {tag}
-                  </span>
-                ))}
+              <div>
+                <h3 className="font-label-caps text-label-caps text-ink-mute mb-sm uppercase tracking-wider">{t("map.resources", "Key Features & Resources")}</h3>
+                <div className="flex flex-wrap gap-sm font-mono-metadata text-mono-metadata text-ink-mute">
+                  {(en ? active.tagsEn : active.tagsZh).map((tag: string, idx: number) => (
+                    <span key={idx} className="flex items-center bg-surface-variant border border-line px-3 py-1.5 rounded-sm shadow-sm transition-transform hover:-translate-y-0.5">
+                      <span className="material-symbols-outlined text-[16px] mr-2 text-primary">{active.tagIcons[idx]}</span> {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-8 pt-sm border-t border-dashed border-line-soft">
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center justify-start gap-2 flex-wrap mb-1">
+                    <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">link</span>{en ? "Source:" : "資料出處:"}</span>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       Bulbapedia
+                    </a>
+                    <span>·</span>
+                    <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dashed underline-offset-2">
+                       PokeAPI
+                    </a>
+                 </p>
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint text-[11px] leading-tight flex items-start gap-1 mt-1">
+                    <span className="material-symbols-outlined text-[12px] mt-[1px]">copyright</span>
+                    <span>{en ? "Nintendo, Game Freak, and The Pokémon Company." : "版權歸屬任天堂、Game Freak 及 The Pokémon Company。本站僅作攻略資訊整合。"}</span>
+                 </p>
               </div>
             </div>
           </div>
