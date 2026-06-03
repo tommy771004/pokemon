@@ -1146,7 +1146,7 @@
       "specialtyEn": "Generate",
       "specialtyZh": "發電",
       "descriptionEn": "Part of the celebrated early automation trio alongside Aipom and Garbodor. Pikachu's Generate specialty powers automation facilities and contributes to the town's electrical grid. A unique individual named Peakychu — an electricityless Pikachu — also appears as a named story character on Bleak Beach and later joins the Huge Building construction crew in Sparkling Skylands.",
-      "descriptionZh": "與長尾怪手、灰塵山並稱的早期自動化三人組核心成員之一。皮卡丘的「發電」專長可驅動自動化設施並為城鎮電網供電。此外，有一隻名為 Peakychu 的特殊個體——一隻無法發電的皮卡丘——會作為具名劇情角色出現在荒涼海灘，之後加入閃耀空島摩天大樓的施工團隊。",
+      "descriptionZh": "與長尾怪手、灰塵山並稱的早期自動化三人組核心成員之一。皮卡丘的「發電」專長可驅動自動化設施並為城鎮電網供電。此外，有一隻名為 皮卡丘 的特殊個體——一隻無法發電的皮卡丘——會作為具名劇情角色出現在荒涼海灘，之後加入閃耀空島摩天大樓的施工團隊。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
       "known": true,
       "skills": [
@@ -1170,9 +1170,9 @@
           "categoryEn": "Support Skill",
           "categoryZh": "輔助技能",
           "nameEn": "Peakychu Rally",
-          "nameZh": "Peakychu 集結",
+          "nameZh": "皮卡丘 集結",
           "detailEn": "Its named counterpart Peakychu later joins the Huge Building crew as an irreplaceable helper.",
-          "detailZh": "其特殊個體 Peakychu 之後會成為巨大建築 4F 施工隊不可替代的一員。"
+          "detailZh": "其特殊個體 皮卡丘 之後會成為巨大建築 4F 施工隊不可替代的一員。"
         }
       ]
     },
@@ -7004,7 +7004,7 @@
       "specialtyEn": "—",
       "specialtyZh": "—",
       "descriptionEn": "The climactic encounter at the peak of Sparkling Skylands. After completing the 4th floor of the Huge Building — requiring 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber, and the construction team including Peakychu from Bleak Beach — ascend to the rooftop to find Mewtwo waiting. One of the most powerful legendary encounters in the game.",
-      "descriptionZh": "閃耀空島的頂點遭遇。完成摩天大樓 4F 建設（需 40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，並組成包含從荒涼海灘護送而來的 Peakychu 在內的施工團隊）後，步上屋頂即可發現等待已久的超夢。遊戲中最震撼的傳說寶可夢遭遇之一。",
+      "descriptionZh": "閃耀空島的頂點遭遇。完成摩天大樓 4F 建設（需 40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，並組成包含從荒涼海灘護送而來的 皮卡丘 在內的施工團隊）後，步上屋頂即可發現等待已久的超夢。遊戲中最震撼的傳說寶可夢遭遇之一。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
       "known": true,
       "skills": [

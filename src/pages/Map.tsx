@@ -52,7 +52,7 @@ type MapData = {
 const POKEMON_ROSTER_POOL = [
   { id: "p1", nameEn: "Conkeldurr", nameZh: "修建老匠", specialties: ["build"], icon: "construction", descEn: "Heavy-grade building expert.", descZh: "重工建造大師，擅長大型工事基底。" },
   { id: "p2", nameEn: "Pikachu", nameZh: "皮卡丘", specialties: ["generate"], icon: "bolt", descEn: "Consistent low-voltage output.", descZh: "穩定的低壓發電，適合敏感電網調試。" },
-  { id: "p3", nameEn: "Peakychu", nameZh: "Peakychu", specialties: ["generate"], icon: "star", descEn: "Leader-spec electrical general.", descZh: "領袖級特殊電能型，電瓶電網之魂。" },
+  { id: "p3", nameEn: "Peakychu", nameZh: "皮卡丘", specialties: ["generate"], icon: "star", descEn: "Leader-spec electrical general.", descZh: "領袖級特殊電能型，電瓶電網之魂。" },
   { id: "p4", nameEn: "Magnemite", nameZh: "小磁怪", specialties: ["generate"], icon: "electrical_services", descEn: "Floating electromagnetic balancer.", descZh: "懸浮電磁力能手，可修補局部磁力漏洞。" },
   { id: "p5", nameEn: "Pidgeot", nameZh: "大比鳥", specialties: ["fly"], icon: "flight", descEn: "Wide-area high-altitude sweepers.", descZh: "廣域高空翱翔，提供精準的地形測繪。" },
   { id: "p6", nameEn: "Dragonite", nameZh: "快龍", specialties: ["fly"], icon: "air", descEn: "Ultra-heavy load glider.", descZh: "超重型載物滑翔，能在空中搬運重型建材。" },
@@ -681,7 +681,7 @@ export default function MapPage() {
                               <div className="flex flex-col gap-1.5 leading-relaxed">
                                 <div className="flex items-center gap-2 font-semibold text-primary">
                                   <span className="material-symbols-outlined text-[16px]">electric_bolt</span>
-                                  <span>{en ? "Escort Lock: Peakychu (荒涼海灘發電員)" : "特定護送：Peakychu (荒涼海灘發電專長)"}</span>
+                                  <span>{en ? "Escort Lock: Peakychu (荒涼海灘發電員)" : "特定護送：皮卡丘 (荒涼海灘發電專長)"}</span>
                                 </div>
                                 <p className="text-ink-mute pl-6">
                                   {en 

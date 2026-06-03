@@ -363,7 +363,7 @@ export default function Characters() {
     },
     {
       id: "peakychu-guide",
-      nameZh: "Peakychu",
+      nameZh: "皮卡丘",
       nameEn: "Peakychu",
       speciesZh: "皮卡丘 (Pike-Pikachu)",
       speciesEn: "Pikachu",
@@ -371,7 +371,7 @@ export default function Characters() {
       specialtyEn: "Construction Crew rallying, Precision circuit routing, Skyscraper 4F engineering supervisor",
       regionZh: "荒涼海灘 (Bleak Beach) -> 閃耀空島 (Sparkling Skylands)",
       regionEn: "Bleak Beach -> Sparkling Skylands",
-      detailsZh: "登場於荒涼海灘、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 Peakychu 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
+      detailsZh: "登場於荒涼海灘、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 皮卡丘 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
       detailsEn: "An iconic, electricityless Pikachu first encountered resting near water gates in Bleak Beach. Needs clean showers and localized recycling centers to build friendship. During late-game skyscraper 4F vertical construction, heavy altitude turbulence and solar signals stall progress; Ditto must travel back, invite Peakychu, and escort it to lead the final wiring, unlocking Mewtwo's landing.",
     },
     {

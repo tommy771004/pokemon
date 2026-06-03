@@ -258,7 +258,7 @@
         "波加曼",
         "破破袋",
         "Mosslax",
-        "Peakychu",
+        "皮卡丘",
         "雷公"
       ],
       "unlocksEn": [
@@ -281,7 +281,7 @@
         "水患",
         "電網",
         "雷公",
-        "Peakychu"
+        "皮卡丘"
       ],
       "tagIcons": [
         "flood",
@@ -467,7 +467,7 @@
         "巨鍛匠",
         "修建老匠",
         "主廚 Dente",
-        "Peakychu"
+        "皮卡丘"
       ],
       "unlocksEn": [
         "Lift Platforms",
@@ -523,7 +523,7 @@
       "summaryEn": "The signature skyscraper questline of Sparkling Skylands, rebuilt floor by floor in real time before the Mewtwo encounter.",
       "summaryZh": "閃耀空島最具代表性的摩天大樓任務，必須逐層以現即時間施工，最終才會開啟超夢遭遇。",
       "descriptionEn": "Every floor of the Huge Building acts like a stress test for everything you have learned so far. 2F requires core heavy materials. 3F adds glow stones and the escort requirement for Chef Dente. 4F becomes a full logistical exam: 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber, plus a crew that explicitly includes Peakychu. Completing the 4F cure timer and stepping onto the roof triggers the Mewtwo encounter.",
-      "descriptionZh": "巨大建築的每一層都像是在測試你前面學到的一切。2F 先考驗基礎重型材料供應；3F 加上發光石與護送主廚 Dente 的條件；4F 則完全變成一場物流期末考：40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，還外加系統指定必須包含 Peakychu 的施工班底。等 4F 的現即時間施工完成並登上屋頂後，就會觸發超夢遭遇。",
+      "descriptionZh": "巨大建築的每一層都像是在測試你前面學到的一切。2F 先考驗基礎重型材料供應；3F 加上發光石與護送主廚 Dente 的條件；4F 則完全變成一場物流期末考：40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，還外加系統指定必須包含 皮卡丘 的施工班底。等 4F 的現即時間施工完成並登上屋頂後，就會觸發超夢遭遇。",
       "objectivesEn": [
         "Complete 2F with concrete, glass, Pokémetal, and iron ingots.",
         "Escort Chef Dente for the 3F construction phase.",
@@ -533,7 +533,7 @@
       "objectivesZh": [
         "用混凝土、玻璃、寶可金屬與鐵錠完成 2F。",
         "護送主廚 Dente 參與 3F 施工。",
-        "護送 Peakychu 參與 4F 施工。",
+        "護送 皮卡丘 參與 4F 施工。",
         "等待每層的現即時間施工結束，再一路登上屋頂。"
       ],
       "requiredSkillsEn": [
@@ -575,7 +575,7 @@
       "notablePokemonZh": [
         "巨鍛匠",
         "主廚 Dente",
-        "Peakychu",
+        "皮卡丘",
         "超夢"
       ],
       "unlocksEn": [

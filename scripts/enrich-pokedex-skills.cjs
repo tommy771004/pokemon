@@ -137,7 +137,7 @@ const pokemonOverrides = {
   "025": [
     makeSkill("life", "Grid Charge", "電網供能", "Feeds early automation lines and keeps Bleak Beach's recovery grid alive.", "能驅動早期自動化產線，並維持荒涼海灘的復原電網。"),
     makeSkill("attack", "Thunder Jolt", "電光衝擊", "Releases a fast electric burst that powers devices and shocks obstacles apart.", "能瞬間釋放電流，既可啟動設備，也能擊散障礙。"),
-    makeSkill("support", "Peakychu Rally", "Peakychu 集結", "Its named counterpart Peakychu later joins the Huge Building crew as an irreplaceable helper.", "其特殊個體 Peakychu 之後會成為巨大建築 4F 施工隊不可替代的一員。"),
+    makeSkill("support", "Peakychu Rally", "皮卡丘 集結", "Its named counterpart Peakychu later joins the Huge Building crew as an irreplaceable helper.", "其特殊個體 皮卡丘 之後會成為巨大建築 4F 施工隊不可替代的一員。"),
   ],
   "081": [
     makeSkill("life", "Remote Lift", "隔空搬運", "Magnetically lifts terrain pieces, barrels, and scrap for rapid post-game remodeling.", "可用磁力搬動地形塊、金屬桶與廢料，適合通關後的大改造。"),
