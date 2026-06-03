@@ -72,7 +72,7 @@ function FlowFigure({ steps, en, index }: { steps: Step[]; en: boolean; index: n
             <div className="flex flex-col items-center text-center w-[88px]">
               <div className="relative w-11 h-11 rounded-full bg-paper-warm border-2 border-primary/60 flex items-center justify-center text-primary">
                 <span className="material-symbols-outlined text-[20px]">{step.icon || "adjust"}</span>
-                <span className="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-primary text-on-primary font-mono-metadata text-[10px] font-bold flex items-center justify-center">
+                <span className="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-primary text-on-primary font-mono-metadata text-sm font-bold flex items-center justify-center">
                   {i + 1}
                 </span>
               </div>

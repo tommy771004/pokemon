@@ -12,6 +12,32 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
+  const [isHighContrast, setIsHighContrast] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  React.useEffect(() => {
+    if (isHighContrast) {
+      document.documentElement.classList.add("high-contrast");
+    } else {
+      document.documentElement.classList.remove("high-contrast");
+    }
+  }, [isHighContrast]);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "zh" : "en");
@@ -54,7 +80,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 transition-colors glass-header hairline-bottom">
-        <div className="flex justify-between items-center px-4 md:px-margin-desktop max-w-[1360px] mx-auto h-16 md:h-20">
+        <div className="flex justify-between items-center px-5 md:px-8 xl:px-12 max-w-[1360px] mx-auto h-16 md:h-20">
           <Link to="/" className="font-headline-md text-headline-md italic text-primary hover:opacity-80 transition-opacity">
             Pokopia
           </Link>
@@ -83,27 +109,37 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               );
             })}
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4 md:gap-6">
+            <button
+              onClick={() => setIsHighContrast(!isHighContrast)}
+              className="flex items-center justify-center text-ink-mute hover:text-primary transition-colors focus:outline-none"
+              aria-label="Toggle High Contrast Mode"
+              title="Toggle High Contrast Mode"
+            >
+              <span className="material-symbols-outlined text-[20px]">
+                {isHighContrast ? "contrast" : "brightness_medium"}
+              </span>
+            </button>
             <button
               onClick={toggleLanguage}
-              className="text-label-caps font-label-caps border border-line-soft px-3 py-1.5 rounded-full text-ink-mute hover:text-primary hover:border-primary hover:bg-surface-variant transition-all uppercase min-w-[64px]"
+              className="text-label-caps tracking-widest text-sm text-ink-mute hover:text-primary transition-colors uppercase min-w-[32px] flex items-center justify-center"
             >
               {i18n.language === "en" ? "中/EN" : "EN/中"}
             </button>
             <button
               onClick={openSearch}
               aria-label={t("pokedex.searchRegistry")}
-              className="w-9 h-9 flex items-center justify-center text-ink-mute hover:text-primary border border-transparent hover:border-line-soft hover:bg-surface-variant transition-all active:scale-95 duration-200 rounded-full"
+              className="flex items-center justify-center text-ink-mute hover:text-primary transition-colors focus:outline-none"
             >
               <span className="material-symbols-outlined text-[20px]">
                 search
               </span>
             </button>
             <button
-              className="md:hidden w-9 h-9 flex items-center justify-center text-ink-mute hover:text-primary border border-line-soft hover:border-primary/50 transition-all active:scale-95 duration-200 rounded-full"
+              className="md:hidden flex items-center justify-center text-ink-mute hover:text-primary transition-colors focus:outline-none"
               onClick={() => setIsMobileMenuOpen(true)}
             >
-              <span className="material-symbols-outlined text-[18px]">
+              <span className="material-symbols-outlined text-[24px]">
                 menu
               </span>
             </button>
@@ -118,31 +154,31 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[80] flex items-start justify-center pt-[15vh] px-4 bg-ink-soft/40 backdrop-blur-sm"
+            className="fixed inset-0 z-[80] flex items-start justify-center pt-[15vh] px-4 bg-paper/90 backdrop-blur-sm"
             onClick={() => setIsSearchOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.95, opacity: 0, y: -20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.95, opacity: 0, y: -20 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-bone border border-line rounded-2xl ambient-shadow w-full max-w-[36rem] p-6 md:p-8 relative paper-texture"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="bg-bone border hairline-border w-full max-w-[40rem] p-8 relative flex flex-col gap-6"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex justify-between items-center mb-md">
-                <span className="font-label-caps text-label-caps text-ink-soft uppercase tracking-widest">
+              <div className="flex justify-between items-center border-b hairline-bottom pb-4">
+                <span className="font-mono-metadata text-xs text-ink-soft uppercase tracking-widest">
                   {t("pokedex.searchRegistry")}
                 </span>
                 <button
                   onClick={() => setIsSearchOpen(false)}
-                  className="text-ink-mute hover:text-primary transition-colors bg-surface-variant rounded-full p-1"
+                  className="text-ink-mute hover:text-primary transition-colors focus:outline-none"
                   aria-label={t("pokedex.close")}
                 >
-                  <span className="material-symbols-outlined">close</span>
+                  <span className="material-symbols-outlined text-[18px]">close</span>
                 </button>
               </div>
-              <form onSubmit={submitSearch} className="relative group">
-                <span className="material-symbols-outlined absolute left-0 top-1/2 -translate-y-1/2 text-ink-mute group-focus-within:text-primary transition-colors pointer-events-none">
+              <form onSubmit={submitSearch} className="relative flex items-center">
+                <span className="material-symbols-outlined absolute left-0 text-ink-mute pointer-events-none text-[20px]">
                   search
                 </span>
                 <input
@@ -150,38 +186,38 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   autoFocus
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
-                  className="w-full border-0 border-b border-line-soft focus:border-primary focus:ring-0 font-headline-sm text-headline-sm py-sm pl-8 pr-0 transition-colors bg-transparent placeholder-ink-faint outline-none"
+                  className="w-full bg-transparent border-none font-headline-sm text-2xl py-4 pl-10 pr-0 focus:ring-0 placeholder:text-ink-faint outline-none text-ink-main"
                   placeholder={t("pokedex.searchPlaceholder")}
                 />
               </form>
-              <p className="font-mono-metadata text-mono-metadata text-ink-faint mt-sm">
+              <p className="font-mono-metadata text-xs text-ink-faint">
                 {t("pokedex.searchHint")}
               </p>
 
               {searchHistory.length > 0 && (
-                <div className="mt-md border-t border-line-soft pt-sm">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-label-caps text-label-caps text-ink-mute uppercase tracking-widest">
+                <div className="mt-4 pt-4 border-t hairline-top">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-mono-metadata text-xs text-ink-mute uppercase tracking-widest">
                       {t("pokedex.recentSearches")}
                     </span>
                     <button
                       type="button"
                       onClick={() => setSearchHistory(clearSearchHistory())}
-                      className="font-mono-metadata text-mono-metadata text-ink-faint hover:text-primary transition-colors"
+                      className="font-mono-metadata text-xs text-ink-faint hover:text-primary transition-colors uppercase tracking-widest"
                     >
                       {t("pokedex.clear")}
                     </button>
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-3">
                     {searchHistory.map((q) => (
                       <button
                         key={q}
                         type="button"
                         onClick={() => runSearch(q)}
-                        className="font-mono-metadata text-mono-metadata text-ink-soft bg-paper-warm border border-line-soft rounded-full px-3 py-1 hover:text-primary hover:border-primary transition-colors flex items-center gap-1 max-w-full"
+                        className="font-mono-metadata text-xs text-ink-soft border hairline-border px-4 py-1.5 hover:text-primary transition-colors flex items-center gap-2"
                       >
-                        <span className="material-symbols-outlined text-[14px] shrink-0">history</span>
-                        <span className="truncate">{q}</span>
+                        <span className="material-symbols-outlined text-[14px]">history</span>
+                        <span>{q}</span>
                       </button>
                     ))}
                   </div>
@@ -196,73 +232,63 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div 
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[60] bg-bone/95 backdrop-blur-md md:hidden flex flex-col"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] bg-paper/95 backdrop-blur-md md:hidden flex flex-col"
           >
-            <div className="flex justify-between items-center px-4 h-[80px] border-b border-line-soft/50">
-               <Link to="/" className="font-headline-md text-headline-md italic text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+            <div className="flex justify-between items-center px-6 h-20 border-b hairline-bottom">
+               <Link to="/" className="font-headline-md text-2xl italic text-ink-main" onClick={() => setIsMobileMenuOpen(false)}>
                 Pokopia
               </Link>
               <button
-                className="w-10 h-10 flex items-center justify-center text-ink-mute hover:text-primary bg-surface border border-line-soft rounded-full hover:border-primary/50 transition-all active:scale-95 duration-200"
+                className="w-10 h-10 flex items-center justify-center text-ink-mute hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                <span className="material-symbols-outlined text-[24px]">
                   close
                 </span>
               </button>
             </div>
-            <div className="flex flex-col px-8 py-16 gap-10 flex-grow overflow-y-auto w-full items-center justify-center">
+            <div className="flex flex-col px-8 py-12 gap-8 flex-grow overflow-y-auto w-full items-start">
               {navLinks.map((link, idx) => (
                 <motion.div
                   key={link.path}
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ delay: idx * 0.05 + 0.1, duration: 0.4, ease: "easeOut" }}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -10 }}
+                  transition={{ delay: idx * 0.05, duration: 0.3 }}
                 >
                   <Link
                     to={link.path}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`font-label-caps text-[13px] uppercase tracking-[0.2em] relative group block transition-all duration-300 ${
+                    className={`font-headline-md text-3xl tracking-wide block transition-colors ${
                       isCurrent(link.path)
-                        ? "text-primary font-bold"
-                        : "text-ink-mute hover:text-ink hover:-translate-y-0.5"
+                        ? "text-primary"
+                        : "text-ink-soft hover:text-ink-main"
                     }`}
                   >
                     {link.name}
-                    {isCurrent(link.path) && (
-                      <motion.span 
-                        layoutId="mobile-nav-indicator"
-                        className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary" 
-                      />
-                    )}
                   </Link>
+                  <div className="h-px bg-line-soft w-8 mt-4"></div>
                 </motion.div>
               ))}
             </div>
             
-            <motion.div 
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ delay: 0.4 }}
-               className="p-8 pb-12 w-full flex justify-center text-ink-faint font-mono-metadata text-[10px] uppercase tracking-widest text-center"
-            >
-               Pokopia Chronicles<br/>Database Archive V.1.0
-            </motion.div>
+            <div className="p-8 pb-12 w-full flex flex-col gap-2 text-ink-faint font-mono-metadata text-xs uppercase tracking-widest">
+               <span>Pokopia Chronicles</span>
+               <span>Database Archive V.1.0</span>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main className="flex-grow pt-[80px] md:pt-[120px] px-margin-mobile md:px-margin-desktop max-w-[1360px] mx-auto w-full pb-lg md:pb-xl min-h-screen">
+      <main className="flex-grow pt-[60px] md:pt-[80px] px-5 md:px-8 xl:px-12 max-w-[1360px] mx-auto w-full pb-md md:pb-lg min-h-screen">
         {children}
       </main>
 
       <footer className="w-full bg-paper-warm border-t border-line transition-colors">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-md px-margin-mobile md:px-margin-desktop py-lg max-w-[1360px] mx-auto border-b border-line-soft inline-grid w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-md px-5 md:px-8 xl:px-12 py-lg max-w-[1360px] mx-auto border-b border-line-soft inline-grid w-full">
           <div className="text-center md:text-left">
             <span className="font-headline-sm text-headline-sm text-ink-soft block mb-4">Pokopia</span>
             <p className="font-mono-metadata text-mono-metadata text-ink-soft mx-auto md:mx-0 whitespace-nowrap">
@@ -287,7 +313,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="px-margin-mobile md:px-margin-desktop py-lg max-w-[1360px] mx-auto text-ink-mute">
+        <div className="px-5 md:px-8 xl:px-12 py-lg max-w-[1360px] mx-auto text-ink-mute">
           <h4 className="font-headline-sm text-headline-sm text-ink-soft mb-2">{i18n.language === "en" ? "Sources & References" : "資料來源與引用"}</h4>
           <p className="font-body-base text-body-base mb-4 max-w-4xl">
             {i18n.language === "en" ? "The tactical guides, build blueprints, and habitat details compiled in this guide reference the following excellent databases and community sites:" : "本攻略所彙編之戰術指南、建構藍圖與棲息地細節等資料，皆參考自以下強大的資料庫與社群站點："}
@@ -322,11 +348,29 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="border-t border-line-soft bg-surface-container-low">
-          <p className="px-margin-mobile md:px-margin-desktop py-md max-w-[1360px] mx-auto font-mono-metadata text-mono-metadata text-ink-faint leading-relaxed">
+          <p className="px-5 md:px-8 xl:px-12 py-md max-w-[1360px] mx-auto font-mono-metadata text-mono-metadata text-ink-faint leading-relaxed">
             {t("footer.disclaimer")}
           </p>
         </div>
       </footer>
+
+      <AnimatePresence>
+        {showBackToTop && (
+          <motion.button
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.3 }}
+            onClick={scrollToTop}
+            className="fixed bottom-6 right-6 z-50 p-2 md:p-3 bg-paper border hairline-border text-ink-soft hover:text-ink-main hover:bg-bone transition-colors"
+            aria-label="Back to top"
+          >
+            <div className="flex flex-col items-center justify-center gap-1">
+              <span className="material-symbols-outlined text-[20px]">keyboard_arrow_up</span>
+            </div>
+          </motion.button>
+        )}
+      </AnimatePresence>
     </>
   );
 }

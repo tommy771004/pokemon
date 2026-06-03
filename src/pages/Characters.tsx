@@ -121,10 +121,10 @@ function InteractiveDittoPreview({
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "radial-gradient(#000 1.2px, transparent 1.2px)", backgroundSize: "16px 16px" }} />
       
       {/* SOSS hologram metadata tags */}
-      <div className="absolute top-3 left-3 font-mono text-[9px] text-ink-faint border border-line-soft/40 px-2 py-0.5 rounded-sm bg-paper-warm/60 backdrop-blur-sm shadow-sm select-none">
+      <div className="absolute top-3 left-3 font-mono text-sm text-ink-faint border border-line-soft/40 px-2 py-0.5 rounded-sm bg-paper-warm/60 backdrop-blur-sm shadow-sm select-none">
         SYS.MODEL: DITTO_CORE v99.1
       </div>
-      <div className="absolute bottom-3 right-3 font-mono text-[9px] text-primary/80 border border-primary/20 px-2 py-0.5 rounded-sm bg-primary/5 backdrop-blur-sm select-none">
+      <div className="absolute bottom-3 right-3 font-mono text-xs text-primary/80 border border-primary/20 px-2 py-0.5 rounded-sm bg-primary/5 backdrop-blur-sm select-none">
         {en ? "STATUS: ACTIVE COPY_POLYMORPH" : "設定：擬態複製激活狀態"}
       </div>
 
@@ -343,10 +343,10 @@ export default function Characters() {
       speciesEn: "Greedent",
       specialtyZh: "小麥烘焙學、能量漢堡排製造、輔助興建巨大建築 3F",
       specialtyEn: "Wheat Baking, Strength Burger Patty preparation, Escorted Architect for Huge Building 3F",
-      regionZh: "岩石山脊 (Rocky Ridges) -> 閃耀空島 (Sparkling Skylands)",
-      regionEn: "Rocky Ridges -> Sparkling Skylands",
-      detailsZh: "最初受困於岩石山脊遺跡。玩家需在附近的麵包爐烤製「小麥麵包」並食用獲得強力，切斷鎖鍊救出他。隨後在聚落他會烤製「漢堡排」，百變怪使用後碎巖力量提升一階，可粉碎深色金屬礦脈。後期建設摩天大樓 3F 時，系統指定需要護送主廚 Dente 與發光石一同抵達空島工地，方能順利完成重建並解鎖進階型態。",
-      detailsEn: "Trapped behind steel chains in Rocky Ridges ruins. Ditto must bake Wheat Bread to gain physical power and break his bonds. Once recruited, he prepares the powerhouse 'Burger Patty' which permanently upgrades Ditto's smash power to destroy steel node-deposits. Later, he must be manually escorted to the Sparkling Skylands skyscraper on 3F to execute complex assembly.",
+      regionZh: "凸隆隆山地 (Bulging Highlands) -> 閃閃浮島 (Sparkling Floating Island)",
+      regionEn: "Bulging Highlands -> Sparkling Floating Island",
+      detailsZh: "最初受困於凸隆隆山地遺跡。玩家需在附近的麵包爐烤製「小麥麵包」並食用獲得強力，切斷鎖鍊救出他。隨後在聚落他會烤製「漢堡排」，百變怪使用後碎巖力量提升一階，可粉碎深色金屬礦脈。後期建設摩天大樓 3F 時，系統指定需要護送主廚 Dente 與發光石一同抵達空島工地，方能順利完成重建並解鎖進階型態。",
+      detailsEn: "Trapped behind steel chains in Bulging Highlands ruins. Ditto must bake Wheat Bread to gain physical power and break his bonds. Once recruited, he prepares the powerhouse 'Burger Patty' which permanently upgrades Ditto's smash power to destroy steel node-deposits. Later, he must be manually escorted to the Sparkling Floating Island skyscraper on 3F to execute complex assembly.",
     },
     {
       id: "tinkmaster-guide",
@@ -356,10 +356,10 @@ export default function Characters() {
       speciesEn: "Tinkaton",
       specialtyZh: "高階機械鍛造、特殊齒輪訂製、升降懸掛平臺發行",
       specialtyEn: "High-grade alloy smithing, Specialized Gear casting, Traversing Lift Platform architecture",
-      regionZh: "閃耀空島 (Sparkling Skylands)",
-      regionEn: "Sparkling Skylands",
-      detailsZh: "閃耀空島的核心工程師，擁有一柄以回收垃圾鍛造成的巨大鐵鎚。玩家可以用在各島嶼收集、精煉的鐵錠與混凝土跟牠交互以換取『特殊齒輪（Special Gears）』。這些齒輪是架設空中大型移動升降梯、連接被深淵切開的各處垃圾漂浮島必備的材料。牠同時也是逐層重建百米高摩天大樓的大功臣，代表島嶼機械的頂峰技術。",
-      detailsEn: "The hardware anchor of Sparkling Skylands. Tinkmaster wields a massive custom scrap-hammer and exchanges raw refined Iron Plates and high-density Concrete for 'Special Gears'. These unique gears are the mandatory currency to forge automated Lift Platforms that cross wide rifts. Tinkmaster guides the mechanical layout up to the skyscraper's summit.",
+      regionZh: "閃閃浮島 (Sparkling Floating Island)",
+      regionEn: "Sparkling Floating Island",
+      detailsZh: "閃閃浮島的核心工程師，擁有一柄以回收垃圾鍛造成的巨大鐵鎚。玩家可以用在各島嶼收集、精煉的鐵錠與混凝土跟牠交互以換取『特殊齒輪（Special Gears）』。這些齒輪是架設空中大型移動升降梯、連接被深淵切開的各處垃圾漂浮島必備的材料。牠同時也是逐層重建百米高摩天大樓的大功臣，代表島嶼機械的頂峰技術。",
+      detailsEn: "The hardware anchor of Sparkling Floating Island. Tinkmaster wields a massive custom scrap-hammer and exchanges raw refined Iron Plates and high-density Concrete for 'Special Gears'. These unique gears are the mandatory currency to forge automated Lift Platforms that cross wide rifts. Tinkmaster guides the mechanical layout up to the skyscraper's summit.",
     },
     {
       id: "peakychu-guide",
@@ -369,10 +369,10 @@ export default function Characters() {
       speciesEn: "Pikachu",
       specialtyZh: "工班集結、精準配線佈局、摩天大樓終期 4F 施工指揮",
       specialtyEn: "Construction Crew rallying, Precision circuit routing, Skyscraper 4F engineering supervisor",
-      regionZh: "荒涼海灘 (Bleak Beach) -> 閃耀空島 (Sparkling Skylands)",
-      regionEn: "Bleak Beach -> Sparkling Skylands",
-      detailsZh: "登場於荒涼海灘、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 皮卡丘 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
-      detailsEn: "An iconic, electricityless Pikachu first encountered resting near water gates in Bleak Beach. Needs clean showers and localized recycling centers to build friendship. During late-game skyscraper 4F vertical construction, heavy altitude turbulence and solar signals stall progress; Ditto must travel back, invite Peakychu, and escort it to lead the final wiring, unlocking Mewtwo's landing.",
+      regionZh: "暗沉沉海邊 (Gloomy Seaside) -> 閃閃浮島 (Sparkling Floating Island)",
+      regionEn: "Gloomy Seaside -> Sparkling Floating Island",
+      detailsZh: "登場於暗沉沉海邊、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 皮卡丘 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
+      detailsEn: "An iconic, electricityless Pikachu first encountered resting near water gates in Gloomy Seaside. Needs clean showers and localized recycling centers to build friendship. During late-game skyscraper 4F vertical construction, heavy altitude turbulence and solar signals stall progress; Ditto must travel back, invite Peakychu, and escort it to lead the final wiring, unlocking Mewtwo's landing.",
     },
     {
       id: "drifloon-guide",
@@ -384,8 +384,8 @@ export default function Characters() {
       specialtyEn: "Dream Island passage, Doll exchange transport, Johto Legendary beasts gateway trigger",
       regionZh: "夢境群島 (Dream Islands) 的所有門戶",
       regionEn: "Dream Islands (All portals)",
-      detailsZh: "主線通關後的空間關鍵。只要前往荒涼海灘的幽暗礁石碼頭與其對話，並繳納冒險中在精靈球內搜集的各式神奇寶可夢玩偶（Dolls），牠便會帶著百變怪躍遷進入隨機的「夢境群島」！在這裡，玩家可以採集到全地圖罕見的高階化石植物、冶煉高純度水晶，並可跟著指引開啟傳說中的雷公、炎帝、水君的隱藏捉捕挑戰！",
-      detailsEn: "The gateway Ferryman active in Kanto's post-game. Interacting with Drifloon at Bleak Beach's dark reef dock and giving it customizable collectible Poke-Dolls triggers dimensional shift. This transitions the player into the rare procedurally-seeded 'Dream Islands' where unique plants spawn alongside Johto's legendary Raikou, Entei, and Suicune routes.",
+      detailsZh: "主線通關後的空間關鍵。只要前往暗沉沉海邊的幽暗礁石碼頭與其對話，並繳納冒險中在精靈球內搜集的各式神奇寶可夢玩偶（Dolls），牠便會帶著百變怪躍遷進入隨機的「夢境群島」！在這裡，玩家可以採集到全地圖罕見的高階化石植物、冶煉高純度水晶，並可跟著指引開啟傳說中的雷公、炎帝、水君的隱藏捉捕挑戰！",
+      detailsEn: "The gateway Ferryman active in Kanto's post-game. Interacting with Drifloon at Gloomy Seaside's dark reef dock and giving it customizable collectible Poke-Dolls triggers dimensional shift. This transitions the player into the rare procedurally-seeded 'Dream Islands' where unique plants spawn alongside Johto's legendary Raikou, Entei, and Suicune routes.",
     }
   ];
 
@@ -428,10 +428,10 @@ export default function Characters() {
             <div className="flex flex-wrap gap-2 border-b border-line-soft pb-3">
               <button
                 onClick={() => setActiveTab("cards")}
-                className={`flex items-center gap-2 font-label-caps text-label-caps px-4 py-2.5 rounded-sm transition-all border shrink-0 ${
+                className={`flex items-center gap-2 font-mono-metadata text-xs tracking-widest uppercase px-6 py-3 transition-colors border-b-2 ${
                   activeTab === "cards"
-                    ? "bg-primary text-on-primary border-primary shadow-sm"
-                    : "bg-surface border-line-soft text-ink-mute hover:text-primary hover:bg-paper-warm"
+                    ? "text-primary border-primary"
+                    : "border-transparent text-ink-mute hover:text-ink-main"
                 }`}
               >
                 <Briefcase className="w-4 h-4" />
@@ -440,10 +440,10 @@ export default function Characters() {
 
               <button
                 onClick={() => setActiveTab("ditto")}
-                className={`flex items-center gap-2 font-label-caps text-label-caps px-4 py-2.5 rounded-sm transition-all border shrink-0 ${
+                className={`flex items-center gap-2 font-mono-metadata text-xs tracking-widest uppercase px-6 py-3 transition-colors border-b-2 ${
                   activeTab === "ditto"
-                    ? "bg-primary text-on-primary border-primary shadow-sm"
-                    : "bg-surface border-line-soft text-ink-mute hover:text-primary hover:bg-paper-warm"
+                    ? "text-primary border-primary"
+                    : "border-transparent text-ink-mute hover:text-ink-main"
                 }`}
               >
                 <Sparkles className="w-4 h-4" />
@@ -452,10 +452,10 @@ export default function Characters() {
 
               <button
                 onClick={() => setActiveTab("reshaping")}
-                className={`flex items-center gap-2 font-label-caps text-label-caps px-4 py-2.5 rounded-sm transition-all border shrink-0 ${
+                className={`flex items-center gap-2 font-mono-metadata text-xs tracking-widest uppercase px-6 py-3 transition-colors border-b-2 ${
                   activeTab === "reshaping"
-                    ? "bg-primary text-on-primary border-primary shadow-sm"
-                    : "bg-surface border-line-soft text-ink-mute hover:text-primary hover:bg-paper-warm"
+                    ? "text-primary border-primary"
+                    : "border-transparent text-ink-mute hover:text-ink-main"
                 }`}
               >
                 <Cpu className="w-4 h-4" />
@@ -464,10 +464,10 @@ export default function Characters() {
 
               <button
                 onClick={() => setActiveTab("npc")}
-                className={`flex items-center gap-2 font-label-caps text-label-caps px-4 py-2.5 rounded-sm transition-all border shrink-0 ${
+                className={`flex items-center gap-2 font-mono-metadata text-xs tracking-widest uppercase px-6 py-3 transition-colors border-b-2 ${
                   activeTab === "npc"
-                    ? "bg-primary text-on-primary border-primary shadow-sm"
-                    : "bg-surface border-line-soft text-ink-mute hover:text-primary hover:bg-paper-warm"
+                    ? "text-primary border-primary"
+                    : "border-transparent text-ink-mute hover:text-ink-main"
                 }`}
               >
                 <MapPin className="w-4 h-4" />
@@ -483,15 +483,15 @@ export default function Characters() {
             <motion.section variants={itemVariants} className="grid grid-cols-1 md:grid-cols-5 gap-sm mb-gutter">
               {data.stages.map((stage, idx) => (
                 <ScrollFade key={stage.id} depth="fg" delay={idx * 0.04} className="h-full">
-                  <article className="bg-[#fcfaf2]/60 border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-sm -mx-4 sm:mx-0 px-4 py-3 paper-texture ambient-shadow h-full flex flex-col justify-between">
+                  <article className="border hairline-border px-6 py-4 flex flex-col justify-between hover:bg-bone transition-colors h-full">
                     <div>
-                      <span className="font-mono text-[10px] text-primary uppercase tracking-widest block mb-1">
+                      <span className="font-mono-metadata text-xs text-primary uppercase tracking-widest block mb-1">
                         STAGE 0{idx + 1}
                       </span>
-                      <h4 className="font-label-caps text-sm text-ink-soft font-bold mb-1 border-b border-line-soft pb-1">
+                      <h4 className="font-headline-sm text-lg text-ink-soft font-bold mb-2 border-b hairline-bottom pb-2">
                         {en ? stage.labelEn : stage.labelZh}
                       </h4>
-                      <p className="text-[12px] text-ink-mute leading-relaxed">
+                      <p className="font-body-base text-xs text-ink-mute leading-relaxed">
                         {en ? stage.summaryEn : stage.summaryZh}
                       </p>
                     </div>
@@ -500,12 +500,11 @@ export default function Characters() {
               ))}
             </motion.section>
 
-            {/* Original characters search / filter toolbar */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-bone border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-sm -mx-4 sm:mx-0 px-4 py-3">
-              <div className="font-mono text-xs text-ink-soft uppercase tracking-widest">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-y hairline-border py-4 mb-8">
+              <div className="font-mono-metadata text-xs text-ink-soft uppercase tracking-widest">
                 {en ? "DATABASE CLASSIFICATION FILTERS:" : "機密人物分群篩選："}
               </div>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-4">
                 {filters.map((filter) => {
                   const label = en
                     ? filter
@@ -520,10 +519,10 @@ export default function Characters() {
                     <button
                       key={filter}
                       onClick={() => setActiveFilter(filter)}
-                      className={`font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-sm transition-all border ${
+                      className={`font-mono-metadata text-xs uppercase tracking-widest transition-colors ${
                         activeFilter === filter
-                          ? "bg-primary text-on-primary border-primary shadow-sm"
-                          : "bg-surface border-line-soft text-ink-mute hover:text-primary"
+                          ? "text-primary border-b border-primary pb-1"
+                          : "text-ink-mute hover:text-ink-main pb-1"
                       }`}
                     >
                       {label}
@@ -540,65 +539,64 @@ export default function Characters() {
                   <ScrollFade key={char.id} depth="none" delay={(idx % 3) * 0.04} className="h-full">
                     <motion.article
                       variants={itemVariants}
-                      whileHover={{ scale: 1.015, y: -2 }}
-                      className="bg-bone border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-sm -mx-4 sm:mx-0 p-4 sm:p-sm flex flex-col relative ambient-shadow paper-texture cursor-pointer h-full hover:border-primary/40 transition-all"
+                      whileHover={{ y: -2 }}
+                      className="border hairline-border p-6 flex flex-col relative cursor-pointer h-full hover:bg-bone transition-colors"
                       onClick={() => setSelectedChar(char)}
                     >
-                      <div className="flex items-start justify-between gap-3 mb-sm">
+                      <div className="flex items-start justify-between gap-3 mb-6">
                         <div className="min-w-0">
-                          <span className="font-mono text-[10.5px] text-primary uppercase tracking-wider block mb-0.5">
+                          <span className="font-mono-metadata text-xs text-primary uppercase tracking-widest block mb-1">
                             {en ? char.aliasEn : char.aliasZh}
                           </span>
-                          <span className="font-label-caps text-[10px] text-ink-mute uppercase bg-paper-warm px-2 py-0.5 rounded-sm border border-line-soft">
+                          <span className="font-mono-metadata text-xs text-ink-mute uppercase tracking-widest border hairline-border px-2 py-1">
                             {en ? char.roleEn : char.roleZh}
                           </span>
                         </div>
-                        <span className="font-mono text-[10px] text-ink-mute bg-[#f5efe2] border border-line-soft px-2 py-0.5 rounded-xs shrink-0 font-bold">
+                        <span className="font-mono-metadata text-xs text-ink-main border hairline-border px-2 py-1 shrink-0 uppercase tracking-widest">
                           {primaryStage ? (en ? primaryStage.labelEn : primaryStage.labelZh) : "—"}
                         </span>
                       </div>
 
-                      <div className="w-24 h-24 mx-auto mb-sm bg-surface-container-high rounded-full border-2 border-line-soft bg-paper-warm/80 overflow-hidden flex items-center justify-center p-2 relative">
-                        <div className="absolute inset-0 bg-radial from-primary/5 to-transparent pointer-events-none" />
+                      <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center p-2 relative mix-blend-multiply">
                         <img
                           src={char.image}
                           alt={char.nameEn}
-                          className="object-contain max-w-full max-h-full mix-blend-multiply opacity-90 transition-transform duration-500 hover:scale-105"
+                          className="object-contain max-w-full max-h-full transition-transform duration-500 hover:scale-105"
                           referrerPolicy="no-referrer"
                         />
                       </div>
 
-                      <div className="flex flex-col gap-2 flex-grow">
+                      <div className="flex flex-col gap-4 flex-grow border-t hairline-top pt-4">
                         <div className="text-center md:text-left">
-                          <h2 className="font-headline-sm text-lg text-ink-soft m-0 font-bold">{en ? char.nameEn : char.nameZh}</h2>
-                          <p className="font-mono text-[11px] text-ink-mute mb-2 mt-0.5">
+                          <h2 className="font-headline-sm text-2xl text-ink-soft mb-1">{en ? char.nameEn : char.nameZh}</h2>
+                          <p className="font-mono-metadata text-xs text-ink-mute uppercase tracking-widest">
                             📍 {en ? char.regionEn : char.regionZh}
                           </p>
                         </div>
 
-                        <div className="flex flex-wrap gap-1 mb-2">
-                          <span className="font-mono text-[10px] text-ink-soft bg-surface-variant px-2 py-0.5 rounded-xs border border-line-soft">
+                        <div className="flex flex-wrap gap-2 mb-2">
+                          <span className="font-mono-metadata text-xs text-ink-soft bg-surface-dim px-2 py-1 uppercase tracking-widest">
                             {en ? char.specialtyEn : char.specialtyZh}
                           </span>
                           {char.signatureSkillsEn.slice(0, 1).map((skill, index) => (
                             <span
                               key={skill}
-                              className="font-mono text-[10px] text-primary bg-primary/10 px-2 py-0.5 rounded-xs border border-primary/20"
+                              className="font-mono-metadata text-xs text-primary bg-primary/5 border border-primary/20 px-2 py-1 uppercase tracking-widest"
                             >
                               {en ? skill : char.signatureSkillsZh[index]}
                             </span>
                           ))}
                         </div>
 
-                        <p className="text-[13px] text-ink-soft leading-relaxed line-clamp-4">
+                        <p className="font-body-base text-sm text-ink-soft leading-relaxed line-clamp-4">
                           {en ? char.summaryEn : char.summaryZh}
                         </p>
 
-                        <div className="mt-auto pt-2 border-t border-dashed border-line-soft flex items-center justify-between text-[10.5px]">
-                          <span className="text-ink-faint font-semibold">
+                        <div className="mt-auto pt-4 border-t hairline-top flex items-center justify-between text-xs">
+                          <span className="text-ink-faint font-mono-metadata uppercase tracking-widest">
                             {en ? "Story Route Links:" : "故事地點:"}
                           </span>
-                          <span className="text-ink-mute line-clamp-1">
+                          <span className="text-ink-mute line-clamp-1 font-body-base">
                             {(en ? char.relatedLocationsEn : char.relatedLocationsZh).slice(0, 2).join(" · ")}
                           </span>
                         </div>
@@ -620,21 +618,21 @@ export default function Characters() {
 
         {/* -------------------- TAB CONTENT: DITTO CUSTOMIZER PLAYGROUND -------------------- */}
         {activeTab === "ditto" && (
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="grid grid-cols-1 lg:grid-cols-12 gap-gutter bg-bone border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-lg -mx-4 sm:mx-0 p-6 sm:p-lg shadow-sm">
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="grid grid-cols-1 lg:grid-cols-12 gap-8 border hairline-border p-8 bg-paper">
             
             {/* Visual customization panel: LEFT SIDE */}
-            <div className="lg:col-span-4 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-line-soft pb-6 lg:pb-0 lg:pr-gutter">
-              <div className="space-y-4">
-                <span className="font-mono text-xs text-primary bg-primary/10 border border-primary/30 px-3 py-1 rounded-sm uppercase tracking-widest inline-flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-[14px]">psychology</span>
+            <div className="lg:col-span-4 flex flex-col justify-between border-b lg:border-b-0 lg:border-r hairline-border pb-8 lg:pb-0 lg:pr-8">
+              <div className="space-y-6">
+                <span className="font-mono-metadata text-xs text-primary uppercase tracking-widest inline-flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[16px]">psychology</span>
                   SOSS PROFILE: DITTO_CORE
                 </span>
                 
-                <h3 className="font-display-lg text-2xl text-ink-soft m-0 font-bold">
+                <h3 className="font-headline-sm text-2xl text-ink-main m-0">
                   {en ? "Ditto Mimicry System" : "百變怪擬態裝扮預覽"}
                 </h3>
                 
-                <div className="text-[13px] text-ink-soft leading-relaxed space-y-3">
+                <div className="font-body-base text-sm text-ink-soft leading-relaxed space-y-4">
                   <p>
                     {en 
                       ? "As Kanto's sole mimicry survivor, Ditto wakes and copies characters naturally. Customize its structural DNA signature below to test real-time styling parameters."
@@ -642,13 +640,15 @@ export default function Characters() {
                   </p>
                   
                   {/* Factual Narrative Card Section */}
-                  <div className="bg-[#f0ece1] border border-line-soft p-4 rounded-sm italic border-l-4 border-primary">
-                    <span className="font-mono text-[9px] text-primary font-bold block mb-1 uppercase tracking-wider">
+                  <div className="bg-bone border hairline-border p-6 mt-4">
+                    <span className="font-mono-metadata text-xs text-primary block mb-2 uppercase tracking-widest">
                       {en ? "DITTO NARRATIVE FACT" : "百變怪專屬敘事卡片"}
                     </span>
+                    <p className="font-body-base italic">
                     {en 
                       ? "Unlike standard trainers, Ditto cannot level-up or evolve in Pokopia. Instead, it completes tasks, bakes bread with Dente, collects alloy gears for Tinkmaster, and mimics essential skills directly from rescued wild Pokémon."
                       : "與傳統寶可夢系列不同，本作中百變怪完全擺脫了「經驗值與進化」機制，改為「觀察並學習」的生態模型。牠利用變身天能與 NPC（如主廚 Dente、巨鍛匠 Tinkmaster）開創工匠同盟，是全關都大地上最忙碌的土木工程奇才！"}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -660,9 +660,9 @@ export default function Characters() {
                   setDittoHair("transparent");
                   setDittoOutfit("none");
                 }}
-                className="mt-6 flex items-center justify-center gap-2 border border-line-soft hover:border-primary text-ink-soft hover:text-primary font-mono text-[11px] uppercase tracking-wider py-2.5 rounded-sm bg-surface transition-all cursor-pointer"
+                className="mt-8 flex items-center justify-center gap-2 border hairline-border hover:border-ink-soft text-ink-soft hover:text-ink-main font-mono-metadata text-xs uppercase tracking-widest py-4 transition-colors"
               >
-                <Undo className="w-3.5 h-3.5" />
+                <Undo className="w-4 h-4" />
                 {en ? "Revert to Default Ditto" : "還原為元祖百變怪外型"}
               </button>
             </div>
@@ -678,27 +678,26 @@ export default function Characters() {
             </div>
 
             {/* Control Interface knobs: RIGHT SIDE */}
-            <div className="lg:col-span-4 flex flex-col justify-between lg:pl-gutter space-y-6">
+            <div className="lg:col-span-4 flex flex-col justify-between lg:pl-8 space-y-8">
               
               {/* Knot 1: Skin selection */}
               <div>
-                <label className="font-mono text-[11.5px] text-ink-soft uppercase tracking-wider block mb-2 font-bold flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
+                <label className="font-mono-metadata text-xs text-ink-soft uppercase tracking-widest block mb-4 flex items-center gap-2">
                   {en ? "1. Select Skin Membrane" : "第一步：選擇主體膚色"}
                 </label>
-                <div className="grid grid-cols-1 gap-1.5">
+                <div className="flex flex-col gap-2">
                   {skins.map((skin) => (
                     <button
                       key={skin.id}
                       onClick={() => setDittoSkin(skin.value)}
-                      className={`flex items-center justify-between text-left px-3 py-1.5 rounded-sm text-[11.5px] border transition-all cursor-pointer ${
+                      className={`flex items-center justify-between text-left px-4 py-3 text-xs font-mono-metadata uppercase tracking-widest transition-colors ${
                         dittoSkin === skin.value
-                          ? "bg-primary/5 border-primary text-primary font-semibold"
-                          : "bg-surface border-line-soft hover:border-primary text-ink-soft"
+                          ? "bg-primary/5 border border-primary text-primary"
+                          : "border hairline-border hover:border-ink-soft text-ink-soft"
                       }`}
                     >
                       <span>{en ? skin.labelEn : skin.labelZh}</span>
-                      <span className="w-4 h-4 rounded-xs border border-line-soft" style={{ backgroundColor: skin.value }} />
+                      <span className="w-4 h-4 border border-line-soft" style={{ backgroundColor: skin.value }} />
                     </button>
                   ))}
                 </div>
@@ -706,23 +705,22 @@ export default function Characters() {
 
               {/* Knot 2: Hair selection */}
               <div>
-                <label className="font-mono text-[11.5px] text-ink-soft uppercase tracking-wider block mb-2 font-bold flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
+                <label className="font-mono-metadata text-xs text-ink-soft uppercase tracking-widest block mb-4 flex items-center gap-2">
                   {en ? "2. Select Mimic Hair / Cap" : "第二步：自訂模仿髮色與飾片"}
                 </label>
-                <div className="grid grid-cols-1 gap-1.5">
+                <div className="flex flex-col gap-2">
                   {hairs.map((hair) => (
                     <button
                       key={hair.id}
                       onClick={() => setDittoHair(hair.color)}
-                      className={`flex items-center justify-between text-left px-3 py-1.5 rounded-sm text-[11.5px] border transition-all cursor-pointer ${
+                      className={`flex items-center justify-between text-left px-4 py-3 text-xs font-mono-metadata uppercase tracking-widest transition-colors ${
                         dittoHair === hair.color
-                          ? "bg-primary/5 border-primary text-primary font-semibold"
-                          : "bg-surface border-line-soft hover:border-primary text-ink-soft"
+                          ? "bg-primary/5 border border-primary text-primary"
+                          : "border hairline-border hover:border-ink-soft text-ink-soft"
                       }`}
                     >
                       <span>{en ? hair.labelEn : hair.labelZh}</span>
-                      <span className="w-4 h-[3px] rounded-full" style={{ backgroundColor: hair.color === "transparent" ? "#94a3b8" : hair.color }} />
+                      <span className="w-4 h-[2px] bg-ink-mute" style={{ backgroundColor: hair.color === "transparent" ? "var(--color-ink-mute)" : hair.color }} />
                     </button>
                   ))}
                 </div>
@@ -730,25 +728,21 @@ export default function Characters() {
 
               {/* Knot 3: Apparel selection */}
               <div>
-                <label className="font-mono text-[11.5px] text-ink-soft uppercase tracking-wider block mb-2 font-bold flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
+                <label className="font-mono-metadata text-xs text-ink-soft uppercase tracking-widest block mb-4 flex items-center gap-2">
                   {en ? "3. Apply Active Work Costume" : "第三步：穿配專屬工作裝備"}
                 </label>
-                <div className="grid grid-cols-1 gap-1.5">
+                <div className="flex flex-col gap-2">
                   {outfits.map((out) => (
                     <button
                       key={out.id}
                       onClick={() => setDittoOutfit(out.id)}
-                      className={`flex items-center justify-between text-left px-3 py-1.5 rounded-sm text-[11.5px] border transition-all cursor-pointer ${
+                      className={`flex items-center justify-between text-left px-4 py-3 text-xs font-mono-metadata uppercase tracking-widest transition-colors ${
                         dittoOutfit === out.id
-                          ? "bg-primary/5 border-primary text-primary font-semibold"
-                          : "bg-surface border-line-soft hover:border-primary text-ink-soft"
+                          ? "bg-primary/5 border border-primary text-primary"
+                          : "border hairline-border hover:border-ink-soft text-ink-soft"
                       }`}
                     >
                       <span>{en ? out.labelEn : out.labelZh}</span>
-                      <span className="text-[10px] text-ink-mute font-mono">
-                        {dittoOutfit === out.id ? "ACTIVE" : ""}
-                      </span>
                     </button>
                   ))}
                 </div>
@@ -769,20 +763,20 @@ export default function Characters() {
                   <div className="w-28 h-28 shrink-0 rounded-full bg-primary/10 border-4 border-primary/30 flex items-center justify-center text-primary mb-4">
                     <span className="material-symbols-outlined text-[56px] text-primary">computer</span>
                   </div>
-                  <span className="font-mono text-[10px] text-primary bg-primary/10 border border-primary/20 px-2 py-0.5 rounded-sm uppercase tracking-wider mb-2 font-bold">
+                  <span className="font-mono text-xs text-primary bg-primary/10 border border-primary/20 px-2 py-0.5 rounded-sm uppercase tracking-wider mb-2 font-bold">
                     SOSS CORE ARCHIVE
                   </span>
                   <h3 className="font-display-lg text-lg text-ink-soft m-0 font-bold">
                     {en ? "Professor Tangrowth's Plan" : "巨蔓藤博士 SOSS 科研計劃"}
                   </h3>
-                  <p className="font-mono text-[11px] text-ink-mute mt-1 leading-snug">
+                  <p className="font-mono text-xs text-ink-mute mt-1 leading-snug">
                     {en ? "System backup: EARTH_RESTORATION v2.6" : "備份機密檔案：大區乾地與工業自維重組"}
                   </p>
                 </div>
 
                 <div className="lg:w-2/3 flex flex-col justify-between">
                   <div className="space-y-4">
-                    <span className="font-mono text-[10px] text-ink-faint uppercase tracking-widest block">
+                    <span className="font-mono text-xs text-ink-faint uppercase tracking-widest block">
                       {en ? "CENTRAL NARRATIVE DOSSIER" : "核心劇情事件簿 (無捏造之事實數據)"}
                     </span>
                     <h2 className="font-display-md text-2xl text-ink-soft font-bold tracking-tight">
@@ -804,7 +798,7 @@ export default function Characters() {
                     </div>
                   </div>
 
-                  <div className="border-t border-line-soft pt-4 mt-6 flex justify-between items-center text-[11px] text-ink-mute font-mono">
+                  <div className="border-t border-line-soft pt-4 mt-6 flex justify-between items-center text-xs text-ink-mute font-mono">
                     <span>{en ? "DEVELOPED BY GF × OMEGA FORCE" : "開發出品：Game Freak 與 Omega Force (KOEI)"}</span>
                     <span>{en ? "ENDING MOVIE #010" : "感人過場動畫 ID: END010"}</span>
                   </div>
@@ -827,7 +821,7 @@ export default function Characters() {
                   <h4 className="font-headline-sm text-sm font-bold text-ink-soft mb-1">
                     {en ? "Core Material Recycle" : "超級電腦自維喚醒"}
                   </h4>
-                  <p className="text-[12px] text-ink-mute leading-relaxed">
+                  <p className="text-sm text-ink-mute leading-relaxed">
                     {en 
                       ? "Ditto awakens, registers the human visual frame, and uses recycled scraps to repair the local home console."
                       : "百變怪甦醒，在沒落的關都接受巨蔓藤博士的指示，透過「觀察與變身」拾起原訓練家的圖鑑，進行物資回收。"}
@@ -841,9 +835,9 @@ export default function Characters() {
                   <h4 className="font-headline-sm text-sm font-bold text-ink-soft mb-1">
                     {en ? "Tactical Grid Linking" : "荒野灌溉與海灘電電網"}
                   </h4>
-                  <p className="text-[12px] text-ink-mute leading-relaxed">
+                  <p className="text-sm text-ink-mute leading-relaxed">
                     {en 
-                      ? "Linking windmills and water wheels to lighthouse charging stations across Bleak Beach to revive local power grids."
+                      ? "Linking windmills and water wheels to lighthouse charging stations across Gloomy Seaside to revive local power grids."
                       : "利用傑尼龜水槍滋潤旱地。在海灘修復風車、水車，拉起「電線桿系統」將電網連線，並喚醒苔樹卡比獸 Mosslax。"}
                   </p>
                 </article>
@@ -855,7 +849,7 @@ export default function Characters() {
                   <h4 className="font-headline-sm text-sm font-bold text-ink-soft mb-1">
                     {en ? "The Skyscraper Project" : "空島百米摩天樓工程"}
                   </h4>
-                  <p className="text-[12px] text-ink-mute leading-relaxed">
+                  <p className="text-sm text-ink-mute leading-relaxed">
                     {en 
                       ? "Smithing special lock-gears with Tinkmaster and pouring Concrete blocks layer by layer in real-time."
                       : "與巨鍛匠合作製作特殊齒輪，運送發光石護送主廚 Dente 與 Peakychu 入工班，逐層建造巨大摩天大樓迎來超夢。"}
@@ -869,7 +863,7 @@ export default function Characters() {
                   <h4 className="font-headline-sm text-sm font-bold text-ink-soft mb-1">
                     {en ? "The Infinite Space Ship" : "發射珍愛照片重逢"}
                   </h4>
-                  <p className="text-[12px] text-ink-mute leading-relaxed">
+                  <p className="text-sm text-ink-mute leading-relaxed">
                     {en 
                       ? "Paying all 8 Tower medals, celebrating with pops and launching the Precious Photo to find the lost Master."
                       : "在挑戰高塔通關中繳齊八大徽章、拉響拉炮，將裝載大夥溫暖合照的照片送入星空，令原本的訓練家尋獲並感動重聚。"}
@@ -886,7 +880,7 @@ export default function Characters() {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="space-y-6">
             
             <div className="bg-bone border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-lg -mx-4 sm:mx-0 p-4 sm:p-sm shadow-sm md:p-6 mb-2">
-              <span className="font-mono text-[10px] text-primary uppercase tracking-widest block mb-2">
+              <span className="font-mono text-xs text-primary uppercase tracking-widest block mb-2">
                 RECON METADATA STATS // NPC REGISTRY
               </span>
               <h2 className="font-display-lg text-xl text-ink-soft m-0 font-bold flex items-center gap-2">
@@ -908,10 +902,10 @@ export default function Characters() {
                     <div className="mb-4">
                       {/* Subtitle tag card */}
                       <div className="flex justify-between items-center mb-sm border-b border-line-soft pb-2">
-                        <span className="font-mono text-[10.5px] text-primary uppercase tracking-wider font-bold">
+                        <span className="font-mono text-xs text-primary uppercase tracking-wider font-bold">
                           {guide.id === "chef-dente-guide" ? "COFFEE & BAKING" : guide.id === "tinkmaster-guide" ? "HEAVY METAL FORGING" : guide.id === "peakychu-guide" ? "ELECTRICAL NETWORK" : "SPACE FERRYING"}
                         </span>
-                        <span className="font-mono text-[9px] bg-paper px-2 py-0.5 rounded-sm border border-line-soft text-ink-mute">
+                        <span className="font-mono text-xs bg-paper px-2 py-0.5 rounded-sm border border-line-soft text-ink-mute">
                           {en ? guide.speciesEn : guide.speciesZh}
                         </span>
                       </div>
@@ -933,14 +927,14 @@ export default function Characters() {
                           <h3 className="font-headline-sm text-base text-ink-soft font-bold m-0 leading-snug">
                             {en ? guide.nameEn : guide.nameZh}
                           </h3>
-                          <p className="font-mono text-[10px] text-ink-mute m-0 mt-1 uppercase tracking-wider">
+                          <p className="font-mono text-xs text-ink-mute m-0 mt-1 uppercase tracking-wider">
                             🗺️ {en ? guide.regionEn : guide.regionZh}
                           </p>
                         </div>
                       </div>
 
                       {/* Specialty field */}
-                      <div className="mt-4 p-2 bg-paper-warm/60 border border-line-soft/60 rounded-xs text-[11.5px] text-ink-soft">
+                      <div className="mt-4 p-2 bg-paper-warm/60 border border-line-soft/60 rounded-xs text-sm text-ink-soft">
                         <strong className="text-primary font-mono block uppercase text-[9.5px] tracking-wide mb-0.5">
                           {en ? "SPECIALTY SKILL" : "NPC 獨門專長"}
                         </strong>
@@ -954,7 +948,7 @@ export default function Characters() {
                     </div>
 
                     {/* SOSS location pin tag */}
-                    <div className="pt-2 border-t border-dashed border-line-soft flex items-center justify-between font-mono text-[10px] text-ink-faint uppercase select-none">
+                    <div className="pt-2 border-t border-dashed border-line-soft flex items-center justify-between font-mono text-xs text-ink-faint uppercase select-none">
                       <span>LOCATION GRID PIN:</span>
                       <strong className="text-primary">
                         {guide.id === "chef-dente-guide" ? "ROCKY_RIDGES_H3" : guide.id === "tinkmaster-guide" ? "SKYLANDS_FL7" : guide.id === "peakychu-guide" ? "BEACH_SHOWER_B4" : "DREAM_REACTIVE_O1"}
@@ -988,7 +982,7 @@ export default function Characters() {
               >
                 <button
                   onClick={() => setSelectedChar(null)}
-                  className="absolute top-sm right-sm z-10 text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
+                  className="absolute top-sm right-sm z-10 text-ink-mute hover:text-ink-main transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
                   aria-label={en ? "Close" : "關閉"}
                 >
                   <span className="material-symbols-outlined">close</span>
@@ -1003,10 +997,10 @@ export default function Characters() {
                       referrerPolicy="no-referrer"
                     />
                     <div className="text-center">
-                      <span className="font-mono text-[10.5px] text-primary uppercase block mb-1">
+                      <span className="font-mono text-xs text-primary uppercase block mb-1">
                         {en ? selectedChar.aliasEn : selectedChar.aliasZh}
                       </span>
-                      <span className="font-mono text-[9px] text-ink-mute border border-line-soft px-3 py-1 rounded-sm uppercase tracking-wider bg-paper">
+                      <span className="font-mono text-xs text-ink-mute border border-line-soft px-3 py-1 rounded-sm uppercase tracking-wider bg-paper">
                         {en ? selectedChar.roleEn : selectedChar.roleZh}
                       </span>
                     </div>
@@ -1022,7 +1016,7 @@ export default function Characters() {
                           📍 {en ? selectedChar.regionEn : selectedChar.regionZh}
                         </p>
                       </div>
-                      <span className="font-mono text-[11px] text-ink-soft bg-surface-variant border border-line-soft px-3 py-1 rounded-sm shrink-0">
+                      <span className="font-mono text-xs text-ink-soft bg-surface-variant border border-line-soft px-3 py-1 rounded-sm shrink-0">
                         {en ? selectedChar.specialtyEn : selectedChar.specialtyZh}
                       </span>
                     </div>
@@ -1033,7 +1027,7 @@ export default function Characters() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                       <section className="bg-paper-warm/40 border border-line-soft rounded-sm p-4">
-                        <h3 className="font-mono text-[10px] text-ink-mute uppercase tracking-widest mb-3 font-bold border-b border-line-soft pb-1">
+                        <h3 className="font-mono text-xs text-ink-mute uppercase tracking-widest mb-3 font-bold border-b border-line-soft pb-1">
                           {en ? "Core Story Milestones" : "關鍵主線對話"}
                         </h3>
                         <ul className="space-y-2 text-[12.5px] text-ink-soft leading-relaxed">
@@ -1047,23 +1041,23 @@ export default function Characters() {
                       </section>
 
                       <section className="bg-paper-warm/40 border border-line-soft rounded-sm p-4">
-                        <h3 className="font-mono text-[10px] text-ink-mute uppercase tracking-widest mb-3 font-bold border-b border-line-soft pb-1">
+                        <h3 className="font-mono text-xs text-ink-mute uppercase tracking-widest mb-3 font-bold border-b border-line-soft pb-1">
                           {en ? "Factual Capabilities" : "招牌能力配備"}
                         </h3>
                         <div className="flex flex-wrap gap-1.5 mb-4">
                           {(en ? selectedChar.signatureSkillsEn : selectedChar.signatureSkillsZh).map((skill) => (
                             <span
                               key={skill}
-                              className="font-mono text-[9px] text-ink-soft bg-surface-container-high border border-line-soft px-2 py-0.5 rounded-xs"
+                              className="font-mono text-xs text-ink-soft bg-surface-container-high border border-line-soft px-2 py-0.5 rounded-xs"
                             >
                               {skill}
                             </span>
                           ))}
                         </div>
-                        <h4 className="font-mono text-[10px] text-ink-mute uppercase mb-1 font-bold">
+                        <h4 className="font-mono text-xs text-ink-mute uppercase mb-1 font-bold">
                           {en ? "Linked Landmarks" : "關聯拓荒地點"}
                         </h4>
-                        <p className="text-[12px] text-ink-soft leading-relaxed">
+                        <p className="text-sm text-ink-soft leading-relaxed">
                           {(en ? selectedChar.relatedLocationsEn : selectedChar.relatedLocationsZh).join(" · ")}
                         </p>
                       </section>
@@ -1072,7 +1066,7 @@ export default function Characters() {
                 </div>
 
                 <div className="p-lg bg-surface-dim border-b border-line-soft bg-paper-warm/20">
-                  <h3 className="font-mono text-[10px] text-ink-mute uppercase mb-3 font-bold">
+                  <h3 className="font-mono text-xs text-ink-mute uppercase mb-3 font-bold">
                     {en ? "Story Timeline Linkage" : "劇情解鎖時間軸"}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
@@ -1087,10 +1081,10 @@ export default function Characters() {
                               : "bg-bone/40 border-line-soft opacity-60"
                           }`}
                         >
-                          <span className={`font-mono text-[9px] uppercase block mb-1 font-bold ${isActive ? "text-primary" : "text-ink-mute"}`}>
+                          <span className={`font-mono text-xs uppercase block mb-1 font-bold ${isActive ? "text-primary" : "text-ink-mute"}`}>
                             {en ? stage.labelEn : stage.labelZh}
                           </span>
-                          <p className="text-[11.5px] leading-relaxed text-ink-soft line-clamp-2">
+                          <p className="text-sm leading-relaxed text-ink-soft line-clamp-2">
                             {en ? stage.summaryEn : stage.summaryZh}
                           </p>
                         </article>
@@ -1099,7 +1093,7 @@ export default function Characters() {
                   </div>
                 </div>
 
-                <div className="p-lg flex justify-between items-center text-[10.5px] text-ink-faint font-mono border-t border-line-soft">
+                <div className="p-lg flex justify-between items-center text-xs text-ink-faint font-mono border-t border-line-soft">
                   <span>
                     {en ? "WIKIPEDIA CODENAME REF:" : "機密編號:"} DITTO_CORE-{selectedChar.id}
                   </span>

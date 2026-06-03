@@ -1,10 +1,11 @@
 {
   "nav": {
     "news": "最新情報",
-    "pokedex": "寶可夢圖鑑",
+    "pokedex": "圖鑑",
     "characters": "角色與劇情",
     "map": "探索地圖",
-    "guides": "戰術指南"
+    "guides": "戰術指南",
+    "items": "物品圖鑑"
   },
   "home": {
     "vol": "第一卷 • 第一期",
@@ -26,7 +27,7 @@
   },
   "pokedex": {
     "title": "檔案紀錄",
-    "subtitle": "收錄大區域生態系統內所記錄的物種與劇情角色之精選目錄。",
+    "subtitle": "",
     "typeClassification": "屬性分類",
     "searchRegistry": "資料檢索",
     "searchPlaceholder": "輸入 ID 或名稱...",
@@ -46,6 +47,12 @@
     "rarityLabel": "生態稀有度",
     "friendshipLabel": "所需友情等級",
     "likesLabel": "生活偏好與環境",
+    "obtainMethod": "取得方式",
+    "obtainDetails": "詳細條件",
+    "habitats": "已知棲息地",
+    "timeOfDay": "出沒時段",
+    "weather": "天氣條件",
+    "envPref": "環境偏好",
     "secretIntelTitle": "巴哈社群秘寶與隱藏小知識",
     "intelTabTrivia": "隱藏小知識",
     "intelTabDolls": "娃娃傳送限制",
@@ -57,6 +64,8 @@
     "trivia3Desc": "善用「B」鍵長按，可配合移動實現一鍵連續鋪路。此法是快速刷月亮伊布所需的 300 條實體道路方塊的最優解！",
     "dollLimitTitle": "👾 飄飄球娃娃地景傳送機制",
     "dollLimitDesc": "交付給飄飄球的寶可夢娃娃類型決定了你將抵達哪一種生物群系的隨機「夢境群島」！",
+    "dollGatingTitle": "🔒 傳說夢境島解鎖門檻",
+    "dollGatingDesc": "玩家必須達到 30 級才能將傳說三聖獸娃娃（雷公、水君、炎帝）交給飄飄球，解鎖前往專屬傳說夢境島的航線。",
     "dollPikachu": "皮卡丘娃娃",
     "dollBulbasaur": "妙蛙種子娃娃",
     "dollCharmander": "小火龍娃娃",
@@ -97,5 +106,87 @@
     "successRate": "規模",
     "furtherReading": "延伸閱讀",
     "viewArchive": "回到頂部"
+  },
+  "pokopia": {
+    "fav": {
+      "bitter_flavors": "苦味",
+      "blocky_stuff": "塊狀物",
+      "cleanliness": "整潔",
+      "colorful_stuff": "色彩斑斕的物品",
+      "complicated_stuff": "複雜的機制",
+      "construction": "建築工程",
+      "consturction": "建築工程",
+      "containers": "容器與箱子",
+      "cute_stuff": "可愛的事物",
+      "dry_flavors": "澀味",
+      "electronics": "電子設備",
+      "exercise": "鍛鍊與運動",
+      "fabric": "布料與紡織",
+      "garbage": "垃圾與廢料",
+      "gatherings": "聚會",
+      "glass_stuff": "玻璃製品",
+      "group_activities": "團體活動",
+      "hard_stuff": "堅硬的物體",
+      "healing": "療癒與康復",
+      "letter_and_words": "書信與文字",
+      "letters_and_words": "書信與文字",
+      "looks_like_food": "像食物的東西",
+      "lots_of_dirt": "大量的泥土",
+      "lots_of_fire": "烈火與熱源",
+      "lots_of_nature": "豐富的自然環境",
+      "lots_of_water": "充沛的水源",
+      "luxury": "奢華品",
+      "metal_stuff": "金屬物品",
+      "nice_breezes": "舒適的微風",
+      "noisy_stuff": "嘈雜的聲響",
+      "ocean_vibes": "海洋氣息",
+      "play_spaces": "遊戲空間",
+      "pretty_flowers": "美麗的花朵",
+      "rides": "乘騎設施",
+      "round_stuff": "圓形的物體",
+      "sharp_stuff": "尖銳的物體",
+      "shiny_stuff": "閃亮的物品",
+      "slender_objects": "細長的物體",
+      "soft_stuff": "柔軟的物品",
+      "sour_flavors": "酸味",
+      "spicy_flavors": "辣味",
+      "spinning_stuff": "旋轉的物體",
+      "spooky_stuff": "詭異恐怖的物品",
+      "stone_stuff": "石材與岩石",
+      "strange_stuff": "奇怪的物品",
+      "sweet_flavors": "甜味",
+      "symbols": "符號與圖騰",
+      "watching_stuff": "觀賞用物品",
+      "wobbly_stuff": "搖晃的物品",
+      "woblly_stuff": "搖晃的物品",
+      "wooden_stuff": "木製品"
+    },
+    "tod": {
+      "dawn": "清晨",
+      "day": "白天",
+      "dusk": "傍晚",
+      "night": "夜晚"
+    },
+    "weather": {
+      "cloudy": "陰天",
+      "rainy": "雨天",
+      "sunny": "晴天"
+    },
+    "env": {
+      "bright": "明亮",
+      "cool": "涼爽",
+      "dark": "昏暗",
+      "dry": "乾燥",
+      "moist": "潮濕",
+      "warm": "溫暖"
+    },
+    "method": {
+      "craft": "工作臺製作",
+      "dream-island": "夢之島招募",
+      "event": "特殊活動",
+      "habitat": "棲息地自然生成",
+      "quest": "解謎與探索任務",
+      "story": "主線故事解鎖"
+    }
   }
 }

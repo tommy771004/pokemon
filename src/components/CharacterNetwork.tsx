@@ -324,7 +324,7 @@ export default function CharacterNetwork({
         <div className="flex gap-2 flex-wrap items-center">
           <div className="bg-surface-variant border border-line-soft px-3 py-1.5 rounded-sm flex items-center gap-2 mr-2">
             <span className="material-symbols-outlined text-[14px] text-primary">group</span>
-            <span className="font-mono-metadata text-xs text-ink-main">
+            <span className="font-mono-metadata text-sm text-ink-main">
               <strong>{visibleCount}</strong> <span className="text-ink-mute">/ {characters.length}</span>
             </span>
           </div>
@@ -413,11 +413,11 @@ export default function CharacterNetwork({
               >
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-4 h-[3px] rounded-full" style={{ backgroundColor: type.color }}></div>
-                  <span className="font-mono-metadata text-[10px] text-ink-main uppercase tracking-wider font-semibold">
+                  <span className="font-mono-metadata text-xs text-ink-main uppercase tracking-wider font-semibold">
                     {i18n.language === "en" ? type.labelEn : type.labelZh}
                   </span>
                 </div>
-                <p className="font-mono-metadata text-[10px] text-ink-soft">
+                <p className="font-mono-metadata text-xs text-ink-soft">
                   {i18n.language === "en" ? type.descriptionEn : type.descriptionZh}
                 </p>
               </button>

@@ -25,12 +25,12 @@ function GuideDataChart({ en }: { en: boolean }) {
     { name: "Beach", Common: 55, Rare: 35, Legendary: 10 },
     { name: "Ridges", Common: 50, Rare: 40, Legendary: 10 },
     { name: "Skylands", Common: 40, Rare: 45, Legendary: 15 },
-    { name: "Palette Town", Common: 30, Rare: 50, Legendary: 20 },
+    { name: "Empty Town", Common: 30, Rare: 50, Legendary: 20 },
   ] : [
-    { name: "枯萎荒野", Common: 65, Rare: 30, Legendary: 5 },
-    { name: "荒涼海灘", Common: 55, Rare: 35, Legendary: 10 },
-    { name: "岩石山脊", Common: 50, Rare: 40, Legendary: 10 },
-    { name: "閃耀空島", Common: 40, Rare: 45, Legendary: 15 },
+    { name: "乾巴巴荒野", Common: 65, Rare: 30, Legendary: 5 },
+    { name: "暗沉沉海邊", Common: 55, Rare: 35, Legendary: 10 },
+    { name: "凸隆隆山地", Common: 50, Rare: 40, Legendary: 10 },
+    { name: "閃閃浮島", Common: 40, Rare: 45, Legendary: 15 },
     { name: "調色板鎮", Common: 30, Rare: 50, Legendary: 20 },
   ];
 
@@ -39,12 +39,12 @@ function GuideDataChart({ en }: { en: boolean }) {
     { name: "Beach", Lumber: 20, Brick: 75, Metals: 50 },
     { name: "Ridges", Lumber: 10, Brick: 30, Metals: 95 },
     { name: "Skylands", Lumber: 60, Brick: 40, Metals: 80 },
-    { name: "Palette Town", Lumber: 90, Brick: 80, Metals: 85 },
+    { name: "Empty Town", Lumber: 90, Brick: 80, Metals: 85 },
   ] : [
-    { name: "枯萎荒野", Lumber: 30, Brick: 85, Metals: 40 },
-    { name: "荒涼海灘", Lumber: 20, Brick: 75, Metals: 50 },
-    { name: "岩石山脊", Lumber: 10, Brick: 30, Metals: 95 },
-    { name: "閃耀空島", Lumber: 60, Brick: 40, Metals: 80 },
+    { name: "乾巴巴荒野", Lumber: 30, Brick: 85, Metals: 40 },
+    { name: "暗沉沉海邊", Lumber: 20, Brick: 75, Metals: 50 },
+    { name: "凸隆隆山地", Lumber: 10, Brick: 30, Metals: 95 },
+    { name: "閃閃浮島", Lumber: 60, Brick: 40, Metals: 80 },
     { name: "調色板鎮", Lumber: 90, Brick: 80, Metals: 85 },
   ];
 
@@ -58,7 +58,7 @@ function GuideDataChart({ en }: { en: boolean }) {
   };
 
   return (
-    <div className="mb-8 bg-bone border-y sm:border border-line-soft rounded-none sm:rounded-sm -mx-margin-mobile sm:mx-0 p-4 sm:p-6 tracking-wide select-none">
+    <div className="mb-8 bg-paper border hairline-border p-6 sm:p-8 tracking-wide select-none">
       <div 
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center justify-between cursor-pointer group"
@@ -68,13 +68,13 @@ function GuideDataChart({ en }: { en: boolean }) {
             <span className="material-symbols-outlined text-[20px]">bar_chart</span>
           </div>
           <div>
-            <h3 className="font-headline-sm text-base text-ink-soft m-0 group-hover:text-primary transition-colors flex items-center gap-2">
+            <h3 className="font-headline-sm text-base text-ink-soft m-0 group-hover:text-ink-main transition-colors flex items-center gap-2">
               {en ? "Eco-Metrics Database Analyzer" : "區域生態與物資產出智慧數據分析儀"}
-              <span className="font-mono-metadata text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-sm uppercase tracking-wider font-bold">
+              <span className="font-mono-metadata text-sm bg-primary/10 text-primary px-2 py-0.5 rounded-sm uppercase tracking-wider font-bold">
                 PRO TOOL
               </span>
             </h3>
-            <p className="font-mono-metadata text-ink-mute text-[11px] m-0 mt-0.5 leading-tight">
+            <p className="font-mono-metadata text-ink-mute text-xs m-0 mt-0.5 leading-tight">
               {en 
                 ? "Compare Pokémon encounter distribution and refinery resource efficiency across regions" 
                 : "跨區域對比普通/稀有/傳說遭遇分佈，與木材/磚塊/高階金屬三大資產的產出權重評分"}
@@ -83,7 +83,7 @@ function GuideDataChart({ en }: { en: boolean }) {
         </div>
         
         <div className="flex items-center gap-2 text-ink-mute pl-4">
-          <span className="font-mono-metadata text-[11px] uppercase tracking-widest hidden sm:inline-block">
+          <span className="font-mono-metadata text-xs uppercase tracking-widest hidden sm:inline-block">
             {isOpen 
               ? (en ? "COLLAPSE" : "收合統計圖表") 
               : (en ? "EXPAND" : "展開統計圖表")}
@@ -133,7 +133,7 @@ function GuideDataChart({ en }: { en: boolean }) {
             <p className="font-body-italic text-sm text-ink-mute mb-6 max-w-3xl leading-relaxed">
               {activeTab === "encounter"
                 ? (en 
-                    ? "Shows the probability of encounters in regular habitats. In Palette Town, the environment's micro-climate elevates rare migrations by up to 50% compared to starting regions."
+                    ? "Shows the probability of encounters in regular habitats. In Empty Town, the environment's micro-climate elevates rare migrations by up to 50% compared to starting regions."
                     : "資料反映常規棲地的原生出沒分佈。隨著環境修復與等級提高，終局「調色板鎮」的稀有與傳說個體移民比率可比初期荒地提高數倍。")
                 : (en
                     ? "Evaluates resource yield potentials on a 0-100 efficiency matrix. Perfect for optimizing colony placement of production trio specialists (Wooper/Timburr/Scyther)."
@@ -142,7 +142,7 @@ function GuideDataChart({ en }: { en: boolean }) {
             </p>
 
             {/* Recharts container */}
-            <div className="w-full h-[320px] bg-paper-warm/40 p-2 sm:p-4 rounded-sm border border-line-soft font-mono-metadata text-[11px]">
+            <div className="w-full h-[320px] bg-paper-warm/40 p-2 sm:p-4 rounded-sm border border-line-soft font-mono-metadata text-xs">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                   data={(activeTab === "encounter" ? encounterData : resourceData) as any[]}
@@ -187,7 +187,7 @@ function GuideDataChart({ en }: { en: boolean }) {
               </ResponsiveContainer>
             </div>
             
-            <div className="mt-4 flex justify-between items-center text-[10px] text-ink-faint font-mono-metadata uppercase">
+            <div className="mt-4 flex justify-between items-center text-xs text-ink-faint font-mono-metadata uppercase">
               <span>* Data Normalized to 100% Core Index</span>
               <span>Source: GameWith DB Analytics</span>
             </div>
@@ -207,29 +207,29 @@ function DocumentArchiveCard({ section, en, index }: { section: any; en: boolean
     <div className="mb-8">
       <div 
         onClick={() => setIsOpen(true)} 
-        className="cursor-pointer group relative bg-bone border border-line-soft p-5 rounded-sm ambient-shadow w-full max-w-[500px] mx-auto overflow-hidden transition-all hover:translate-y-[-2px] hover:border-primary/50 hover:shadow-md"
+        className="cursor-pointer group border hairline-border bg-paper p-6 w-full max-w-[500px] mx-auto overflow-hidden transition-colors hover:bg-bone"
       >
-        <div className="absolute top-2 right-2 font-mono-metadata text-[10px] text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">
+        <div className="absolute top-2 right-2 font-mono-metadata text-xs text-ink-mute bg-paper/80 px-2 py-0.5 rounded-sm backdrop-blur-sm z-10">
           DOC. {index + 1}
         </div>
         
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 rounded-full border-2 border-primary/30 text-primary flex items-center justify-center bg-paper-warm group-hover:bg-primary/5 transition-colors shrink-0">
+          <div className="w-12 h-12 rounded-full border-2 border-line text-ink-main flex items-center justify-center bg-bone group-hover:bg-line transition-colors transition-colors shrink-0">
             <span className="material-symbols-outlined text-[24px]">description</span>
           </div>
           <div>
-            <div className="font-mono-metadata text-[10px] text-primary mb-1 tracking-wider uppercase flex items-center gap-1">
-               <span className="material-symbols-outlined text-[12px] opacity-70">lock</span>
+            <div className="font-mono-metadata text-xs text-ink-soft mb-1 tracking-wider uppercase flex items-center gap-1">
+               <span className="material-symbols-outlined text-sm opacity-70">lock</span>
                CLASSIFIED ARCHIVE
             </div>
-            <h4 className="font-headline-sm text-[15px] text-ink-soft leading-snug m-0 group-hover:text-primary transition-colors">
+            <h4 className="font-headline-sm text-[15px] text-ink-soft leading-snug m-0 group-hover:text-ink-main transition-colors">
               {title}
             </h4>
           </div>
         </div>
 
-        <div className="mt-4 pt-3 border-t border-line-soft flex items-center justify-between text-ink-mute font-mono-metadata uppercase tracking-widest text-[10px]">
-           <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">touch_app</span> {en ? "Extract Dossier" : "點擊查閱附屬文檔"}</span>
+        <div className="mt-4 pt-3 border-t border-line-soft flex items-center justify-between text-ink-mute font-mono-metadata uppercase tracking-widest text-xs">
+           <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">touch_app</span> {en ? "Extract Dossier" : "點擊查閱附屬文檔"}</span>
            <span>Game Freak × Omega Force</span>
         </div>
       </div>
@@ -263,7 +263,7 @@ function DocumentArchiveCard({ section, en, index }: { section: any; en: boolean
                   <span className="material-symbols-outlined text-[24px]">verified</span>
                 </div>
                 <div className="pr-6">
-                  <div className="font-mono-metadata text-[10px] text-primary mb-1 tracking-wider uppercase">
+                  <div className="font-mono-metadata text-xs text-primary mb-1 tracking-wider uppercase">
                     CLASSIFIED ARCHIVE · {en ? "ACCESS GRANTED" : "權限解鎖"}
                   </div>
                   <h3 className="font-headline-sm text-[18px] text-ink leading-snug">{title}</h3>
@@ -275,8 +275,8 @@ function DocumentArchiveCard({ section, en, index }: { section: any; en: boolean
               </div>
               
               <div className="mt-8 pt-4 border-t border-line-soft flex justify-between items-center text-ink-mute">
-                <span className="font-mono-metadata text-[10px] uppercase">META REPORT // {section.id.toUpperCase()}</span>
-                <span className="font-mono-metadata text-[10px] uppercase">{new Date().toISOString().split('T')[0]}</span>
+                <span className="font-mono-metadata text-xs uppercase">META REPORT // {section.id.toUpperCase()}</span>
+                <span className="font-mono-metadata text-xs uppercase">{new Date().toISOString().split('T')[0]}</span>
               </div>
             </motion.div>
           </div>
@@ -340,8 +340,8 @@ function GuideNoteModal({
           >
             <div className="flex justify-between items-start mb-4 border-b border-line-soft pb-3">
               <div>
-                <div className="font-mono-metadata text-[10px] text-primary mb-1 uppercase tracking-wider flex items-center gap-1">
-                  <span className="material-symbols-outlined text-[13px]">edit_note</span>
+                <div className="font-mono-metadata text-xs text-ink-soft mb-1 uppercase tracking-wider flex items-center gap-1">
+                  <span className="material-symbols-outlined text-base">edit_note</span>
                   {en ? "Personal Notes" : "個人筆記"}
                 </div>
                 <h3 className="font-headline-sm text-[16px] text-ink m-0 leading-tight">
@@ -367,7 +367,7 @@ function GuideNoteModal({
             />
             
             <div className="mt-4 flex justify-between items-center">
-              <span className={`font-mono-metadata text-[11px] uppercase transition-opacity ${isSaved ? "text-[#5c6238] opacity-100" : "opacity-0"}`}>
+              <span className={`font-mono-metadata text-xs uppercase transition-opacity ${isSaved ? "text-[#5c6238] opacity-100" : "opacity-0"}`}>
                 <span className="flex items-center gap-1">
                    <span className="material-symbols-outlined text-[14px]">check_circle</span>
                    {en ? "Saved locally" : "已儲存至本機"}
@@ -375,7 +375,7 @@ function GuideNoteModal({
               </span>
               <button
                 onClick={handleSave}
-                className="bg-primary text-on-primary font-mono-metadata text-[11px] uppercase tracking-wider px-5 py-2 rounded-sm hover:-translate-y-0.5 active:translate-y-0 hover:brightness-110 transition-all cursor-pointer shadow-sm disabled:opacity-50"
+                className="bg-primary text-on-primary font-mono-metadata text-xs uppercase tracking-wider px-5 py-2 rounded-sm hover:-translate-y-0.5 active:translate-y-0 hover:brightness-110 transition-all cursor-pointer shadow-sm disabled:opacity-50"
               >
                 {en ? "Save Note" : "儲存筆記"}
               </button>
@@ -453,7 +453,7 @@ function GameShareInteractiveGuide({ en }: { en: boolean }) {
           <span className="material-symbols-outlined text-[16px]">sync</span>
           GameShare & GameChat Express Guide (極速連線特刊)
         </span>
-        <span className="text-[10px] uppercase bg-[#5c6238]/30 text-[#a5cca4] px-2 py-0.5 rounded-sm font-bold">NS2 PRO FEATURE</span>
+        <span className="text-xs uppercase bg-[#5c6238]/30 text-[#a5cca4] px-2 py-0.5 rounded-sm font-bold">NS2 PRO FEATURE</span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
@@ -461,7 +461,7 @@ function GameShareInteractiveGuide({ en }: { en: boolean }) {
           <span className="material-symbols-outlined text-[48px] text-[#a5cca4] mb-2">
             {steps[currentStep].icon}
           </span>
-          <div className="text-[10px] text-ink-mute uppercase tracking-widest">{en ? "Step Progress" : "程序進度"}</div>
+          <div className="text-xs text-ink-mute uppercase tracking-widest">{en ? "Step Progress" : "程序進度"}</div>
           <div className="text-sm font-bold text-[#a5cca4]">{currentStep + 1} / {steps.length}</div>
         </div>
 
@@ -509,7 +509,7 @@ function AutomationToolsInteractiveShowcase({ en }: { en: boolean }) {
   const [activeTool, setActiveTool] = useState<"camera" | "magnet">("camera");
 
   return (
-    <div className="bg-bone border-y sm:border border-line-soft rounded-none sm:rounded-sm -mx-margin-mobile sm:mx-0 p-4 sm:p-5 my-6 shadow-sm paper-texture">
+    <div className="bg-paper border hairline-border p-6 my-8">
       <div className="flex items-center gap-2 mb-4 pb-2 border-b border-line-soft">
         <span className="material-symbols-outlined text-primary text-[22px]">settings_suggest</span>
         <h4 className="font-headline-sm text-[15px] hover:text-primary transition-colors text-ink-soft m-0">
@@ -554,7 +554,7 @@ function AutomationToolsInteractiveShowcase({ en }: { en: boolean }) {
             className="space-y-3 font-body-base"
           >
             <div className="bg-paper-warm p-4 border border-line-soft rounded-sm">
-              <span className="font-mono-metadata text-[10px] text-primary uppercase block tracking-wider mb-1">
+              <span className="font-mono-metadata text-xs text-primary uppercase block tracking-wider mb-1">
                 SYSTEM MODULE DESCRIPTION // 營運效益分析
               </span>
               <p className="text-sm text-ink-main leading-relaxed m-0">
@@ -566,7 +566,7 @@ function AutomationToolsInteractiveShowcase({ en }: { en: boolean }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
               <div className="border border-line-soft p-3 rounded-sm bg-paper/60">
-                <span className="font-mono-metadata text-[10px] text-ink-mute uppercase block tracking-wider">
+                <span className="font-mono-metadata text-xs text-ink-mute uppercase block tracking-wider">
                   🛒 {en ? "Build Recipes" : "結構組裝配方"}
                 </span>
                 <ul className="text-xs mt-1.5 space-y-1 text-ink-soft">
@@ -576,7 +576,7 @@ function AutomationToolsInteractiveShowcase({ en }: { en: boolean }) {
                 </ul>
               </div>
               <div className="border border-line-soft p-3 rounded-sm bg-paper/60">
-                <span className="font-mono-metadata text-[10px] text-ink-mute uppercase block tracking-wider font-bold">
+                <span className="font-mono-metadata text-xs text-ink-mute uppercase block tracking-wider font-bold">
                   ⚠️ {en ? "Operation Tip" : "最佳操作指南"}
                 </span>
                 <p className="text-xs mt-1.5 text-ink-soft m-0 leading-relaxed">
@@ -597,7 +597,7 @@ function AutomationToolsInteractiveShowcase({ en }: { en: boolean }) {
             className="space-y-3 font-body-base"
           >
             <div className="bg-paper-warm p-4 border border-line-soft rounded-sm">
-              <span className="font-mono-metadata text-[10px] text-primary uppercase block tracking-wider mb-1">
+              <span className="font-mono-metadata text-xs text-primary uppercase block tracking-wider mb-1">
                 LATE-GAME ULTIMATE TECH // 終局顛覆級沙盒神技
               </span>
               <p className="text-sm text-ink-main leading-relaxed m-0">
@@ -661,7 +661,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
       ],
       chainZh: "海灘農田 ➔ 採摘豆子與番茄；解鎖山脊區域 ➔ 開墾小麥田 ➔ 採獲小麥",
       chainEn: "Beach Farm ➔ Harvest Beans & Tomatoes; Ridges Region ➔ Cultivate Wheat Field ➔ Crop Wheat",
-      strategyZh: "考驗基礎農耕。豆子與番茄可在氣候溫潤的荒涼海灘直接採集或建立農田收成；小麥則需要玩家開拓至中部岩石山脊，並使用土木整地工具，建立人工麥田以獲得金黃小麥。",
+      strategyZh: "考驗基礎農耕。豆子與番茄可在氣候溫潤的暗沉沉海邊直接採集或建立農田收成；小麥則需要玩家開拓至中部凸隆隆山地，並使用土木整地工具，建立人工麥田以獲得金黃小麥。",
       strategyEn: "Agriculture trial. Gather beachside wild crops or establish early garden patches. Wheat requires crossing to mountain terrain and planting seeds in tillable soil."
     },
     {
@@ -689,7 +689,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
       ],
       chainZh: "荒原泥流 + 降雨 ➔ 軟泥 ➔ 火稚雞高溫窯製 ➔ 磚塊；山脊地下金礦脈 ➔ 冶煉爐 ➔ 金錠；空島隆隆岩採石灰岩 ➔ 修建老匠 + 攪拌機 ➔ 混凝土",
       chainEn: "Wasteland Muddy Rain ➔ Clay ➔ Torchic Oven ➔ Bricks; Volcanic Gold Ore ➔ Forge Furnace ➔ Gold Ingots; Limestones ➔ Concrete Mixer ➔ Concrete",
-      strategyZh: "沉重的工業測試！泥巴（必須在雨天於枯萎荒野挖掘泥漿）送入窯爐，交給火稚雞或小火龍烤成紅磚；金錠從山脊的火山腹地開採並熔煉；混凝土則是去空島用隆隆岩粉碎石灰岩，配合修建老匠在攪拌機中注入清水提煉。",
+      strategyZh: "沉重的工業測試！泥巴（必須在雨天於乾巴巴荒野挖掘泥漿）送入窯爐，交給火稚雞或小火龍烤成紅磚；金錠從山脊的火山腹地開採並熔煉；混凝土則是去空島用隆隆岩粉碎石灰岩，配合修建老匠在攪拌機中注入清水提煉。",
       strategyEn: "Heavy industry phase. Dig clay in rain to bake red bricks; smelt gold in mountain blast furnace; use Conkeldurr at concrete mixer on limestone chunks."
     },
     {
@@ -730,8 +730,8 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
         { id: "gameboy", nameZh: "Game Boy x 1 (空島5級餽贈)", nameEn: "Game Boy x 1" }
       ],
       chainZh: "前期三大區域修復 ➔ 綜合環境等級達 5 級 ➔ 系統解鎖洗衣機與冰箱設計圖；空島環境評分達滿分 5 級 ➔ 巨鍛匠贈送 Game Boy 設計圖",
-      chainEn: "Three Starting Areas ➔ Max Level 5 ➔ Unlock Washer/Fridge Recipes; Max Sparkling Skylands to 5 ➔ Secure Retro Game Boy Scheme",
-      strategyZh: "極限科技樹的突破。這不再是單純收集設計圖，高科技生活家電需要玩家擁有強大的生態治理成就。你必須使前三個區域達到完美的環境評級 5，才能在電腦解鎖冰箱與洗衣機；而掌上型主機 Game Boy 則是閃耀空島升至滿分的專屬謝禮！",
+      chainEn: "Three Starting Areas ➔ Max Level 5 ➔ Unlock Washer/Fridge Recipes; Max Sparkling Floating Island to 5 ➔ Secure Retro Game Boy Scheme",
+      strategyZh: "極限科技樹的突破。這不再是單純收集設計圖，高科技生活家電需要玩家擁有強大的生態治理成就。你必須使前三個區域達到完美的環境評級 5，才能在電腦解鎖冰箱與洗衣機；而掌上型主機 Game Boy 則是閃閃浮島升至滿分的專屬謝禮！",
       strategyEn: "Technological pinnacle. Your overall ecological footprint must hit level 5 in three locations to unlock household designs. Game Boy schematics requires Skylands max rating."
     },
     {
@@ -760,11 +760,11 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
   const overallProgress = Math.round((totalChecked / totalCheckboxes) * 100);
 
   return (
-    <div className="bg-bone border-y sm:border border-line-soft rounded-none sm:rounded-lg -mx-margin-mobile sm:mx-0 p-4 sm:p-6 mb-8 paper-texture shadow-sm select-none">
+    <div className="bg-paper border hairline-border p-6 sm:p-8 mb-8 select-none">
       {/* Header with Title and Global Progress */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-line-soft mb-6">
         <div>
-          <span className="font-mono text-[10px] text-primary uppercase tracking-widest block mb-1">
+          <span className="font-mono text-xs text-primary uppercase tracking-widest block mb-1">
             MATERIAL TRACKER // 團隊入會物資追蹤器
           </span>
           <h3 className="font-headline-sm text-base text-ink-soft m-0 flex items-center gap-2">
@@ -775,7 +775,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
         <div className="w-full sm:w-auto text-right">
           <div className="font-mono text-xs text-ink-mute mb-1 flex items-center sm:justify-end gap-1.5 matches-desktop">
             <span>{en ? "Overall Progress:" : "挑戰總進度:"}</span>
-            <span className="text-primary font-bold">{totalChecked} / {totalCheckboxes}</span>
+            <span className="text-ink-main font-bold">{totalChecked} / {totalCheckboxes}</span>
           </div>
           <div className="w-full sm:w-36 bg-paper border border-line-soft h-2 rounded-full overflow-hidden p-0.5">
             <div 
@@ -795,7 +795,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
             <button
               key={idx}
               onClick={() => setActiveStage(idx)}
-              className={`flex-shrink-0 flex items-center gap-1 px-2.5 py-1.5 rounded-sm border font-mono text-[10px] uppercase tracking-wider transition-all cursor-pointer ${
+              className={`flex-shrink-0 flex items-center gap-1 px-2.5 py-1.5 rounded-sm border font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
                 isSelected
                   ? "bg-primary text-on-primary border-primary shadow-sm font-bold"
                   : isDone
@@ -805,7 +805,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
             >
               <span>{st.num}</span>
               <span className="max-w-[70px] sm:max-w-none truncate">{en ? st.nameEn : st.nameZh}</span>
-              {isDone && <span className="material-symbols-outlined text-[12px] font-bold">check_circle</span>}
+              {isDone && <span className="material-symbols-outlined text-sm font-bold">check_circle</span>}
             </button>
           );
         })}
@@ -819,7 +819,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
               <span className="font-mono text-xs text-primary font-bold">
                 STAGE {currStage.num}: {en ? currStage.nameEn : currStage.nameZh}
               </span>
-              <span className="font-mono text-[10px] text-ink-mute">
+              <span className="font-mono text-xs text-ink-mute">
                 {en ? "Checked" : "已募集"}: {checkedItems}/{totalItems}
               </span>
             </div>
@@ -852,7 +852,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
             </div>
 
             <div className="pt-3 border-t border-line-soft">
-              <span className="font-mono text-[10px] text-ink-mute uppercase block tracking-wider mb-1">
+              <span className="font-mono text-xs text-ink-mute uppercase block tracking-wider mb-1">
                 {en ? "Unlock Strategy" : "核心拓荒與獲取攻略 / STRATEGY"}
               </span>
               <p className="text-xs text-ink-soft leading-relaxed m-0">
@@ -867,13 +867,13 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
           <div className="bg-[#1f201c] text-[#f1f2ec] border border-[#2e302b] p-4 rounded-sm h-full flex flex-col justify-between">
             <div>
               <div className="pb-2 border-b border-[#2e302b] mb-3">
-                <span className="font-mono text-[10px] text-[#a5cca4] uppercase tracking-wider flex items-center gap-1.5 font-bold">
+                <span className="font-mono text-xs text-[#a5cca4] uppercase tracking-wider flex items-center gap-1.5 font-bold">
                   <span className="material-symbols-outlined text-[14px]">hub</span>
                   {en ? "Refinement Industrial Chain" : "核心工業精煉鏈 / Craft Flow"}
                 </span>
               </div>
 
-              <div className="my-2 space-y-3 font-mono text-[11px] text-[#cfd2c8]">
+              <div className="my-2 space-y-3 font-mono text-xs text-[#cfd2c8]">
                 {en ? (
                   <div className="flex flex-col gap-2">
                     <p className="m-0 leading-relaxed text-xs">
@@ -893,7 +893,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
               </div>
             </div>
 
-            <div className="mt-4 pt-2 border-t border-[#2e302b] text-center text-[10px] text-ink-mute">
+            <div className="mt-4 pt-2 border-t border-[#2e302b] text-center text-xs text-ink-mute">
               {en ? "Game Freak × Omega Force Mechanics" : "由巨蔓藤博士研究所專業提供"}
             </div>
           </div>
@@ -912,6 +912,7 @@ export default function Guide() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeNoteSection, setActiveNoteSection] = useState<{id: string, titleEn: string, titleZh: string} | null>(null);
+  const [isZenMode, setIsZenMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1042,61 +1043,81 @@ export default function Guide() {
         ))}
       </nav>
 
-      <div className="border-b border-line pb-lg mb-lg">
-        <div className="font-mono-metadata text-mono-metadata text-ink-mute uppercase mb-4 tracking-widest">
-          Volume {guide.vol}. / {en ? guide.categoryEn : guide.categoryZh}
-        </div>
-        <h1 className="font-display-lg text-display-lg text-ink-soft mb-sm leading-tight max-w-4xl">
-          {en ? guide.titleEn : guide.titleZh}
-        </h1>
-        <p className="font-body-italic text-body-italic text-ink-mute max-w-2xl">
-          {en ? guide.subtitleEn : guide.subtitleZh}
-        </p>
-
-        {totalSteps > 0 && (
-          <div className="mt-6 p-4 bg-bone border border-line-soft rounded-sm ambient-shadow max-w-2xl select-none">
-            <div className="flex justify-between items-center mb-1.5 font-mono-metadata text-xs">
-              <span className="text-ink-mute flex items-center gap-1.5 font-bold">
-                <span className="material-symbols-outlined text-[16px] text-primary">task_alt</span>
-                {en ? "TASK COMPLETION RATE" : "任務復育達成度"}
-              </span>
-              <span className="text-primary font-bold">
-                {completedStepsInGuide} / {totalSteps} ({Math.round((completedStepsInGuide / totalSteps) * 100)}%)
-              </span>
-            </div>
-            <div className="w-full bg-paper border border-line-soft h-3 rounded-full overflow-hidden p-0.5">
-              <div 
-                className="bg-primary h-full rounded-full transition-all duration-500 ease-out"
-                style={{ width: `${(completedStepsInGuide / totalSteps) * 100}%` }}
-              />
-            </div>
+      <div className="border-b border-line pb-lg mb-lg flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <div>
+          <div className="font-mono-metadata text-mono-metadata text-ink-mute uppercase mb-4 tracking-widest">
+            Volume {guide.vol}. / {en ? guide.categoryEn : guide.categoryZh}
           </div>
-        )}
+          <h1 className="font-display-lg text-display-lg text-ink-soft mb-sm leading-tight max-w-4xl">
+            {en ? guide.titleEn : guide.titleZh}
+          </h1>
+          <p className="font-body-italic text-body-italic text-ink-mute max-w-2xl">
+            {en ? guide.subtitleEn : guide.subtitleZh}
+          </p>
+
+          {totalSteps > 0 && (
+            <div className="mt-6 p-4 bg-paper border hairline-border select-none">
+              <div className="flex justify-between items-center mb-1.5 font-mono-metadata text-xs">
+                <span className="text-ink-mute flex items-center gap-1.5 font-bold">
+                  <span className="material-symbols-outlined text-[16px] text-primary">task_alt</span>
+                  {en ? "TASK COMPLETION RATE" : "任務復育達成度"}
+                </span>
+                <span className="text-primary font-bold">
+                  {completedStepsInGuide} / {totalSteps} ({Math.round((completedStepsInGuide / totalSteps) * 100)}%)
+                </span>
+              </div>
+              <div className="w-full bg-paper border border-line-soft h-3 rounded-full overflow-hidden p-0.5">
+                <div 
+                  className="bg-primary h-full rounded-full transition-all duration-500 ease-out"
+                  style={{ width: `${(completedStepsInGuide / totalSteps) * 100}%` }}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+        
+        {/* Zen Mode Toggle */}
+        <button
+          onClick={() => setIsZenMode(!isZenMode)}
+          className={`shrink-0 flex items-center justify-center gap-2 border hairline-border px-4 py-3 font-mono-metadata text-xs uppercase tracking-widest transition-colors ${
+            isZenMode ? "bg-bone text-ink-main border-ink-main" : "bg-paper text-ink-mute hover:text-ink-main hover:bg-bone"
+          }`}
+          title={en ? "Toggle Zen Reading Mode" : "切換沉浸閱讀模式"}
+        >
+          <span className="material-symbols-outlined text-[18px]">
+            {isZenMode ? "fullscreen_exit" : "fullscreen"}
+          </span>
+          {isZenMode ? (en ? "Exit Zen Mode" : "退出沉浸模式") : (en ? "Zen Reading Mode" : "沉浸閱讀模式")}
+        </button>
       </div>
 
       <GuideDataChart en={en} />
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        {/* Table of Contents */}
-        <aside className="hidden md:block md:col-span-3">
-          <div className="sticky top-[120px]">
-            <div className="font-label-caps text-label-caps text-ink-soft mb-6 border-b border-line-soft pb-2">
-              {t("guide.contents")}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter relative">
+        {/* Table of Contents - Quick Links Floating Sidebar */}
+        {!isZenMode && (
+          <aside className="hidden lg:block lg:col-span-3">
+            <div className="sticky top-[120px] bg-paper border hairline-border p-6 shadow-sm">
+              <div className="font-mono-metadata text-xs text-ink-soft mb-6 uppercase tracking-widest border-b hairline-bottom pb-4 flex items-center gap-2">
+                <span className="material-symbols-outlined text-[18px] text-primary">bookmark</span>
+                {en ? "Quick Links" : "快速連結導航"}
+              </div>
+              <ul className="space-y-4">
+                {guide.sections.map((sec: any) => (
+                  <li key={sec.id}>
+                    <a href={`#${sec.id}`} className="font-mono-metadata text-xs text-ink-mute hover:text-ink-main transition-colors flex items-start gap-2">
+                      <span className="text-primary font-bold shrink-0">{sec.roman}</span> 
+                      <span className="leading-snug">{en ? sec.titleEn : sec.titleZh}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="space-y-4">
-              {guide.sections.map((sec: any) => (
-                <li key={sec.id}>
-                  <a href={`#${sec.id}`} className="font-mono-metadata text-mono-metadata text-ink-mute hover:text-primary transition-colors">
-                    {sec.roman} {en ? sec.titleEn : sec.titleZh}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </aside>
+          </aside>
+        )}
 
         {/* Content */}
-        <article className="md:col-span-9 font-body-base text-body-base text-ink-soft leading-relaxed max-w-prose">
+        <article className={`${isZenMode ? "md:col-span-12" : "lg:col-span-9"} font-body-base text-body-base text-ink-soft leading-relaxed transition-all duration-500`}>
           {guide.id === "team-initiation-challenge" && (
             <TeamInitiationChecklistPanel en={en} />
           )}
@@ -1125,14 +1146,14 @@ export default function Guide() {
                   title={en ? "Add Personal Note" : "新增個人筆記"}
                 >
                   <span className="material-symbols-outlined text-[18px] group-hover:scale-105 transition-transform">edit_note</span>
-                  <span className="font-mono-metadata text-[10px] uppercase tracking-widest hidden md:inline-block">
+                  <span className="font-mono-metadata text-xs uppercase tracking-widest hidden md:inline-block">
                     {en ? "Notes" : "筆記"}
                   </span>
                 </button>
               </div>
               {sec.link && (
                 <div className="mb-6 -mt-2">
-                  <a href={sec.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-[11px] text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
+                  <a href={sec.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-xs text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
                     <span className="material-symbols-outlined text-[14px]">open_in_new</span>
                     {en ? "External Resource" : "前往外部網站"}
                   </a>
@@ -1173,7 +1194,7 @@ export default function Guide() {
                           }`}
                           title={isStepDone ? (en ? "Mark Incomplete" : "標記為未完成") : (en ? "Mark Completed" : "標記為完成")}
                         >
-                          <span className="material-symbols-outlined text-[13px] font-bold">
+                          <span className="material-symbols-outlined text-base font-bold">
                             {isStepDone ? "check" : (step.icon || "done")}
                           </span>
                         </button>
@@ -1195,7 +1216,7 @@ export default function Guide() {
                                   {isStepDone ? "check_box" : "check_box_outline_blank"}
                                 </span>
                               </button>
-                              <span className="font-mono-metadata text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-sm font-bold tracking-wider">
+                              <span className="font-mono-metadata text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-sm font-bold tracking-wider">
                                 STEP {sIdx + 1}
                               </span>
                               <span className={isStepDone ? "line-through text-ink-mute/70" : ""}>
@@ -1203,7 +1224,7 @@ export default function Guide() {
                               </span>
                             </h4>
                             {step.badgeZh && (
-                              <span className="font-mono-metadata text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm bg-primary/15 text-primary border border-primary/30">
+                              <span className="font-mono-metadata text-xs uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm bg-primary/15 text-primary border border-primary/30">
                                 {en ? (step.badgeEn || step.badgeZh) : step.badgeZh}
                               </span>
                             )}
@@ -1215,7 +1236,7 @@ export default function Guide() {
                           </p>
                           {step.link && (
                             <div className="mt-4 pt-3 border-t border-line-soft">
-                              <a href={step.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-[11px] text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
+                              <a href={step.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono-metadata text-xs text-primary hover:text-primary/80 transition-colors uppercase tracking-wider bg-primary/5 px-3 py-1.5 rounded-sm border border-primary/20">
                                 <span className="material-symbols-outlined text-[14px]">open_in_new</span>
                                 {en ? "External Resource" : "前往外部網站"}
                               </a>
@@ -1254,8 +1275,8 @@ export default function Guide() {
                        PokeAPI
                     </a>
                  </p>
-                 <p className="font-mono-metadata text-mono-metadata text-ink-faint text-[11px] leading-tight flex items-start gap-1 mt-1">
-                    <span className="material-symbols-outlined text-[12px] mt-[1px]">copyright</span>
+                 <p className="font-mono-metadata text-mono-metadata text-ink-faint text-xs leading-tight flex items-start gap-1 mt-1">
+                    <span className="material-symbols-outlined text-sm mt-[1px]">copyright</span>
                     <span>{en ? "Nintendo, Game Freak, and The Pokémon Company." : "版權歸屬任天堂、Game Freak 及 The Pokémon Company。本站僅作攻略資訊整合。"}</span>
                  </p>
               </div>
@@ -1281,7 +1302,7 @@ export default function Guide() {
               <button
                 key={item.id}
                 onClick={() => openGuide(item.id)}
-                className="group bg-bone hairline-border p-sm rounded-sm ambient-shadow flex flex-col h-full text-left hover:-translate-y-[2px] transition-transform"
+                className="group border hairline-border bg-paper p-6 flex flex-col h-full text-left hover:bg-bone transition-colors"
               >
                 <div className="flex justify-between items-start mb-6 border-b border-line-soft pb-2">
                   <span className="font-mono-metadata text-mono-metadata text-primary">Vol. {item.vol}</span>
@@ -1306,7 +1327,7 @@ export default function Guide() {
             : "本攻略所彙編之戰術指南、建構藍圖與棲息地細節等資料，皆參考自以下強大的資料庫與社群站點："}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
-          <a href="https://pokopia.gamertw.com/zh-TW/guide/beginner" target="_blank" rel="noreferrer" className="block bg-bone border border-line-soft p-sm rounded-sm ambient-shadow paper-texture hover:-translate-y-1 transition-transform group">
+          <a href="https://pokopia.gamertw.com/zh-TW/guide/beginner" target="_blank" rel="noreferrer" className="block bg-paper border hairline-border p-6 hover:bg-bone transition-colors group">
             <h4 className="font-label-caps text-label-caps text-ink-soft group-hover:text-primary transition-colors mb-1">GamerTW</h4>
             <p className="font-mono-metadata text-mono-metadata text-ink-mute">Pokemon Pokopia 新手指南</p>
           </a>
@@ -1431,16 +1452,16 @@ export default function Guide() {
               {/* Outer paper border container */}
               <div className="bg-[#FAF6EC] border-2 border-[#D2C5A9] rounded-sm p-4 relative shadow-[0_12px_40px_-8px_rgba(21,20,15,0.3)] paper-texture">
                 {/* 4 Corner classical star decorations */}
-                <span className="absolute top-1 left-1 font-mono text-[9px] text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
-                <span className="absolute top-1 right-1 font-mono text-[9px] text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
-                <span className="absolute bottom-1 left-1 font-mono text-[9px] text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
-                <span className="absolute bottom-1 right-1 font-mono text-[9px] text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
+                <span className="absolute top-1 left-1 font-mono text-xs text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
+                <span className="absolute top-1 right-1 font-mono text-xs text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
+                <span className="absolute bottom-1 left-1 font-mono text-xs text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
+                <span className="absolute bottom-1 right-1 font-mono text-xs text-[#A53A2C]/45 leading-none pointer-events-none select-none">✦</span>
 
                 {/* Header title */}
                 <div className="border-b-2 border-double border-[#D2C5A9] pb-2 mb-3 flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
                     <span className="material-symbols-outlined text-[16px] text-primary">auto_stories</span>
-                    <span className="font-body-italic text-[13px] font-bold tracking-wide text-ink-soft italic uppercase">
+                    <span className="font-body-italic text-base font-bold tracking-wide text-ink-soft italic uppercase">
                       {en ? "Classified Archives" : "機密學術年鑑"}
                     </span>
                   </div>
@@ -1458,7 +1479,7 @@ export default function Guide() {
                   
                   {/* Category 1: Chronological Volume Selection */}
                   <div>
-                    <h4 className="font-mono-metadata text-[10px] text-primary/70 uppercase tracking-widest font-bold mb-2 flex items-center gap-1">
+                    <h4 className="font-mono-metadata text-xs text-primary/70 uppercase tracking-widest font-bold mb-2 flex items-center gap-1">
                       <span>■</span>
                       <span>{en ? "Volume Index" : "編年卷軸目錄"}</span>
                     </h4>
@@ -1472,7 +1493,7 @@ export default function Guide() {
                               openGuide(g.id);
                               setIsMenuOpen(false);
                             }}
-                            className={`text-left w-full font-mono-metadata text-[11px] px-2 py-1.5 rounded-sm flex items-start gap-1 transition-colors cursor-pointer ${
+                            className={`text-left w-full font-mono-metadata text-xs px-2 py-1.5 rounded-sm flex items-start gap-1 transition-colors cursor-pointer ${
                               isCurrent
                                 ? "bg-primary text-on-primary font-bold shadow-xs border border-primary"
                                 : "text-ink-soft hover:bg-primary/5 active:bg-primary/10 border border-transparent"
@@ -1493,7 +1514,7 @@ export default function Guide() {
 
                   {/* Category 2: Section Table of Contents of active volume */}
                   <div>
-                    <h4 className="font-mono-metadata text-[10px] text-primary/70 uppercase tracking-widest font-bold mb-2 flex items-center gap-1">
+                    <h4 className="font-mono-metadata text-xs text-primary/70 uppercase tracking-widest font-bold mb-2 flex items-center gap-1">
                       <span>■</span>
                       <span>{en ? "Dossier Contents" : "本卷專題精選"}</span>
                     </h4>
@@ -1504,9 +1525,9 @@ export default function Guide() {
                           key={sec.id}
                           href={`#${sec.id}`}
                           onClick={() => setIsMenuOpen(false)}
-                          className="font-body-base text-[11px] text-ink-mute hover:text-primary active:text-primary hover:bg-primary/5 transition-colors duration-200 py-1 px-1.5 rounded-sm leading-snug flex items-start gap-1 cursor-pointer border-b border-line-soft/40 last:border-0"
+                          className="font-body-base text-xs text-ink-mute hover:text-ink-main active:text-ink-main hover:bg-bone transition-colors duration-200 py-1 px-1.5 rounded-sm leading-snug flex items-start gap-1 cursor-pointer border-b border-line-soft/40 last:border-0"
                         >
-                          <span className="text-primary font-mono-metadata text-[10px] scale-90 translate-y-[1px] font-bold shrink-0">{sec.roman}</span>
+                          <span className="text-primary font-mono-metadata text-xs scale-90 translate-y-[1px] font-bold shrink-0">{sec.roman}</span>
                           <span className="truncate">{en ? sec.titleEn : sec.titleZh}</span>
                         </a>
                       ))}

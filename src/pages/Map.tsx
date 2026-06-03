@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
 import Seo from "../components/Seo";
 import MapBackdrop from "../components/MapBackdrop";
 import ScrollFade from "../components/ScrollFade";
+import { useFavorites } from "../hooks/useFavorites";
 
 type SourceLink = {
   label: string;
@@ -16,6 +17,8 @@ type LocationEntry = {
   y: number;
   icon: string;
   type: "region" | "special";
+  regionId: string;
+  kind: Kind;
   levelEn: string;
   levelZh: string;
   categoryEn: string;
@@ -42,10 +45,31 @@ type LocationEntry = {
   sourceLinks: SourceLink[];
 };
 
+type Kind = "region" | "special-site" | "megaproject" | "legendary-project" | "event";
+
+type Region = {
+  id: string;
+  nameEn: string;
+  nameZh: string;
+  icon: string;
+  color: string;
+};
+
+type Collectible = {
+  key: string;
+  labelEn: string;
+  labelZh: string;
+  icon: string;
+  count: number;
+  color: string;
+};
+
 type MapData = {
   mapId: string;
   statusTickerEn: string;
   statusTickerZh: string;
+  regions: Region[];
+  collectibles: Collectible[];
   locations: LocationEntry[];
 };
 
@@ -70,12 +94,38 @@ const POKEMON_ROSTER_POOL = [
   { id: "p18", nameEn: "Ivysaur", nameZh: "妙蛙草", specialties: ["build"], icon: "nature", descEn: "Organic binder and soil anchoring.", descZh: "有機纖維黏合，為地盤提供強大的土木錨定點。" }
 ];
 
+const KIND_META: Record<Kind, { en: string; zh: string; icon: string }> = {
+  "region": { en: "Region", zh: "生態區域", icon: "public" },
+  "special-site": { en: "Special Site", zh: "特殊據點", icon: "star" },
+  "megaproject": { en: "Megaproject", zh: "大型工程", icon: "domain" },
+  "legendary-project": { en: "Legendary Project", zh: "傳說工程", icon: "foundation" },
+  "event": { en: "Event", zh: "隨機事件", icon: "shuffle" },
+};
+const KIND_ORDER: Kind[] = ["region", "special-site", "megaproject", "legendary-project", "event"];
+
 export default function MapPage() {
   const { i18n } = useTranslation();
   const [data, setData] = useState<MapData | null>(null);
   const [hoveredTarget, setHoveredTarget] = useState<string | null>(null);
   const [active, setActive] = useState<LocationEntry | null>(null);
   const [showIndex, setShowIndex] = useState(false);
+
+  const [regionFilter, setRegionFilter] = useState<Set<string>>(new Set());
+  const [kindFilter, setKindFilter] = useState<Set<string>>(new Set());
+  const [hideVisited, setHideVisited] = useState(false);
+  const { favorites: visited, toggleFavorite: toggleVisited } = useFavorites("pokopia-map-visited");
+
+  const toggleFilter = (
+    setter: React.Dispatch<React.SetStateAction<Set<string>>>,
+    value: string
+  ) => {
+    setter((prev) => {
+      const next = new Set(prev);
+      if (next.has(value)) next.delete(value);
+      else next.add(value);
+      return next;
+    });
+  };
 
   // New States for "Rebuild the Huge Building"
   const [hugeBuildingFloor, setHugeBuildingFloor] = useState<"2F" | "3F" | "4F">("2F");
@@ -147,7 +197,7 @@ export default function MapPage() {
         title={seoTitle}
         description={seoDescription}
         lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Palette Town"]}
+        keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Empty Town"]}
       />
     );
   }
@@ -155,13 +205,24 @@ export default function MapPage() {
   const locations = data.locations ?? [];
   const entryCount = String(locations.length).padStart(2, "0");
 
+  const regions = data.regions ?? [];
+  const collectibles = data.collectibles ?? [];
+  const collectiblesTotal = collectibles.reduce((sum, c) => sum + c.count, 0);
+  const visibleLocations = locations.filter((loc) => {
+    const regionOk = regionFilter.size === 0 || regionFilter.has(loc.regionId);
+    const kindOk = kindFilter.size === 0 || kindFilter.has(loc.kind);
+    const visitedOk = !hideVisited || !visited.has(loc.id);
+    return regionOk && kindOk && visitedOk;
+  });
+  const filtersActive = regionFilter.size > 0 || kindFilter.size > 0 || hideVisited;
+
   return (
     <>
       <Seo
         title={seoTitle}
         description={seoDescription}
         lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Palette Town", "Legendary birds"]}
+        keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Empty Town", "Legendary birds"]}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
@@ -193,9 +254,96 @@ export default function MapPage() {
           </div>
         </header>
 
+        <section className="col-span-1 md:col-span-12 mb-md">
+          <div className="border hairline-border bg-paper-warm/40 p-4 flex flex-col gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6">
+              <div className="flex flex-col gap-1.5 min-w-0">
+                <span className="font-mono-metadata text-mono-metadata text-ink-mute uppercase tracking-widest">
+                  {en ? "Region" : "區域"}
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {regions.map((r) => {
+                    const on = regionFilter.has(r.id);
+                    return (
+                      <button
+                        key={r.id}
+                        onClick={() => toggleFilter(setRegionFilter, r.id)}
+                        className={`flex items-center gap-1 px-2.5 py-1 rounded-sm border font-mono-metadata text-mono-metadata transition-colors min-h-[32px] ${
+                          on
+                            ? "border-primary bg-primary/10 text-primary"
+                            : "border-line-soft text-ink-soft hover:bg-bone"
+                        }`}
+                      >
+                        <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: r.color }}></span>
+                        {en ? r.nameEn : r.nameZh}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="flex flex-col gap-1.5 min-w-0">
+                <span className="font-mono-metadata text-mono-metadata text-ink-mute uppercase tracking-widest">
+                  {en ? "Type" : "類型"}
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {KIND_ORDER.map((k) => {
+                    const on = kindFilter.has(k);
+                    return (
+                      <button
+                        key={k}
+                        onClick={() => toggleFilter(setKindFilter, k)}
+                        className={`flex items-center gap-1 px-2.5 py-1 rounded-sm border font-mono-metadata text-mono-metadata transition-colors min-h-[32px] ${
+                          on
+                            ? "border-primary bg-primary/10 text-primary"
+                            : "border-line-soft text-ink-soft hover:bg-bone"
+                        }`}
+                      >
+                        <span className="material-symbols-outlined text-[14px]">{KIND_META[k].icon}</span>
+                        {en ? KIND_META[k].en : KIND_META[k].zh}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line-soft pt-3">
+              <label className="flex items-center gap-2 cursor-pointer select-none min-h-[32px]">
+                <input
+                  type="checkbox"
+                  checked={hideVisited}
+                  onChange={(e) => setHideVisited(e.target.checked)}
+                  className="accent-primary w-4 h-4"
+                />
+                <span className="font-mono-metadata text-mono-metadata text-ink-soft uppercase tracking-wider">
+                  {en ? "Hide visited" : "隱藏已造訪"}
+                </span>
+              </label>
+              <div className="flex items-center gap-3 font-mono-metadata text-mono-metadata text-ink-mute">
+                <span>
+                  {en
+                    ? `${visibleLocations.length}/${locations.length} shown · ${visited.size} visited`
+                    : `顯示 ${visibleLocations.length}/${locations.length} · 已造訪 ${visited.size}`}
+                </span>
+                {filtersActive && (
+                  <button
+                    onClick={() => {
+                      setRegionFilter(new Set());
+                      setKindFilter(new Set());
+                      setHideVisited(false);
+                    }}
+                    className="text-primary hover:opacity-80 uppercase tracking-wider"
+                  >
+                    {en ? "Reset" : "重設"}
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="col-span-1 md:col-span-7 flex flex-col space-y-md relative h-full">
           <div
-            className="bg-bone hairline-border relative overflow-hidden group min-h-[340px] md:min-h-[560px] flex flex-col"
+            className="border hairline-border bg-paper relative overflow-hidden group min-h-[340px] md:min-h-[560px] flex flex-col"
             style={{
               backgroundImage:
                 "radial-gradient(circle at 18% 24%, rgba(165, 58, 44, 0.12), transparent 24%), radial-gradient(circle at 78% 70%, rgba(188, 142, 68, 0.15), transparent 22%), radial-gradient(circle at 54% 12%, rgba(76, 120, 90, 0.12), transparent 20%), linear-gradient(to right, var(--color-line-soft) 1px, transparent 1px), linear-gradient(to bottom, var(--color-line-soft) 1px, transparent 1px)",
@@ -209,7 +357,7 @@ export default function MapPage() {
             <div className="relative flex-grow overflow-hidden">
               <MapBackdrop />
 
-              {locations.map((loc) => (
+              {visibleLocations.map((loc) => (
                 <button
                   key={loc.id}
                   onMouseEnter={() => setHoveredTarget(loc.id)}
@@ -230,6 +378,11 @@ export default function MapPage() {
                   >
                     {loc.type === "region" && <div className="absolute -inset-1 rounded-full bg-primary/20 animate-ping"></div>}
                     <span className="material-symbols-outlined text-[20px] relative z-10">{loc.icon}</span>
+                    {visited.has(loc.id) && (
+                      <span className="absolute -top-1 -right-1 bg-[#3d5a45] text-white rounded-full w-4 h-4 flex items-center justify-center material-symbols-outlined text-[11px] z-20">
+                        check
+                      </span>
+                    )}
                   </div>
                   <span
                     className={`font-mono-metadata text-mono-metadata text-ink-soft bg-bone/85 px-2 py-1 mt-1 rounded-sm transition-opacity whitespace-nowrap pointer-events-none ${
@@ -242,7 +395,7 @@ export default function MapPage() {
               ))}
             </div>
 
-            <div className="bg-bone hairline-top p-sm flex justify-between items-center z-10 relative flex-wrap gap-3">
+            <div className="border-t hairline-top p-6 flex justify-between items-center z-10 relative flex-wrap gap-4 bg-surface/80 backdrop-blur-sm">
               <div className="flex flex-wrap gap-4 font-mono-metadata text-mono-metadata text-ink-mute uppercase">
                 <span className="flex items-center">
                   <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
@@ -275,6 +428,39 @@ export default function MapPage() {
               </div>
             </div>
           </div>
+
+          <div className="border hairline-border bg-paper p-4">
+            <div className="flex items-center justify-between hairline-bottom pb-2 mb-3">
+              <h3 className="font-label-caps text-label-caps text-ink-soft uppercase tracking-wider flex items-center gap-2 font-semibold">
+                <span className="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+                {en ? "Collectibles Index" : "收集物標註索引"}
+              </h3>
+              <span className="font-mono-metadata text-mono-metadata text-primary">
+                {collectiblesTotal} {en ? "marked" : "處標註"}
+              </span>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
+              {collectibles.map((c) => (
+                <div
+                  key={c.key}
+                  className="flex items-center gap-2 bg-paper-warm/40 border border-line-soft rounded-sm px-2.5 py-1.5"
+                >
+                  <span
+                    className="material-symbols-outlined text-[16px] shrink-0"
+                    style={{ color: c.color }}
+                  >
+                    {c.icon}
+                  </span>
+                  <span className="font-mono-metadata text-mono-metadata text-ink-soft truncate flex-grow">
+                    {en ? c.labelEn : c.labelZh}
+                  </span>
+                  <span className="font-mono-metadata text-mono-metadata text-ink-mute font-bold shrink-0">
+                    {c.count}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section className="col-span-1 md:col-span-5 flex flex-col space-y-md">
@@ -288,12 +474,12 @@ export default function MapPage() {
           </div>
 
           <div className="flex flex-col space-y-sm">
-            {locations.map((loc, idx) => (
+            {visibleLocations.map((loc, idx) => (
               <ScrollFade key={loc.id} depth="none" delay={idx * 0.03} className="w-full">
                 <article
-                  className={`bg-bone hairline-border p-sm relative group ambient-shadow transition-all duration-300 cursor-pointer ${
+                  className={`border hairline-border p-6 bg-paper relative group transition-colors duration-300 cursor-pointer hover:bg-bone ${
                     hoveredTarget === loc.id ? "ring-1 ring-primary z-20" : "z-10"
-                  }`}
+                  } ${visited.has(loc.id) ? "opacity-70" : ""}`}
                   onMouseEnter={() => setHoveredTarget(loc.id)}
                   onMouseLeave={() => setHoveredTarget(null)}
                   onClick={() => setActive(loc)}
@@ -307,7 +493,7 @@ export default function MapPage() {
                         transition={{ duration: 0.2 }}
                         className="absolute bottom-[calc(100%+0.5rem)] left-0 w-full bg-paper-warm border border-primary/30 rounded-sm p-4 shadow-lg pointer-events-none z-50"
                       >
-                        <div className="font-label-caps text-[11px] text-primary uppercase tracking-widest mb-3 flex items-center gap-1.5 border-b border-line-soft pb-2">
+                        <div className="font-label-caps text-sm text-primary uppercase tracking-widest mb-3 flex items-center gap-1.5 border-b border-line-soft pb-2">
                           <span className="material-symbols-outlined text-[14px]">inventory_2</span>
                           {en ? "Resource Yields Preview" : "主要資源產出預覽"}
                         </div>
@@ -315,7 +501,7 @@ export default function MapPage() {
                           {(en ? loc.resourceFocusEn : loc.resourceFocusZh).map((res) => (
                             <span
                               key={res}
-                              className="font-mono-metadata text-[11px] text-ink-soft bg-bone border border-line-soft px-2 py-1 rounded-sm shadow-sm"
+                              className="font-mono-metadata text-xs text-ink-soft bg-bone border border-line-soft px-2 py-1 rounded-sm shadow-sm"
                             >
                               {res}
                             </span>
@@ -325,8 +511,21 @@ export default function MapPage() {
                     )}
                   </AnimatePresence>
                   
-                  <div className="absolute top-sm right-sm text-right">
-                    <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full group-hover:text-primary group-hover:border-primary transition-colors">
+                  <div className="absolute top-sm right-sm text-right flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={(e) => toggleVisited(loc.id, e)}
+                      title={en ? (visited.has(loc.id) ? "Mark unvisited" : "Mark visited") : (visited.has(loc.id) ? "標記未造訪" : "標記已造訪")}
+                      aria-pressed={visited.has(loc.id)}
+                      className={`material-symbols-outlined text-[18px] rounded-full w-7 h-7 flex items-center justify-center border transition-colors ${
+                        visited.has(loc.id)
+                          ? "bg-[#3d5a45] text-white border-[#3d5a45]"
+                          : "text-ink-mute border-line-soft hover:text-primary hover:border-primary"
+                      }`}
+                    >
+                      {visited.has(loc.id) ? "check" : "radio_button_unchecked"}
+                    </button>
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full group-hover:text-ink-main group-hover:border-primary transition-colors">
                       {en ? loc.levelEn : loc.levelZh}
                     </span>
                   </div>
@@ -352,6 +551,11 @@ export default function MapPage() {
                 </article>
               </ScrollFade>
             ))}
+            {visibleLocations.length === 0 && (
+              <div className="border border-dashed border-line-soft bg-bone p-6 text-center font-mono-metadata text-mono-metadata text-ink-mute">
+                {en ? "No locations match the current filters." : "沒有符合目前篩選條件的地點。"}
+              </div>
+            )}
           </div>
         </section>
 
@@ -361,7 +565,7 @@ export default function MapPage() {
             onClick={() => setActive(null)}
           >
             <div
-              className="bg-bone border border-line rounded-2xl ambient-shadow w-[95vw] md:max-w-7xl xl:max-w-[1380px] max-h-[90vh] overflow-y-auto relative paper-texture flex flex-col lg:flex-row"
+              className="bg-paper border hairline-border w-[95vw] md:max-w-7xl xl:max-w-[1380px] max-h-[90vh] overflow-y-auto relative flex flex-col lg:flex-row"
               onClick={(event) => event.stopPropagation()}
             >
               <button
@@ -392,7 +596,7 @@ export default function MapPage() {
 
               <div className="lg:w-[calc(100%-290px)] p-6 md:p-12 xl:p-14 flex flex-col gap-9 flex-grow">
                 <ScrollFade depth="none" scaleEnabled={false} className="w-full">
-                  <section className="bg-bone border border-line-soft/60 rounded-DEFAULT p-6 md:p-8 paper-texture shadow-sm">
+                  <section className="bg-paper border hairline-border p-6 md:p-8">
                     <h3 className="font-label-caps text-label-caps text-primary mb-4 uppercase tracking-wider flex items-center gap-2 font-semibold">
                       <span className="material-symbols-outlined text-[20px]">explore</span>
                       {en ? "Area Description" : "區域詳情"}
@@ -480,7 +684,7 @@ export default function MapPage() {
                 </div>
 
                 <ScrollFade depth="none" scaleEnabled={false} className="w-full">
-                  <section className="bg-bone border border-line-soft/60 rounded-DEFAULT p-6 md:p-8 shadow-sm">
+                  <section className="bg-paper border hairline-border p-6 md:p-8 mt-8">
                     <h3 className="font-label-caps text-label-caps text-ink-soft mb-4 uppercase tracking-wider flex items-center gap-2 font-semibold">
                       <span className="material-symbols-outlined text-primary text-[20px]">lock_open</span>
                       {en ? "Unlocks" : "解鎖內容"}
@@ -501,23 +705,23 @@ export default function MapPage() {
                 {/* Rebuild the Huge Building Layer */}
                 {(active.id === "huge-building" || active.id === "sparkling-skylands") && (
                   <ScrollFade depth="none" scaleEnabled={false} className="w-full">
-                    <section className="bg-[#fcfaf2] border-2 border-x-0 sm:border-x-2 border-primary/20 rounded-none sm:rounded-lg -mx-6 sm:mx-0 p-6 md:p-8 shadow-sm relative overflow-hidden">
+                    <section className="bg-paper border hairline-border p-6 mt-8 relative overflow-hidden">
                       {/* Decorative Blueprint Background Accent */}
                       <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none text-primary transform translate-x-1/4 translate-y-1/4">
                         <span className="material-symbols-outlined text-[320px]">domain</span>
                       </div>
                       
-                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-primary/10 pb-4 mb-6 relative z-10">
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b hairline-bottom pb-4 mb-6 relative z-10">
                         <div>
-                          <span className="bg-primary/10 text-primary font-mono-metadata text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest">
+                          <span className="font-mono-metadata text-xs text-primary uppercase tracking-widest block mb-2">
                             {en ? "BLUEPRINT OVERLAY LAYER" : "巨大建築・重建工程投影圖層"}
                           </span>
-                          <h3 className="font-headline-sm text-headline-sm text-ink-soft mt-1 flex items-center gap-2">
+                          <h3 className="font-headline-sm text-2xl text-ink-main flex items-center gap-2">
                             <span className="material-symbols-outlined text-primary">layers</span>
                             {en ? "Tinkmaster's Huge Building Construction Office" : "巨鍛匠的巨型建築施工管制室"}
                           </h3>
                         </div>
-                        <div className="flex gap-1.5 bg-paper border border-line-soft p-1 rounded-sm">
+                        <div className="flex gap-2 border hairline-border p-1">
                           {(["2F", "3F", "4F"] as const).map((floor) => (
                             <button
                               key={floor}
@@ -527,10 +731,10 @@ export default function MapPage() {
                                   setHugeBuildingTimeRemaining(3600);
                                 }
                               }}
-                              className={`px-3.5 py-1.5 font-mono-metadata text-xs rounded transition-all font-bold ${
+                              className={`px-4 py-2 font-mono-metadata text-xs uppercase tracking-widest transition-colors ${
                                 hugeBuildingFloor === floor
-                                  ? "bg-primary text-on-primary shadow-xs"
-                                  : "text-ink-mute hover:text-ink-soft hover:bg-bone"
+                                  ? "bg-primary text-white"
+                                  : "text-ink-mute hover:text-ink-main hover:bg-bone"
                               }`}
                             >
                               {floor}
@@ -543,39 +747,39 @@ export default function MapPage() {
                       {/* Material requirements list */}
                       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10">
                         <div className="lg:col-span-6 flex flex-col gap-4">
-                          <h4 className="font-mono-metadata text-xs text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+                          <h4 className="font-mono-metadata text-xs text-primary uppercase tracking-widest flex items-center gap-2">
                             <span className="material-symbols-outlined text-[16px]">inventory_2</span>
                             {en ? `Required Materials for ${hugeBuildingFloor}` : `${hugeBuildingFloor} 工料清單`}
                           </h4>
                           
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-2 border-b border-line-soft/40">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 border-b hairline-bottom">
                             {hugeBuildingFloor === "2F" && (
                               <>
-                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                <div className="bg-paper border hairline-border p-4 flex items-center justify-between transition-colors">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">30 Units / 30 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">30 Units / 30 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Glass" : "玻璃"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">10 Units / 10 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Pokémetal" : "寶可金屬"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">5 Units / 5 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">5 Units / 5 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Iron Ingots" : "鐵錠"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">20 Units / 20 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">20 Units / 20 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
@@ -587,21 +791,21 @@ export default function MapPage() {
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Glow Stones" : "發光石"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">15 Units / 15 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">15 Units / 15 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Copper Ingots" : "銅錠"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">30 Units / 30 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">30 Units / 30 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
-                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between sm:col-span-2">
+                                <div className="bg-paper border hairline-border p-4 flex items-center justify-between transition-colors sm:col-span-2">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">35 Units / 35 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">35 Units / 35 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
@@ -613,35 +817,35 @@ export default function MapPage() {
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">40 Units / 40 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">40 Units / 40 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Glass" : "玻璃"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">15 Units / 15 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">15 Units / 15 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Paper" : "紙張"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">10 Units / 10 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Bricks" : "磚塊"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">10 Units / 10 單位</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
                                 <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between sm:col-span-2">
                                   <div>
                                     <div className="text-xs font-bold text-ink-soft">{en ? "Lumber" : "木材"}</div>
-                                    <div className="font-mono-metadata text-[11px] text-ink-mute">20 Units (From Scyther cuts) / 20 單位 (飛天螳螂砍伐)</div>
+                                    <div className="font-mono-metadata text-xs text-ink-mute">20 Units (From Scyther cuts) / 20 單位 (飛天螳螂砍伐)</div>
                                   </div>
                                   <span className="material-symbols-outlined text-emerald-600">check_circle</span>
                                 </div>
@@ -667,12 +871,12 @@ export default function MapPage() {
                               <div className="flex flex-col gap-1.5 leading-relaxed">
                                 <div className="flex items-center gap-2 font-semibold text-primary">
                                   <span className="material-symbols-outlined text-[16px]">person_pin_circle</span>
-                                  <span>{en ? "Escort Lock: Chef Dente (岩石山脊主廚)" : "特定護送：主廚 Dente (Chef Dente)"}</span>
+                                  <span>{en ? "Escort Lock: Chef Dente (凸隆隆山地主廚)" : "特定護送：主廚 Dente (Chef Dente)"}</span>
                                 </div>
                                 <p className="text-ink-mute pl-6">
                                   {en 
-                                    ? "Requires completing Wheat Bread Strength rescue in Rocky Ridges first to unlock Chef Dente's heavy logistical transport sequence."
-                                    : "已護送確認：必須先在「岩石山脊」烤製小麥麵包、取得怪力加成並斬開鐵鍊解救主廚 Dente，方可解鎖 3F 大型施工。"}
+                                    ? "Requires completing Wheat Bread Strength rescue in Bulging Highlands first to unlock Chef Dente's heavy logistical transport sequence."
+                                    : "已護送確認：必須先在「凸隆隆山地」烤製小麥麵包、取得怪力加成並斬開鐵鍊解救主廚 Dente，方可解鎖 3F 大型施工。"}
                                 </p>
                               </div>
                             )}
@@ -681,12 +885,12 @@ export default function MapPage() {
                               <div className="flex flex-col gap-1.5 leading-relaxed">
                                 <div className="flex items-center gap-2 font-semibold text-primary">
                                   <span className="material-symbols-outlined text-[16px]">electric_bolt</span>
-                                  <span>{en ? "Escort Lock: Peakychu (荒涼海灘發電員)" : "特定護送：皮卡丘 (荒涼海灘發電專長)"}</span>
+                                  <span>{en ? "Escort Lock: Peakychu (暗沉沉海邊發電員)" : "特定護送：皮卡丘 (暗沉沉海邊發電專長)"}</span>
                                 </div>
                                 <p className="text-ink-mute pl-6">
                                   {en 
                                     ? "Requires full Beach power-grid alignment and lighthouse water wheel repair to guide Peakychu to Skylands' vertical lift generator."
-                                    : "已護送確認：必須先在「荒涼海灘」打通完整的發電網絡、修復燈塔水車，方可指引 Peakychu 前往空島激活 4F 終極垂吊發電機。"}
+                                    : "已護送確認：必須先在「暗沉沉海邊」打通完整的發電網絡、修復燈塔水車，方可指引 Peakychu 前往空島激活 4F 終極垂吊發電機。"}
                                 </p>
                               </div>
                             )}
@@ -715,7 +919,7 @@ export default function MapPage() {
                             <div className="bg-bone p-4 rounded border border-line-soft space-y-3">
                               <div className="flex justify-between items-end">
                                 <div>
-                                  <div className="font-mono-metadata text-[10px] text-ink-faint uppercase font-bold">
+                                  <div className="font-mono-metadata text-xs text-ink-faint uppercase font-bold">
                                     {en ? "Current Cure State" : "固化與施工進度"}
                                   </div>
                                   <div className="text-lg font-bold text-on-surface">
@@ -725,7 +929,7 @@ export default function MapPage() {
                                   </div>
                                 </div>
                                 <div className="text-right">
-                                  <div className="font-mono-metadata text-[10px] text-ink-faint uppercase font-bold">
+                                  <div className="font-mono-metadata text-xs text-ink-faint uppercase font-bold">
                                     {en ? "Time Remaining" : "賸餘等待時間"}
                                   </div>
                                   <kbd className="text-sm font-mono font-bold bg-ink-soft text-on-primary px-2 py-1 rounded">
@@ -762,7 +966,7 @@ export default function MapPage() {
                                 <button
                                   type="button"
                                   onClick={() => setHugeBuildingMultiplier(1)}
-                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-[10px] ${
+                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-xs ${
                                     hugeBuildingMultiplier === 1 ? "bg-primary text-on-primary" : "text-ink-soft hover:bg-[#ccdcb9]/40"
                                   }`}
                                 >
@@ -771,7 +975,7 @@ export default function MapPage() {
                                 <button
                                   type="button"
                                   onClick={() => setHugeBuildingMultiplier(120)}
-                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-[10px] ${
+                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-xs ${
                                     hugeBuildingMultiplier === 120 ? "bg-primary text-on-primary" : "text-ink-soft hover:bg-[#ccdcb9]/40"
                                   }`}
                                   title={en ? "Compresses 1 hour into 30 seconds" : "將 1 小時壓縮為 30 秒快速預覽"}
@@ -828,7 +1032,7 @@ export default function MapPage() {
                       {/* Visual Header */}
                       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-[#3c6ca5]/10 pb-4 mb-6 relative z-10">
                         <div>
-                          <span className="bg-[#3c6ca5]/10 text-[#305684] font-mono-metadata text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest">
+                          <span className="bg-[#3c6ca5]/10 text-[#305684] font-mono-metadata text-xs px-2 py-0.5 rounded uppercase font-bold tracking-widest">
                             {en ? "ULTIMATE ALTAR BLUEPRINT LAYER" : "極限祭壇佈局與合工專長管制圖層"}
                           </span>
                           <h3 className="font-headline-sm text-headline-sm text-ink-soft mt-1 flex items-center gap-2">
@@ -850,7 +1054,7 @@ export default function MapPage() {
                               <span className="material-symbols-outlined text-[16px]">grid_4x4</span>
                               {en ? "33x35 Layout Grid Viewer (11x11 Segment)" : "33x35 核心網格佈局剖面 (11x11)"}
                             </h4>
-                            <span className="text-[10px] font-mono-metadata text-ink-mute uppercase">
+                            <span className="text-xs font-mono-metadata text-ink-mute uppercase">
                               {en ? "Coords: [X11-X22, Y12-Y23]" : "切片坐標系：[X11-X22, Y12-Y23]"}
                             </span>
                           </div>
@@ -912,7 +1116,7 @@ export default function MapPage() {
                             </div>
 
                             {/* Grid legend */}
-                            <div className="flex flex-wrap gap-4 text-[10px] font-mono-metadata text-ink-soft border-t border-[#3c6ca5]/10 pt-2 w-full justify-center">
+                            <div className="flex flex-wrap gap-4 text-xs font-mono-metadata text-ink-soft border-t border-[#3c6ca5]/10 pt-2 w-full justify-center">
                               <span className="flex items-center gap-1.5">
                                 <span className={`w-2.5 h-2.5 rounded-xs border ${
                                   active.id === "altar-of-flame" ? "bg-[#be5a4a]" : active.id === "abandoned-power-plant" ? "bg-[#dcae4a]" : "bg-[#5aa8be]"
@@ -991,7 +1195,7 @@ export default function MapPage() {
                               <div className="font-bold text-[#305684] text-sm">
                                 {en ? "Dispatched Workers Count" : "派遣施工人員列表"}
                               </div>
-                              <p className="text-[11px] text-ink-mute">
+                              <p className="text-xs text-ink-mute">
                                 {en ? "15-member team configuration required for construction" : "必須精確選中 15 隻寶可夢合工，少一隻或多一隻都無法啟動"}
                               </p>
                             </div>
@@ -1006,7 +1210,7 @@ export default function MapPage() {
 
                           {/* Current 15-member workforce list */}
                           <div>
-                            <span className="font-mono-metadata text-[10px] text-ink-mute uppercase font-bold block mb-2 tracking-wider">
+                            <span className="font-mono-metadata text-xs text-ink-mute uppercase font-bold block mb-2 tracking-wider">
                               {en ? "CURRENT WORKFORCE CREW (15 MAN SLOTS)" : "當前工作隊成員（共 15 個工人坑位）"}
                             </span>
                             
@@ -1110,7 +1314,7 @@ export default function MapPage() {
 
                             return (
                               <div className="bg-paper border border-[#3c6ca5]/30 rounded p-4 space-y-3">
-                                <div className="font-mono-metadata text-[10px] text-[#305684] uppercase font-bold tracking-wider border-b border-[#3c6ca5]/10 pb-2">
+                                <div className="font-mono-metadata text-xs text-[#305684] uppercase font-bold tracking-wider border-b border-[#3c6ca5]/10 pb-2">
                                   {en ? "WORKFORCE SPECIALTY COMPLIANCE AUDIT" : "合工班專長審查標準"}
                                 </div>
                                 
@@ -1160,10 +1364,10 @@ export default function MapPage() {
                           {/* Roster Pool Board (Available fleet) */}
                           <div className="bg-bone p-4 border border-line-soft rounded">
                             <div className="flex justify-between items-center mb-3">
-                              <span className="font-mono-metadata text-[10px] text-ink-mute uppercase font-bold tracking-wider">
-                                {en ? "AVAILABLE FLEET POOL" : "真新鎮與據點全能後備隊"}
+                              <span className="font-mono-metadata text-xs text-ink-mute uppercase font-bold tracking-wider">
+                                {en ? "AVAILABLE FLEET POOL" : "空空鎮與據點全能後備隊"}
                               </span>
-                              <span className="text-[10px] font-mono-metadata text-ink-faint">
+                              <span className="text-xs font-mono-metadata text-ink-faint">
                                 {en ? "Select up to 15 workers" : "點擊可派遣或移出工作隊"}
                               </span>
                             </div>
@@ -1217,7 +1421,7 @@ export default function MapPage() {
                                           </span>
                                         ))}
                                       </div>
-                                      <div className="text-[9px] text-ink-faint leading-tight truncate">
+                                      <div className="text-xs text-ink-faint leading-tight truncate">
                                         {en ? p.descEn : p.descZh}
                                       </div>
                                     </div>
@@ -1265,7 +1469,7 @@ export default function MapPage() {
             onClick={() => setShowIndex(false)}
           >
             <div
-              className="bg-bone border border-line rounded-DEFAULT ambient-shadow max-w-3xl w-full max-h-[88vh] overflow-y-auto relative paper-texture"
+              className="bg-paper border hairline-border max-w-3xl w-full max-h-[88vh] overflow-y-auto relative"
               onClick={(event) => event.stopPropagation()}
             >
               <div className="sticky top-0 bg-bone/95 backdrop-blur-md flex justify-between items-center px-lg py-md border-b border-line-soft z-10">
@@ -1286,7 +1490,7 @@ export default function MapPage() {
                       }}
                       className="w-full text-left px-lg py-md flex items-center gap-md hover:bg-surface-container-high transition-colors group"
                     >
-                      <span className="material-symbols-outlined text-ink-mute group-hover:text-primary transition-colors">
+                      <span className="material-symbols-outlined text-ink-mute group-hover:text-ink-main transition-colors">
                         {loc.icon}
                       </span>
                       <span className="flex-grow">

@@ -62,7 +62,7 @@ export default function MapBackdrop() {
         <ellipse cx="73" cy="62" rx="15" ry="16" fill="var(--color-primary)" opacity="0.09" />
       </g>
 
-      {/* Floating sky islands (Sparkling Skylands / Huge Building) — detached above land. */}
+      {/* Floating sky islands (Sparkling Floating Island / Huge Building) — detached above land. */}
       <g opacity="0.9">
         <ellipse cx="50" cy="11" rx="9" ry="3.4" fill="var(--color-bone)" stroke="var(--color-ink-mute)" strokeWidth="0.35" />
         <ellipse cx="50" cy="11" rx="9" ry="3.4" fill="var(--color-tertiary)" opacity="0.12" />

@@ -10,6 +10,7 @@ interface ScrollFadeProps {
   depth?: "fg" | "mid" | "bg" | "none"; // parallax layer depth
   key?: React.Key;
   scaleEnabled?: boolean;
+  layout?: boolean | "position" | "size";
 }
 
 export default function ScrollFade({
@@ -20,6 +21,7 @@ export default function ScrollFade({
   className = "",
   depth = "none",
   scaleEnabled = true,
+  layout,
 }: ScrollFadeProps) {
   const ref = React.useRef<HTMLDivElement>(null);
   
@@ -45,6 +47,7 @@ export default function ScrollFade({
 
   return (
     <motion.div
+      layout={layout}
       ref={ref}
       initial={{ 
         opacity: 0, 
