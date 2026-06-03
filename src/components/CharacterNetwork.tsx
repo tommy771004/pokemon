@@ -307,7 +307,7 @@ export default function CharacterNetwork({
   ]);
 
   return (
-    <div ref={containerRef} className="w-full bg-surface border border-line-soft rounded-sm p-4 mt-8 paper-texture ambient-shadow relative overflow-hidden">
+    <div ref={containerRef} className="w-full bg-surface border border-line-soft border-x-0 sm:border-x rounded-none sm:rounded-sm -mx-4 sm:mx-0 p-4 mt-8 paper-texture ambient-shadow relative overflow-hidden">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4 relative z-10">
         <div>
           <h3 className="font-label-caps text-label-caps text-ink-mute mb-2 flex items-center gap-2">

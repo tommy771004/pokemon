@@ -42,6 +42,15 @@
           "contentEn": "With universal critical acclaim, it achieved the highest Metacritic score of any Pokémon title ever, backed by a 98% recommendation rate on OpenCritic.",
           "contentZh": "在評價方面，本作在評價網站 Metacritic 與 OpenCritic 上獲得了「普遍好評」，打破了寶可夢系列歷史上的最高分數紀錄，並且高達 98% 的影評人一致推薦此作。",
           "steps": []
+        },
+        {
+          "id": "katana-engine",
+          "roman": "IV.",
+          "titleEn": "Katana Engine Foundation",
+          "titleZh": "底層引擎開發技術 (Katana Engine)",
+          "contentEn": "Pokopia is powered by the 'Katana Engine', implementing an advanced technical foundation for seamless sandbox building and deeply reactive ecological physics.",
+          "contentZh": "本作採用「Katana Engine」做為底層引擎開發技術。該引擎不僅確保了大魄力土木工程的流暢穩定，更實現了極具深度的沙盒與生態物理機制。",
+          "steps": []
         }
       ]
     },
@@ -193,10 +202,11 @@
         {
           "id": "skylands",
           "roman": "IV.",
-          "titleEn": "Sparkling Skylands",
-          "titleZh": "閃耀空島 (Sparkling Skylands)",
-          "contentEn": "Floating trash islands and massive unfinished skyscrapers. Requires advanced aerial traversal and skyscraper architectural blueprints.",
-          "contentZh": "由漫天漂浮的科技廢棄垃圾島嶼、巨鋼鷹架與未完工摩天大樓組成的超高海拔區域，土木工程消耗最巨。",
+          "titleEn": "Sparkling Skylands Special Walkthrough",
+          "titleZh": "Sparkling Skylands 特殊區域通關攻略",
+          "contentEn": "Floating trash islands and massive unfinished skyscrapers. Requires advanced aerial traversal and skyscraper architectural blueprints. Refer to the Eurogamer exclusive walkthrough.",
+          "contentZh": "由漫天漂浮的科技廢棄垃圾島嶼、巨鋼鷹架與未完工摩天大樓組成的超高海拔區域，土木工程消耗最巨。參閱 Eurogamer 的專題通關攻略。",
+          "link": "https://www.eurogamer.net/pokemon-pokopia-sparkling-skylands-walkthrough",
           "image": {
             "src": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
             "captionEn": "Establish Waterside Boat to copy Dragonite's Glide skill.",
@@ -450,6 +460,66 @@
               "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
             }
           ]
+        },
+        {
+          "id": "ui-qol-mechanics",
+          "roman": "VII.",
+          "titleEn": "UI & Hidden QoL Systems",
+          "titleZh": "隱藏介面與 QoL 系統實作",
+          "contentEn": "Pokopia incorporates several hidden quality-of-life features into its UI to reduce anxiety and enhance the sandbox experience without cluttering the screen.",
+          "contentZh": "本作將許多便利的系統功能隱藏在選單與特定設施中，讓你在享受純淨畫面的同時又能解決繁瑣問題。",
+          "steps": [
+            {
+              "nodeTitleEn": "3D Printer Cloning",
+              "nodeTitleZh": "3D 列印複製",
+              "descEn": "The '3D Printer' inside the Pokémon Center allows players to directly duplicate any object from a 'previously taken Precious Photo', saving you from manual recipe grinding.",
+              "descZh": "寶可夢中心內建的「3D 列印機」，允許玩家直接複製任何「曾經拍攝過的照片中」的物件，免去重新蒐集材料的農作之苦。",
+              "icon": "print",
+              "badgeZh": "無痛複製"
+            },
+            {
+              "nodeTitleEn": "Hidden 24H Clock",
+              "nodeTitleZh": "隱藏即時時鐘",
+              "descEn": "The game tracks a 24-hour real-time clock, but cleverly tucks it away inside the pause menu to prevent players from feeling time-anxiety during construction.",
+              "descZh": "遊戲擁有 24 小時即時時鐘機制，但巧妙隱藏於選單中，以此避免玩家產生時間焦慮（不用盯著日夜交替圖示趕進度）。",
+              "icon": "schedule",
+              "badgeZh": "消除焦慮"
+            },
+            {
+              "nodeTitleEn": "Menu Quick Travel",
+              "nodeTitleZh": "選單快速傳送",
+              "descEn": "The pause menu features a built-in function to 'fast travel directly back to regional homes', saving massive amounts of walking when transitioning between regions.",
+              "descZh": "暫停選單內建「直接傳送回各區域住家」的功能，讓你在長途跋涉或不小心摔進深谷時能瞬間歸巢。",
+              "icon": "home_pin",
+              "badgeZh": "瞬間歸巢"
+            }
+          ]
+        },
+        {
+          "id": "multiplayer-customization",
+          "roman": "VIII.",
+          "titleEn": "Multiplayer & Customization",
+          "titleZh": "連線機制與外觀自訂",
+          "contentEn": "Pokopia includes robust social tools and personalization features to tailor the sandbox journey.",
+          "contentZh": "本作不僅支援強大的社群共建功能，也提供了豐富的主角外觀自訂系統。",
+          "steps": [
+            {
+              "nodeTitleEn": "Multiplayer & GameShare",
+              "nodeTitleZh": "多人連線與 GameShare 機制",
+              "descEn": "Supports up to 4 players (local/online). Features innovative 'GameShare': via GameChat, you can invite friends to play in your town even if they don't own the game or are playing on an original Switch.",
+              "descZh": "本作支援最高 4 人（本地/線上）連線，且內建創新的「GameShare」功能，可透過 GameChat 邀請即使未擁有該遊戲軟體、甚至使用初代 Switch 的朋友進入城鎮遊玩。",
+              "icon": "group",
+              "badgeZh": "無痛連線"
+            },
+            {
+              "nodeTitleEn": "Character Customization",
+              "nodeTitleZh": "主角外型客製化",
+              "descEn": "As a Ditto mimicking human form, players can fully customize their skin color, hair color, and clothing throughout the adventure.",
+              "descZh": "玩家扮演的百變怪，在模仿為人類型態時可以「自訂膚色、髮色與服裝」，隨時展現獨一無二的個人風格。",
+              "icon": "styler",
+              "badgeZh": "百變造型"
+            }
+          ]
         }
       ]
     },
@@ -579,10 +649,11 @@
         {
           "id": "birds",
           "roman": "IV.",
-          "titleEn": "The Birds Sanctuaries: Peak Labors",
-          "titleZh": "終局三神鳥祭壇：極限材料與勞力需求",
-          "contentEn": "Constructing the sacred elements of Kanto birds is highly demanding on materials and specified labor fields.",
-          "contentZh": "在真新鎮的三個島嶼頂點，靜躺著三個巨大金色精靈球，裡面裝載著三神鳥祭壇的終極大型土木工程圖紙。這些工程耗資之恐怖，位列全作之首：",
+          "titleEn": "Legendary Birds (Articuno, Zapdos, Moltres) Location & Capture Guide",
+          "titleZh": "傳說三鳥 (Articuno, Zapdos, Moltres) 尋找與定位攻略",
+          "contentEn": "Constructing the sacred elements of Kanto birds is highly demanding on materials and specified labor fields. See the comprehensive guides tracking Zapdos and navigating the Sanctuaries.",
+          "contentZh": "在真新鎮的三個島嶼頂點，靜躺著三個巨大金色精靈球，裡面裝載著三神鳥祭壇的終極大型土木工程圖紙。這些工程耗資之恐怖，位列全作之首。包含閃電鳥 (Zapdos) 捕捉任務指南。",
+          "link": "https://nintendowire.com/guides/pokemon-pokopia/how-to-find-articuno-zapdos-and-moltres/",
           "steps": [
             {
               "nodeTitleEn": "Altar of Flame (Moltres)",
@@ -593,12 +664,13 @@
               "badgeZh": "火焰大工"
             },
             {
-              "nodeTitleEn": "Abandoned Power Plant (Zapdos)",
-              "nodeTitleZh": "閃電鳥的廢棄發電廠 (Abandoned Power Plant)",
+              "nodeTitleEn": "Abandoned Power Plant (Zapdos Capture Guide)",
+              "nodeTitleZh": "閃電鳥 (Zapdos) 廢棄發電廠捕捉任務指南",
               "descEn": "Requires 50 Copper Ingots, 50 Iron Ingots, 50 Sea Glass Shards, 50 Bricks, 10 Pokemetals. Mandates exactly 15 active worker mons involving Build, Generate, Crush, and Flying abilities.",
-              "descZh": "建材配方：50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊、10 寶可金屬。\n施工天賦限制：極其恐怖的施工難關，必須同時指派高達 15 隻寶可夢動工！且施工名單中必須嚴格包含擁有「建造」、「發電」、「粉碎」及「飛行」四項特定技能的夥伴。如果你在該區域湊不齊這些專長夥計，必須利用區域傳送門把牠們從天空群島或海灘調遣過來！",
+              "descZh": "建材配方：50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊、10 寶可金屬。\n施工天賦限制：極其恐怖的施工難關，必須同時指派高達 15 隻寶可夢動工！且施工名單中必須嚴格包含擁有「建造」、「發電」、「粉碎」及「飛行」特定屬性。",
               "icon": "factory",
-              "badgeZh": "發電大工"
+              "badgeZh": "閃電鳥攻略",
+              "link": "https://www.eurogamer.net/how-to-get-zapdos-pokemon-pokopia"
             },
             {
               "nodeTitleEn": "Freezing Chambers (Articuno)",
@@ -954,7 +1026,7 @@
               "badgeZh": "妖精系"
             }
           ],
-          "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee"
+          "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/"
         }
       ]
     },
@@ -1028,13 +1100,22 @@
           "contentZh": "深度解謎機制的權威資料庫，破解伊布極限條件、傳奇工程數據與物資神技指引。",
           "steps": [
             {
+              "nodeTitleEn": "VGC: Evolution Mechanics",
+              "nodeTitleZh": "VGC：底層進化機制解析 (Videogameschronicle)",
+              "descEn": "Detailed report on the underlying mechanics of 'canceling traditional battle level-up evolution'.",
+              "descZh": "完整報導本作「取消傳統戰鬥升級進化」的底層機制，解析將型態變化與棲息地傢俱、食物配方綁定的革命性設計。",
+              "icon": "science",
+              "badgeZh": "進化機制",
+              "link": "https://www.videogameschronicle.com/guide/pokemon-pokopia-how-to-evolve/"
+            },
+            {
               "nodeTitleEn": "Games.gg / Pokopia.center: Eeveelutions",
               "nodeTitleZh": "伊布家族解鎖極限條件 (Games.gg / Pokopia.center)",
               "descEn": "The definitive guide for unlocking all 8 Eeveelutions in Palette Town.",
               "descZh": "統整真新鎮純自由建造區域中，伊布全 8 種型態的嚴苛解鎖條件配置。",
               "icon": "pets",
               "badgeZh": "伊布條件",
-              "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee"
+              "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/"
             },
             {
               "nodeTitleEn": "Eurogamer: Regional Walkthroughs",

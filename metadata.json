@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Pokopia Chronicles",
+  "description": "An editorial sandbox walkthrough and strategy repository for Pokémon Pokopia, featuring interactive map construction timelines, Ditto customization systems, and full-fidelity tactical indexes.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

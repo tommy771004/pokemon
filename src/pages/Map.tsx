@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "motion/react";
 import Seo from "../components/Seo";
 import MapBackdrop from "../components/MapBackdrop";
 import ScrollFade from "../components/ScrollFade";
@@ -48,12 +49,85 @@ type MapData = {
   locations: LocationEntry[];
 };
 
+const POKEMON_ROSTER_POOL = [
+  { id: "p1", nameEn: "Conkeldurr", nameZh: "修建老匠", specialties: ["build"], icon: "construction", descEn: "Heavy-grade building expert.", descZh: "重工建造大師，擅長大型工事基底。" },
+  { id: "p2", nameEn: "Pikachu", nameZh: "皮卡丘", specialties: ["generate"], icon: "bolt", descEn: "Consistent low-voltage output.", descZh: "穩定的低壓發電，適合敏感電網調試。" },
+  { id: "p3", nameEn: "Peakychu", nameZh: "Peakychu", specialties: ["generate"], icon: "star", descEn: "Leader-spec electrical general.", descZh: "領袖級特殊電能型，電瓶電網之魂。" },
+  { id: "p4", nameEn: "Magnemite", nameZh: "小磁怪", specialties: ["generate"], icon: "electrical_services", descEn: "Floating electromagnetic balancer.", descZh: "懸浮電磁力能手，可修補局部磁力漏洞。" },
+  { id: "p5", nameEn: "Pidgeot", nameZh: "大比鳥", specialties: ["fly"], icon: "flight", descEn: "Wide-area high-altitude sweepers.", descZh: "廣域高空翱翔，提供精準的地形測繪。" },
+  { id: "p6", nameEn: "Dragonite", nameZh: "快龍", specialties: ["fly"], icon: "air", descEn: "Ultra-heavy load glider.", descZh: "超重型載物滑翔，能在空中搬運重型建材。" },
+  { id: "p7", nameEn: "Charizard", nameZh: "噴火龍", specialties: ["burn", "fly"], icon: "mode_fan", descEn: "Can smelt ore and fly logistics.", descZh: "兼具熔煉礦石與高空物流搬運雙重職能。" },
+  { id: "p8", nameEn: "Magmar", nameZh: "鴨嘴火獸", specialties: ["burn"], icon: "whatshot", descEn: "Ultra-high temp metallurgy support.", descZh: "極限高溫熱力源，為金屬重工冶煉提供原動力。" },
+  { id: "p9", nameEn: "Blastoise", nameZh: "水箭龜", specialties: ["build"], icon: "water_drop", descEn: "Hydro-hydraulic landscape stabilizer.", descZh: "高壓水力阻尼，有效調節地熱或土壤水分。" },
+  { id: "p10", nameEn: "Lapras", nameZh: "拉普拉斯", specialties: ["freeze", "transport"], icon: "bubble_chart", descEn: "Glacial waterside resource mover.", descZh: "寒冰水路運輸，提供安全、低溫的物資防護。" },
+  { id: "p11", nameEn: "Glaceon", nameZh: "冰伊布", specialties: ["freeze"], icon: "ac_unit", descEn: "Precision cryo-cell thermal barrier.", descZh: "精準低溫冷凝防護，防止電極或熱能過載。" },
+  { id: "p12", nameEn: "Sneasel", nameZh: "狃拉", specialties: ["freeze", "crush"], icon: "grid_view", descEn: "Fast frozen ice cutter.", descZh: "極速切冰能手，利爪能將冰岩分解成標準模組。" },
+  { id: "p13", nameEn: "Machamp", nameZh: "怪力", specialties: ["build", "transport"], icon: "fitness_center", descEn: "Four-arm rapid material layer.", descZh: "四手搬運大師，同時兼任土木搭建與多維阻尼調整。" },
+  { id: "p14", nameEn: "Geodude", nameZh: "小拳石", specialties: ["crush"], icon: "terrain", descEn: "Standard heavy rock crusher.", descZh: "標準重力碎巖工，擅長粉碎雜石網格。" },
+  { id: "p15", nameEn: "Golem", nameZh: "隆隆岩", specialties: ["crush"], icon: "circle", descEn: "Seismic excavation breaker.", descZh: "震盪式開挖能手，可以瞬間擊破大型岩體。" },
+  { id: "p16", nameEn: "Onix", nameZh: "大岩蛇", specialties: ["crush"], icon: "hive", descEn: "Subterranean foundation excavator.", descZh: "地下基底挖掘巨獸，用於開鑿排融溝渠道。" },
+  { id: "p17", nameEn: "Raichu", nameZh: "雷丘", specialties: ["generate"], icon: "bolt", descEn: "Heavy lightning generator.", descZh: "重型電網發電機，提供源源不斷的大幅額外電流。" },
+  { id: "p18", nameEn: "Ivysaur", nameZh: "妙蛙草", specialties: ["build"], icon: "nature", descEn: "Organic binder and soil anchoring.", descZh: "有機纖維黏合，為地盤提供強大的土木錨定點。" }
+];
+
 export default function MapPage() {
   const { i18n } = useTranslation();
   const [data, setData] = useState<MapData | null>(null);
   const [hoveredTarget, setHoveredTarget] = useState<string | null>(null);
   const [active, setActive] = useState<LocationEntry | null>(null);
   const [showIndex, setShowIndex] = useState(false);
+
+  // New States for "Rebuild the Huge Building"
+  const [hugeBuildingFloor, setHugeBuildingFloor] = useState<"2F" | "3F" | "4F">("2F");
+  const [hugeBuildingProgress, setHugeBuildingProgress] = useState<Record<"2F" | "3F" | "4F", number>>({
+    "2F": 100, // assume 2F starts solved or fully prepared
+    "3F": 0,
+    "4F": 0,
+  });
+  const [hugeBuildingTimerActive, setHugeBuildingTimerActive] = useState(false);
+  const [hugeBuildingTimeRemaining, setHugeBuildingTimeRemaining] = useState<number>(3600); // 1 hour in seconds
+  const [hugeBuildingMultiplier, setHugeBuildingMultiplier] = useState<number>(1); // 1x or 120x speed for testing
+
+  // New States for 15-member Pokémon workforce on legendary bird altars
+  const [selectedAltarCrew, setSelectedAltarCrew] = useState<Record<string, string[]>>({
+    "altar-of-flame": [],
+    "abandoned-power-plant": [],
+    "freezing-chambers": [],
+  });
+
+  useEffect(() => {
+    let interval: any = null;
+    if (hugeBuildingTimerActive) {
+      interval = setInterval(() => {
+        setHugeBuildingTimeRemaining((prev) => {
+          const next = prev - hugeBuildingMultiplier;
+          if (next <= 0) {
+            setHugeBuildingTimerActive(false);
+            setHugeBuildingProgress((prevProgress) => ({
+              ...prevProgress,
+              [hugeBuildingFloor]: 100,
+            }));
+            return 3600; // Reset for next floor
+          }
+          return next;
+        });
+      }, 1000);
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [hugeBuildingTimerActive, hugeBuildingMultiplier, hugeBuildingFloor]);
+
+  const formatTime = (secs: number) => {
+    const h = Math.floor(secs / 3600);
+    const m = Math.floor((secs % 3600) / 60);
+    const s = secs % 60;
+    return [
+      String(h).padStart(2, "0"),
+      String(m).padStart(2, "0"),
+      String(s).padStart(2, "0")
+    ].join(":");
+  };
 
   useEffect(() => {
     fetch("/data/map.json")
@@ -218,12 +292,39 @@ export default function MapPage() {
               <ScrollFade key={loc.id} depth="none" delay={idx * 0.03} className="w-full">
                 <article
                   className={`bg-bone hairline-border p-sm relative group ambient-shadow transition-all duration-300 cursor-pointer ${
-                    hoveredTarget === loc.id ? "ring-1 ring-primary" : ""
+                    hoveredTarget === loc.id ? "ring-1 ring-primary z-20" : "z-10"
                   }`}
                   onMouseEnter={() => setHoveredTarget(loc.id)}
                   onMouseLeave={() => setHoveredTarget(null)}
                   onClick={() => setActive(loc)}
                 >
+                  <AnimatePresence>
+                    {hoveredTarget === loc.id && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 5 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute bottom-[calc(100%+0.5rem)] left-0 w-full bg-paper-warm border border-primary/30 rounded-sm p-4 shadow-lg pointer-events-none z-50"
+                      >
+                        <div className="font-label-caps text-[11px] text-primary uppercase tracking-widest mb-3 flex items-center gap-1.5 border-b border-line-soft pb-2">
+                          <span className="material-symbols-outlined text-[14px]">inventory_2</span>
+                          {en ? "Resource Yields Preview" : "主要資源產出預覽"}
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {(en ? loc.resourceFocusEn : loc.resourceFocusZh).map((res) => (
+                            <span
+                              key={res}
+                              className="font-mono-metadata text-[11px] text-ink-soft bg-bone border border-line-soft px-2 py-1 rounded-sm shadow-sm"
+                            >
+                              {res}
+                            </span>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  
                   <div className="absolute top-sm right-sm text-right">
                     <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full group-hover:text-primary group-hover:border-primary transition-colors">
                       {en ? loc.levelEn : loc.levelZh}
@@ -396,6 +497,741 @@ export default function MapPage() {
                     </div>
                   </section>
                 </ScrollFade>
+
+                {/* Rebuild the Huge Building Layer */}
+                {(active.id === "huge-building" || active.id === "sparkling-skylands") && (
+                  <ScrollFade depth="none" scaleEnabled={false} className="w-full">
+                    <section className="bg-[#fcfaf2] border-2 border-x-0 sm:border-x-2 border-primary/20 rounded-none sm:rounded-lg -mx-6 sm:mx-0 p-6 md:p-8 shadow-sm relative overflow-hidden">
+                      {/* Decorative Blueprint Background Accent */}
+                      <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none text-primary transform translate-x-1/4 translate-y-1/4">
+                        <span className="material-symbols-outlined text-[320px]">domain</span>
+                      </div>
+                      
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-primary/10 pb-4 mb-6 relative z-10">
+                        <div>
+                          <span className="bg-primary/10 text-primary font-mono-metadata text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest">
+                            {en ? "BLUEPRINT OVERLAY LAYER" : "巨大建築・重建工程投影圖層"}
+                          </span>
+                          <h3 className="font-headline-sm text-headline-sm text-ink-soft mt-1 flex items-center gap-2">
+                            <span className="material-symbols-outlined text-primary">layers</span>
+                            {en ? "Tinkmaster's Huge Building Construction Office" : "巨鍛匠的巨型建築施工管制室"}
+                          </h3>
+                        </div>
+                        <div className="flex gap-1.5 bg-paper border border-line-soft p-1 rounded-sm">
+                          {(["2F", "3F", "4F"] as const).map((floor) => (
+                            <button
+                              key={floor}
+                              onClick={() => {
+                                setHugeBuildingFloor(floor);
+                                if (hugeBuildingProgress[floor] !== 100 && !hugeBuildingTimerActive) {
+                                  setHugeBuildingTimeRemaining(3600);
+                                }
+                              }}
+                              className={`px-3.5 py-1.5 font-mono-metadata text-xs rounded transition-all font-bold ${
+                                hugeBuildingFloor === floor
+                                  ? "bg-primary text-on-primary shadow-xs"
+                                  : "text-ink-mute hover:text-ink-soft hover:bg-bone"
+                              }`}
+                            >
+                              {floor}
+                              {hugeBuildingProgress[floor] === 100 && " ✓"}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Material requirements list */}
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10">
+                        <div className="lg:col-span-6 flex flex-col gap-4">
+                          <h4 className="font-mono-metadata text-xs text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+                            <span className="material-symbols-outlined text-[16px]">inventory_2</span>
+                            {en ? `Required Materials for ${hugeBuildingFloor}` : `${hugeBuildingFloor} 工料清單`}
+                          </h4>
+                          
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-2 border-b border-line-soft/40">
+                            {hugeBuildingFloor === "2F" && (
+                              <>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">30 Units / 30 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Glass" : "玻璃"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Pokémetal" : "寶可金屬"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">5 Units / 5 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Iron Ingots" : "鐵錠"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">20 Units / 20 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                              </>
+                            )}
+
+                            {hugeBuildingFloor === "3F" && (
+                              <>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Glow Stones" : "發光石"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">15 Units / 15 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Copper Ingots" : "銅錠"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">30 Units / 30 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between sm:col-span-2">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">35 Units / 35 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                              </>
+                            )}
+
+                            {hugeBuildingFloor === "4F" && (
+                              <>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Concrete" : "混凝土"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">40 Units / 40 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Glass" : "玻璃"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">15 Units / 15 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Paper" : "紙張"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Bricks" : "磚塊"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">10 Units / 10 單位</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                                <div className="bg-bone border border-line-soft p-3 rounded flex items-center justify-between sm:col-span-2">
+                                  <div>
+                                    <div className="text-xs font-bold text-ink-soft">{en ? "Lumber" : "木材"}</div>
+                                    <div className="font-mono-metadata text-[11px] text-ink-mute">20 Units (From Scyther cuts) / 20 單位 (飛天螳螂砍伐)</div>
+                                  </div>
+                                  <span className="material-symbols-outlined text-emerald-600">check_circle</span>
+                                </div>
+                              </>
+                            )}
+                          </div>
+
+                          {/* Mission Escort Lock Info */}
+                          <div className="bg-[#ecdcb9]/30 border border-[#bfa46f]/60 p-4 rounded text-xs gap-2.5 flex flex-col">
+                            <h5 className="font-bold text-ink-soft flex items-center gap-1.5">
+                              <span className="material-symbols-outlined text-primary text-[16px]">link</span>
+                              {en ? "Mission Line Lock & Escort Requirements" : "任務鏈互鎖與護送條件"}
+                            </h5>
+                            
+                            {hugeBuildingFloor === "2F" && (
+                              <div className="text-ink-soft leading-relaxed flex items-center gap-2">
+                                <span className="material-symbols-outlined text-emerald-700 text-[16px]">check_circle</span>
+                                <span>{en ? "No pre-requisite escorts required for 2F foundation casting." : "已就緒：2F 為標準地床澆補，不需要特定角色護送。"}</span>
+                              </div>
+                            )}
+
+                            {hugeBuildingFloor === "3F" && (
+                              <div className="flex flex-col gap-1.5 leading-relaxed">
+                                <div className="flex items-center gap-2 font-semibold text-primary">
+                                  <span className="material-symbols-outlined text-[16px]">person_pin_circle</span>
+                                  <span>{en ? "Escort Lock: Chef Dente (岩石山脊主廚)" : "特定護送：主廚 Dente (Chef Dente)"}</span>
+                                </div>
+                                <p className="text-ink-mute pl-6">
+                                  {en 
+                                    ? "Requires completing Wheat Bread Strength rescue in Rocky Ridges first to unlock Chef Dente's heavy logistical transport sequence."
+                                    : "已護送確認：必須先在「岩石山脊」烤製小麥麵包、取得怪力加成並斬開鐵鍊解救主廚 Dente，方可解鎖 3F 大型施工。"}
+                                </p>
+                              </div>
+                            )}
+
+                            {hugeBuildingFloor === "4F" && (
+                              <div className="flex flex-col gap-1.5 leading-relaxed">
+                                <div className="flex items-center gap-2 font-semibold text-primary">
+                                  <span className="material-symbols-outlined text-[16px]">electric_bolt</span>
+                                  <span>{en ? "Escort Lock: Peakychu (荒涼海灘發電員)" : "特定護送：Peakychu (荒涼海灘發電專長)"}</span>
+                                </div>
+                                <p className="text-ink-mute pl-6">
+                                  {en 
+                                    ? "Requires full Beach power-grid alignment and lighthouse water wheel repair to guide Peakychu to Skylands' vertical lift generator."
+                                    : "已護送確認：必須先在「荒涼海灘」打通完整的發電網絡、修復燈塔水車，方可指引 Peakychu 前往空島激活 4F 終極垂吊發電機。"}
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Real-time progress bar countdown simulator */}
+                        <div className="lg:col-span-6 bg-paper border border-line-soft p-5 rounded flex flex-col justify-between gap-4">
+                          <div>
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="font-mono-metadata text-xs text-ink-soft uppercase tracking-wider font-bold">
+                                {en ? "Real-time Concrete Cure & Build Timer" : "工料現場固化與施工計時"}
+                              </span>
+                              <span className="bg-primary/10 text-primary font-mono text-xs px-2 py-0.5 rounded font-bold animate-pulse">
+                                {en ? "1 HOUR REQUIRED" : "現實需要 1 小時"}
+                              </span>
+                            </div>
+
+                            <p className="text-xs text-ink-mute leading-relaxed mb-4">
+                              {en 
+                                ? "Every skyscraper floor requires massive real-world concrete drying and material assembly time. Tap below to simulate regional project acceleration." 
+                                : "摩天大樓每升一層均需要現實時間 1 小時進行高空物料固化與排班。可使用下方「時空加速器」模擬專案執行進度。"}
+                            </p>
+
+                            {/* Simulated progress slider or bar */}
+                            <div className="bg-bone p-4 rounded border border-line-soft space-y-3">
+                              <div className="flex justify-between items-end">
+                                <div>
+                                  <div className="font-mono-metadata text-[10px] text-ink-faint uppercase font-bold">
+                                    {en ? "Current Cure State" : "固化與施工進度"}
+                                  </div>
+                                  <div className="text-lg font-bold text-on-surface">
+                                    {hugeBuildingProgress[hugeBuildingFloor] === 100 
+                                      ? "100.00% (Completed / 已完工)" 
+                                      : `${Math.min(100, Math.max(0, ((3600 - hugeBuildingTimeRemaining) / 3600) * 100)).toFixed(2)}%`}
+                                  </div>
+                                </div>
+                                <div className="text-right">
+                                  <div className="font-mono-metadata text-[10px] text-ink-faint uppercase font-bold">
+                                    {en ? "Time Remaining" : "賸餘等待時間"}
+                                  </div>
+                                  <kbd className="text-sm font-mono font-bold bg-ink-soft text-on-primary px-2 py-1 rounded">
+                                    {hugeBuildingProgress[hugeBuildingFloor] === 100 ? "00:00:00" : formatTime(hugeBuildingTimeRemaining)}
+                                  </kbd>
+                                </div>
+                              </div>
+
+                              {/* Progress Bar Container */}
+                              <div className="w-full h-3 bg-[#eadecd] rounded overflow-hidden relative">
+                                <div 
+                                  className="h-full bg-primary transition-all duration-300 relative"
+                                  style={{ 
+                                    width: `${
+                                      hugeBuildingProgress[hugeBuildingFloor] === 100 
+                                        ? 100 
+                                        : ((3600 - hugeBuildingTimeRemaining) / 3600) * 100
+                                    }%` 
+                                  }}
+                                >
+                                  {hugeBuildingTimerActive && (
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_1.5s_infinite] bg-[length:200px_100%]"></div>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="space-y-3 pt-2 border-t border-line-soft">
+                            {/* Speed toggles */}
+                            <div className="flex justify-between items-center text-xs">
+                              <span className="text-ink-mute">{en ? "Simulation Speed:" : "模擬時空流速控制:"}</span>
+                              <div className="flex gap-1 bg-[#ecdcb9]/40 p-0.5 rounded border border-[#bfa46f]/30">
+                                <button
+                                  type="button"
+                                  onClick={() => setHugeBuildingMultiplier(1)}
+                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-[10px] ${
+                                    hugeBuildingMultiplier === 1 ? "bg-primary text-on-primary" : "text-ink-soft hover:bg-[#ccdcb9]/40"
+                                  }`}
+                                >
+                                  1x (Real)
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => setHugeBuildingMultiplier(120)}
+                                  className={`px-2.5 py-0.5 rounded font-mono font-bold text-[10px] ${
+                                    hugeBuildingMultiplier === 120 ? "bg-primary text-on-primary" : "text-ink-soft hover:bg-[#ccdcb9]/40"
+                                  }`}
+                                  title={en ? "Compresses 1 hour into 30 seconds" : "將 1 小時壓縮為 30 秒快速預覽"}
+                                >
+                                  120x (Fast)
+                                </button>
+                              </div>
+                            </div>
+
+                            {/* Trigger Button */}
+                            {hugeBuildingProgress[hugeBuildingFloor] === 100 ? (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setHugeBuildingProgress((prev) => ({ ...prev, [hugeBuildingFloor]: 0 }));
+                                  setHugeBuildingTimeRemaining(3600);
+                                  setHugeBuildingTimerActive(false);
+                                }}
+                                className="w-full bg-[#3d5a45] text-on-primary font-mono-metadata text-xs font-bold py-3.5 px-4 rounded hover:opacity-90 transition-all flex items-center justify-center gap-1.5"
+                              >
+                                <span className="material-symbols-outlined text-[16px]">autorenew</span>
+                                {en ? "Reset Build State for Simulation" : "重置本層進度重新進行模擬"}
+                              </button>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={() => setHugeBuildingTimerActive(!hugeBuildingTimerActive)}
+                                className={`w-full font-mono-metadata text-xs font-bold py-3.5 px-4 rounded transition-all flex items-center justify-center gap-1.5 ${
+                                  hugeBuildingTimerActive
+                                    ? "bg-[#be5a4a] text-on-primary shadow-sm hover:bg-[#be5a4a]/90"
+                                    : "bg-primary text-on-primary shadow-md hover:bg-primary/95"
+                                }`}
+                              >
+                                <span className="material-symbols-outlined text-[18px]">
+                                  {hugeBuildingTimerActive ? "pause_circle" : "play_circle"}
+                                </span>
+                                {hugeBuildingTimerActive 
+                                  ? (en ? "PAUSE TIME PROGRESS" : "暫停時空流程") 
+                                  : (en ? "BEGIN FLOATING EXCAVATION & BUILD" : "啟動現即高空施工與材料澆灌")}
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </ScrollFade>
+                )}
+
+                {/* Legendary Bird Megaproject 33x35 Grid Layout and 15 Pokémon Workforce Planner */}
+                {(active.id === "altar-of-flame" || active.id === "abandoned-power-plant" || active.id === "freezing-chambers") && (
+                  <ScrollFade depth="none" scaleEnabled={false} className="w-full">
+                    <section className="bg-[#f0f4f8] border-2 border-x-0 sm:border-x-2 border-[#3c6ca5]/20 rounded-none sm:rounded-lg -mx-6 sm:mx-0 p-6 md:p-8 shadow-sm relative overflow-hidden">
+                      
+                      {/* Visual Header */}
+                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-[#3c6ca5]/10 pb-4 mb-6 relative z-10">
+                        <div>
+                          <span className="bg-[#3c6ca5]/10 text-[#305684] font-mono-metadata text-[10px] px-2 py-0.5 rounded uppercase font-bold tracking-widest">
+                            {en ? "ULTIMATE ALTAR BLUEPRINT LAYER" : "極限祭壇佈局與合工專長管制圖層"}
+                          </span>
+                          <h3 className="font-headline-sm text-headline-sm text-ink-soft mt-1 flex items-center gap-2">
+                            <span className="material-symbols-outlined text-[#3c6ca5]">foundation</span>
+                            {en ? `${active.nameEn} 33x35 Grid & Crew Dispatch` : `${active.nameZh} 33x35 網格佈置與隊伍派遣`}
+                          </h3>
+                        </div>
+                        <div className="bg-[#e2eaf4] px-3.5 py-1.5 rounded text-xs shrink-0 font-mono font-bold text-[#305684]">
+                          {en ? "GRID SIZE: 33x35 CELLS" : "佔地總規模：33x35 巨大網格"}
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
+                        
+                        {/* Left Column: 11x11 Grid Layout & Environmental Physics */}
+                        <div className="lg:col-span-5 flex flex-col gap-4">
+                          <div className="flex justify-between items-center">
+                            <h4 className="font-mono-metadata text-xs text-[#305684] font-bold uppercase tracking-wider flex items-center gap-1.5">
+                              <span className="material-symbols-outlined text-[16px]">grid_4x4</span>
+                              {en ? "33x35 Layout Grid Viewer (11x11 Segment)" : "33x35 核心網格佈局剖面 (11x11)"}
+                            </h4>
+                            <span className="text-[10px] font-mono-metadata text-ink-mute uppercase">
+                              {en ? "Coords: [X11-X22, Y12-Y23]" : "切片坐標系：[X11-X22, Y12-Y23]"}
+                            </span>
+                          </div>
+
+                          {/* Interactive grid blocks diagram */}
+                          <div className="bg-bone border border-[#3c6ca5]/30 p-4 rounded flex flex-col items-center justify-center gap-3">
+                            <div className="grid grid-cols-11 gap-1 w-full max-w-[280px]">
+                              {Array.from({ length: 121 }).map((_, index) => {
+                                const r = Math.floor(index / 11);
+                                const c = index % 11;
+                                const isCore = r >= 3 && r <= 7 && c >= 3 && c <= 7;
+                                let cellColor = "bg-stone-200/60";
+                                let cellBorder = "border-stone-300";
+                                
+                                if (isCore) {
+                                  if (active.id === "altar-of-flame") {
+                                    cellColor = "bg-[#be5a4a]";
+                                    cellBorder = "border-[#be5a4a]/80";
+                                  } else if (active.id === "abandoned-power-plant") {
+                                    cellColor = "bg-[#dcae4a]";
+                                    cellBorder = "border-[#dcae4a]/80";
+                                  } else {
+                                    cellColor = "bg-[#5aa8be]";
+                                    cellBorder = "border-[#5aa8be]/80";
+                                  }
+                                } else if (active.id === "altar-of-flame") {
+                                  const isDiverter = r === 1 || r === 9 || c === 1 || c === 9;
+                                  if (isDiverter) {
+                                    cellColor = "bg-[#334e68]/75";
+                                    cellBorder = "border-blue-900/60";
+                                  } else if (r === 0 || r === 10 || c === 0 || c === 10) {
+                                    cellColor = "bg-[#be5a4a]/25 animate-pulse";
+                                    cellBorder = "border-[#be5a4a]/20";
+                                  }
+                                } else if (active.id === "abandoned-power-plant") {
+                                  const isGap = c % 2 === 0 && r % 2 === 0;
+                                  if (isGap) {
+                                    cellColor = "bg-[#486581]";
+                                    cellBorder = "border-slate-500";
+                                  }
+                                } else {
+                                  const isInsulator = r === 2 || r === 8 || c === 2 || c === 8;
+                                  if (isInsulator) {
+                                    cellColor = "bg-[#e0f2fe]";
+                                    cellBorder = "border-[#7dd3fc]";
+                                  }
+                                }
+
+                                return (
+                                  <div
+                                    key={index}
+                                    className={`aspect-square rounded-[3px] border text-[7px] font-mono flex items-center justify-center transition-all ${cellColor} ${cellBorder}`}
+                                    title={`Cell [${r + 11}, ${c + 12}]`}
+                                  >
+                                    {isCore && index === 60 ? "★" : ""}
+                                  </div>
+                                );
+                              })}
+                            </div>
+
+                            {/* Grid legend */}
+                            <div className="flex flex-wrap gap-4 text-[10px] font-mono-metadata text-ink-soft border-t border-[#3c6ca5]/10 pt-2 w-full justify-center">
+                              <span className="flex items-center gap-1.5">
+                                <span className={`w-2.5 h-2.5 rounded-xs border ${
+                                  active.id === "altar-of-flame" ? "bg-[#be5a4a]" : active.id === "abandoned-power-plant" ? "bg-[#dcae4a]" : "bg-[#5aa8be]"
+                                }`}></span>
+                                {en ? "Altar Center Target" : "中央祭壇核心塊"}
+                              </span>
+                              {active.id === "altar-of-flame" && (
+                                <>
+                                  <span className="flex items-center gap-1.5">
+                                    <span className="w-2.5 h-2.5 rounded-xs border bg-[#334e68]/75"></span>
+                                    {en ? "Bypass Trench" : "4格深防爆避災導流溝"}
+                                  </span>
+                                  <span className="flex items-center gap-1.5">
+                                    <span className="w-2.5 h-2.5 rounded-xs border bg-[#be5a4a]/20"></span>
+                                    {en ? "Active Lava Flow" : "活火山高熱熔岩"}
+                                  </span>
+                                </>
+                              )}
+                              {active.id === "abandoned-power-plant" && (
+                                <>
+                                  <span className="flex items-center gap-1.5">
+                                    <span className="w-2.5 h-2.5 rounded-xs border bg-[#486581]"></span>
+                                    {en ? "8px Spark Gaps" : "8px 磁場引極隙路"}
+                                  </span>
+                                </>
+                              )}
+                              {active.id === "freezing-chambers" && (
+                                <>
+                                  <span className="flex items-center gap-1.5">
+                                    <span className="w-2.5 h-2.5 rounded-xs border bg-[#e0f2fe] border-[#7dd3fc]"></span>
+                                    {en ? "Insulator Shards" : "水晶防洩冷凝屏障"}
+                                  </span>
+                                </>
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Environmental rules */}
+                          <div className="bg-[#e9eff5] p-4 rounded border border-[#3c6ca5]/30 text-xs">
+                            <h5 className="font-bold text-[#305684] flex items-center gap-1.5 mb-2">
+                              <span className="material-symbols-outlined text-[16px]">info</span>
+                              {en ? "Ecosystem Mechanics & Fluid Physics" : "本區極限佈局流體力學與危害管理"}
+                            </h5>
+                            
+                            {active.id === "altar-of-flame" && (
+                              <p className="text-ink-soft leading-relaxed">
+                                {en 
+                                  ? "Moltres's Altar requires carving 4-block-deep cooling ditches outside the 33x35 center matrix. High-temperature lava must be fully redirected to avoid melting materials and instantly resetting build cycles!"
+                                  : "烈焰祭壇要求在 33x35 網格邊緣開鑿四格深的「防爆避災導流溝」。高溫火山熔岩必須引入外側水道，若溢流進入中央祭壇，將嚴重融毀所耗重金屬結構，導致施工計時器歸零。"}
+                              </p>
+                            )}
+
+                            {active.id === "abandoned-power-plant" && (
+                              <p className="text-ink-soft leading-relaxed">
+                                {en 
+                                  ? "Zapdos's generator demands strict 8px node spacing gaps for static wire structures. Any physical obstruction or conductive metal laying outside prescribed lines will spark electric arcs, scaring away workers."
+                                  : "廢棄發電廠要求全區以精確 8px 物理間隙架置靜電特斯拉線圈。凡金屬方塊或線路排布不合，將引發高壓電弧起火，對 15 人施工隊伍產生致命恐慌，造成施工人員逃佚。"}
+                              </p>
+                            )}
+
+                            {active.id === "freezing-chambers" && (
+                              <p className="text-ink-soft leading-relaxed">
+                                {en 
+                                  ? "Articuno's ice chamber must encapsulate cold leak paths. 50 ice blocks must be immediately bordered by 10 harvested crystal shards, preventing environmental heating from surrounding rocky air flow."
+                                  : "冰結之室必須採用內外隔熱法。將 50 快冰塊組入 10 水晶碎片構成的冷凝屏障中，以阻隔外部火山灰與地熱侵擾。若熱量洩漏，冰塊將急速氣化融化，清單材料亦會損毀。"}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Right Column: 15 Pokémon dispatch panel & compliance counters */}
+                        <div className="lg:col-span-7 flex flex-col gap-5">
+                          
+                          <div className="flex justify-between items-center bg-[#cae2fa]/40 border border-[#3c6ca5]/30 px-4 py-3.5 rounded-sm">
+                            <div>
+                              <div className="font-bold text-[#305684] text-sm">
+                                {en ? "Dispatched Workers Count" : "派遣施工人員列表"}
+                              </div>
+                              <p className="text-[11px] text-ink-mute">
+                                {en ? "15-member team configuration required for construction" : "必須精確選中 15 隻寶可夢合工，少一隻或多一隻都無法啟動"}
+                              </p>
+                            </div>
+                            <span className={`font-mono font-bold text-lg px-2.5 py-1 rounded ${
+                              (selectedAltarCrew[active.id] ?? []).length === 15 
+                                ? "bg-emerald-700 text-on-primary animate-pulse" 
+                                : "bg-[#3c6ca5] text-on-primary"
+                            }`}>
+                              {(selectedAltarCrew[active.id] ?? []).length} / 15
+                            </span>
+                          </div>
+
+                          {/* Current 15-member workforce list */}
+                          <div>
+                            <span className="font-mono-metadata text-[10px] text-ink-mute uppercase font-bold block mb-2 tracking-wider">
+                              {en ? "CURRENT WORKFORCE CREW (15 MAN SLOTS)" : "當前工作隊成員（共 15 個工人坑位）"}
+                            </span>
+                            
+                            {(selectedAltarCrew[active.id] ?? []).length === 0 ? (
+                              <div className="bg-bone border border-dashed border-line-soft p-6 rounded text-center text-xs text-ink-mute">
+                                {en 
+                                  ? "Roster is currently empty. Tap Pokémon cards below to assign workers to this altar project." 
+                                  : "工作隊目前無人值守。請點擊下方「全能後備隊」卡片派遣專長精確的寶可夢入隊。"}
+                              </div>
+                            ) : (
+                              <div className="flex flex-wrap gap-2.5 max-h-[170px] overflow-y-auto bg-bone p-3 border border-line-soft rounded">
+                                {(selectedAltarCrew[active.id] ?? []).map((pId) => {
+                                  const pkmn = POKEMON_ROSTER_POOL.find((x) => x.id === pId);
+                                  if (!pkmn) return null;
+                                  return (
+                                    <div 
+                                      key={pId} 
+                                      className="bg-paper shadow-xs border border-[#3c6ca5]/30 pl-2 pr-1.5 py-1.5 rounded flex items-center gap-2 text-xs transition-all hover:border-[#be5a4a] group shrink-0"
+                                    >
+                                      <span className="material-symbols-outlined text-[#3c6ca5] text-[16px]">{pkmn.icon}</span>
+                                      <span className="font-bold text-ink-soft">{en ? pkmn.nameEn : pkmn.nameZh}</span>
+                                      <div className="flex gap-0.5">
+                                        {pkmn.specialties.map((spec) => (
+                                          <span 
+                                            key={spec} 
+                                            className="bg-primary/10 text-primary text-[8px] font-mono px-1 rounded scale-90 uppercase"
+                                            title={spec}
+                                          >
+                                            {spec === "build" && (en ? "Bld" : "建")}
+                                            {spec === "burn" && (en ? "Brn" : "燃")}
+                                            {spec === "generate" && (en ? "Gen" : "電")}
+                                            {spec === "fly" && (en ? "Fly" : "飛")}
+                                            {spec === "freeze" && (en ? "Frz" : "凍")}
+                                            {spec === "crush" && (en ? "Crsh" : "碎")}
+                                            {spec === "transport" && (en ? "Trsp" : "運")}
+                                          </span>
+                                        ))}
+                                      </div>
+                                      <button
+                                        type="button"
+                                        onClick={() => {
+                                          setSelectedAltarCrew((prev) => ({
+                                            ...prev,
+                                            [active.id]: prev[active.id].filter((x) => x !== pId),
+                                          }));
+                                        }}
+                                        className="text-ink-mute hover:text-[#be5a4a] ml-1.5 focus:outline-none"
+                                        title={en ? "Remove worker" : "撤除此工人"}
+                                      >
+                                        <span className="material-symbols-outlined text-[15px]">close</span>
+                                      </button>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Live Workforce Specialty Checker */}
+                          {(() => {
+                            const crewIds = selectedAltarCrew[active.id] ?? [];
+                            const crew = POKEMON_ROSTER_POOL.filter((x) => crewIds.includes(x.id));
+                            const countSpec = (spec: string) => crew.filter((x) => x.specialties.includes(spec)).length;
+
+                            const bldCount = countSpec("build");
+                            const brnCount = countSpec("burn");
+                            const genCount = countSpec("generate");
+                            const flyCount = countSpec("fly");
+                            const frzCount = countSpec("freeze");
+                            const crshCount = countSpec("crush");
+                            const trspCount = countSpec("transport");
+
+                            let isRosterValid = false;
+                            let checks = [] as Array<{ label: string; current: number; required: number; pass: boolean }>;
+
+                            if (active.id === "altar-of-flame") {
+                              checks = [
+                                { label: en ? "Build Specialty (建造)" : "建造專長寶可夢", current: bldCount, required: 3, pass: bldCount >= 3 },
+                                { label: en ? "Burn Specialty (燃燒)" : "燃燒/熔煉專長寶可夢", current: brnCount, required: 3, pass: brnCount >= 3 },
+                                { label: en ? "Crush Specialty (粉碎)" : "粉碎開挖專長寶可夢", current: crshCount, required: 2, pass: crshCount >= 2 },
+                                { label: en ? "Transport Specialty (運輸)" : "物資搬運專長寶可夢", current: trspCount, required: 2, pass: trspCount >= 2 },
+                              ];
+                              isRosterValid = crewIds.length === 15 && checks.every((c) => c.pass);
+                            } else if (active.id === "abandoned-power-plant") {
+                              checks = [
+                                { label: en ? "Build Specialty (建造)" : "建造專長寶可夢", current: bldCount, required: 4, pass: bldCount >= 4 },
+                                { label: en ? "Generate Specialty (發電)" : "發電/配電專長寶可夢", current: genCount, required: 4, pass: genCount >= 4 },
+                                { label: en ? "Crush Specialty (粉碎)" : "粉碎開挖專長寶可夢", current: crshCount, required: 3, pass: crshCount >= 3 },
+                                { label: en ? "Fly Specialty (飛行)" : "高空作業/飛行專長寶可夢", current: flyCount, required: 3, pass: flyCount >= 3 },
+                              ];
+                              isRosterValid = crewIds.length === 15 && checks.every((c) => c.pass);
+                            } else {
+                              checks = [
+                                { label: en ? "Build Specialty (建造)" : "建造專長寶可夢", current: bldCount, required: 4, pass: bldCount >= 4 },
+                                { label: en ? "Freeze Specialty (冰凍)" : "低溫冷凝/冰凍專長", current: frzCount, required: 5, pass: frzCount >= 5 },
+                                { label: en ? "Crush Specialty (粉碎)" : "粉碎開挖專長寶可夢", current: crshCount, required: 3, pass: crshCount >= 3 },
+                                { label: en ? "Transport Specialty (運輸)" : "物資搬運專長寶可夢", current: trspCount, required: 2, pass: trspCount >= 2 },
+                              ];
+                              isRosterValid = crewIds.length === 15 && checks.every((c) => c.pass);
+                            }
+
+                            return (
+                              <div className="bg-paper border border-[#3c6ca5]/30 rounded p-4 space-y-3">
+                                <div className="font-mono-metadata text-[10px] text-[#305684] uppercase font-bold tracking-wider border-b border-[#3c6ca5]/10 pb-2">
+                                  {en ? "WORKFORCE SPECIALTY COMPLIANCE AUDIT" : "合工班專長審查標準"}
+                                </div>
+                                
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                                  {checks.map((c, i) => (
+                                    <div 
+                                      key={i} 
+                                      className={`flex items-center justify-between p-2 rounded border ${
+                                        c.pass ? "bg-emerald-50 border-emerald-200/50 text-emerald-900" : "bg-red-50 border-red-200/50 text-red-900"
+                                      }`}
+                                    >
+                                      <span className="truncate pr-2">{c.label}</span>
+                                      <span className="font-mono font-bold shrink-0">
+                                        {c.current} / {c.required} {c.pass ? "✓" : "✗"}
+                                      </span>
+                                    </div>
+                                  ))}
+                                </div>
+
+                                {isRosterValid ? (
+                                  <div className="bg-emerald-600 text-on-primary p-3 rounded text-center font-mono-metadata text-xs font-bold leading-relaxed shadow-sm animate-pulse flex items-center justify-center gap-2">
+                                    <span className="material-symbols-outlined text-[18px]">verified</span>
+                                    {active.id === "altar-of-flame" && (
+                                      <span>{en ? "🔥 CHOSEN ALTAR READY! MOLTRES RECRUITMENT PATHWAY PRIMED." : "🔥 烈焰祭壇就緒！火焰鳥召喚力能已達到臨界點！"}</span>
+                                    )}
+                                    {active.id === "abandoned-power-plant" && (
+                                      <span>{en ? "⚡ TURBINES FULLY CHARGED! ZAPDOS RECRUITMENT PATHWAY PRIMED." : "⚡ 廢棄發電廠充能完畢！閃電鳥引雷震盪程序已就緒！"}</span>
+                                    )}
+                                    {active.id === "freezing-chambers" && (
+                                      <span>{en ? "❄️ ICE BARRIERS ENCAPSULATED! ARTICUNO RECRUITMENT PATHWAY PRIMED." : "❄️ 冰結之室密封完成！急凍鳥冷凝喚醒程序已就緒！"}</span>
+                                    )}
+                                  </div>
+                                ) : (
+                                  <div className="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded text-center font-body-base text-xs leading-relaxed flex items-start gap-2">
+                                    <span className="material-symbols-outlined text-amber-600 text-[16px] mt-0.5 shrink-0">lock</span>
+                                    <span className="text-left font-semibold">
+                                      {en 
+                                        ? `Awaiting exact 15 dispatched workers meeting the criteria above to trigger ${active.nameEn}'s ancient calling.`
+                                        : `合工條件不契合。必須派遣精確 15 隻寶可夢，且完全契合上方所要求的合工班專長配比，才能成功召喚 ${active.nameZh}。`}
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })()}
+
+                          {/* Roster Pool Board (Available fleet) */}
+                          <div className="bg-bone p-4 border border-line-soft rounded">
+                            <div className="flex justify-between items-center mb-3">
+                              <span className="font-mono-metadata text-[10px] text-ink-mute uppercase font-bold tracking-wider">
+                                {en ? "AVAILABLE FLEET POOL" : "真新鎮與據點全能後備隊"}
+                              </span>
+                              <span className="text-[10px] font-mono-metadata text-ink-faint">
+                                {en ? "Select up to 15 workers" : "點擊可派遣或移出工作隊"}
+                              </span>
+                            </div>
+
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-[160px] overflow-y-auto pr-1">
+                              {POKEMON_ROSTER_POOL.map((p) => {
+                                const crewIds = selectedAltarCrew[active.id] ?? [];
+                                const isSelected = crewIds.includes(p.id);
+                                return (
+                                  <button
+                                    type="button"
+                                    key={p.id}
+                                    disabled={!isSelected && crewIds.length >= 15}
+                                    onClick={() => {
+                                      if (isSelected) {
+                                        setSelectedAltarCrew((prev) => ({
+                                          ...prev,
+                                          [active.id]: prev[active.id].filter((id) => id !== p.id),
+                                        }));
+                                      } else if (crewIds.length < 15) {
+                                        setSelectedAltarCrew((prev) => ({
+                                          ...prev,
+                                          [active.id]: [...prev[active.id], p.id],
+                                        }));
+                                      }
+                                    }}
+                                    className={`p-2 rounded border text-left flex flex-col justify-between h-20 transition-all ${
+                                      isSelected
+                                        ? "bg-[#3c6ca5]/10 border-[#3c6ca5] ring-1 ring-[#3c6ca5] text-[#305684]"
+                                        : crewIds.length >= 15
+                                          ? "bg-stone-50 border-stone-200 opacity-40 cursor-not-allowed text-stone-400"
+                                          : "bg-paper hover:bg-stone-50 border-line-soft text-ink-soft"
+                                    }`}
+                                  >
+                                    <div className="flex justify-between items-start w-full gap-1">
+                                      <span className="font-bold text-xs truncate leading-tight">
+                                        {en ? p.nameEn : p.nameZh}
+                                      </span>
+                                      <span className="material-symbols-outlined text-[15px] shrink-0 opacity-70">
+                                        {p.icon}
+                                      </span>
+                                    </div>
+                                    <div className="w-full">
+                                      <div className="flex flex-wrap gap-0.5 mb-1">
+                                        {p.specialties.map((spec) => (
+                                          <span 
+                                            key={spec} 
+                                            className="bg-[#3c6ca5]/10 text-[#305684] text-[7px] scale-90 origin-left px-1 py-0.2 rounded font-mono uppercase"
+                                          >
+                                            {spec}
+                                          </span>
+                                        ))}
+                                      </div>
+                                      <div className="text-[9px] text-ink-faint leading-tight truncate">
+                                        {en ? p.descEn : p.descZh}
+                                      </div>
+                                    </div>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </section>
+                  </ScrollFade>
+                )}
 
                 <ScrollFade depth="none" scaleEnabled={false} className="w-full">
                   <section className="pt-6 border-t border-dashed border-line-soft">
