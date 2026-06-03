@@ -65,6 +65,18 @@ type Collectible = {
   byRegion?: Record<string, number>;
 };
 
+type CollectibleItem = {
+  id: string;
+  regionId: string;
+  category: string;
+  nameJa: string;
+  titleEn: string;
+  descEn: string;
+  rewardJa: string;
+  locationJa: string;
+  image: string;
+};
+
 type MapData = {
   mapId: string;
   statusTickerEn: string;
@@ -115,6 +127,10 @@ export default function MapPage() {
   const [kindFilter, setKindFilter] = useState<Set<string>>(new Set());
   const [hideVisited, setHideVisited] = useState(false);
   const { favorites: visited, toggleFavorite: toggleVisited } = useFavorites("pokopia-map-visited");
+
+  const [items, setItems] = useState<CollectibleItem[]>([]);
+  const [showCollectibles, setShowCollectibles] = useState(false);
+  const [activeItem, setActiveItem] = useState<CollectibleItem | null>(null);
 
   const toggleFilter = (
     setter: React.Dispatch<React.SetStateAction<Set<string>>>,
@@ -186,6 +202,13 @@ export default function MapPage() {
       .then(setData);
   }, []);
 
+  useEffect(() => {
+    fetch("/data/map_collectibles.json")
+      .then((res) => res.json())
+      .then((d) => setItems(d.items ?? []))
+      .catch(() => setItems([]));
+  }, []);
+
   const en = i18n.language === "en";
   const seoTitle = en ? "Exploration Map & Region Routes | Pokopia Chronicles" : "探索地圖與區域路線 | Pokopia 年代記";
   const seoDescription = en
@@ -239,6 +262,38 @@ export default function MapPage() {
     return regionOk && kindOk && visitedOk;
   });
   const filtersActive = regionFilter.size > 0 || kindFilter.size > 0 || hideVisited;
+
+  const collectibleMeta: Record<string, { color: string; icon: string; labelEn: string; labelZh: string }> =
+    Object.fromEntries(
+      collectibles.map((c) => [c.key, { color: c.color, icon: c.icon, labelEn: c.labelEn, labelZh: c.labelZh }])
+    );
+  const regionName = (rid: string) => {
+    const r = regions.find((x) => x.id === rid);
+    return r ? (en ? r.nameEn : r.nameZh) : rid;
+  };
+  const regionCenter = (rid: string) => {
+    const l = locations.find((x) => x.regionId === rid && x.kind === "region");
+    return l ? { x: l.x, y: l.y } : { x: 50, y: 50 };
+  };
+  const visibleItems = items.filter((it) => regionFilter.size === 0 || regionFilter.has(it.regionId));
+  // deterministic sunflower scatter around each region's centre
+  const itemPos: Record<string, { x: number; y: number }> = {};
+  {
+    const groups: Record<string, CollectibleItem[]> = {};
+    for (const it of items) (groups[it.regionId] ??= []).push(it);
+    for (const rid of Object.keys(groups)) {
+      const c = regionCenter(rid);
+      const arr = groups[rid];
+      arr.forEach((it, k) => {
+        const r = 13 * Math.sqrt((k + 0.5) / arr.length);
+        const ang = k * 2.399963229728653;
+        itemPos[it.id] = {
+          x: Math.max(4, Math.min(96, c.x + r * Math.cos(ang) * 0.95)),
+          y: Math.max(6, Math.min(94, c.y + r * Math.sin(ang) * 0.8)),
+        };
+      });
+    }
+  }
 
   return (
     <>
@@ -417,6 +472,32 @@ export default function MapPage() {
                   </span>
                 </button>
               ))}
+
+              {showCollectibles &&
+                visibleItems.map((it) => {
+                  const meta = collectibleMeta[it.category];
+                  const pos = itemPos[it.id];
+                  if (!pos) return null;
+                  const isPokeball = it.category.endsWith("pokeball");
+                  return (
+                    <button
+                      key={"item-" + it.id}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveItem(it);
+                      }}
+                      title={en ? it.titleEn || it.nameJa : it.nameJa}
+                      className="absolute z-[5] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/70 shadow-sm transition-transform hover:scale-[1.6] hover:z-20"
+                      style={{
+                        top: `${pos.y}%`,
+                        left: `${pos.x}%`,
+                        width: isPokeball ? 9 : 7,
+                        height: isPokeball ? 9 : 7,
+                        backgroundColor: meta?.color ?? "#a35a3a",
+                      }}
+                    />
+                  );
+                })}
             </div>
 
             <div className="border-t hairline-top p-6 flex justify-between items-center z-10 relative flex-wrap gap-4 bg-surface/80 backdrop-blur-sm">
@@ -430,12 +511,26 @@ export default function MapPage() {
                   {en ? "Special Site" : "特殊據點"}
                 </span>
               </div>
-              <button
-                onClick={() => setShowIndex(true)}
-                className="font-label-caps text-label-caps text-primary hover:opacity-80 transition-opacity uppercase"
-              >
-                {en ? "View Index" : "檢視索引"}
-              </button>
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={() => setShowCollectibles((v) => !v)}
+                  className={`font-label-caps text-label-caps transition-colors uppercase flex items-center gap-1.5 ${
+                    showCollectibles ? "text-primary" : "text-ink-mute hover:text-ink-main"
+                  }`}
+                  aria-pressed={showCollectibles}
+                >
+                  <span className="material-symbols-outlined text-[16px]">
+                    {showCollectibles ? "visibility" : "visibility_off"}
+                  </span>
+                  {en ? `Collectibles (${visibleItems.length})` : `收集物 (${visibleItems.length})`}
+                </button>
+                <button
+                  onClick={() => setShowIndex(true)}
+                  className="font-label-caps text-label-caps text-primary hover:opacity-80 transition-opacity uppercase"
+                >
+                  {en ? "View Index" : "檢視索引"}
+                </button>
+              </div>
             </div>
           </div>
 
@@ -1492,6 +1587,86 @@ export default function MapPage() {
             </div>
           </div>
         )}
+
+        {activeItem && (() => {
+          const meta = collectibleMeta[activeItem.category];
+          return (
+            <div
+              className="fixed inset-0 z-[72] flex items-center justify-center p-4 bg-ink-soft/40 backdrop-blur-sm"
+              onClick={() => setActiveItem(null)}
+            >
+              <div
+                className="bg-paper border hairline-border w-[92vw] max-w-md max-h-[88vh] overflow-y-auto relative"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  onClick={() => setActiveItem(null)}
+                  className="absolute top-sm right-sm z-10 text-ink-mute hover:text-primary transition-colors bg-paper/80 backdrop-blur-md rounded-full p-1 border border-line-soft"
+                  aria-label={en ? "Close" : "關閉"}
+                >
+                  <span className="material-symbols-outlined">close</span>
+                </button>
+                <div className="p-lg">
+                  <div className="flex items-center gap-2 mb-3 pr-8">
+                    <span className="material-symbols-outlined text-[20px]" style={{ color: meta?.color }}>
+                      {meta?.icon}
+                    </span>
+                    <span
+                      className="font-mono-metadata text-mono-metadata uppercase tracking-wider"
+                      style={{ color: meta?.color }}
+                    >
+                      {en ? meta?.labelEn : meta?.labelZh}
+                    </span>
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute ml-auto">
+                      {regionName(activeItem.regionId)}
+                    </span>
+                  </div>
+                  <h2 className="font-headline-md text-headline-md text-on-surface mb-1 break-words">
+                    {en ? activeItem.titleEn || activeItem.nameJa : activeItem.nameJa}
+                  </h2>
+                  {en && activeItem.titleEn && activeItem.nameJa && (
+                    <p className="font-body-italic text-body-italic text-ink-mute mb-3 break-words">
+                      {activeItem.nameJa}
+                    </p>
+                  )}
+                  {activeItem.image && (
+                    <img
+                      src={activeItem.image}
+                      alt=""
+                      loading="lazy"
+                      className="w-full rounded-sm border border-line-soft bg-bone my-4"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLImageElement).style.display = "none";
+                      }}
+                    />
+                  )}
+                  {(activeItem.descEn || activeItem.rewardJa) && (
+                    <p className="font-body-base text-body-base text-ink-soft leading-relaxed whitespace-pre-wrap mb-3">
+                      {activeItem.descEn || activeItem.rewardJa}
+                    </p>
+                  )}
+                  {activeItem.locationJa && (
+                    <div className="border-t border-line-soft pt-3 mt-3">
+                      <span className="font-mono-metadata text-mono-metadata text-ink-mute uppercase block mb-1">
+                        {en ? "Location (JA)" : "位置（日文）"}
+                      </span>
+                      <p className="font-body-base text-body-base text-ink-soft break-words">{activeItem.locationJa}</p>
+                    </div>
+                  )}
+                  <a
+                    href="https://pokopiaguide.com/zh/map"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 mt-4 font-mono-metadata text-mono-metadata text-primary hover:opacity-80"
+                  >
+                    <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                    {en ? "Source: pokopiaguide" : "資料來源：pokopiaguide"}
+                  </a>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
 
         {showIndex && (
           <div
