@@ -62,6 +62,7 @@ type Collectible = {
   icon: string;
   count: number;
   color: string;
+  byRegion?: Record<string, number>;
 };
 
 type MapData = {
@@ -207,7 +208,30 @@ export default function MapPage() {
 
   const regions = data.regions ?? [];
   const collectibles = data.collectibles ?? [];
-  const collectiblesTotal = collectibles.reduce((sum, c) => sum + c.count, 0);
+  const collectibleView = collectibles
+    .map((c) => {
+      const entries = Object.entries(c.byRegion ?? {}) as [string, number][];
+      const view =
+        regionFilter.size === 0
+          ? c.count
+          : entries.reduce((s, [rid, n]) => (regionFilter.has(rid) ? s + n : s), 0);
+      return { ...c, view };
+    })
+    .filter((c) => c.view > 0);
+  const collectiblesViewTotal = collectibleView.reduce((s, c) => s + c.view, 0);
+  const collectibleScopeLabel =
+    regionFilter.size === 0
+      ? en
+        ? "all regions"
+        : "全區域"
+      : regionFilter.size === 1
+        ? (() => {
+            const r = regions.find((x) => regionFilter.has(x.id));
+            return r ? (en ? r.nameEn : r.nameZh) : en ? "1 region" : "1 區域";
+          })()
+        : en
+          ? `${regionFilter.size} regions`
+          : `${regionFilter.size} 區域`;
   const visibleLocations = locations.filter((loc) => {
     const regionOk = regionFilter.size === 0 || regionFilter.has(loc.regionId);
     const kindOk = kindFilter.size === 0 || kindFilter.has(loc.kind);
@@ -435,31 +459,37 @@ export default function MapPage() {
                 <span className="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
                 {en ? "Collectibles Index" : "收集物標註索引"}
               </h3>
-              <span className="font-mono-metadata text-mono-metadata text-primary">
-                {collectiblesTotal} {en ? "marked" : "處標註"}
+              <span className="font-mono-metadata text-mono-metadata text-primary whitespace-nowrap">
+                {collectiblesViewTotal} {en ? "marked" : "處"} · {collectibleScopeLabel}
               </span>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
-              {collectibles.map((c) => (
-                <div
-                  key={c.key}
-                  className="flex items-center gap-2 bg-paper-warm/40 border border-line-soft rounded-sm px-2.5 py-1.5"
-                >
-                  <span
-                    className="material-symbols-outlined text-[16px] shrink-0"
-                    style={{ color: c.color }}
+            {collectibleView.length === 0 ? (
+              <div className="border border-dashed border-line-soft bg-bone px-3 py-4 text-center font-mono-metadata text-mono-metadata text-ink-mute">
+                {en ? "No catalogued collectibles in this region yet." : "此區域尚無建檔的收集物標註。"}
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
+                {collectibleView.map((c) => (
+                  <div
+                    key={c.key}
+                    className="flex items-center gap-2 bg-paper-warm/40 border border-line-soft rounded-sm px-2.5 py-1.5"
                   >
-                    {c.icon}
-                  </span>
-                  <span className="font-mono-metadata text-mono-metadata text-ink-soft truncate flex-grow">
-                    {en ? c.labelEn : c.labelZh}
-                  </span>
-                  <span className="font-mono-metadata text-mono-metadata text-ink-mute font-bold shrink-0">
-                    {c.count}
-                  </span>
-                </div>
-              ))}
-            </div>
+                    <span
+                      className="material-symbols-outlined text-[16px] shrink-0"
+                      style={{ color: c.color }}
+                    >
+                      {c.icon}
+                    </span>
+                    <span className="font-mono-metadata text-mono-metadata text-ink-soft truncate flex-grow">
+                      {en ? c.labelEn : c.labelZh}
+                    </span>
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute font-bold shrink-0">
+                      {c.view}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 

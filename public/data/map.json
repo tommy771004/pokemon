@@ -3,25 +3,181 @@
   "statusTickerEn": "// WITHERED WASTELAND: HIDDEN MEW MURAL REQUIRES 27 MYSTERIOUS SLATES // GLOOMY SEASIDE: PIPLUP MUD-CLEARING AND POWER-GRID RESTORATION ACTIVE // BULGING HIGHLANDS: CHEF DENTE RESCUE AND BURGER PATTY UPGRADE AVAILABLE // SPARKLING FLOATING ISLAND: HUGE BUILDING 2F-4F CREW STAGING OPEN // EMPTY TOWN: LEGENDARY BIRD BLUEPRINTS DISCOVERED ON THE THREE PEAKS // DREAM ISLANDS: DRIFLOON ROUTES LEAD TO JOHTO BEAST ENCOUNTERS",
   "statusTickerZh": "// 乾巴巴荒野：夢幻壁畫需要 27 塊神秘石板 // 暗沉沉海邊：波加曼除泥與電網修復進行中 // 凸隆隆山地：主廚 Dente 救援與漢堡排強化已開放 // 閃閃浮島：巨大建築 2F-4F 施工整備完成 // 空空鎮：三神鳥藍圖已在三座高峰現蹤 // 夢境群島：飄飄球航線可通往城都三聖獸遭遇",
   "regions": [
-    { "id": "withered-wasteland",        "nameEn": "Withered Wasteland",        "nameZh": "乾巴巴荒野",   "icon": "landscape", "color": "#a89a7c" },
-    { "id": "gloomy-seaside",            "nameEn": "Gloomy Seaside",            "nameZh": "暗沉沉海邊",   "icon": "water",     "color": "#3c6ca5" },
-    { "id": "bulging-highlands",         "nameEn": "Bulging Highlands",         "nameZh": "凸隆隆山地",   "icon": "terrain",   "color": "#a35a3a" },
-    { "id": "bulging-mine",              "nameEn": "Bulging Mine Interior",     "nameZh": "凸隆隆礦山內", "icon": "diamond",   "color": "#7a6a52" },
-    { "id": "sparkling-floating-island", "nameEn": "Sparkling Floating Island", "nameZh": "閃閃浮島",     "icon": "cloud",     "color": "#5a9bbe" },
-    { "id": "empty-town",                "nameEn": "Empty Town",                "nameZh": "空空鎮",       "icon": "home",      "color": "#4c785a" }
+    {
+      "id": "withered-wasteland",
+      "nameEn": "Withered Wasteland",
+      "nameZh": "乾巴巴荒野",
+      "icon": "landscape",
+      "color": "#a89a7c"
+    },
+    {
+      "id": "gloomy-seaside",
+      "nameEn": "Gloomy Seaside",
+      "nameZh": "暗沉沉海邊",
+      "icon": "water",
+      "color": "#3c6ca5"
+    },
+    {
+      "id": "bulging-highlands",
+      "nameEn": "Bulging Highlands",
+      "nameZh": "凸隆隆山地",
+      "icon": "terrain",
+      "color": "#a35a3a"
+    },
+    {
+      "id": "bulging-mine",
+      "nameEn": "Bulging Mine Interior",
+      "nameZh": "凸隆隆礦山內",
+      "icon": "diamond",
+      "color": "#7a6a52"
+    },
+    {
+      "id": "sparkling-floating-island",
+      "nameEn": "Sparkling Floating Island",
+      "nameZh": "閃閃浮島",
+      "icon": "cloud",
+      "color": "#5a9bbe"
+    },
+    {
+      "id": "empty-town",
+      "nameEn": "Empty Town",
+      "nameZh": "空空鎮",
+      "icon": "home",
+      "color": "#4c785a"
+    }
   ],
   "collectibles": [
-    { "key": "yellow-pokeball", "labelEn": "Yellow Poké Balls", "labelZh": "黃球",       "icon": "radio_button_checked", "count": 13, "color": "#dcae4a" },
-    { "key": "red-pokeball",    "labelEn": "Red Poké Balls",    "labelZh": "紅球",       "icon": "radio_button_checked", "count": 12, "color": "#be5a4a" },
-    { "key": "magazine",        "labelEn": "Magazines",         "labelZh": "雜誌",       "icon": "menu_book",            "count": 8,  "color": "#7a6a52" },
-    { "key": "workbench",       "labelEn": "Workbenches",       "labelZh": "工作臺",     "icon": "handyman",             "count": 6,  "color": "#a35a3a" },
-    { "key": "diary",           "labelEn": "Diaries",           "labelZh": "日記",       "icon": "auto_stories",         "count": 4,  "color": "#4c785a" },
-    { "key": "note",            "labelEn": "Notes",             "labelZh": "便條",       "icon": "sticky_note_2",        "count": 3,  "color": "#bc8e44" },
-    { "key": "newspaper",       "labelEn": "Newspapers",        "labelZh": "報紙",       "icon": "newspaper",            "count": 2,  "color": "#6b6b6b" },
-    { "key": "letter",          "labelEn": "Letters",           "labelZh": "信件",       "icon": "mail",                 "count": 2,  "color": "#3c6ca5" },
-    { "key": "pokemon-center",  "labelEn": "Pokémon Centers",   "labelZh": "寶可夢中心", "icon": "local_hospital",       "count": 1,  "color": "#be5a4a" },
-    { "key": "document",        "labelEn": "Documents",         "labelZh": "文件",       "icon": "description",          "count": 1,  "color": "#5a9bbe" },
-    { "key": "photo",           "labelEn": "Photos",            "labelZh": "照片",       "icon": "photo_camera",         "count": 1,  "color": "#a89a7c" }
+    {
+      "key": "yellow-pokeball",
+      "labelEn": "Yellow Poké Balls",
+      "labelZh": "黃球",
+      "icon": "radio_button_checked",
+      "count": 43,
+      "color": "#dcae4a",
+      "byRegion": {
+        "withered-wasteland": 13,
+        "bulging-highlands": 9,
+        "bulging-mine": 1,
+        "gloomy-seaside": 14,
+        "sparkling-floating-island": 6
+      }
+    },
+    {
+      "key": "red-pokeball",
+      "labelEn": "Red Poké Balls",
+      "labelZh": "紅球",
+      "icon": "radio_button_checked",
+      "count": 51,
+      "color": "#be5a4a",
+      "byRegion": {
+        "withered-wasteland": 12,
+        "bulging-highlands": 10,
+        "bulging-mine": 2,
+        "gloomy-seaside": 13,
+        "sparkling-floating-island": 14
+      }
+    },
+    {
+      "key": "magazine",
+      "labelEn": "Magazines",
+      "labelZh": "雜誌",
+      "icon": "menu_book",
+      "count": 31,
+      "color": "#7a6a52",
+      "byRegion": {
+        "gloomy-seaside": 9,
+        "bulging-highlands": 7,
+        "bulging-mine": 2,
+        "sparkling-floating-island": 5,
+        "withered-wasteland": 8
+      }
+    },
+    {
+      "key": "diary",
+      "labelEn": "Diaries",
+      "labelZh": "日記",
+      "icon": "auto_stories",
+      "count": 15,
+      "color": "#4c785a",
+      "byRegion": {
+        "withered-wasteland": 4,
+        "gloomy-seaside": 4,
+        "bulging-highlands": 3,
+        "bulging-mine": 1,
+        "sparkling-floating-island": 3
+      }
+    },
+    {
+      "key": "newspaper",
+      "labelEn": "Newspapers",
+      "labelZh": "報紙",
+      "icon": "newspaper",
+      "count": 9,
+      "color": "#6b6b6b",
+      "byRegion": {
+        "withered-wasteland": 2,
+        "gloomy-seaside": 2,
+        "bulging-highlands": 1,
+        "sparkling-floating-island": 4
+      }
+    },
+    {
+      "key": "letter",
+      "labelEn": "Letters",
+      "labelZh": "信件",
+      "icon": "mail",
+      "count": 8,
+      "color": "#3c6ca5",
+      "byRegion": {
+        "withered-wasteland": 2,
+        "gloomy-seaside": 2,
+        "bulging-highlands": 2,
+        "bulging-mine": 1,
+        "sparkling-floating-island": 1
+      }
+    },
+    {
+      "key": "note",
+      "labelEn": "Notes",
+      "labelZh": "便條",
+      "icon": "sticky_note_2",
+      "count": 6,
+      "color": "#bc8e44",
+      "byRegion": {
+        "withered-wasteland": 3,
+        "gloomy-seaside": 1,
+        "bulging-highlands": 1,
+        "sparkling-floating-island": 1
+      }
+    },
+    {
+      "key": "document",
+      "labelEn": "Documents",
+      "labelZh": "文件",
+      "icon": "description",
+      "count": 3,
+      "color": "#5a9bbe",
+      "byRegion": {
+        "withered-wasteland": 1,
+        "bulging-highlands": 1,
+        "sparkling-floating-island": 1
+      }
+    },
+    {
+      "key": "photo",
+      "labelEn": "Photos",
+      "labelZh": "照片",
+      "icon": "photo_camera",
+      "count": 6,
+      "color": "#a89a7c",
+      "byRegion": {
+        "withered-wasteland": 1,
+        "gloomy-seaside": 1,
+        "bulging-mine": 1,
+        "bulging-highlands": 1,
+        "sparkling-floating-island": 2
+      }
+    }
   ],
   "locations": [
     {
