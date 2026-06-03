@@ -1,0 +1,538 @@
+{
+  "titleEn": "Excluded Pokémon",
+  "titleZh": "排除的寶可夢",
+  "pokemon": [
+    {
+      "id": "311",
+      "nameEn": "Plusle",
+      "nameZh": "Plusle",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "312",
+      "nameEn": "Minun",
+      "nameZh": "Minun",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "313",
+      "nameEn": "Volbeat",
+      "nameZh": "Volbeat",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "314",
+      "nameEn": "Illumise",
+      "nameZh": "Illumise",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "315",
+      "nameEn": "Roselia",
+      "nameZh": "Roselia",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "316",
+      "nameEn": "Gulpin",
+      "nameZh": "Gulpin",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "317",
+      "nameEn": "Swalot",
+      "nameZh": "Swalot",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "318",
+      "nameEn": "Carvanha",
+      "nameZh": "Carvanha",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "319",
+      "nameEn": "Sharpedo",
+      "nameZh": "Sharpedo",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "320",
+      "nameEn": "Wailmer",
+      "nameZh": "Wailmer",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "321",
+      "nameEn": "Wailord",
+      "nameZh": "Wailord",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "322",
+      "nameEn": "Numel",
+      "nameZh": "Numel",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "323",
+      "nameEn": "Camerupt",
+      "nameZh": "Camerupt",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "324",
+      "nameEn": "Torkoal",
+      "nameZh": "Torkoal",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "325",
+      "nameEn": "Spoink",
+      "nameZh": "Spoink",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "326",
+      "nameEn": "Grumpig",
+      "nameZh": "Grumpig",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "327",
+      "nameEn": "Spinda",
+      "nameZh": "Spinda",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "328",
+      "nameEn": "Trapinch",
+      "nameZh": "Trapinch",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "329",
+      "nameEn": "Vibrava",
+      "nameZh": "Vibrava",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "330",
+      "nameEn": "Flygon",
+      "nameZh": "Flygon",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "331",
+      "nameEn": "Cacnea",
+      "nameZh": "Cacnea",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "332",
+      "nameEn": "Cacturne",
+      "nameZh": "Cacturne",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "333",
+      "nameEn": "Swablu",
+      "nameZh": "Swablu",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "334",
+      "nameEn": "Altaria",
+      "nameZh": "Altaria",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "335",
+      "nameEn": "Zangoose",
+      "nameZh": "Zangoose",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "336",
+      "nameEn": "Seviper",
+      "nameZh": "Seviper",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "337",
+      "nameEn": "Lunatone",
+      "nameZh": "Lunatone",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "338",
+      "nameEn": "Solrock",
+      "nameZh": "Solrock",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "339",
+      "nameEn": "Barboach",
+      "nameZh": "Barboach",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "340",
+      "nameEn": "Whiscash",
+      "nameZh": "Whiscash",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "341",
+      "nameEn": "Corphish",
+      "nameZh": "Corphish",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "342",
+      "nameEn": "Crawdaunt",
+      "nameZh": "Crawdaunt",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "343",
+      "nameEn": "Baltoy",
+      "nameZh": "Baltoy",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "344",
+      "nameEn": "Claydol",
+      "nameZh": "Claydol",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "345",
+      "nameEn": "Lileep",
+      "nameZh": "Lileep",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "346",
+      "nameEn": "Cradily",
+      "nameZh": "Cradily",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "347",
+      "nameEn": "Anorith",
+      "nameZh": "Anorith",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "348",
+      "nameEn": "Armaldo",
+      "nameZh": "Armaldo",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "349",
+      "nameEn": "Feebas",
+      "nameZh": "Feebas",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "350",
+      "nameEn": "Milotic",
+      "nameZh": "Milotic",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "351",
+      "nameEn": "Castform",
+      "nameZh": "Castform",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "352",
+      "nameEn": "Kecleon",
+      "nameZh": "Kecleon",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "353",
+      "nameEn": "Shuppet",
+      "nameZh": "Shuppet",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "354",
+      "nameEn": "Banette",
+      "nameZh": "Banette",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "355",
+      "nameEn": "Duskull",
+      "nameZh": "Duskull",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "356",
+      "nameEn": "Dusclops",
+      "nameZh": "Dusclops",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "357",
+      "nameEn": "Tropius",
+      "nameZh": "Tropius",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "358",
+      "nameEn": "Chimecho",
+      "nameZh": "Chimecho",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "359",
+      "nameEn": "Absol",
+      "nameZh": "Absol",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "360",
+      "nameEn": "Wynaut",
+      "nameZh": "Wynaut",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "361",
+      "nameEn": "Snorunt",
+      "nameZh": "Snorunt",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "362",
+      "nameEn": "Glalie",
+      "nameZh": "Glalie",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "363",
+      "nameEn": "Spheal",
+      "nameZh": "Spheal",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "364",
+      "nameEn": "Sealeo",
+      "nameZh": "Sealeo",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "365",
+      "nameEn": "Walrein",
+      "nameZh": "Walrein",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "366",
+      "nameEn": "Clamperl",
+      "nameZh": "Clamperl",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "367",
+      "nameEn": "Huntail",
+      "nameZh": "Huntail",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "368",
+      "nameEn": "Gorebyss",
+      "nameZh": "Gorebyss",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "369",
+      "nameEn": "Relicanth",
+      "nameZh": "Relicanth",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "370",
+      "nameEn": "Luvdisc",
+      "nameZh": "Luvdisc",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "371",
+      "nameEn": "Bagon",
+      "nameZh": "Bagon",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "372",
+      "nameEn": "Shelgon",
+      "nameZh": "Shelgon",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "373",
+      "nameEn": "Salamence",
+      "nameZh": "Salamence",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "374",
+      "nameEn": "Beldum",
+      "nameZh": "Beldum",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "375",
+      "nameEn": "Metang",
+      "nameZh": "Metang",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "376",
+      "nameEn": "Metagross",
+      "nameZh": "Metagross",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "377",
+      "nameEn": "Regirock",
+      "nameZh": "Regirock",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "378",
+      "nameEn": "Regice",
+      "nameZh": "Regice",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "379",
+      "nameEn": "Registeel",
+      "nameZh": "Registeel",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "380",
+      "nameEn": "Latias",
+      "nameZh": "Latias",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "381",
+      "nameEn": "Latios",
+      "nameZh": "Latios",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "382",
+      "nameEn": "Kyogre",
+      "nameZh": "Kyogre",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "383",
+      "nameEn": "Groudon",
+      "nameZh": "Groudon",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "384",
+      "nameEn": "Rayquaza",
+      "nameZh": "Rayquaza",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "385",
+      "nameEn": "Jirachi",
+      "nameZh": "Jirachi",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    },
+    {
+      "id": "386",
+      "nameEn": "Deoxys",
+      "nameZh": "Deoxys",
+      "reasonEn": "Excluded from Pokopia base and event files due to Pokédex limitation.",
+      "reasonZh": "未收錄於 Pokopia 基礎與活動圖鑑中。"
+    }
+  ]
+}

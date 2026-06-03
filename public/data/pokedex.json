@@ -21,6 +21,13 @@
       "descriptionZh": "Pokopia 首選初始夥伴。擁有「栽種」專長，可加速農作物生長並解鎖早期自動化生產。在農耕棲息地指派妙蛙種子，是最快取得小麥、豆子等中期徽章材料的方法。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
       "known": true,
+      "likes": [
+        "Bright",
+        "Greenery",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1,
       "skills": [
         {
           "categoryEn": "Life Skill",
@@ -28,7 +35,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -69,6 +76,12 @@
       "descriptionZh": "妙蛙種子的進化型。保留「栽種」專長且效率更高。在友情等級達到 5 級並滿足對應棲息地條件後解鎖。發育更完整的花苞使其能帶來更高產量的收穫。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
       "known": true,
+      "likes": [
+        "Greenhouse",
+        "Humid"
+      ],
+      "rarity": "R",
+      "requires_friendship": 5,
       "skills": [
         {
           "categoryEn": "Life Skill",
@@ -76,7 +89,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -117,6 +130,13 @@
       "descriptionZh": "妙蛙家族的最終型態。需要友情等級 10 級並搭配高階棲息地配置方可吸引。完全盛開的大花朵使妙蛙花成為遊戲中生產效率最高的農耕夥伴。",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
       "known": true,
+      "likes": [
+        "Ancient_Totem",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10,
       "skills": [
         {
           "categoryEn": "Life Skill",
@@ -124,7 +144,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -186,9 +206,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "005",
@@ -232,9 +259,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "R",
+      "requires_friendship": 5
     },
     {
       "id": "006",
@@ -282,7 +316,14 @@
           "detailEn": "Supports elevated forges and keeps remote stations supplied from above.",
           "detailZh": "能支援高處熔爐，從空中持續補給偏遠站點。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "007",
@@ -328,7 +369,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "008",
@@ -374,7 +422,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "R",
+      "requires_friendship": 5
     },
     {
       "id": "009",
@@ -420,7 +475,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "010",
@@ -466,7 +528,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "011",
@@ -512,7 +581,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "012",
@@ -560,7 +636,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "013",
@@ -608,7 +691,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "014",
@@ -656,7 +746,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "015",
@@ -704,7 +801,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "016",
@@ -752,7 +856,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "017",
@@ -800,7 +911,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "018",
@@ -848,7 +966,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "019",
@@ -894,7 +1019,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "020",
@@ -940,7 +1072,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "021",
@@ -988,7 +1127,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "022",
@@ -1036,7 +1182,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "023",
@@ -1082,7 +1235,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "024",
@@ -1128,7 +1288,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "025",
@@ -1164,7 +1331,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Releases a fast electric burst that powers devices and shocks obstacles apart.",
-          "detailZh": "能瞬間釋放電流，既可啟動裝置，也能擊散障礙。"
+          "detailZh": "能瞬間釋放電流，既可啟動設備，也能擊散障礙。"
         },
         {
           "categoryEn": "Support Skill",
@@ -1174,7 +1341,14 @@
           "detailEn": "Its named counterpart Peakychu later joins the Huge Building crew as an irreplaceable helper.",
           "detailZh": "其特殊個體 皮卡丘 之後會成為巨大建築 4F 施工隊不可替代的一員。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "026",
@@ -1202,7 +1376,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -1210,7 +1384,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -1220,7 +1394,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "027",
@@ -1248,13 +1429,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -1266,7 +1447,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "028",
@@ -1294,13 +1482,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -1312,7 +1500,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "029",
@@ -1358,7 +1553,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "030",
@@ -1404,7 +1606,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "031",
@@ -1452,7 +1661,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "032",
@@ -1498,7 +1714,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "033",
@@ -1544,7 +1767,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "034",
@@ -1592,7 +1822,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "035",
@@ -1638,7 +1875,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "036",
@@ -1684,7 +1928,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "037",
@@ -1728,9 +1979,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "038",
@@ -1774,9 +2032,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "039",
@@ -1824,7 +2089,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "040",
@@ -1872,7 +2144,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "041",
@@ -1920,7 +2199,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "042",
@@ -1968,7 +2254,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "043",
@@ -1998,7 +2291,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2016,7 +2309,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "044",
@@ -2046,7 +2346,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2064,7 +2364,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "045",
@@ -2094,7 +2401,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2112,7 +2419,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "046",
@@ -2142,7 +2456,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2160,7 +2474,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "047",
@@ -2190,7 +2511,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -2208,7 +2529,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "048",
@@ -2256,7 +2584,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "049",
@@ -2304,7 +2639,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "050",
@@ -2332,13 +2674,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -2350,7 +2692,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "051",
@@ -2378,13 +2727,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -2396,7 +2745,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "052",
@@ -2442,7 +2798,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "053",
@@ -2488,7 +2851,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "054",
@@ -2534,7 +2904,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "055",
@@ -2580,7 +2957,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "056",
@@ -2626,7 +3010,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "057",
@@ -2672,7 +3063,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "058",
@@ -2716,9 +3114,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "059",
@@ -2762,9 +3167,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "060",
@@ -2810,7 +3222,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "061",
@@ -2856,7 +3275,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "062",
@@ -2904,7 +3330,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "063",
@@ -2950,7 +3383,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "064",
@@ -2996,7 +3436,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "065",
@@ -3042,7 +3489,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "066",
@@ -3088,7 +3542,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "067",
@@ -3134,7 +3595,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "068",
@@ -3180,7 +3648,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "069",
@@ -3210,7 +3685,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3228,7 +3703,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "070",
@@ -3258,7 +3740,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3276,7 +3758,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "071",
@@ -3306,7 +3795,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3324,7 +3813,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "072",
@@ -3372,7 +3868,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "073",
@@ -3420,7 +3923,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "074",
@@ -3450,13 +3960,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3468,7 +3978,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "075",
@@ -3498,13 +4015,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3516,7 +4033,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "076",
@@ -3546,13 +4070,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -3564,7 +4088,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "077",
@@ -3608,9 +4139,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "078",
@@ -3654,9 +4192,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "079",
@@ -3704,7 +4249,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "080",
@@ -3752,7 +4304,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "081",
@@ -3800,7 +4359,14 @@
           "detailEn": "Turns dismantling and terrain relocation into a near-instant maintenance loop.",
           "detailZh": "讓拆除與地形移位幾乎變成即時維護流程，大幅提升重建效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "082",
@@ -3830,7 +4396,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -3838,7 +4404,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -3848,7 +4414,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "083",
@@ -3896,7 +4469,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "084",
@@ -3944,7 +4524,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "085",
@@ -3992,7 +4579,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "086",
@@ -4038,7 +4632,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "087",
@@ -4086,7 +4687,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "088",
@@ -4132,7 +4740,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "089",
@@ -4178,7 +4793,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "090",
@@ -4224,7 +4846,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "091",
@@ -4272,7 +4901,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "092",
@@ -4320,7 +4956,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "093",
@@ -4368,7 +5011,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "094",
@@ -4416,7 +5066,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "095",
@@ -4446,13 +5103,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -4464,7 +5121,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "096",
@@ -4510,7 +5174,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "097",
@@ -4556,7 +5227,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "098",
@@ -4602,7 +5280,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "099",
@@ -4648,7 +5333,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "100",
@@ -4676,7 +5368,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4684,7 +5376,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -4694,7 +5386,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "101",
@@ -4722,7 +5421,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4730,7 +5429,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -4740,7 +5439,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "102",
@@ -4770,7 +5476,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4788,7 +5494,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "103",
@@ -4818,7 +5531,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -4836,7 +5549,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "104",
@@ -4864,13 +5584,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -4882,7 +5602,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "105",
@@ -4910,13 +5637,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -4928,7 +5655,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "106",
@@ -4974,7 +5708,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "107",
@@ -5020,7 +5761,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "108",
@@ -5066,7 +5814,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "109",
@@ -5112,7 +5867,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "110",
@@ -5158,7 +5920,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "111",
@@ -5188,13 +5957,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -5206,7 +5975,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "112",
@@ -5236,13 +6012,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -5254,7 +6030,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "113",
@@ -5300,7 +6083,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "114",
@@ -5328,7 +6118,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -5346,7 +6136,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "115",
@@ -5392,7 +6189,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "116",
@@ -5438,7 +6242,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "117",
@@ -5484,7 +6295,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "118",
@@ -5530,7 +6348,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "119",
@@ -5576,7 +6401,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "120",
@@ -5622,7 +6454,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "121",
@@ -5670,7 +6509,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "122",
@@ -5718,7 +6564,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "123",
@@ -5766,7 +6619,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "124",
@@ -5814,7 +6674,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "125",
@@ -5842,7 +6709,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -5850,7 +6717,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -5860,7 +6727,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "126",
@@ -5904,9 +6778,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "127",
@@ -5952,7 +6833,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "128",
@@ -5998,7 +6886,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "129",
@@ -6044,7 +6939,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "130",
@@ -6092,7 +6994,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "131",
@@ -6140,7 +7049,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "132",
@@ -6186,7 +7102,14 @@
           "detailEn": "Learns signature field abilities from partner Pokémon and reuses them anywhere.",
           "detailZh": "能向夥伴學習招牌專長，之後在任何區域重複施展。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "133",
@@ -6232,7 +7155,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "134",
@@ -6278,7 +7208,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "135",
@@ -6306,7 +7243,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -6314,7 +7251,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -6324,7 +7261,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "136",
@@ -6368,9 +7312,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "137",
@@ -6416,7 +7367,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "138",
@@ -6464,7 +7422,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "139",
@@ -6512,7 +7477,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "140",
@@ -6560,7 +7532,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "141",
@@ -6608,7 +7587,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "142",
@@ -6638,13 +7624,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -6656,7 +7642,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "143",
@@ -6702,7 +7695,14 @@
           "detailEn": "Mosslax is the turning point for Bleak Beach's 'Brighten Things Up!' restoration.",
           "detailZh": "作為 Mosslax，牠正是荒涼海灘「Brighten Things Up!」的關鍵轉折點。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "144",
@@ -6748,9 +7748,16 @@
           "nameEn": "Cooling Aura",
           "nameZh": "冷卻場域",
           "detailEn": "Stabilizes temperature-sensitive rooms and preserves crafted ingredients.",
-          "detailZh": "能穩定低溫空間，儲存加工中的食材與材料。"
+          "detailZh": "能穩定低溫空間，保存加工中的食材與材料。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "145",
@@ -6780,7 +7787,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -6788,7 +7795,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -6798,7 +7805,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "146",
@@ -6844,9 +7858,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "147",
@@ -6892,7 +7913,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "148",
@@ -6938,7 +7966,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "149",
@@ -6986,7 +8021,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "150",
@@ -7032,7 +8074,14 @@
           "detailEn": "Its appearance turns the completed rooftop into one of the game's signature moments.",
           "detailZh": "牠的現身會把完工屋頂轉化成全作最具代表性的終局場景之一。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "151",
@@ -7076,9 +8125,16 @@
           "nameEn": "Ancient Wish",
           "nameZh": "古代心願",
           "detailEn": "Represents the deepest secret route in Pokopia's restoration history.",
-          "detailZh": "象徵 Pokopia 復育歷史中最深層的秘密路線與終極獎勵。"
+          "detailZh": "象徵 Pokopia 復育歷史中最深層的祕密路線與終極獎勵。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "152",
@@ -7106,7 +8162,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7124,7 +8180,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "153",
@@ -7152,7 +8215,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7170,7 +8233,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "154",
@@ -7198,7 +8268,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -7216,7 +8286,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "155",
@@ -7260,9 +8337,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "156",
@@ -7306,9 +8390,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "157",
@@ -7352,9 +8443,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "158",
@@ -7400,7 +8498,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "159",
@@ -7446,7 +8551,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "160",
@@ -7492,7 +8604,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "161",
@@ -7538,7 +8657,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "162",
@@ -7584,7 +8710,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "163",
@@ -7632,7 +8765,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "164",
@@ -7680,7 +8820,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "165",
@@ -7728,7 +8875,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "166",
@@ -7776,7 +8930,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "167",
@@ -7824,7 +8985,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "168",
@@ -7872,7 +9040,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "169",
@@ -7920,7 +9095,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "170",
@@ -7968,7 +9150,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "171",
@@ -8016,7 +9205,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "172",
@@ -8044,7 +9240,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8052,7 +9248,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8062,7 +9258,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "173",
@@ -8108,7 +9311,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "174",
@@ -8156,7 +9366,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "175",
@@ -8202,7 +9419,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "176",
@@ -8250,7 +9474,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "177",
@@ -8298,7 +9529,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "178",
@@ -8346,7 +9584,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "179",
@@ -8392,7 +9637,14 @@
           "detailEn": "Represents exceptional presence that changes a region when this Pokémon arrives.",
           "detailZh": "象徵足以改變區域氣場的特殊存在感。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "180",
@@ -8420,7 +9672,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8428,7 +9680,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8438,7 +9690,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "181",
@@ -8466,7 +9725,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8474,7 +9733,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -8484,7 +9743,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "182",
@@ -8512,7 +9778,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8530,7 +9796,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "183",
@@ -8578,7 +9851,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "184",
@@ -8626,7 +9906,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "185",
@@ -8654,13 +9941,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -8672,7 +9959,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "186",
@@ -8718,7 +10012,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "187",
@@ -8766,7 +10067,14 @@
           "detailEn": "Represents exceptional presence that changes a region when this Pokémon arrives.",
           "detailZh": "象徵足以改變區域氣場的特殊存在感。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "188",
@@ -8796,7 +10104,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8814,7 +10122,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "189",
@@ -8844,7 +10159,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8862,7 +10177,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "190",
@@ -8908,7 +10230,14 @@
           "detailEn": "Reduces downtime by tuning adjacent machines and conveyor-style loops.",
           "detailZh": "可校準周邊機具與自動流程，降低停機時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "191",
@@ -8936,7 +10265,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -8954,7 +10283,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "192",
@@ -8982,7 +10318,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -9000,7 +10336,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "193",
@@ -9048,7 +10391,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "194",
@@ -9096,7 +10446,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "195",
@@ -9144,7 +10501,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "196",
@@ -9190,7 +10554,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "197",
@@ -9236,7 +10607,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "198",
@@ -9284,7 +10662,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "199",
@@ -9332,7 +10717,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "200",
@@ -9378,7 +10770,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "201",
@@ -9424,7 +10823,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "202",
@@ -9470,7 +10876,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "203",
@@ -9518,7 +10931,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "204",
@@ -9564,7 +10984,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "205",
@@ -9610,9 +11037,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "206",
@@ -9658,7 +11092,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "207",
@@ -9688,13 +11129,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -9706,7 +11147,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "208",
@@ -9752,9 +11200,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "209",
@@ -9800,7 +11255,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "210",
@@ -9846,7 +11308,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "211",
@@ -9894,7 +11363,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "212",
@@ -9940,9 +11416,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "213",
@@ -9972,13 +11455,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -9990,7 +11473,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "214",
@@ -10038,7 +11528,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "215",
@@ -10086,7 +11583,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "216",
@@ -10132,7 +11636,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "217",
@@ -10178,7 +11689,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "218",
@@ -10222,9 +11740,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "219",
@@ -10270,9 +11795,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "220",
@@ -10302,13 +11834,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10320,7 +11852,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "221",
@@ -10350,13 +11889,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10368,7 +11907,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "222",
@@ -10416,7 +11962,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "223",
@@ -10462,7 +12015,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "224",
@@ -10508,7 +12068,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "225",
@@ -10556,7 +12123,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "226",
@@ -10604,7 +12178,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "227",
@@ -10650,9 +12231,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "228",
@@ -10698,9 +12286,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "229",
@@ -10746,9 +12341,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "230",
@@ -10796,7 +12398,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "231",
@@ -10824,13 +12433,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10842,7 +12451,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "232",
@@ -10870,13 +12486,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -10888,7 +12504,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "233",
@@ -10934,7 +12557,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "234",
@@ -10980,7 +12610,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "235",
@@ -11016,7 +12653,7 @@
           "nameEn": "Ink Splash",
           "nameZh": "墨彩潑擊",
           "detailEn": "Uses broad paint strokes to distract targets and mark interactive surfaces.",
-          "detailZh": "能以大範圍塗抹乾擾目標，也能標示互動表面。"
+          "detailZh": "能以大範圍塗抹干擾目標，也能標示互動表面。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11026,7 +12663,14 @@
           "detailEn": "Smearguru helps restored towns feel personalized rather than merely repaired.",
           "detailZh": "作為 Smearguru，牠讓重建後的聚落不只恢復功能，還能展現個性。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "236",
@@ -11072,7 +12716,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "237",
@@ -11118,7 +12769,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "238",
@@ -11166,7 +12824,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "239",
@@ -11194,7 +12859,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11202,7 +12867,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11212,7 +12877,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "240",
@@ -11256,9 +12928,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "241",
@@ -11304,7 +12983,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "242",
@@ -11350,7 +13036,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "243",
@@ -11386,7 +13079,7 @@
           "nameEn": "Thunder Crest",
           "nameZh": "雷牙天擊",
           "detailEn": "Calls down a high-voltage strike fit for clifftops, generators, and legendary trials.",
-          "detailZh": "可喚下高壓雷擊，特別適合懸崖、高能裝置與傳說試煉。"
+          "detailZh": "可喚下高壓雷擊，特別適合懸崖、高能設備與傳說試煉。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11396,7 +13089,14 @@
           "detailEn": "Recruiting Raikou sharply raises the environment level of the active region.",
           "detailZh": "成功招募後，可讓所在區域的環境等級明顯躍升。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "244",
@@ -11430,7 +13130,7 @@
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Magma Burst",
-          "nameZh": "巖漿爆燃",
+          "nameZh": "岩漿爆燃",
           "detailEn": "Unleashes a sweeping burst of fire suited for the harshest late-game threats.",
           "detailZh": "能放出覆蓋範圍極大的灼炎爆發，應對高壓後期威脅。"
         },
@@ -11442,7 +13142,14 @@
           "detailEn": "Its recruitment reinforces the Johto beast chain that leads to Ho-Oh.",
           "detailZh": "牠是城都聖獸招募鏈的重要一環，最終通往鳳王。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "245",
@@ -11470,7 +13177,7 @@
           "nameEn": "Pure Spring",
           "nameZh": "清泉淨域",
           "detailEn": "Purifies tainted water and helps troubled habitats recover their balance.",
-          "detailZh": "可淨化受汙染水域，協助失衡棲地回復穩定。"
+          "detailZh": "可淨化受污染水域，協助失衡棲地回復穩定。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11478,7 +13185,7 @@
           "nameEn": "Aqua Dash",
           "nameZh": "淨流衝刺",
           "detailEn": "Strikes with graceful momentum while sweeping contamination from its path.",
-          "detailZh": "以優雅卻強勁的水流衝擊，順勢洗去沿路汙染。"
+          "detailZh": "以優雅卻強勁的水流衝擊，順勢洗去沿路污染。"
         },
         {
           "categoryEn": "Support Skill",
@@ -11488,7 +13195,14 @@
           "detailEn": "Completes the legendary beast route that unlocks the final bell recipes.",
           "detailZh": "是完成聖獸路線、解鎖終極鈴鐺配方的重要一角。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "246",
@@ -11518,13 +13232,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11536,7 +13250,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "247",
@@ -11566,13 +13287,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11584,7 +13305,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "248",
@@ -11614,13 +13342,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -11632,7 +13360,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "249",
@@ -11680,7 +13415,14 @@
           "detailEn": "Embodies the calm, vast authority of the sea once coastal routes are mastered.",
           "detailZh": "當海岸與傳說鳥路線完成後，牠象徵整片海洋的終極守護。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "250",
@@ -11728,7 +13470,14 @@
           "detailEn": "Represents the completion of the beast route and the reward of full perseverance.",
           "detailZh": "象徵三聖獸路線圓滿完成，也是堅持探索後的最高回報。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "251",
@@ -11758,7 +13507,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11776,7 +13525,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "252",
@@ -11804,7 +13560,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11822,7 +13578,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "253",
@@ -11850,7 +13613,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11868,7 +13631,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "254",
@@ -11896,7 +13666,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -11914,7 +13684,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "255",
@@ -11958,9 +13735,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "256",
@@ -12006,9 +13790,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "257",
@@ -12054,9 +13845,16 @@
           "nameEn": "Kiln Ignite",
           "nameZh": "窯火點燃",
           "detailEn": "Maintains high-temperature stations without constant manual oversight.",
-          "detailZh": "可長時間維持高溫裝置運作，減少手動照看。"
+          "detailZh": "可長時間維持高溫設備運作，減少手動照看。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "258",
@@ -12102,7 +13900,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "259",
@@ -12150,7 +13955,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "260",
@@ -12198,7 +14010,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "261",
@@ -12244,7 +14063,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "262",
@@ -12290,7 +14116,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "263",
@@ -12336,7 +14169,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "264",
@@ -12382,7 +14222,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "265",
@@ -12428,7 +14275,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "266",
@@ -12474,7 +14328,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "267",
@@ -12522,7 +14383,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "268",
@@ -12568,7 +14436,14 @@
           "detailEn": "Cuts clean passages through sealed walls, brush, and gated shortcuts.",
           "detailZh": "能切開封閉牆面、植被與近路障礙，打通行進路線。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "269",
@@ -12616,7 +14491,14 @@
           "detailEn": "Turns discarded clutter into ore, paper, and reusable industrial inputs.",
           "detailZh": "可把廢棄物轉化為礦砂、紙張與可再利用工業原料。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "270",
@@ -12646,7 +14528,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12664,7 +14546,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "271",
@@ -12694,7 +14583,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12712,7 +14601,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "272",
@@ -12742,7 +14638,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12760,7 +14656,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "273",
@@ -12788,7 +14691,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12806,7 +14709,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "274",
@@ -12836,7 +14746,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12854,7 +14764,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "275",
@@ -12884,7 +14801,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -12902,7 +14819,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "276",
@@ -12950,7 +14874,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "277",
@@ -12998,7 +14929,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "278",
@@ -13046,7 +14984,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "279",
@@ -13094,7 +15039,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "280",
@@ -13142,7 +15094,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "281",
@@ -13190,7 +15149,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "282",
@@ -13238,7 +15204,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "283",
@@ -13286,7 +15259,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "284",
@@ -13334,7 +15314,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "285",
@@ -13362,7 +15349,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -13380,7 +15367,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "286",
@@ -13410,7 +15404,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -13428,7 +15422,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "287",
@@ -13474,7 +15475,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "288",
@@ -13520,7 +15528,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "289",
@@ -13566,7 +15581,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "290",
@@ -13596,13 +15618,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -13614,7 +15636,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "291",
@@ -13662,7 +15691,14 @@
           "detailEn": "Scouts routes, rooftops, and island gaps before committing resources.",
           "detailZh": "可先行偵查高處、屋頂與浮島裂谷，降低施工風險。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "292",
@@ -13710,7 +15746,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "293",
@@ -13756,7 +15799,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "294",
@@ -13802,7 +15852,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "295",
@@ -13848,7 +15905,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "296",
@@ -13894,7 +15958,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "297",
@@ -13940,7 +16011,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "298",
@@ -13988,7 +16066,14 @@
           "detailEn": "Unlocks specialty foods and milestone items through careful exchange.",
           "detailZh": "可透過交易解鎖特殊食物與里程碑道具。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "299",
@@ -14016,13 +16101,13 @@
           "nameEn": "Ore Breaking",
           "nameZh": "礦脈破碎",
           "detailEn": "Breaks dense rock, buried blocks, and sealed resource nodes into usable fragments.",
-          "detailZh": "擅長擊碎厚重巖層、埋藏障礙與高硬度資源塊。"
+          "detailZh": "擅長擊碎厚重岩層、埋藏障礙與高硬度資源塊。"
         },
         {
           "categoryEn": "Attack Skill",
           "categoryZh": "攻擊技能",
           "nameEn": "Stone Crash",
-          "nameZh": "巖崩撞擊",
+          "nameZh": "岩崩撞擊",
           "detailEn": "Breaks brittle walls and hits with the force of falling rubble.",
           "detailZh": "以落石般的重擊粉碎脆弱牆面與地形障礙。"
         },
@@ -14034,7 +16119,14 @@
           "detailEn": "Reveals deeper ore veins and hidden chambers after breaking surface blocks.",
           "detailZh": "擊碎表層後能進一步暴露深層礦脈與隱藏空間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "300",
@@ -14080,7 +16172,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "301",
@@ -14126,7 +16225,14 @@
           "detailEn": "Links distant or random spaces to the main adventure flow.",
           "detailZh": "把遙遠或隨機生成的區域重新接回主線探索流程。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "302",
@@ -14174,7 +16280,14 @@
           "detailEn": "Shortens the hunt for secret murals, slates, and golden dig sites.",
           "detailZh": "可縮短尋找隱藏壁畫、石板與發光挖掘點的時間。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "303",
@@ -14220,9 +16333,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "304",
@@ -14268,9 +16388,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "305",
@@ -14316,9 +16443,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "306",
@@ -14364,9 +16498,16 @@
           "nameEn": "Gear Commission",
           "nameZh": "齒輪訂製",
           "detailEn": "Produces special gears and forged parts for lifts and high-tier builds.",
-          "detailZh": "可打造升降平臺與高階工程需要的特殊齒輪與鍛件。"
+          "detailZh": "可打造升降平台與高階工程需要的特殊齒輪與鍛件。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "307",
@@ -14414,7 +16555,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "308",
@@ -14462,7 +16610,14 @@
           "detailEn": "Improves work pace when multiple builders are assigned to the same project.",
           "detailZh": "多名建造夥伴同場施工時，能顯著提升協作效率。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "309",
@@ -14490,7 +16645,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14498,7 +16653,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14508,7 +16663,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "310",
@@ -14536,7 +16698,7 @@
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
           "detailEn": "Feeds stable power into lights, stations, and industrial equipment.",
-          "detailZh": "可為照明、充電站與工業裝置提供穩定電力。"
+          "detailZh": "可為照明、充電站與工業設備提供穩定電力。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14544,7 +16706,7 @@
           "nameEn": "Thunder Jolt",
           "nameZh": "電光衝擊",
           "detailEn": "Delivers a sharp electrical burst suited for generators, traps, and quick strikes.",
-          "detailZh": "釋放瞬間強電流，適合啟動裝置、癱瘓機關與快速打擊。"
+          "detailZh": "釋放瞬間強電流，適合啟動設備、癱瘓機關與快速打擊。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14554,7 +16716,14 @@
           "detailEn": "Relays energy into larger networks such as lighthouses, towers, and hubs.",
           "detailZh": "可把電力穩定轉接到燈塔、高塔與樞紐等大型設施。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "393",
@@ -14600,7 +16769,14 @@
           "detailEn": "Washes away compacted mud and reveals routes, items, and buried targets.",
           "detailZh": "能沖開厚重泥堆，露出路線、素材與埋藏目標。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "425",
@@ -14648,7 +16824,14 @@
           "detailEn": "Determines which dream biome you reach based on the entrusted doll.",
           "detailZh": "會依照交付的娃娃種類，把你引向不同夢境生物群系。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "465",
@@ -14694,7 +16877,14 @@
           "detailEn": "Professor Tangrowth anchors the story and keeps Ditto moving toward the true ending.",
           "detailZh": "作為巨蔓藤博士，牠負責串起全劇，帶領百變怪走向真正結局。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "470",
@@ -14722,7 +16912,7 @@
           "nameEn": "Crop Care",
           "nameZh": "作物照護",
           "detailEn": "Accelerates growth cycles and keeps planting plots productive through bad weather.",
-          "detailZh": "加速作物成長迴圈，讓農地在惡劣環境下仍保持收成。"
+          "detailZh": "加速作物成長循環，讓農地在惡劣環境下仍保持收成。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14740,7 +16930,14 @@
           "detailEn": "Raises the output of crops, seeds, and greenery-based habitats nearby.",
           "detailZh": "可提升附近農作物、種子與植栽棲地的產出。"
         }
-      ]
+      ],
+      "likes": [
+        "Greenery",
+        "Humid",
+        "Bright"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "471",
@@ -14784,9 +16981,16 @@
           "nameEn": "Cooling Aura",
           "nameZh": "冷卻場域",
           "detailEn": "Stabilizes temperature-sensitive rooms and preserves crafted ingredients.",
-          "detailZh": "能穩定低溫空間，儲存加工中的食材與材料。"
+          "detailZh": "能穩定低溫空間，保存加工中的食材與材料。"
         }
-      ]
+      ],
+      "likes": [
+        "Water",
+        "Humid",
+        "Fresh"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "479",
@@ -14816,7 +17020,7 @@
           "nameEn": "Town Broadcast",
           "nameZh": "聚落播送",
           "detailEn": "Keeps the settlement lively with sound, current, and responsive machines.",
-          "detailZh": "以聲音、電流與活化裝置讓聚落保持生氣。"
+          "detailZh": "以聲音、電流與活化設備讓聚落保持生氣。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -14834,7 +17038,14 @@
           "detailEn": "As the resident DJ, it gives rebuilt towns identity rather than mere functionality.",
           "detailZh": "作為 DJ 角色，牠讓重建聚落不只有功能，還真正擁有生活感。"
         }
-      ]
+      ],
+      "likes": [
+        "Warm",
+        "Bright",
+        "Dry"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "534",
@@ -14870,7 +17081,7 @@
           "nameEn": "Pillar Crush",
           "nameZh": "巨柱重擊",
           "detailEn": "Uses builder's strength to break obstacles and force open sealed paths.",
-          "detailZh": "能以工匠級力量粉碎障礙，強行開啟封閉路線。"
+          "detailZh": "能以工匠級力量粉碎障礙，強行打開封閉路線。"
         },
         {
           "categoryEn": "Support Skill",
@@ -14880,7 +17091,14 @@
           "detailEn": "Acts as a backbone member of major construction crews in the Skylands.",
           "detailZh": "是空島大型施工隊的重要骨幹成員。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "568",
@@ -14926,7 +17144,14 @@
           "detailEn": "Turns the most neglected materials in the game into industrial progress.",
           "detailZh": "能把最不起眼的垃圾直接轉化成推進工業鏈的關鍵資源。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "569",
@@ -14972,7 +17197,14 @@
           "detailEn": "Forms the late-game factory trio with Aipom and Pikachu.",
           "detailZh": "與長尾怪手、皮卡丘共同構成後期自動化工廠三人組。"
         }
-      ]
+      ],
+      "likes": [
+        "Dark",
+        "Dry",
+        "Humid"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "700",
@@ -15000,7 +17232,7 @@
           "nameEn": "Ribbon Harmony",
           "nameZh": "緞帶和鳴",
           "detailEn": "Adds warmth and beauty to carefully curated Palette Town habitats.",
-          "detailZh": "能為精心佈置的真新鎮棲地增添柔和又明亮的氛圍。"
+          "detailZh": "能為精心布置的真新鎮棲地增添柔和又明亮的氛圍。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -15016,9 +17248,16 @@
           "nameEn": "Celebration Aura",
           "nameZh": "慶典光環",
           "detailEn": "Rewards broad exploration by brightening the endgame sandbox's social atmosphere.",
-          "detailZh": "作為廣泛探索的回報，牠能讓終局自由建造區更有節慶般的生命力。"
+          "detailZh": "作為廣泛探索的回報，牠能讓終局沙盒更有節慶般的生命力。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "V",
+      "requires_friendship": 10
     },
     {
       "id": "820",
@@ -15062,9 +17301,16 @@
           "nameEn": "Burger Boost",
           "nameZh": "漢堡強化",
           "detailEn": "Chef Dente's dishes are the key to upgrading Ditto's Rock Smash power.",
-          "detailZh": "作為主廚 Dente，牠做出的料理正是強化百變怪碎巖能力的關鍵。"
+          "detailZh": "作為主廚 Dente，牠做出的料理正是強化百變怪碎岩能力的關鍵。"
         }
-      ]
+      ],
+      "likes": [
+        "Bright",
+        "Fresh",
+        "Greenery"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     },
     {
       "id": "959",
@@ -15094,7 +17340,7 @@
           "nameEn": "Forge Work",
           "nameZh": "鍛造作業",
           "detailEn": "Forges the special gears needed to raise lifts and complete sky projects.",
-          "detailZh": "可鍛造升降平臺與空島工程所需的特殊齒輪。"
+          "detailZh": "可鍛造升降平台與空島工程所需的特殊齒輪。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -15108,11 +17354,18 @@
           "categoryEn": "Support Skill",
           "categoryZh": "輔助技能",
           "nameEn": "Lift Platform",
-          "nameZh": "升降平臺",
+          "nameZh": "升降平台",
           "detailEn": "Tinkmaster enables the vertical expansion that defines Sparkling Skylands.",
           "detailZh": "作為 Tinkmaster，牠讓閃耀空島的垂直拓展真正成為可能。"
         }
-      ]
+      ],
+      "likes": [
+        "Dry",
+        "Warm",
+        "Bright"
+      ],
+      "rarity": "C",
+      "requires_friendship": 1
     }
   ]
 }

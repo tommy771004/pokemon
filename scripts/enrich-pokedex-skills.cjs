@@ -4,6 +4,19 @@ const path = require("path");
 const filePath = path.join(process.cwd(), "public/data/pokedex.json");
 const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
+// Enforce exclusion guardrail: remove any IDs that are defined in public/data/excluded_pokemon.json
+const excludedPath = path.join(process.cwd(), "public/data/excluded_pokemon.json");
+if (fs.existsSync(excludedPath)) {
+  const excludedData = JSON.parse(fs.readFileSync(excludedPath, "utf8"));
+  const excludedSet = new Set(excludedData.pokemon.map(p => String(p.id).trim()));
+  const beforeCount = data.pokemon.length;
+  data.pokemon = data.pokemon.filter(p => !excludedSet.has(String(p.id).trim()));
+  const afterCount = data.pokemon.length;
+  if (beforeCount !== afterCount) {
+    console.log(`[Safety Guardrail] Pruned ${beforeCount - afterCount} overlapping excluded Pokémon from pokedex.json.`);
+  }
+}
+
 const CATEGORY = {
   life: { en: "Life Skill", zh: "生活技能" },
   attack: { en: "Attack Skill", zh: "攻擊技能" },

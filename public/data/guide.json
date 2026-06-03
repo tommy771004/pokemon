@@ -233,7 +233,7 @@
               "nodeTitleEn": "Rebuild the Huge Building (Floors 2–4)",
               "nodeTitleZh": "摩天大樓重建（2F → 4F 全樓層）",
               "descEn": "Reconstruct the skyscraper floor by floor — each floor takes a full hour of real time to cure before the next can begin.\n• 2F: 25 Concrete · 10 Glass · 5 Pokémetal · 10 Iron Ingots.\n• 3F: 25 Concrete · 10 Glass · 10 Glow Stones · 15 Copper Ingots. Return to Rocky Ridges to shove a Strength block and mine the Glow Stones, then escort Chef Dente up to assist.\n• 4F: 40 Concrete · 15 Glass · 10 Paper · 10 Bricks · 20 Lumber. You are forced to personally return to Bleak Beach to invite the named Pokémon Peakychu into the 6-mon workforce, and the floor takes a mandatory 1 real-time hour to build. Completing 4F and stepping onto the rooftop triggers the Mewtwo encounter.",
-              "descZh": "逐層重建這座終極摩天大樓，每一層皆需現即時間整整 1 小時凝固成形，才能接續下一層。\n• 2F：25 混凝土 · 10 玻璃 · 5 寶可金屬 · 10 鐵錠。\n• 3F：25 混凝土 · 10 玻璃 · 10 發光石 · 15 銅錠。需回到岩石山脊推開力量方塊開採發光石，並護送主廚 Dente 前來協助。\n• 4F：40 混凝土 · 15 玻璃 · 10 紙張 · 10 磚塊 · 20 木材。要蓋好巨大建築 4F 並在屋頂遇見超夢，系統強制玩家必須親自回到「荒涼海灘」邀請一隻具名寶可夢 皮卡丘 加入 6 人施工團體，並且該樓層強制耗時現實時間 1 小時。",
+              "descZh": "逐層重建這座終極摩天大樓，每一層皆需現即時間整整 1 小時凝固成形，才能接續下一層。\n• 2F：25 混凝土 · 10 玻璃 · 5 寶可金屬 · 10 鐵錠。\n• 3F：25 混凝土 · 10 玻璃 · 10 發光石 · 15 銅錠。需回到岩石山脊推開力量方塊開採發光石，並護送主廚 Dente 前來協助。\n• 4F 建設需求：40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材。施工班底強制為「荒涼海灘特定皮卡丘 (Peakychu)」加上 5 隻任意寶可夢一同施工。實時建造等待時間需「現即時間整整 1 小時」。完工後步上屋頂觸發與超夢 (Mewtwo) 的相遇。",
               "icon": "domain",
               "badgeZh": "極限耗資"
             }
@@ -366,16 +366,16 @@
             {
               "nodeTitleEn": "Storage ↔ Workbench Auto-Link",
               "nodeTitleZh": "收納箱與工作臺自動連動",
-              "descEn": "Place a Storage Box within 2 blocks of any Workbench and the bench will pull materials straight from the box during crafting — no need to shuffle items into your pockets first.",
-              "descZh": "只要將「收納箱」放置在距離「工作臺」2 格的範圍以內，工作臺合成時就會自動讀取箱內物資，完全不需先手動把材料挪進背包。",
+              "descEn": "Place a Storage Box within 8 blocks of any Workbench and the bench will pull materials straight from the box during crafting — no need to shuffle items into your pockets first.",
+              "descZh": "只要將「收納箱」放置在距離「工作臺」8 格的範圍以內，工作臺合成時就會自動讀取箱內物資，完全不需先手動把材料挪進背包。",
               "icon": "inventory_2",
               "badgeZh": "倉儲連動"
             },
             {
-              "nodeTitleEn": "Hold ZR to Auto-Pave",
-              "nodeTitleZh": "按住 ZR 連續鋪設方塊",
-              "descEn": "For large landscaping jobs—such as Umbreon's 300 road blocks or Jolteon's 100 electrical blocks—hold the 'ZR' trigger while walking to auto-lay flooring continuously in a straight line.",
-              "descZh": "面對大型整地工程（例如月亮伊布的 300 塊道路或雷伊布的 100 塊電力方塊），只要按住「ZR」鍵邊走，就能沿路線自動連續鋪設方塊。",
+              "nodeTitleEn": "Hold B Key to Auto-Pave",
+              "nodeTitleZh": "按住 B 鍵連續舖設與對齊",
+              "descEn": "For large landscaping jobs—such as Umbreon's 300 road blocks or Jolteon's 100 electrical blocks—long-press the 'B' key while moving to auto-lay flooring continuously in a straight line with clean terrain alignment.",
+              "descZh": "面對大型整地與快速對齊工程（例如月亮伊布的 300 條實體道路或雷伊布的 100 塊電力方塊），只要按住「B」鍵不放邊走，就能一鍵連續舖設並自動對齊地形。",
               "icon": "grid_on",
               "badgeZh": "整地神技"
             },
@@ -386,6 +386,14 @@
               "descZh": "利用十字鍵快速捲動切換已複製的能力，並迅速指派特定寶可夢執行工作，例如委託火系夥伴持續顧著熔礦爐燒礦。",
               "icon": "swap_horiz",
               "badgeZh": "快捷切換"
+            },
+            {
+              "nodeTitleEn": "Bahamut Secret: Coin Farming & Trading",
+              "nodeTitleZh": "巴哈密傳：金幣與交易機制",
+              "descEn": "Coin Farming Secret: After early-game progression, use 'Rock Smash' (碎巖) in Rocky Ridges to mine high-purity metal ores, and assign Fire-type Pokémon to refine them efficiently into 'Gold Ingots' and 'Copper Ingots'.\n\nTrading Partners: Bring these refined ingots along with extra paper or bricks to Palette Town. Trade them with Eevee (which has the 'Trading' specialty) to exchange for a wealth of coins, which can then be used to purchase hidden furniture blueprints inside Pokeballs.",
+              "descZh": "賺錢金祕技：開局解鎖「碎巖」後，在岩石山脊（Rocky Ridges）開採高純度金屬礦，並指派火系寶可夢在熔爐高效率精鍊為「金錠」與「銅錠」。\n\n交易對象：將精煉獲得的建材與多餘的紙張、磚塊，攜至真新鎮（Palette Town）向具備「交易」專長的伊布（Eevee）兌換大量金幣，以購買精靈球中的隱秘傢俱藍圖。",
+              "icon": "monetization_on",
+              "badgeZh": "金幣交易"
             }
           ]
         },
@@ -457,6 +465,24 @@
               "descZh": "符合系統判定的「家屋」需要：四周封閉的牆壁、至少 2 格的高度、1 扇門，以及內部放置滿 3 件傢俱。完成後寶可夢會正式移居，原先的棲息地就能再刷新下一隻寶可夢！",
               "icon": "home",
               "badgeZh": "定居條件",
+              "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+            },
+            {
+              "nodeTitleEn": "Non-Combat Regional Exploration Roadblocks",
+              "nodeTitleZh": "非戰鬥拓荒與地圖移動難點",
+              "descEn": "Overcome environmental blockages through creative interactions: fix bleeding coastal geysers using dirt/stone blocks, eat camp-baked bread to sever lock chains in Rocky Ridges, learn Dragonite's glide to bridge high-altitude voids, and eat camper burgers to smash heavy blocks for legendary encounters.",
+              "descZh": "本作取消戰鬥，推進全靠環境智慧：在荒涼海灘需舖設泥土/石地板方塊堵住破損噴泉以排水；在岩石山脊需烤製包商吐司並食入以拉斷鎖鏈解救主廚 Dente；在閃耀空島需藉水邊小艇棲息地引來快龍學會「滑翔」飛渡深谷；在夢境群島則要在營地烹調漢堡排食入以碎巖破壞阻隔雷公的特殊金屬方塊。",
+              "icon": "landscape",
+              "badgeZh": "地圖解鎖",
+              "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
+            },
+            {
+              "nodeTitleEn": "High-Tier Pokémon Attraction Algorithm",
+              "nodeTitleZh": "新分區高階寶可夢吸引演算法",
+              "descEn": "To lure evolved or high-tier Pokémon, follow the Habitat Drive Model: achieve local Environment Levels, place requisite furniture ratios as an anchor, and unlock special food recipes linked to friendship thresholds (Lv. 5 for Stage 1, Lv. 10 for Stage 2, e.g. Greenhouse items + Ancient Totems for Venusaur; 10 water habitats for Vaporeon's Ice Cream Soda).",
+              "descZh": "高階進化體不存在野外隨機升等，需靠「棲息地驅動模型 (Habitat Drive)」吸引：確保地區環境評定 (Environment Level) 超標，放置錨定特定喜好 (Likes) 的物件（如明亮、潮濕、溫室），並將前置幼體友情感情刷滿解鎖終極食譜（友情5級解鎖一階，10級解鎖最終型態，如妙蛙花最愛古木圖騰，水伊布則需真新鎮10個水系棲地解鎖的「冰淇淋汽水」）。",
+              "icon": "analytics",
+              "badgeZh": "吸引演算",
               "link": "https://tw.pogoskill.com/game-app/pokemon-pokopia-game-strategy.html"
             }
           ]
@@ -592,16 +618,16 @@
             {
               "nodeTitleEn": "Discover the Subway Wall",
               "nodeTitleZh": "尋墓：破壁進入地下暗道",
-              "descEn": "Navigate to the Withered Wasteland Pokemon Center right side, head north to shatter the rock with Rock Smash, turn left and cut metal fencing with upgraded Cut to descend into the depths.",
-              "descZh": "從枯萎荒野寶可夢中心右側向北，使用「碎巖」擊破裂巖，左轉後使用強化版「居合斬」切開金屬網進入深處。",
+              "descEn": "The entrance is located at the north end of the brick road on the right side of the Withered Wasteland Pokémon Center. Break the cracked wall with Rock Smash, turn left, and cut through the metal fencing with an upgraded Cut to descend to the bottom of the underground passage where the mural with 27 Unown gaps is found.",
+              "descZh": "位置在枯萎荒野精靈中心右側碎磚路北端。破壁路徑：碎巖（擊破裂壁） ➔ 左轉 ➔ 強化居合斬（切開金屬網） ➔ 自通道下行至最深處抵達地下通道底部壁畫（具有 27 個未知圖騰 Unown 字母與標點符號型態插槽）。",
               "icon": "explore",
               "badgeZh": "第一步"
             },
             {
               "nodeTitleEn": "Golden Dig Sites Farming",
-              "nodeTitleZh": "挖掘：蒐集 27 顆神聖石板",
-              "descEn": "Raid random golden shiny dig points globally. Bring partners with 'Search' talent or craft a Dowsing Machine to map buried slates directional vectors.",
-              "descZh": "在全地圖荒野隨機生成的「發光黃金挖掘點」進行開採。強烈建議攜帶「搜尋 (Search)」天賦的隊友，或在腰包裝備「尋寶機器（Dowsing Machine）」，它將精準發出震盪定位音，助你集滿 27 枚互不重複的神秘文字石板。",
+              "nodeTitleZh": "挖掘：蒐集 27 顆神秘石板",
+              "descEn": "Raid random golden shiny dig points globally. Bring partners with 'Search' talent or craft a Dowsing Machine to map and collect all 27 non-overlapping mysterious slates.",
+              "descZh": "需攜帶具備「搜尋」專長的寶可夢同行，或使用「尋寶機器（Dowsing Machine）」探測世界各地荒野中隨機出現的「發光黃金挖掘點」，收集 27 塊互不重複的「神秘石板」。",
               "icon": "travel_explore",
               "badgeZh": "耗時收集"
             },
@@ -630,17 +656,17 @@
           "steps": [
             {
               "nodeTitleEn": "Recruit 3 Johto Beasts (Clear Bell)",
-              "nodeTitleZh": "招滿三聖獸，解鎖「透明鈴鐺」",
-              "descEn": "Complete Johto legendary recruitment cycle on Dream Island first. Unlocks the 'Clear Bell' blueprint to summon Ho-Oh from Palette high peaks.",
-              "descZh": "在多個浮動的夢境群島中，成功招募到雷公等全部三隻城都地區聖獸，這會使巨蔓藤博士恍然大悟，向你交付「透明鈴鐺」的手工配方，專為呼喚鳳王降臨而設。",
+              "nodeTitleZh": "招募三聖獸，解鎖「透明鈴鐺」",
+              "descEn": "Recruiting the third Johto legendary beast (Raikou, Entei, or Suicune) in the Dream Islands unlocks the 'Clear Bell' crafting recipe, which is used to summon Ho-Oh from the high peaks of Palette Town.",
+              "descZh": "「透明鈴鐺（Clear Bell）」配方需於夢境島（Dream Islands）成功招募齊全第三隻城都傳說聖獸（雷公/水君/炎帝）後方能解鎖，用於在調色板鎮最高峰召喚鳳王。",
               "icon": "notifications_active",
               "badgeZh": "召集鳳王"
             },
             {
               "nodeTitleEn": "Chase Zapdos (Tidal Bell)",
-              "nodeTitleZh": "降服閃電鳥，解鎖「海神鈴鐺」",
-              "descEn": "Meet and resolve Zapdos inside Abandoned Power Plant. Tidal Bell blueprint unlocks to command Lugia from seaside cliffs.",
-              "descZh": "解鎖最高點發電廠並降服閃電鳥（若牠是你最後一隻遇見的關都神鳥），將自動在你的製作面板釋放極其古老的「海神鈴鐺」藍圖，能在海神海灣深底牽扯下喚出海之霸主 ── 洛奇亞。",
+              "nodeTitleZh": "完成發電廠遇閃電鳥，解鎖「海神鈴鐺」",
+              "descEn": "Completing the Abandoned Power Plant and encountering Zapdos (specifically as the last of the three legendary birds) unlocks the 'Tidal Bell' recipe, used to summon Lugia from the seaside cliffs.",
+              "descZh": "「海神鈴鐺（Tidal Bell）」配方需在完成廢棄發電廠的終極大型土木工程且最後遭遇閃電鳥（若其為你遇到關都三神鳥的最後一隻）時才能解鎖，用以在岸邊山崖召喚洛奇亞。",
               "icon": "waves",
               "badgeZh": "召集洛奇亞"
             }
@@ -666,8 +692,8 @@
             {
               "nodeTitleEn": "Abandoned Power Plant (Zapdos Capture Guide)",
               "nodeTitleZh": "閃電鳥 (Zapdos) 廢棄發電廠捕捉任務指南",
-              "descEn": "Requires 50 Copper Ingots, 50 Iron Ingots, 50 Sea Glass Shards, 50 Bricks, 10 Pokemetals. Mandates exactly 15 active worker mons involving Build, Generate, Crush, and Flying abilities.",
-              "descZh": "建材配方：50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊、10 寶可金屬。\n施工天賦限制：極其恐怖的施工難關，必須同時指派高達 15 隻寶可夢動工！且施工名單中必須嚴格包含擁有「建造」、「發電」、「粉碎」及「飛行」特定屬性。",
+              "descEn": "Requires 50 Copper Ingots, 50 Iron Ingots, 50 Sea Glass Shards, 50 Bricks, and 10 Pokemetals. Construction relies on exactly 15 active Pokémon working simultaneously. The workforce must precicely include: 1 with Build, 1 with Generate, 1 with Crush, and 1 with Fly specialties, none of which can be missing.",
+              "descZh": "高階耗材需求：50 銅錠、50 鐵錠、50 海玻璃碎片、50 磚塊、10 寶可金屬。限定高達 15 隻寶可夢同時開工，且參與成員的專長必須精確滿足：1 隻建造 (Build)、1 隻發電 (Generate)、1 隻粉碎 (Crush)、1 隻飛行 (Fly) 專長，缺一不可。",
               "icon": "factory",
               "badgeZh": "閃電鳥攻略",
               "link": "https://www.eurogamer.net/how-to-get-zapdos-pokemon-pokopia"
@@ -1027,6 +1053,41 @@
             }
           ],
           "link": "https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-get-eevee-and-all-eeveelutions/"
+        },
+        {
+          "id": "anti-evolution-ecology",
+          "roman": "II.",
+          "titleEn": "VGC / Pokopia.center Anti-Evolution Ecology",
+          "titleZh": "VGC / Pokopia.center 底層「反進化」生態學",
+          "contentEn": "Pokopia completely removes traditional EXP and battle-based evolution. Pokémon form transformations are driven by the Habitat Drive Model, requiring specific friendship thresholds, precise furniture layouts, and seasonal event triggers.",
+          "contentZh": "本作徹底取消了傳統經驗值與戰鬥升等。寶可夢型態轉換改由「棲息地驅動模型 (Habitat Drive Model)」與高階指標觸發，這需要特定的友情等級、精確的家具配置以及季節性活動解鎖。",
+          "steps": [
+            {
+              "nodeTitleEn": "Friendship Threshold Milestones",
+              "nodeTitleZh": "友情等級核心指標",
+              "descEn": "Friendship level acts as the gateway: Level 5 unlocks Stage 1 evolution habitat designs, while Level 10 unlocks Stage 2 (final form) habitat requirements.",
+              "descZh": "友情等級是進化的敲門磚：幼體友情等級達到 5 級能解鎖一階進化型態的棲息地配置條件，達到 10 級則解鎖最終型態的棲息地配置條件。",
+              "icon": "favorite",
+              "badgeZh": "友情等級"
+            },
+            {
+              "nodeTitleEn": "Furniture & Environment Ratios",
+              "nodeTitleZh": "精確家具與環境配置",
+              "descEn": "Attracting advanced forms requires placing specific furniture types (over 200+ unique furniture pieces available) paired with precise environment attributes.",
+              "descZh": "吸引高階進化型態對裝潢極其挑剔。玩家需配合地區環境，在棲地附近精確擺放複數的特定家具（遊戲中包含 200 種以上的精確家具配置）。",
+              "icon": "chair",
+              "badgeZh": "家具配置"
+            },
+            {
+              "nodeTitleEn": "Seasonal Event Demands",
+              "nodeTitleZh": "季節活動與形式變化",
+              "descEn": "Certain Pokémon form shifts are unlocked strictly via real-world or seasonal in-game events, such as the March 'Hoppip's More Spores' event.",
+              "descZh": "某些特定寶可夢的型態變化與特殊的季節活動繫結。例如 3 月份舉辦的「毽子草的更多孢子（Hoppip's More Spores）」特別活動。",
+              "icon": "event",
+              "badgeZh": "季節活動"
+            }
+          ],
+          "link": "https://pokopia.center/posts/pokopia-evolution-guide-2026/"
         }
       ]
     },

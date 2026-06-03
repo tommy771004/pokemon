@@ -7,6 +7,19 @@ import ScrollFade from "../components/ScrollFade";
 
 const PAGE_SIZE = 12;
 
+const COMFORT_LIKES = [
+  { val: "Greenery", en: "Dense Greenery", zh: "綠意植被", icon: "forest" },
+  { val: "Water", en: "Clear Waterways", zh: "澄澈水域", icon: "waves" },
+  { val: "Bright", en: "Bright Sunlight", zh: "明亮溫暖", icon: "light_mode" },
+  { val: "Dark", en: "Dark Cave depths", zh: "幽暗深邃", icon: "dark_mode" },
+  { val: "Humid", en: "Humid Waterfields", zh: "潮濕水源", icon: "water_drop" },
+  { val: "Dry", en: "Arid Drylands", zh: "乾燥陸地", icon: "wb_sunny" },
+  { val: "Warm", en: "Warm Rockbeds", zh: "溫暖岩石", icon: "thermostat" },
+  { val: "Fresh", en: "Fresh Breezes", zh: "清涼微風", icon: "air" },
+  { val: "Greenhouse", en: "Greenhouse Facilities", zh: "溫室設施", icon: "home_max" },
+  { val: "Ancient_Totem", en: "Ancient Forest Totems", zh: "古木圖騰", icon: "potted_plant" }
+];
+
 type PokedexSkill = {
   categoryEn: string;
   categoryZh: string;
@@ -331,11 +344,13 @@ export default function Pokedex() {
   const [data, setData] = useState<any>(null);
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [selectedLike, setSelectedLike] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [sortBy, setSortBy] = useState<"id" | "alphabetical" | "role">("id");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [active, setActive] = useState<any>(null);
   const [expandReadMore, setExpandReadMore] = useState(false);
+  const [activeIntelTab, setActiveIntelTab] = useState<"trivia" | "dolls">("trivia");
 
   useEffect(() => {
     fetch("/data/pokedex.json")
@@ -378,12 +393,13 @@ export default function Pokedex() {
     const q = query.trim().toLowerCase();
     const result = list.filter((p) => {
       const matchesType = !selectedType || (p.typesEn ?? []).includes(selectedType);
+      const matchesLike = !selectedLike || (p.likes ?? []).includes(selectedLike);
       const matchesQuery =
         !q ||
         p.nameEn?.toLowerCase().includes(q) ||
         p.nameZh?.includes(query.trim()) ||
         p.id?.includes(q);
-      return matchesType && matchesQuery;
+      return matchesType && matchesLike && matchesQuery;
     });
 
     if (sortBy === "alphabetical") {
@@ -407,12 +423,12 @@ export default function Pokedex() {
     }
 
     return result;
-  }, [list, selectedType, query, sortBy, en]);
+  }, [list, selectedType, selectedLike, query, sortBy, en]);
 
   // Reset pagination whenever the filter set or sort changes.
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [selectedType, query, sortBy]);
+  }, [selectedType, selectedLike, query, sortBy]);
 
   const seoTitle = en ? "Pokédex Skills & Species Archive | Pokopia Chronicles" : "寶可夢圖鑑與技能檔案 | Pokopia 年代記";
   const seoDescription = en
@@ -517,6 +533,39 @@ export default function Pokedex() {
               </ul>
             </div>
             <div className="mb-lg">
+              <h3 className="font-label-caps text-label-caps text-ink-soft mb-sm border-b border-line-soft pb-xs flex items-center justify-between">
+                <span>{en ? "Comfort Preferences" : "生活環境偏好"}</span>
+                {selectedLike && (
+                  <button 
+                    onClick={() => setSelectedLike(null)} 
+                    className="text-[10px] text-primary hover:underline font-mono-metadata"
+                  >
+                    {en ? "Clear" : "重設"}
+                  </button>
+                )}
+              </h3>
+              <div className="grid grid-cols-2 gap-1">
+                <button
+                  onClick={() => setSelectedLike(null)}
+                  className={`col-span-2 text-left font-body-base text-xs flex items-center gap-1 py-1 px-2 rounded border transition-all ${selectedLike === null ? "bg-primary/5 text-primary border-primary/20" : "bg-transparent text-ink-soft hover:bg-surface-container-high border-line-soft"}`}
+                >
+                  <span className="material-symbols-outlined text-[14px]">star</span>
+                  {en ? "All Preferences" : "不限環境"}
+                </button>
+                {COMFORT_LIKES.map((item) => (
+                  <button
+                    key={item.val}
+                    onClick={() => setSelectedLike(item.val === selectedLike ? null : item.val)}
+                    className={`text-left font-body-base text-xs flex items-center gap-1 py-1.5 px-2 rounded border transition-all truncate cursor-pointer ${selectedLike === item.val ? "bg-primary text-on-primary border-primary shadow-sm" : "bg-transparent text-ink-soft hover:bg-surface-container border-line-soft"}`}
+                    title={en ? item.en : item.zh}
+                  >
+                    <span className={`material-symbols-outlined text-[14px] leading-none shrink-0 ${selectedLike === item.val ? "text-on-primary" : "text-tertiary"}`}>{item.icon}</span>
+                    <span className="truncate">{en ? item.val : item.zh}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="mb-lg">
               <h3 className="font-label-caps text-label-caps text-ink-soft mb-sm border-b border-line-soft pb-xs">
                 {t("pokedex.searchRegistry")}
               </h3>
@@ -542,6 +591,120 @@ export default function Pokedex() {
                   </span>
                 )}
               </div>
+            </div>
+
+            {/* Pokédex Milestone Rewards Card */}
+            <div className="mt-8 border border-line-soft bg-surface-container rounded-sm p-4 paper-texture ambient-shadow select-none">
+              <h4 className="font-label-caps text-label-caps text-ink-soft mb-sm border-b border-line-soft pb-xs flex items-center gap-1">
+                <span className="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+                {en ? "Milestone Rewards" : "圖鑑進度里程碑"}
+              </h4>
+              <p className="font-mono-metadata text-[11px] text-ink-mute mb-md leading-relaxed">
+                {en 
+                  ? "Based on Pokopia.center analysis, key milestones unlock exclusive titles, apparel garments, or hard-to-find materials:" 
+                  : "根據 Pokopia.center 深入分析，達到以下圖鑑收集隻數里程碑，遊戲中將發放專屬稱號、高階飾品服飾或極限稀有材料："}
+              </p>
+              <div className="space-y-sm">
+                <div className="flex items-start gap-3">
+                  <div className="font-mono-metadata text-[11px] font-bold text-primary bg-primary/10 rounded px-1.5 py-0.5 whitespace-nowrap">200 {en ? "species" : "隻"}</div>
+                  <div className="font-mono-metadata text-[11px] text-ink-main leading-relaxed">
+                    <strong>{en ? "Apprentice Title" : "合格探險家稱號"}</strong>
+                    <span className="block text-[10px] text-ink-mute">{en ? "Unlocked inside Pokecenter." : "於圖鑑中心領取"}</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="font-mono-metadata text-[11px] font-bold text-secondary bg-secondary/10 rounded px-1.5 py-0.5 whitespace-nowrap">250 {en ? "species" : "隻"}</div>
+                  <div className="font-mono-metadata text-[11px] text-ink-main leading-relaxed">
+                    <strong>{en ? "Elite Explorer Garments" : "精銳探險家高階服飾"}</strong>
+                    <span className="block text-[10px] text-ink-mute">{en ? "Special custom costume set." : "獲得限定高級變裝套件"}</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="font-mono-metadata text-[11px] font-bold text-tertiary bg-tertiary/10 rounded px-1.5 py-0.5 whitespace-nowrap">300 {en ? "species" : "隻"}</div>
+                  <div className="font-mono-metadata text-[11px] text-ink-main leading-relaxed">
+                    <strong>{en ? "Pioneer Title & GB part" : "開天闢地稱號 & Game Boy 元件"}</strong>
+                    <span className="block text-[10px] text-ink-mute">{en ? "Game Boy console part for base." : "解鎖太空船內置娛樂終端擺設"}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Community Secret Intel Card (Bahamut Trivia & Doll Biome Gating Limits) */}
+            <div className="mt-8 border border-line-soft bg-surface-container rounded-sm p-4 paper-texture ambient-shadow select-none">
+              <h4 className="font-label-caps text-label-caps text-ink-soft mb-sm border-b border-line-soft pb-xs flex items-center gap-1">
+                <span className="material-symbols-outlined text-[16px] text-primary font-bold">folder_supervised</span>
+                {t("pokedex.secretIntelTitle")}
+              </h4>
+              
+              {/* Tab Switcher */}
+              <div className="flex border-b border-line-soft mb-3">
+                <button 
+                  onClick={() => setActiveIntelTab("trivia")}
+                  className={`flex-1 font-mono-metadata text-[10px] pb-1.5 uppercase tracking-wider text-center border-b-2 transition-all ${activeIntelTab === "trivia" ? "border-primary text-primary font-bold" : "border-transparent text-ink-mute hover:text-ink-soft"}`}
+                >
+                  {t("pokedex.intelTabTrivia")}
+                </button>
+                <button 
+                  onClick={() => setActiveIntelTab("dolls")}
+                  className={`flex-1 font-mono-metadata text-[10px] pb-1.5 uppercase tracking-wider text-center border-b-2 transition-all ${activeIntelTab === "dolls" ? "border-primary text-primary font-bold" : "border-transparent text-ink-mute hover:text-ink-soft"}`}
+                >
+                  {t("pokedex.intelTabDolls")}
+                </button>
+              </div>
+
+              {activeIntelTab === "trivia" ? (
+                <div className="space-y-sm">
+                  <div className="p-2.5 bg-paper-warm/50 border border-line-soft/60 rounded">
+                    <span className="font-mono-metadata text-[10px] text-primary font-bold block mb-0.5">
+                      {t("pokedex.trivia1Title")}
+                    </span>
+                    <p className="text-[11px] text-ink-mute leading-relaxed">
+                      {t("pokedex.trivia1Desc")}
+                    </p>
+                  </div>
+                  <div className="p-2.5 bg-paper-warm/50 border border-line-soft/60 rounded">
+                    <span className="font-mono-metadata text-[10px] text-[#a53a2c] font-bold block mb-0.5">
+                      {t("pokedex.trivia2Title")}
+                    </span>
+                    <p className="text-[11px] text-ink-mute leading-relaxed">
+                      {t("pokedex.trivia2Desc")}
+                    </p>
+                  </div>
+                  <div className="p-2.5 bg-paper-warm/50 border border-line-soft/60 rounded">
+                    <span className="font-mono-metadata text-[10px] text-tertiary font-bold block mb-0.5">
+                      {t("pokedex.trivia3Title")}
+                    </span>
+                    <p className="text-[11px] text-ink-mute leading-relaxed">
+                      {t("pokedex.trivia3Desc")}
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-sm">
+                  <div className="p-2.5 bg-paper-warm/50 border border-line-soft/60 rounded mb-2">
+                    <span className="font-mono-metadata text-[10px] text-secondary font-bold block mb-0.5">
+                      {t("pokedex.dollLimitTitle")}
+                    </span>
+                    <p className="text-[11px] text-ink-mute leading-relaxed">
+                      {t("pokedex.dollLimitDesc")}
+                    </p>
+                  </div>
+                  <div className="space-y-xs font-mono-metadata text-[11px] text-ink-soft bg-paper-warm/40 p-2 border border-line-soft/40 rounded">
+                    <div className="flex justify-between border-b border-line-soft/30 py-1">
+                      <span className="font-bold text-primary">{t("pokedex.dollPikachu")}</span>
+                      <span className="text-right text-ink-mute text-[10px]">{t("pokedex.biomeOcean")}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-line-soft/30 py-1">
+                      <span className="font-bold text-primary">{t("pokedex.dollBulbasaur")}</span>
+                      <span className="text-right text-ink-mute text-[10px]">{t("pokedex.biomeForest")}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-line-soft/30 py-1">
+                      <span className="font-bold text-primary">{t("pokedex.dollCharmander")}</span>
+                      <span className="text-right text-ink-mute text-[10px]">{t("pokedex.biomeMountain")}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </aside>
@@ -589,12 +752,31 @@ export default function Pokedex() {
 
                     <div className="w-full h-24 sm:h-32 mb-2 sm:mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
                       {pkmn.known ? (
-                        <img
-                          src={pkmn.image}
-                          alt={pkmn.nameEn}
-                          loading="lazy"
-                          className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
-                        />
+                        <>
+                          <img
+                            src={pkmn.image}
+                            alt={pkmn.nameEn}
+                            loading="lazy"
+                            className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
+                          />
+                          {pkmn.rarity && (
+                            <span className={`absolute top-1 left-1 font-mono text-[9px] px-1.5 py-0.5 rounded-sm border select-none ${
+                              pkmn.rarity === "V" 
+                                ? "bg-[#f5e6d3] text-secondary border-[#e8d2b5] font-bold" 
+                                : pkmn.rarity === "R" 
+                                  ? "bg-[#f2dedb] text-[#a53a2c] border-[#ebd4d1]" 
+                                  : "bg-[#e2e8f0] text-ink-mute border-[#cbd5e1]"
+                            }`}>
+                              {pkmn.rarity === "V" ? (en ? "V. Rare" : "極罕 V") : pkmn.rarity === "R" ? (en ? "Rare" : "稀有 R") : (en ? "Common" : "常見 C")}
+                            </span>
+                          )}
+                          {pkmn.requires_friendship !== undefined && (
+                            <span className="absolute bottom-1 right-1 bg-white/85 backdrop-blur-[2px] shadow-sm border border-line-soft px-1.5 py-0.5 rounded-sm text-[9px] font-mono-metadata text-ink-soft flex items-center gap-0.5 select-none font-medium">
+                              <span className="material-symbols-outlined text-[9px] text-[#a53a2c] font-bold">favorite</span>
+                              {en ? `Lv.${pkmn.requires_friendship}` : `友情 ${pkmn.requires_friendship}`}
+                            </span>
+                          )}
+                        </>
                       ) : (
                         <span className="material-symbols-outlined text-ink-faint text-3xl sm:text-4xl">visibility_off</span>
                       )}
@@ -730,6 +912,47 @@ export default function Pokedex() {
                     <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-2 md:px-3 md:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0">
                       <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.specialty")}</span>
                       <span className="font-body-base text-body-base text-primary text-right">{en ? active.specialtyEn : active.specialtyZh}</span>
+                    </div>
+                  )}
+
+                  {/* Rarity */}
+                  {active?.rarity && (
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-2 md:px-3 md:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0">
+                      <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.rarityLabel")}</span>
+                      <span className="font-body-base text-body-base text-secondary text-right font-bold">
+                        {active.rarity === "C" && (en ? "Common (C)" : "普通 (C)")}
+                        {active.rarity === "R" && (en ? "Rare (R)" : "稀有 (R)")}
+                        {active.rarity === "V" && (en ? "Very Rare (V)" : "非常稀有 (V)")}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Requires Friendship */}
+                  {active?.requires_friendship !== undefined && (
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-2 md:px-3 md:rounded-sm flex items-center justify-between gap-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] mt-0.5 md:mt-0">
+                      <span className="font-label-caps text-label-caps text-ink-mute shrink-0">{t("pokedex.friendshipLabel")}</span>
+                      <span className="font-body-base text-body-base text-ink-soft text-right">
+                        Lv. {active.requires_friendship}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Preferred environments using null-safe chaining data?.likes || [] */}
+                  {((active?.likes || []).length > 0) && (
+                    <div className="bg-paper-warm md:hairline-border border-y md:border-y-0 border-line-soft py-4 px-4 md:py-3 md:px-3 md:rounded-sm md:col-span-2 -mx-4 sm:-mx-6 md:mx-0 mt-[-1px] md:mt-0 flex flex-col gap-1.5 text-left">
+                      <span className="font-label-caps text-label-caps text-ink-mute text-left block">
+                        {t("pokedex.likesLabel")}
+                      </span>
+                      <div className="flex flex-wrap gap-1.5 justify-start">
+                        {(active?.likes || []).map((like: string, lIdx: number) => (
+                          <span
+                            key={lIdx}
+                            className="bg-surface-container-high border border-line-soft px-2.5 py-1 rounded-full text-xs text-ink-soft font-mono-metadata"
+                          >
+                            {t(`likes.${like.toLowerCase().replace(/\s+/g, '_')}`, { defaultValue: like })}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   )}
 
