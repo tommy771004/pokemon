@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import Seo from "../components/Seo";
+import ScrollFade from "../components/ScrollFade";
 
 const PAGE_SIZE = 12;
 
@@ -261,72 +262,73 @@ export default function Pokedex() {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-md relative">
-              {visible.map((pkmn: any) => (
-                <motion.article
-                  key={pkmn.id}
-                  onClick={() => pkmn.known && setActive(pkmn)}
-                  whileHover={pkmn.known ? { scale: 1.02, y: -2 } : {}}
-                  className={`bg-bone border border-line-soft rounded-sm p-2.5 sm:p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
-                >
-                  <div className="flex justify-between items-start mb-2 sm:mb-sm">
-                    <span className={`font-body-italic text-body-italic text-sm sm:text-base ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
-                      {pkmn.roman}
-                    </span>
-                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-1.5 py-0.5 rounded-sm border border-line-soft text-[10px]">
-                      #{pkmn.id}
-                    </span>
-                  </div>
-
-                  <div className="w-full h-24 sm:h-32 mb-2 sm:mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
-                    {pkmn.known ? (
-                      <img
-                        src={pkmn.image}
-                        alt={pkmn.nameEn}
-                        loading="lazy"
-                        className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
-                      />
-                    ) : (
-                      <span className="material-symbols-outlined text-ink-faint text-3xl sm:text-4xl">visibility_off</span>
-                    )}
-                  </div>
-                  
-                  {pkmn.known && (
-                    <div className="text-[9px] sm:text-[10px] text-ink-faint mb-2 sm:mb-sm flex gap-1 flex-wrap">
-                      <span>{en ? "Image:" : "圖片:"}</span>
-                      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-1" onClick={(e) => e.stopPropagation()}>PokeAPI</a>
+              {visible.map((pkmn: any, idx: number) => (
+                <ScrollFade key={pkmn.id} depth="none" delay={(idx % 5) * 0.03} className="h-full">
+                  <motion.article
+                    onClick={() => pkmn.known && setActive(pkmn)}
+                    whileHover={pkmn.known ? { scale: 1.02, y: -2 } : {}}
+                    className={`bg-bone border border-line-soft rounded-sm p-2.5 sm:p-sm flex flex-col relative ambient-shadow transition-colors transition-opacity duration-300 group paper-texture h-full ${pkmn.known ? "cursor-pointer" : "opacity-50 hover:opacity-100"}`}
+                  >
+                    <div className="flex justify-between items-start mb-2 sm:mb-sm">
+                      <span className={`font-body-italic text-body-italic text-sm sm:text-base ${pkmn.known ? "text-primary" : "text-ink-mute"}`}>
+                        {pkmn.roman}
+                      </span>
+                      <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant px-1.5 py-0.5 rounded-sm border border-line-soft text-[10px]">
+                        #{pkmn.id}
+                      </span>
                     </div>
-                  )}
 
-                  <div className="flex flex-col mt-auto">
-                    <h2 className={`font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-1 md:mb-xs transition-colors truncate ${pkmn.known ? "text-ink-soft group-hover:text-primary" : "text-ink-mute"}`}>
-                      {en ? pkmn.nameEn : pkmn.nameZh}
-                    </h2>
-                    <div className="flex flex-wrap items-center gap-1 sm:gap-2 mt-1">
-                      <div className="flex flex-wrap gap-1 sm:gap-xs">
-                        {(en ? pkmn.typesEn : pkmn.typesZh).map((type: string, idx: number) => (
-                          <span
-                            key={idx}
-                            className={`font-label-caps text-label-caps px-1 py-0.5 sm:px-2 rounded-sm border text-[9px] sm:text-[11px] ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
-                          >
-                            {type}
-                          </span>
-                        ))}
+                    <div className="w-full h-24 sm:h-32 mb-2 sm:mb-xs bg-surface-container-high rounded-sm border border-line-soft overflow-hidden relative flex items-center justify-center group/img">
+                      {pkmn.known ? (
+                        <img
+                          src={pkmn.image}
+                          alt={pkmn.nameEn}
+                          loading="lazy"
+                          className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px] group-hover:scale-105 transition-transform duration-500"
+                        />
+                      ) : (
+                        <span className="material-symbols-outlined text-ink-faint text-3xl sm:text-4xl">visibility_off</span>
+                      )}
+                    </div>
+                    
+                    {pkmn.known && (
+                      <div className="text-[9px] sm:text-[10px] text-ink-faint mb-2 sm:mb-sm flex gap-1 flex-wrap">
+                        <span>{en ? "Image:" : "圖片:"}</span>
+                        <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-dashed underline-offset-1" onClick={(e) => e.stopPropagation()}>PokeAPI</a>
                       </div>
-                      {pkmn.known && (en ? pkmn.roleEn : pkmn.roleZh) && (
-                        <span className="font-mono-metadata text-mono-metadata text-ink-soft flex items-center gap-0.5 sm:gap-1 bg-surface-container-high px-1 sm:px-2 py-0.5 rounded w-fit text-[9px] sm:text-[10px]">
-                          <span className="material-symbols-outlined text-[10px] sm:text-[14px]">badge</span>
-                          {en ? pkmn.roleEn : pkmn.roleZh}
-                        </span>
-                      )}
-                      {pkmn.known && pkmn.specialtyEn && pkmn.specialtyEn !== "—" && (
-                        <span className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center gap-0.5 sm:gap-1 text-[9px] sm:text-[10px]">
-                          <span className="material-symbols-outlined text-[10px] sm:text-[14px]">bolt</span>
-                          {en ? pkmn.specialtyEn : pkmn.specialtyZh}
-                        </span>
-                      )}
+                    )}
+
+                    <div className="flex flex-col mt-auto">
+                      <h2 className={`font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-1 md:mb-xs transition-colors truncate ${pkmn.known ? "text-ink-soft group-hover:text-primary" : "text-ink-mute"}`}>
+                        {en ? pkmn.nameEn : pkmn.nameZh}
+                      </h2>
+                      <div className="flex flex-wrap items-center gap-1 sm:gap-2 mt-1">
+                        <div className="flex flex-wrap gap-1 sm:gap-xs">
+                          {(en ? pkmn.typesEn : pkmn.typesZh).map((type: string, idx: number) => (
+                            <span
+                              key={idx}
+                              className={`font-label-caps text-label-caps px-1 py-0.5 sm:px-2 rounded-sm border text-[9px] sm:text-[11px] ${pkmn.known ? idx === 0 ? "text-tertiary border-tertiary/30" : "text-outline border-outline/30" : "text-ink-faint border-ink-faint/30"}`}
+                            >
+                              {type}
+                            </span>
+                          ))}
+                        </div>
+                        {pkmn.known && (en ? pkmn.roleEn : pkmn.roleZh) && (
+                          <span className="font-mono-metadata text-mono-metadata text-ink-soft flex items-center gap-0.5 sm:gap-1 bg-surface-container-high px-1 sm:px-2 py-0.5 rounded w-fit text-[9px] sm:text-[10px]">
+                            <span className="material-symbols-outlined text-[10px] sm:text-[14px]">badge</span>
+                            {en ? pkmn.roleEn : pkmn.roleZh}
+                          </span>
+                        )}
+                        {pkmn.known && pkmn.specialtyEn && pkmn.specialtyEn !== "—" && (
+                          <span className="font-mono-metadata text-mono-metadata text-ink-faint flex items-center gap-0.5 sm:gap-1 text-[9px] sm:text-[10px]">
+                            <span className="material-symbols-outlined text-[10px] sm:text-[14px]">bolt</span>
+                            {en ? pkmn.specialtyEn : pkmn.specialtyZh}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                </motion.article>
+                  </motion.article>
+                </ScrollFade>
               ))}
             </div>
           )}

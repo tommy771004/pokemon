@@ -1127,18 +1127,42 @@
         {
           "id": "dream-islands",
           "roman": "II.",
-          "titleEn": "Dream Islands Expeditions (ゆめしま)",
-          "titleZh": "進階探索：夢境群島 (ゆめしま)",
-          "contentEn": "GameWith emphasizes the importance of Dream Islands—randomized biomes essential for rare endgame encounters.",
-          "contentZh": "GameWith 資料庫特別整理了「夢境群島」系統。這是取得特殊物資與傳說級資源的隨機浮動島嶼，每次進入都不一樣。",
+          "titleEn": "Dream Islands Expeditions (ゆめしま) & Beast Trials",
+          "titleZh": "進階探索：夢境群島 (ゆめしま) 運作與聖獸試煉全解析",
+          "contentEn": "GameWith outlines the absolute mechanics of the Yumeshima system. By feeding specific dolls to Drifloon, players traverse to high-tier biomes containing Legendary beasts and rare resource nodes.",
+          "contentZh": "根據 GameWith 的核心資料庫整理：「夢境群島」不僅是取得稀有自然物資的隨機浮動島嶼，更是遭遇與招募城都地區「傳說三聖獸」的唯一通道。理解其觸發機制是後期發展的絕對關鍵。",
           "steps": [
             {
-              "nodeTitleEn": "Regional Dream Islands",
-              "nodeTitleZh": "四大區域夢境島",
-              "descEn": "Includes Wasteland Dream Island, Ocean Dream Island, Crag Dream Island, and Sky Dream Island—each corresponding to the main biomes but with boosted rare spawn rates.",
-              "descZh": "包含了「荒野夢境島」、「汪洋夢境島」、「岩山夢境島」與「天空夢境島」。這些島嶼對應四大基礎地貌，但充滿極度罕見的採集資源點與出沒機率被大幅提升的稀有寶可夢。",
+              "nodeTitleEn": "Doll Initiation & Biome Forging",
+              "nodeTitleZh": "娃娃獻祭與夢境傳送法則",
+              "descEn": "Interact with Drifloon (飄飄球) and hand over specific stuffed Pokémon dolls to be carried away. The type of doll given serves as an environmental anchor, dictating which randomized dream island biome you will arrive on.",
+              "descZh": "在修復後的城鎮中尋找神出鬼沒的「飄飄球（Drifloon）」。將特定種類的「寶可夢娃娃」贈送予牠，即可讓牠抓著你飛越時空降落隨機夢境島。不同的娃娃種類將作為地貌媒介，嚴格決定島嶼的生態系（例如：皮卡丘娃娃對應海洋型地景）。",
+              "icon": "toys",
+              "badgeZh": "傳送機制"
+            },
+            {
+              "nodeTitleEn": "The Four Specialized Dream Islands",
+              "nodeTitleZh": "四大上位夢之島生態系",
+              "descEn": "Explorations lead to Wasteland Dream Island (荒野), Ocean Dream Island (汪洋), Crag Dream Island (岩山), and Sky Dream Island (天空). Each operates as a high-yield version of Kanto biomes, boasting extremely rare gathering nodes and rare spawn pools.",
+              "descZh": "群島共有四種型態：「荒野夢境島」、「汪洋夢境島」、「岩山夢境島」與「天空夢境島」。島嶼內富含一般地圖不可見的極度罕見礦脈與草木採集點，更是高階材料大量爆發的風水寶地。",
               "icon": "explore",
-              "badgeZh": "高階資源"
+              "badgeZh": "高階採集"
+            },
+            {
+              "nodeTitleEn": "Beast Trial Example: Raikou’s Cavern Obstacle",
+              "nodeTitleZh": "三聖獸試煉實務：雷公與金屬方塊",
+              "descEn": "To recruit Raikou, transfer to the 'Pikachu Doll Dream Island (Ocean)'. Progress to the deepest cavern where Heavy Metal Blocks seal Raikou's sanctuary. You must eat a 'Hamburger Steak' cooked on Rocky Ridges' furnaces to gain extreme strength, then smash the blocks to initiate enrollment.",
+              "descZh": "以招募雷公為例：將「皮卡丘娃娃」交給飄飄球傳送至「海洋型夢境島」，一路深入島嶼最底部的「深處洞穴（Deep Cavern）」。雷公被極為沉重的「特殊金屬方塊」困在祭壇中，玩家必須於背包食入加成道具──「漢堡排」（由岩石山脊熔爐烤製），獲得破格碎岩力，擊碎巨石障礙後方可招募雷公同行。",
+              "icon": "bolt",
+              "badgeZh": "聖獸招募"
+            },
+            {
+              "nodeTitleEn": "Ecological Resonance & Environment Rating",
+              "nodeTitleZh": "聖獸定居與環境等級大幅飛躍",
+              "descEn": "Recruiting a legendary beast allows you to construct its high-end habitat back in your main town, instantly boosting the regional environment rating and comfort. This in turn triggers a flood of rare regular Pokémon migrations into your settlement.",
+              "descZh": "完成聖獸招募後，便能在你的常規城鎮中為其興建專屬棲息地。安置傳說寶可夢會使整個區域的「環境等級」與「舒適度評分」獲得突飛猛進的爆發性增長，從而使前所未見的稀有普通寶可夢大量向你的營地靠攏移民。",
+              "icon": "auto_awesome",
+              "badgeZh": "生態效應"
             }
           ]
         }

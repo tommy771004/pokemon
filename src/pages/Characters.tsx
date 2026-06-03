@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "motion/react";
 import CharacterNetwork from "../components/CharacterNetwork";
 import Seo from "../components/Seo";
+import ScrollFade from "../components/ScrollFade";
 
 type Stage = {
   id: string;
@@ -194,84 +195,87 @@ export default function Characters() {
         </motion.header>
 
         <motion.section variants={itemVariants} className="grid grid-cols-1 md:grid-cols-5 gap-sm mb-xl">
-          {data.stages.map((stage) => (
-            <article key={stage.id} className="bg-paper-warm border border-line-soft rounded-sm px-4 py-3 paper-texture ambient-shadow">
-              <span className="font-label-caps text-label-caps text-primary uppercase block mb-2">
-                {en ? stage.labelEn : stage.labelZh}
-              </span>
-              <p className="font-body-base text-body-base text-ink-soft leading-relaxed">
-                {en ? stage.summaryEn : stage.summaryZh}
-              </p>
-            </article>
+          {data.stages.map((stage, idx) => (
+            <ScrollFade key={stage.id} depth="fg" delay={idx * 0.04} className="h-full">
+              <article className="bg-paper-warm border border-line-soft rounded-sm px-4 py-3 paper-texture ambient-shadow h-full">
+                <span className="font-label-caps text-label-caps text-primary uppercase block mb-2">
+                  {en ? stage.labelEn : stage.labelZh}
+                </span>
+                <p className="font-body-base text-body-base text-ink-soft leading-relaxed">
+                  {en ? stage.summaryEn : stage.summaryZh}
+                </p>
+              </article>
+            </ScrollFade>
           ))}
         </motion.section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-md">
-          {filteredCharacters.map((char) => {
+          {filteredCharacters.map((char, idx) => {
             const primaryStage = stageMap.get(char.primaryStage);
             return (
-              <motion.article
-                key={char.id}
-                variants={itemVariants}
-                whileHover={{ scale: 1.015, y: -2 }}
-                className="bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow paper-texture cursor-pointer"
-                onClick={() => setSelectedChar(char)}
-              >
-                <div className="flex items-start justify-between gap-3 mb-sm">
-                  <div className="min-w-0">
-                    <span className="font-mono-metadata text-mono-metadata text-primary uppercase tracking-wider block mb-1">
-                      {en ? char.aliasEn : char.aliasZh}
-                    </span>
-                    <span className="font-label-caps text-label-caps text-ink-mute uppercase">
-                      {en ? char.roleEn : char.roleZh}
-                    </span>
-                  </div>
-                  <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant border border-line-soft px-2 py-1 rounded-sm shrink-0">
-                    {primaryStage ? (en ? primaryStage.labelEn : primaryStage.labelZh) : "—"}
-                  </span>
-                </div>
-
-                <div className="w-full aspect-square mb-sm bg-surface-container-high rounded-sm border border-line-soft overflow-hidden flex items-center justify-center p-4">
-                  <img
-                    src={char.image}
-                    alt={char.nameEn}
-                    className="object-contain w-full h-full mix-blend-multiply opacity-90 transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2 flex-grow">
-                  <div>
-                    <h2 className="font-headline-md text-headline-md text-ink-soft">{en ? char.nameEn : char.nameZh}</h2>
-                    <p className="font-body-italic text-body-italic text-ink-mute">
-                      {en ? char.regionEn : char.regionZh}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    <span className="font-mono-metadata text-mono-metadata text-ink-soft bg-surface-variant px-2 py-1 rounded-sm border border-line-soft">
-                      {en ? char.specialtyEn : char.specialtyZh}
-                    </span>
-                    {char.signatureSkillsEn.slice(0, 2).map((skill, index) => (
-                      <span
-                        key={skill}
-                        className="font-mono-metadata text-mono-metadata text-ink-faint bg-paper-warm px-2 py-1 rounded-sm border border-line-soft"
-                      >
-                        {en ? skill : char.signatureSkillsZh[index]}
+              <ScrollFade key={char.id} depth="none" delay={(idx % 3) * 0.04} className="h-full">
+                <motion.article
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.015, y: -2 }}
+                  className="bg-bone border border-line-soft rounded-sm p-sm flex flex-col relative ambient-shadow paper-texture cursor-pointer h-full"
+                  onClick={() => setSelectedChar(char)}
+                >
+                  <div className="flex items-start justify-between gap-3 mb-sm">
+                    <div className="min-w-0">
+                      <span className="font-mono-metadata text-mono-metadata text-primary uppercase tracking-wider block mb-1">
+                        {en ? char.aliasEn : char.aliasZh}
                       </span>
-                    ))}
+                      <span className="font-label-caps text-label-caps text-ink-mute uppercase">
+                        {en ? char.roleEn : char.roleZh}
+                      </span>
+                    </div>
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute bg-surface-variant border border-line-soft px-2 py-1 rounded-sm shrink-0">
+                      {primaryStage ? (en ? primaryStage.labelEn : primaryStage.labelZh) : "—"}
+                    </span>
                   </div>
 
-                  <p className="font-body-base text-body-base text-ink-soft leading-relaxed line-clamp-4">
-                    {en ? char.summaryEn : char.summaryZh}
-                  </p>
+                  <div className="w-28 h-28 mx-auto mb-sm bg-surface-container-high rounded-sm border border-line-soft overflow-hidden flex items-center justify-center p-2">
+                    <img
+                      src={char.image}
+                      alt={char.nameEn}
+                      className="object-contain max-w-full max-h-full mix-blend-multiply opacity-90 transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
 
-                  <div className="mt-auto pt-sm border-t border-dashed border-line-soft">
-                    <p className="font-mono-metadata text-mono-metadata text-ink-faint">
-                      {en ? "Linked Areas:" : "關聯地點："} {(en ? char.relatedLocationsEn : char.relatedLocationsZh).join(" · ")}
+                  <div className="flex flex-col gap-2 flex-grow">
+                    <div>
+                      <h2 className="font-headline-md text-headline-md text-ink-soft">{en ? char.nameEn : char.nameZh}</h2>
+                      <p className="font-body-italic text-body-italic text-ink-mute">
+                        {en ? char.regionEn : char.regionZh}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      <span className="font-mono-metadata text-mono-metadata text-ink-soft bg-surface-variant px-2 py-1 rounded-sm border border-line-soft">
+                        {en ? char.specialtyEn : char.specialtyZh}
+                      </span>
+                      {char.signatureSkillsEn.slice(0, 2).map((skill, index) => (
+                        <span
+                          key={skill}
+                          className="font-mono-metadata text-mono-metadata text-ink-faint bg-paper-warm px-2 py-1 rounded-sm border border-line-soft"
+                        >
+                          {en ? skill : char.signatureSkillsZh[index]}
+                        </span>
+                      ))}
+                    </div>
+
+                    <p className="font-body-base text-body-base text-ink-soft leading-relaxed line-clamp-4">
+                      {en ? char.summaryEn : char.summaryZh}
                     </p>
+
+                    <div className="mt-auto pt-sm border-t border-dashed border-line-soft">
+                      <p className="font-mono-metadata text-mono-metadata text-ink-faint">
+                        {en ? "Linked Areas:" : "關聯地點："} {(en ? char.relatedLocationsEn : char.relatedLocationsZh).join(" · ")}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </motion.article>
+                </motion.article>
+              </ScrollFade>
             );
           })}
         </div>
@@ -309,7 +313,7 @@ export default function Characters() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] border-b border-line-soft">
                   <div className="bg-surface-container-high border-b lg:border-b-0 lg:border-r border-line-soft flex flex-col items-center justify-center p-lg relative">
-                    <img src={selectedChar.image} alt={selectedChar.nameEn} className="object-contain w-full max-h-56 mb-4" />
+                    <img src={selectedChar.image} alt={selectedChar.nameEn} className="object-contain max-h-28 max-w-[150px] mx-auto mb-4" />
                     <div className="text-center">
                       <span className="font-label-caps text-label-caps text-primary uppercase block mb-2">
                         {en ? selectedChar.aliasEn : selectedChar.aliasZh}

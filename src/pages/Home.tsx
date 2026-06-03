@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 import Seo from "../components/Seo";
+import ScrollFade from "../components/ScrollFade";
 
 const MotionLink = motion.create(Link);
 
@@ -84,67 +85,71 @@ export default function Home() {
 
       <section className="grid grid-cols-1 md:grid-cols-12 gap-md mb-xl">
         {/* Featured Article */}
-        <MotionLink to={data.featured.link} variants={itemVariants} className="md:col-span-7 bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px] block">
-          <div className="absolute top-sm right-sm z-10 bg-paper/80 backdrop-blur-md px-2 py-1 rounded-sm border border-line-soft">
-            <span className="font-mono-metadata text-mono-metadata text-ink-soft">{data.featured.tag}</span>
-          </div>
-          <div className="absolute top-sm left-sm z-10">
-            <span className="font-mono-metadata text-mono-metadata text-primary">★</span>
-          </div>
-          <div className="h-64 md:h-80 w-full overflow-hidden bg-surface-dim relative">
-            <img 
-              src={data.featured.image} 
-              alt="Featured" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-multiply opacity-90"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-bone via-bone/20 to-transparent"></div>
-          </div>
-          <div className="p-lg flex-grow flex flex-col justify-end bg-bone relative -mt-16 z-10">
-            <h2 className="font-headline-md text-headline-md text-ink-soft mb-xs leading-tight group-hover:text-primary transition-colors">
-              {i18n.language === "en" ? data.featured.titleEn : data.featured.titleZh}
-            </h2>
-            <p className="font-body-base text-body-base text-ink-mute line-clamp-2 mb-sm">
-              {i18n.language === "en" ? data.featured.excerptEn : data.featured.excerptZh}
-            </p>
-            <div className="mt-auto flex items-center justify-between pt-sm border-t border-line-soft">
-              <span className="font-mono-metadata text-mono-metadata text-ink-faint">
-                {t("home.by", { author: data.featured.author })} • {t("home.readTime", { time: data.featured.readTime })}
-              </span>
-              <span className="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">
-                arrow_right_alt
-              </span>
+        <ScrollFade depth="mid" className="md:col-span-7 flex flex-col">
+          <MotionLink to={data.featured.link} variants={itemVariants} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group relative cursor-pointer flex flex-col min-h-[400px] flex-grow block">
+            <div className="absolute top-sm right-sm z-10 bg-paper/80 backdrop-blur-md px-2 py-1 rounded-sm border border-line-soft">
+              <span className="font-mono-metadata text-mono-metadata text-ink-soft">{data.featured.tag}</span>
             </div>
-          </div>
-        </MotionLink>
+            <div className="absolute top-sm left-sm z-10">
+              <span className="font-mono-metadata text-mono-metadata text-primary">★</span>
+            </div>
+            <div className="h-64 md:h-80 w-full overflow-hidden bg-surface-dim relative">
+              <img 
+                src={data.featured.image} 
+                alt="Featured" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-multiply opacity-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-bone via-bone/20 to-transparent"></div>
+            </div>
+            <div className="p-lg flex-grow flex flex-col justify-end bg-bone relative -mt-16 z-10">
+              <h2 className="font-headline-md text-headline-md text-ink-soft mb-xs leading-tight group-hover:text-primary transition-colors">
+                {i18n.language === "en" ? data.featured.titleEn : data.featured.titleZh}
+              </h2>
+              <p className="font-body-base text-body-base text-ink-mute line-clamp-2 mb-sm">
+                {i18n.language === "en" ? data.featured.excerptEn : data.featured.excerptZh}
+              </p>
+              <div className="mt-auto flex items-center justify-between pt-sm border-t border-line-soft">
+                <span className="font-mono-metadata text-mono-metadata text-ink-faint">
+                  {t("home.by", { author: data.featured.author })} • {t("home.readTime", { time: data.featured.readTime })}
+                </span>
+                <span className="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">
+                  arrow_right_alt
+                </span>
+              </div>
+            </div>
+          </MotionLink>
+        </ScrollFade>
 
         {/* Secondary News Stack */}
         <div className="md:col-span-5 flex flex-col gap-md">
-          {data.news.map((item: any) => (
-            <MotionLink to={item.link} variants={itemVariants} key={item.id} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer block">
-              <div className="w-1/3 bg-surface-dim relative overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt="Thumbnail" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-multiply"
-                />
-              </div>
-              <div className="p-sm flex flex-col justify-between w-2/3">
-                <div>
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="font-mono-metadata text-mono-metadata text-ink-faint">
-                      {i18n.language === "en" ? item.tagEn : item.tagZh}
-                    </span>
-                    <span className="font-mono-metadata text-mono-metadata text-primary">{item.number}</span>
-                  </div>
-                  <h3 className="font-headline-sm text-headline-sm text-ink-soft mb-1 text-lg group-hover:text-primary transition-colors">
-                    {i18n.language === "en" ? item.titleEn : item.titleZh}
-                  </h3>
+          {data.news.map((item: any, idx: number) => (
+            <ScrollFade key={item.id} depth="fg" delay={idx * 0.05} className="flex-grow">
+              <MotionLink to={item.link} variants={itemVariants} className="bg-bone border border-line-soft rounded-DEFAULT overflow-hidden ambient-shadow transition-all group flex flex-row h-full relative cursor-pointer block">
+                <div className="w-1/3 bg-surface-dim relative overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt="Thumbnail" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-multiply"
+                  />
                 </div>
-                <span className="font-mono-metadata text-mono-metadata text-ink-mute mt-4 border-t border-line-soft pt-2 inline-block">
-                  {t("home.updatedAgo", { time: i18n.language === "en" ? item.updatedAgoEn : item.updatedAgoZh })}
-                </span>
-              </div>
-            </MotionLink>
+                <div className="p-sm flex flex-col justify-between w-2/3">
+                  <div>
+                    <div className="flex justify-between items-start mb-2">
+                      <span className="font-mono-metadata text-mono-metadata text-ink-faint">
+                        {i18n.language === "en" ? item.tagEn : item.tagZh}
+                      </span>
+                      <span className="font-mono-metadata text-mono-metadata text-primary">{item.number}</span>
+                    </div>
+                    <h3 className="font-headline-sm text-headline-sm text-ink-soft mb-1 text-lg group-hover:text-primary transition-colors">
+                      {i18n.language === "en" ? item.titleEn : item.titleZh}
+                    </h3>
+                  </div>
+                  <span className="font-mono-metadata text-mono-metadata text-ink-mute mt-4 border-t border-line-soft pt-2 inline-block">
+                    {t("home.updatedAgo", { time: i18n.language === "en" ? item.updatedAgoEn : item.updatedAgoZh })}
+                  </span>
+                </div>
+              </MotionLink>
+            </ScrollFade>
           ))}
         </div>
       </section>

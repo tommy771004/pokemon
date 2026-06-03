@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
 import MapBackdrop from "../components/MapBackdrop";
+import ScrollFade from "../components/ScrollFade";
 
 type SourceLink = {
   label: string;
@@ -213,41 +214,42 @@ export default function MapPage() {
           </div>
 
           <div className="flex flex-col space-y-sm">
-            {locations.map((loc) => (
-              <article
-                key={loc.id}
-                className={`bg-bone hairline-border p-sm relative group ambient-shadow transition-all duration-300 cursor-pointer ${
-                  hoveredTarget === loc.id ? "ring-1 ring-primary" : ""
-                }`}
-                onMouseEnter={() => setHoveredTarget(loc.id)}
-                onMouseLeave={() => setHoveredTarget(null)}
-                onClick={() => setActive(loc)}
-              >
-                <div className="absolute top-sm right-sm text-right">
-                  <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full group-hover:text-primary group-hover:border-primary transition-colors">
-                    {en ? loc.levelEn : loc.levelZh}
-                  </span>
-                </div>
-                <div className="mb-3 pr-20 min-w-0">
-                  <span className="font-body-italic text-body-italic text-ink-mute block mb-1 truncate">
-                    {en ? loc.categoryEn : loc.categoryZh}
-                  </span>
-                  <h3 className="font-headline-md text-headline-md text-on-surface break-words">
-                    {en ? loc.nameEn : loc.nameZh}
-                  </h3>
-                </div>
-                <p className="font-body-base text-body-base text-ink-soft mb-4 line-clamp-3 break-words">
-                  {en ? loc.summaryEn : loc.summaryZh}
-                </p>
-                <div className="flex flex-wrap gap-3 font-mono-metadata text-mono-metadata text-ink-mute border-t border-line-soft pt-3">
-                  {(en ? loc.tagsEn : loc.tagsZh).map((tag, index) => (
-                    <span key={tag} className="flex items-center">
-                      <span className="material-symbols-outlined text-[14px] mr-1">{loc.tagIcons[index]}</span>
-                      {tag}
+            {locations.map((loc, idx) => (
+              <ScrollFade key={loc.id} depth="none" delay={idx * 0.03} className="w-full">
+                <article
+                  className={`bg-bone hairline-border p-sm relative group ambient-shadow transition-all duration-300 cursor-pointer ${
+                    hoveredTarget === loc.id ? "ring-1 ring-primary" : ""
+                  }`}
+                  onMouseEnter={() => setHoveredTarget(loc.id)}
+                  onMouseLeave={() => setHoveredTarget(null)}
+                  onClick={() => setActive(loc)}
+                >
+                  <div className="absolute top-sm right-sm text-right">
+                    <span className="font-mono-metadata text-mono-metadata text-ink-mute border border-ink-mute px-2 py-0.5 rounded-full group-hover:text-primary group-hover:border-primary transition-colors">
+                      {en ? loc.levelEn : loc.levelZh}
                     </span>
-                  ))}
-                </div>
-              </article>
+                  </div>
+                  <div className="mb-3 pr-20 min-w-0">
+                    <span className="font-body-italic text-body-italic text-ink-mute block mb-1 truncate">
+                      {en ? loc.categoryEn : loc.categoryZh}
+                    </span>
+                    <h3 className="font-headline-md text-headline-md text-on-surface break-words">
+                      {en ? loc.nameEn : loc.nameZh}
+                    </h3>
+                  </div>
+                  <p className="font-body-base text-body-base text-ink-soft mb-4 line-clamp-3 break-words">
+                    {en ? loc.summaryEn : loc.summaryZh}
+                  </p>
+                  <div className="flex flex-wrap gap-3 font-mono-metadata text-mono-metadata text-ink-mute border-t border-line-soft pt-3">
+                    {(en ? loc.tagsEn : loc.tagsZh).map((tag, index) => (
+                      <span key={tag} className="flex items-center">
+                        <span className="material-symbols-outlined text-[14px] mr-1">{loc.tagIcons[index]}</span>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </article>
+              </ScrollFade>
             ))}
           </div>
         </section>
@@ -258,7 +260,7 @@ export default function MapPage() {
             onClick={() => setActive(null)}
           >
             <div
-              className="bg-bone border border-line rounded-2xl ambient-shadow w-[95vw] md:max-w-6xl max-h-[90vh] overflow-y-auto relative paper-texture flex flex-col lg:flex-row"
+              className="bg-bone border border-line rounded-2xl ambient-shadow w-[95vw] md:max-w-7xl xl:max-w-[1380px] max-h-[90vh] overflow-y-auto relative paper-texture flex flex-col lg:flex-row"
               onClick={(event) => event.stopPropagation()}
             >
               <button
@@ -269,7 +271,7 @@ export default function MapPage() {
                 <span className="material-symbols-outlined">close</span>
               </button>
 
-              <div className="lg:w-[320px] bg-surface-container-high p-lg border-b lg:border-b-0 lg:border-r border-line flex flex-col justify-center relative">
+              <div className="lg:w-[290px] bg-surface-container-high p-lg border-b lg:border-b-0 lg:border-r border-line flex flex-col justify-center relative shrink-0">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-primary text-primary flex items-center justify-center bg-bone mb-md shadow-[0_0_40px_-10px_rgba(165,58,44,0.3)]">
                   <span className="material-symbols-outlined text-[48px] sm:text-[64px]">{active.icon}</span>
                 </div>
@@ -287,114 +289,135 @@ export default function MapPage() {
                 </p>
               </div>
 
-              <div className="lg:w-[calc(100%-320px)] p-lg md:p-xl flex flex-col gap-lg">
-                <section>
-                  <h3 className="font-label-caps text-label-caps text-ink-mute mb-3 uppercase tracking-wider">
-                    {en ? "Area Description" : "區域詳情"}
-                  </h3>
-                  <p className="font-body-base text-body-base text-ink-soft leading-relaxed whitespace-pre-wrap">
-                    {en ? active.descriptionEn : active.descriptionZh}
-                  </p>
-                </section>
-
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-md">
-                  <section className="bg-paper-warm border border-line-soft rounded-sm p-4">
-                    <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-3">
-                      {en ? "Objectives" : "任務目標"}
+              <div className="lg:w-[calc(100%-290px)] p-6 md:p-12 xl:p-14 flex flex-col gap-9 flex-grow">
+                <ScrollFade depth="none" scaleEnabled={false} className="w-full">
+                  <section className="bg-bone border border-line-soft/60 rounded-DEFAULT p-6 md:p-8 paper-texture shadow-sm">
+                    <h3 className="font-label-caps text-label-caps text-primary mb-4 uppercase tracking-wider flex items-center gap-2 font-semibold">
+                      <span className="material-symbols-outlined text-[20px]">explore</span>
+                      {en ? "Area Description" : "區域詳情"}
                     </h3>
-                    <ul className="space-y-3">
-                      {(en ? active.objectivesEn : active.objectivesZh).map((item) => (
-                        <li key={item} className="font-body-base text-body-base text-ink-soft leading-relaxed flex gap-2">
-                          <span className="text-primary">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="font-body-base text-body-base text-ink-soft leading-relaxed whitespace-pre-wrap">
+                      {en ? active.descriptionEn : active.descriptionZh}
+                    </p>
                   </section>
+                </ScrollFade>
 
-                  <section className="bg-paper-warm border border-line-soft rounded-sm p-4">
-                    <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-3">
-                      {en ? "Required Skills" : "需求技能"}
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {(en ? active.requiredSkillsEn : active.requiredSkillsZh).map((item) => (
-                        <span
-                          key={item}
-                          className="font-mono-metadata text-mono-metadata text-ink-soft bg-surface-container-high border border-line-soft px-2 py-1 rounded-sm"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </section>
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-lg">
+                  <ScrollFade depth="none" scaleEnabled={false}>
+                    <section className="bg-paper-warm/40 border border-line-soft rounded-DEFAULT p-6 md:p-8 h-full hover:bg-paper-warm/60 transition-colors duration-300 shadow-sm flex flex-col">
+                      <h3 className="font-label-caps text-label-caps text-ink-soft uppercase mb-4 tracking-wider flex items-center gap-2 font-semibold">
+                        <span className="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+                        {en ? "Objectives" : "任務目標"}
+                      </h3>
+                      <ul className="space-y-3 flex-grow">
+                        {(en ? active.objectivesEn : active.objectivesZh).map((item) => (
+                          <li key={item} className="font-body-base text-body-base text-ink-soft leading-relaxed flex gap-2.5">
+                            <span className="text-primary mt-1 select-none">✦</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  </ScrollFade>
 
-                  <section className="bg-paper-warm border border-line-soft rounded-sm p-4">
-                    <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-3">
-                      {en ? "Resource Focus" : "重點資源"}
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {(en ? active.resourceFocusEn : active.resourceFocusZh).map((item) => (
-                        <span
-                          key={item}
-                          className="font-mono-metadata text-mono-metadata text-ink-soft bg-surface-container-high border border-line-soft px-2 py-1 rounded-sm"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </section>
+                  <ScrollFade depth="none" scaleEnabled={false}>
+                    <section className="bg-paper-warm/40 border border-line-soft rounded-DEFAULT p-6 md:p-8 h-full hover:bg-paper-warm/60 transition-colors duration-300 shadow-sm flex flex-col">
+                      <h3 className="font-label-caps text-label-caps text-ink-soft uppercase mb-4 tracking-wider flex items-center gap-2 font-semibold">
+                        <span className="material-symbols-outlined text-primary text-[20px]">psychology</span>
+                        {en ? "Required Skills" : "需求技能"}
+                      </h3>
+                      <div className="flex flex-wrap gap-2.5">
+                        {(en ? active.requiredSkillsEn : active.requiredSkillsZh).map((item) => (
+                          <span
+                            key={item}
+                            className="font-mono-metadata text-mono-metadata text-ink-soft bg-bone border border-line-soft px-3 py-1.5 rounded-sm hover:-translate-y-0.5 hover:shadow-xs transition-all duration-300"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+                  </ScrollFade>
 
-                  <section className="bg-paper-warm border border-line-soft rounded-sm p-4">
-                    <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-3">
-                      {en ? "Notable Pokémon" : "關聯寶可夢"}
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {(en ? active.notablePokemonEn : active.notablePokemonZh).map((item) => (
-                        <span
-                          key={item}
-                          className="font-mono-metadata text-mono-metadata text-ink-soft bg-surface-container-high border border-line-soft px-2 py-1 rounded-sm"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </section>
+                  <ScrollFade depth="none" scaleEnabled={false}>
+                    <section className="bg-paper-warm/40 border border-line-soft rounded-DEFAULT p-6 md:p-8 h-full hover:bg-paper-warm/60 transition-colors duration-300 shadow-sm flex flex-col">
+                      <h3 className="font-label-caps text-label-caps text-ink-soft uppercase mb-4 tracking-wider flex items-center gap-2 font-semibold">
+                        <span className="material-symbols-outlined text-primary text-[20px]">inventory_2</span>
+                        {en ? "Resource Focus" : "重點資源"}
+                      </h3>
+                      <div className="flex flex-wrap gap-2.5">
+                        {(en ? active.resourceFocusEn : active.resourceFocusZh).map((item) => (
+                          <span
+                            key={item}
+                            className="font-mono-metadata text-mono-metadata text-ink-soft bg-bone border border-line-soft px-3 py-1.5 rounded-sm hover:-translate-y-0.5 hover:shadow-xs transition-all duration-300"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+                  </ScrollFade>
+
+                  <ScrollFade depth="none" scaleEnabled={false}>
+                    <section className="bg-paper-warm/40 border border-line-soft rounded-DEFAULT p-6 md:p-8 h-full hover:bg-paper-warm/60 transition-colors duration-300 shadow-sm flex flex-col">
+                      <h3 className="font-label-caps text-label-caps text-ink-soft uppercase mb-4 tracking-wider flex items-center gap-2 font-semibold">
+                        <span className="material-symbols-outlined text-primary text-[20px]">pets</span>
+                        {en ? "Notable Pokémon" : "關聯寶可夢"}
+                      </h3>
+                      <div className="flex flex-wrap gap-2.5">
+                        {(en ? active.notablePokemonEn : active.notablePokemonZh).map((item) => (
+                          <span
+                            key={item}
+                            className="font-mono-metadata text-mono-metadata text-ink-soft bg-bone border border-line-soft px-3 py-1.5 rounded-sm hover:-translate-y-0.5 hover:shadow-xs transition-all duration-300"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+                  </ScrollFade>
                 </div>
 
-                <section>
-                  <h3 className="font-label-caps text-label-caps text-ink-mute mb-3 uppercase tracking-wider">
-                    {en ? "Unlocks" : "解鎖內容"}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {(en ? active.unlocksEn : active.unlocksZh).map((item) => (
-                      <span
-                        key={item}
-                        className="font-mono-metadata text-mono-metadata text-ink-soft bg-bone border border-line-soft px-3 py-2 rounded-sm"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </section>
+                <ScrollFade depth="none" scaleEnabled={false} className="w-full">
+                  <section className="bg-bone border border-line-soft/60 rounded-DEFAULT p-6 md:p-8 shadow-sm">
+                    <h3 className="font-label-caps text-label-caps text-ink-soft mb-4 uppercase tracking-wider flex items-center gap-2 font-semibold">
+                      <span className="material-symbols-outlined text-primary text-[20px]">lock_open</span>
+                      {en ? "Unlocks" : "解鎖內容"}
+                    </h3>
+                    <div className="flex flex-wrap gap-3">
+                      {(en ? active.unlocksEn : active.unlocksZh).map((item) => (
+                        <span
+                          key={item}
+                          className="font-mono-metadata text-mono-metadata text-ink-soft bg-paper-warm/60 border border-line-soft px-4 py-2 rounded-sm"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                </ScrollFade>
 
-                <section className="pt-sm border-t border-dashed border-line-soft">
-                  <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-3">
-                    {en ? "Sources" : "資料來源"}
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {active.sourceLinks.map((link) => (
-                      <a
-                        key={link.url}
-                        href={link.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-mono-metadata text-mono-metadata text-ink-soft bg-paper-warm border border-line-soft px-3 py-2 rounded-sm hover:text-primary transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                </section>
+                <ScrollFade depth="none" scaleEnabled={false} className="w-full">
+                  <section className="pt-6 border-t border-dashed border-line-soft">
+                    <h3 className="font-label-caps text-label-caps text-ink-mute uppercase mb-4 tracking-wider flex items-center gap-2 font-semibold text-xs">
+                      <span className="material-symbols-outlined text-[16px]">menu_book</span>
+                      {en ? "Sources & References" : "資料來源與參考"}
+                    </h3>
+                    <div className="flex flex-wrap gap-3">
+                      {active.sourceLinks.map((link) => (
+                        <a
+                          key={link.url}
+                          href={link.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-mono-metadata text-mono-metadata text-ink-soft bg-paper-warm/40 border border-line-soft px-4 py-2 rounded-sm hover:text-primary hover:bg-paper-warm/80 transition-all duration-300 shadow-sm"
+                        >
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </section>
+                </ScrollFade>
               </div>
             </div>
           </div>
