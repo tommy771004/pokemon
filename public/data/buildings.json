@@ -1,0 +1,2967 @@
+[
+  {
+    "id": "17",
+    "name": "木階梯",
+    "nameJa": "木のかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-17.png",
+    "description": "有高低落差的路只要做了階梯，寶可夢們就能輕鬆行走。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "劇情中與呆呆獸對話時獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "687",
+    "name": "時尚階梯",
+    "nameJa": "おしゃれかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-687.png",
+    "description": "灰泥和木頭搭配的時尚階梯。和灰泥牆壁也很搭。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買（嶄新小鎮 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 1,
+        "imageUrl": "/images/items/item-2.png"
+      },
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 1,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "39",
+    "name": "石階梯",
+    "nameJa": "いしのかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-39.png",
+    "description": "用大量石頭堆砌而成的階梯。排列起來很有莊嚴的氛圍。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "在地圖中獲得▶獲得地點圖像"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "716",
+    "name": "水泥階梯",
+    "nameJa": "コンクリートのかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-716.png",
+    "description": "混凝土製成的堅固樓梯。放在大樓裡或道路上試試看吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（閃亮浮島 Lv. 2）"
+    ],
+    "materials": [
+      {
+        "id": "221",
+        "name": "水泥",
+        "count": 2,
+        "imageUrl": "/images/items/item-221.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "330",
+    "name": "磚階梯",
+    "nameJa": "レンガのかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-330.png",
+    "description": "磚造的現代風階梯。多放幾個打造時尚的街道吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 2）"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "57",
+    "name": "鐵階梯",
+    "nameJa": "てつのかいだん",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-57.png",
+    "description": "像工廠裡會有的樓梯。因為表面有些凹凸不平，看起來不容易打滑。",
+    "obtain": [
+      "在乾枯荒野取得"
+    ],
+    "recipe": [
+      "在商店購買（崎嶇山 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "34",
+    "name": "木梯",
+    "nameJa": "木のはしご",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-34.png",
+    "description": "大量垂直連接的話，再高的牆壁也能輕鬆攀爬。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "在商店購買（乾枯荒野 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "843",
+    "name": "鐵梯",
+    "nameJa": "てつのハシゴ",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-843.png",
+    "description": "想去高處的時候很方便。垂直連接起來往上爬吧。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買（崎嶇山 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "538",
+    "name": "鋼索",
+    "nameJa": "ワイヤー",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-538.png",
+    "description": "能承受任何重量的鋼線。最適合從天花板吊掛家具。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "897",
+    "name": "鎖鏈",
+    "nameJa": "くさり",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-897.png",
+    "description": "能承受任何重量的鋼線。最適合從天花板吊掛家具。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "539",
+    "name": "繩子",
+    "nameJa": "ロープ",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-539.png",
+    "description": "粗壯結實的繩索。垂直連接起來就能爬到高處去。",
+    "obtain": [
+      "在崎嶇山取得",
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "寶可夢圖鑑登錄85隻時的報酬"
+    ],
+    "materials": [
+      {
+        "id": "48",
+        "name": "藤繩",
+        "count": 2,
+        "imageUrl": "/images/items/item-48.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "934",
+    "name": "滑輪",
+    "nameJa": "かっしゃ",
+    "buildingType": "stairs",
+    "imageUrl": "/images/items/item-934.png",
+    "description": "可安裝在天花板上的滑輪。非常適合用來懸掛裝飾或繩索。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "400",
+    "name": "木製十字門",
+    "nameJa": "木のクロスドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-400.png",
+    "description": "用大十字加固的門。最適合安裝在船上或小屋上。",
+    "obtain": [],
+    "recipe": [
+      "在地圖中獲得▶獲得地點圖像"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "722",
+    "name": "簡約門",
+    "nameJa": "シンプルなドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-722.png",
+    "description": "上面附有玻璃窗的簡約門。裝在小屋或倉庫上也很搭。",
+    "obtain": [
+      "在陰沉海濱取得",
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "閃閃浮島的城鎮環境等級達到5時在商店開放"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "679",
+    "name": "船門",
+    "nameJa": "ふねのドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-679.png",
+    "description": "附有門牌號碼的高級門扉。超適合豪華客船的客房。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "847",
+    "name": "現代風門",
+    "nameJa": "モダンなドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-847.png",
+    "description": "簡約但堅固的門。非常適合當家裡的大門。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "288",
+    "name": "時尚門",
+    "nameJa": "スタイリッシュなドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-288.png",
+    "description": "從上到下都是玻璃做的門。感覺很適合現代風格的房間。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 2,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "916",
+    "name": "簡潔門",
+    "nameJa": "スマートなドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-916.png",
+    "description": "設計簡潔的門。色調與窗戶的形狀都非常俐落。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "78",
+        "name": "寶可金屬",
+        "count": 2,
+        "imageUrl": "/images/items/item-78.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "676",
+    "name": "鐵門",
+    "nameJa": "てつのドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-676.png",
+    "description": "刻有古典花紋的門。和華麗的傢俱擺在一起也很搭。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買（崎嶇山 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 4,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "32",
+    "name": "大木門",
+    "nameJa": "おおきな木のドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-32.png",
+    "description": "木製的附把手門扉。寶可夢們也能輕鬆開關。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "在商店購買「荒野房屋建造配方套組」（乾枯荒野 Lv. 3）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "618",
+    "name": "自動門",
+    "nameJa": "じどうドア",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-618.png",
+    "description": "原本沒辦法開關，但接上電源就會變成自動門。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「浮島房屋建造配方套組」（閃亮浮島 Lv. 3）"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "863",
+    "name": "捲門",
+    "nameJa": "シャッター",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-863.png",
+    "description": "正中央是個大大的寶貝球。很有秘密基地入口的氛圍。",
+    "obtain": [],
+    "recipe": [
+      "寶可夢圖鑑完成後，在閃亮亮浮島城鎮西北的隱藏房間中獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "381",
+    "name": "木柵欄門",
+    "nameJa": "木のさくのトビラ",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-381.png",
+    "description": "當建築物的門也行，和木柵欄排在一起也很棒。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「木製建材配方套組」（乾枯荒野 Lv. 3）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "87",
+    "name": "鐵門",
+    "nameJa": "もんトビラ",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-87.png",
+    "description": "可以雙開的大門。放在庭院入口進出吧。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "在商店購買「海邊房屋建造配方套組」(需要：暗沉沉海邊環境等級3)"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "385",
+    "name": "金屬柵欄門",
+    "nameJa": "メタルなさくのトビラ",
+    "buildingType": "door",
+    "imageUrl": "/images/items/item-385.png",
+    "description": "有著捲曲花紋的時尚大門。跟金屬柵欄搭配起來超好看。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「山地房屋建造配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "651",
+    "name": "簡約窗簾（左）",
+    "nameJa": "シンプルカーテン・ひだり",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-651.png",
+    "description": "素色的簡約窗簾。什麼房間都很容易搭配。",
+    "obtain": [
+      "與蜂女王交換隨機獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 1,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "652",
+    "name": "簡約窗簾（右）",
+    "nameJa": "シンプルカーテン・みぎ",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-652.png",
+    "description": "素色的簡約窗簾。什麼房間都很容易搭配。",
+    "obtain": [
+      "與蜂女王交換隨機獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 1,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "331",
+    "name": "帶蓋窗戶",
+    "nameJa": "フタつきまど",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-331.png",
+    "description": "附有可開關的蓋子。非常適合當作家的窗戶。",
+    "obtain": [],
+    "recipe": [
+      "乾巴巴荒野環境等級5解鎖商店"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "998",
+    "name": "帶蓋窗戶・地面",
+    "nameJa": "フタつきまど・じめん",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-998.png",
+    "description": "附有可開關蓋子的窗戶。放在地面上會變成通往地下的門。",
+    "obtain": [],
+    "recipe": [
+      "乾巴巴荒野環境等級5解鎖商店"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "287",
+    "name": "玻璃窗",
+    "nameJa": "ガラスまど",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-287.png",
+    "description": "簡約又百搭的窗戶。試著上下左右連接組成喜歡的形狀吧。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "在商店購買（閃亮浮島 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 2,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "720",
+    "name": "窗框玻璃",
+    "nameJa": "フレームガラス",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-720.png",
+    "description": "附框架的玻璃板。當窗戶或隔板都很適合。",
+    "obtain": [
+      "在閃亮浮島取得",
+      "在夢之島獲得",
+      "從使用建築套件建造的建築物中獲得"
+    ],
+    "recipe": [
+      "閃閃浮島的城鎮環境等級達到4時在商店開放"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 2,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "999",
+    "name": "彩繪玻璃・上",
+    "nameJa": "ステンドグラス・うえ",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-999.png",
+    "description": "玻璃上塗有顏色的時尚窗戶。總覺得帶有一種復古的氛圍。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      },
+      {
+        "id": "224",
+        "name": "光之石",
+        "count": 1,
+        "imageUrl": "/images/items/item-224.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1000",
+    "name": "彩繪玻璃・中",
+    "nameJa": "ステンドグラス・まんなか",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-1000.png",
+    "description": "玻璃上塗有顏色的時尚窗戶。總覺得帶有一種復古的氛圍。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      },
+      {
+        "id": "224",
+        "name": "光之石",
+        "count": 1,
+        "imageUrl": "/images/items/item-224.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1001",
+    "name": "彩繪玻璃・下",
+    "nameJa": "ステンドグラス・した",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-1001.png",
+    "description": "玻璃上塗有顏色的時尚窗戶。總覺得帶有一種復古的氛圍。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      },
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      },
+      {
+        "id": "224",
+        "name": "光之石",
+        "count": 1,
+        "imageUrl": "/images/items/item-224.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "848",
+    "name": "上下推拉窗",
+    "nameJa": "あげさげまど",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-848.png",
+    "description": "十字分隔超可愛的直式窗戶。把下面的窗戶往上推就能打開。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "78",
+        "name": "寶可金屬",
+        "count": 1,
+        "imageUrl": "/images/items/item-78.png"
+      },
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "386",
+    "name": "斜面瓦屋頂",
+    "nameJa": "ななめのやねがわら",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-386.png",
+    "description": "不管直的橫的都排排看，試著做出屋頂吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 2,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "387",
+    "name": "凸出瓦屋頂",
+    "nameJa": "でっぱりのやねがわら",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-387.png",
+    "description": "做屋頂的時候用用看吧。感覺能漂亮地收在邊角。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 2,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "388",
+    "name": "凹入瓦屋頂",
+    "nameJa": "ひっこみのやねがわら",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-388.png",
+    "description": "想要變化屋頂造型時，放在角落就很讚。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 2,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "389",
+    "name": "平瓦屋頂",
+    "nameJa": "たいらなやねがわら",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-389.png",
+    "description": "把屋頂稍微弄平一點，看起來就很時尚很讚。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 2,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "390",
+    "name": "瓦屋頂裝飾",
+    "nameJa": "やねがわらのかざり",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-390.png",
+    "description": "放在屋頂上試試吧。排列使用或當作點綴都很棒。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 2,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "619",
+    "name": "鯉魚王屋頂裝飾",
+    "nameJa": "コイキングのやねがわら",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-619.png",
+    "description": "放在屋頂中間的話，似乎能成為不錯的點綴。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「屋瓦配方套組」（乾枯荒野 Lv. 5）"
+    ],
+    "materials": [
+      {
+        "id": "197",
+        "name": "金棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-197.png"
+      },
+      {
+        "id": "215",
+        "name": "軟黏土",
+        "count": 1,
+        "imageUrl": "/images/items/item-215.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "809",
+    "name": "斜面石屋頂",
+    "nameJa": "ななめのいしやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-809.png",
+    "description": "不管直的橫的都排排看，試著做出屋頂吧。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "在商店購買「石屋頂配方套組」(需要：凸隆隆山地環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "811",
+    "name": "天窗",
+    "nameJa": "てんまど",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-811.png",
+    "description": "放在屋頂中間的話，似乎能成為不錯的點綴。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "在商店購買「石屋頂配方套組」(需要：凸隆隆山地環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 1,
+        "imageUrl": "/images/items/item-5.png"
+      },
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "953",
+    "name": "凸出石屋頂",
+    "nameJa": "でっぱりのいしやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-953.png",
+    "description": "做屋頂的時候用用看吧。感覺能漂亮地收在邊角。",
+    "obtain": [],
+    "recipe": [
+      "凸隆隆山地環境等級5時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "954",
+    "name": "內縮石屋頂",
+    "nameJa": "ひっこみのいしやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-954.png",
+    "description": "想要變化屋頂造型時，放在角落就很讚。",
+    "obtain": [],
+    "recipe": [
+      "凸隆隆山地環境等級5時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "955",
+    "name": "平坦石屋頂",
+    "nameJa": "たいらないしやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-955.png",
+    "description": "把屋頂稍微弄平一點，看起來就很時尚很讚。",
+    "obtain": [],
+    "recipe": [
+      "凸隆隆山地環境等級5時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "810",
+    "name": "石屋頂裝飾",
+    "nameJa": "いしやねのかざり",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-810.png",
+    "description": "放在屋頂上試試吧。排列使用或當作點綴都很棒。",
+    "obtain": [
+      "在崎嶇山取得"
+    ],
+    "recipe": [
+      "在商店購買「石屋頂配方套組」(需要：凸隆隆山地環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "812",
+    "name": "斜面磚屋頂",
+    "nameJa": "ななめのやねレンガ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-812.png",
+    "description": "不管直的橫的都排排看，試著做出屋頂吧。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買「屋頂配方套組」(需要：暗沉沉海邊環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "818",
+    "name": "三角磚屋頂",
+    "nameJa": "さんかくのやねレンガ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-818.png",
+    "description": "放在屋頂中間的話，似乎能成為不錯的點綴。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買「屋頂配方套組」(需要：暗沉沉海邊環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "819",
+    "name": "凸出磚屋頂",
+    "nameJa": "でっぱりのやねレンガ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-819.png",
+    "description": "磚瓦屋頂的凸出部分。看起來能剛好收在邊角。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買「屋頂配方套組」(需要：暗沉沉海邊環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "1002",
+    "name": "凹陷屋頂磚",
+    "nameJa": "ひっこみのやねレンガ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-1002.png",
+    "description": "磚瓦屋頂凹陷的地方。感覺能完美契合角落。",
+    "obtain": [],
+    "recipe": [
+      "暗沉沉海邊環境等級5時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "813",
+    "name": "平磚屋頂",
+    "nameJa": "たいらのやねレンガ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-813.png",
+    "description": "把屋頂稍微弄平一點，看起來就很時尚很讚。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在商店購買「屋頂配方套組」(需要：暗沉沉海邊環境等級5)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "1003",
+    "name": "屋頂裝飾",
+    "nameJa": "やねのかざり",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-1003.png",
+    "description": "放在屋頂上試試吧。排列使用或當作點綴都很棒。",
+    "obtain": [],
+    "recipe": [
+      "暗沉沉海邊環境等級5時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "540",
+    "name": "斜面帳篷屋頂",
+    "nameJa": "ななめのテントやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-540.png",
+    "description": "不管直的橫的都排排看，試著做出屋頂吧。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "541",
+    "name": "凸出帳篷屋頂",
+    "nameJa": "でっぱりのテントやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-541.png",
+    "description": "做屋頂的時候用用看吧。感覺能漂亮地收在邊角。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "542",
+    "name": "凹入帳篷屋頂",
+    "nameJa": "ひっこみのテントやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-542.png",
+    "description": "想要變化屋頂造型時，放在角落就很讚。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "543",
+    "name": "平帳篷屋頂",
+    "nameJa": "たいらなテントやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-543.png",
+    "description": "把屋頂稍微弄平一點，看起來就很時尚很讚。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "423",
+    "name": "光滑遮陽棚",
+    "nameJa": "ツルツルのひよけ",
+    "buildingType": "window",
+    "imageUrl": "/images/items/item-423.png",
+    "description": "排列幾個裝在牆上的話，強烈日曬或下雨都不怕。",
+    "obtain": [
+      "與蜂女王交換隨機獲得"
+    ],
+    "recipe": [
+      "首次獲得線頭時"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "721",
+    "name": "凹凸木板",
+    "nameJa": "デコボコいた",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-721.png",
+    "description": "大量排列起來當屋頂的話，也許能擋擋風雨。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "閃閃浮島的城鎮環境等級達到4時在商店開放"
+    ],
+    "materials": [
+      {
+        "id": "93",
+        "name": "銅棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-93.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "1004",
+    "name": "凸牆",
+    "nameJa": "でっぱりカベ",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-1004.png",
+    "description": "和其他牆壁並排在一起，似乎能成為不錯的點綴。",
+    "obtain": [],
+    "recipe": [
+      "凸隆隆山地環境等級4時商店解鎖"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "392",
+    "name": "扇形瓦屋頂",
+    "nameJa": "おうぎやね",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-392.png",
+    "description": "扇形的簡約屋頂。很適合設施等大型建築物。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "78",
+        "name": "寶可金屬",
+        "count": 4,
+        "imageUrl": "/images/items/item-78.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "10",
+    "name": "木柵欄",
+    "nameJa": "木のさく",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-10.png",
+    "description": "只放一個或排列連接起來都很好看。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "在商店購買「木製建材配方套組」(需要：乾巴巴荒野環境等級3)"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "408",
+    "name": "木圍欄",
+    "nameJa": "木のかこい",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-408.png",
+    "description": "單獨一根只是細長的柱子，但整齊排列後就能做成漂亮的圍欄。",
+    "obtain": [
+      "在暗沉沉海邊城鎮的棧橋獲得"
+    ],
+    "recipe": [
+      "在暗沉沉海邊的黃色精靈球中獲得 在地圖中獲得▶獲得地點圖像"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "929",
+    "name": "鐵圍欄",
+    "nameJa": "てつのかこい",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-929.png",
+    "description": "雖然一根只是細長的柱子，但整齊排列後就能變成氣派的圍欄。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "717",
+    "name": "金屬柵欄",
+    "nameJa": "メタルなさく",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-717.png",
+    "description": "只放一個或排列連接起來都很好看。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "閃閃浮島的城鎮環境等級達到2時在商店開放"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "273",
+    "name": "石柵欄",
+    "nameJa": "いしのさく",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-273.png",
+    "description": "只放一個或排列連接起來都很好看。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "在商店購買（崎嶇山 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "850",
+    "name": "船柵欄",
+    "nameJa": "ふねのさく",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-850.png",
+    "description": "船甲板上防止墜落的欄杆。排列起來就能漂亮地連接。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      },
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "264",
+    "name": "木扶手",
+    "nameJa": "木のてすり",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-264.png",
+    "description": "用來隔間很方便的木製欄杆。排列起來會很漂亮地連接在一起。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "682",
+    "name": "壁掛扶手",
+    "nameJa": "カベつけてすり",
+    "buildingType": "fence",
+    "imageUrl": "/images/items/item-682.png",
+    "description": "古典優雅的扶手。試著裝在建築物的牆上吧。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      },
+      {
+        "id": "197",
+        "name": "金棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-197.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "58",
+    "name": "港口柱",
+    "nameJa": "みなとのポール",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-58.png",
+    "description": "港口常見的鏈條連接柱。排列起來會漂亮地連在一起。",
+    "obtain": [
+      "在乾枯荒野取得"
+    ],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 3）"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      },
+      {
+        "id": "48",
+        "name": "藤繩",
+        "count": 2,
+        "imageUrl": "/images/items/item-48.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "900",
+    "name": "拱形支柱",
+    "nameJa": "アーチポール",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-900.png",
+    "description": "無論是排成圍欄，還是放在出入口當作裝飾，感覺都很不錯。",
+    "obtain": [
+      "在閃亮浮島取得",
+      "在暗沉沉海邊的城鎮獲得綠色"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "1201",
+    "name": "拱形桿・葉子",
+    "nameJa": "アーチポール・はっぱ",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-1201.png",
+    "description": "形狀罕見的拱門支柱。花紋看起來或許會有點像走路草。",
+    "obtain": [
+      "設置拱門柱時有機率發生變化",
+      "用寶可夢中心的3D列印機複製"
+    ],
+    "recipe": [],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "40",
+    "name": "木隔板（直線）",
+    "nameJa": "木のしきり・まっすぐ",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-40.png",
+    "description": "裝在岩石或土牆上吧。環繞排列的話也能當作圍欄。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "1005",
+    "name": "木隔板・轉角",
+    "nameJa": "木のしきり・かど",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-1005.png",
+    "description": "安裝在岩石或土牆上吧。放在角落就能做出漂亮的圍欄。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "544",
+    "name": "木格柵",
+    "nameJa": "木のすきましきり",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-544.png",
+    "description": "橫排時會有些縫隙的隔板。直立的話還能當屏風呢。",
+    "obtain": [
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "寶可夢圖鑑登錄80隻時的報酬"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "380",
+    "name": "木屏風",
+    "nameJa": "木のついたて",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-380.png",
+    "description": "高高的屏風。只放一個或排成一排當隔間都很好看。",
+    "obtain": [],
+    "recipe": [
+      "寶可夢圖鑑登錄 75 隻時的獎勵"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "938",
+    "name": "鐵絲網牆",
+    "nameJa": "かなあみのカベ",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-938.png",
+    "description": "堆疊起來能完美連接的鐵絲網。非常適合用來製作圍欄。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 4,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "64",
+    "name": "木棧道",
+    "nameJa": "木のみち",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-64.png",
+    "description": "只是普通的木板，排列起來就能搖身一變成為時尚小徑。",
+    "obtain": [
+      "在乾枯荒野取得"
+    ],
+    "recipe": [
+      "在商店購買「木製建材配方套組」（乾枯荒野 Lv. 3）"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "332",
+    "name": "踏腳石",
+    "nameJa": "ふみいし",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-332.png",
+    "description": "就算只是普通的石頭，整齊排在地上就能變成有情調的小路。",
+    "obtain": [],
+    "recipe": [
+      "崎嶇山環境等級 2 解鎖商店"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 1,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "28",
+    "name": "碼頭",
+    "nameJa": "さんばし",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-28.png",
+    "description": "不管是凹凸不平的地方還是水上，放上棧橋就能變成平坦的路。",
+    "obtain": [
+      "在乾枯荒野取得",
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在乾巴巴荒野獲得 在地圖中獲得▶獲得地點圖像"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "402",
+    "name": "碼頭板",
+    "nameJa": "さんばしのいた",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-402.png",
+    "description": "棧橋上面的木板。排到對岸就能搭出一座像樣的橋。",
+    "obtain": [
+      "在乾枯荒野取得",
+      "在陰沉海濱取得"
+    ],
+    "recipe": [
+      "在乾巴巴荒野獲得 在地圖中獲得▶獲得地點圖像"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 1,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "60",
+    "name": "鐵網地板",
+    "nameJa": "かなあみのゆか",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-60.png",
+    "description": "常用於排水溝等處的金屬網。讓水從下方流過的話可以看得很清楚。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "在商店購買（陰沉海濱 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "613",
+    "name": "水泥蓋板",
+    "nameJa": "コンクリートのふた",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-613.png",
+    "description": "用來蓋住小水溝的蓋子。咻地嵌進地面的洞裡吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買（閃亮浮島 Lv. 4）"
+    ],
+    "materials": [
+      {
+        "id": "221",
+        "name": "水泥",
+        "count": 2,
+        "imageUrl": "/images/items/item-221.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "545",
+    "name": "鐵鷹架踏板",
+    "nameJa": "てつのあしば・いた",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-545.png",
+    "description": "鐵製鷹架上的板子。延伸鷹架的時候可以用用看。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 1,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "534",
+    "name": "鐵鷹架",
+    "nameJa": "てつのあしば",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-534.png",
+    "description": "建築工地使用的堅固鷹架。板面凹凸不平不容易打滑。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "942",
+    "name": "拱形橋",
+    "nameJa": "アーチのはし",
+    "buildingType": "path",
+    "imageUrl": "/images/items/item-942.png",
+    "description": "一個的話只是個突起物，但將兩個連接起來就能變成漂亮的拱門。",
+    "obtain": [
+      "在暗沉沉海邊城鎮的橋上獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "603",
+    "name": "木邊框（直線）",
+    "nameJa": "木のふち・まっすぐ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-603.png",
+    "description": "花草、房屋角落到沙灘，全都漂亮地圍起來裝飾吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「木製邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "604",
+    "name": "木邊框（小型）",
+    "nameJa": "木のふち・ミニ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-604.png",
+    "description": "花草、房屋角落到沙灘，全都漂亮地圍起來裝飾吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「木製邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "605",
+    "name": "木邊框（轉角）",
+    "nameJa": "木のふち・かど",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-605.png",
+    "description": "花草、房屋角落到沙灘，全都漂亮地圍起來裝飾吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「木製邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "620",
+    "name": "水泥邊框（直線）",
+    "nameJa": "コンクリのふち・まっすぐ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-620.png",
+    "description": "不管是花草、道路還是岩場，都來帥氣地加上邊框吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「混凝土邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "221",
+        "name": "水泥",
+        "count": 2,
+        "imageUrl": "/images/items/item-221.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "621",
+    "name": "水泥邊框（小型）",
+    "nameJa": "コンクリのふち・ミニ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-621.png",
+    "description": "不管是花草、道路還是岩場，都來帥氣地加上邊框吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「混凝土邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "221",
+        "name": "水泥",
+        "count": 2,
+        "imageUrl": "/images/items/item-221.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "622",
+    "name": "水泥邊框（轉角）",
+    "nameJa": "コンクリのふち・かど",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-622.png",
+    "description": "不管是花草、道路還是岩場，都來帥氣地加上邊框吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「混凝土邊框配方套組」"
+    ],
+    "materials": [
+      {
+        "id": "221",
+        "name": "水泥",
+        "count": 2,
+        "imageUrl": "/images/items/item-221.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "25",
+    "name": "磚邊框（直線）",
+    "nameJa": "レンガのふち・まっすぐ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-25.png",
+    "description": "花草、田地到小池塘，全都時尚地圍起來裝飾吧。",
+    "obtain": [
+      "在乾枯荒野撿取"
+    ],
+    "recipe": [
+      "在商店購買「磚塊邊緣配方套組」(需要：暗沉沉海邊環境等級6)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "844",
+    "name": "磚邊框（小型）",
+    "nameJa": "レンガのふち・ミニ",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-844.png",
+    "description": "花草、田地到小池塘，全都時尚地圍起來裝飾吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「磚塊邊緣配方套組」(需要：暗沉沉海邊環境等級6)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "845",
+    "name": "磚邊框（轉角）",
+    "nameJa": "レンガのふち・かど",
+    "buildingType": "edge",
+    "imageUrl": "/images/items/item-845.png",
+    "description": "花草、田地到小池塘，全都時尚地圍起來裝飾吧。",
+    "obtain": [],
+    "recipe": [
+      "在商店購買「磚塊邊緣配方套組」(需要：暗沉沉海邊環境等級6)"
+    ],
+    "materials": [
+      {
+        "id": "201",
+        "name": "磚塊",
+        "count": 2,
+        "imageUrl": "/images/items/item-201.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "835",
+    "name": "橫圓木",
+    "nameJa": "ヨコまるた",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-835.png",
+    "description": "又大又結實的圓木。排列起來就能蓋成橋。",
+    "obtain": [
+      "在陰沉海濱撿取"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "1",
+        "name": "小圓木",
+        "count": 2,
+        "imageUrl": "/images/items/item-1.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "834",
+    "name": "直圓木",
+    "nameJa": "タテまるた",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-834.png",
+    "description": "圓滾滾地矗立著。排列起來也能變成原木牆壁。",
+    "obtain": [
+      "在陰沉海濱撿取"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "1",
+        "name": "小圓木",
+        "count": 2,
+        "imageUrl": "/images/items/item-1.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "752",
+    "name": "橫鐵骨",
+    "nameJa": "ヨコてっこつ",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-752.png",
+    "description": "堅硬又非常牢固。可以支撐建築物的地板和屋頂。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "753",
+    "name": "直鐵骨",
+    "nameJa": "タテてっこつ",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-753.png",
+    "description": "往上堆疊就能完成一根氣派的鐵柱。",
+    "obtain": [
+      "在閃亮浮島取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "899",
+    "name": "鐵柱",
+    "nameJa": "てつのはしら",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-899.png",
+    "description": "垂直連接的話可以無限延伸。上方的台座似乎可以放置小東西。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "94",
+        "name": "鐵棒",
+        "count": 2,
+        "imageUrl": "/images/items/item-94.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "269",
+    "name": "豪華柱子（上段）",
+    "nameJa": "ごうかなはしら・うえ",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-269.png",
+    "description": "裝飾精美、氣勢磅礡的柱子。好好地欣賞一番吧。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "268",
+    "name": "豪華柱子（中段）",
+    "nameJa": "ごうかなはしら・まんなか",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-268.png",
+    "description": "裝飾精美、氣勢磅礡的柱子。好好地欣賞一番吧。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "267",
+    "name": "豪華柱子（下段）",
+    "nameJa": "ごうかなはしら・した",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-267.png",
+    "description": "裝飾精美、氣勢磅礡的柱子。好好地欣賞一番吧。",
+    "obtain": [
+      "在崎嶇山北側博物館遺址取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "5",
+        "name": "石頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-5.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "978",
+    "name": "圓柱・上",
+    "nameJa": "まるいはしら・うえ",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-978.png",
+    "description": "用大理石製成的簡約柱子。感覺也很適合作為博物館的柱子。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "225",
+        "name": "石灰石",
+        "count": 4,
+        "imageUrl": "/images/items/item-225.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "979",
+    "name": "圓柱・中",
+    "nameJa": "まるいはしら・まんなか",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-979.png",
+    "description": "用大理石製成的簡約柱子。感覺也很適合作為博物館的柱子。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "225",
+        "name": "石灰石",
+        "count": 4,
+        "imageUrl": "/images/items/item-225.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "980",
+    "name": "圓柱・下",
+    "nameJa": "まるいはしら・した",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-980.png",
+    "description": "用大理石製成的簡約柱子。感覺也很適合作為博物館的柱子。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "225",
+        "name": "石灰石",
+        "count": 4,
+        "imageUrl": "/images/items/item-225.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "333",
+    "name": "房屋隔間",
+    "nameJa": "いえのしきり",
+    "buildingType": "wall",
+    "imageUrl": "/images/items/item-333.png",
+    "description": "簡單的直式隔板。可以在家裡輕鬆隔出小房間。",
+    "obtain": [
+      "在華麗套件系列的室內獲得",
+      "用3D列印機複製"
+    ],
+    "recipe": [
+      "乾巴巴荒野的城鎮環境等級達到4時在商店開放"
+    ],
+    "materials": [
+      {
+        "id": "52",
+        "name": "線頭",
+        "count": 2,
+        "imageUrl": "/images/items/item-52.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "866",
+    "name": "簡約柱子・1/4",
+    "nameJa": "シンプルなはしら・1/4",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-866.png",
+    "description": "似乎可以自由搭配的柱子。四個組合起來就能變成大柱子。",
+    "obtain": [],
+    "recipe": [
+      "寶可夢圖鑑登錄290隻寶可夢時的報酬"
+    ],
+    "materials": [
+      {
+        "id": "78",
+        "name": "寶可金屬",
+        "count": 1,
+        "imageUrl": "/images/items/item-78.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "867",
+    "name": "湛藍柱子・1/4",
+    "nameJa": "アクアなはしら・1/4",
+    "buildingType": "pillar",
+    "imageUrl": "/images/items/item-867.png",
+    "description": "裝滿水的時尚柱子。隱約發光，在黑暗中依然美麗。",
+    "obtain": [
+      "在寶可夢中心內撿到"
+    ],
+    "recipe": [
+      "寶可夢圖鑑登錄280隻時的報酬"
+    ],
+    "materials": [
+      {
+        "id": "214",
+        "name": "玻璃",
+        "count": 1,
+        "imageUrl": "/images/items/item-214.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1006",
+    "name": "屋頂支撐",
+    "nameJa": "やねのささえ",
+    "buildingType": "roof",
+    "imageUrl": "/images/items/item-1006.png",
+    "description": "用來支撐屋頂的木材。請嵌在屋頂突出處與牆壁之間。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "2",
+        "name": "木材",
+        "count": 2,
+        "imageUrl": "/images/items/item-2.png"
+      }
+    ],
+    "paintable": true,
+    "patternable": false
+  },
+  {
+    "id": "61",
+    "name": "鐵管（橫向）",
+    "nameJa": "てつパイプ・よこ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-61.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在乾枯荒野取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "62",
+    "name": "鐵管（下彎）",
+    "nameJa": "てつパイプ・したカーブ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-62.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在乾枯荒野取得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1007",
+    "name": "鐵管（豎十字）",
+    "nameJa": "てつパイプ・たてじゅうじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1007.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在閃閃浮島城鎮的懸崖邊獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1008",
+    "name": "鐵管（豎T形）",
+    "nameJa": "てつパイプ・たてTじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1008.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在暗沉沉海邊城鎮南邊的船上獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1009",
+    "name": "鐵管（豎直）",
+    "nameJa": "てつパイプ・たて",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1009.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在暗沉沉海邊城鎮南邊的船上獲得",
+      "在閃閃浮島城鎮的懸崖邊獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1010",
+    "name": "鐵管（上彎）",
+    "nameJa": "てつパイプ・うえカーブ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1010.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在暗沉沉海邊城鎮南邊的船上獲得",
+      "在閃閃浮島城鎮的懸崖邊獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1011",
+    "name": "鐵管（上T形）",
+    "nameJa": "てつパイプ・うえTじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1011.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在閃閃浮島城鎮的懸崖邊獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1012",
+    "name": "鐵管（下T形）",
+    "nameJa": "てつパイプ・したTじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1012.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [
+      "在閃閃浮島城鎮的懸崖邊獲得"
+    ],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1013",
+    "name": "鐵管（橫彎）",
+    "nameJa": "てつパイプ・よこカーブ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1013.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1014",
+    "name": "鐵管（橫T形）",
+    "nameJa": "てつパイプ・よこTじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1014.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  },
+  {
+    "id": "1114",
+    "name": "鐵管（橫十字）",
+    "nameJa": "てつパイプ・よこじゅうじ",
+    "buildingType": "pipe",
+    "imageUrl": "/images/items/item-1114.png",
+    "description": "把各種鐵管接在一起，做出超～長的管子吧。",
+    "obtain": [],
+    "recipe": [
+      "於商店購買(每日隨機)",
+      "從水面的閃光處稀有獲得"
+    ],
+    "materials": [
+      {
+        "id": "35",
+        "name": "鐵",
+        "count": 2,
+        "imageUrl": "/images/items/item-35.png"
+      }
+    ],
+    "paintable": false,
+    "patternable": false
+  }
+]
