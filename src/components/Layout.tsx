@@ -349,6 +349,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   : "提供 AI 智慧行程規劃、航班機票與景點查詢、親友分帳紀錄及旅遊攜帶清單確認。"}
               </p>
             </a>
+
+            {/* 卡片 4 */}
+            <a 
+              href="https://tw-real-estate-price-explorer-googl.vercel.app/" 
+              target="_blank"
+              rel="noreferrer"
+              className="flex-shrink-0 w-[240px] sm:w-[280px] snap-start bg-paper/60 border border-line-soft hover:border-primary/45 rounded-xl p-4 transition-all duration-300 hover:shadow-xs hover:-translate-y-0.5"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">🏠</span>
+                <h5 className="font-bold text-ink-main text-sm font-sans">
+                  {i18n.language === "en" ? "TW Real Estate Price Explorer" : "台灣實價登錄地圖探索"}
+                </h5>
+              </div>
+              <p className="text-xs text-ink-soft leading-relaxed min-h-[48px] font-sans">
+                {i18n.language === "en" 
+                  ? "Explore Taiwan real estate transaction prices, historical house price trends, and community details." 
+                  : "結合地圖與圖表，直觀查詢台灣各縣市不動產實價登錄、歷史房價走勢與社區熱度分析。"}
+              </p>
+            </a>
           </div>
           <div className="h-px bg-line-soft mt-3"></div>
         </div>
