@@ -712,6 +712,18 @@ export default function Pokedex() {
     ? "Browse the Pokopia species archive with structured life, attack, and support skills, habitat roles, and story-linked entries."
     : "瀏覽 Pokopia 的寶可夢檔案，檢視每隻寶可夢的生活技能、攻擊技能、輔助技能、棲地定位與劇情關聯。";
 
+  const dynamicTitle = active
+    ? `${en ? active.nameEn : active.nameZh} - ${en ? "Pokédex Entry" : "寶可夢檔案圖鑑"} | ${en ? "Pokopia Chronicles" : "Pokopia 年代記"}`
+    : seoTitle;
+
+  const dynamicDescription = active
+    ? `${en ? active.nameEn : active.nameZh} (${en ? active.roleEn : active.roleZh}) - ${en ? "Specialty: " : "生活專長："}${en ? active.specialtyEn : active.specialtyZh}。${en ? active.descriptionEn : active.descriptionZh}`
+    : seoDescription;
+
+  const dynamicImage = active
+    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${parseInt(active.id, 10)}.png`
+    : undefined;
+
   if (!data) {
     return (
       <Seo
@@ -731,28 +743,48 @@ export default function Pokedex() {
   const visible = filtered.slice(0, visibleCount);
   const activeSkills: PokedexSkill[] = active?.skills ?? [];
 
+  const dynamicJsonLd = active
+    ? {
+        "@context": "https://schema.org",
+        "@type": "ItemPage",
+        "name": dynamicTitle,
+        "description": dynamicDescription,
+        "url": "https://pokemoninfoperfer.vercel.app/pokedex",
+        "mainEntity": {
+          "@type": "GamePlayCharacter",
+          "name": en ? active.nameEn : active.nameZh,
+          "image": dynamicImage,
+          "category": en ? active.roleEn : active.roleZh,
+          "description": en ? active.descriptionEn : active.descriptionZh
+        }
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: seoTitle,
+        description: seoDescription,
+        url: "https://pokemoninfoperfer.vercel.app/pokedex",
+        inLanguage: en ? "en" : "zh-Hant",
+        about: "Pokemon Pokopia species archive and skills",
+      };
+
   return (
     <>
       <Seo
-        title={seoTitle}
-        description={seoDescription}
+        title={dynamicTitle}
+        description={dynamicDescription}
+        image={dynamicImage}
         lang={en ? "en" : "zh-Hant"}
+        noIndex={filtered.length === 0 && (query.trim() !== "" || hasActiveFilters)}
         keywords={[
           "Pokemon Pokopia",
           "Pokopia Pokedex",
           "Pokemon skills",
           "Habitat specialties",
           "Pokopia guide",
-        ]}
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          name: seoTitle,
-          description: seoDescription,
-          url: "https://pokemoninfoperfer.vercel.app/pokedex",
-          inLanguage: en ? "en" : "zh-Hant",
-          about: "Pokemon Pokopia species archive and skills",
-        }}
+          active ? (en ? active.nameEn : active.nameZh) : "",
+        ].filter(Boolean)}
+        jsonLd={dynamicJsonLd}
       />
       <header className="mb-gutter">
         <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-line pb-md">

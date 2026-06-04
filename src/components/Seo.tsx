@@ -38,6 +38,17 @@ function upsertLink(rel: string, href: string) {
   element.setAttribute("href", href);
 }
 
+function upsertAlternateLink(hreflang: string, href: string) {
+  let element = document.head.querySelector(`link[rel="alternate"][hreflang="${hreflang}"]`) as HTMLLinkElement | null;
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "alternate");
+    element.setAttribute("hreflang", hreflang);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("href", href);
+}
+
 export default function Seo({
   title,
   description,
@@ -57,6 +68,7 @@ export default function Seo({
     document.title = title;
     document.documentElement.lang = lang;
 
+    // Core SEO tags
     upsertMeta("name", "description", description);
     if (keywords.length > 0) {
       upsertMeta("name", "keywords", keywords.join(", "));
@@ -74,6 +86,22 @@ export default function Seo({
     upsertMeta("name", "twitter:image", image);
     upsertLink("canonical", canonicalUrl);
 
+    // Multilingual SEO support (hreflang annotations)
+    const urlWithoutQuery = new URL(location.pathname, SITE_URL).toString();
+    const queryParams = new URLSearchParams(location.search);
+    
+    // Create query strings for alternates
+    queryParams.set("lng", "zh");
+    const alternateZh = `${urlWithoutQuery}?${queryParams.toString()}`;
+    queryParams.set("lng", "en");
+    const alternateEn = `${urlWithoutQuery}?${queryParams.toString()}`;
+
+    upsertAlternateLink("zh-Hant", alternateZh);
+    upsertAlternateLink("zh", alternateZh);
+    upsertAlternateLink("en", alternateEn);
+    upsertAlternateLink("x-default", alternateZh); // Defaulting to Traditional Chinese
+
+    // Dynamic JSON-LD script mounting
     let jsonLdScript = document.getElementById("seo-jsonld") as HTMLScriptElement | null;
     if (!jsonLdScript) {
       jsonLdScript = document.createElement("script");
@@ -81,7 +109,69 @@ export default function Seo({
       jsonLdScript.type = "application/ld+json";
       document.head.appendChild(jsonLdScript);
     }
-    jsonLdScript.textContent = jsonLd ? JSON.stringify(jsonLd, null, 2) : "";
+
+    // Standard schema building with automatic BreadcrumbList integration
+    const isEn = lang.startsWith("en");
+    const breadcrumbItems = [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: isEn ? "Home" : "首頁",
+        item: SITE_URL,
+      }
+    ];
+
+    if (location.pathname !== "/") {
+      const parts = location.pathname.split("/").filter(Boolean);
+      let cumulativePath = "";
+      parts.forEach((part, index) => {
+        cumulativePath += `/${part}`;
+        let humanName = part;
+        if (part === "pokedex") humanName = isEn ? "Pokédex" : "圖鑑";
+        else if (part === "map") humanName = isEn ? "Explore Map" : "探索地圖";
+        else if (part === "characters") humanName = isEn ? "Characters" : "角色劇情";
+        else if (part === "guide") humanName = isEn ? "Strategic Guides" : "戰術指南";
+
+        breadcrumbItems.push({
+          "@type": "ListItem",
+          position: index + 2,
+          name: humanName,
+          item: `${SITE_URL}${cumulativePath}`,
+        });
+      });
+    }
+
+    // Dynamic guide sub-item breadcrumb
+    const guideIdParam = new URLSearchParams(location.search).get("id");
+    if (location.pathname === "/guide" && guideIdParam) {
+      let finalGuideName = guideIdParam;
+      if (guideIdParam === "meta-history") finalGuideName = isEn ? "Meta History" : "歷史設定";
+      else if (guideIdParam === "regional-walkthrough") finalGuideName = isEn ? "Regional Walkthrough" : "區域攻略";
+      else if (guideIdParam === "beginner-tips") finalGuideName = isEn ? "Beginner Tips" : "新手手冊";
+      else if (guideIdParam === "legendary-encounters") finalGuideName = isEn ? "Legendary Encounters" : "傳說遭遇";
+
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        position: breadcrumbItems.length + 1,
+        name: finalGuideName,
+        item: `${SITE_URL}/guide?id=${guideIdParam}`,
+      });
+    }
+
+    const breadcrumbJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbItems,
+    };
+
+    // Combine custom page-specific JSON-LD and general breadcrumbs
+    const finalSchemas = [];
+    if (jsonLd) {
+      finalSchemas.push(jsonLd);
+    }
+    finalSchemas.push(breadcrumbJsonLd);
+
+    jsonLdScript.textContent = JSON.stringify(finalSchemas, null, 2);
   }, [description, image, jsonLd, keywords, lang, location.pathname, location.search, noIndex, title, type]);
 
   return null;
