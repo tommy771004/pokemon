@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import Seo from "../components/Seo";
 import ScrollFade from "../components/ScrollFade";
 import ItemsTab from "./Items";
+import BuildingsTab from "./Buildings";
 import { useFavorites } from "../hooks/useFavorites";
 
 const PAGE_SIZE = 12;
@@ -528,7 +529,7 @@ export default function Pokedex() {
   const [activeIntelTab, setActiveIntelTab] = useState<"trivia" | "dolls">(
     "trivia",
   );
-  const [activePokedexTab, setActivePokedexTab] = useState<"pokemon" | "items">(
+  const [activePokedexTab, setActivePokedexTab] = useState<"pokemon" | "items" | "buildings">(
     "pokemon",
   );
 
@@ -790,6 +791,16 @@ export default function Pokedex() {
             }`}
           >
             {en ? "Items Database" : "物品圖鑑"}
+          </button>
+          <button
+            onClick={() => setActivePokedexTab("buildings")}
+            className={`px-6 py-2.5 font-mono-metadata text-sm uppercase tracking-wider transition-colors whitespace-nowrap ${
+              activePokedexTab === "buildings"
+                ? "border-b-2 border-primary text-primary"
+                : "border-b-2 border-transparent text-ink-mute hover:text-ink-soft"
+            }`}
+          >
+            {en ? "Buildings Compendium" : "建築圖鑑"}
           </button>
         </div>
       </header>
@@ -2007,6 +2018,7 @@ export default function Pokedex() {
       )}
 
       {activePokedexTab === "items" && <ItemsTab />}
+      {activePokedexTab === "buildings" && <BuildingsTab />}
     </>
   );
 }

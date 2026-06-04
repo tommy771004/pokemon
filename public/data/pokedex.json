@@ -527,7 +527,7 @@
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
       "descriptionEn": "The first Pokémon Ditto encounters in Withered Wasteland. Rescuing a dehydrated Squirtle teaches Ditto the Water Gun move — essential for watering dry land, growing grass habitats, and eventually triggering the first rainfall to save Onix. A tutorial-critical partner.",
-      "descriptionZh": "百變怪在乾巴巴荒野遭遇的第一隻寶可夢。救援一隻脫水的傑尼龜，讓百變怪學會「水槍」技能——這是澆灌乾旱土地、生長草地棲息地，乃至最終引發降雨拯救大巖蛇的必要技能。教學流程的核心夥伴。",
+      "descriptionZh": "百變怪在枯萎荒野遭遇的第一隻寶可夢。救援一隻脫水的傑尼龜，讓百變怪學會「水槍」技能——這是澆灌乾旱土地、生長草地棲息地，乃至最終引發降雨拯救大巖蛇的必要技能。教學流程的核心夥伴。",
       "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
       "known": true,
       "skills": [
@@ -2238,7 +2238,7 @@
       "specialtyEn": "Magnet Rise",
       "specialtyZh": "電磁飄浮",
       "descriptionEn": "Discovered in the post-game crater that opens where the mysterious tower once stood in Withered Wasteland. Build an Industrial Warehouse habitat (requiring metal barrels, tangled wires, a control unit, and a lamppost) to recruit it. Teaching Ditto the Magnet Rise technique is transformative: press Y to instantly dismantle and recycle blocks; hold Y to remotely grab and reposition entire trees or boulders, completely changing large-scale terrain work.",
-      "descriptionZh": "通關後可在乾巴巴荒野那座神秘高塔原址出現的巨大坑洞中發現小磁怪。建造「工廠倉庫」棲息地（需金屬桶、凌亂電線、控制單元與路燈）即可招募。讓百變怪習得「電磁飄浮」後效果極其驚人：按 Y 鍵可瞬間拆除並回收方塊，長按 Y 鍵則能隔空抓取並重新擺放整棵樹木或巨石，徹底改變大規模地形施工的效率。",
+      "descriptionZh": "通關後可在枯萎荒野那座神秘高塔原址出現的巨大坑洞中發現小磁怪。建造「工廠倉庫」棲息地（需金屬桶、凌亂電線、控制單元與路燈）即可招募。讓百變怪習得「電磁飄浮」後效果極其驚人：按 Y 鍵可瞬間拆除並回收方塊，長按 Y 鍵則能隔空抓取並重新擺放整棵樹木或巨石，徹底改變大規模地形施工的效率。",
       "image": "https://assets.pokopiaguide.com/pokemon/magnemite.png",
       "known": true,
       "skills": [
@@ -3425,8 +3425,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Cut",
       "specialtyZh": "居合斬",
-      "descriptionEn": "The backbone of the lumber production chain. Build a habitat with one large tree and four tall-grass plots to attract Scyther. Learning Cut from it allows Ditto to split logs into small wood blocks. Scyther can then be commissioned for batch lumber processing — essential for the Thunder Badge (×20) and Sparkling Floating Island 4F construction (×20).",
-      "descriptionZh": "木材生產鏈的核心。建造包含一棵大樹與四格高草叢的棲息地可吸引飛天螳螂。向牠學習「居合斬」後，百變怪可將圓木劈成小木塊，再委託飛天螳螂批次切割成木材。對雷電徽章（×20）和閃閃浮島 4F 建設（×20）都不可或缺。",
+      "descriptionEn": "The backbone of the lumber production chain. Build a habitat with one large tree and four tall-grass plots to attract Scyther. Learning Cut from it allows Ditto to split logs into small wood blocks. Scyther can then be commissioned for batch lumber processing — essential for the Thunder Badge (×20) and Sparkling Skylands 4F construction (×20).",
+      "descriptionZh": "木材生產鏈的核心。建造包含一棵大樹與四格高草叢的棲息地可吸引飛天螳螂。向牠學習「居合斬」後，百變怪可將圓木劈成小木塊，再委託飛天螳螂批次切割成木材。對雷電徽章（×20）和閃耀空島 4F 建設（×20）都不可或缺。",
       "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
       "known": true,
       "skills": [
@@ -5064,8 +5064,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Build",
       "specialtyZh": "建造",
-      "descriptionEn": "Build a Construction Generator habitat in Sparkling Floating Island to attract this master builder. Essential for the concrete production chain — it operates the Concrete Mixer and processes Limestone (yielded by Golem's Crush ability) into usable Concrete. Also a required construction crew member for the Huge Building reconstruction.",
-      "descriptionZh": "於閃閃浮島建造「工地發電機」棲息地可吸引這位建造大師。混凝土生產鏈的核心——負責操作混凝土攪拌機，將由隆隆巖粉碎取得的石灰岩加工成可用混凝土。同時也是重建巨大建築所需施工團隊的必要成員。",
+      "descriptionEn": "Build a Construction Generator habitat in Sparkling Skylands to attract this master builder. Essential for the concrete production chain — it operates the Concrete Mixer and processes Limestone (yielded by Golem's Crush ability) into usable Concrete. Also a required construction crew member for the Huge Building reconstruction.",
+      "descriptionZh": "於閃耀空島建造「工地發電機」棲息地可吸引這位建造大師。混凝土生產鏈的核心——負責操作混凝土攪拌機，將由隆隆巖粉碎取得的石灰岩加工成可用混凝土。同時也是重建巨大建築所需施工團隊的必要成員。",
       "image": "https://assets.pokopiaguide.com/pokemon/conkeldurr.png",
       "known": true,
       "skills": [
@@ -5814,8 +5814,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Generate",
       "specialtyZh": "發電",
-      "descriptionEn": "Part of the celebrated early automation trio alongside Aipom and Garbodor. Pikachu's Generate specialty powers automation facilities and contributes to the town's electrical grid. A unique individual named Peakychu — an electricityless Pikachu — also appears as a named story character on Gloomy Seaside and later joins the Huge Building construction crew in Sparkling Floating Island.",
-      "descriptionZh": "與長尾怪手、灰塵山並稱的早期自動化三人組核心成員之一。皮卡丘的「發電」專長可驅動自動化設施並為城鎮電網供電。此外，有一隻名為 皮卡丘 的特殊個體——一隻無法發電的皮卡丘——會作為具名劇情角色出現在暗沉沉海邊，之後加入閃閃浮島摩天大樓的施工團隊。",
+      "descriptionEn": "Part of the celebrated early automation trio alongside Aipom and Garbodor. Pikachu's Generate specialty powers automation facilities and contributes to the town's electrical grid. A unique individual named Peakychu — an electricityless Pikachu — also appears as a named story character on Bleak Beach and later joins the Huge Building construction crew in Sparkling Skylands.",
+      "descriptionZh": "與長尾怪手、灰塵山並稱的早期自動化三人組核心成員之一。皮卡丘的「發電」專長可驅動自動化設施並為城鎮電網供電。此外，有一隻名為 皮卡丘 的特殊個體——一隻無法發電的皮卡丘——會作為具名劇情角色出現在荒涼海灘，之後加入閃耀空島摩天大樓的施工團隊。",
       "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
       "known": true,
       "skills": [
@@ -5824,8 +5824,8 @@
           "categoryZh": "生活技能",
           "nameEn": "Grid Charge",
           "nameZh": "電網供能",
-          "detailEn": "Feeds early automation lines and keeps Gloomy Seaside's recovery grid alive.",
-          "detailZh": "能驅動早期自動化產線，並維持暗沉沉海邊的復原電網。"
+          "detailEn": "Feeds early automation lines and keeps Bleak Beach's recovery grid alive.",
+          "detailZh": "能驅動早期自動化產線，並維持荒涼海灘的復原電網。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -6225,8 +6225,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Search",
       "specialtyZh": "搜尋",
-      "descriptionEn": "An early encounter in Gloomy Seaside. Building Meowth a shelter equipped with a Mushroom Lamp is one of the first objectives in the region, calming the beach atmosphere. Meowth also has the Search specialty, helping locate hidden items and resources in the environment.",
-      "descriptionZh": "在暗沉沉海邊的早期遭遇。為喵喵建造配有蘑菇燈的避難所是該地區的早期目標之一，有助於安撫海灘的整體氛圍。喵喵還擁有「搜尋」專長，能協助定位環境中隱藏的道具與資源。",
+      "descriptionEn": "An early encounter in Bleak Beach. Building Meowth a shelter equipped with a Mushroom Lamp is one of the first objectives in the region, calming the beach atmosphere. Meowth also has the Search specialty, helping locate hidden items and resources in the environment.",
+      "descriptionZh": "在荒涼海灘的早期遭遇。為喵喵建造配有蘑菇燈的避難所是該地區的早期目標之一，有助於安撫海灘的整體氛圍。喵喵還擁有「搜尋」專長，能協助定位環境中隱藏的道具與資源。",
       "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
       "known": true,
       "skills": [
@@ -8158,8 +8158,8 @@
       "roleZh": "劇情角色",
       "specialtyEn": "Snorlax",
       "specialtyZh": "卡比獸",
-      "descriptionEn": "A named story character — a Snorlax so overgrown with moss and foliage that it resembles a living hill. Mosslax slumbers on Gloomy Seaside and must be roused during the 'Brighten Things Up!' power-restoration quest before the town can be illuminated.",
-      "descriptionZh": "具名劇情角色——一隻渾身覆滿苔蘚與草木、外形宛如一座小山丘的卡比獸（Snorlax）。Mosslax 沉睡於暗沉沉海邊，必須在「Brighten things up!」發電復原任務中將其喚醒，城鎮才能被點亮。",
+      "descriptionEn": "A named story character — a Snorlax so overgrown with moss and foliage that it resembles a living hill. Mosslax slumbers on Bleak Beach and must be roused during the 'Brighten Things Up!' power-restoration quest before the town can be illuminated.",
+      "descriptionZh": "具名劇情角色——一隻渾身覆滿苔蘚與草木、外形宛如一座小山丘的卡比獸（Snorlax）。Mosslax 沉睡於荒涼海灘，必須在「Brighten things up!」發電復原任務中將其喚醒，城鎮才能被點亮。",
       "image": "https://assets.pokopiaguide.com/pokemon/snorlax.png",
       "known": true,
       "skills": [
@@ -8184,8 +8184,8 @@
           "categoryZh": "輔助技能",
           "nameEn": "Power Wake",
           "nameZh": "巨力喚醒",
-          "detailEn": "Mosslax is the turning point for Gloomy Seaside's 'Brighten Things Up!' restoration.",
-          "detailZh": "作為 Mosslax，牠正是暗沉沉海邊「Brighten Things Up!」的關鍵轉折點。"
+          "detailEn": "Mosslax is the turning point for Bleak Beach's 'Brighten Things Up!' restoration.",
+          "detailZh": "作為 Mosslax，牠正是荒涼海灘「Brighten Things Up!」的關鍵轉折點。"
         }
       ],
       "rarity": "C",
@@ -9135,8 +9135,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
-      "descriptionEn": "Found in Bulging Highlands. An alternative to Charmander for the Burn specialty. With its Burn ability, Torchic assists in kiln-baking Soft Clay into Bricks — a key material for the Rainbow Badge (×40) and various construction projects. Build a 啾啾餐 habitat in Bulging Highlands to attract it.",
-      "descriptionZh": "出現於凸隆隆山地，是擁有燃燒專長的替代夥伴（可替代小火龍）。火稚雞的燃燒能力可協助將軟泥窯烤成磚塊——彩虹徽章的關鍵材料之一（×40）。在凸隆隆山地建造「啾啾餐」棲息地可吸引火稚雞。",
+      "descriptionEn": "Found in Rocky Ridges. An alternative to Charmander for the Burn specialty. With its Burn ability, Torchic assists in kiln-baking Soft Clay into Bricks — a key material for the Rainbow Badge (×40) and various construction projects. Build a 啾啾餐 habitat in Rocky Ridges to attract it.",
+      "descriptionZh": "出現於岩石山脊，是擁有燃燒專長的替代夥伴（可替代小火龍）。火稚雞的燃燒能力可協助將軟泥窯烤成磚塊——彩虹徽章的關鍵材料之一（×40）。在岩石山脊建造「啾啾餐」棲息地可吸引火稚雞。",
       "image": "https://assets.pokopiaguide.com/pokemon/torchic.png",
       "known": true,
       "skills": [
@@ -9798,8 +9798,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
-      "descriptionEn": "An early water-type partner. Piplup appears after building a Meowth shelter with a Mushroom Lamp. Its strong water stream is critical on Gloomy Seaside for washing away heavy mud banks and exposing buried items.",
-      "descriptionZh": "早期的水系夥伴。在為喵喵建造配有蘑菇燈的避難所後對應吸引出現。波加曼強力的水流是暗沉沉海邊清洗黏重泥堆、露出底下埋藏寶藏的關鍵。",
+      "descriptionEn": "An early water-type partner. Piplup appears after building a Meowth shelter with a Mushroom Lamp. Its strong water stream is critical on Bleak Beach for washing away heavy mud banks and exposing buried items.",
+      "descriptionZh": "早期的水系夥伴。在為喵喵建造配有蘑菇燈的避難所後對應吸引出現。波加曼強力的水流是荒涼海灘清洗黏重泥堆、露出底下埋藏寶藏的關鍵。",
       "image": "https://assets.pokopiaguide.com/pokemon/piplup.png",
       "known": true,
       "skills": [
@@ -10055,8 +10055,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Recycle",
       "specialtyZh": "回收",
-      "descriptionEn": "The ecological backbone of Gloomy Seaside. Build a garbage collection station to attract Trubbish. Its Recycle specialty serves two critical functions: converting non-combustible waste into iron ore (used for iron ingots and shower construction), and processing waste paper collected in Sparkling Floating Island into usable Paper (required for Thunder Badge ×10 and Huge Building 4F ×10). Its evolution Garbodor (灰塵山) anchors the late-game automation trio.",
-      "descriptionZh": "暗沉沉海邊的生態核心。建造垃圾收集站可吸引破破袋。其「回收」專長承擔兩項關鍵功能：將不可燃垃圾轉化為鐵礦（用於冶煉鐵錠及建造淋浴間），以及將在閃閃浮島收集的廢紙加工成可用紙張（雷電徽章 ×10 及巨大建築 4F ×10 的必要材料）。其進化型灰塵山（Garbodor）是後期自動化三人組的支柱。",
+      "descriptionEn": "The ecological backbone of Bleak Beach. Build a garbage collection station to attract Trubbish. Its Recycle specialty serves two critical functions: converting non-combustible waste into iron ore (used for iron ingots and shower construction), and processing waste paper collected in Sparkling Skylands into usable Paper (required for Thunder Badge ×10 and Huge Building 4F ×10). Its evolution Garbodor (灰塵山) anchors the late-game automation trio.",
+      "descriptionZh": "荒涼海灘的生態核心。建造垃圾收集站可吸引破破袋。其「回收」專長承擔兩項關鍵功能：將不可燃垃圾轉化為鐵礦（用於冶煉鐵錠及建造淋浴間），以及將在閃耀空島收集的廢紙加工成可用紙張（雷電徽章 ×10 及巨大建築 4F ×10 的必要材料）。其進化型灰塵山（Garbodor）是後期自動化三人組的支柱。",
       "image": "https://assets.pokopiaguide.com/pokemon/trubbish.png",
       "known": true,
       "skills": [
@@ -11994,8 +11994,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Crush",
       "specialtyZh": "粉碎",
-      "descriptionEn": "Found in Bulging Highlands. The Crush specialty allows Geodude to break rock formations and assist in opening new paths through rubble-filled ruins.",
-      "descriptionZh": "出現於凸隆隆山地。「粉碎」專長允許小拳石破壞岩石地形，協助在廢墟遺跡中開闢新通道。",
+      "descriptionEn": "Found in Rocky Ridges. The Crush specialty allows Geodude to break rock formations and assist in opening new paths through rubble-filled ruins.",
+      "descriptionZh": "出現於岩石山脊。「粉碎」專長允許小拳石破壞岩石地形，協助在廢墟遺跡中開闢新通道。",
       "image": "https://assets.pokopiaguide.com/pokemon/geodude.png",
       "known": true,
       "skills": [
@@ -12295,8 +12295,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Burn",
       "specialtyZh": "燃燒",
-      "descriptionEn": "Found in Bulging Highlands. Essential for the copper smelting chain: lure Magmar to a furnace and have it smelt copper ore into copper ingots. These ingots are required to craft the Frying Pan, which is used to cook the Burger Patty that upgrades Ditto's Rock Smash ability — a pivotal progression gate.",
-      "descriptionZh": "出現於凸隆隆山地。銅錠冶煉鏈的關鍵：將鴨嘴火獸引至熔煉爐，委託其將銅礦冶煉成銅錠。銅錠用於製作平底鍋，再以平底鍋烹調漢堡排並食用，強化百變怪的碎巖能力——這是遊戲中至關重要的進度關卡。",
+      "descriptionEn": "Found in Rocky Ridges. Essential for the copper smelting chain: lure Magmar to a furnace and have it smelt copper ore into copper ingots. These ingots are required to craft the Frying Pan, which is used to cook the Burger Patty that upgrades Ditto's Rock Smash ability — a pivotal progression gate.",
+      "descriptionZh": "出現於岩石山脊。銅錠冶煉鏈的關鍵：將鴨嘴火獸引至熔煉爐，委託其將銅礦冶煉成銅錠。銅錠用於製作平底鍋，再以平底鍋烹調漢堡排並食用，強化百變怪的碎巖能力——這是遊戲中至關重要的進度關卡。",
       "image": "https://assets.pokopiaguide.com/pokemon/magmar.png",
       "known": true,
       "skills": [
@@ -14251,8 +14251,8 @@
       "roleZh": "劇情角色",
       "specialtyEn": "Cooking",
       "specialtyZh": "烹飪",
-      "descriptionEn": "Chef Dente is a Greedent found trapped inside a building in Bulging Highlands. Bake and eat wheat bread to gain the strength to cut his chains and free him. Once rescued, Chef Dente cooks key dishes — including the Burger Patty that upgrades Ditto's Rock Smash. He must later be escorted to Sparkling Floating Island to help build the 3rd floor of the Huge Building.",
-      "descriptionZh": "主廚 Dente 是一隻被困在凸隆隆山地建築物內的貪心栗鼠（Greedent）。烤製並食用小麥麵包以獲得切斷鎖鏈、救出牠的力量。獲救後，主廚 Dente 會烹調關鍵料理——包括能強化百變怪碎巖能力的漢堡排。之後還須護送牠前往閃閃浮島，協助建造摩天大樓的 3 樓。",
+      "descriptionEn": "Chef Dente is a Greedent found trapped inside a building in Rocky Ridges. Bake and eat wheat bread to gain the strength to cut his chains and free him. Once rescued, Chef Dente cooks key dishes — including the Burger Patty that upgrades Ditto's Rock Smash. He must later be escorted to Sparkling Skylands to help build the 3rd floor of the Huge Building.",
+      "descriptionZh": "主廚 Dente 是一隻被困在岩石山脊建築物內的貪心栗鼠（Greedent）。烤製並食用小麥麵包以獲得切斷鎖鏈、救出牠的力量。獲救後，主廚 Dente 會烹調關鍵料理——包括能強化百變怪碎巖能力的漢堡排。之後還須護送牠前往閃耀空島，協助建造摩天大樓的 3 樓。",
       "image": "https://assets.pokopiaguide.com/pokemon/greedent.png",
       "known": true,
       "skills": [
@@ -16431,8 +16431,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Glide",
       "specialtyZh": "滑翔",
-      "descriptionEn": "An essential partner for Sparkling Floating Island traversal. Build a Waterside Boat habitat to attract Dragonite. Learning its Glide ability allows Ditto to soar between the floating islands — without it, many platforms in the Skylands are unreachable and the Huge Building quest cannot progress.",
-      "descriptionZh": "閃閃浮島探索不可或缺的夥伴。建造水邊小艇棲息地可吸引快龍。學習其「滑翔」技能後，百變怪即可在各漂浮島嶼之間翱翔——若未習得此技能，許多空島平臺無法抵達，且重建巨大建築任務也無法推進。",
+      "descriptionEn": "An essential partner for Sparkling Skylands traversal. Build a Waterside Boat habitat to attract Dragonite. Learning its Glide ability allows Ditto to soar between the floating islands — without it, many platforms in the Skylands are unreachable and the Huge Building quest cannot progress.",
+      "descriptionZh": "閃耀空島探索不可或缺的夥伴。建造水邊小艇棲息地可吸引快龍。學習其「滑翔」技能後，百變怪即可在各漂浮島嶼之間翱翔——若未習得此技能，許多空島平臺無法抵達，且重建巨大建築任務也無法推進。",
       "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png",
       "known": true,
       "skills": [
@@ -19359,8 +19359,8 @@
       "roleZh": "劇情角色",
       "specialtyEn": "Smithing",
       "specialtyZh": "鍛造",
-      "descriptionEn": "Tinkmaster is a Tinkaton master smith in Sparkling Floating Island. Bring concrete and iron ingots to commission Special Gears, which are used to craft the Lift Platforms needed to traverse the floating islands. An indispensable engineering ally for opening up the Skylands.",
-      "descriptionZh": "巨鍛匠是棲身於閃閃浮島的鍛造大師（Tinkaton）。帶上混凝土與鐵錠即可委託製作特殊齒輪，用於打造跨越漂浮島嶼所需的升降平臺。是開拓空島不可或缺的工程盟友。",
+      "descriptionEn": "Tinkmaster is a Tinkaton master smith in Sparkling Skylands. Bring concrete and iron ingots to commission Special Gears, which are used to craft the Lift Platforms needed to traverse the floating islands. An indispensable engineering ally for opening up the Skylands.",
+      "descriptionZh": "巨鍛匠是棲身於閃耀空島的鍛造大師（Tinkaton）。帶上混凝土與鐵錠即可委託製作特殊齒輪，用於打造跨越漂浮島嶼所需的升降平臺。是開拓空島不可或缺的工程盟友。",
       "image": "https://assets.pokopiaguide.com/pokemon/tinkaton.png",
       "known": true,
       "skills": [
@@ -19385,8 +19385,8 @@
           "categoryZh": "輔助技能",
           "nameEn": "Lift Platform",
           "nameZh": "升降平台",
-          "detailEn": "Tinkmaster enables the vertical expansion that defines Sparkling Floating Island.",
-          "detailZh": "作為 Tinkmaster，牠讓閃閃浮島的垂直拓展真正成為可能。"
+          "detailEn": "Tinkmaster enables the vertical expansion that defines Sparkling Skylands.",
+          "detailZh": "作為 Tinkmaster，牠讓閃耀空島的垂直拓展真正成為可能。"
         }
       ],
       "rarity": "C",
@@ -19964,8 +19964,8 @@
       "roleZh": "夥伴",
       "specialtyEn": "Trade",
       "specialtyZh": "交易",
-      "descriptionEn": "Encountered upon entering Empty Town's Pokémon Center — no special condition required. Eevee's Trade specialty makes it a key NPC bartering partner in the endgame sandbox. All 8 eeveelution habitats share the same base recipe: 1 chair, 1 table, and 1 unique food item unlocked by a specific gameplay milestone.",
-      "descriptionZh": "進入空空鎮寶可夢中心即可遭遇，無特殊解鎖條件。伊布的「交易」專長使其成為終局自由建造區中的重要以物易物夥伴。全部 8 種伊布進化型態的棲息地皆以相同基礎配方為起點：1 張椅子、1 張桌子，以及 1 種需透過特定遊玩里程碑解鎖的獨特食物。",
+      "descriptionEn": "Encountered upon entering Palette Town's Pokémon Center — no special condition required. Eevee's Trade specialty makes it a key NPC bartering partner in the endgame sandbox. All 8 eeveelution habitats share the same base recipe: 1 chair, 1 table, and 1 unique food item unlocked by a specific gameplay milestone.",
+      "descriptionZh": "進入真新鎮寶可夢中心即可遭遇，無特殊解鎖條件。伊布的「交易」專長使其成為終局自由建造區中的重要以物易物夥伴。全部 8 種伊布進化型態的棲息地皆以相同基礎配方為起點：1 張椅子、1 張桌子，以及 1 種需透過特定遊玩里程碑解鎖的獨特食物。",
       "image": "https://assets.pokopiaguide.com/pokemon/eevee.png",
       "known": true,
       "skills": [
@@ -20052,8 +20052,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Water Gun",
       "specialtyZh": "水槍",
-      "descriptionEn": "Eevee's water-type evolution. Unlock condition: build 10 water-type habitats in Empty Town to unlock the Ice Cream Soda recipe — the food item that draws Vaporeon to your habitat.",
-      "descriptionZh": "伊布的水系進化型。解鎖條件：在空空鎮建造 10 個水系棲息地，解鎖「冰淇淋汽水」食譜——這是吸引水伊布前來棲息地所需的特定食物。",
+      "descriptionEn": "Eevee's water-type evolution. Unlock condition: build 10 water-type habitats in Palette Town to unlock the Ice Cream Soda recipe — the food item that draws Vaporeon to your habitat.",
+      "descriptionZh": "伊布的水系進化型。解鎖條件：在真新鎮建造 10 個水系棲息地，解鎖「冰淇淋汽水」食譜——這是吸引水伊布前來棲息地所需的特定食物。",
       "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png",
       "known": true,
       "skills": [
@@ -20131,8 +20131,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Generate",
       "specialtyZh": "發電",
-      "descriptionEn": "Eevee's electric-type evolution. Unlock condition: lay a total of 100 electrical facility blocks throughout Empty Town to unlock the French Fries recipe.",
-      "descriptionZh": "伊布的電系進化型。解鎖條件：在空空鎮鋪設合計 100 個電力設施方塊，解鎖「炸薯條」食譜。",
+      "descriptionEn": "Eevee's electric-type evolution. Unlock condition: lay a total of 100 electrical facility blocks throughout Palette Town to unlock the French Fries recipe.",
+      "descriptionZh": "伊布的電系進化型。解鎖條件：在真新鎮鋪設合計 100 個電力設施方塊，解鎖「炸薯條」食譜。",
       "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
       "known": true,
       "skills": [
@@ -20367,8 +20367,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Search",
       "specialtyZh": "搜尋",
-      "descriptionEn": "Eevee's dark-type evolution and the most demanding eeveelution to attract. Unlock condition: lay 300 physical road blocks throughout Empty Town to unlock the Chocolate Cookies recipe. Umbreon only appears at night — plan your visits accordingly.",
-      "descriptionZh": "伊布的惡系進化型，也是最難吸引的伊布型態。解鎖條件：在空空鎮鋪設合計 300 個實體道路方塊，解鎖「巧克力餅乾」食譜。月亮伊布僅在遊戲夜間時段生成——請據此規劃前往時機。",
+      "descriptionEn": "Eevee's dark-type evolution and the most demanding eeveelution to attract. Unlock condition: lay 300 physical road blocks throughout Palette Town to unlock the Chocolate Cookies recipe. Umbreon only appears at night — plan your visits accordingly.",
+      "descriptionZh": "伊布的惡系進化型，也是最難吸引的伊布型態。解鎖條件：在真新鎮鋪設合計 300 個實體道路方塊，解鎖「巧克力餅乾」食譜。月亮伊布僅在遊戲夜間時段生成——請據此規劃前往時機。",
       "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
       "known": true,
       "skills": [
@@ -20443,8 +20443,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Farming",
       "specialtyZh": "栽種",
-      "descriptionEn": "Eevee's grass-type evolution. Unlock condition: harvest 100 crops total across Empty Town's farm plots to unlock the Sandwich recipe.",
-      "descriptionZh": "伊布的草系進化型。解鎖條件：在空空鎮農田合計收成 100 株農作物，解鎖「三明治」食譜。",
+      "descriptionEn": "Eevee's grass-type evolution. Unlock condition: harvest 100 crops total across Palette Town's farm plots to unlock the Sandwich recipe.",
+      "descriptionZh": "伊布的草系進化型。解鎖條件：在真新鎮農田合計收成 100 株農作物，解鎖「三明治」食譜。",
       "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
       "known": true,
       "skills": [
@@ -20522,8 +20522,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Freeze",
       "specialtyZh": "冰凍",
-      "descriptionEn": "Eevee's ice-type evolution. Unlock condition: reach the highest elevation point in Empty Town's terrain (the summit of the tallest island peak) to unlock the Shaved Ice recipe.",
-      "descriptionZh": "伊布的冰系進化型。解鎖條件：抵達空空鎮地形的最高海拔點（最高島嶼山頂），解鎖「刨冰」食譜。",
+      "descriptionEn": "Eevee's ice-type evolution. Unlock condition: reach the highest elevation point in Palette Town's terrain (the summit of the tallest island peak) to unlock the Shaved Ice recipe.",
+      "descriptionZh": "伊布的冰系進化型。解鎖條件：抵達真新鎮地形的最高海拔點（最高島嶼山頂），解鎖「刨冰」食譜。",
       "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png",
       "known": true,
       "skills": [
@@ -20601,8 +20601,8 @@
       "roleZh": "伊布家族",
       "specialtyEn": "Trade",
       "specialtyZh": "交易",
-      "descriptionEn": "Eevee's fairy-type evolution. Unlock condition: encounter 10 different Pokémon species within Empty Town to unlock the Ribbon Cake recipe. Sylveon's presence brightens the overall atmosphere of the endgame sandbox.",
-      "descriptionZh": "伊布的妖精系進化型。解鎖條件：在空空鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。仙子伊布的出現會為終局自由建造區的整體氛圍增添明亮色彩。",
+      "descriptionEn": "Eevee's fairy-type evolution. Unlock condition: encounter 10 different Pokémon species within Palette Town to unlock the Ribbon Cake recipe. Sylveon's presence brightens the overall atmosphere of the endgame sandbox.",
+      "descriptionZh": "伊布的妖精系進化型。解鎖條件：在真新鎮範圍內遭遇合計 10 種不同的寶可夢，解鎖「緞帶蛋糕」食譜。仙子伊布的出現會為終局自由建造區的整體氛圍增添明亮色彩。",
       "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png",
       "known": true,
       "skills": [
@@ -20611,8 +20611,8 @@
           "categoryZh": "生活技能",
           "nameEn": "Ribbon Harmony",
           "nameZh": "緞帶和鳴",
-          "detailEn": "Adds warmth and beauty to carefully curated Empty Town habitats.",
-          "detailZh": "能為精心布置的空空鎮棲地增添柔和又明亮的氛圍。"
+          "detailEn": "Adds warmth and beauty to carefully curated Palette Town habitats.",
+          "detailZh": "能為精心布置的真新鎮棲地增添柔和又明亮的氛圍。"
         },
         {
           "categoryEn": "Attack Skill",
@@ -20719,8 +20719,8 @@
       "roleZh": "傳說",
       "specialtyEn": "Generate",
       "specialtyZh": "發電",
-      "descriptionEn": "The first legendary Pokémon encounter in the story. After illuminating Gloomy Seaside by connecting all renewable energy sources, climb to the clifftop to witness Raikou for the first time. For recruitment, enter the Pikachu Doll Dream Island (Ocean variant) via Drifloon, navigate deep into its cave, and use the Burger Patty–enhanced Rock Smash to clear metal blocks. Successfully recruiting Raikou dramatically boosts the environment level of your region.",
-      "descriptionZh": "主線流程中第一隻登場的傳說寶可夢。在暗沉沉海邊完成所有再生能源串聯、點亮城鎮後，攀爬懸崖頂端即可首次目睹雷公。招募路線：透過飄飄球進入「皮卡丘娃娃夢境島（海洋型）」，深入洞穴深處，以漢堡排強化後的碎巖擊破金屬方塊。成功招募後可大幅提升區域環境等級。",
+      "descriptionEn": "The first legendary Pokémon encounter in the story. After illuminating Bleak Beach by connecting all renewable energy sources, climb to the clifftop to witness Raikou for the first time. For recruitment, enter the Pikachu Doll Dream Island (Ocean variant) via Drifloon, navigate deep into its cave, and use the Burger Patty–enhanced Rock Smash to clear metal blocks. Successfully recruiting Raikou dramatically boosts the environment level of your region.",
+      "descriptionZh": "主線流程中第一隻登場的傳說寶可夢。在荒涼海灘完成所有再生能源串聯、點亮城鎮後，攀爬懸崖頂端即可首次目睹雷公。招募路線：透過飄飄球進入「皮卡丘娃娃夢境島（海洋型）」，深入洞穴深處，以漢堡排強化後的碎巖擊破金屬方塊。成功招募後可大幅提升區域環境等級。",
       "image": "https://assets.pokopiaguide.com/pokemon/raikou.png",
       "known": true,
       "skills": [
@@ -20954,8 +20954,8 @@
       "roleZh": "傳說",
       "specialtyEn": "Freeze",
       "specialtyZh": "冰凍",
-      "descriptionEn": "The legendary Ice Bird of Kanto. Blueprint found inside a yellow Poké Ball at one of the three island peaks in Empty Town. Altar construction requirements — Freezing Chambers: 50 stone, 50 ice blocks, 10 crystal shards, 10 Pokémetal. Articuno's arrival dramatically cools its surrounding environment.",
-      "descriptionZh": "關都傳說三神鳥中的冰系神鳥。藍圖藏於空空鎮三大島嶼高峰之一的黃色精靈球中。建築需求——冰結之室：50 個石頭、50 個冰塊、10 個水晶碎片、10 個寶可金屬。急凍鳥降臨後會大幅降低周圍環境溫度。",
+      "descriptionEn": "The legendary Ice Bird of Kanto. Blueprint found inside a yellow Poké Ball at one of the three island peaks in Palette Town. Altar construction requirements — Freezing Chambers: 50 stone, 50 ice blocks, 10 crystal shards, 10 Pokémetal. Articuno's arrival dramatically cools its surrounding environment.",
+      "descriptionZh": "關都傳說三神鳥中的冰系神鳥。藍圖藏於真新鎮三大島嶼高峰之一的黃色精靈球中。建築需求——冰結之室：50 個石頭、50 個冰塊、10 個水晶碎片、10 個寶可金屬。急凍鳥降臨後會大幅降低周圍環境溫度。",
       "image": "https://assets.pokopiaguide.com/pokemon/articuno.png",
       "known": true,
       "skills": [
@@ -21282,8 +21282,8 @@
       "roleZh": "傳說",
       "specialtyEn": "—",
       "specialtyZh": "—",
-      "descriptionEn": "The climactic encounter at the peak of Sparkling Floating Island. After completing the 4th floor of the Huge Building — requiring 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber, and the construction team including Peakychu from Gloomy Seaside — ascend to the rooftop to find Mewtwo waiting. One of the most powerful legendary encounters in the game.",
-      "descriptionZh": "閃閃浮島的頂點遭遇。完成摩天大樓 4F 建設（需 40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，並組成包含從暗沉沉海邊護送而來的 皮卡丘 在內的施工團隊）後，步上屋頂即可發現等待已久的超夢。遊戲中最震撼的傳說寶可夢遭遇之一。",
+      "descriptionEn": "The climactic encounter at the peak of Sparkling Skylands. After completing the 4th floor of the Huge Building — requiring 40 concrete, 15 glass, 10 paper, 10 bricks, 20 lumber, and the construction team including Peakychu from Bleak Beach — ascend to the rooftop to find Mewtwo waiting. One of the most powerful legendary encounters in the game.",
+      "descriptionZh": "閃耀空島的頂點遭遇。完成摩天大樓 4F 建設（需 40 混凝土、15 玻璃、10 紙張、10 磚塊、20 木材，並組成包含從荒涼海灘護送而來的 皮卡丘 在內的施工團隊）後，步上屋頂即可發現等待已久的超夢。遊戲中最震撼的傳說寶可夢遭遇之一。",
       "image": "https://assets.pokopiaguide.com/pokemon/mewtwo.png",
       "known": true,
       "skills": [
@@ -21347,7 +21347,7 @@
       "specialtyEn": "—",
       "specialtyZh": "—",
       "descriptionEn": "The ultimate secret of Pokopia. Hidden in Withered Wasteland behind a cracked wall (north of the Pokémon Center, past a metal net cut by upgraded Slash). At the end of the underground passage, a mural with 27 Unown-shaped slots awaits. Collect 27 unique Mysterious Slates from glowing golden dig sites scattered across the world — carry a Pokémon with the Search specialty or use a Dowsing Machine to find sites faster. Place all 27 slates correctly to summon Mew, who will appear and ask to become your partner.",
-      "descriptionZh": "Pokopia 的終極秘密。藏身於乾巴巴荒野地下——從寶可夢中心右側碎磚路北行，以碎巖擊穿裂巖後，再以強化版居合斬切開金屬網，在地下通道底部找到有 27 個未知圖騰形插槽的神秘壁畫。在世界各地的「發光黃金挖掘點」收集 27 塊不重複的「神秘石板」（攜帶搜尋專長的寶可夢或使用尋寶機器可加速收集）。將全部 27 塊石板正確放入壁畫，夢幻便會現身並詢問是否願意成為您的夥伴。",
+      "descriptionZh": "Pokopia 的終極秘密。藏身於枯萎荒野地下——從寶可夢中心右側碎磚路北行，以碎巖擊穿裂巖後，再以強化版居合斬切開金屬網，在地下通道底部找到有 27 個未知圖騰形插槽的神秘壁畫。在世界各地的「發光黃金挖掘點」收集 27 塊不重複的「神秘石板」（攜帶搜尋專長的寶可夢或使用尋寶機器可加速收集）。將全部 27 塊石板正確放入壁畫，夢幻便會現身並詢問是否願意成為您的夥伴。",
       "image": "https://assets.pokopiaguide.com/pokemon/mew.png",
       "known": true,
       "skills": [

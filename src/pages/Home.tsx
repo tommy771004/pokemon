@@ -151,7 +151,7 @@ export default function Home() {
                   <p className="text-ink-soft text-base leading-relaxed mb-8 font-body-base">
                     {en
                       ? "In Pokémon Pokopia, you are not a typical trainer, but a Ditto mimicking human form. You awake alongside Doctor Tangrowth. Together, you will repair power grids, build ecosystems, master resource chains, and bring Pokémon back to the pristine land."
-                      : "在《寶可夢 Pokopia》世界觀中，玩家扮演一隻擬態成人類的百變怪，攜手「巨蔓藤博士」開啟生態復建征途。你必須利用模擬複製技能，從澆灌荒野、架設電網，到建設摩天大樓，在空空鎮調和 300 種寶可夢的需求衝突，引導萬物回歸。"}
+                      : "在《寶可夢 Pokopia》世界觀中，玩家扮演一隻擬態成人類的百變怪，攜手「巨蔓藤博士」開啟生態復建征途。你必須利用模擬複製技能，從澆灌荒野、架設電網，到建設摩天大樓，在真新鎮調和 300 種寶可夢的需求衝突，引導萬物回歸。"}
                   </p>
                 </div>
                 

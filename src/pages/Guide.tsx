@@ -25,12 +25,12 @@ function GuideDataChart({ en }: { en: boolean }) {
     { name: "Beach", Common: 55, Rare: 35, Legendary: 10 },
     { name: "Ridges", Common: 50, Rare: 40, Legendary: 10 },
     { name: "Skylands", Common: 40, Rare: 45, Legendary: 15 },
-    { name: "Empty Town", Common: 30, Rare: 50, Legendary: 20 },
+    { name: "Palette Town", Common: 30, Rare: 50, Legendary: 20 },
   ] : [
-    { name: "乾巴巴荒野", Common: 65, Rare: 30, Legendary: 5 },
-    { name: "暗沉沉海邊", Common: 55, Rare: 35, Legendary: 10 },
-    { name: "凸隆隆山地", Common: 50, Rare: 40, Legendary: 10 },
-    { name: "閃閃浮島", Common: 40, Rare: 45, Legendary: 15 },
+    { name: "枯萎荒野", Common: 65, Rare: 30, Legendary: 5 },
+    { name: "荒涼海灘", Common: 55, Rare: 35, Legendary: 10 },
+    { name: "岩石山脊", Common: 50, Rare: 40, Legendary: 10 },
+    { name: "閃耀空島", Common: 40, Rare: 45, Legendary: 15 },
     { name: "調色板鎮", Common: 30, Rare: 50, Legendary: 20 },
   ];
 
@@ -39,12 +39,12 @@ function GuideDataChart({ en }: { en: boolean }) {
     { name: "Beach", Lumber: 20, Brick: 75, Metals: 50 },
     { name: "Ridges", Lumber: 10, Brick: 30, Metals: 95 },
     { name: "Skylands", Lumber: 60, Brick: 40, Metals: 80 },
-    { name: "Empty Town", Lumber: 90, Brick: 80, Metals: 85 },
+    { name: "Palette Town", Lumber: 90, Brick: 80, Metals: 85 },
   ] : [
-    { name: "乾巴巴荒野", Lumber: 30, Brick: 85, Metals: 40 },
-    { name: "暗沉沉海邊", Lumber: 20, Brick: 75, Metals: 50 },
-    { name: "凸隆隆山地", Lumber: 10, Brick: 30, Metals: 95 },
-    { name: "閃閃浮島", Lumber: 60, Brick: 40, Metals: 80 },
+    { name: "枯萎荒野", Lumber: 30, Brick: 85, Metals: 40 },
+    { name: "荒涼海灘", Lumber: 20, Brick: 75, Metals: 50 },
+    { name: "岩石山脊", Lumber: 10, Brick: 30, Metals: 95 },
+    { name: "閃耀空島", Lumber: 60, Brick: 40, Metals: 80 },
     { name: "調色板鎮", Lumber: 90, Brick: 80, Metals: 85 },
   ];
 
@@ -133,7 +133,7 @@ function GuideDataChart({ en }: { en: boolean }) {
             <p className="font-body-italic text-sm text-ink-mute mb-6 max-w-3xl leading-relaxed">
               {activeTab === "encounter"
                 ? (en 
-                    ? "Shows the probability of encounters in regular habitats. In Empty Town, the environment's micro-climate elevates rare migrations by up to 50% compared to starting regions."
+                    ? "Shows the probability of encounters in regular habitats. In Palette Town, the environment's micro-climate elevates rare migrations by up to 50% compared to starting regions."
                     : "資料反映常規棲地的原生出沒分佈。隨著環境修復與等級提高，終局「調色板鎮」的稀有與傳說個體移民比率可比初期荒地提高數倍。")
                 : (en
                     ? "Evaluates resource yield potentials on a 0-100 efficiency matrix. Perfect for optimizing colony placement of production trio specialists (Wooper/Timburr/Scyther)."
@@ -661,7 +661,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
       ],
       chainZh: "海灘農田 ➔ 採摘豆子與番茄；解鎖山脊區域 ➔ 開墾小麥田 ➔ 採獲小麥",
       chainEn: "Beach Farm ➔ Harvest Beans & Tomatoes; Ridges Region ➔ Cultivate Wheat Field ➔ Crop Wheat",
-      strategyZh: "考驗基礎農耕。豆子與番茄可在氣候溫潤的暗沉沉海邊直接採集或建立農田收成；小麥則需要玩家開拓至中部凸隆隆山地，並使用土木整地工具，建立人工麥田以獲得金黃小麥。",
+      strategyZh: "考驗基礎農耕。豆子與番茄可在氣候溫潤的荒涼海灘直接採集或建立農田收成；小麥則需要玩家開拓至中部岩石山脊，並使用土木整地工具，建立人工麥田以獲得金黃小麥。",
       strategyEn: "Agriculture trial. Gather beachside wild crops or establish early garden patches. Wheat requires crossing to mountain terrain and planting seeds in tillable soil."
     },
     {
@@ -689,7 +689,7 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
       ],
       chainZh: "荒原泥流 + 降雨 ➔ 軟泥 ➔ 火稚雞高溫窯製 ➔ 磚塊；山脊地下金礦脈 ➔ 冶煉爐 ➔ 金錠；空島隆隆岩採石灰岩 ➔ 修建老匠 + 攪拌機 ➔ 混凝土",
       chainEn: "Wasteland Muddy Rain ➔ Clay ➔ Torchic Oven ➔ Bricks; Volcanic Gold Ore ➔ Forge Furnace ➔ Gold Ingots; Limestones ➔ Concrete Mixer ➔ Concrete",
-      strategyZh: "沉重的工業測試！泥巴（必須在雨天於乾巴巴荒野挖掘泥漿）送入窯爐，交給火稚雞或小火龍烤成紅磚；金錠從山脊的火山腹地開採並熔煉；混凝土則是去空島用隆隆岩粉碎石灰岩，配合修建老匠在攪拌機中注入清水提煉。",
+      strategyZh: "沉重的工業測試！泥巴（必須在雨天於枯萎荒野挖掘泥漿）送入窯爐，交給火稚雞或小火龍烤成紅磚；金錠從山脊的火山腹地開採並熔煉；混凝土則是去空島用隆隆岩粉碎石灰岩，配合修建老匠在攪拌機中注入清水提煉。",
       strategyEn: "Heavy industry phase. Dig clay in rain to bake red bricks; smelt gold in mountain blast furnace; use Conkeldurr at concrete mixer on limestone chunks."
     },
     {
@@ -730,8 +730,8 @@ function TeamInitiationChecklistPanel({ en }: { en: boolean }) {
         { id: "gameboy", nameZh: "Game Boy x 1 (空島5級餽贈)", nameEn: "Game Boy x 1" }
       ],
       chainZh: "前期三大區域修復 ➔ 綜合環境等級達 5 級 ➔ 系統解鎖洗衣機與冰箱設計圖；空島環境評分達滿分 5 級 ➔ 巨鍛匠贈送 Game Boy 設計圖",
-      chainEn: "Three Starting Areas ➔ Max Level 5 ➔ Unlock Washer/Fridge Recipes; Max Sparkling Floating Island to 5 ➔ Secure Retro Game Boy Scheme",
-      strategyZh: "極限科技樹的突破。這不再是單純收集設計圖，高科技生活家電需要玩家擁有強大的生態治理成就。你必須使前三個區域達到完美的環境評級 5，才能在電腦解鎖冰箱與洗衣機；而掌上型主機 Game Boy 則是閃閃浮島升至滿分的專屬謝禮！",
+      chainEn: "Three Starting Areas ➔ Max Level 5 ➔ Unlock Washer/Fridge Recipes; Max Sparkling Skylands to 5 ➔ Secure Retro Game Boy Scheme",
+      strategyZh: "極限科技樹的突破。這不再是單純收集設計圖，高科技生活家電需要玩家擁有強大的生態治理成就。你必須使前三個區域達到完美的環境評級 5，才能在電腦解鎖冰箱與洗衣機；而掌上型主機 Game Boy 則是閃耀空島升至滿分的專屬謝禮！",
       strategyEn: "Technological pinnacle. Your overall ecological footprint must hit level 5 in three locations to unlock household designs. Game Boy schematics requires Skylands max rating."
     },
     {

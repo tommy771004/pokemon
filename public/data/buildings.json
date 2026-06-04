@@ -1,0 +1,362 @@
+[
+  {
+    "id": "relaxing-park",
+    "nameZh": "休閒公園",
+    "nameEn": "Relaxing park",
+    "image": "https://pokopiadex.com/images/items/shop_ui/relaxing-park-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個擁有標誌性吉利蛋大樹的公園。",
+    "href": "/buildings/relaxing-park/"
+  },
+  {
+    "id": "charging-station",
+    "nameZh": "充電站",
+    "nameEn": "Charging station",
+    "image": "https://pokopiadex.com/images/items/shop_ui/charging-station-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個非常適合充電的裝置。",
+    "href": "/buildings/charging-station/"
+  },
+  {
+    "id": "freezing-chambers",
+    "nameZh": "冷凍室",
+    "nameEn": "Freezing Chambers",
+    "image": "https://pokopiadex.com/images/items/item_ui/freezing-chambers-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造出充滿神秘氛圍的冰封山脈。",
+    "href": "/buildings/freezing-chambers/"
+  },
+  {
+    "id": "fountain-plaza",
+    "nameZh": "噴泉廣場",
+    "nameEn": "Fountain plaza",
+    "image": "https://pokopiadex.com/images/items/shop_ui/fountain-plaza-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個非常適合集會的廣場。",
+    "href": "/buildings/fountain-plaza/"
+  },
+  {
+    "id": "log-cabin",
+    "nameZh": "圓木小屋",
+    "nameEn": "Log cabin",
+    "image": "https://pokopiadex.com/images/items/shop_ui/log-cabin-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟散發宜人木香的房子。",
+    "href": "/buildings/log-cabin/"
+  },
+  {
+    "id": "city-hut",
+    "nameZh": "城市小屋",
+    "nameEn": "City hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/city-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出任何寶可夢都能輕鬆居住的小屋。",
+    "href": "/buildings/city-hut/"
+  },
+  {
+    "id": "city-den",
+    "nameZh": "城市巢穴",
+    "nameEn": "City den",
+    "image": "https://pokopiadex.com/images/items/shop_ui/city-den-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出適合中型及以下寶可夢居住的巢穴。",
+    "href": "/buildings/city-den/"
+  },
+  {
+    "id": "city-house",
+    "nameZh": "城市房屋",
+    "nameEn": "City house",
+    "image": "https://pokopiadex.com/images/items/shop_ui/city-house-kit.png",
+    "description": "召集寶可夢一起建造吧！讓我們蓋一棟大家都能住在一起的超大房子。",
+    "href": "/buildings/city-house/"
+  },
+  {
+    "id": "city-cottage",
+    "nameZh": "城市農舍",
+    "nameEn": "City cottage",
+    "image": "https://pokopiadex.com/images/items/shop_ui/city-cottage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出兩隻寶可夢可以放鬆的地方。",
+    "href": "/buildings/city-cottage/"
+  },
+  {
+    "id": "skyland-pokemon-center",
+    "nameZh": "天空寶可夢中心",
+    "nameEn": "Skyland Pokémon Center",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pokemon-center-rebuilding-kit.png",
+    "description": "用此道具改建寶可夢中心，讓它看起來就像天空寶可夢中心一樣。",
+    "href": "/buildings/skyland-pokemon-center/"
+  },
+  {
+    "id": "small-office",
+    "nameZh": "小型辦公室",
+    "nameEn": "Small office",
+    "image": "https://pokopiadex.com/images/items/shop_ui/small-office-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一個能讓你全神貫注工作的地方。",
+    "href": "/buildings/small-office/"
+  },
+  {
+    "id": "ridge-pokemon-center",
+    "nameZh": "山脊寶可夢中心",
+    "nameEn": "Ridge Pokémon Center",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pokemon-center-rebuilding-kit.png",
+    "description": "彩繪玻璃像寶石一樣閃耀。這個地方感覺能容納一些特別的事物。",
+    "href": "/buildings/ridge-pokemon-center/"
+  },
+  {
+    "id": "abandoned-power-plant",
+    "nameZh": "廢棄發電廠",
+    "nameEn": "Abandoned Power Plant",
+    "image": "https://pokopiadex.com/images/items/item_ui/abandoned-power-plant-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一座充滿電力的廢棄發電廠。",
+    "href": "/buildings/abandoned-power-plant/"
+  },
+  {
+    "id": "stylish-cafe",
+    "nameZh": "時尚咖啡廳",
+    "nameEn": "Stylish Café",
+    "image": "https://pokopiadex.com/images/items/shop_ui/stylish-cafe-kit.png",
+    "description": "召集寶可夢一起建造吧！這會打造一間讓你小憩片刻的可愛咖啡廳。",
+    "href": "/buildings/stylish-cafe/"
+  },
+  {
+    "id": "moonlight-dance-statue",
+    "nameZh": "月光舞蹈雕像",
+    "nameEn": "Moonlight dance statue",
+    "image": "https://pokopiadex.com/images/items/shop_ui/moonlight-dance-statue-kit.png",
+    "description": "召集寶可夢一起建造吧！建造過程中會讓你忍不住想跳舞。",
+    "href": "/buildings/moonlight-dance-statue/"
+  },
+  {
+    "id": "orange-hut",
+    "nameZh": "橙色小屋",
+    "nameEn": "Orange hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/orange-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟精緻的磚造房屋。",
+    "href": "/buildings/orange-hut/"
+  },
+  {
+    "id": "orange-cottage",
+    "nameZh": "橙色農舍",
+    "nameEn": "Orange cottage",
+    "image": "https://pokopiadex.com/images/items/item_ui/orange-cottage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟充滿活力、洋溢度假氛圍的房子。",
+    "href": "/buildings/orange-cottage/"
+  },
+  {
+    "id": "waterwheel",
+    "nameZh": "水車",
+    "nameEn": "Waterwheel",
+    "image": "https://pokopiadex.com/images/items/shop_ui/waterwheel-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個利用水力產生大量電力的發電裝置。",
+    "href": "/buildings/waterwheel/"
+  },
+  {
+    "id": "sand-hut",
+    "nameZh": "沙地小屋",
+    "nameEn": "Sand hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/sand-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出任何寶可夢都能輕鬆居住的小屋。",
+    "href": "/buildings/sand-hut/"
+  },
+  {
+    "id": "sand-den",
+    "nameZh": "沙地巢穴",
+    "nameEn": "Sand den",
+    "image": "https://pokopiadex.com/images/items/shop_ui/sand-den-kit.png",
+    "description": "用沙子建造的簡單巢穴。大小剛好適合一隻中型寶可夢居住。",
+    "href": "/buildings/sand-den/"
+  },
+  {
+    "id": "sand-house",
+    "nameZh": "沙地房屋",
+    "nameEn": "Sand house",
+    "image": "https://pokopiadex.com/images/items/shop_ui/sand-house-kit.png",
+    "description": "召集寶可夢一起建造吧！讓我們蓋一棟大家都能住在一起的超大房子。",
+    "href": "/buildings/sand-house/"
+  },
+  {
+    "id": "sand-cottage",
+    "nameZh": "沙地農舍",
+    "nameEn": "Sand cottage",
+    "image": "https://pokopiadex.com/images/items/shop_ui/sand-cottage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出兩隻寶可夢可以放鬆的地方。",
+    "href": "/buildings/sand-cottage/"
+  },
+  {
+    "id": "beach-pokemon-center",
+    "nameZh": "海灘寶可夢中心",
+    "nameEn": "Beach Pokémon Center",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pokemon-center-rebuilding-kit.png",
+    "description": "通電後會發光。可能會提升附近寶可夢的舒適度。",
+    "href": "/buildings/beach-pokemon-center/"
+  },
+  {
+    "id": "altar-of-flame",
+    "nameZh": "火焰祭壇",
+    "nameEn": "Altar of Flame",
+    "image": "https://pokopiadex.com/images/items/item_ui/altar-of-flame-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一座伴隨熊熊火焰的祭壇。",
+    "href": "/buildings/altar-of-flame/"
+  },
+  {
+    "id": "gray-hut",
+    "nameZh": "灰色小屋",
+    "nameEn": "Gray hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/gray-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟酷炫的石造房屋。",
+    "href": "/buildings/gray-hut/"
+  },
+  {
+    "id": "gray-cottage",
+    "nameZh": "灰色農舍",
+    "nameEn": "Gray cottage",
+    "image": "https://pokopiadex.com/images/items/item_ui/gray-cottage-kit.png",
+    "description": "一棟氣氛寧靜的高級住宅，裡面擺滿了豪華家具。",
+    "href": "/buildings/gray-cottage/"
+  },
+  {
+    "id": "furnace",
+    "nameZh": "熔爐",
+    "nameEn": "Furnace",
+    "image": "https://pokopiadex.com/images/items/shop_ui/furnace-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個燃燒物料產生大量電力的發電裝置。",
+    "href": "/buildings/furnace/"
+  },
+  {
+    "id": "pikachu-fountain",
+    "nameZh": "皮卡丘噴泉",
+    "nameEn": "Pikachu fountain",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pikachu-fountain-kit.png",
+    "description": "皮卡丘乘著大浪衝浪！點亮它，讓周圍充滿電力十足的氣氛！",
+    "href": "/buildings/pikachu-fountain/"
+  },
+  {
+    "id": "stone-hut",
+    "nameZh": "石頭小屋",
+    "nameEn": "Stone hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/stone-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出任何寶可夢都能輕鬆居住的小屋。",
+    "href": "/buildings/stone-hut/"
+  },
+  {
+    "id": "stone-den",
+    "nameZh": "石頭巢穴",
+    "nameEn": "Stone den",
+    "image": "https://pokopiadex.com/images/items/shop_ui/stone-den-kit.png",
+    "description": "把石頭堆疊起來，也能成為一個家。一隻中型寶可夢可以住在這裡。",
+    "href": "/buildings/stone-den/"
+  },
+  {
+    "id": "stone-house",
+    "nameZh": "石頭房屋",
+    "nameEn": "Stone house",
+    "image": "https://pokopiadex.com/images/items/shop_ui/stone-house-kit.png",
+    "description": "召集寶可夢一起建造吧！讓我們蓋一棟大家都能住在一起的超大房子。",
+    "href": "/buildings/stone-house/"
+  },
+  {
+    "id": "stone-cottage",
+    "nameZh": "石頭農舍",
+    "nameEn": "Stone cottage",
+    "image": "https://pokopiadex.com/images/items/shop_ui/stone-cottage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出兩隻寶可夢可以放鬆的地方。",
+    "href": "/buildings/stone-cottage/"
+  },
+  {
+    "id": "pink-hut",
+    "nameZh": "粉色小屋",
+    "nameEn": "Pink hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pink-hut-kit.png",
+    "description": "非常可愛，粉色牆壁由純灰泥製成，與瓦片屋頂完美搭配。",
+    "href": "/buildings/pink-hut/"
+  },
+  {
+    "id": "pink-cottage",
+    "nameZh": "粉色農舍",
+    "nameEn": "Pink cottage",
+    "image": "https://pokopiadex.com/images/items/item_ui/pink-cottage-kit.png",
+    "description": "一棟可愛、略帶復古風格的房子，有瓦片屋頂和灰泥牆壁。",
+    "href": "/buildings/pink-cottage/"
+  },
+  {
+    "id": "pokemart",
+    "nameZh": "精靈商店",
+    "nameEn": "Pokémart",
+    "image": "https://pokopiadex.com/images/items/shop_ui/poke-mart-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一間不知為何總是令人感到興奮的商店。",
+    "href": "/buildings/pokemart/"
+  },
+  {
+    "id": "pokeball-house",
+    "nameZh": "精靈球房屋",
+    "nameEn": "Pokéball house",
+    "image": "https://pokopiadex.com/images/items/shop_ui/poke-ball-house-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟看起來像巨大精靈球的房子。",
+    "href": "/buildings/pokeball-house/"
+  },
+  {
+    "id": "wasteland-pokemon-center",
+    "nameZh": "荒野寶可夢中心",
+    "nameEn": "Wasteland Pokémon Center",
+    "image": "https://pokopiadex.com/images/items/shop_ui/pokemon-center-rebuilding-kit.png",
+    "description": "一間能感受木材溫馨氣息的寶可夢中心。在裡面可以恢復你的PP。",
+    "href": "/buildings/wasteland-pokemon-center/"
+  },
+  {
+    "id": "leaf-hut",
+    "nameZh": "葉片小屋",
+    "nameEn": "Leaf hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/leaf-hut-kit.png",
+    "description": "足夠容納一隻寶可夢。放入各種酷炫物品，就能成為秘密基地！",
+    "href": "/buildings/leaf-hut/"
+  },
+  {
+    "id": "leaf-den",
+    "nameZh": "葉片巢穴",
+    "nameEn": "Leaf den",
+    "image": "https://pokopiadex.com/images/items/shop_ui/leaf-den-kit.png",
+    "description": "在中央放置一張床，這裡就能成為臥室。一隻中型寶可夢可以住在這裡。",
+    "href": "/buildings/leaf-den/"
+  },
+  {
+    "id": "leaf-house",
+    "nameZh": "葉片房屋",
+    "nameEn": "Leaf house",
+    "image": "https://pokopiadex.com/images/items/shop_ui/leaf-house-kit.png",
+    "description": "召集寶可夢一起建造吧！讓我們蓋一棟大家都能住在一起的超大房子。",
+    "href": "/buildings/leaf-house/"
+  },
+  {
+    "id": "leaf-cottage",
+    "nameZh": "葉片農舍",
+    "nameEn": "Leaf cottage",
+    "image": "https://pokopiadex.com/images/items/shop_ui/leaf-cottage-kit.png",
+    "description": "可容納兩隻寶可夢的大房子。可以隨意更改屋頂或牆壁的顏色！",
+    "href": "/buildings/leaf-cottage/"
+  },
+  {
+    "id": "concert-stage",
+    "nameZh": "音樂舞台",
+    "nameEn": "Concert stage",
+    "image": "https://pokopiadex.com/images/items/shop_ui/concert-stage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個大到足以容納所有朋友的舞台。",
+    "href": "/buildings/concert-stage/"
+  },
+  {
+    "id": "windmill",
+    "nameZh": "風車",
+    "nameEn": "Windmill",
+    "image": "https://pokopiadex.com/images/items/shop_ui/windmill-kit.png",
+    "description": "召集寶可夢一起建造吧！這會建造一個將風能轉換為大量電力的發電裝置。",
+    "href": "/buildings/windmill/"
+  },
+  {
+    "id": "yellow-hut",
+    "nameZh": "黃色小屋",
+    "nameEn": "Yellow hut",
+    "image": "https://pokopiadex.com/images/items/shop_ui/yellow-hut-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟搶眼的混凝土房屋。",
+    "href": "/buildings/yellow-hut/"
+  },
+  {
+    "id": "yellow-cottage",
+    "nameZh": "黃色農舍",
+    "nameEn": "Yellow cottage",
+    "image": "https://pokopiadex.com/images/items/item_ui/yellow-cottage-kit.png",
+    "description": "召集寶可夢一起建造吧！這會蓋出一棟時尚的混凝土房屋。",
+    "href": "/buildings/yellow-cottage/"
+  }
+]

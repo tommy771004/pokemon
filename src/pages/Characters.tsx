@@ -343,10 +343,10 @@ export default function Characters() {
       speciesEn: "Greedent",
       specialtyZh: "小麥烘焙學、能量漢堡排製造、輔助興建巨大建築 3F",
       specialtyEn: "Wheat Baking, Strength Burger Patty preparation, Escorted Architect for Huge Building 3F",
-      regionZh: "凸隆隆山地 (Bulging Highlands) -> 閃閃浮島 (Sparkling Floating Island)",
-      regionEn: "Bulging Highlands -> Sparkling Floating Island",
-      detailsZh: "最初受困於凸隆隆山地遺跡。玩家需在附近的麵包爐烤製「小麥麵包」並食用獲得強力，切斷鎖鍊救出他。隨後在聚落他會烤製「漢堡排」，百變怪使用後碎巖力量提升一階，可粉碎深色金屬礦脈。後期建設摩天大樓 3F 時，系統指定需要護送主廚 Dente 與發光石一同抵達空島工地，方能順利完成重建並解鎖進階型態。",
-      detailsEn: "Trapped behind steel chains in Bulging Highlands ruins. Ditto must bake Wheat Bread to gain physical power and break his bonds. Once recruited, he prepares the powerhouse 'Burger Patty' which permanently upgrades Ditto's smash power to destroy steel node-deposits. Later, he must be manually escorted to the Sparkling Floating Island skyscraper on 3F to execute complex assembly.",
+      regionZh: "岩石山脊 (Rocky Ridges) -> 閃耀空島 (Sparkling Skylands)",
+      regionEn: "Rocky Ridges -> Sparkling Skylands",
+      detailsZh: "最初受困於岩石山脊遺跡。玩家需在附近的麵包爐烤製「小麥麵包」並食用獲得強力，切斷鎖鍊救出他。隨後在聚落他會烤製「漢堡排」，百變怪使用後碎巖力量提升一階，可粉碎深色金屬礦脈。後期建設摩天大樓 3F 時，系統指定需要護送主廚 Dente 與發光石一同抵達空島工地，方能順利完成重建並解鎖進階型態。",
+      detailsEn: "Trapped behind steel chains in Rocky Ridges ruins. Ditto must bake Wheat Bread to gain physical power and break his bonds. Once recruited, he prepares the powerhouse 'Burger Patty' which permanently upgrades Ditto's smash power to destroy steel node-deposits. Later, he must be manually escorted to the Sparkling Skylands skyscraper on 3F to execute complex assembly.",
     },
     {
       id: "tinkmaster-guide",
@@ -356,10 +356,10 @@ export default function Characters() {
       speciesEn: "Tinkaton",
       specialtyZh: "高階機械鍛造、特殊齒輪訂製、升降懸掛平臺發行",
       specialtyEn: "High-grade alloy smithing, Specialized Gear casting, Traversing Lift Platform architecture",
-      regionZh: "閃閃浮島 (Sparkling Floating Island)",
-      regionEn: "Sparkling Floating Island",
-      detailsZh: "閃閃浮島的核心工程師，擁有一柄以回收垃圾鍛造成的巨大鐵鎚。玩家可以用在各島嶼收集、精煉的鐵錠與混凝土跟牠交互以換取『特殊齒輪（Special Gears）』。這些齒輪是架設空中大型移動升降梯、連接被深淵切開的各處垃圾漂浮島必備的材料。牠同時也是逐層重建百米高摩天大樓的大功臣，代表島嶼機械的頂峰技術。",
-      detailsEn: "The hardware anchor of Sparkling Floating Island. Tinkmaster wields a massive custom scrap-hammer and exchanges raw refined Iron Plates and high-density Concrete for 'Special Gears'. These unique gears are the mandatory currency to forge automated Lift Platforms that cross wide rifts. Tinkmaster guides the mechanical layout up to the skyscraper's summit.",
+      regionZh: "閃耀空島 (Sparkling Skylands)",
+      regionEn: "Sparkling Skylands",
+      detailsZh: "閃耀空島的核心工程師，擁有一柄以回收垃圾鍛造成的巨大鐵鎚。玩家可以用在各島嶼收集、精煉的鐵錠與混凝土跟牠交互以換取『特殊齒輪（Special Gears）』。這些齒輪是架設空中大型移動升降梯、連接被深淵切開的各處垃圾漂浮島必備的材料。牠同時也是逐層重建百米高摩天大樓的大功臣，代表島嶼機械的頂峰技術。",
+      detailsEn: "The hardware anchor of Sparkling Skylands. Tinkmaster wields a massive custom scrap-hammer and exchanges raw refined Iron Plates and high-density Concrete for 'Special Gears'. These unique gears are the mandatory currency to forge automated Lift Platforms that cross wide rifts. Tinkmaster guides the mechanical layout up to the skyscraper's summit.",
     },
     {
       id: "peakychu-guide",
@@ -369,10 +369,10 @@ export default function Characters() {
       speciesEn: "Pikachu",
       specialtyZh: "工班集結、精準配線佈局、摩天大樓終期 4F 施工指揮",
       specialtyEn: "Construction Crew rallying, Precision circuit routing, Skyscraper 4F engineering supervisor",
-      regionZh: "暗沉沉海邊 (Gloomy Seaside) -> 閃閃浮島 (Sparkling Floating Island)",
-      regionEn: "Gloomy Seaside -> Sparkling Floating Island",
-      detailsZh: "登場於暗沉沉海邊、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 皮卡丘 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
-      detailsEn: "An iconic, electricityless Pikachu first encountered resting near water gates in Gloomy Seaside. Needs clean showers and localized recycling centers to build friendship. During late-game skyscraper 4F vertical construction, heavy altitude turbulence and solar signals stall progress; Ditto must travel back, invite Peakychu, and escort it to lead the final wiring, unlocking Mewtwo's landing.",
+      regionZh: "荒涼海灘 (Bleak Beach) -> 閃耀空島 (Sparkling Skylands)",
+      regionEn: "Bleak Beach -> Sparkling Skylands",
+      detailsZh: "登場於荒涼海灘、失去發電能力的特殊失電皮卡丘。需要玩家為牠構築避難所與淋浴設施以獲取認同。當空島建設邁入終局（摩天大樓 4F）時，高空的大風與閃電干擾使大樓建設停滯，玩家必須特地返回海灘，將 皮卡丘 邀請並護送加入空島工班，由牠在屋頂精準配合布線，完工後即可吸引傳說寶可夢「超夢」在屋頂著陸降臨！",
+      detailsEn: "An iconic, electricityless Pikachu first encountered resting near water gates in Bleak Beach. Needs clean showers and localized recycling centers to build friendship. During late-game skyscraper 4F vertical construction, heavy altitude turbulence and solar signals stall progress; Ditto must travel back, invite Peakychu, and escort it to lead the final wiring, unlocking Mewtwo's landing.",
     },
     {
       id: "drifloon-guide",
@@ -384,8 +384,8 @@ export default function Characters() {
       specialtyEn: "Dream Island passage, Doll exchange transport, Johto Legendary beasts gateway trigger",
       regionZh: "夢境群島 (Dream Islands) 的所有門戶",
       regionEn: "Dream Islands (All portals)",
-      detailsZh: "主線通關後的空間關鍵。只要前往暗沉沉海邊的幽暗礁石碼頭與其對話，並繳納冒險中在精靈球內搜集的各式神奇寶可夢玩偶（Dolls），牠便會帶著百變怪躍遷進入隨機的「夢境群島」！在這裡，玩家可以採集到全地圖罕見的高階化石植物、冶煉高純度水晶，並可跟著指引開啟傳說中的雷公、炎帝、水君的隱藏捉捕挑戰！",
-      detailsEn: "The gateway Ferryman active in Kanto's post-game. Interacting with Drifloon at Gloomy Seaside's dark reef dock and giving it customizable collectible Poke-Dolls triggers dimensional shift. This transitions the player into the rare procedurally-seeded 'Dream Islands' where unique plants spawn alongside Johto's legendary Raikou, Entei, and Suicune routes.",
+      detailsZh: "主線通關後的空間關鍵。只要前往荒涼海灘的幽暗礁石碼頭與其對話，並繳納冒險中在精靈球內搜集的各式神奇寶可夢玩偶（Dolls），牠便會帶著百變怪躍遷進入隨機的「夢境群島」！在這裡，玩家可以採集到全地圖罕見的高階化石植物、冶煉高純度水晶，並可跟著指引開啟傳說中的雷公、炎帝、水君的隱藏捉捕挑戰！",
+      detailsEn: "The gateway Ferryman active in Kanto's post-game. Interacting with Drifloon at Bleak Beach's dark reef dock and giving it customizable collectible Poke-Dolls triggers dimensional shift. This transitions the player into the rare procedurally-seeded 'Dream Islands' where unique plants spawn alongside Johto's legendary Raikou, Entei, and Suicune routes.",
     }
   ];
 
@@ -837,7 +837,7 @@ export default function Characters() {
                   </h4>
                   <p className="text-sm text-ink-mute leading-relaxed">
                     {en 
-                      ? "Linking windmills and water wheels to lighthouse charging stations across Gloomy Seaside to revive local power grids."
+                      ? "Linking windmills and water wheels to lighthouse charging stations across Bleak Beach to revive local power grids."
                       : "利用傑尼龜水槍滋潤旱地。在海灘修復風車、水車，拉起「電線桿系統」將電網連線，並喚醒苔樹卡比獸 Mosslax。"}
                   </p>
                 </article>

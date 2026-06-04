@@ -1,15 +1,23 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
-import Seo from "../components/Seo";
 import ScrollFade from "../components/ScrollFade";
 import { useFavorites } from "../hooks/useFavorites";
 
-const PAGE_SIZE = 40;
+const PAGE_SIZE = 12;
 
-export default function Items() {
+type Building = {
+  id: string;
+  nameZh: string;
+  nameEn: string;
+  image: string;
+  description: string;
+  href: string;
+};
+
+export default function Buildings() {
   const { t, i18n } = useTranslation();
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<Building[]>([]);
   const [query, setQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -17,7 +25,7 @@ export default function Items() {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   
-  const { favorites, toggleFavorite } = useFavorites("fav_items");
+  const { favorites, toggleFavorite } = useFavorites("fav_buildings");
 
   const en = i18n.language === "en";
 
@@ -26,44 +34,69 @@ export default function Items() {
   }, [query, selectedCategory, showFavoritesOnly]);
 
   useEffect(() => {
-    fetch("/data/items.json")
+    fetch("/data/buildings.json")
       .then((res) => res.json())
       .then(setData)
       .catch(() => setData([]));
   }, []);
 
+  // Rules-based categorization for Pokopia buildings
+  const getCategoryKey = (building: Building): string => {
+    const name = building.nameZh + " " + building.nameEn;
+    if (name.includes("寶可夢中心") || name.toUpperCase().includes("POKÉMON CENTER")) {
+      return "center";
+    }
+    if (
+      name.includes("小屋") ||
+      name.includes("巢穴") ||
+      name.includes("房屋") ||
+      name.includes("農舍") ||
+      name.includes("Hut") ||
+      name.includes("Den") ||
+      name.includes("House") ||
+      name.includes("Cottage") ||
+      name.includes("Cabin")
+    ) {
+      return "housing";
+    }
+    if (
+      name.includes("公園") ||
+      name.includes("廣場") ||
+      name.includes("舞台") ||
+      name.includes("雕像") ||
+      name.includes("Park") ||
+      name.includes("Plaza") ||
+      name.includes("Stage") ||
+      name.includes("Statue")
+    ) {
+      return "landscape";
+    }
+    return "facility";
+  };
+
+  const CATEGORIES = [
+    { key: "center", en: "Pokémon Centers", zh: "寶可夢中心" },
+    { key: "housing", en: "Housing & Cozy Huts", zh: "住宅與小屋" },
+    { key: "landscape", en: "Landscape & Leisure", zh: "景觀與休閒" },
+    { key: "facility", en: "Facilities & Utilities", zh: "生產與設施" },
+  ];
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return data.filter((item) => {
-      const nameCurrent = en
-        ? item.nameEn || item.name
-        : item.name || item.nameEn;
+      const itemCat = getCategoryKey(item);
       const matchesQuery =
-        !q || nameCurrent?.toLowerCase().includes(q) || item.id?.includes(q);
-      const matchesCategory =
-        !selectedCategory || item.categoryKey === selectedCategory;
+        !q ||
+        item.nameZh.toLowerCase().includes(q) ||
+        item.nameEn.toLowerCase().includes(q) ||
+        item.description.toLowerCase().includes(q);
+      const matchesCategory = !selectedCategory || itemCat === selectedCategory;
       const matchesFavorites = !showFavoritesOnly || favorites.has(item.id);
       return matchesQuery && matchesCategory && matchesFavorites;
     });
-  }, [data, query, selectedCategory, en, showFavoritesOnly, favorites]);
+  }, [data, query, selectedCategory, showFavoritesOnly, favorites]);
 
   const visible = filtered.slice(0, visibleCount);
-
-  const CATEGORIES = [
-    { key: "food", en: "Food", zh: "食物" },
-    { key: "material", en: "Material", zh: "素材" },
-    { key: "furniture", en: "Furniture", zh: "家具" },
-    { key: "goods", en: "Goods", zh: "雜貨" },
-    { key: "nature", en: "Nature", zh: "自然物" },
-    { key: "kit", en: "Kit", zh: "套件/模組" },
-    { key: "outdoor", en: "Outdoor", zh: "戶外" },
-    { key: "utility", en: "Utility", zh: "設備" },
-    { key: "building", en: "Building", zh: "建築" },
-    { key: "block", en: "Block", zh: "方塊" },
-    { key: "key-item", en: "Key Item", zh: "重要物品" },
-    { key: "other", en: "Other", zh: "其他" },
-    { key: "uncollectable", en: "Uncollectable", zh: "不可收集" },
-  ];
 
   const resetFilters = () => {
     setSelectedCategory(null);
@@ -81,9 +114,9 @@ export default function Items() {
           <div className="flex items-center justify-between gap-4 mb-3">
             <h2 className="font-headline-sm text-headline-sm text-ink-main flex items-center gap-2 flex-1">
               <span className="material-symbols-outlined text-[20px]">
-                category
+                domain
               </span>
-              {en ? "Items Directory" : "物品圖鑑"}
+              {en ? "Buildings Compendium" : "建築圖鑑"}
               {hasActiveFilters && (
                 <span className="ml-2 font-mono-metadata text-[10px] text-ink-mute uppercase tracking-widest whitespace-nowrap">
                   {filtered.length} {en ? "Matches" : "筆"}
@@ -144,9 +177,9 @@ export default function Items() {
               <h2 className="font-headline-sm text-headline-sm text-ink-main border-b border-line pb-sm flex items-center justify-between">
                 <span className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[20px]">
-                    category
+                    domain
                   </span>
-                  {en ? "Items Directory" : "物品圖鑑"}
+                  {en ? "Buildings Directory" : "建築物分類"}
                 </span>
               </h2>
               {hasActiveFilters && (
@@ -165,13 +198,14 @@ export default function Items() {
               )}
             </div>
 
+            {/* Category selection */}
             <div className="mb-lg border bg-surface-container/20 rounded-sm">
               <h3 className="font-label-caps text-label-caps text-ink-soft border-line-soft p-3 flex items-center justify-between">
                 <span className="flex items-center gap-2">
                    <span className="material-symbols-outlined text-[18px]">
                      folder
                    </span>
-                   {en ? "Category" : "物品分類"}
+                   {en ? "Category" : "建築分類"}
                    {selectedCategory && <span className="font-mono-metadata text-[10px] bg-primary text-white px-2 py-0.5 rounded-full ml-2 leading-none">1</span>}
                 </span>
               </h3>
@@ -187,7 +221,7 @@ export default function Items() {
                     <span
                       className={`w-2 h-2 rounded-full transition-colors ${selectedCategory === null ? "bg-primary" : "bg-ink-faint group-hover:bg-primary"}`}
                     ></span>
-                    {en ? "All Categories" : "不限分類"}
+                    {en ? "All Buildings" : "不限分類"}
                   </span>
                 </button>
                 {CATEGORIES.map((cat) => (
@@ -210,13 +244,14 @@ export default function Items() {
               </div>
             </div>
 
+            {/* Keyword and Favorites Search */}
             <div className="mb-lg border bg-surface-container/20 rounded-sm">
               <h3 className="font-label-caps text-label-caps text-ink-soft border-line-soft p-3 flex items-center justify-between">
                 <span className="flex items-center gap-2">
                    <span className="material-symbols-outlined text-[18px]">
                      search
                    </span>
-                   {t("pokedex.searchRegistry")}
+                   {en ? "Search & Filter" : "搜尋與篩選"}
                    {query && <span className="font-mono-metadata text-[10px] bg-primary text-white px-2 py-0.5 rounded-full ml-2 leading-none">1</span>}
                 </span>
               </h3>
@@ -231,7 +266,7 @@ export default function Items() {
                 <div className="relative mt-3">
                   <input
                     type="text"
-                    placeholder={t("pokedex.searchPlaceholder")}
+                    placeholder={en ? "Search buildings..." : "搜尋建築物內容..."}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     className="w-full bg-bone border border-line-soft text-ink-soft placeholder-ink-faint rounded-sm py-2 pl-9 pr-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all font-body-base mt-2"
@@ -255,6 +290,7 @@ export default function Items() {
           </div>
         </aside>
 
+        {/* Main Buildings Grid */}
         <main className="flex-1 min-w-0">
           <div className="mb-sm flex items-center justify-between font-mono-metadata text-xs text-ink-mute uppercase tracking-widest border-b border-line-soft pb-2">
             <span>{en ? "Registry" : "登錄檔案"}</span>
@@ -269,170 +305,149 @@ export default function Items() {
                 search_off
               </span>
               <p className="font-body-base text-body-base text-ink-mute">
-                {t("pokedex.noResults")}
+                {en ? "No buildings match your current search criteria." : "找不到符合條件的建築物。"}
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-md relative">
-              {visible.map((item: any, idx: number) => (
-                <ScrollFade
-                  key={item.id}
-                  depth="none"
-                  delay={(idx % 5) * 0.03}
-                  className="h-full"
-                >
-                  <div
-                    className={`relative group h-full [perspective:1000px] ${flippedId === item.id ? "z-10" : "z-0"}`}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-2 sm:gap-md relative">
+              {visible.map((item: Building, idx: number) => {
+                const category = CATEGORIES.find(c => c.key === getCategoryKey(item));
+                return (
+                  <ScrollFade
+                    key={item.id}
+                    depth="none"
+                    delay={(idx % 4) * 0.03}
+                    className="h-full"
                   >
-                    <motion.div
-                      className="w-full h-full [transform-style:preserve-3d] relative shadow-sm hover:shadow-md transition-shadow rounded-sm"
-                      initial={false}
-                      animate={{ rotateY: flippedId === item.id ? 180 : 0 }}
-                      transition={{
-                        duration: 0.6,
-                        type: "spring",
-                        stiffness: 260,
-                        damping: 20,
-                      }}
+                    <div
+                      className={`relative group h-full [perspective:1000px] ${flippedId === item.id ? "z-10" : "z-0"}`}
                     >
-                      {/* FRONT FACE */}
-                      <article
-                        onClick={() =>
-                          setFlippedId(flippedId === item.id ? null : item.id)
-                        }
-                        className="p-3 sm:p-4 flex flex-col relative h-full border border-line-soft bg-paper hover:bg-surface-container/30 cursor-pointer group/front rounded-sm [backface-visibility:hidden]"
+                      <motion.div
+                        className="w-full h-full [transform-style:preserve-3d] relative shadow-sm hover:shadow-md transition-shadow rounded-sm"
+                        initial={false}
+                        animate={{ rotateY: flippedId === item.id ? 180 : 0 }}
+                        transition={{
+                          duration: 0.6,
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                        }}
                       >
-                        <div className="flex justify-between items-start mb-2 sm:mb-sm">
-                          <span className="font-body-italic text-sm sm:text-base text-ink-soft line-clamp-1">
-                            {CATEGORIES.find(
-                              (c) => c.key === item.categoryKey,
-                            )?.[en ? "en" : "zh"] ||
-                              (en
-                                ? item.categoryEn || item.categoryKey
-                                : item.categoryZh || item.categoryKey)}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <button
-                              onClick={(e) => toggleFavorite(item.id, e)}
-                              className="text-line hover:text-primary transition-colors focus:outline-none"
-                            >
-                              <span className={`material-symbols-outlined text-[16px] ${favorites.has(item.id) ? "fill-[#FF6B6B] text-[#FF6B6B] font-variation-fill" : ""}`}>
-                                favorite
-                              </span>
-                            </button>
-                            <span className="font-mono-metadata text-xs text-ink-mute">
-                              NO.{item.id}
+                        {/* FRONT FACE */}
+                        <article
+                          onClick={() =>
+                            setFlippedId(flippedId === item.id ? null : item.id)
+                          }
+                          className="p-3 sm:p-4 flex flex-col relative h-full border border-line-soft bg-paper hover:bg-surface-container/30 cursor-pointer group/front rounded-sm [backface-visibility:hidden]"
+                        >
+                          <div className="flex justify-between items-start mb-2 sm:mb-sm">
+                            <span className="font-body-italic text-xs text-ink-soft line-clamp-1">
+                              {category ? (en ? category.en : category.zh) : "Other"}
                             </span>
+                            <div className="flex items-center gap-2">
+                              <button
+                                onClick={(e) => toggleFavorite(item.id, e)}
+                                className="text-line hover:text-primary transition-colors focus:outline-none bg-transparent border-0 cursor-pointer"
+                              >
+                                <span className={`material-symbols-outlined text-[16px] ${favorites.has(item.id) ? "fill-[#FF6B6B] text-[#FF6B6B] font-variation-fill" : ""}`}>
+                                  favorite
+                                </span>
+                              </button>
+                            </div>
                           </div>
-                        </div>
 
-                        <div className="w-full h-24 sm:h-32 mb-4 relative flex items-center justify-center group-hover/front:scale-105 transition-transform duration-500">
-                          <img
-                            src={`https://pokopiaguide.com${item.imageUrl}`}
-                            alt={
-                              en
-                                ? item.nameEn || item.name
-                                : item.nameZh || item.name
-                            }
-                            loading="lazy"
-                            className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px]"
-                            onError={(e) => {
-                              e.currentTarget.src =
-                                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png";
-                            }}
-                          />
-                        </div>
-
-                        <div className="flex flex-col mt-auto pt-2 border-t border-line-soft">
-                          <h2 className="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-1 transition-colors truncate text-ink-soft group-hover/front:text-ink-main">
-                            {en
-                              ? item.nameEn || item.name
-                              : item.nameZh || item.name}
-                          </h2>
-                        </div>
-                      </article>
-
-                      {/* BACK FACE */}
-                      <article
-                        onClick={() =>
-                          setFlippedId(flippedId === item.id ? null : item.id)
-                        }
-                        className="absolute inset-0 p-3 sm:p-4 flex flex-col h-full border border-line-soft bg-paper-warm [backface-visibility:hidden] [transform:rotateY(180deg)] cursor-pointer overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] rounded-sm"
-                      >
-                        <div className="flex items-start gap-2 mb-3 border-b border-line-soft pb-2 shrink-0">
-                          <div className="w-10 h-10 shrink-0 bg-surface-container/50 rounded flex items-center justify-center mt-1">
+                          <div className="w-full h-24 sm:h-32 mb-4 relative flex items-center justify-center group-hover/front:scale-105 transition-transform duration-500">
                             <img
-                              src={`https://pokopiaguide.com${item.imageUrl}`}
-                              alt={
-                                en
-                                  ? item.nameEn || item.name
-                                  : item.nameZh || item.name
-                              }
-                              className="max-w-[32px] max-h-[32px] object-contain drop-shadow-sm"
+                              src={item.image}
+                              alt={en ? item.nameEn : item.nameZh}
+                              loading="lazy"
+                              referrerPolicy="no-referrer"
+                              className="object-contain max-w-[70px] max-h-[70px] sm:max-w-[100px] sm:max-h-[100px]"
                               onError={(e) => {
                                 e.currentTarget.src =
-                                  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png";
+                                  "https://pokopiadex.com/images/items/shop_ui/relaxing-park-kit.png";
                               }}
                             />
                           </div>
-                          <div className="flex-1 min-w-0">
-                            <div className="font-mono-metadata text-[10px] text-ink-mute uppercase tracking-widest leading-none mb-1.5 line-clamp-1">
-                              NO.{item.id} ·{" "}
-                              {CATEGORIES.find(
-                                (c) => c.key === item.categoryKey,
-                              )?.[en ? "en" : "zh"] ||
-                                (en
-                                  ? item.categoryEn || item.categoryKey
-                                  : item.categoryZh || item.categoryKey)}
-                            </div>
-                            <h2 className="font-headline-sm text-sm text-ink-main truncate leading-tight whitespace-normal line-clamp-2">
-                              {en
-                                ? item.nameEn || item.name
-                                : item.nameZh || item.name}
+
+                          <div className="flex flex-col mt-auto pt-2 border-t border-line-soft">
+                            <h2 className="font-headline-sm md:font-headline-md text-sm md:text-base mb-1 transition-colors truncate text-ink-soft group-hover/front:text-ink-main">
+                              {en ? item.nameEn : item.nameZh}
                             </h2>
+                            <p className="font-body-base text-[10px] text-ink-mute uppercase tracking-widest truncate">
+                              {item.nameEn}
+                            </p>
                           </div>
-                        </div>
+                        </article>
 
-                        <div className="flex flex-col gap-3">
-                          <p className="font-body-base text-xs text-ink-soft leading-relaxed">
-                            {item.description}
-                          </p>
-
-                          {item.obtain && item.obtain.length > 0 && (
-                            <div className="pt-2 border-t border-line-soft/50">
-                              <span className="font-label-caps text-[10px] text-ink-mute block mb-1">
-                                {en ? "Obtain" : "獲取方式"}
-                              </span>
-                              <ul className="pl-3 space-y-0.5">
-                                {item.obtain.map(
-                                  (method: string, i: number) => (
-                                    <li
-                                      key={i}
-                                      className="font-body-base text-[11px] text-ink-soft list-disc"
-                                    >
-                                      {method}
-                                    </li>
-                                  ),
-                                )}
-                              </ul>
+                        {/* BACK FACE */}
+                        <article
+                          onClick={() =>
+                            setFlippedId(flippedId === item.id ? null : item.id)
+                          }
+                          className="absolute inset-0 p-3 sm:p-4 flex flex-col h-full border border-line-soft bg-paper-warm [backface-visibility:hidden] [transform:rotateY(180deg)] cursor-pointer overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] rounded-sm"
+                        >
+                          <div className="flex items-start gap-2 mb-3 border-b border-line-soft pb-2 shrink-0">
+                            <div className="w-10 h-10 shrink-0 bg-surface-container/50 rounded flex items-center justify-center mt-1">
+                              <img
+                                src={item.image}
+                                alt={en ? item.nameEn : item.nameZh}
+                                referrerPolicy="no-referrer"
+                                className="max-w-[32px] max-h-[32px] object-contain drop-shadow-sm"
+                                onError={(e) => {
+                                  e.currentTarget.src =
+                                    "https://pokopiadex.com/images/items/shop_ui/relaxing-park-kit.png";
+                                }}
+                              />
                             </div>
-                          )}
-                        </div>
-                      </article>
-                    </motion.div>
-                  </div>
-                </ScrollFade>
-              ))}
+                            <div className="flex-1 min-w-0">
+                              <div className="font-mono-metadata text-[10px] text-ink-mute uppercase tracking-widest leading-none mb-1.5 line-clamp-1">
+                                {category ? (en ? category.en : category.zh) : "Other"}
+                              </div>
+                              <h2 className="font-headline-sm text-xs text-ink-main truncate leading-tight whitespace-normal line-clamp-2">
+                                {en ? item.nameEn : item.nameZh}
+                              </h2>
+                            </div>
+                          </div>
+
+                          <div className="flex flex-col gap-3">
+                            <p className="font-body-base text-xs text-ink-soft leading-relaxed">
+                              {item.description}
+                            </p>
+
+                            <div className="border-t border-line-soft/60 pt-2 shrink-0">
+                              <span className="font-mono-metadata text-[9px] uppercase tracking-wider text-ink-mute block mb-1">
+                                {en ? "Resource Link" : "資源連結"}
+                              </span>
+                              <a
+                                href={`https://pokopia.pokemonhubs.com${item.href}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                className="font-sans text-[11px] text-primary hover:underline flex items-center gap-1"
+                              >
+                                {en ? "View on GO Pokopia" : "前往 GO Pokopia 查看"}
+                                <span className="material-symbols-outlined text-[12px]">open_in_new</span>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                      </motion.div>
+                    </div>
+                  </ScrollFade>
+                );
+              })}
             </div>
           )}
 
-          {visibleCount < filtered.length && (
-            <div className="mt-lg flex justify-center w-full">
+          {/* More loading */}
+          {filtered.length > visibleCount && (
+            <div className="mt-xl flex justify-center">
               <button
-                onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-                className="bg-surface-container hover:bg-surface-container-high border hairline-border text-ink-soft font-label-caps text-label-caps uppercase tracking-widest px-8 py-3 rounded transition-colors"
+                onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
+                className="bg-paper hover:bg-surface-container border border-line px-lg py-sm font-label-caps text-label-caps text-ink-soft hover:text-ink-main shadow-sm hover:shadow transition-all rounded-sm"
               >
-                {t("pokedex.loadMore")} ({filtered.length - visibleCount})
+                {en ? "Load More Buildings" : "載入更多建築"}
               </button>
             </div>
           )}
