@@ -12,6 +12,7 @@ import MapPage from "./pages/Map";
 import Pokedex from "./pages/Pokedex";
 import Characters from "./pages/Characters";
 import Guide from "./pages/Guide";
+import Buildings from "./pages/Buildings";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function AnimatedRoutes() {
           <Route path="/pokedex" element={<Pokedex />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/guide" element={<Guide />} />
+          <Route path="/buildings" element={<Buildings />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

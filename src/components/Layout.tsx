@@ -74,6 +74,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: t("nav.pokedex"), path: "/pokedex" },
     { name: t("nav.characters"), path: "/characters" },
     { name: t("nav.map"), path: "/map" },
+    { name: t("nav.buildings"), path: "/buildings" },
     { name: t("nav.guides"), path: "/guide" },
   ];
 
