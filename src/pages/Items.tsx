@@ -398,6 +398,67 @@ export default function Items() {
                             {item.description}
                           </p>
 
+                          {item.materials && item.materials.length > 0 && (
+                            <div className="pt-2 border-t border-line-soft/50">
+                              <span className="font-label-caps text-[10px] text-ink-mute block mb-1.5 flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[12px]">
+                                  handyman
+                                </span>
+                                {en ? "Crafting Materials" : "製作材料"}
+                              </span>
+                              <ul className="space-y-1">
+                                {item.materials.map(
+                                  (mat: any, i: number) => (
+                                    <li
+                                      key={i}
+                                      className="flex items-center gap-2 bg-surface-container/40 rounded px-1.5 py-1"
+                                    >
+                                      <img
+                                        src={`https://pokopiaguide.com${mat.imageUrl}`}
+                                        alt={mat.name}
+                                        loading="lazy"
+                                        className="w-5 h-5 object-contain shrink-0 drop-shadow-sm"
+                                        onError={(e) => {
+                                          e.currentTarget.style.visibility =
+                                            "hidden";
+                                        }}
+                                      />
+                                      <span className="font-body-base text-[11px] text-ink-soft truncate flex-1 min-w-0">
+                                        {mat.name}
+                                      </span>
+                                      <span className="font-mono-metadata text-[11px] text-ink-main shrink-0">
+                                        ×{mat.count}
+                                      </span>
+                                    </li>
+                                  ),
+                                )}
+                              </ul>
+                            </div>
+                          )}
+
+                          {item.recipe && item.recipe.length > 0 && (
+                            <div className="pt-2 border-t border-line-soft/50">
+                              <span className="font-label-caps text-[10px] text-ink-mute block mb-1 flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[12px]">
+                                  menu_book
+                                </span>
+                                {en ? "Recipe & Unlock" : "配方解鎖"}
+                              </span>
+                              <ul className="pl-3 space-y-0.5">
+                                {item.recipe.map(
+                                  (note: string, i: number) => (
+                                    <li
+                                      key={i}
+                                      className="font-body-base text-[11px] text-ink-soft list-disc"
+                                    >
+                                      {note}
+                                    </li>
+                                  ),
+                                )}
+                              </ul>
+                            </div>
+                          )}
+
                           {item.obtain && item.obtain.length > 0 && (
                             <div className="pt-2 border-t border-line-soft/50">
                               <span className="font-label-caps text-[10px] text-ink-mute block mb-1">
@@ -415,6 +476,27 @@ export default function Items() {
                                   ),
                                 )}
                               </ul>
+                            </div>
+                          )}
+
+                          {(item.paintable || item.patternable) && (
+                            <div className="pt-2 border-t border-line-soft/50 flex flex-wrap gap-1.5">
+                              {item.paintable && (
+                                <span className="inline-flex items-center gap-1 font-label-caps text-[10px] text-primary bg-primary/10 rounded-full px-2 py-0.5">
+                                  <span className="material-symbols-outlined text-[12px]">
+                                    palette
+                                  </span>
+                                  {en ? "Paintable" : "可上色"}
+                                </span>
+                              )}
+                              {item.patternable && (
+                                <span className="inline-flex items-center gap-1 font-label-caps text-[10px] text-tertiary bg-tertiary/10 rounded-full px-2 py-0.5">
+                                  <span className="material-symbols-outlined text-[12px]">
+                                    texture
+                                  </span>
+                                  {en ? "Patternable" : "可加圖樣"}
+                                </span>
+                              )}
                             </div>
                           )}
                         </div>
