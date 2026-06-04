@@ -3,12 +3,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
 import { addSearchHistory, clearSearchHistory, getSearchHistory } from "../lib/searchHistory";
+import { LayoutGrid, Search, Sparkles, Compass, BookOpen } from "lucide-react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
@@ -44,7 +44,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
 
   const openSearch = () => {
-    setIsMobileMenuOpen(false);
     setSearchHistory(getSearchHistory());
     setIsSearchOpen(true);
   };
@@ -70,12 +69,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
 
   const navLinks = [
-    { name: t("nav.news"), path: "/" },
-    { name: t("nav.pokedex"), path: "/pokedex" },
-    { name: t("nav.characters"), path: "/characters" },
-    { name: t("nav.map"), path: "/map" },
-    { name: t("nav.guides"), path: "/guide" },
+    { name: t("nav.news"), path: "/", icon: LayoutGrid },
+    { name: t("nav.pokedex"), path: "/pokedex", icon: Search },
+    { name: t("nav.characters"), path: "/characters", icon: Sparkles },
+    { name: t("nav.map"), path: "/map", icon: Compass },
+    { name: t("nav.guides"), path: "/guide", icon: BookOpen },
   ];
+
+  const getLinkLabel = (path: string) => {
+    const isEn = i18n.language === "en";
+    switch (path) {
+      case "/": return isEn ? "News" : "最新";
+      case "/pokedex": return isEn ? "Dex" : "圖鑑";
+      case "/characters": return isEn ? "Cast" : "角色";
+      case "/map": return isEn ? "Map" : "地圖";
+      case "/guide": return isEn ? "Guide" : "指南";
+      default: return "";
+    }
+  };
 
   return (
     <>
@@ -133,14 +144,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             >
               <span className="material-symbols-outlined text-[20px]">
                 search
-              </span>
-            </button>
-            <button
-              className="md:hidden flex items-center justify-center text-ink-mute hover:text-primary transition-colors focus:outline-none"
-              onClick={() => setIsMobileMenuOpen(true)}
-            >
-              <span className="material-symbols-outlined text-[24px]">
-                menu
               </span>
             </button>
           </div>
@@ -228,66 +231,128 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       </AnimatePresence>
 
-      {/* Mobile Menu Drawer */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] bg-paper/95 backdrop-blur-md md:hidden flex flex-col"
-          >
-            <div className="flex justify-between items-center px-6 h-20 border-b hairline-bottom">
-               <Link to="/" className="font-headline-md text-2xl italic text-ink-main" onClick={() => setIsMobileMenuOpen(false)}>
-                Pokopia
-              </Link>
-              <button
-                className="w-10 h-10 flex items-center justify-center text-ink-mute hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span className="material-symbols-outlined text-[24px]">
-                  close
-                </span>
-              </button>
-            </div>
-            <div className="flex flex-col px-8 py-12 gap-8 flex-grow overflow-y-auto w-full items-start">
-              {navLinks.map((link, idx) => (
-                <motion.div
-                  key={link.path}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -10 }}
-                  transition={{ delay: idx * 0.05, duration: 0.3 }}
-                >
-                  <Link
-                    to={link.path}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`font-headline-md text-3xl tracking-wide block transition-colors ${
-                      isCurrent(link.path)
-                        ? "text-primary"
-                        : "text-ink-soft hover:text-ink-main"
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                  <div className="h-px bg-line-soft w-8 mt-4"></div>
-                </motion.div>
-              ))}
-            </div>
+      {/* Mobile Floating Bottom Nav Bar (iOS 26 Liquid Glass style) */}
+      <div className="md:hidden fixed bottom-2.5 left-1/2 -translate-x-1/2 z-50 w-[85%] max-w-[290px]">
+        <div 
+          className="relative rounded-full border border-white/40 bg-white/70 backdrop-blur-2xl px-0.5 py-1 flex items-center justify-around transition-all duration-300 ring-1 ring-black/[0.04]"
+          style={{
+            boxShadow: "0 16px 48px -8px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.04), inset 0 1px 1.5px rgba(255,255,255,0.8)"
+          }}
+        >
+          {/* Top gloss line to mimic thick glass material */}
+          <div className="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/90 to-transparent pointer-events-none" />
+          
+          {navLinks.map((link) => {
+            const active = isCurrent(link.path);
+            const Icon = link.icon;
+            const label = getLinkLabel(link.path);
             
-            <div className="p-8 pb-12 w-full flex flex-col gap-2 text-ink-faint font-mono-metadata text-xs uppercase tracking-widest">
-               <span>Pokopia Chronicles</span>
-               <span>Database Archive V.1.0</span>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            return (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="relative flex-1 flex flex-col items-center py-2 px-0.5 focus:outline-none select-none transition-transform active:scale-95 duration-100"
+                style={{ WebkitTapHighlightColor: "transparent" }}
+              >
+                {/* Active pill indicator with spring-based motion. */}
+                {active && (
+                  <motion.div
+                    layoutId="bottomNavActiveHighlight"
+                    className="absolute inset-y-0.5 inset-x-0.5 bg-primary/10 border border-primary/15 rounded-full z-0"
+                    transition={{ type: "spring", stiffness: 350, damping: 26 }}
+                  />
+                )}
 
-      <main className="flex-grow pt-[60px] md:pt-[80px] px-5 md:px-8 xl:px-12 max-w-[1360px] mx-auto w-full pb-md md:pb-lg min-h-screen">
+                <div className={`relative z-10 flex flex-col items-center gap-1 ${
+                  active 
+                    ? "text-primary font-semibold" 
+                    : "text-ink-mute hover:text-ink-soft select-none"
+                }`}>
+                  <Icon className="w-5 h-5 transition-transform" />
+                  <span className="font-sans text-[10px] font-semibold tracking-wider">
+                    {label}
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      <main className="flex-grow pt-[60px] md:pt-[80px] px-5 md:px-8 xl:px-12 max-w-[1360px] mx-auto w-full pb-28 md:pb-lg min-h-screen">
         {children}
       </main>
 
       <footer className="w-full bg-paper-warm border-t border-line transition-colors">
+        {/* 其他工具連結 (水平顯示，可左右滑動) */}
+        <div className="px-5 md:px-8 xl:px-12 pt-lg max-w-[1360px] mx-auto">
+          <span className="font-label-caps text-label-caps text-ink-mute uppercase tracking-widest mb-4 block text-xs">
+            {i18n.language === "en" ? "Other Utilities" : "其他工具連結"}
+          </span>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x select-none" style={{ WebkitOverflowScrolling: "touch" }}>
+            {/* 卡片 1 */}
+            <a 
+              href="https://taiwanrail.vercel.app/" 
+              target="_blank"
+              rel="noreferrer"
+              className="flex-shrink-0 w-[240px] sm:w-[280px] snap-start bg-paper/60 border border-line-soft hover:border-primary/45 rounded-xl p-4 transition-all duration-300 hover:shadow-xs hover:-translate-y-0.5"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">🚆</span>
+                <h5 className="font-bold text-ink-main text-sm font-sans">
+                  {i18n.language === "en" ? "Taiwan Rail & HSR Tracker" : "台/高鐵時刻表快速查詢"}
+                </h5>
+              </div>
+              <p className="text-xs text-ink-soft leading-relaxed min-h-[48px] font-sans">
+                {i18n.language === "en" 
+                  ? "Real-time arrival alerts, quick schedule lookups, and transit transfer info." 
+                  : "提供即時到站提醒、雙向時刻表快速查詢、便利的轉乘資訊與交通引導。"}
+              </p>
+            </a>
+            
+            {/* 卡片 2 */}
+            <a 
+              href="https://tw-veggieprice.vercel.app/" 
+              target="_blank"
+              rel="noreferrer"
+              className="flex-shrink-0 w-[240px] sm:w-[280px] snap-start bg-paper/60 border border-line-soft hover:border-primary/45 rounded-xl p-4 transition-all duration-300 hover:shadow-xs hover:-translate-y-0.5"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">🥬</span>
+                <h5 className="font-bold text-ink-main text-sm font-sans">
+                  {i18n.language === "en" ? "Vegetable Tracker" : "台灣市場每日菜價"}
+                </h5>
+              </div>
+              <p className="text-xs text-ink-soft leading-relaxed min-h-[48px] font-sans">
+                {i18n.language === "en" 
+                  ? "Real-time vegetable market daily transactions and historical prices." 
+                  : "追蹤觀測台灣蔬菜批發市場每日交易價格與波動走勢，掌握民生開銷。"}
+              </p>
+            </a>
+            
+            {/* 卡片 3 */}
+            <a 
+              href="https://roam-jelly-web.vercel.app/" 
+              target="_blank"
+              rel="noreferrer"
+              className="flex-shrink-0 w-[240px] sm:w-[280px] snap-start bg-paper/60 border border-line-soft hover:border-primary/45 rounded-xl p-4 transition-all duration-300 hover:shadow-xs hover:-translate-y-0.5"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">✈️</span>
+                <h5 className="font-bold text-ink-main text-sm font-sans">
+                  {i18n.language === "en" ? "Roam Jelly Trip Planner" : "果凍漫遊旅程規劃"}
+                </h5>
+              </div>
+              <p className="text-xs text-ink-soft leading-relaxed min-h-[48px] font-sans">
+                {i18n.language === "en" 
+                  ? "AI-powered custom itineraries, flight searches, split expenses, and travel checklists." 
+                  : "提供 AI 智慧行程規劃、航班機票與景點查詢、親友分帳紀錄及旅遊攜帶清單確認。"}
+              </p>
+            </a>
+          </div>
+          <div className="h-px bg-line-soft mt-3"></div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-md px-5 md:px-8 xl:px-12 py-lg max-w-[1360px] mx-auto border-b border-line-soft inline-grid w-full">
           <div className="text-center md:text-left">
             <span className="font-headline-sm text-headline-sm text-ink-soft block mb-4">Pokopia</span>
