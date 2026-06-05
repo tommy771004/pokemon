@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import CharacterNetwork from "../components/CharacterNetwork";
 import Seo from "../components/Seo";
 import ScrollFade from "../components/ScrollFade";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import { 
   Sparkles, 
   MapPin, 
@@ -276,6 +277,8 @@ export default function Characters() {
   const [dittoHair, setDittoHair] = useState("transparent");
   const [dittoOutfit, setDittoOutfit] = useState("none");
 
+  useBodyScrollLock(!!selectedChar);
+
   useEffect(() => {
     fetch("/data/characters.json")
       .then((res) => res.json())
@@ -296,12 +299,15 @@ export default function Characters() {
 
   if (!data) {
     return (
-      <Seo
-        title={seoTitle}
-        description={seoDescription}
-        lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia characters", "Pokopia story", "Tinkmaster", "Chef Dente", "Professor Tangrowth"]}
-      />
+      <div className="flex h-[50vh] items-center justify-center">
+        <div className="w-10 h-10 border-4 border-line-soft border-t-primary rounded-full animate-spin"></div>
+        <Seo
+          title={seoTitle}
+          description={seoDescription}
+          lang={en ? "en" : "zh-Hant"}
+          keywords={["Pokemon Pokopia characters", "Pokopia story", "Tinkmaster", "Chef Dente", "Professor Tangrowth"]}
+        />
+      </div>
     );
   }
 

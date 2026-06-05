@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
 import ScrollFade from "../components/ScrollFade";
 import { useFavorites } from "../hooks/useFavorites";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 
 const PAGE_SIZE = 40;
 
@@ -18,6 +19,7 @@ export default function Items() {
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   
   const { favorites, toggleFavorite } = useFavorites("fav_items");
+  useBodyScrollLock(isFiltersOpen);
 
   const en = i18n.language === "en";
 

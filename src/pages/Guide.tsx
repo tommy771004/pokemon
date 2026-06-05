@@ -15,10 +15,12 @@ import {
 import Seo from "../components/Seo";
 import GuideDiagram from "../components/GuideDiagram";
 import ScrollFade from "../components/ScrollFade";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 
 function GuideDataChart({ en }: { en: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"encounter" | "resource">("encounter");
+  useBodyScrollLock(isOpen);
 
   const encounterData = en ? [
     { name: "Wasteland", Common: 65, Rare: 30, Legendary: 5 },
@@ -200,6 +202,7 @@ function GuideDataChart({ en }: { en: boolean }) {
 
 function DocumentArchiveCard({ section, en, index }: { section: any; en: boolean; index: number }) {
   const [isOpen, setIsOpen] = useState(false);
+  useBodyScrollLock(isOpen);
   const title = en ? section.titleEn : section.titleZh;
   const content = en ? section.contentEn : section.contentZh;
 
@@ -304,6 +307,8 @@ function GuideNoteModal({
   const noteKey = `pokopia_notes_${guideId}_${secId}`;
   const [note, setNote] = useState("");
   const [isSaved, setIsSaved] = useState(false);
+
+  useBodyScrollLock(isOpen);
 
   useEffect(() => {
     if (isOpen) {
@@ -914,6 +919,8 @@ export default function Guide() {
   const [activeNoteSection, setActiveNoteSection] = useState<{id: string, titleEn: string, titleZh: string} | null>(null);
   const [isZenMode, setIsZenMode] = useState(false);
 
+  useBodyScrollLock(isMenuOpen);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -971,12 +978,15 @@ export default function Guide() {
 
   if (!data || !activeId) {
     return (
-      <Seo
-        title={fallbackTitle}
-        description={fallbackDescription}
-        lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia guide", "Pokopia walkthrough", "legendary encounters", "resource refining"]}
-      />
+      <div className="flex h-[50vh] items-center justify-center">
+        <div className="w-10 h-10 border-4 border-line-soft border-t-primary rounded-full animate-spin"></div>
+        <Seo
+          title={fallbackTitle}
+          description={fallbackDescription}
+          lang={en ? "en" : "zh-Hant"}
+          keywords={["Pokemon Pokopia guide", "Pokopia walkthrough", "legendary encounters", "resource refining"]}
+        />
+      </div>
     );
   }
 

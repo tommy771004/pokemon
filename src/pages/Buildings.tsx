@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
 import ScrollFade from "../components/ScrollFade";
 import { useFavorites } from "../hooks/useFavorites";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 
 const PAGE_SIZE = 12;
 
@@ -26,6 +27,7 @@ export default function Buildings() {
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   
   const { favorites, toggleFavorite } = useFavorites("fav_buildings");
+  useBodyScrollLock(isFiltersOpen);
 
   const en = i18n.language === "en";
 

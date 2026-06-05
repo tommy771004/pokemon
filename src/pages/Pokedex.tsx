@@ -7,6 +7,7 @@ import ScrollFade from "../components/ScrollFade";
 import ItemsTab from "./Items";
 import BuildingsTab from "./Buildings";
 import { useFavorites } from "../hooks/useFavorites";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 
 const PAGE_SIZE = 12;
 
@@ -536,6 +537,8 @@ export default function Pokedex() {
   const [isTypeExpanded, setIsTypeExpanded] = useState(false);
   const [isLikeExpanded, setIsLikeExpanded] = useState(false);
 
+  useBodyScrollLock(!!active || isFiltersOpen);
+
   useEffect(() => {
     fetch("/data/pokedex.json")
       .then((res) => res.json())
@@ -726,17 +729,20 @@ export default function Pokedex() {
 
   if (!data) {
     return (
-      <Seo
-        title={seoTitle}
-        description={seoDescription}
-        lang={en ? "en" : "zh-Hant"}
-        keywords={[
-          "Pokemon Pokopia",
-          "Pokopia Pokedex",
-          "Pokemon skills",
-          "Pokopia guide",
-        ]}
-      />
+      <div className="flex h-[50vh] items-center justify-center">
+        <div className="w-10 h-10 border-4 border-line-soft border-t-primary rounded-full animate-spin"></div>
+        <Seo
+          title={seoTitle}
+          description={seoDescription}
+          lang={en ? "en" : "zh-Hant"}
+          keywords={[
+            "Pokemon Pokopia",
+            "Pokopia Pokedex",
+            "Pokemon skills",
+            "Pokopia guide",
+          ]}
+        />
+      </div>
     );
   }
 

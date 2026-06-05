@@ -5,6 +5,7 @@ import Seo from "../components/Seo";
 import MapBackdrop from "../components/MapBackdrop";
 import ScrollFade from "../components/ScrollFade";
 import { useFavorites } from "../hooks/useFavorites";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import ItemDistributionGuide from "../components/ItemDistributionGuide";
 
 type SourceLink = {
@@ -537,6 +538,8 @@ export default function MapPage() {
   const [showCollectibles, setShowCollectibles] = useState(false);
   const [activeItem, setActiveItem] = useState<CollectibleItem | null>(null);
 
+  useBodyScrollLock(!!active || !!activeItem || showIndex);
+
   // New features: Local Item Distribution Checklist
   const [popupTab, setPopupTab] = useState<"items" | "info" | "build">("items");
   const [selectedItemInModal, setSelectedItemInModal] = useState<CollectibleItem | null>(null);
@@ -641,12 +644,15 @@ export default function MapPage() {
 
   if (!data) {
     return (
-      <Seo
-        title={seoTitle}
-        description={seoDescription}
-        lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Empty Town"]}
-      />
+      <div className="flex h-[50vh] items-center justify-center">
+        <div className="w-10 h-10 border-4 border-line-soft border-t-primary rounded-full animate-spin"></div>
+        <Seo
+          title={seoTitle}
+          description={seoDescription}
+          lang={en ? "en" : "zh-Hant"}
+          keywords={["Pokemon Pokopia map", "Pokopia regions", "Dream Islands", "Huge Building", "Empty Town"]}
+        />
+      </div>
     );
   }
 

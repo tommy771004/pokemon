@@ -85,12 +85,15 @@ export default function Home() {
 
   if (!data) {
     return (
-      <Seo
-        title={seoTitle}
-        description={seoDescription}
-        lang={en ? "en" : "zh-Hant"}
-        keywords={["Pokemon Pokopia", "Pokopia guide", "Pokopia Chronicles", "Pokemon restoration game"]}
-      />
+      <div className="flex h-[50vh] items-center justify-center">
+        <div className="w-10 h-10 border-4 border-line-soft border-t-primary rounded-full animate-spin"></div>
+        <Seo
+          title={seoTitle}
+          description={seoDescription}
+          lang={en ? "en" : "zh-Hant"}
+          keywords={["Pokemon Pokopia", "Pokopia guide", "Pokopia Chronicles", "Pokemon restoration game"]}
+        />
+      </div>
     );
   }
 

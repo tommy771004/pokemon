@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
 import { addSearchHistory, clearSearchHistory, getSearchHistory } from "../lib/searchHistory";
+import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import { LayoutGrid, Search, Sparkles, Compass, BookOpen } from "lucide-react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,6 +15,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
   const [isHighContrast, setIsHighContrast] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useBodyScrollLock(isSearchOpen);
 
   React.useEffect(() => {
     if (isHighContrast) {
@@ -373,7 +376,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="h-px bg-line-soft mt-3"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-md px-5 md:px-8 xl:px-12 py-lg max-w-[1360px] mx-auto border-b border-line-soft inline-grid w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-md px-5 md:px-8 xl:px-12 py-lg max-w-[1360px] mx-auto border-b border-line-soft w-full">
           <div className="text-center md:text-left">
             <span className="font-headline-sm text-headline-sm text-ink-soft block mb-4">Pokopia</span>
             <p className="font-mono-metadata text-mono-metadata text-ink-soft mx-auto md:mx-0 whitespace-nowrap">
